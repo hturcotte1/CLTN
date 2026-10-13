@@ -329,7 +329,7 @@ def _hi_to_lo(p):
     return [int(c) for c in reversed(p)]
 
 
-def region(A, sigma, t, bd=None, crosscheck=False, positivity_only=False):
+def region(A, sigma, t, bd=None, crosscheck=False, positivity_only=False, replay=False):
     """Exact set of beta (hence q) in the legal range for which sigma supports a
     stable fixed point, at fixed t = (1-eps)/eps (Fraction) or t = INF.
 
@@ -362,16 +362,17 @@ def region(A, sigma, t, bd=None, crosscheck=False, positivity_only=False):
     iso1 = dup_isolate_real_roots_list([_hi_to_lo(p) for p in polys], ZZ, inf=b_min, strict=True, basis=True)
     iso1 = [iv for iv in iso1 if not (iv[0][0] == iv[0][1] == b_min)]
     cells1 = _cells(iso1, b_min)
+    # Lemma A.2 (notes/lemmas.md): a stable K has det K > 0, so x_i = a_i/D > 0 forces
+    # a_i > 0 and the off-support drive o_k/D < 0 forces o_k < 0.
     sign_ok = False
     for _li, _hi, lo, hi, sample in cells1:
-        av = [peval(ai, sample) for ai in bd["a"]]
-        if all(v > 0 for v in av) or all(v < 0 for v in av):
-            sgn = 1 if av[0] > 0 else -1
-            if all(sgn * peval(ok, sample) < 0 for ok in bd["o"].values()):
-                sign_ok = True
-                break
+        if all(peval(ai, sample) > 0 for ai in bd["a"]) and all(peval(ok, sample) < 0 for ok in bd["o"].values()):
+            sign_ok = True
+            break
+    if replay:
+        _replay_isolation(iso1, [_hi_to_lo(p) for p in polys], b_min)
     if not sign_ok:
-        cert.update(verdict="never", reason="no legal beta with a common sign for all a_i (and o_k opposite)",
+        cert.update(verdict="never", reason="no legal beta with all a_i > 0 and all o_k < 0",
                     n_critical_stage1=len(iso1))
         return cert
     if positivity_only:
@@ -391,6 +392,8 @@ def region(A, sigma, t, bd=None, crosscheck=False, positivity_only=False):
         return cert
     iso = dup_isolate_real_roots_list([_hi_to_lo(p) for p in polys2], ZZ, inf=b_min, strict=True, basis=True)
     iso = [iv for iv in iso if not (iv[0][0] == iv[0][1] == b_min)]
+    if replay:
+        _replay_isolation(iso, [_hi_to_lo(p) for p in polys2], b_min)
     cells = _cells(iso, b_min)
 
     crit = []
@@ -448,12 +451,13 @@ def region(A, sigma, t, bd=None, crosscheck=False, positivity_only=False):
         elif v["positive"] and v["off_ok"] and v["stable"]:
             stable_cells.append(rec)
 
-    cert.update(critical=crit, cells=out_cells, Delta_degree=pdeg(Delta))
-    if escal:
-        cert["verdict"] = "escalate"
-    elif stable_cells:
+    cert.update(critical=crit, cells=out_cells, Delta_degree=pdeg(Delta), escalated_cells=escal)
+    if stable_cells:
+        # a decided stable cell is a hit regardless of other cells escalating
         cert["verdict"] = "stable_somewhere"
         cert["stable_intervals"] = [{"lo": endpoint(c["lo"]), "hi": endpoint(c["hi"])} for c in stable_cells]
+    elif escal:
+        cert["verdict"] = "escalate"
     else:
         cert["verdict"] = "never"
     return cert
@@ -503,3 +507,99 @@ def stable_q_intervals(cert):
             return f"root of {e['q_minpoly_hi_to_lo']} in ({e['q_interval'][0]}, {e['q_interval'][1]})"
         out.append((show(iv["lo"]), show(iv["hi"])))
     return out
+
+
+# ------------------------------------------------------------- independent replay of root isolation
+
+def _pdivmod(a, b):
+    """polynomial division over Fractions, low->high lists; returns remainder."""
+    a = [F(x) for x in a]
+    b = [F(x) for x in b]
+    while b and b[-1] == 0:
+        b.pop()
+    db = len(b) - 1
+    while len(a) - 1 >= db and any(a):
+        if a[-1] == 0:
+            a.pop(); continue
+        coef = a[-1] / b[-1]
+        shift = len(a) - 1 - db
+        for i, bv in enumerate(b):
+            a[shift + i] -= coef * bv
+        a.pop()
+    while a and a[-1] == 0:
+        a.pop()
+    return a
+
+
+def sturm_sequence(p):
+    p = [F(x) for x in p]
+    while p and p[-1] == 0:
+        p.pop()
+    dp = [F(i) * p[i] for i in range(1, len(p))]
+    seq = [p, dp]
+    while seq[-1]:
+        r = _pdivmod(seq[-2], seq[-1])
+        if not r:
+            break
+        seq.append([-x for x in r])
+    return seq
+
+
+def _sign_changes(vals):
+    s = [v for v in vals if v != 0]
+    return sum(1 for i in range(len(s) - 1) if (s[i] > 0) != (s[i + 1] > 0))
+
+
+def sturm_count(p, a, b=None):
+    """Number of DISTINCT real roots of p in (a, b]  (b None = +infinity). Requires p(a) != 0."""
+    seq = sturm_sequence(p)
+    va = _sign_changes([peval(s, a) for s in seq])
+    if b is None:
+        vb = _sign_changes([s[-1] for s in seq])          # signs at +infinity: leading coefficients
+    else:
+        vb = _sign_changes([peval(s, b) for s in seq])
+    return va - vb
+
+
+def _replay_isolation(iso, polys_hi_to_lo, b_min):
+    """Independent check of sympy's isolation output:
+       * every non-degenerate isolating interval shows a sign change of its irreducible
+         factor (so it contains a root), every degenerate one is an exact rational root;
+       * for every input polynomial the number of intervals attributed to it equals the
+         Sturm count of its distinct real roots in (b_min, +inf).
+    Raises AssertionError on any discrepancy."""
+    per_poly = {}
+    for (a_, c_), idx, f in iso:
+        a_, c_ = _frac(a_), _frac(c_)
+        flo = [F(int(v)) for v in reversed(f)]
+        if a_ == c_:
+            assert peval(flo, a_) == 0, "degenerate isolating interval is not a root"
+        else:
+            assert peval(flo, a_) * peval(flo, c_) < 0, "isolating interval shows no sign change"
+        for i in idx:
+            per_poly[i] = per_poly.get(i, 0) + 1
+    for i, p in enumerate(polys_hi_to_lo):
+        plo = [F(int(v)) for v in reversed(p)]
+        if len(plo) <= 1:
+            continue
+        if peval(plo, b_min) == 0:
+            # a root exactly at b_min was filtered out; count roots strictly above by a tiny shift
+            # (exact): use the deflated polynomial p/(beta - b_min)
+            q = plo
+            while peval(q, b_min) == 0:
+                q = _pdivmod_exact(q, b_min)
+            plo = q
+        n_sturm = sturm_count(plo, b_min)
+        assert n_sturm == per_poly.get(i, 0), f"Sturm count {n_sturm} != {per_poly.get(i, 0)} isolating intervals for polynomial {i}"
+
+
+def _pdivmod_exact(p, r):
+    """exact division of p (low->high) by (beta - r); p(r) must be 0."""
+    hi = list(reversed(p))
+    out = []
+    acc = F(0)
+    for c in hi:
+        acc = acc * r + c
+        out.append(acc)
+    assert out[-1] == 0
+    return list(reversed(out[:-1]))

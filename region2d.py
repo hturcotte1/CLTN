@@ -29,7 +29,7 @@ from sympy.polys.rootisolation import dup_isolate_real_roots_list
 from sympy.polys.domains import ZZ
 
 import ctln
-from fastregion import beta_data, decide_point, peval, hurwitz_det_poly, _frac, _cells
+from fastregion import beta_data, decide_point, peval, hurwitz_det_poly, _frac, _cells, _replay_isolation
 
 B, T = sp.symbols("beta t")
 
@@ -92,7 +92,7 @@ def projection_polys(bd, bv):
     return polys, names, curves
 
 
-def region2d(A, sigma, crosscheck=True, verbose=False):
+def region2d(A, sigma, crosscheck=True, verbose=False, replay=True):
     sigma = sorted(sigma)
     bd = beta_data(A, sigma)
     bv = bivariate_data(bd)
@@ -101,6 +101,8 @@ def region2d(A, sigma, crosscheck=True, verbose=False):
     intp = [[int(c) for c in p.all_coeffs()] for p in polys if p.degree() >= 1]
     iso = dup_isolate_real_roots_list(intp, ZZ, inf=b_min, strict=True, basis=True)
     iso = [iv for iv in iso if not (iv[0][0] == iv[0][1] == b_min)]
+    if replay:
+        _replay_isolation(iso, intp, b_min)
     bcells = _cells(iso, b_min)
     crit_beta = [{"interval": [str(_frac(a)), str(_frac(b))], "minpoly_hi_to_lo": [int(c) for c in f]} for (a, b), _, f in iso]
 
@@ -116,6 +118,8 @@ def region2d(A, sigma, crosscheck=True, verbose=False):
             tpolys.append((nm, [int(c) for c in sp.Poly(u, T).all_coeffs()] if u.degree() >= 1 else None))
         tiso = dup_isolate_real_roots_list([c for _, c in tpolys if c], ZZ, inf=t_min, strict=True, basis=True)
         tiso = [iv for iv in tiso if not (iv[0][0] == iv[0][1] == t_min)]
+        if replay:
+            _replay_isolation(tiso, [c for _, c in tpolys if c], t_min)
         tcells = _cells(tiso, t_min)
         row = {"beta_cell": (lo_i, hi_i), "beta_sample": str(b0), "t_cells": []}
         for tlo_i, thi_i, tlo, thi, t0 in tcells:

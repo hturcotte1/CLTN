@@ -123,3 +123,26 @@ under u = beta - 2, and that its Theorem 5.1 region {0<u<u*, t>max(1/u,T(u))}
 has the shape of our cell decomposition. Consequence for Stage 5: the
 interesting quantity is not a lower q* but the UPPER reach of counterexamples
 (1.1664 for this graph vs Geneson's bound 4 - 1.5 eps at n = 6).
+
+## 2026-10-13  Prover corrections (notes/lemmas.md, Lemmas A-E)
+(a) Lemma D (dominated node => x_j = 0 at every fixed point) does NOT need
+eps < 1, only eps > 0, delta >= 0 -- but it DOES need uniform theta: with
+theta_j = 10, theta_k = 1 on the single edge j -> k there is a stable fixed
+point with x_j = 10. Our CTLNs have uniform theta, so the prune stands.
+(b) Lemma A.2: a stable K has det K > 0, so the fixed-point positivity
+condition is exactly "all a_i > 0" (not merely a common sign) and the
+off-support condition is "o_k < 0". fastregion's stage-1 filter is tightened
+accordingly (sound: it only removes graphs that could never be stable).
+(c) Reporting gap in fastregion.region: an escalated cell made the verdict
+'escalate' and suppressed stable_intervals even when another cell was decided
+stable. No escalation has occurred in any run so far (n=5 complete, n=6
+sample, n=6 limit sweep in progress), so no result is affected; fixed so that
+a decided stable cell is always a hit.
+(d) Geneson's degree-6 critical value is the polynomial whose roots are
+-2/(nu_i + nu_j) over pairs of roots of the quartic factor of the
+characteristic polynomial of the compressed nonedge matrix -- at most
+C(4,2) = 6, explaining the degree.
+(e) Independent replay of sympy's root isolation added (Sturm counts and
+sign changes at every isolating interval); enabled in both sweep drivers.
+The running n=6 limit sweep started before this; a replay pass over all
+1,540,944 graphs is scheduled after it.

@@ -72,7 +72,7 @@ def main():
             bd = beta_data(A, list(range(n)))
             cc = (args.mode == "slice") and (tally["graphs"] % args.crosscheck_every == 0)
             tally["crosschecked"] += cc
-            c = region(A, list(range(n)), t, bd=bd, crosscheck=cc)
+            c = region(A, list(range(n)), t, bd=bd, crosscheck=cc, replay=True)
             rec = {"key": v, "idx": idx, "complete": complete, "domfree": domfree, "verdict": c["verdict"]}
             if c["verdict"] == "never" and "cells" not in c:
                 tally["never_positivity"] += 1
