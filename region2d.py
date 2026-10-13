@@ -74,6 +74,31 @@ def projection_polys(bd, bv):
         else:
             tfacs.append(pf)
     curves = [("D", bv["D"]), ("L", bv["L"])] + [(f"Delta_f{i}", f) for i, f in enumerate(tfacs)]
+    # Make the curve set pairwise coprime: a common factor h of two curves is split
+    # off as its own curve (its roots bound both), so every resultant below is nonzero.
+    changed = True
+    while changed:
+        changed = False
+        for i in range(len(curves)):
+            for j in range(i + 1, len(curves)):
+                g = sp.gcd(curves[i][1].as_expr(), curves[j][1].as_expr())
+                gp = sp.Poly(g, B, T)
+                if gp.total_degree() >= 1:
+                    ni, fi = curves[i]; nj, fj = curves[j]
+                    qi = sp.Poly(sp.cancel(fi.as_expr() / g), B, T)
+                    qj = sp.Poly(sp.cancel(fj.as_expr() / g), B, T)
+                    new = [(n, f) for k, (n, f) in enumerate(curves) if k not in (i, j)]
+                    for n, f in ((ni, qi), (nj, qj), (f"gcd_{ni}_{nj}", gp)):
+                        if f.total_degree() >= 1:
+                            if f.degree(T) == 0:
+                                polys.append(sp.Poly(f.as_expr(), B)); names.append(f"vert_{n}")
+                            else:
+                                new.append((n, f))
+                    curves = new
+                    changed = True
+                    break
+            if changed:
+                break
     for nm, f in curves:
         lc = sp.Poly(f.as_expr().coeff(T, f.degree(T)), B)
         if lc.degree() >= 1:

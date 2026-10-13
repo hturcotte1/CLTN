@@ -1,0 +1,12 @@
+{
+ "3": {
+  "(False, 'never')": 15,
+  "(True, 'stable_somewhere')": 1
+ },
+ "4": {
+  "(False, 'never')": 214,
+  "(False, 'ERROR:common factor between L and Delta_f1')": 2,
+  "(False, 'ERROR:common factor between L and Delta_f0')": 1,
+  "(True, 'stable_somewhere')": 1
+ }
+}

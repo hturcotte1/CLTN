@@ -552,7 +552,12 @@ def _sign_changes(vals):
 
 def sturm_count(p, a, b=None):
     """Number of DISTINCT real roots of p in (a, b]  (b None = +infinity). Requires p(a) != 0."""
-    seq = sturm_sequence(p)
+    p = [F(x) for x in p]
+    while p and p[-1] == 0:
+        p.pop()
+    if len(p) <= 1:
+        return 0
+    seq = [s for s in sturm_sequence(p) if s]
     va = _sign_changes([peval(s, a) for s in seq])
     if b is None:
         vb = _sign_changes([s[-1] for s in seq])          # signs at +infinity: leading coefficients
@@ -589,6 +594,9 @@ def _replay_isolation(iso, polys_hi_to_lo, b_min):
             while peval(q, b_min) == 0:
                 q = _pdivmod_exact(q, b_min)
             plo = q
+        if len(plo) <= 1:
+            assert per_poly.get(i, 0) == 0, "constant polynomial attributed a root"
+            continue
         n_sturm = sturm_count(plo, b_min)
         assert n_sturm == per_poly.get(i, 0), f"Sturm count {n_sturm} != {per_poly.get(i, 0)} isolating intervals for polynomial {i}"
 

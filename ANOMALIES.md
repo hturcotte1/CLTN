@@ -146,3 +146,34 @@ C(4,2) = 6, explaining the degree.
 sign changes at every isolating interval); enabled in both sweep drivers.
 The running n=6 limit sweep started before this; a replay pass over all
 1,540,944 graphs is scheduled after it.
+
+## 2026-10-13  Reduction lemma proved (notes/lemma_F_reduction.md); two corrections
+Theorem F: at every legal parameter point, the target-free clique conjecture
+holds for all n-node graphs iff for every 2 <= k <= n no non-complete k-node
+graph has a full support satisfying conditions (1) and (3). Correction to my
+sketch: condition (2) IS needed in the clique branch (to exclude targets: the
+graph 0 -> 1 with sigma = {0} satisfies (1),(3) but node 1 is a target); it is
+never needed in the non-clique branch. Consequence: for n = 6 the open content
+is exactly FS(5) and FS(6) (full-support questions), and FS(5) is now certified
+over the whole legal plane (region2d), so there is NO size-5 counterexample
+support inside any 6-node graph; Stage 4 is empty. Also proved: Lemma O (the
+stable-support parameter set is open, so every counterexample has a rational
+witness) and Lemma H (positivity and condition (2) depend on beta alone).
+
+## 2026-10-13  The setup's "2.8% undecided" rate was an artifact of the sample point (1/2, 3/2)
+Prover F: on the same 3,000 random 6-node graphs, (eps, delta) = (1/2, 3/2)
+gives 59 undecided cases (in all of them the cubic coefficient of the
+characteristic polynomial vanishes), while four other legal points, including
+delta = 3/2 + 1/997, give 0 of 3,000. 56 of the 59 already fail positivity.
+Furthermore a genuine counterexample point is never 'undecided' when evaluated
+there (all Hurwitz minors strictly positive, Lemma O): counterexamples live in
+open regions BETWEEN sample points, not in the undecided pile. CLAUDE.md §5's
+sizing of Stage B from the 2.8% figure should not be used; the exact region
+machinery supersedes the sample-and-escalate design.
+
+## 2026-10-13  region2d raised on graphs whose boundary curves share a factor
+Prover F found ArithmeticError("common factor") on three dominated 4-node
+graphs and on all 2-node graphs (det K equals minus the legality polynomial
+for a one-way edge). Fixed: the curve set is made pairwise coprime by splitting
+off gcds before taking resultants; all 2- and 3-node graphs now give the
+expected verdicts; n = 4 check running.
