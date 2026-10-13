@@ -176,32 +176,41 @@ def is_complete_bidirected(A):
 
 
 # ------------------------------------------------------------------ domination
-# Curto, arXiv:2510.05098 (Oct 2025): a dominated node can be removed without
-# changing the fixed-point structure; iterating gives a unique irreducible
-# graph. The definition below is the GRAPHICAL domination used there.
+# Curto, arXiv:2510.05098 (Oct 2025), Definition 1.1, VERBATIM:
+#   "Let j, k in [n] be vertices of G. We say that k graphically dominates j in G,
+#    and write k > j, if the following two conditions hold:
+#    (i)  For each vertex i in [n] \ {j, k}, if i -> j then i -> k.
+#    (ii) j -> k and k -/-> j.
+#    If there exists a k that graphically dominates j, we say that j is a
+#    dominated node of G. If G has no dominated nodes, we say that it is
+#    domination free."
+# Corollary 3.6 there (any eps_i, delta_i > 0, no nondegeneracy needed): if k
+# input-dominates j then no fixed point has x_j > 0; Lemma 3.8: graphical
+# domination implies input domination for every CTLN. Hence a graph with a
+# dominated node has NO full-support fixed point at any legal parameters.
+# Theorem 1 there: FP(G) = FP(G minus j) for a dominated node j.
 #
-# !! DO NOT RELY ON THIS PRUNE UNTIL IT IS PROVED AND TESTED. !!
-# It is implemented so the run has something concrete to verify, not so it can
-# be trusted on sight. Stage 2 must either prove it preserves what we measure
-# or discard it. An unsound prune silently hides counterexamples.
+# The earlier placeholder `dominates()` (written from a secondhand summary)
+# omitted condition (ii) and added an out-neighbour condition that is not in the
+# paper; it was never used in a sweep and has been removed. See notes/lemmas.md
+# for the proof that stable supports are also preserved (needed for Stage 4).
 
 
-def dominates(A, j, k, sigma=None):
-    """Tentative: j dominates k (with respect to sigma) when j receives from
-    everything k receives from within sigma, sends to everything k sends to,
-    and the pair is ordered correctly on the k->j / j->k edges.
-
-    UNVERIFIED against the paper's exact statement. Stage 2 job: pull
-    arXiv:2510.05098, replace this with the paper's definition verbatim, and
-    write the proof that removal preserves the property we are measuring.
-    """
+def graphically_dominates(A, k, j):
+    """True iff k graphically dominates j in G (Definition 1.1 above)."""
     n = len(A)
-    S = range(n) if sigma is None else sigma
-    for i in S:
-        if i in (j, k):
-            continue
-        if A[i][k] and not A[i][j]:
-            return False
-        if A[j][i] and not A[k][i]:
+    if j == k or A[j][k] != 1 or A[k][j] != 0:          # (ii)  j -> k and k -/-> j
+        return False
+    for i in range(n):                                   # (i)
+        if i != j and i != k and A[i][j] == 1 and A[i][k] == 0:
             return False
     return True
+
+
+def dominated_nodes(A):
+    n = len(A)
+    return [j for j in range(n) if any(graphically_dominates(A, k, j) for k in range(n) if k != j)]
+
+
+def is_domination_free(A):
+    return not dominated_nodes(A)

@@ -255,10 +255,47 @@ check("Geneson graph is a positive but unstable fixed point at eps=1/10",
       _rec2["is_fixed_point"] and _rec2["stable"] is False)
 
 # ---------------------------------------------------------------------------
+print("\n=== 9. STAGE 1: published n=5 classification (ccurto/n5-graphs-package) ===")
+# data/n5_package_FP.csv is our export of the package's n5_digraphs.mat (sha256 in
+# its header): all 9,608 digraphs on 5 nodes with every fixed-point support at the
+# package defaults eps=1/4, delta=1/2 (q=3/2). The package's sA is the TRANSPOSE of
+# our A (sA(i,j)=1 iff j->i). The full diff of zero is stage1_n5_diff.py /
+# certificates/stage1_n5_diff.json; here a deterministic sample runs every commit.
+import csv as _csv, os as _os
+_rows = []
+with open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "data", "n5_package_FP.csv")) as _fh:
+    _fh.readline(); _fh.readline()
+    for _r in _csv.DictReader(_fh):
+        _A = [[int(_r["A_rowmajor"][5 * i + j]) for j in range(5)] for i in range(5)]
+        _sup = sorted(tuple(sorted(int(v) - 1 for v in s.split())) for s in _r["FP_supports_1indexed"].split(";") if s)
+        _rows.append((int(_r["graph"]), _A, _sup))
+check("package export has all 9608 graphs", len(_rows) == 9608)
+_rng = random.Random(20261013)
+_sample = _rng.sample(_rows, 80)
+_bad = []
+for _g, _A, _sup in _sample:
+    _fps = sorted(tuple(s) for size in range(1, 6) for s in combinations(range(5), size)
+                  if analyze_support(_A, list(s), F(1, 4), F(1, 2))["is_fixed_point"])
+    if _fps != _sup:
+        _bad.append(_g)
+check("fixed-point supports match the package on 80 sampled graphs (A = sA^T)", not _bad,
+      f"mismatches: {_bad[:5]}" if _bad else "diff 0")
+# The same sample under the WRONG convention (no transpose) must NOT all match --
+# otherwise this test could not detect a convention drift.
+_wrong = 0
+for _g, _A, _sup in _sample[:30]:
+    _At = [[_A[j][i] for j in range(5)] for i in range(5)]
+    _fps = sorted(tuple(s) for size in range(1, 6) for s in combinations(range(5), size)
+                  if analyze_support(_At, list(s), F(1, 4), F(1, 2))["is_fixed_point"])
+    if _fps != _sup:
+        _wrong += 1
+check("the test is sensitive to the adjacency convention", _wrong > 0, f"{_wrong}/30 differ when transposed")
+
+# ---------------------------------------------------------------------------
 print("\n" + "=" * 70)
 print(f"{len(PASS)} passed, {len(FAIL)} failed")
 if FAIL:
     print("FAILED: " + ", ".join(FAIL))
     raise SystemExit(1)
 print("Verifier is consistent with every independently known fact tested.")
-print("Stage 0 (Geneson arXiv:2607.21396 counterexample) is encoded as test block 8.")
+print("Stage 0 (Geneson counterexample) is block 8; Stage 1 (n=5 package sample) is block 9.")

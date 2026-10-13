@@ -1,0 +1,21 @@
+{
+ "stage": 1,
+ "source": "ccurto/n5-graphs-package n5_digraphs.mat",
+ "csv_header": [
+  "# source: ccurto/n5-graphs-package n5_digraphs.mat sha256=d8669c04954474552a087a9347101d20cc6b412d98a845ec1c9e0e0ca05aff6f\n",
+  "# A_rowmajor is OUR convention (A[i][j]=1 iff i->j) = transpose of the package's sA\n"
+ ],
+ "eps": "1/4",
+ "delta": "1/2",
+ "q": "3/2",
+ "graphs": 9608,
+ "graph_set_matches_A000273_enumeration": true,
+ "fp_support_mismatches": 0,
+ "mismatch_graphs": [],
+ "total_fp_supports": 24442,
+ "total_stable_fp_supports": 14488,
+ "conjecture_violations": [],
+ "boundary_cases": 0,
+ "off_support_ties": 0,
+ "seconds": 37.3
+}
