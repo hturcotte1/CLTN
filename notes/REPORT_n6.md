@@ -1,11 +1,12 @@
 # The target-free clique conjecture at n = 6: a certified map of the gap
 
-Status: DRAFT written while the two-parameter certification of the n = 6
-positivity survivors is still running (section 5 will be completed from
-`certificates/n6_summary.json`). Everything else below is final and backed by
-files in `certificates/` and proofs in `notes/`. Two claimed counterexamples
-have been independently verified by adversarial agent workflows but still
-await the human hand-verification that CLAUDE.md §3 requires.
+Status: COMPLETE for the full-support problem at n = 6 (and hence, by
+Theorem F, for the conjecture at n = 6). Every number below is backed by a
+file in `certificates/` and every lemma by a proof in `notes/`. The two new
+counterexamples were independently verified by adversarial agent workflows
+and still await the human hand-verification that CLAUDE.md §3 requires. The
+final replay pass of the limit sweep with the final code is the only job
+still running (a reproducibility check, not a result).
 
 ## 1. Validation gates (both reproduce)
 
@@ -83,9 +84,25 @@ independent exact method. `certificates/region2d_n5_shard0of1_tally.json`.
 * **Slices on the survivors** (0 escalations, 34,070 pointwise cross-checks):
   `eps = 1/1000, 1/100`: `K6` + the three counterexamples; `eps = 1/10`: `K6`
   + Geneson's class only; `eps = 1/4, 1/2`: `K6` only.
-* **Two-parameter certification** of all 34,071 survivors: PENDING (fill in
-  from `certificates/n6_summary.json`: totals, hits, consistency with limit
-  and slices).
+* **Two-parameter certification** of all 34,071 survivors (cylindrical
+  algebraic decomposition of the legal `(beta, t)` plane, every cell decided
+  exactly and cross-checked pointwise, every root count replayed): 34,067
+  never stable anywhere, 4 stable somewhere (`K6` and the three graphs below),
+  0 escalations, 0 errors, 65,000 CPU-seconds. Consistent with the limit
+  sweep and all five slices; no survivor is missing. `certificates/n6_summary.json`,
+  `notes/n6_map.md`.
+
+**Theorem (computer-certified, modulo human sign-off on the certificates).**
+Among the 1,540,944 digraphs on 6 nodes, exactly three non-complete graphs
+have a positive, linearly stable full-support fixed point at some legal
+parameter: Geneson's graph, its bidirected-twin-switch partner (index
+1,424,629), and the 18-edge graph of index 1,387,528. Every other 6-node
+graph is certified never stable at every legal `(eps, delta)`. Combined with
+the n = 5 result and Theorem F: a 6-node CTLN violates the target-free clique
+conjecture at a legal parameter point if and only if it contains one of these
+three graphs (or, for the 5-node part, nothing) as the full vertex set -- i.e.
+the conjecture fails at n = 6 only for full supports, and only for these two
+twin-equivalence classes.
 
 ### The counterexamples (full support, n = 6)
 
@@ -95,8 +112,13 @@ independent exact method. `certificates/region2d_n5_shard0of1_tally.json`.
 | idx 1424629 (new graph) | 19 | identical to Geneson's | Geneson's graph with one out-edge moved between bidirected in-twins (Lemma J.4: identical fixed points for every support and parameter); verified by a 7-agent workflow |
 | idx 1387528 (new graph) | 18 | `1 < q < root of q^5+2q^4+q^3-2q^2-2q-1 in (1, 13/12)` (~1.0723 at eps=1/101) | genuinely new, singleton equivalence class, no twins; verified by a 7-agent workflow; witness `eps = 1/101, delta = 27/2626, q = 1350/1313` |
 
-Modulo bidirected twin switching there are therefore (so far) exactly two
-counterexample graphs at n = 6 with a stable non-clique full support.
+Modulo bidirected twin switching there are therefore exactly two
+counterexample graphs at n = 6 with a stable non-clique full support. Both
+regions have the same shape: `{2 < beta < beta_c, t > max(1/(beta-2), T(beta))}`
+with `T(beta) < 1/(beta-2)` on an initial interval `(2, beta_1)`, so both are
+stable at EVERY legal `t` when `delta/eps` is close enough to 1. For the
+18-edge graph the two thresholds coincide: stable iff `2 < beta < beta_1'`
+with `beta_1'` in `(152/73, 27/13 ...)`, at every legal `t`.
 
 ### Structure (Lemma J)
 
@@ -109,11 +131,17 @@ supports.
 
 ## 6. What this says about the gap
 
-For n = 6 there is no `q* > 1` below which counterexamples start: Geneson's
-graph is stable at every legal point with `delta/eps` close enough to 1. The
-meaningful quantity is the upper reach of the counterexample region, which
-for the two classes is `q_c ~ 1.166` and `~1.08`, against Geneson's proven
-bound `q >= 4 - 1.5 eps`. (Final statement after section 5 is complete.)
+For n = 6 there is no `q* > 1` below which counterexamples start: both
+counterexample classes are stable at every legal point with `delta/eps` close
+enough to 1, so counterexamples exist for every `q > 1` arbitrarily close to
+1. The meaningful quantity is the upper reach of the counterexample region:
+`q_c = 1.16635...` (the sextic root) for Geneson's class and the root of
+`q^5+2q^4+q^3-2q^2-2q-1` (~1.0789 in the limit; ~1.0723 at eps = 1/101) for
+the other, against Geneson's proven safe bound `q >= 4 - 1.5 eps`. The gap
+`[~1.17, 4 - 1.5 eps)` at n = 6 contains NO counterexample for any graph:
+the conjecture holds there for every 6-node CTLN. Every counterexample at
+n = 6 needs `eps` small: none exists at `eps = 1/4` or `1/2`; at `eps = 1/10`
+only Geneson's class survives (for `1 < q < ~1.03`).
 
 ## 7. Literature status
 

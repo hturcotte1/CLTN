@@ -351,3 +351,14 @@ was not found in print. J.2 (charpoly + in-walk counts) was not found.
 CGM24 Theorem 2.5 prints the clique eigenvalue as |sigma|(1-eps) - eps; the
 trace forces |sigma|(1-eps) + eps (correct in CGM19a). Our test 3 uses the
 correct value. Scoop re-check: no change. See notes/literature_twins_check.md.
+
+## 2026-10-13  n = 6 full-support map COMPLETE
+Two-parameter certification of all 34,071 positivity survivors: 34,067 never,
+4 stable somewhere (K6 + idx 1000255, 1424629, 1387528), 0 escalations,
+0 errors; consistent with the limit sweep and all five eps-slices. With the
+n = 5 result and Theorem F this settles the conjecture at n = 6: it fails
+exactly for the two twin-equivalence classes above, only for full supports,
+only for q below ~1.166 (resp. ~1.079), and for every q > 1 close to 1.
+Hit 2's region is a single cell: stable iff 2 < beta < beta_1' at EVERY legal
+t (so its t -> infinity boundary and all-t boundary coincide), unlike
+Geneson's class where a quartic curve T(beta) separates them.

@@ -1,0 +1,10 @@
+{
+ "graphs": 11357,
+ "never": 11355,
+ "stable_somewhere": 2,
+ "escalate": 0,
+ "complete": 1,
+ "errors": 0,
+ "resumed_records": 87,
+ "seconds": 21654.2
+}
