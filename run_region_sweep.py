@@ -35,6 +35,7 @@ def main():
                     help="run ctln.analyze_support at every sample point for 1 in N graphs (slice mode)")
     ap.add_argument("--stop-on-hit", action="store_true")
     ap.add_argument("--only", default=None, help="file with one graph index per line; process only these")
+    ap.add_argument("--resume", action="store_true", help="continue an interrupted run: keep valid records, skip done indices")
     args = ap.parse_args()
     k, K = map(int, args.shard.split("/"))
     if args.mode == "slice":
@@ -58,8 +59,41 @@ def main():
         base += "_only"
     else:
         indices = range(k, len(keys), K)
-    with open(base + ".jsonl", "w") as fh, open(base + "_HITS.jsonl", "w") as hits:
+    done_max = -1
+    mode = "w"
+    if args.resume and os.path.exists(base + ".jsonl"):
+        good = []
+        for line in open(base + ".jsonl"):
+            try:
+                r = json.loads(line)
+            except Exception:
+                break                         # truncated trailing line from an interrupted write
+            good.append(line if line.endswith("\n") else line + "\n")
+            tally["graphs"] += 1
+            tally["complete"] += bool(r.get("complete"))
+            tally["domfree"] += bool(r.get("domfree"))
+            if r["verdict"] == "never" and "cert" not in r:
+                tally["never_positivity"] += 1
+                if str(r.get("reason", "")).startswith("identically zero"):
+                    tally["anomaly"] += 1
+            else:
+                tally["domfree_positivity_possible" if r.get("domfree") else "dominated_positivity_possible"] += 1
+                if r["verdict"] == "never":
+                    tally["never_full"] += 1
+                elif r["verdict"] == "stable_somewhere":
+                    tally["stable_somewhere"] += 1
+                else:
+                    tally["escalate"] += 1
+            done_max = max(done_max, r["idx"])
+        with open(base + ".jsonl", "w") as fh:
+            fh.writelines(good)
+        mode = "a"
+        print(f"resuming after idx {done_max}: {tally['graphs']} records kept", flush=True)
+        tally["resumed_at"] = done_max
+    with open(base + ".jsonl", mode) as fh, open(base + "_HITS.jsonl", mode) as hits:
         for idx in indices:
+            if idx <= done_max:
+                continue
             if args.limit and tally["graphs"] >= args.limit:
                 break
             v = keys[idx]
