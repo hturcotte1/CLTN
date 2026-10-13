@@ -341,3 +341,13 @@ sound, but the 34,071-graph survivor set is a superset of the 28,350 strict
 survivors and is not closed under D-equivalence (17,307 strict classes vs
 21,800). The 2-D certification runs on the superset, so nothing is lost; the
 replay pass with the final code (task 11) will produce the reproducible set.
+
+## 2026-10-13  Literature status of the twin lemmas; a sign typo in CGM24 Thm 2.5
+J.4' is a special case of Curto-Geneson-Morrison's simply-added Lemma 3.13 /
+Cor 2.7 (which is a stronger prune: any simply-added uniform-in-degree tau
+that is not a stable motif kills sigma). J.4 is a short corollary of their
+machinery; its full statement (all supports, Jacobian charpoly, stability)
+was not found in print. J.2 (charpoly + in-walk counts) was not found.
+CGM24 Theorem 2.5 prints the clique eigenvalue as |sigma|(1-eps) - eps; the
+trace forces |sigma|(1-eps) + eps (correct in CGM19a). Our test 3 uses the
+correct value. Scoop re-check: no change. See notes/literature_twins_check.md.
