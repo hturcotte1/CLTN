@@ -288,3 +288,26 @@ is a singleton. All members of a class have identical 2-D regions, which gives
 a consistency check on the 2-D sweep (verdicts must agree within a class) and
 a 36% saving had the sweep run on representatives. The operation generating
 these classes is unidentified (certificates/n6_survivor_equivalence_classes.json).
+
+## 2026-10-13  Candidate idx 1424629 verified; the equivalence operation is a "twin move"
+Second adversarial workflow (7 agents): VERIFIED at P1 (eps = 1/101, delta =
+27/2626) and P2 (eps = 1/1001), certified max Re(lambda) <= -498/872525 and
+<= -23/390905, no zero minor, nondegenerate over all 63 supports. The context
+agent found the relation to Geneson's graph G: after relabelling, H = G minus
+the edge 3->1 plus the edge 5->1, where nodes 3 and 5 are IN-TWINS (identical
+in-neighbourhoods {1,2,4}, mutually bidirected). Moving out-edges between
+in-twins preserves chi_A, chi_{A+J}, the full-support characteristic
+polynomial AND the fixed point identically in (eps, delta, theta) (machine-
+checked on this pair; the general lemma is with prover J). Consequences:
+(a) x_3 = x_5 exactly and -eps is an exact eigenvalue of -I + W (e_3 - e_5 is
+a left eigenvector), which is why the slices showed a factor (101 lam + 1);
+(b) H has no target-free clique at all, and its full support is its only
+stable fixed point at P1, P2 (scan_supports); (c) H carries no new region
+information relative to G. Open: whether twin moves generate all 21,800
+equivalence classes among the survivors.
+Side notes from the verifiers: ctln.hurwitz_stable builds the transpose of
+the textbook Hurwitz matrix (harmless: leading principal minors are
+transpose-invariant; do not "fix"); a sympy pitfall (Symbol with assumptions
+can make subs/factor a silent no-op) -- symbolic.py uses the same Symbol
+objects throughout, so it is not affected, and it was cross-validated against
+fastregion on 8,094 cases.
