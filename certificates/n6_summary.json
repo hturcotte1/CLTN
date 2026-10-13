@@ -2,13 +2,14 @@
  "n": 6,
  "limit": {
   "graphs": 1540944,
-  "never_positivity": 1506873,
-  "positivity_possible": 34071,
+  "never_positivity": 1512594,
+  "positivity_possible": 28350,
   "limit_stable": 4,
   "limit_stable_noncomplete": 3,
   "escalate": 0,
   "domination_free": 204378,
-  "dominated_positivity_possible": 0
+  "dominated_positivity_possible": 0,
+  "note": "never_positivity = no legal beta with all a_i > 0 (and all o_k < 0); by Lemma A.2 such a graph has no STABLE positive fixed point -- it may still have a positive but unstable one"
  },
  "two_d": {
   "graphs": 34071,
@@ -49,6 +50,10 @@
   "violations": [],
   "survivors_without_2d": [],
   "n_survivors_without_2d": 0,
+  "limit_run_used": [
+   "region_n6_limit_shard0of1.jsonl"
+  ],
+  "certified_superset_2d": 34071,
   "stable_records_with_undecided_cells": []
  },
  "hits": [

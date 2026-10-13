@@ -4,9 +4,20 @@ Status: COMPLETE for the full-support problem at n = 6 (and hence, by
 Theorem F, for the conjecture at n = 6). Every number below is backed by a
 file in `certificates/` and every lemma by a proof in `notes/`. The two new
 counterexamples were independently verified by adversarial agent workflows
-and still await the human hand-verification that CLAUDE.md §3 requires. The
-final replay pass of the limit sweep with the final code is the only job
-still running (a reproducibility check, not a result).
+and still await the human hand-verification that CLAUDE.md §3 requires. A
+replay of the limit sweep with the final code and an adversarial audit of the
+whole chain (section 7) are complete.
+
+Definitions used throughout: "stable" means linearly (asymptotically) stable:
+every eigenvalue of `-I + W_sigma` has strictly negative real part, which for a
+strictly positive full-support fixed point is asymptotic stability of the TLN
+(the vector field is linear there); points where `det(I - W_sigma) = 0` or a
+Hurwitz minor vanishes are non-hyperbolic and are not counted as stable.
+"Legal" means `q = delta(1-eps)/eps > 1`, i.e. `0 < eps < delta/(1+delta)`;
+the boundary `q = 1` is outside the CTLN definition. `theta` only rescales the
+fixed point (Lemma G). The extension to proper supports through Theorem F uses
+the strict off-support inequality (nondegeneracy in the sense of
+Curto-Geneson-Morrison and Geneson).
 
 ## 1. Validation gates (both reproduce)
 
@@ -34,7 +45,9 @@ i.e. `q > 1`) and `N` the receiver-first non-edge matrix of the support,
 `I - W_sigma = eps (I + beta N + t J)`. Because `J` has rank one:
 
 * the fixed point is positive iff all entries of `a = adj(I + beta N) 1` are
-  positive (Lemmas A, A.2, H) -- a condition in `beta` alone;
+  nonzero with a common sign (Lemma H), and a positive AND stable fixed point
+  forces all `a_i > 0` because `det K > 0` for a Hurwitz matrix (Lemma A.2)
+  -- conditions in `beta` alone;
 * at fixed `t` every verdict change happens at a real root of `a_i`, of
   `D = det(I + beta N + tJ)` (linear in `t`), of the off-support numerators
   `o_k`, or of the Hurwitz minor `Delta_{m-1}` (Lemma B, via Orlando);
@@ -77,14 +90,20 @@ independent exact method. `certificates/region2d_n5_shard0of1_tally.json`.
 
 ## 5. n = 6 full support
 
-* **Limit sweep** (`eps -> 0`), all 1,540,944 digraphs: 1,506,873 cannot have
-  a positive fixed point at any legal `beta`; 34,071 survivors; exactly four
-  graphs are limit-stable: `K6` and three non-clique graphs; 0 escalations.
-  204,378 graphs are domination-free and every survivor is among them.
+* **Limit sweep** (`eps -> 0`), all 1,540,944 digraphs, final code (replay):
+  1,512,594 graphs have no legal `beta` with all `a_i > 0`, hence (Lemma A.2)
+  no stable positive full-support fixed point at any parameter -- they may
+  still have positive but unstable fixed points (the empty graph does);
+  28,350 strict survivors; exactly four graphs are limit-stable: `K6` and
+  three non-clique graphs; 0 escalations. The first run of the sweep used a
+  weaker (common-sign) filter on part of the index range and produced a
+  superset of 34,071 survivors; the two-parameter certification was run on
+  that superset. 204,378 graphs are domination-free and every survivor is
+  among them.
 * **Slices on the survivors** (0 escalations, 34,070 pointwise cross-checks):
   `eps = 1/1000, 1/100`: `K6` + the three counterexamples; `eps = 1/10`: `K6`
   + Geneson's class only; `eps = 1/4, 1/2`: `K6` only.
-* **Two-parameter certification** of all 34,071 survivors (cylindrical
+* **Two-parameter certification** of all 34,071 superset survivors (cylindrical
   algebraic decomposition of the legal `(beta, t)` plane, every cell decided
   exactly and cross-checked pointwise, every root count replayed): 34,067
   never stable anywhere, 4 stable somewhere (`K6` and the three graphs below),
@@ -110,7 +129,7 @@ twin-equivalence classes.
 |---|---|---|---|
 | Geneson's (idx 1000255) | 19 | `1 < q < q_c`, `q_c` the sextic root ~1.16636 | known; stable for ALL legal `t` when `beta < beta_1` (degree-14 algebraic, in (17/8, 15/7)): counterexamples exist arbitrarily close to `q = 1` |
 | idx 1424629 (new graph) | 19 | identical to Geneson's | Geneson's graph with one out-edge moved between bidirected in-twins (Lemma J.4: identical fixed points for every support and parameter); verified by a 7-agent workflow |
-| idx 1387528 (new graph) | 18 | `1 < q < root of q^5+2q^4+q^3-2q^2-2q-1 in (1, 13/12)` (~1.0723 at eps=1/101) | genuinely new, singleton equivalence class, no twins; verified by a 7-agent workflow; witness `eps = 1/101, delta = 27/2626, q = 1350/1313` |
+| idx 1387528 (new graph) | 18 | `1 < q < q_c'`, `q_c' = beta_1' - 1` the root of `q^5+2q^4+q^3-2q^2-2q-1` in `(1, 13/12)`, `q_c' ~ 1.0830`; at `eps = 1/101` the window is `1 < q <~ 1.0723` | genuinely new, singleton equivalence class, no twins; verified by a 7-agent workflow and by an independent from-scratch symbolic re-derivation of its whole region; witness `eps = 1/101, delta = 27/2626, q = 1350/1313` |
 
 (Reading the cell data: a stable cell is a beta-interval together with the
 stable t-range on the slice at the sample beta; `t_lo = 1/(beta_sample - 2)`
@@ -123,7 +142,9 @@ regions have the same shape: `{2 < beta < beta_c, t > max(1/(beta-2), T(beta))}`
 with `T(beta) < 1/(beta-2)` on an initial interval `(2, beta_1)`, so both are
 stable at EVERY legal `t` when `delta/eps` is close enough to 1. For the
 18-edge graph the two thresholds coincide: stable iff `2 < beta < beta_1'`
-with `beta_1'` in `(152/73, 27/13 ...)`, at every legal `t`.
+at every legal `t`, where `beta_1'` is the root of
+`beta^5 - 3beta^4 + 3beta^3 - 3beta^2 + 2beta - 1` in `(152/73, 25/12)`,
+`beta_1' ~ 2.08302` (it is the positivity boundary: `a_5 = 0`).
 
 ### Structure (Lemma J)
 
@@ -140,9 +161,10 @@ For n = 6 there is no `q* > 1` below which counterexamples start: both
 counterexample classes are stable at every legal point with `delta/eps` close
 enough to 1, so counterexamples exist for every `q > 1` arbitrarily close to
 1. The meaningful quantity is the upper reach of the counterexample region:
-`q_c = 1.16635...` (the sextic root) for Geneson's class and the root of
-`q^5+2q^4+q^3-2q^2-2q-1` (~1.0789 in the limit; ~1.0723 at eps = 1/101) for
-the other, against Geneson's proven safe bound `q >= 4 - 1.5 eps`. The gap
+`q_c = 1.16635...` (the sextic root) for Geneson's class and
+`q_c' = beta_1' - 1 ~ 1.0830` (the root of `q^5+2q^4+q^3-2q^2-2q-1`; at
+`eps = 1/101` the window ends near 1.0723) for the other, against Geneson's
+proven safe bound `q >= 4 - 1.5 eps`. The gap
 `[~1.17, 4 - 1.5 eps)` at n = 6 contains NO counterexample for any graph:
 the conjecture holds there for every 6-node CTLN. Every counterexample at
 n = 6 needs `eps` small: none exists at `eps = 1/4` or `1/2`; at `eps = 1/10`
@@ -150,13 +172,22 @@ only Geneson's class survives (for `1 < q < ~1.03`).
 
 ## 7. Soundness audit and trust base
 
-An adversarial audit workflow (CAD soundness review, independent symbolic
-re-derivation of the idx 1387528 region, spot-checks of never verdicts, lemma
-referee, completeness critic) and a prover-written two-parameter version of
-Lemma B (`notes/lemma_Bprime_2d.md`: sign-invariance on connected components
-of the complement of the boundary curves, correctness of deciding only
-full-dimensional cells via openness, and elementary delineability for the
-projection set used) found no verdict error. What the certificates still
+An adversarial audit workflow (`notes/audit_n6_workflow_full.json`: CAD
+soundness review, independent from-scratch symbolic re-derivation of the
+idx 1387528 region -- same set `{2 < beta < beta_1', all legal t}` and the
+same minimal polynomial -- spot-checks of never verdicts, lemma referee,
+completeness critic) returned "major gaps, none blocking, no verdict error".
+The major items were: the human sign-off is outstanding (by design); the
+never-side records are not self-contained certificates (they store the
+critical values and cell counts, not the full decomposition) and
+verification means re-running the committed engine; several misstatements
+in an earlier draft of this report (fixed in this version); and the hit
+files were not tracked in git (fixed: every HITS file, gzipped bulk records
+and a sha256 manifest are now committed). A prover-written two-parameter
+version of Lemma B (`notes/lemma_Bprime_2d.md`: sign-invariance on connected
+components of the complement of the boundary curves, correctness of deciding
+only full-dimensional cells via openness, and elementary delineability for
+the projection set used) closed the proof-coverage gap. What the certificates still
 trust: sympy 1.14's exact polynomial algebra (Berkowitz determinant,
 factorisation, gcd, resultant, discriminant) for the projection polynomials;
 the projection identities were re-verified by independent Bareiss

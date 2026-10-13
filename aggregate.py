@@ -60,10 +60,16 @@ def main():
     args = ap.parse_args()
     n = args.n
     cdir = "certificates"
+    # The canonical limit run is the single-shard replay with the final code
+    # (region_n<n>_limit_shard0of1.jsonl) when present; the earlier three-shard
+    # run mixed two positivity filters (ANOMALIES 2026-10-13) and is used only
+    # as a fallback. The 2-D certification covered the SUPERSET of survivors of
+    # both runs, which is reported separately as 'certified_superset'.
     limit = {}
-    for path in sorted(glob.glob(os.path.join(cdir, f"region_n{n}_limit_shard*of*.jsonl"))):
-        if "_only" in path:
-            continue
+    canonical = os.path.join(cdir, f"region_n{n}_limit_shard0of1.jsonl")
+    paths = [canonical] if os.path.exists(canonical) else sorted(
+        p for p in glob.glob(os.path.join(cdir, f"region_n{n}_limit_shard*of*.jsonl")) if "_only" not in p)
+    for path in paths:
         for line in open(path):
             try:
                 r = json.loads(line)
@@ -124,7 +130,11 @@ def main():
             if idx in d and d[idx] == "stable_somewhere" and r["verdict"] != "stable_somewhere":
                 bad.append((f"slice {tag} stable but 2D {r['verdict']}", idx))
     summary["consistency"] = {"violations": bad, "survivors_without_2d": sorted(set(i for i, r in limit.items() if "cert" in r) - set(two_d))[:20],
-                              "n_survivors_without_2d": len(set(i for i, r in limit.items() if "cert" in r) - set(two_d))}
+                              "n_survivors_without_2d": len(set(i for i, r in limit.items() if "cert" in r) - set(two_d)),
+                              "limit_run_used": [os.path.basename(p) for p in paths],
+                              "certified_superset_2d": len(two_d)}
+    summary["limit"]["note"] = ("never_positivity = no legal beta with all a_i > 0 (and all o_k < 0); by Lemma A.2 such a graph has no "
+                                "STABLE positive fixed point -- it may still have a positive but unstable one")
 
     # a stable record must have no undecided cell (verdict precedence favours 'stable_somewhere')
     undecided_in_stable = [i for i, r in two_d.items() if r["verdict"] == "stable_somewhere" and
