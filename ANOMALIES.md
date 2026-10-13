@@ -432,3 +432,11 @@ t, 0 stable points (certificates/n6_never_spotcheck.json). Remaining trust
 base: sympy 1.14 exact polynomial algebra, Routh-Hurwitz, Orlando; the
 never-side records are regenerable by the committed engine rather than
 self-contained.
+
+## 2026-10-14  n = 5 and n <= 4 artifacts regenerated with the committed engine
+n = 5 limit sweep (final filter): 9,218 never_positivity, 390 strict
+survivors, K5 the only limit-stable graph; 2-D certification of the 390:
+389 never + K5, 0 escalations. All 237 graphs on 2-4 nodes: only the complete
+graphs are ever stable. Identical verdicts to the superseded-code runs (706
+superset: 705 never + K5). The k <= 4 literature theorem is now corroborated,
+not depended on, by the committed engine.

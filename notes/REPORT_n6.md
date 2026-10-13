@@ -81,12 +81,14 @@ i.e. `q > 1`) and `N` the receiver-first non-edge matrix of the support,
 
 ## 4. n = 5: settled for all legal parameters
 
-Of 9,608 digraphs on 5 nodes, 706 admit a positive full-support fixed point
-for some `beta`; the two-parameter decomposition certifies 705 as never stable
-and only `K5` as stable (0 escalations, every cell cross-checked). With
-Theorem F this also disposes of every size-5 support inside every 6-node
-graph. This agrees with two unrefereed GitHub claims (Aug and Oct 2026) by an
-independent exact method. `certificates/region2d_n5_shard0of1_tally.json`.
+Of 9,608 digraphs on 5 nodes, 390 have a legal `beta` with all `a_i > 0`
+(final filter; an earlier common-sign filter gave a superset of 706, which
+was also certified in full); the two-parameter decomposition certifies 389 as
+never stable and only `K5` as stable (0 escalations, every cell cross-checked,
+regenerated with the committed engine). With Theorem F this also disposes of
+every size-5 support inside every 6-node graph. This agrees with two
+unrefereed GitHub claims (Aug and Oct 2026) by an independent exact method.
+`certificates/region2d_n5_shard0of1_tally.json`, `certificates/n5_summary.json`.
 
 ## 5. n = 6 full support
 
