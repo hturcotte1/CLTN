@@ -177,3 +177,28 @@ graphs and on all 2-node graphs (det K equals minus the legality polynomial
 for a one-way edge). Fixed: the curve set is made pairwise coprime by splitting
 off gcds before taking resultants; all 2- and 3-node graphs now give the
 expected verdicts; n = 4 check running.
+
+## 2026-10-13  Spectral form of the limit proved (notes/lemma_I_spectral.md, I.1-I.7)
+Proved: limit-stable beta-set is exactly (2, beta_c), beta_c = 1/(1+alpha),
+alpha = spectral abscissa of the adjacency compressed to 1^perp; positivity
+at EVERY t is "w = (A^T + gamma I)^{-1} 1 > 0" with gamma = 1 - 1/beta (plus a
+sign of det(A^T + gamma I) that condition (3) supplies); |E| >= 16 at n=6 and
+>= 22 at n=7 are necessary for limit stability; the Bendixson sufficient
+condition holds only for complete graphs (useless), and tournaments have every
+compressed eigenvalue at real part exactly -1/2.
+New Lemma I.7 (not in the literature as far as we know): every root of
+gcd(chi_A, chi_{A+J}) yields an eigenvalue 1 - beta - beta*mu of K at EVERY
+(beta, t); if one has Re mu >= -1/2, condition (3) fails at every legal
+parameter. Graph patterns: two non-adjacent nodes with the same in-neighbours
+(or the same out-neighbours); a module that every outside node treats
+uniformly and that induces a directed 3-cycle. Kills 896 of the 1,433
+domination-free n=5 graphs and 211 of 400 in a 3,000-graph n=6 sample
+(exploration counts). NOT used as a production prune: the two-parameter CAD
+is complete without it; kept as a structural lead for Stage 5.
+Open: alpha(A - tau J) is provably NOT monotone in tau (3-node example), so
+"the stable set in t at fixed beta is an interval" is not established; the
+CAD handles finite t exactly, so no result depends on it.
+At n=5, 738 limit-mode verdicts are 'undecided' in the prover's exploration
+(167 with alpha = -1/2 exactly, incl. all 12 tournaments): these graphs are
+limit-boundary cases; our fastregion limit sweep never sampled a boundary
+(it samples inside cells), and the 2D CAD decided all of them 'never'.

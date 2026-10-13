@@ -774,16 +774,17 @@ non-adjacent twins and no 3-cycle module (I.7 -- and these are fatal at *every* 
 ## Appendix: sanity checks (tests, not proofs) and exploration
 
 Scratch scripts are in `/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/proverI/v2/`
-(session-specific; copy into the repo if they are to be kept). All `s_*` checks use exact rationals except `s_I2.py`
+(session-specific; copy into the repo if they are to be kept). In the tables `X_perp` means `X|perp` (a literal `|`
+would break the table). All `s_*` checks use exact rationals except `s_I2.py`
 (mpmath, 60 digits). `x_*` files are explorations, labelled as such; nothing above depends on them.
 
 | script | what it checks | result |
 |---|---|---|
 | `s_I1.py` | I.1 symbolically (generic `X`, `m = 2, 3`, three unit vectors `u`); I.1a and Cor. I.1.1 exactly for `m = 4, 5` | 26/26 pass |
-| `s_I2.py` | I.2: bounded eigenvalues of `C + tJ` vs `spec(C|perp)`, and `lambda* - m t - kappa`, 60 random graphs, `t = 1e6, 1e10` | max errors `4.9e-4 / 7.3e-6` at `1e6`, `4.9e-6 / 7.3e-10` at `1e10` (the `t^(-1/2)` rate of the first reflects a defective eigenvalue of `C|perp` in some sample; no rate is claimed in I.2) |
-| `s_I3.py` | I.3(a) and (g) identities exactly; limit verdict (`chi_(A|perp)(z - gamma)` Hurwitz) vs exact Hurwitz of `det(mu I + K)` at `t = 1e9` | 250 cases; 249 agree, 0 disagree, 1 limit-boundary skipped; 84 limit-stable |
+| `s_I2.py` | I.2: bounded eigenvalues of `C + tJ` vs `spec(C_perp)`, and `lambda* - m t - kappa`, 60 random graphs, `t = 1e6, 1e10` | max errors `4.9e-4 / 7.3e-6` at `1e6`, `4.9e-6 / 7.3e-10` at `1e10` (the `t^(-1/2)` rate of the first reflects a defective eigenvalue of `C_perp` in some sample; no rate is claimed in I.2) |
+| `s_I3.py` | I.3(a) and (g) identities exactly; limit verdict (`chi_(A_perp)(z - gamma)` Hurwitz) vs exact Hurwitz of `det(mu I + K)` at `t = 1e9` | 250 cases; 249 agree, 0 disagree, 1 limit-boundary skipped; 84 limit-stable |
 | `s_I4.py` | I.4(I.4.0), (b1), (c) P1<=>P2<=>P3<=>P3' against `ctln.analyze_support`, all formulas, (e), (f) | 600 cases pass; 326 positive; 34 cases with `w > 0`, `a < 0`, each with `det K < 0` and `ctln` stable = False; 652 off-support values exact |
-| `s_I4_geneson.py` | Geneson's graph: `chi_(A|perp)`, `alpha`, `beta_c`, `w(29/54)`, pairs, `spec sym(A|perp)` | below |
+| `s_I4_geneson.py` | Geneson's graph: `chi_(A_perp)`, `alpha`, `beta_c`, `w(29/54)`, pairs, `spec sym(A_perp)` | below |
 | `s_I7.py` | I.7(a) symbolically in `beta, t` (`m <= 4`); (b) at random rational `(beta, t)` for every root of `h`; (f) vs `ctln` | 300 graphs (103 with planted twins); 193 symbolic identities; `h` nontrivial in 255; 113 killed graphs, 452 legal points, never stable |
 | `x_I7_prune.py` | EXPLORATION: prune counts, full support | see below |
 | `x_half.py`, `x_monotone.py`, `x_monotone_exact.py` | EXPLORATION: §7 boundary counts; non-monotonicity of `phi` | see §7 (I.6.1) and §10 |
