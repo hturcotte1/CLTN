@@ -1,0 +1,28 @@
+{
+ "n": 5,
+ "limit": {
+  "graphs": 9608,
+  "never_positivity": 8902,
+  "positivity_possible": 706,
+  "limit_stable": 1,
+  "limit_stable_noncomplete": 0,
+  "escalate": 0,
+  "domination_free": 1434,
+  "dominated_positivity_possible": 0
+ },
+ "two_d": {
+  "graphs": 706,
+  "never": 705,
+  "stable_somewhere": 1,
+  "stable_noncomplete": 0,
+  "escalate": 0,
+  "errors": 0
+ },
+ "slices": {},
+ "consistency": {
+  "violations": [],
+  "survivors_without_2d": [],
+  "n_survivors_without_2d": 0
+ },
+ "hits": []
+}
