@@ -202,3 +202,22 @@ At n=5, 738 limit-mode verdicts are 'undecided' in the prover's exploration
 (167 with alpha = -1/2 exactly, incl. all 12 tournaments): these graphs are
 limit-boundary cases; our fastregion limit sweep never sampled a boundary
 (it samples inside cells), and the 2D CAD decided all of them 'never'.
+
+## 2026-10-13  RUN STOPPED: second stable non-clique full support at n = 6 (new graph)
+The limit-mode sweep (all 1,540,944 digraphs on 6 nodes, three shards) produced
+two hits. Hit 1 (idx 1000255, key 1002304259) is Geneson's graph, as expected.
+Hit 2 (idx 1387528, key 1066791683) is a NEW graph, not isomorphic to Geneson's:
+    0110 00 / 000011 / 000111 / 110010 / 100101 / 111110   (rows = who i sends to)
+18 edges, 4 bidirected pairs, 10 one-way edges, one mutually non-adjacent pair
+{1,2}, trivial automorphism group, domination-free, no target (full support).
+Limit certificate (eps -> 0): stable iff 1 < q < q_c, q_c the root of
+q^5 + 2q^4 + q^3 - 2q^2 - 2q - 1 in (1, 13/12)  (DEGREE 5; Geneson's is degree 6).
+Compressed-adjacency charpoly 6 lam^5 + 18 lam^4 + 30 lam^3 + 29 lam^2 + 16 lam + 4.
+Pointwise exact witnesses (ctln.analyze_support, beta = 53/26): t = 100, 1000,
+10^4, 10^5 (eps = 1/101 ... 1/100001, delta = (27/26) eps) all legal, positive,
+all Hurwitz minors strictly positive, agrees = False. E.g. eps = 1/101,
+delta = 27/2626, q = 1350/1313.
+Per CLAUDE.md §3 the run is STOPPED here pending human hand-verification:
+certificates/COUNTEREXAMPLE_CANDIDATE_n6_idx1387528.json. The sweep had
+processed about 1.45M of 1.54M graphs (shard files intact, resumable with
+run_region_sweep.py --resume). Nothing has been built on the candidate.

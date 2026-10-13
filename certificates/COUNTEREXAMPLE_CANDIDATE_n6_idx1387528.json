@@ -1,0 +1,503 @@
+{
+ "status": "CLAIMED COUNTEREXAMPLE -- AWAITING HUMAN HAND-VERIFICATION (CLAUDE.md section 3). Nothing has been built on it.",
+ "n": 6,
+ "idx": 1387528,
+ "canonical_key": 1066791683,
+ "A_ours": [
+  [
+   0,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   1,
+   1
+  ],
+  [
+   1,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   1,
+   0,
+   0,
+   1,
+   0,
+   1
+  ],
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   0
+  ]
+ ],
+ "support": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "why_not_target_free_clique": {
+  "clique": false,
+  "targets": []
+ },
+ "features": {
+  "edges": 18,
+  "nonedges": [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ]
+  ],
+  "mutually_nonadjacent_pairs": [
+   [
+    1,
+    2
+   ]
+  ],
+  "bidirected_pairs": 4,
+  "oneway_edges": 10,
+  "indeg": [
+   3,
+   3,
+   2,
+   3,
+   4,
+   3
+  ],
+  "outdeg": [
+   2,
+   2,
+   3,
+   3,
+   3,
+   5
+  ],
+  "automorphisms": 1,
+  "domination_free": true,
+  "isomorphic_to_geneson": false,
+  "compressed_charpoly_hi_to_lo": [
+   6,
+   18,
+   30,
+   29,
+   16,
+   4
+  ]
+ },
+ "limit_certificate": {
+  "sigma": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "t": null,
+  "eps": "0 (limit)",
+  "beta_min": "2",
+  "critical": [
+   {
+    "interval": [
+     "2",
+     "25/12"
+    ],
+    "minpoly_hi_to_lo": [
+     1,
+     -3,
+     3,
+     -3,
+     2,
+     -1
+    ],
+    "vanishing": [
+     "a5"
+    ]
+   },
+   {
+    "interval": [
+     "19/9",
+     "17/8"
+    ],
+    "minpoly_hi_to_lo": [
+     327,
+     -4763,
+     32352,
+     -134928,
+     382992,
+     -775872,
+     1142784,
+     -1218816,
+     912384,
+     -442368,
+     110592
+    ],
+    "vanishing": [
+     "Delta"
+    ]
+   },
+   {
+    "interval": [
+     "30/13",
+     "7/3"
+    ],
+    "minpoly_hi_to_lo": [
+     1,
+     -3,
+     2,
+     -1
+    ],
+    "vanishing": [
+     "a1"
+    ]
+   },
+   {
+    "interval": [
+     "5/2",
+     "8/3"
+    ],
+    "minpoly_hi_to_lo": [
+     327,
+     -4763,
+     32352,
+     -134928,
+     382992,
+     -775872,
+     1142784,
+     -1218816,
+     912384,
+     -442368,
+     110592
+    ],
+    "vanishing": [
+     "Delta"
+    ]
+   },
+   {
+    "interval": [
+     "7/2",
+     "4"
+    ],
+    "minpoly_hi_to_lo": [
+     1,
+     -6,
+     13,
+     -18,
+     12,
+     -6
+    ],
+    "vanishing": [
+     "D"
+    ]
+   }
+  ],
+  "cells": [
+   {
+    "lo": -1,
+    "hi": 0,
+    "sample_beta": "53/26",
+    "sample_q": "27/26",
+    "positive": true,
+    "off_ok": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive"
+   },
+   {
+    "lo": 0,
+    "hi": 1,
+    "sample_beta": "151/72",
+    "sample_q": "79/72",
+    "positive": false,
+    "off_ok": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive"
+   },
+   {
+    "lo": 1,
+    "hi": 2,
+    "sample_beta": "461/208",
+    "sample_q": "253/208",
+    "positive": false,
+    "off_ok": true,
+    "stable": false,
+    "detail": "Hurwitz minor 2 negative"
+   },
+   {
+    "lo": 2,
+    "hi": 3,
+    "sample_beta": "29/12",
+    "sample_q": "17/12",
+    "positive": false,
+    "off_ok": true,
+    "stable": false,
+    "detail": "Hurwitz minor 2 negative"
+   },
+   {
+    "lo": 3,
+    "hi": 4,
+    "sample_beta": "37/12",
+    "sample_q": "25/12",
+    "positive": false,
+    "off_ok": true,
+    "stable": false,
+    "detail": "negative coefficient"
+   },
+   {
+    "lo": 4,
+    "hi": null,
+    "sample_beta": "5",
+    "sample_q": "4",
+    "positive": false,
+    "off_ok": true,
+    "stable": false,
+    "detail": "negative coefficient"
+   }
+  ],
+  "Delta_degree": 10,
+  "escalated_cells": false,
+  "verdict": "stable_somewhere",
+  "stable_intervals": [
+   {
+    "lo": {
+     "kind": "beta_min",
+     "beta": "2",
+     "q": "1"
+    },
+    "hi": {
+     "kind": "root",
+     "index": 0,
+     "beta_interval": [
+      "2",
+      "25/12"
+     ],
+     "beta_minpoly_hi_to_lo": [
+      1,
+      -3,
+      3,
+      -3,
+      2,
+      -1
+     ],
+     "vanishing": [
+      "a5"
+     ],
+     "q_interval": [
+      "1",
+      "13/12"
+     ],
+     "q_minpoly_hi_to_lo": [
+      1,
+      2,
+      1,
+      -2,
+      -2,
+      -1
+     ]
+    }
+   }
+  ]
+ },
+ "stable_q_limit": [
+  [
+   "1",
+   "root of [1, 2, 1, -2, -2, -1] in (1, 13/12)"
+  ]
+ ],
+ "pointwise_witnesses_ctln_analyze_support": [
+  {
+   "beta": "53/26",
+   "t": "100",
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313",
+   "legal": true,
+   "is_fixed_point": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "target_free": false,
+   "agrees_with_conjecture": false,
+   "x": [
+    "589066946/1594507425",
+    "220463204/3507916335",
+    "192073518/835218175",
+    "497755674/5846527225",
+    "534327976/2505654525",
+    "696328441/17539581675"
+   ],
+   "charpoly": [
+    "1",
+    "6",
+    "381731/6895876",
+    "16399423/4527142594",
+    "1275024917/47553105807376",
+    "47686810601/124874455850169376",
+    "17539581675/12612320040867106976"
+   ]
+  },
+  {
+   "beta": "53/26",
+   "t": "1000",
+   "eps": "1/1001",
+   "delta": "27/26026",
+   "q": "13500/13013",
+   "legal": true,
+   "is_fixed_point": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "target_free": false,
+   "agrees_with_conjecture": false,
+   "x": [
+    "64219961806/173885510775",
+    "2184986804/34777102155",
+    "13325338026/57961836925",
+    "4933202274/57961836925",
+    "37069664632/173885510775",
+    "6901235341/173885510775"
+   ],
+   "charpoly": [
+    "1",
+    "6",
+    "3751331/677352676",
+    "162520723/4407195186394",
+    "12586093517/458806647684360976",
+    "474449131001/11940901812633178761376",
+    "173885510775/11952842714445811940137376"
+   ]
+  },
+  {
+   "beta": "53/26",
+   "t": "10000",
+   "eps": "1/10001",
+   "delta": "27/260026",
+   "q": "135000/130013",
+   "legal": true,
+   "is_fixed_point": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "target_free": false,
+   "agrees_with_conjecture": false,
+   "x": [
+    "58329292346/157940436525",
+    "21830222804/347468960355",
+    "133133572026/579114933925",
+    "49287668274/579114933925",
+    "370363352632/1737344801775",
+    "68950304341/1737344801775"
+   ],
+   "charpoly": [
+    "1",
+    "6",
+    "37447331/67613520676",
+    "1623733723/4395318331824394",
+    "917494741/33369256775210799248",
+    "4742072335001/1188731787625641970080681376",
+    "1737344801775/11888506608044045342776894441376"
+   ]
+  },
+  {
+   "beta": "53/26",
+   "t": "100000",
+   "eps": "1/100001",
+   "delta": "27/2600026",
+   "q": "1350000/1300013",
+   "legal": true,
+   "is_fixed_point": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "target_free": false,
+   "agrees_with_conjecture": false,
+   "x": [
+    "6415644755806/17371937711775",
+    "218282582804/3474387542355",
+    "1331215912026/5790645903925",
+    "492832328274/5790645903925",
+    "3703300232632/17371937711775",
+    "689440994341/17371937711775"
+   ],
+   "charpoly": [
+    "1",
+    "6",
+    "374407331/6760135200676",
+    "16235863723/4394131821318204394",
+    "1256803639517/45699427931418742790856976",
+    "47418304375001/118819700806814948143540699881376",
+    "17371937711775/11882088900382301629302213528837481376"
+   ]
+  }
+ ],
+ "how_to_rerun": "fastregion.region(A, range(6), fastregion.INF) reproduces limit_certificate; ctln.analyze_support(A, range(6), eps, delta) with each witness's eps, delta reproduces that witness",
+ "isomorphic_to_geneson": false
+}
