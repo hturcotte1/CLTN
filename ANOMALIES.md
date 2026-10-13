@@ -235,3 +235,29 @@ non-clique. Certificate: certificates/COUNTEREXAMPLE_CANDIDATE_n6_idx1424629.jso
 Lead for Stage 5: counterexamples may come in cospectral families (a
 switching-type operation on the nonedge set that preserves A|perp's spectrum).
 Hit 2 (idx 1387528, 18 edges, degree-5 critical value) is NOT cospectral with it.
+
+## 2026-10-13  Two-parameter certification was slow on dense survivors; a wrong Lienard-Chipart shortcut was caught
+Profiling: on an 18-edge survivor region2d took 96 s, 94 s of which were my
+Sturm-sequence replay in Python Fractions on degree-100 projection polynomials
+(sympy's own Sturm counter is equally slow). Replaced by a Descartes-bisection
+counter on the squarefree part (integer arithmetic): same graph now ~2-4 s.
+While rewriting I tried to drop Delta_5 in favour of the even Hurwitz minors
+(Delta_2, Delta_4) via Lienard-Chipart. WRONG: the halved minor sets always
+include the top minor (Delta_6 = a_6 Delta_5 for degree 6), and the Geneson
+graph immediately showed the discrepancy (a stable cell disappeared because the
+limit boundary beta_c is a root of lc_t(Delta_5), not of lc_t(Delta_4)).
+Reverted to the minimal complete set {a_i, o_k, D, Delta_{m-1}, L} of Lemma B.
+Lesson: every change to the boundary set must be checked against the Geneson
+cells before any sweep. v2 also restricts the decomposition to the positivity
+cells (everything outside is 'never' by Lemma A.2) and isolates jointly.
+
+## 2026-10-13  Candidate idx 1387528 independently verified (workflow, 7 agents)
+Verdict VERIFIED by three from-scratch exact re-derivations (Routh array,
+Lyapunov/Sylvester, Fraction-only Hurwitz), two skeptics (conventions against
+both papers' verbatim definitions; margins, exact zeros, Geneson nondegeneracy:
+63 + 192 determinants nonzero) and a context agent (not isomorphic to Geneson's
+graph or its reverse; not in the paper or the ipitchford repo). Stability
+margin at P1 (eps = 1/101): max Re(lambda) < -25914987/68719476736, i.e. about
+-3.8e-4 = 3.8% of eps, structural not coincidental. Transposing the adjacency
+HIDES the example (x gets three negative entries), so no convention error can
+manufacture it. Full report: notes/candidate_1387528_verification_workflow.json.

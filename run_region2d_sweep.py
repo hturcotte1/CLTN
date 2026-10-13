@@ -27,6 +27,7 @@ def main():
     ap.add_argument("--shard", default="0/1")
     ap.add_argument("--out", default="certificates")
     ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--resume", action="store_true", help="keep valid records of an interrupted run and skip their indices")
     args = ap.parse_args()
     k, K = map(int, args.shard.split("/"))
     n = args.n
@@ -43,8 +44,29 @@ def main():
     base = os.path.join(args.out, f"region2d_n{n}_shard{k}of{K}")
     tally = {"graphs": 0, "never": 0, "stable_somewhere": 0, "escalate": 0, "complete": 0, "errors": 0}
     t0 = time.time()
-    with open(base + ".jsonl", "w") as fh, open(base + "_HITS.jsonl", "w") as hits:
+    done = set()
+    mode = "w"
+    if args.resume and os.path.exists(base + ".jsonl"):
+        good = []
+        for line in open(base + ".jsonl"):
+            try:
+                r = json.loads(line)
+            except Exception:
+                break
+            good.append(line if line.endswith("\n") else line + "\n")
+            done.add(r["idx"])
+            tally["graphs"] += 1
+            tally["complete"] += bool(r.get("complete"))
+            tally[r["verdict"] if r["verdict"] in tally else "errors"] += 1
+        with open(base + ".jsonl", "w") as fh:
+            fh.writelines(good)
+        mode = "a"
+        tally["resumed_records"] = len(good)
+        print(f"resuming: {len(good)} records kept", flush=True)
+    with open(base + ".jsonl", mode) as fh, open(base + "_HITS.jsonl", mode) as hits:
         for idx, key in surv:
+            if idx in done:
+                continue
             A = from_key(key_from_int(key, n), n)
             complete = is_complete_bidirected(A)
             tally["graphs"] += 1

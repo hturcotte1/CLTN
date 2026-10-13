@@ -1,5 +1,5 @@
 {
- "status": "CLAIMED COUNTEREXAMPLE -- AWAITING HUMAN HAND-VERIFICATION (CLAUDE.md section 3). Nothing has been built on it.",
+ "status": "CLAIMED COUNTEREXAMPLE. Independently VERIFIED by an adversarial 7-agent workflow (notes/candidate_1387528_verification_workflow.json): exact Hurwitz minors, exact Routh table, exact Lyapunov solve with Sylvester minors, Lienard-Chipart, certified root isolation + Sturm count of a resultant; legality and Geneson nondegeneracy checked; positive/negative controls pass; graph not found in Geneson's paper or the ipitchford repo. Human hand-verification still requested per CLAUDE.md section 3. Known windows: eps = 1/101 stable for 1 < q <= ~1.0723 (positivity ends first), eps = 1/1001 for 1 < q <= ~1.0819.",
  "n": 6,
  "idx": 1387528,
  "canonical_key": 1066791683,
