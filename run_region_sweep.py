@@ -34,6 +34,7 @@ def main():
     ap.add_argument("--crosscheck-every", type=int, default=50,
                     help="run ctln.analyze_support at every sample point for 1 in N graphs (slice mode)")
     ap.add_argument("--stop-on-hit", action="store_true")
+    ap.add_argument("--only", default=None, help="file with one graph index per line; process only these")
     args = ap.parse_args()
     k, K = map(int, args.shard.split("/"))
     if args.mode == "slice":
@@ -51,8 +52,14 @@ def main():
              "stable_somewhere": 0, "escalate": 0, "anomaly": 0, "crosschecked": 0,
              "domfree": 0, "domfree_positivity_possible": 0, "dominated_positivity_possible": 0}
     t0 = time.time()
+    if args.only:
+        indices = [int(l) for l in open(args.only) if l.strip()]
+        indices = [i for i in indices if i % K == k]
+        base += "_only"
+    else:
+        indices = range(k, len(keys), K)
     with open(base + ".jsonl", "w") as fh, open(base + "_HITS.jsonl", "w") as hits:
-        for idx in range(k, len(keys), K):
+        for idx in indices:
             if args.limit and tally["graphs"] >= args.limit:
                 break
             v = keys[idx]

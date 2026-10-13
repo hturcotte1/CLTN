@@ -76,3 +76,24 @@ with rational endpoints). Resolved; the 1,784 cases that did run agreed.
 stability stage, 0 stable, 0 escalations. Every one of the 116 is domination-
 free; every dominated graph failed positivity -- consistent with Lemma D
 (Curto Cor. 3.6). 13.3% of the 1,540,944 graphs are domination-free.
+
+## 2026-10-13  n=5 full support: no counterexample in the limit or at eps = 1/100, 1/10, 1/4
+run_region_sweep over all 9,608 digraphs on 5 nodes: limit mode and the three
+slices each give exactly one stable_somewhere graph, the complete graph K5;
+8,902 (8,916 at eps=1/4) die at positivity, 705 (691) reach the stability stage
+and are never stable; 0 escalations; 960 analyze_support cross-checks per
+slice all agree. Consistent with the two unrefereed GitHub claims that n <= 5
+is clean. The two-parameter CAD on the 706 survivors is running; if all are
+'never', n=5 full support is settled for ALL legal parameters (modulo the
+lemmas in notes/lemmas.md), which by the reduction lemma (notes/lemma_F_
+reduction.md) also settles every size-5 support inside n=6 graphs.
+
+## 2026-10-13  Delta_5(beta, t) factors as (linear in t) x (quartic in t) for Geneson's graph
+region2d on the Geneson graph: Delta_5 has two irreducible factors over Z with
+t-degrees 1 and 4 (projection names lc_Delta_f0, lc_Delta_f1, disc_Delta_f1).
+The 2-D stability region is {2 < beta < beta_c, t > max(1/(beta-2), T(beta))}
+with beta_c the sextic root and T the quartic-factor curve; for beta below a
+degree-14 algebraic number in (17/8, 15/7) the graph is stable at EVERY legal
+t. Matches the structure claimed by github.com/ipitchford/ctln-six-is-minimal
+(C6/C7). Whether the (1)x(4) factorisation is general is not yet known --
+the 2D sweep records the t-degrees of the factors; check the distribution.
