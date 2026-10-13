@@ -2,7 +2,7 @@
 Limit sweep: {'graphs': 1540944, 'never_positivity': 1506873, 'positivity_possible': 34071, 'limit_stable': 4, 'limit_stable_noncomplete': 3, 'escalate': 0, 'domination_free': 204378, 'dominated_positivity_possible': 0}
 2-D certification: {'graphs': 34071, 'never': 34067, 'stable_somewhere': 4, 'stable_noncomplete': 3, 'escalate': 0, 'errors': 0}
 Slices: {'1-1000': {'graphs': 34071, 'stable_somewhere': 4, 'escalate': 0}, '1-100': {'graphs': 34071, 'stable_somewhere': 4, 'escalate': 0}, '1-10': {'graphs': 34071, 'stable_somewhere': 3, 'escalate': 0}, '1-2': {'graphs': 34071, 'stable_somewhere': 1, 'escalate': 0}, '1-4': {'graphs': 34071, 'stable_somewhere': 1, 'escalate': 0}}
-Consistency: {'violations': [], 'survivors_without_2d': [], 'n_survivors_without_2d': 0}
+Consistency: {'violations': [], 'survivors_without_2d': [], 'n_survivors_without_2d': 0, 'stable_records_with_undecided_cells': []}
 
 ## Stable non-complete full supports: 3
 

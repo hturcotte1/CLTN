@@ -388,3 +388,11 @@ cell; the two-parameter form of Lemma B (constancy of the verdict on
 connected components of {D != 0, Delta != 0}) plus openness (Lemma O) is what
 the CAD uses and should be written out in notes/lemmas.md. (5) The replay is
 independent of the VAS isolator but uses sympy's squarefree part.
+
+## 2026-10-13  Pre-restart 2-D records re-certified with the final engine
+The 298 records (79 + 132 + 87) that the first-generation region2d wrote
+before the container restart and that --resume had kept were recomputed with
+the final engine in place: 0 verdict changes. certificates/region2d_n6_shard*
+are now uniformly produced by the committed engine; n6_summary regenerated
+(34,067 never / 4 stable / 0 escalations / 0 errors; no stable record has an
+undecided cell).

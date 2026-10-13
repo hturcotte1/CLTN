@@ -48,7 +48,8 @@
  "consistency": {
   "violations": [],
   "survivors_without_2d": [],
-  "n_survivors_without_2d": 0
+  "n_survivors_without_2d": 0,
+  "stable_records_with_undecided_cells": []
  },
  "hits": [
   {
