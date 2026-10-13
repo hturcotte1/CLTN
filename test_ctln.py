@@ -211,13 +211,54 @@ check("no violations on symmetric graphs (proven class)", not symmetric_bad,
       f"q={q_of(eps_s, delta_s)}")
 
 # ---------------------------------------------------------------------------
+print("\n=== 8. STAGE 0: Geneson's six-node counterexample (arXiv:2607.21396, Thm 3.2) ===")
+# The paper gives the graph only as a NONEDGE matrix N, receiver-first:
+#     N[a][b] = 1  iff  there is NO edge  b -> a   (a != b), N[a][a] = 0.
+# Our convention is A[i][j] = 1 iff i -> j, so  A[b][a] = 1 - N[a][b]  (a != b):
+# complement AND transpose. The paper's W is identical to ours (W_ij = -1+eps iff j->i).
+GENESON_N = [[0,0,0,0,1,1],
+             [0,0,0,0,0,1],
+             [0,0,0,0,0,1],
+             [1,1,0,0,1,0],
+             [0,0,1,1,0,0],
+             [0,0,0,1,1,0]]
+GENESON_A = [[0]*6 for _ in range(6)]
+for _a in range(6):
+    for _b in range(6):
+        if _a != _b:
+            GENESON_A[_b][_a] = 1 - GENESON_N[_a][_b]
+# Paper's printed certificate (eq. 20): with C = I + (54/25) N,  C v = 179298949 * 1.
+_v = [21597025, 34234375, 34234375, 46065775, 5850625, 67159525]
+_Cv = [sum(((F(1) if i == j else F(0)) + F(54, 25) * GENESON_N[i][j]) * _v[j]
+           for j in range(6)) for i in range(6)]
+check("paper's printed certificate C v = 179298949 * 1 reproduces exactly",
+      all(c == 179298949 for c in _Cv))
+# Theorem 3.2: delta = 29 eps / 25, eps small enough -> full support is a stable
+# fixed point and is not a clique. The paper's eps0 is existential; eps = 1/100 works.
+_eps = F(1, 100)
+_delta = F(29, 25) * _eps
+assert legal(_eps, _delta)
+_rec = analyze_support(GENESON_A, list(range(6)), _eps, _delta)
+check("Geneson graph: full support is a stable fixed point at eps=1/100, delta=29/2500",
+      _rec["stable_fixed_point"] is True and _rec["stable"] is True,
+      f"q={_rec['q']}, {_rec['stability_detail']}")
+check("Geneson graph: full support is NOT a target-free clique (conjecture violated)",
+      (not _rec["target_free"]) and _rec["agrees"] is False)
+# x* must be proportional to the paper's v (x* = (theta/eps) K^-1 1 and K^-1 1 || C^-1 1).
+_x = [F(s) for s in _rec["x"]]
+check("fixed point is proportional to the paper's vector v",
+      all(_x[i] * _v[0] == _x[0] * _v[i] for i in range(6)))
+# Sanity on the eps-dependence: at eps = 1/10 the same graph is a positive fixed
+# point but NOT stable (the counterexample needs small eps).
+_rec2 = analyze_support(GENESON_A, list(range(6)), F(1, 10), F(29, 250))
+check("Geneson graph is a positive but unstable fixed point at eps=1/10",
+      _rec2["is_fixed_point"] and _rec2["stable"] is False)
+
+# ---------------------------------------------------------------------------
 print("\n" + "=" * 70)
 print(f"{len(PASS)} passed, {len(FAIL)} failed")
 if FAIL:
     print("FAILED: " + ", ".join(FAIL))
     raise SystemExit(1)
 print("Verifier is consistent with every independently known fact tested.")
-print("NOTE: the sharpest remaining test is reproducing Geneson's 6-node")
-print("counterexample from arXiv:2607.21396. That paper's explicit graph is NOT")
-print("encoded here -- pulling it and confirming the verifier flags it is the")
-print("first task for the run, before any new search begins.")
+print("Stage 0 (Geneson arXiv:2607.21396 counterexample) is encoded as test block 8.")

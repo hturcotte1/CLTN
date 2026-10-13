@@ -1,0 +1,292 @@
+{
+ "stage": 0,
+ "source": "Geneson, arXiv:2607.21396v1 (23 Jul 2026), Theorem 3.2",
+ "paper_convention": "nonedge matrix N, receiver-first: N[a][b]=1 iff b -/-> a (a!=b); W_ij = -1+eps iff j->i (same W as ours)",
+ "conversion": "A[b][a] = 1 - N[a][b] for a != b (complement AND transpose)",
+ "N_paper": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  [
+   1,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   1,
+   0
+  ]
+ ],
+ "A_ours": [
+  [
+   0,
+   1,
+   1,
+   0,
+   1,
+   1
+  ],
+  [
+   1,
+   0,
+   1,
+   0,
+   1,
+   1
+  ],
+  [
+   1,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   1,
+   0
+  ]
+ ],
+ "support": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "paper_parameters": "delta = 29 eps / 25, eps < eps0 (existential), theta > 0 arbitrary; q = (29/25)(1-eps)",
+ "verifier": "ctln.analyze_support, exact rationals, Hurwitz determinants",
+ "records_by_eps": {
+  "1/10": {
+   "sigma": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "eps": "1/10",
+   "delta": "29/250",
+   "q": "261/250",
+   "theta": "1",
+   "clique": false,
+   "targets": [],
+   "target_free": false,
+   "is_fixed_point": true,
+   "x": [
+    "215970250/2061574249",
+    "48906250/294510607",
+    "48906250/294510607",
+    "65808250/294510607",
+    "2543750/89633663",
+    "671595250/2061574249"
+   ],
+   "positive": true,
+   "off_support_ok": true,
+   "stable": false,
+   "stability_detail": "Hurwitz minor 3 negative",
+   "charpoly": [
+    "1",
+    "6",
+    "41559/62500",
+    "777607/1953125",
+    "159430407/3906250000",
+    "558121731/244140625000",
+    "2061574249/9765625000000"
+   ],
+   "stable_fixed_point": false,
+   "predicted": false,
+   "BOUNDARY": false,
+   "agrees": true
+  },
+  "1/50": {
+   "sigma": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "eps": "1/50",
+   "delta": "29/1250",
+   "q": "1421/1250",
+   "theta": "1",
+   "clique": false,
+   "targets": [],
+   "target_free": false,
+   "is_fixed_point": true,
+   "x": [
+    "1079851250/10427242249",
+    "5468750/33313873",
+    "5468750/33313873",
+    "7358750/33313873",
+    "292531250/10427242249",
+    "3357976250/10427242249"
+   ],
+   "positive": true,
+   "off_support_ok": true,
+   "stable": false,
+   "stability_detail": "Hurwitz minor 5 negative",
+   "charpoly": [
+    "1",
+    "6",
+    "197559/1562500",
+    "3872107/244140625",
+    "793990407/2441406250000",
+    "2770851231/762939453125000",
+    "10427242249/152587890625000000"
+   ],
+   "stable_fixed_point": false,
+   "predicted": false,
+   "BOUNDARY": false,
+   "agrees": true
+  },
+  "1/100": {
+   "sigma": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "eps": "1/100",
+   "delta": "29/2500",
+   "q": "2871/2500",
+   "theta": "1",
+   "clique": false,
+   "targets": [],
+   "target_free": false,
+   "is_fixed_point": true,
+   "x": [
+    "2159702500/20884327249",
+    "3423437500/20884327249",
+    "3423437500/20884327249",
+    "4606577500/20884327249",
+    "15812500/564441277",
+    "6715952500/20884327249"
+   ],
+   "positive": true,
+   "off_support_ok": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "charpoly": [
+    "1",
+    "6",
+    "392559/6250000",
+    "967529/244140625",
+    "1587190407/39062500000000",
+    "2768381553/12207031250000000",
+    "20884327249/9765625000000000000"
+   ],
+   "stable_fixed_point": true,
+   "predicted": false,
+   "BOUNDARY": false,
+   "agrees": false
+  },
+  "1/1000": {
+   "sigma": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "eps": "1/1000",
+   "delta": "29/25000",
+   "q": "28971/25000",
+   "theta": "1",
+   "clique": false,
+   "targets": [],
+   "target_free": false,
+   "is_fixed_point": true,
+   "x": [
+    "21597025000/209111857249",
+    "34234375000/209111857249",
+    "34234375000/209111857249",
+    "46065775000/209111857249",
+    "5850625000/209111857249",
+    "67159525000/209111857249"
+   ],
+   "positive": true,
+   "off_support_ok": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "charpoly": [
+    "1",
+    "6",
+    "3902559/625000000",
+    "38683241/976562500000",
+    "15864790407/390625000000000000",
+    "6915397107/305175781250000000000",
+    "209111857249/9765625000000000000000000"
+   ],
+   "stable_fixed_point": true,
+   "predicted": false,
+   "BOUNDARY": false,
+   "agrees": false
+  }
+ },
+ "verdict": "non-clique full support is a STABLE fixed point at eps=1/100 and 1/1000 (conjecture violated); positive but unstable at eps=1/10, 1/50",
+ "test": "test_ctln.py block 8"
+}
