@@ -1,0 +1,439 @@
+{
+ "status": "CLAIMED COUNTEREXAMPLE -- AWAITING HUMAN HAND-VERIFICATION (CLAUDE.md section 3). Nothing has been built on it.",
+ "n": 6,
+ "idx": 1424629,
+ "canonical_key": 1069347459,
+ "A_ours": [
+  [
+   0,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   1
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   1,
+   1
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  [
+   1,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   0
+  ]
+ ],
+ "support": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "why_not_target_free_clique": {
+  "clique": false,
+  "targets": []
+ },
+ "features": {
+  "edges": 19,
+  "nonedges": [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    4,
+    2
+   ]
+  ],
+  "mutually_nonadjacent_pairs": [
+   [
+    1,
+    2
+   ]
+  ],
+  "bidirected_pairs": 5,
+  "oneway_edges": 9,
+  "indeg": [
+   3,
+   3,
+   2,
+   4,
+   3,
+   4
+  ],
+  "outdeg": [
+   2,
+   2,
+   3,
+   3,
+   4,
+   5
+  ],
+  "automorphisms": 1,
+  "domination_free": true,
+  "isomorphic_to_geneson": false,
+  "compressed_charpoly_hi_to_lo": [
+   6,
+   19,
+   32,
+   32,
+   17,
+   4
+  ]
+ },
+ "limit_certificate": {
+  "sigma": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "t": null,
+  "eps": "0 (limit)",
+  "beta_min": "2",
+  "critical": [
+   {
+    "interval": [
+     "665/307",
+     "13/6"
+    ],
+    "minpoly_hi_to_lo": [
+     797,
+     -6468,
+     22544,
+     -44440,
+     53280,
+     -38016,
+     13824
+    ],
+    "vanishing": [
+     "Delta"
+    ]
+   },
+   {
+    "interval": [
+     "68/31",
+     "11/5"
+    ],
+    "minpoly_hi_to_lo": [
+     797,
+     -6468,
+     22544,
+     -44440,
+     53280,
+     -38016,
+     13824
+    ],
+    "vanishing": [
+     "Delta"
+    ]
+   },
+   {
+    "interval": [
+     "9/4",
+     "7/3"
+    ],
+    "minpoly_hi_to_lo": [
+     1,
+     -3,
+     2,
+     -1
+    ],
+    "vanishing": [
+     "a1"
+    ]
+   }
+  ],
+  "cells": [
+   {
+    "lo": -1,
+    "hi": 0,
+    "sample_beta": "1279/614",
+    "sample_q": "665/614",
+    "positive": true,
+    "off_ok": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive"
+   },
+   {
+    "lo": 0,
+    "hi": 1,
+    "sample_beta": "811/372",
+    "sample_q": "439/372",
+    "positive": true,
+    "off_ok": true,
+    "stable": false,
+    "detail": "Hurwitz minor 2 negative"
+   },
+   {
+    "lo": 1,
+    "hi": 2,
+    "sample_beta": "89/40",
+    "sample_q": "49/40",
+    "positive": true,
+    "off_ok": true,
+    "stable": false,
+    "detail": "Hurwitz minor 2 negative"
+   },
+   {
+    "lo": 2,
+    "hi": null,
+    "sample_beta": "10/3",
+    "sample_q": "7/3",
+    "positive": false,
+    "off_ok": true,
+    "stable": false,
+    "detail": "negative coefficient"
+   }
+  ],
+  "Delta_degree": 10,
+  "escalated_cells": false,
+  "verdict": "stable_somewhere",
+  "stable_intervals": [
+   {
+    "lo": {
+     "kind": "beta_min",
+     "beta": "2",
+     "q": "1"
+    },
+    "hi": {
+     "kind": "root",
+     "index": 0,
+     "beta_interval": [
+      "665/307",
+      "13/6"
+     ],
+     "beta_minpoly_hi_to_lo": [
+      797,
+      -6468,
+      22544,
+      -44440,
+      53280,
+      -38016,
+      13824
+     ],
+     "vanishing": [
+      "Delta"
+     ],
+     "q_interval": [
+      "358/307",
+      "7/6"
+     ],
+     "q_minpoly_hi_to_lo": [
+      797,
+      -1686,
+      2159,
+      -3004,
+      2499,
+      -2158,
+      1521
+     ]
+    }
+   }
+  ]
+ },
+ "stable_q_limit": [
+  [
+   "1",
+   "root of [797, -1686, 2159, -3004, 2499, -2158, 1521] in (358/307, 7/6)"
+  ]
+ ],
+ "pointwise_witnesses_ctln_analyze_support": [
+  {
+   "beta": "1279/614",
+   "t": "100",
+   "eps": "1/101",
+   "delta": "665/62014",
+   "q": "33250/31007",
+   "legal": true,
+   "is_fixed_point": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "target_free": false,
+   "agrees_with_conjecture": false,
+   "x": [
+    "52023675899203514/163759147644072493",
+    "7162141416246364/163759147644072493",
+    "33663983410000650/163759147644072493",
+    "28698484006188264/163759147644072493",
+    "13779300176580610/163759147644072493",
+    "28698484006188264/163759147644072493"
+   ],
+   "charpoly": [
+    "1",
+    "6",
+    "271170499/3845736196",
+    "220825405185/59622371114686",
+    "580148318455933/14789686889224550416",
+    "196942836853871251/917167642748371269497824",
+    "163759147644072493/92633931917585498219280224"
+   ]
+  },
+  {
+   "beta": "1279/614",
+   "t": "1000",
+   "eps": "1/1001",
+   "delta": "95/87802",
+   "q": "47500/43901",
+   "legal": true,
+   "is_fixed_point": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "target_free": false,
+   "agrees_with_conjecture": false,
+   "x": [
+    "16632289867487294/52431534952097803",
+    "70983203541213964/1625377583515031893",
+    "333640073202085650/1625377583515031893",
+    "284427549407865864/1625377583515031893",
+    "136565143334229610/1625377583515031893",
+    "284427549407865864/1625377583515031893"
+   ],
+   "charpoly": [
+    "1",
+    "6",
+    "2675533099/377750368996",
+    "2188047143985/58042666322526886",
+    "117328754269117/2912149821971717511184",
+    "177371129797797041/7972959498489539466774845984",
+    "1625377583515031893/87790257037868319068657829129824"
+   ]
+  },
+  {
+   "beta": "1279/614",
+   "t": "10000",
+   "eps": "1/10001",
+   "delta": "665/6140614",
+   "q": "3325000/3070307",
+   "legal": true,
+   "is_fixed_point": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "target_free": false,
+   "agrees_with_conjecture": false,
+   "x": [
+    "5151374085821132114/16241561942224625893",
+    "709193824790889964/16241561942224625893",
+    "3333400971122935650/16241561942224625893",
+    "2841718203424641864/16241561942224625893",
+    "1364423574910719610/16241561942224625893",
+    "2841718203424641864/16241561942224625893"
+   ],
+   "charpoly": [
+    "1",
+    "6",
+    "26719159099/37707140296996",
+    "21860264531985/57886248401924448886",
+    "57438715366494733/1421828429377339591086624016",
+    "19492478336994729451/8730899559032502775780798645385824",
+    "16241561942224625893/87317726489884060260583767252503625824"
+   ]
+  },
+  {
+   "beta": "1279/614",
+   "t": "100000",
+   "eps": "1/100001",
+   "delta": "665/61400614",
+   "q": "33250000/30700307",
+   "legal": true,
+   "is_fixed_point": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "target_free": false,
+   "agrees_with_conjecture": false,
+   "x": [
+    "51509105085111392114/162403405529320565893",
+    "7091300037287649964/162403405529320565893",
+    "33331009950331435650/162403405529320565893",
+    "28414624743592401864/162403405529320565893",
+    "13643007890675619610/162403405529320565893",
+    "28414624743592401864/162403405529320565893"
+   ],
+   "charpoly": [
+    "1",
+    "6",
+    "267155419099/3770035399576996",
+    "218582438411985/57870622083940723668886",
+    "574334779439574733/14213166914063679891495732384016",
+    "17718767039016759041/79336106855272289130662849705296925984",
+    "162403405529320565893/87270590237974926038909571967173376848585824"
+   ]
+  }
+ ],
+ "how_to_rerun": "fastregion.region(A, range(n), fastregion.INF) reproduces limit_certificate; ctln.analyze_support(A, range(n), eps, delta) with each witness's eps, delta reproduces that witness",
+ "isomorphic_to_geneson": false
+}
