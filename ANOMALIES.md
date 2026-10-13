@@ -97,3 +97,14 @@ degree-14 algebraic number in (17/8, 15/7) the graph is stable at EVERY legal
 t. Matches the structure claimed by github.com/ipitchford/ctln-six-is-minimal
 (C6/C7). Whether the (1)x(4) factorisation is general is not yet known --
 the 2D sweep records the t-degrees of the factors; check the distribution.
+
+## 2026-10-13  n=5 full support settled for ALL legal parameters (two-parameter CAD)
+run_region2d_sweep on the 706 positivity survivors among the 9,608 digraphs on
+5 nodes: 705 'never', 1 'stable_somewhere' (K5), 0 escalations, 0 errors,
+239 s. Every cell verdict was cross-checked against ctln.analyze_support.
+So no 5-node non-complete graph has a positive, linearly stable full-support
+fixed point at any legal (eps, delta) -- the claim of the two unrefereed
+GitHub repos, now with an independent exact method. By the reduction lemma
+(notes/lemma_F_reduction.md, proof pending) this also disposes of every
+size-5 support inside every 6-node graph, so CLAUDE.md's Stage 4 is implied by
+Stage 2/3 at n = 5 and n = 6. Conditional on notes/lemmas.md (Lemmas A-E).
