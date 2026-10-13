@@ -1,0 +1,16 @@
+{
+ "region2d_v2_validation": {
+  "n_le_4": {
+   "graphs": 237,
+   "mismatches": 0
+  },
+  "n5_survivors_vs_v1": {
+   "graphs": 706,
+   "mismatches": 0,
+   "tally": {
+    "never": 705,
+    "stable_somewhere": 1
+   }
+  }
+ }
+}
