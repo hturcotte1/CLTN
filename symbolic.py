@@ -164,51 +164,54 @@ def q_region(A, sigma, eps_value, verbose=False):
     stab_polys = [as_poly(p) for p in cond["stability"]]
 
     # Every sign change happens at a real root of one of these polynomials.
+    # Roots are kept EXACT (radicals or CRootOf). No nsimplify: it is a
+    # numerical heuristic and produced nonsense closed forms (ANOMALIES.md
+    # 2026-10-13). Probe points are suggested numerically but then VERIFIED
+    # exactly to lie strictly inside the cell before they are used.
     crit = set()
     for p in [den_poly] + pos_polys + off_polys + stab_polys:
         if p.degree() < 1:
             continue
         for r in sp.real_roots(p):
-            rv = sp.nsimplify(r)
-            if rv.is_real and rv > 1:
-                crit.add(sp.simplify(rv))
-    crit = sorted(crit, key=lambda r: float(r))
+            if r.is_real and (r - 1).is_positive:
+                crit.add(r)
+    crit = sorted(crit, key=lambda r: r.evalf(50))
+    # distinct exact roots may compare equal only if they are the same number
+    dedup = []
+    for r in crit:
+        if not dedup or not sp.simplify(r - dedup[-1]) == 0:
+            dedup.append(r)
+    crit = dedup
 
-    # Sample strictly inside each cell between consecutive critical values.
+    def probe_between(lo, hi):
+        """A rational strictly between exact numbers lo < hi (hi may be None)."""
+        if hi is None:
+            cand = Rational(sp.floor(lo) + 2)
+            assert (cand - lo).is_positive
+            return cand
+        prec = 30
+        while True:
+            mid = (sp.N(lo, prec) + sp.N(hi, prec)) / 2
+            cand = Rational(str(mid))
+            if (cand - lo).is_positive and (hi - cand).is_positive:
+                return cand
+            prec *= 2
+            if prec > 2000:
+                raise ArithmeticError("could not separate consecutive critical values exactly")
+
     bounds = [Rational(1)] + list(crit) + [None]
     intervals = []
     for i in range(len(bounds) - 1):
         lo, hi = bounds[i], bounds[i + 1]
-        if hi is None:
-            probe = Rational(float(lo) + 10).limit_denominator(10**6) \
-                if lo != 1 else Rational(5)
-            if probe <= lo:
-                probe = lo + 1
-        else:
-            probe = Rational((sp.Rational(lo) + sp.Rational(hi)) / 2) \
-                if (lo.is_rational and hi.is_rational) \
-                else Rational(sp.nsimplify((float(lo) + float(hi)) / 2)
-                              ).limit_denominator(10**6)
-        if probe <= 1:
-            continue
+        probe = probe_between(lo, hi)
         dsign = den_poly.eval(probe)
         if dsign == 0:
-            continue
-        ok = True
-        for p in pos_polys:
-            if not (p.eval(probe) / dsign > 0):
-                ok = False
-                break
+            raise ArithmeticError("probe hit a root of the denominator -- impossible between critical values")
+        ok = all(p.eval(probe) / dsign > 0 for p in pos_polys)
         if ok:
-            for p in off_polys:
-                if not (p.eval(probe) / dsign < 0):
-                    ok = False
-                    break
+            ok = all(p.eval(probe) / dsign < 0 for p in off_polys)
         if ok:
-            for p in stab_polys:
-                if not p.eval(probe) > 0:
-                    ok = False
-                    break
+            ok = all(p.eval(probe) > 0 for p in stab_polys)
         if ok:
             intervals.append((lo, hi))
         if verbose:

@@ -59,3 +59,20 @@ A[i][j]=1 iff i->j the entry is (1+d) - (e+d) A[j][i], so "A_s" there means the
 TRANSPOSED restriction. The code (identity_check_IminusW, symbolic.py) reads
 A[sj][si] and is correct; only the prose is ambiguous. Not changing §2 (fixed
 by policy); noting here so nobody "fixes" the code to match the prose.
+
+## 2026-10-13  symbolic.q_region used a numerical heuristic (nsimplify) and float probes
+Cross-validating fastregion against symbolic.q_region on n=4 raised TypeError in
+16 of 1,800 cases: `sp.nsimplify(root)` returned garbage closed forms such as
+2**(52/963)*3**(830/963)*5**(40/963)*7**(503/963)/2 for an algebraic root, and
+the probe point for each cell was a float midpoint pushed through
+limit_denominator (a thin cell could be probed outside itself). Both violate
+§3 (no floats in a decision path). Fixed: roots kept exact (CRootOf/radicals),
+probe points suggested numerically but verified exactly (is_positive on the
+differences) before use. fastregion.py never had this issue (VAS isolation
+with rational endpoints). Resolved; the 1,784 cases that did run agreed.
+
+## 2026-10-13  n=6 limit-mode sample: 96% of graphs die at positivity, all dominated ones do
+3,000-graph sample (limit mode): 2,884 never_positivity, 116 reach the
+stability stage, 0 stable, 0 escalations. Every one of the 116 is domination-
+free; every dominated graph failed positivity -- consistent with Lemma D
+(Curto Cor. 3.6). 13.3% of the 1,540,944 graphs are domination-free.
