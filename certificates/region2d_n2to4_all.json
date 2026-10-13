@@ -1,0 +1,32 @@
+{
+ "stage": "2D certification, full support, all digraphs on n<=4 nodes (known theorem: only complete graphs)",
+ "by_n": {
+  "2": {
+   "graphs": 3,
+   "A000273": 3,
+   "verdicts": {
+    "never": 2,
+    "stable_somewhere": 1
+   },
+   "seconds": 0.2
+  },
+  "3": {
+   "graphs": 16,
+   "A000273": 16,
+   "verdicts": {
+    "never": 15,
+    "stable_somewhere": 1
+   },
+   "seconds": 0.5
+  },
+  "4": {
+   "graphs": 218,
+   "A000273": 218,
+   "verdicts": {
+    "never": 217,
+    "stable_somewhere": 1
+   },
+   "seconds": 19.1
+  }
+ }
+}
