@@ -309,8 +309,18 @@ def region2d(A, sigma, crosscheck=True, verbose=False, replay=True):
             out["beta_critical"].append({"interval": [str(a_), str(b_)], "minpoly_hi_to_lo": [int(c) for c in f],
                                          "positivity_root": any(i < npos for i in idx)})
         prev_hi = b_min if k_start == -1 else ivs[k_start][1]
+        ivs = [list(iv) for iv in ivs]
         for k in range(k_start + 1, k_end + 1):
             if k < len(ivs):
+                # an isolating interval may start exactly at the hull end (its root is
+                # strictly above it): refine it until the cell below it is nonempty
+                guard = 0
+                while ivs[k][0] <= prev_hi and ivs[k][0] != ivs[k][1]:
+                    from sympy.polys.rootisolation import dup_refine_real_root
+                    a_n, b_n = dup_refine_real_root(ivs[k][3], ivs[k][0], ivs[k][1], ZZ, steps=1)
+                    ivs[k][0], ivs[k][1] = _frac(a_n), _frac(b_n)
+                    guard += 1
+                    assert guard < 500, "could not refine interval above the hull end"
                 cell_lo, cell_hi = prev_hi, ivs[k][0]
                 assert cell_lo < cell_hi, "empty beta-cell"
                 b0 = (cell_lo + cell_hi) / 2

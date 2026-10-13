@@ -126,6 +126,10 @@ def main():
     summary["consistency"] = {"violations": bad, "survivors_without_2d": sorted(set(i for i, r in limit.items() if "cert" in r) - set(two_d))[:20],
                               "n_survivors_without_2d": len(set(i for i, r in limit.items() if "cert" in r) - set(two_d))}
 
+    # a stable record must have no undecided cell (verdict precedence favours 'stable_somewhere')
+    undecided_in_stable = [i for i, r in two_d.items() if r["verdict"] == "stable_somewhere" and
+                           any(c["stable_fp"] is None for row in r.get("cert", {}).get("cells", []) for c in row["t_cells"])]
+    summary["consistency"]["stable_records_with_undecided_cells"] = undecided_in_stable
     hit_idx = sorted(set(i for i, r in two_d.items() if r["verdict"] == "stable_somewhere" and not r["complete"]) |
                      set(i for i, r in limit.items() if r["verdict"] == "stable_somewhere" and not r["complete"]))
     for idx in hit_idx:
