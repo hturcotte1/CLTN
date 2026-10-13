@@ -108,3 +108,18 @@ GitHub repos, now with an independent exact method. By the reduction lemma
 (notes/lemma_F_reduction.md, proof pending) this also disposes of every
 size-5 support inside every 6-node graph, so CLAUDE.md's Stage 4 is implied by
 Stage 2/3 at n = 5 and n = 6. Conditional on notes/lemmas.md (Lemmas A-E).
+
+## 2026-10-13  For Geneson's graph the counterexample region reaches q -> 1+: there is no q* > 1
+Our two-parameter CAD (region2d.py) gives, for the Geneson graph, a first
+beta-cell (2, beta_1) with beta_1 in (17/8, 15/7) a degree-14 algebraic number,
+on which the full support is stable at EVERY legal t. Since q = (beta-1) t/(t+1)
+-> 1+ as t -> 1/(beta-2)+, counterexamples exist arbitrarily close to q = 1.
+Verified pointwise: eps = 1/12, delta = 11/120 (q = 121/120; the rational
+witness of github.com/ipitchford/ctln-six-is-minimal) and beta = 2001/1000,
+t = 2000 (q = 1.0009995) are both stable positive full-support fixed points.
+The literature agent confirms that repo's seed is identical to Geneson's graph
+(only the identity permutation maps one to the other), that its sextic is ours
+under u = beta - 2, and that its Theorem 5.1 region {0<u<u*, t>max(1/u,T(u))}
+has the shape of our cell decomposition. Consequence for Stage 5: the
+interesting quantity is not a lower q* but the UPPER reach of counterexamples
+(1.1664 for this graph vs Geneson's bound 4 - 1.5 eps at n = 6).
