@@ -3,3 +3,5 @@ __pycache__/
 .DS_Store
 certificates/region_n*_shard*.jsonl
 certificates/region2d_n*_shard*.jsonl
+!certificates/*_HITS.jsonl
+!certificates/*.jsonl.gz
