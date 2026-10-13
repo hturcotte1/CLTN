@@ -112,6 +112,11 @@ twin-equivalence classes.
 | idx 1424629 (new graph) | 19 | identical to Geneson's | Geneson's graph with one out-edge moved between bidirected in-twins (Lemma J.4: identical fixed points for every support and parameter); verified by a 7-agent workflow |
 | idx 1387528 (new graph) | 18 | `1 < q < root of q^5+2q^4+q^3-2q^2-2q-1 in (1, 13/12)` (~1.0723 at eps=1/101) | genuinely new, singleton equivalence class, no twins; verified by a 7-agent workflow; witness `eps = 1/101, delta = 27/2626, q = 1350/1313` |
 
+(Reading the cell data: a stable cell is a beta-interval together with the
+stable t-range on the slice at the sample beta; `t_lo = 1/(beta_sample - 2)`
+means the whole legal t-range over that beta-cell is stable. The tuples are
+sectors of the decomposition, not boxes.)
+
 Modulo bidirected twin switching there are therefore exactly two
 counterexample graphs at n = 6 with a stable non-clique full support. Both
 regions have the same shape: `{2 < beta < beta_c, t > max(1/(beta-2), T(beta))}`
@@ -143,7 +148,23 @@ the conjecture holds there for every 6-node CTLN. Every counterexample at
 n = 6 needs `eps` small: none exists at `eps = 1/4` or `1/2`; at `eps = 1/10`
 only Geneson's class survives (for `1 < q < ~1.03`).
 
-## 7. Literature status
+## 7. Soundness audit and trust base
+
+An adversarial audit workflow (CAD soundness review, independent symbolic
+re-derivation of the idx 1387528 region, spot-checks of never verdicts, lemma
+referee, completeness critic) and a prover-written two-parameter version of
+Lemma B (`notes/lemma_Bprime_2d.md`: sign-invariance on connected components
+of the complement of the boundary curves, correctness of deciding only
+full-dimensional cells via openness, and elementary delineability for the
+projection set used) found no verdict error. What the certificates still
+trust: sympy 1.14's exact polynomial algebra (Berkowitz determinant,
+factorisation, gcd, resultant, discriminant) for the projection polynomials;
+the projection identities were re-verified by independent Bareiss
+determinants on a sample of records (`notes/prover_scripts_B/`). The Descartes
+replay is independent of sympy's VAS isolator but uses sympy's squarefree
+part. Routh-Hurwitz and Orlando are cited, not re-proved.
+
+## 8. Literature status
 
 Scoop checks on 2026-10-12 and 10-13: nothing on arXiv maps the gap; two
 unrefereed repos claim n <= 5 clean and the seed's region (consistent with our

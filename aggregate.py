@@ -166,7 +166,8 @@ def main():
         L.append("```\n" + "\n".join("".join(str(v) for v in row) for row in h["A"]) + "\n```\n")
         L.append(f"- compressed adjacency charpoly (m*det(lam I - A|perp), hi->lo): {f['compressed_charpoly_hi_to_lo']}\n")
         L.append(f"- limit verdict: {h.get('limit_verdict')}  stable q (limit): {h.get('limit_stable_q')}\n")
-        L.append(f"- 2-D verdict: {h.get('two_d_verdict')}  stable cells (beta_lo, beta_hi, beta_sample, t_lo, t_hi): {h.get('two_d_stable_cells')}\n")
+        L.append(f"- 2-D verdict: {h.get('two_d_verdict')}  stable cells, each as (beta-cell lo, beta-cell hi, sample beta, t-range at the sample beta: lo, hi) -- "
+                 f"the t-range is the slice at the sample beta (t_lo = 1/(sample beta - 2) means 'every legal t'), NOT a box: {h.get('two_d_stable_cells')}\n")
         L.append(f"- slices: {h['slices']}\n")
     open(os.path.join("notes", f"n{n}_map.md"), "w").write("".join(L))
     print(json.dumps({k: v for k, v in summary.items() if k != "hits"}, indent=1))

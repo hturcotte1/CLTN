@@ -1,0 +1,352 @@
+[
+ {
+  "tag": "geneson_full",
+  "verdict": "stable_somewhere",
+  "beta_cells": 6,
+  "points": 32,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 30,
+  "lroot_checks": 30
+ },
+ {
+  "tag": "n6_idx1424629_stable_somewhere_nb6",
+  "verdict": "stable_somewhere",
+  "beta_cells": 6,
+  "points": 32,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 30,
+  "lroot_checks": 30
+ },
+ {
+  "tag": "n6_idx1387528_stable_somewhere_nb1",
+  "verdict": "stable_somewhere",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx1000255_stable_somewhere_nb6",
+  "verdict": "stable_somewhere",
+  "beta_cells": 6,
+  "points": 32,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 30,
+  "lroot_checks": 30
+ },
+ {
+  "tag": "n6_idx1540943_stable_somewhere_nb1",
+  "verdict": "stable_somewhere",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx692979_never_nb23",
+  "verdict": "never",
+  "beta_cells": 23,
+  "points": 108,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 115,
+  "lroot_checks": 115
+ },
+ {
+  "tag": "n6_idx952305_never_nb23",
+  "verdict": "never",
+  "beta_cells": 23,
+  "points": 108,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 115,
+  "lroot_checks": 115
+ },
+ {
+  "tag": "n6_idx200976_never_nb22",
+  "verdict": "never",
+  "beta_cells": 22,
+  "points": 100,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 110,
+  "lroot_checks": 110
+ },
+ {
+  "tag": "n6_idx375711_never_nb22",
+  "verdict": "never",
+  "beta_cells": 22,
+  "points": 100,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 110,
+  "lroot_checks": 110
+ },
+ {
+  "tag": "n6_idx425960_never_nb22",
+  "verdict": "never",
+  "beta_cells": 22,
+  "points": 108,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 110,
+  "lroot_checks": 110
+ },
+ {
+  "tag": "n6_idx647627_never_nb22",
+  "verdict": "never",
+  "beta_cells": 22,
+  "points": 108,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 110,
+  "lroot_checks": 110
+ },
+ {
+  "tag": "n6_idx189110_never_nb4",
+  "verdict": "never",
+  "beta_cells": 4,
+  "points": 16,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 20,
+  "lroot_checks": 20
+ },
+ {
+  "tag": "n6_idx922637_never_nb8",
+  "verdict": "never",
+  "beta_cells": 8,
+  "points": 32,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 40,
+  "lroot_checks": 40
+ },
+ {
+  "tag": "n6_idx1058078_never_nb1",
+  "verdict": "never",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx1538866_never_nb1",
+  "verdict": "never",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx721543_never_nb4",
+  "verdict": "never",
+  "beta_cells": 4,
+  "points": 20,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 20,
+  "lroot_checks": 20
+ },
+ {
+  "tag": "n6_idx221764_never_nb1",
+  "verdict": "never",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx1001917_never_nb18",
+  "verdict": "never",
+  "beta_cells": 18,
+  "points": 104,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 90,
+  "lroot_checks": 90
+ },
+ {
+  "tag": "n6_idx555387_never_nb7",
+  "verdict": "never",
+  "beta_cells": 7,
+  "points": 32,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 35,
+  "lroot_checks": 35
+ },
+ {
+  "tag": "n6_idx713396_never_nb1",
+  "verdict": "never",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx268557_never_nb1",
+  "verdict": "never",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx225751_never_nb7",
+  "verdict": "never",
+  "beta_cells": 7,
+  "points": 32,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 35,
+  "lroot_checks": 35
+ },
+ {
+  "tag": "n6_idx756140_never_nb1",
+  "verdict": "never",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx107198_never_nb1",
+  "verdict": "never",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx318550_never_nb2",
+  "verdict": "never",
+  "beta_cells": 2,
+  "points": 8,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 10,
+  "lroot_checks": 10
+ },
+ {
+  "tag": "n6_idx1387248_sub3",
+  "verdict": "never",
+  "beta_cells": 0,
+  "points": 0,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 0,
+  "lroot_checks": 0
+ },
+ {
+  "tag": "n6_idx1201591_sub2",
+  "verdict": "stable_somewhere",
+  "beta_cells": 1,
+  "points": 4,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 5,
+  "lroot_checks": 5
+ },
+ {
+  "tag": "n6_idx726767_sub3",
+  "verdict": "never",
+  "beta_cells": 0,
+  "points": 0,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 0,
+  "lroot_checks": 0
+ },
+ {
+  "tag": "n6_idx274815_sub3",
+  "verdict": "never",
+  "beta_cells": 0,
+  "points": 0,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 0,
+  "lroot_checks": 0
+ },
+ {
+  "tag": "n6_idx59774_sub4",
+  "verdict": "never",
+  "beta_cells": 0,
+  "points": 0,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 0,
+  "lroot_checks": 0
+ },
+ {
+  "tag": "n6_idx770253_sub5",
+  "verdict": "never",
+  "beta_cells": 0,
+  "points": 0,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 0,
+  "lroot_checks": 0
+ },
+ {
+  "tag": "n6_idx931465_sub5",
+  "verdict": "never",
+  "beta_cells": 0,
+  "points": 0,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 0,
+  "lroot_checks": 0
+ },
+ {
+  "tag": "n6_idx1338385_sub3",
+  "verdict": "never",
+  "beta_cells": 0,
+  "points": 0,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 0,
+  "lroot_checks": 0
+ },
+ {
+  "tag": "n6_idx378618_sub5",
+  "verdict": "never",
+  "beta_cells": 0,
+  "points": 0,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 0,
+  "lroot_checks": 0
+ },
+ {
+  "tag": "n6_idx792960_sub2",
+  "verdict": "never",
+  "beta_cells": 0,
+  "points": 0,
+  "undecided_pts": 0,
+  "cells_undecided_first": 0,
+  "lroot_degenerate": 0,
+  "lroot_checks": 0
+ }
+]

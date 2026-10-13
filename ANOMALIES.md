@@ -396,3 +396,16 @@ the final engine in place: 0 verdict changes. certificates/region2d_n6_shard*
 are now uniformly produced by the committed engine; n6_summary regenerated
 (34,067 never / 4 stable / 0 escalations / 0 errors; no stable record has an
 undecided cell).
+
+## 2026-10-13  Lemma B' (two-parameter sign-invariance) written; sympy resultant sign quirk
+notes/lemma_Bprime_2d.md: Lemma B' (verdict constant on connected subsets of
+the legal region avoiding the zero sets of a_i, o_k, D, Delta_{m-1}),
+Corollary B'' (one sample per sign-invariant cell; undecided samples; only
+full-dimensional cells needed, via openness), Lemma B''' (elementary
+delineability for the projection set {lc, disc, pairwise resultants} with
+vertical polynomials), Lemma N (no boundary polynomial is identically zero:
+all equal 1 or are positive at (beta, t) = (0, 0)). Findings: sympy 1.14
+resultant(f, g) can return MINUS the Sylvester determinant when deg f < deg g
+and deg f * deg g is odd (resultant(t-1, t^3-8, t) = 7); harmless here (only
+zero sets are used) but never rely on its sign. The stable-cell tuples in the
+map are slices at the sample beta, not boxes (presentation fixed).

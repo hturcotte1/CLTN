@@ -17,7 +17,7 @@ Consistency: {'violations': [], 'survivors_without_2d': [], 'n_survivors_without
 ```
 - compressed adjacency charpoly (m*det(lam I - A|perp), hi->lo): [6, 19, 32, 32, 17, 4]
 - limit verdict: stable_somewhere  stable q (limit): [['1', 'root of [797, -1686, 2159, -3004, 2499, -2158, 1521] in (358/307, 7/6)']]
-- 2-D verdict: stable_somewhere  stable cells (beta_lo, beta_hi, beta_sample, t_lo, t_hi): [['2', '17/8', '33/16', '16', None], ['15/7', '1029/475', '7164/3325', '29', None]]
+- 2-D verdict: stable_somewhere  stable cells, each as (beta-cell lo, beta-cell hi, sample beta, t-range at the sample beta: lo, hi) -- the t-range is the slice at the sample beta (t_lo = 1/(sample beta - 2) means 'every legal t'), NOT a box: [['2', '17/8', '33/16', '16', None], ['15/7', '1029/475', '7164/3325', '29', None]]
 - slices: {'1-1000': 'stable_somewhere', '1-100': 'stable_somewhere', '1-10': 'stable_somewhere', '1-2': 'never', '1-4': 'never'}
 
 ### idx 1387528 key 1066791683  edges 18  bidirected pairs 4  mutually non-adjacent pairs [(1, 2)]  |Aut| 1  domination-free True  isomorphic to Geneson: False
@@ -31,7 +31,7 @@ Consistency: {'violations': [], 'survivors_without_2d': [], 'n_survivors_without
 ```
 - compressed adjacency charpoly (m*det(lam I - A|perp), hi->lo): [6, 18, 30, 29, 16, 4]
 - limit verdict: stable_somewhere  stable q (limit): [['1', 'root of [1, 2, 1, -2, -2, -1] in (1, 13/12)']]
-- 2-D verdict: stable_somewhere  stable cells (beta_lo, beta_hi, beta_sample, t_lo, t_hi): [['2', '152/73', '149/73', '73/3', None]]
+- 2-D verdict: stable_somewhere  stable cells, each as (beta-cell lo, beta-cell hi, sample beta, t-range at the sample beta: lo, hi) -- the t-range is the slice at the sample beta (t_lo = 1/(sample beta - 2) means 'every legal t'), NOT a box: [['2', '152/73', '149/73', '73/3', None]]
 - slices: {'1-1000': 'stable_somewhere', '1-100': 'stable_somewhere', '1-10': 'never', '1-2': 'never', '1-4': 'never'}
 
 ### idx 1424629 key 1069347459  edges 19  bidirected pairs 5  mutually non-adjacent pairs [(1, 2)]  |Aut| 1  domination-free True  isomorphic to Geneson: False
@@ -45,5 +45,5 @@ Consistency: {'violations': [], 'survivors_without_2d': [], 'n_survivors_without
 ```
 - compressed adjacency charpoly (m*det(lam I - A|perp), hi->lo): [6, 19, 32, 32, 17, 4]
 - limit verdict: stable_somewhere  stable q (limit): [['1', 'root of [797, -1686, 2159, -3004, 2499, -2158, 1521] in (358/307, 7/6)']]
-- 2-D verdict: stable_somewhere  stable cells (beta_lo, beta_hi, beta_sample, t_lo, t_hi): [['2', '17/8', '33/16', '16', None], ['15/7', '1029/475', '7164/3325', '29', None]]
+- 2-D verdict: stable_somewhere  stable cells, each as (beta-cell lo, beta-cell hi, sample beta, t-range at the sample beta: lo, hi) -- the t-range is the slice at the sample beta (t_lo = 1/(sample beta - 2) means 'every legal t'), NOT a box: [['2', '17/8', '33/16', '16', None], ['15/7', '1029/475', '7164/3325', '29', None]]
 - slices: {'1-1000': 'stable_somewhere', '1-100': 'stable_somewhere', '1-10': 'stable_somewhere', '1-2': 'never', '1-4': 'never'}
