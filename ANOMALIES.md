@@ -362,3 +362,29 @@ only for q below ~1.166 (resp. ~1.079), and for every q > 1 close to 1.
 Hit 2's region is a single cell: stable iff 2 < beta < beta_1' at EVERY legal
 t (so its t -> infinity boundary and all-t boundary coincide), unlike
 Geneson's class where a quartic curve T(beta) separates them.
+
+## 2026-10-13  Replay pass with the final code: 28,350 strict survivors, same four stable graphs
+run_region_sweep limit mode over all 1,540,944 graphs with the final code
+(tightened positivity filter, Sturm replay): 1,512,594 never_positivity,
+28,350 survivors (a subset of the earlier 34,071; 5,721 removed), 4 stable
+(K6 + the 3 counterexamples), 0 escalations, 22,666 s. The 2-D certification
+covered the superset, so every strict survivor is certified.
+
+## 2026-10-13  Partial adversarial audit (3 of 6 agents completed before a usage limit; resumed)
+CAD-soundness audit found no verdict error: projection set is the Collins/
+McCallum set; delineability verified on 9,300 random points in 27 graphs;
+1,308 random points outside the positivity cells all non-stable; Descartes
+replay verified on 800 constructed and real polynomials. Findings acted on:
+(1) 298 records written by the first-generation engine before the container
+restart were kept by --resume; the auditor re-ran them with the final engine
+(0 verdict changes); they are now re-certified in place. (2) The first
+isolating interval above a hull end is now refined explicitly instead of
+relying on the legality factor's degenerate interval to force separation.
+(3) The aggregator now checks that stable records contain no undecided cell
+(the four stable records have none). (4) Documentation: beta_critical in the
+records lists all roots of the joint isolation on the positivity hull,
+including the degenerate root 2 and projection roots outside the positivity
+cell; the two-parameter form of Lemma B (constancy of the verdict on
+connected components of {D != 0, Delta != 0}) plus openness (Lemma O) is what
+the CAD uses and should be written out in notes/lemmas.md. (5) The replay is
+independent of the VAS isolator but uses sympy's squarefree part.

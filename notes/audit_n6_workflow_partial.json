@@ -1,0 +1,245 @@
+{
+  "summary": "Adversarial audit of the complete n=6 CTLN certification chain: soundness of the CAD engine, independent re-derivation of a region, spot-checks of never verdicts, completeness critique",
+  "agentCount": 6,
+  "logs": [
+    "[audit:lemma-audit] failed: You've hit your weekly limit · resets 10pm (UTC)",
+    "[critic] failed: You've hit your weekly limit · resets 10pm (UTC)",
+    "[synthesis] failed: You've hit your weekly limit · resets 10pm (UTC)"
+  ],
+  "result": {
+    "synthesis": null,
+    "critic": null,
+    "audits": [
+      {
+        "gaps_found": [
+          "PROVENANCE (not a verdict error): 218 of the 34,071 committed region2d_n6 records (shard0 lines 4-78, shard1 lines 1-131, shard2 lines 1-86; the records kept by `--resume`) were written by an earlier engine (record schema lacks `positivity_root`; cell counts differ from the current engine, e.g. idx 4091: 7 beta-cells/8 cells old vs 0/0 new). So the statement that every survivor was certified by the final code is not literally true for the committed files. I re-ran the current region2d (crosscheck+replay) on all 218: 0 verdict changes (all `never`), 0 errors, 135 cell-count differences (expected: the old engine decomposed the whole legal range). Output: /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf_audit/region2d/recheck_old_out.json. The verdicts stand; the certificate files should be regenerated or the report should say 218 were re-certified separately.",
+          "DOCUMENTATION GAP in the proof chain: region2d's docstring asserts that the verdict is constant on each (beta-cell x t-cell), but notes/lemmas.md proves Lemma B only at fixed t (plus a remark that the roles can be swapped). The two-parameter statement actually used (Hurwitz-ness is constant on any connected open subset of {D != 0, Delta_{m-1} != 0}) and the openness argument that justifies deciding only full-dimensional cells (SFP set is open, so a nonempty SFP set meets some sector; Lemma O in lemma_F_reduction.md) are not written down as the step that makes the CAD sound. Both follow verbatim from the written proofs (Rouché in (beta,t) + connectedness; strict inequalities), so this is a gap in the write-up, not in the mathematics.",
+          "REPLAY INDEPENDENCE is weaker than the docstring suggests: replay_counts checks (i) a sign change of the sympy-supplied basis factor f on each interval and (ii) per-polynomial distinct-root counts via the Descartes counter, but never checks that f divides the polynomial the interval is attributed to, and the squarefree part comes from sympy's dup_sqf_part. It is independent of the VAS isolator (as claimed), not of sympy. Tamper tests show it does catch a dropped, duplicated, shifted or misattributed interval (misattribution only via the count).",
+          "REPORTING ARTIFACTS in certificates (no effect on verdicts): `beta_critical` lists every root of the joint isolation on the hull [lo_r, hi_r], which includes roots outside the positivity cell -- 2,534 records carry a degenerate critical value `2` (it is the root of lc_L = beta - 2 whenever the hull starts at 2), and 6,777 degree-1 projection roots are recorded this way; `positivity_cells` endpoints and `beta_cell` bounds are isolating-interval ends (inner hulls), not the algebraic roots. Anyone reading the files as 'the critical values of this graph' will be misled.",
+          "VERDICT PRECEDENCE: region2d returns `stable_somewhere` whenever any cell is stable, even if other cells are undecided, so the tally's `escalate: 0` does not by itself show the 4 stable records have no undecided cells. I checked the 4 stored certificates directly: 0 undecided cells, every cell crosscheck=True (idx 1000255 and 1424629: 8 cells, 2 stable; 1387528: 1 cell, stable; K6 idx 1540943: 1 cell, stable). No effect at n=6, but the aggregate claim rests on that direct check rather than on the tally.",
+          "ROBUSTNESS BY ACCIDENT: the main loop never refines a first isolating interval that starts exactly at the hull end (unlike fastregion._cells); it only asserts cell_lo < cell_hi (loud failure, errors=0 in the sweep). That it never fired is because lc_L = beta - 2 is always in the projection set, so its degenerate (2,2) interval forces sympy's strict mode to separate every other interval from 2; likewise L's root exactly at t_min forces separation in t. If L were ever dropped from the curve set this would become a loud error, not a silent one. Also the hull logic (k_start = pos_pos[0], k_end = pos_pos[-1]) depends on sympy 1.14.0 returning intervals sorted and including roots exactly at inf/sup -- both verified here, but undocumented sympy behaviour."
+        ],
+        "checks_passed": [
+          "(a) Projection set, read line by line: curves = {D (linear in t), Delta_{m-1} (Berkowitz det of the (m-1)x(m-1) Hurwitz matrix of p = phi + t*omega with c_k = coefficient of mu^{m-k}), L}. Delta is split into Q-irreducible factors (squarefree basis; multiplicities dropped), t-degree-0 factors become vertical lines in the projection; then the curve set is made pairwise coprime (gcd split, with vertical quotients moved to the projection); for every remaining curve the leading coefficient in t (covers the content of D = g*(d'+t s') since lc_D = s) and, for t-degree >= 2, the discriminant (asserted nonzero) are added; resultants in t of ALL pairs (including with L and D) are added, a zero resultant raises. This is exactly the Collins/McCallum bivariate projection: lc and disc give delineability of each squarefree curve over each open beta-cell, pairwise resultants forbid crossings, L-resultants forbid any root function crossing t_min(beta), so sectors above L are sign-invariant for every curve; degree drops (lc roots) and vertical lines are cell boundaries, excluded as measure-zero.",
+          "(a) Independent check that the curves are the right polynomials: at 96 random rational (beta,t) on 12 random graphs, region2d's symbolic D and Delta_5 equal eps^6 * c_6 and eps^{15} * Delta_5 of ctln.charpoly(-I+W_sigma) exactly, and equal den^5 * fastregion.hurwitz_det_poly; the vanishing/sign pattern of Hurwitz minors is invariant under the mu -> mu/eps scaling (factor eps^{k(k+1)/2} > 0), so the crosscheck against analyze_support is meaningful and three-valued-consistent.",
+          "(a) Delineability verified empirically: on 27 distinct survivor graphs (incl. cells structures up to 22 beta-cells / 35 cells) the number of curve roots above t_min at 9,300 random rational beta* inside cells equals the number at the cell sample (0 sector-count mismatches).",
+          "(b) Restriction to positivity cells is valid: Lemma A.2 (p Hurwitz => det K = product of eigenvalues > 0 => x_i = (theta/eps) a_i/D > 0 forces a_i > 0, y_k = theta o_k/D < 0 forces o_k < 0) and a_i, o_k are t-free; positivity_intervals evaluates ALL a_i and o_k (including constants) at a sample of each open cell between consecutive positivity roots; 1,308 random points outside P were all non-SFP by analyze_support, 0 SFP points outside P.",
+          "(c) Sampling is strictly inside open cells: beta sample = midpoint of (upper end of previous isolating interval, lower end of next), asserted nonempty; t sample = midpoint via fastregion._cells, which refines a first interval touching t_min; the unbounded beta/t cells are sampled at (last upper end)+1, justified because the isolation is on [lo, +inf) and the replay recounts the roots on [lo, +inf) with a Cauchy bound (so no root lies beyond). Roots exactly at beta=2 and at t=t_min (L itself) are filtered as degenerate (x,x) intervals. sympy 1.14.0 verified to return roots exactly at inf/sup and sorted intervals.",
+          "(d) decide_point -> ctln.hurwitz_stable is three-valued (None on a zero coefficient or vanishing minor; None on D=0); an undecided sample is re-sampled at two more t values and otherwise the cell is recorded as None and the graph escalates (never counted as stable or as never). 0 undecided samples in 9,300 audit points; 0 escalations in the sweep tally.",
+          "(e) Descartes replay: count_roots_closed = squarefree part + exact affine map to [0,1] + explicit tests for roots at a (q[0]==0) and at b (q(1)==0) + Descartes bisection with exact handling of roots at bisection points; verified against sympy real_roots on 400 constructed polynomials (rational roots at endpoints, dyadic midpoints, multiplicities 2-3, irrational and complex factors; b=None via Cauchy bound) and against Poly.count_roots (Sturm) on 400 (polynomial, interval) cases built from REAL projection polynomials of survivors (degree up to 48): 0 mismatches. Endpoint semantics (closed interval) match sympy's isolation. Tampered isolations (drop/duplicate/misattribute/shift) are all caught.",
+          "Cell-vs-point audit (exact arithmetic, verdict by ctln.analyze_support only): 27 distinct 6-node graphs (the 3 counterexamples, 20 dense-biased survivors with 8-23 edges incl. 8 with >=4 beta-cells, 4 with vertical Delta factors), 9,300 points, each assigned to its exact CAD cell (points inside an isolating interval resolved by exact interval refinement: 1,182 of them): 7,992 agree, 0 disagree, 0 unresolved, 0 undecided; 592 SFP points all fall in cells marked stable; both stable cells of Geneson's graph/its twin and the single stable cell of idx 1387528 are hit by random points. Outputs: scratchpad/wf_audit/region2d/audit_v2_{hits,pick,pick2}_out.json.",
+          "Direct dense search (3,000 exact random points per graph inside the positivity strips, t up to t_min+1000) found SFP only on the 3 hit graphs and none on 17 'never' survivors completed so far.",
+          "Coverage and consistency of the certificate files: 34,071 survivor indices == 34,071 region2d records, 0 missing/extra; tallies 11357+11357+11357; exactly 4 stable_somewhere records = K6 + idx 1000255, 1387528, 1424629; 0 gcd splits were needed at n=6 (the _coprime path is only exercised at n<=4, where it behaves correctly on the D = -L two-node case and a synthetic multiplicity case).",
+          "Independent sympy real_roots spot check of Geneson's t-structure: at beta=33/16 no curve root above t_min=16 (stable for all legal t); at beta=7164/3325 exactly one root (Delta5_f1, ~28.19) above t_min; consistent with the stored certificate.",
+          "test_ctln.py: 20 checks passed, 0 failed."
+        ],
+        "unverified": [
+          "Three background checks had not finished when the output was forced: (i) the remaining 'never' survivors of the dense direct search (17 of 23+18 done, 0 SFP so far); (ii) a probe over 300 random survivors of the hull-endpoint edge cases (first joint-isolation interval starting at lo_r, positivity-root count per hull); (iii) a probe over 120 random survivors of degree drops / non-L roots exactly at t_min at the sample and delineability at three beta per cell; (iv) the scan for unbounded and multiple positivity cells among all 34,071 survivors with far-beta (50, 1000, 1e6) verdict checks of the unbounded cell. Scripts and partial logs are in /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf_audit/region2d/ (unbounded_check.py, audit_v2.py, dense_search.py).",
+          "The two-parameter Lemma B and the openness step are checked by me as immediate consequences of the written proofs, not re-proved in the notes; a referee will want them written.",
+          "I did not re-run the full 34,071-graph sweep; soundness of the committed verdicts for graphs outside my 27-graph sample rests on the code audit plus the 218-record recheck.",
+          "sympy internals relied on (sorted output, inclusion of endpoint roots, strict separation, PythonMPQ/Fraction exact comparison) were verified only for sympy 1.14.0 without gmpy2, the environment of the sweep.",
+          "The Descartes replay runs only on the ranges the code considers (positivity isolation on [2,inf), hull isolations, t isolations at samples); it does not re-verify the irreducibility of the minimal polynomials, which the certificates do not need."
+        ],
+        "details": "Scope: /home/user/CLTN/region2d.py (375 lines) and the parts of fastregion.py it imports (beta_data, decide_point, peval, _frac, _cells), plus ctln.hurwitz_stable/analyze_support, read line by line against notes/lemmas.md (Lemmas A, A.2, B) and notes/lemma_F_reduction.md (Lemma O). No repo file was modified; all scratch is under /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf_audit/region2d/.\n\nMathematical verdict on the CAD: the projection set {a_i, o_k, lc_t of every coprime curve, disc_t of every Q-irreducible factor of Delta_{m-1} with t-degree >= 2, pairwise resultants of all curves including D and L, vertical factors} is sufficient for sign-invariance of every curve on each (open beta-cell) x (t-sector above L), and the verdict is constant there by the (beta,t)-version of Lemma B (D = p(0) and Delta_{m-1} are the only loci where a root of the monic p can reach the imaginary axis; Rouché + connectedness). Points on curves are never SFP (strict conditions) and the SFP set is open, so a nonempty SFP region meets a full-dimensional sector and is found at that sector's sample; conversely a stable sample certifies its whole sector. Restriction to the positivity cells is sound by Lemma A.2. The code implements this faithfully; the first/last cells and the legal boundary are handled correctly (L is a curve, t_min(beta) is its root function, cells below it are illegal, cells above are sampled, roots exactly at 2 and at t_min are filtered). decide_point is three-valued and re-samples. The Descartes replay is correct (fuzzed) and catches tampering.\n\nNo contradiction between any cell verdict and ctln.analyze_support was found: 9,300 exact random points on 27 graphs (3 counterexamples, 20 dense-biased survivors, 4 vertical-factor cases, many-cell cases), each located in its exact CAD cell including points inside isolating intervals, 0 disagreements, 0 sector-count mismatches, 0 undecided; all 592 SFP points lie in cells marked stable and none outside the positivity set.\n\nWhat I did find are chain-of-custody and write-up gaps, listed in gaps_found: 218 committed records came from an earlier engine (re-certified by me with the current engine, verdicts unchanged), the two-parameter constancy/openness lemma is not written, the replay's independence is only from the VAS isolator, the certificate files record margin roots and inner-hull bounds, and the stable-vs-escalate precedence means the \"0 undecided cells\" claim for the 4 stable graphs must be (and was) checked directly. None of these changes the claimed result: among the 34,071 survivors exactly K6 and idx 1000255, 1424629, 1387528 are stable somewhere, within the limits stated under unverified."
+      },
+      {
+        "gaps_found": [
+          "Documentation/representation defect (not a mathematical error): notes/REPORT_n6.md line 121 says beta_1' lies in `(152/73, 27/13 ...)`. That interval is empty/misordered: 27/13 = 2.07692 < 152/73 = 2.08219, and the quintic is NEGATIVE at 27/13, so 27/13 < beta_1' (= 2.0830248...). The task text repeats the same wrong interval. The correct isolating interval is (152/73, 25/12): quintic(152/73) < 0 < quintic(25/12) (and quintic(19/9) > 0). Same root cause in the certificate record (certificates/region2d_n6_shard1of3_HITS.jsonl, idx 1387528): `positivity_cells: [[\"2\",\"27/13\"]]` and `stable_cells: [[\"2\",\"152/73\",...]]` use the LOWER endpoint of a rational isolating interval as the cell's upper endpoint (region2d.py lines 278/333 write str(lo), str(hi) straight from the isolator). Read literally, the stable cell (2,152/73) and positivity cell (2,27/13) under-cover the true region (2, beta_1') by ~0.0008 and ~0.006 respectively, and are mutually inconsistent (a stable cell extending past the positivity cell's end). The underlying claim is correct; the certificate/report should state cells with algebraic endpoints (minpoly + isolating interval), or at least a consistent, correctly ordered isolating interval."
+        ],
+        "checks_passed": [
+          "Graph identity: enum_cache key 1066791683 at idx 1387528 decodes (graphs.from_key) to exactly the task's 18-edge list, rows = who i sends to.",
+          "W built directly from the definition (W_ij=-1+eps if A[j][i]==1 else -1-delta); closed form I-W = -delta I + (1+delta) J - (eps+delta) A^T verified symbolically (note: the A in CLAUDE.md's closed form is read transposed, as ctln.identity_check_IminusW does).",
+          "Structure: (t+1)(I-W) = N = K + tJ with K = -(beta-1)I + beta(J - A^T). x_i = (t+1) a_i(beta) / D(beta,t) with a = adj(K)·1 t-FREE (rank-one update), D = det N = D0(beta) + t s(beta), s = sum a_i (verified). Direct (I-W)^{-1}·1 agrees.",
+          "a_5 = -(beta^5 - 3beta^4 + 3beta^3 - 3beta^2 + 2beta - 1); this quintic is irreducible over Q, has exactly ONE real root (Sturm, total count 1), beta_1' in (152/73, 25/12), refined to (34947357/16777216, 279578857/134217728) ~ 2.08302480. Minimal polynomial [1,-3,3,-3,2,-1] IDENTICAL to certificate beta_critical for idx 1387528 (positivity_root: true).",
+          "Positivity set: a_2=(beta-1)^2(beta^2-beta+1)>0 and a_4=beta^2-beta+1>0 always; a_0 has no real roots; a_3>0 for beta>2; a_1>0 on (2, ~2.3247) (cubic beta^3-3beta^2+2beta-1, matches certificate's second positivity_critical). So x>0 requires 2<beta<beta_1' and D>0; D increasing in t (s>0 there) and D at t=1/(beta-2) is proportional to E=beta^6-6beta^5+16beta^4-22beta^3+20beta^2-11beta+4, which has no root in (2, beta_1'] (E(2)=14). Hence x>0 on exactly {2<beta<beta_1', t>1/(beta-2)}; the D=0 line lies below the legal boundary.",
+          "Never stable for beta >= beta_1': quintic>0 for all beta>beta_1' (single real root, positive LC) so a_5<0<a_2, x_5 and x_2 have opposite signs for every t; at beta=beta_1' x_5=0. No Hurwitz computation needed; confirmed at beta = r1, 21/10, 23/10, 3, 10.",
+          "Characteristic polynomial: (t+1)^6 det(sI - M) = det(uI + N) with u=(t+1)s verified; Hurwitz matrix H_ij = a_{2j-i}; Delta_1..Delta_6 computed; Delta_6 = c_0*Delta_5 = D*Delta_5 (Orlando) verified. Each Delta_k irreducible over Q, (deg_t, deg_beta) = (1,0),(2,3),(3,6),(4,10),(5,15).",
+          "CAD projection in beta for D, Delta_1..Delta_5: lc_t, disc_t (deg 4,18,48,100), res_t(f,(beta-2)t-1) (deg 6,5,9,14,20), content: NONE has a real root in (2, beta_1') (Sturm counts on (2,l1] and (2,r1] agree; gcd with quintic trivial). So (2, beta_1') is a single cell for every polynomial and the number of legal t-roots is constant on it.",
+          "Cell decisions at beta = 201/100, 149/73, 52/25, 152/73 and l1 = 34947357/16777216 (within 1e-8 below beta_1'): for D and Delta_1..Delta_6, zero real roots in (1/(beta-2), oo) (my Sturm count and sympy count_roots agree), positive at t=L+1 and as t->oo, nonzero at t=L. Hence all Hurwitz minors > 0 at EVERY legal t for every beta in (2, beta_1'): stable iff 2 < beta < beta_1', t > 1/(beta-2).",
+          "Independent stability method: exact rational Lyapunov equation M^T Q + Q M = -I solved symbolically, Q positive definite (all leading minors > 0) at (149/73, 76/3), (l1, L+1/1000), (152/73, 73/6+1e-6), (201/100, 1e6); control point (21/10, L+1/100) where Delta_5<0 gives Q NOT PD.",
+          "ctln.analyze_support cross-check at 11 legal (eps,delta) points incl. the report's witness eps=1/101, delta=27/2626 (beta=53/26, t=100, q=1350/1313): is_fixed_point, positive, stable='all Hurwitz minors positive', clique=False, target_free=False.",
+          "t -> infinity limit: P(u) = P0 + t P1 (linear in t), P1 = 1^T adj(uI+K) 1 of degree 5 (verified two ways); limit Hurwitz minors are all positive at l1 and r1 (both sides of beta_1'); first limit-Hurwitz failure is at the root ~2.140547 of 167beta^6-1716beta^5+... (limit Delta_3), above beta_1'. Limit positivity is the same t-free a_i. So the t->oo boundary of the stable region is beta_1' and it is the a_5 (positivity) root, as claimed.",
+          "Certificate's second beta_critical (degree 20, LC 43, root in (23/11,21/10)) equals my res_t(Delta_5,(beta-2)t-1) up to sign; its root ~2.097356 is > beta_1' (quintic(23/11)>0), i.e. Delta_5 first vanishes on the legal boundary only beyond the positivity boundary — consistent with 'positivity_root: false' and irrelevant to the stable region.",
+          "q-form in the report: quintic(q+1) = q^5+2q^4+q^3-2q^2-2q-1 verified; exact (eps,q) description of the region is 1 < q < (beta_1'-1)(1-eps), q_c = beta_1'-1 ~ 1.0830248, giving ~1.0723 at eps=1/101 as stated.",
+          "Float grid (sanity only, not a decision): 48,000 points in the region, 0 nonpositive values of D/Delta_k.",
+          "Legal-region parametrization: eps=1/(t+1), delta=(beta-1)eps covers all eps in (0,1), delta>0; q=(beta-1)t/(t+1)>1 iff beta>2 and t>1/(beta-2); no legal t for beta<=2."
+        ],
+        "unverified": [
+          "Only the full-support (sigma = all 6 nodes) linear (Hurwitz) stability was analysed, as asked; no statement about proper-subset supports or nonlinear/global stability.",
+          "Isomorphism/equivalence-class claims (singleton class, not a twin of Geneson's graph) and the global 'every other n=6 graph is never stable' claim were not re-derived here.",
+          "The remainder of the certificate pipeline (region2d/fastregion internals, replay counters, other shards) was not audited; region2d.py was only grepped to interpret how cell endpoints are serialized.",
+          "sympy's exact routines (factor_list irreducibility, sturm, gcd, intervals, count_roots, resultant/discriminant) are trusted as exact; they were cross-checked against each other (Sturm vs VAS counts, direct inverse vs adjugate, two derivations of P1, Lyapunov vs Hurwitz) but not against a second CAS."
+        ],
+        "details": "Independent re-derivation done entirely in sympy from the definition of W (no region2d.py/fastregion.py code used), exact rational/algebraic arithmetic in every decision. Scratch scripts and logs (re-runnable in order): /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf_audit/idx1387528/{sturm_tools.py, stage1_build.py, stage2_positivity.py, stage3_hurwitz_cells.py, stage4_cells.py, stage5_limit.py, stage6_compare.py, stage7_extra.py} with stage*.log, stage1.pkl, stage3_crit.pkl, stage2.json.\n\nMethod. With eps=1/(t+1), delta=(beta-1)eps: (t+1)(I-W) = N = K + tJ, K = -(beta-1)I + beta(J - A^T). Because J is rank one, adj(N)·1 = adj(K)·1 is t-free and det N = D0(beta) + t·s(beta) with s = sum a_i; so x_i = (t+1)a_i(beta)/D(beta,t). a_0 = beta^4-3beta^3+4beta^2-2beta+1, a_1 = -(beta^3-3beta^2+2beta-1), a_2 = (beta-1)^2(beta^2-beta+1), a_3 = (beta-1)(beta^3-2beta^2+beta-1), a_4 = beta^2-beta+1, a_5 = -(beta^5-3beta^4+3beta^3-3beta^2+2beta-1). Positivity therefore reduces to beta in (2, beta_1') plus D>0, and D>0 holds on the whole legal half-line since (beta-2)D0+s = E(beta) > 0 there. Stability of -I+W is equivalent to Hurwitz stability of det(uI+N) (u=(t+1)s). I computed Delta_1..Delta_6 (Delta_6 = D·Delta_5), then a McCallum/Collins-style projection in beta (leading coefficients, discriminants, resultant with the legal boundary (beta-2)t-1, content) and counted real roots with my own Sturm-sequence counter (cross-checked against sympy's isolator). No projection polynomial has a root in (2, beta_1'), so the interval is one cell; exact sampling at five rational betas (one within 1e-8 of beta_1') shows zero legal t-roots and positive sign for every D, Delta_k. Result: the full-support stable set is exactly {2 < beta < beta_1', t > 1/(beta-2)}, equivalently 1 < q < (beta_1'-1)(1-eps); beta_1' = unique real root of beta^5-3beta^4+3beta^3-3beta^2+2beta-1 (irreducible), isolating interval (152/73, 25/12), ~2.0830248035. This matches the certificate's beta_critical minpoly exactly. For beta >= beta_1' no legal parameter gives a positive fixed point (a_5 <= 0 < a_2), so 'never stable' there holds irrespective of Hurwitz; informationally, Hurwitz itself persists past beta_1' (Delta_5 first vanishes on the legal boundary at ~2.09736, the degree-20 LC-43 polynomial in the certificate, which I reproduced as res_t(Delta_5, (beta-2)t-1); the t->oo limit Hurwitz condition persists to ~2.14055). The t->oo limit (P = P0 + tP1, P1 = 1^T adj(uI+K)1) is Hurwitz-stable on both sides of beta_1', and the limit positivity is the same t-free a_i, so the limit boundary coincides with beta_1' and is the positivity (a_5) boundary. Independent confirmations: exact Lyapunov-equation positive-definiteness at four points (and failure at a control point beyond the Hurwitz boundary), ctln.analyze_support at 11 legal points including the report's witness, and a float sanity grid with zero violations.\n\nThe only defect found is in the write-up/serialization: the stated interval (152/73, 27/13) for beta_1' (REPORT_n6.md line 121 and the task text) is misordered and 27/13 is actually below beta_1'; the certificate's cell endpoints 27/13 (positivity cell) and 152/73 (stable cell) are rational isolating-interval lower endpoints standing in for the algebraic root and, read literally, under-cover the true region (2, beta_1') and contradict each other. The mathematical claim 'stable iff 2 < beta < beta_1' at every legal t; never stable for beta >= beta_1'' is fully confirmed."
+      },
+      {
+        "gaps_found": [
+          "PROVENANCE GAP (not a soundness bug found): 298 of the 34,071 records in certificates/region2d_n6_shard{0,1,2}of3.jsonl (the first 79 / 132 / 87 lines of each shard, i.e. the records kept via --resume from an interrupted earlier run; e.g. idx 0, 22, 161, 313, 336, 363) were produced by the EARLIER full-plane CAD engine (region2d_v1 naming: projection lists 'a0'..'a5', 'Delta_vert_factor', 'lc_Delta_f*'), not by the positivity-restricted v2 engine with Descartes replay that REPORT_n6.md section 3/5, n6_summary.json and the records' own 'method' string describe. Evidence: all 33,773 other records use v2 naming ('lc_Delta5_f*'); region2d.py is byte-identical to commit cf07700 (the sweep code), yet running it on survivor idx 0 (the empty graph) returns verdict 'never' with reason 'positivity set empty', 0 beta-cells and no projection, whereas the stored record has n_beta_cells 1, n_cells 1 and a 12-polynomial projection. A replay of these 298 records with the current engine was 65/298 done at report time: all 65 verdicts agree ('never'), all 65 record shapes differ. So the stated certificate chain ('every one of the 34,071 certified by the v2 engine, every root count replayed') is not literally true for 298 graphs; they are certified by the older (also validated) v1 engine, and the aggregate should say so or the 298 should be re-run.",
+          "REPORT NUMERIC INACCURACY (presentation only): notes/REPORT_n6.md gives the limit upper end for idx 1387528 as '~1.0789 in the limit'; the stated exact value, the root of q^5+2q^4+q^3-2q^2-2q-1 in (1, 13/12), evaluates to ~1.0830 (polynomial is -0.0146 at q=1.082 and +0.0039 at q=1.0833), consistent with the certificate's '~1.0819 at eps=1/1001'. The same report writes beta_1' in '(152/73, 27/13 ...)' although 27/13 (2.0769) < 152/73 (2.0822). Certificates themselves are unaffected."
+        ],
+        "checks_passed": [
+          "test_ctln.py: 20/20 checks pass in this environment (Hurwitz three-valued, closed form, Geneson Stage 0 reproduction incl. printed certificate C v = 179298949*1, n=5 package sample diff 0 and convention sensitivity).",
+          "region2d.py in the working tree is byte-identical to commit cf07700 (the code the 2-D sweep ran with); git status clean for repo files; no repo file was modified by this audit.",
+          "Positive control, spectral criterion (Lemma I.3), exact: compressed charpoly chi_A - chi_{A+J} computed independently (integer Faddeev-LeVerrier) reproduces the published values for the three hits ([6,19,32,32,17,4] for 1000255 and 1424629; [6,18,30,29,16,4] for 1387528) and for K6 ([6,30,60,60,30,6]). Spectral abscissa certified by exact Hurwitz bisection (p(lam+c) Hurwitz iff abscissa < c; 40 steps): Geneson class -0.53839514430..., giving beta_c in (2.16635502780, 2.16635502786) which matches the sextic root 2.1663550278... in the certificate; 1387528: -0.52868391023..., beta_c ~ 2.12172 (beyond its positivity end ~2.0825, consistent with 'positivity ends first'); K6: -1 (all exact three-valued tests at c=-1/2 return True for the four limit-stable graphs).",
+          "Positive control, independent symbolic engine: symbolic.q_region(A, full support, eps) on hit idx 1387528 returns a nonempty stable interval (1, CRootOf(10000000000 x^5 + 19800000000 x^4 + 9801000000 x^3 - 19405980000 x^2 - 19211920200 x - 9509900499, 0)) at eps=1/100 and NO interval at eps=1/10, exactly matching the stored eps-slices (stable_somewhere at 1/100, never at 1/10). Cost ~23 s per (graph, eps) at n=6.",
+          "Partial feature table (9,834 of the 34,071 survivors, processed in index order): no processed survivor has certified compressed abscissa < -1/2, i.e. none is a limit-stable candidate hidden among the 'never' verdicts (the 'below_half' flag comes back None for many graphs because exact root pairs summing to -1, e.g. twin eigenvalues 0 and -1, make a Hurwitz minor of p(lam-1/2) vanish; the certified bisection bounds are unaffected since None/False both imply c <= abscissa).",
+          "Provenance replay of the 298 resumed records with the current region2d (crosscheck=True, replay=True): 65/298 completed at report time, 65/65 verdicts agree with the stored 'never'."
+        ],
+        "unverified": [
+          "THE MAIN DELIVERABLE IS NOT COMPLETE: the 40-graph adversarial spot-check (300 exact rational (beta,t) points per graph through ctln.analyze_support, plus symbolic.q_region at eps in {1/1000,1/100,1/10}, plus the same procedure on the three hits) did not run, because the survivor feature table needed to select the 40 graphs (positivity cells, certified abscissa, edge counts for all 34,071) was at 9,834/34,071 when the final answer was demanded. All scripts are written and tested on the controls: /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf_audit/never_spotcheck/{features.py (running, output features.jsonl), select.py, spotcheck.py}. NOTE before resuming: select.py must classify below/above -1/2 by the certified bounds absc_lo/absc_hi, not by the 'below_half' flag (None there means Hurwitz-undecided, not an exact boundary).",
+          "Whether any of the remaining 24,237 survivors has certified compressed abscissa < -1/2 (would contradict a 'never' verdict if its positivity set meets (2, beta_c)).",
+          "Provenance replay: 233 of the 298 v1-era records still to re-run with the current engine (provenance_replay.py running, output provenance.jsonl).",
+          "No stable point or interval was searched for on any 'never' graph yet, so this audit neither confirms nor refutes the 34,067 'never' verdicts beyond the spectral check on 9,834 of them; the hit certificates were only cross-checked by the independent symbolic engine for idx 1387528 at two eps values (1000255 and 1424629 were checked only via the spectral abscissa)."
+        ],
+        "details": "Scope executed: read CLAUDE.md sections 2-3, ctln.py, symbolic.py, fastregion.py, region2d.py, region2d_v1.py, run_region2d_sweep.py, REPORT_n6.md, n6_summary.json, the shard tallies and HITS records. Exact arithmetic only (Fractions / integer polynomials / sympy exact roots) in every decision; no repo file modified; scratch under /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf_audit/never_spotcheck/.\n\nMethod prepared for the spot-check (ready to run, ~15 min on 4 cores once features.jsonl completes): for each selected graph, 300 points = {beta = 2+1/k, k in 2..10000} x {t = 1e2..1e9} (beta -> 2+, t large), {beta = 2+1/k} x {t = (1+1/j)/(beta-2), j up to 1e8} (legality boundary q -> 1+), and 13 beta values inside each of the graph's own positivity cells (incl. 1/1000 of the width from each endpoint) x 6 values of t from (1+1e-6)/(beta-2) to 1e8/(beta-2); eps = 1/(t+1), delta = (beta-1) eps, legality asserted, then ctln.analyze_support; any stable_fixed_point or BOUNDARY record is kept in full. Then symbolic.q_region at eps in {1/1000, 1/100, 1/10}. Selection: all 'never' graphs with certified abscissa <= -1/2 (none found so far), then 13 by largest positivity set (capped at beta=10), 13 densest (>= 17 edges) ordered by closeness of abscissa to -1/2, remainder by abscissa closest to -1/2 from above; controls = idx 1000255, 1424629, 1387528 and K6.\n\nFindings so far: (1) a provenance discrepancy in the 2-D certificates (298 records from the v1 engine, verdicts confirmed on 65 replayed so far); (2) two numeric/ordering slips in REPORT_n6.md; (3) all positive controls behave as claimed under two methods independent of region2d (exact spectral abscissa via Hurwitz bisection; symbolic.q_region). No stable point or interval on a 'never' graph has been found, but the adversarial search itself has not yet been executed, so the 'never' verdicts remain unverified by this audit beyond the spectral check on 9,834 survivors."
+      }
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Audit"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Critique"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 3,
+      "title": "Synthesize"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "audit:cad-soundness",
+      "phaseIndex": 1,
+      "phaseTitle": "Audit",
+      "agentId": "ae05994c3b65f7864",
+      "model": "claude-fable-5-1",
+      "state": "done",
+      "startedAt": 1791884259809,
+      "queuedAt": 1791884259769,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Scope: /home/user/CLTN/region2d.py (375 lines) and the part…",
+      "promptPreview": "Audit region2d.py (and the parts of fastregion.py it uses) for SOUNDNESS of the cylindrical algebraic decomposition, as a mathematician reviewing a proof: (a) is the projection set sufficient for sign-invariance of {a_i, o_k, D, Delta_{m-1}, L} on each (beta-cell x t-cell)? In particular: leading coefficients in t of every curve and of every irreducible factor; discriminants of every factor of deg…",
+      "promptFramed": true,
+      "lastProgressAt": 1791886100079,
+      "tokens": 275799,
+      "toolCalls": 70,
+      "durationMs": 1840268,
+      "resultPreview": "{\"gaps_found\":[\"PROVENANCE (not a verdict error): 218 of the 34,071 committed region2d_n6 records (shard0 lines 4-78, shard1 lines 1-131, shard2 lines 1-86; the records kept by `--resume`) were written by an earlier engine (record schema lacks `positivity_root`; cell counts differ from the current engine, e.g. idx 4091: 7 beta-cells/8 cells old vs 0/0 new). So the statement that every survivor was…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "audit:independent-region",
+      "phaseIndex": 1,
+      "phaseTitle": "Audit",
+      "agentId": "a3b5daf8827522faa",
+      "model": "claude-fable-5-1",
+      "state": "done",
+      "startedAt": 1791884259810,
+      "queuedAt": 1791884259770,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Independent re-derivation done entirely in sympy from the d…",
+      "promptPreview": "Independently re-derive, WITHOUT using region2d.py or fastregion.py, the exact two-parameter stability region of the 18-edge graph idx 1387528 (our convention, rows = who i sends to): 0->{1,2}, 1->{4,5}, 2->{3,4,5}, 3->{0,1,4}, 4->{0,3,5}, 5->{0,1,2,3,4}. Use sympy with exact symbols: build W(eps,delta) from the definition (W_ij = -1+eps if j->i else -1-delta), x = (I-W)^{-1} 1, the characteristic…",
+      "promptFramed": true,
+      "lastProgressAt": 1791885172340,
+      "tokens": 134442,
+      "toolCalls": 14,
+      "durationMs": 911293,
+      "resultPreview": "{\"gaps_found\":[\"Documentation/representation defect (not a mathematical error): notes/REPORT_n6.md line 121 says beta_1' lies in `(152/73, 27/13 ...)`. That interval is empty/misordered: 27/13 = 2.07692 < 152/73 = 2.08219, and the quintic is NEGATIVE at 27/13, so 27/13 < beta_1' (= 2.0830248...). The task text repeats the same wrong interval. The correct isolating interval is (152/73, 25/12): quin…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "audit:never-spotcheck",
+      "phaseIndex": 1,
+      "phaseTitle": "Audit",
+      "agentId": "a50a1d351d8efc943",
+      "model": "claude-fable-5-1",
+      "state": "done",
+      "startedAt": 1791885174917,
+      "queuedAt": 1791884259770,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Scope executed: read CLAUDE.md sections 2-3, ctln.py, symbo…",
+      "promptPreview": "Spot-check the 'never' verdicts adversarially. Pick 40 survivors from certificates/n6_survivors.idx chosen to be the MOST likely to be stable: those with the largest positivity cells, the densest graphs (>= 17 edges), and those whose compressed-adjacency spectral abscissa (max real part of the roots of chi_A(lam) - chi_{A+J}(lam), computed exactly/certified) is closest to -1/2 from above or below.…",
+      "promptFramed": true,
+      "lastProgressAt": 1791885863384,
+      "tokens": 171340,
+      "toolCalls": 36,
+      "durationMs": 688465,
+      "resultPreview": "{\"gaps_found\":[\"PROVENANCE GAP (not a soundness bug found): 298 of the 34,071 records in certificates/region2d_n6_shard{0,1,2}of3.jsonl (the first 79 / 132 / 87 lines of each shard, i.e. the records kept via --resume from an interrupted earlier run; e.g. idx 0, 22, 161, 313, 336, 363) were produced by the EARLIER full-plane CAD engine (region2d_v1 naming: projection lists 'a0'..'a5', 'Delta_vert_f…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "audit:lemma-audit",
+      "phaseIndex": 1,
+      "phaseTitle": "Audit",
+      "agentId": "a6e3933e37c9de8d1",
+      "model": "claude-fable-5-1",
+      "state": "error",
+      "startedAt": 1791885866326,
+      "queuedAt": 1791884259770,
+      "attempt": 1,
+      "lastToolName": "Bash",
+      "lastToolSummary": "ls -la certificates/ | tail -30; echo ====; cat certificate…",
+      "promptPreview": "Audit the proofs the certification depends on: notes/lemmas.md Lemma A (rank-one identities), Lemma A.2 (stable => det K > 0 => a_i > 0 needed for positivity), Lemma B (verdict changes only at roots of a_i, D, o_k, Delta_{m-1}; the Orlando argument), Lemma C (eps -> 0 limit), and notes/lemma_F_reduction.md Theorem F (reduction of the conjecture at n to full supports of k-node induced subgraphs, k …",
+      "promptFramed": true,
+      "lastProgressAt": 1791886345227,
+      "error": "You've hit your weekly limit · resets 10pm (UTC)",
+      "tokens": 155701,
+      "toolCalls": 14,
+      "durationMs": 478900
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "critic",
+      "phaseIndex": 2,
+      "phaseTitle": "Critique",
+      "agentId": "a1c1f5290e7f07cd8",
+      "model": "claude-fable-5-1",
+      "state": "error",
+      "startedAt": 1791886345323,
+      "queuedAt": 1791886345236,
+      "attempt": 1,
+      "promptPreview": "You are the completeness critic. Here are four audit reports of a computer-certified mathematical result (the n=6 CTLN map). \nProject: /home/user/CLTN (read CLAUDE.md §2-3 first; conventions are fixed). Claimed result (notes/REPORT_n6.md): among the 1,540,944 digraphs on 6 nodes exactly three non-complete graphs have a positive, linearly stable full-support fixed point at some legal CTLN parameter…",
+      "promptFramed": true,
+      "lastProgressAt": 1791886345696,
+      "error": "You've hit your weekly limit · resets 10pm (UTC)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 372
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "synthesis",
+      "phaseIndex": 3,
+      "phaseTitle": "Synthesize",
+      "agentId": "aba8ab5a8a524562a",
+      "model": "claude-fable-5-1",
+      "state": "error",
+      "startedAt": 1791886345788,
+      "queuedAt": 1791886345702,
+      "attempt": 1,
+      "promptPreview": "Synthesize the audit reports and the critic's list into one verdict on the n=6 certification: is the chain sound as it stands; which gaps are blocking (would change a verdict), major (weaken the certificate), or minor (presentation)? Audits: [{\"gaps_found\":[\"PROVENANCE (not a verdict error): 218 of the 34,071 committed region2d_n6 records (shard0 lines 4-78, shard1 lines 1-131, shard2 lines 1-86; …",
+      "promptFramed": true,
+      "lastProgressAt": 1791886346162,
+      "error": "You've hit your weekly limit · resets 10pm (UTC)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 373
+    }
+  ],
+  "totalTokens": 737282,
+  "totalToolCalls": 134
+}
