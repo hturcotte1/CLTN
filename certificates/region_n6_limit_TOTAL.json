@@ -1,0 +1,13 @@
+{
+ "graphs": 1540944,
+ "complete": 1,
+ "never_positivity": 1506873,
+ "never_full": 34067,
+ "stable_somewhere": 4,
+ "escalate": 0,
+ "anomaly": 0,
+ "crosschecked": 0,
+ "domfree": 204378,
+ "domfree_positivity_possible": 34071,
+ "dominated_positivity_possible": 0
+}
