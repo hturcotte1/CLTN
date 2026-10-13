@@ -311,3 +311,33 @@ transpose-invariant; do not "fix"); a sympy pitfall (Symbol with assumptions
 can make subs/factor a silent no-op) -- symbolic.py uses the same Symbol
 objects throughout, so it is not affected, and it was cross-validated against
 fastregion on 8,094 cases.
+
+## 2026-10-13  Lemma J (notes/lemma_J_equivalence.md): the full-support equivalence is characterised
+Theorem J.2 (proved): D(A) = D(B) iff, after relabelling, A and B have the same
+characteristic polynomial and the same in-walk counts (A^T)^k 1 for k = 0..n-1.
+This reproduces our 21,800 classes exactly; the walk sequence cannot be
+truncated (length <= 4 merges 54 classes). Rank-one moves N' = N + y x^T
+preserve D iff x is orthogonal to all N^k 1 and N^k y (J.1); bidirected
+in-twin switching is the special case x = e_u - e_v. G2 = idx 1424629 is
+Geneson's G1 with the edge 1->4 replaced by 2->4 after relabelling (1,2
+bidirected in-twins). J.4 (proved): bidirected in-twin switching preserves
+EVERY fixed point of EVERY support at EVERY (eps, delta, theta) -- fixed-point
+status, vector, Jacobian characteristic polynomial, target-free cliques. So
+counterexamples should be reported modulo bidirected twin switching; hit 3
+is not independent of Geneson's graph. Other D-equivalences are NOT CTLN-
+natural (exact counterexamples with different FP sets inside one class).
+Rank-one moves do not generate all classes (95 residual classes need rank 2-3;
+the 259-member class is plain cospectrality with all in-degrees 3).
+J.4' (proved): two in-twins inside a support give -I + W_sigma the exact
+eigenvalue -eps (bidirected; explains the (101 lam + 1) factor) or +delta
+(non-adjacent) -- a support containing a NON-ADJACENT in-twin pair is never
+stable: cheap sound prune for Stage 4 / n = 7. Not yet checked against the
+literature.
+
+## 2026-10-13  certificates/n6_survivors.idx mixes two positivity filters
+The limit sweep's first ~318,000 indices per shard ran before commit b68c5af
+(common-sign filter); the rest used the tightened all-a_i > 0 filter. Both are
+sound, but the 34,071-graph survivor set is a superset of the 28,350 strict
+survivors and is not closed under D-equivalence (17,307 strict classes vs
+21,800). The 2-D certification runs on the superset, so nothing is lost; the
+replay pass with the final code (task 11) will produce the reproducible set.
