@@ -261,3 +261,21 @@ margin at P1 (eps = 1/101): max Re(lambda) < -25914987/68719476736, i.e. about
 -3.8e-4 = 3.8% of eps, structural not coincidental. Transposing the adjacency
 HIDES the example (x gets three negative entries), so no convention error can
 manufacture it. Full report: notes/candidate_1387528_verification_workflow.json.
+
+## 2026-10-13  Two non-isomorphic 6-node graphs with IDENTICAL full-support data at every (beta, t)
+Geneson's graph G (idx 1000255) and hit 3 H (idx 1424629) are not isomorphic
+(out-degree sequences [2,2,3,4,4,4] vs [2,2,3,3,4,5]; brute force over all
+720 permutations, also against G^T), yet beta_data(G) == beta_data(H) up to a
+permutation of the a_i: same det C(beta), same phi (charpoly of -C), same omega
+(so I - W has the same characteristic polynomial for ALL beta, t), same
+multiset of adjugate column sums. Consequently their positivity, stability
+and whole 2-D regions coincide exactly, and both slices (eps = 1/100, 1/10)
+returned identical q-windows with identical minimal polynomials. Both have 19
+edges, 5 two-cycles, 12 three-cycles, the same in-degree sequence. This is a
+non-trivial "CTLN full-support equivalence" between non-isomorphic graphs; the
+transformation relating them is not yet identified (not reversal). Lead for
+Stage 5: count how many such equivalence classes the 34,071 survivors fall
+into, and characterise the operation.
+Slice facts: at eps = 1/10 only G and H have a stable window ((1, root in
+(81/80, 36/35))); hit 2 (idx 1387528) is stable at eps = 1/100 for
+1 < q < root in (693/650, 429/400) but has no window at eps = 1/10.
