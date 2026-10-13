@@ -1,0 +1,323 @@
+geneson_full m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1424629_stable_somewhere_nb6 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1387528_stable_somewhere_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1000255_stable_somewhere_nb6 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1540943_stable_somewhere_nb1 m=6 curves=3 tdeg=[1, 1, 1] proj=3 res=3 disc=0
+n6_idx692979_never_nb23 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx952305_never_nb23 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx200976_never_nb22 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx375711_never_nb22 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx425960_never_nb22 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx647627_never_nb22 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx189110_never_nb4 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx922637_never_nb8 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1058078_never_nb1 m=6 curves=4 tdeg=[1, 2, 1, 1] proj=11 res=6 disc=1
+n6_idx1538866_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx721543_never_nb4 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx221764_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1001917_never_nb18 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx555387_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx713396_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx268557_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx225751_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx756140_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx107198_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx318550_never_nb2 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1387248_never_nb4 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx798224_never_nb8 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1299380_never_nb6 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx1446969_never_nb12 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx65313_never_nb6 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx429509_never_nb14 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx111999_never_nb2 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1201591_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx791639_never_nb6 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx819364_never_nb3 m=6 curves=4 tdeg=[1, 1, 1, 1] proj=9 res=6 disc=0
+n6_idx1536723_never_nb7 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1367830_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 1, 1] proj=15 res=10 disc=0
+n6_idx1470321_never_nb8 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx598396_never_nb5 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx1391881_never_nb15 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx131252_never_nb1 m=6 curves=4 tdeg=[1, 2, 3, 1] proj=13 res=6 disc=2
+n6_idx726767_never_nb16 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1107417_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx899484_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1103994_never_nb1 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=18 res=10 disc=1
+n6_idx825553_never_nb2 m=6 curves=4 tdeg=[1, 3, 2, 1] proj=13 res=6 disc=2
+n6_idx843634_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx274815_never_nb10 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx782343_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx540669_never_nb2 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx566880_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1219995_never_nb2 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx986032_never_nb6 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx59774_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx178510_never_nb10 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx917727_never_nb2 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx207802_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx611794_never_nb7 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx723602_never_nb1 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=18 res=10 disc=2
+n6_idx977109_never_nb1 m=6 curves=6 tdeg=[1, 1, 1, 1, 2, 1] proj=24 res=15 disc=1
+n6_idx540860_never_nb4 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx300513_never_nb5 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx821716_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx770253_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx989287_never_nb19 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1212284_never_nb4 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx91855_never_nb1 m=6 curves=4 tdeg=[1, 3, 2, 1] proj=13 res=6 disc=2
+n6_idx1491848_never_nb5 m=6 curves=5 tdeg=[1, 1, 1, 1, 1] proj=16 res=10 disc=0
+n6_idx1010631_never_nb1 m=6 curves=4 tdeg=[1, 2, 1, 1] proj=11 res=6 disc=1
+n6_idx1012659_never_nb9 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx795187_never_nb5 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx931465_never_nb5 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx605666_never_nb8 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1358361_never_nb14 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx846551_never_nb7 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=17 res=10 disc=1
+n6_idx1169200_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=17 res=10 disc=1
+n6_idx109265_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx64112_never_nb14 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1441420_never_nb2 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx819608_never_nb10 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx618675_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx731242_never_nb10 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1338385_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx1276167_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx589386_never_nb9 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx142589_never_nb11 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx380907_never_nb7 m=6 curves=6 tdeg=[1, 1, 1, 1, 1, 1] proj=23 res=15 disc=0
+n6_idx961462_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx271742_never_nb6 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx378618_never_nb9 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx870499_never_nb3 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx521149_never_nb4 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx415736_never_nb2 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx995591_never_nb11 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1425679_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx897994_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx792960_never_nb3 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1332927_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx148099_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx770899_never_nb9 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1017858_never_nb1 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx1230469_never_nb4 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx148569_never_nb3 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx744336_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx1123160_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx498612_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 1, 1] proj=15 res=10 disc=0
+n6_idx1084227_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1521875_never_nb4 m=6 curves=5 tdeg=[1, 1, 1, 1, 1] proj=16 res=10 disc=0
+n6_idx1373448_never_nb5 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1448216_never_nb1 m=6 curves=4 tdeg=[1, 2, 1, 1] proj=11 res=6 disc=1
+n6_idx1247863_never_nb3 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx221516_never_nb2 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx695270_never_nb3 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1039533_never_nb1 m=6 curves=4 tdeg=[1, 2, 1, 1] proj=11 res=6 disc=1
+n6_idx418535_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx60499_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx812319_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx222317_never_nb4 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1186449_never_nb1 m=6 curves=4 tdeg=[1, 2, 1, 1] proj=11 res=6 disc=1
+n6_idx50931_never_nb8 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx851623_never_nb13 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1158847_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 1, 1] proj=15 res=10 disc=0
+n6_idx1418277_never_nb10 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx943387_never_nb1 m=6 curves=4 tdeg=[1, 2, 1, 1] proj=11 res=6 disc=1
+n6_idx834187_never_nb6 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=16 res=10 disc=1
+n6_idx810830_never_nb14 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1223805_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1448214_never_nb1 m=6 curves=4 tdeg=[1, 1, 2, 1] proj=11 res=6 disc=1
+n6_idx419173_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx651277_never_nb2 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1198953_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1428468_never_nb4 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=18 res=10 disc=1
+n6_idx961261_never_nb16 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx807171_never_nb3 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1499869_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx380567_never_nb14 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx512142_never_nb5 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx632726_never_nb8 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1392213_never_nb8 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx611661_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1417590_never_nb5 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=18 res=10 disc=1
+n6_idx229613_never_nb6 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx373411_never_nb9 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx587011_never_nb1 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=18 res=10 disc=1
+n6_idx57679_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx764036_never_nb2 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx873932_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1493673_never_nb1 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx1046718_never_nb10 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx71989_never_nb5 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx1182039_never_nb13 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx943102_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx989574_never_nb7 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx400684_never_nb9 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1374814_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=17 res=10 disc=1
+n6_idx853715_never_nb8 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx94960_never_nb10 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx589016_never_nb2 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1078109_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx672594_never_nb13 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx869843_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx362531_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx64516_never_nb7 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx221476_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1525282_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 1, 1] proj=15 res=10 disc=0
+n6_idx605107_never_nb14 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1170682_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx1530975_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=18 res=10 disc=1
+n6_idx341234_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx963395_never_nb1 m=6 curves=4 tdeg=[1, 3, 2, 1] proj=13 res=6 disc=2
+n6_idx1067159_never_nb4 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=18 res=10 disc=1
+n6_idx538555_never_nb6 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1369275_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx270422_never_nb7 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=17 res=10 disc=1
+n6_idx606431_never_nb12 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx377482_never_nb11 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx1512067_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx1292522_never_nb8 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=18 res=10 disc=1
+n6_idx1189120_never_nb7 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1200285_never_nb4 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx424855_never_nb13 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1539397_never_nb8 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx1364327_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1479388_never_nb4 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1391867_never_nb2 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx124791_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1501642_never_nb10 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx867823_never_nb6 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx487254_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1422229_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=17 res=10 disc=1
+n6_idx1444485_never_nb1 m=6 curves=4 tdeg=[1, 1, 1, 1] proj=10 res=6 disc=0
+n6_idx786716_never_nb9 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx942630_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1511084_never_nb11 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1101111_never_nb2 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx409542_never_nb4 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx79047_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1517914_never_nb9 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx1013210_never_nb3 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx687760_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx357026_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1473098_never_nb4 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=18 res=10 disc=1
+n6_idx1076305_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1244035_never_nb3 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx158856_never_nb8 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx85115_never_nb8 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx221585_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1078987_never_nb5 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx1144253_never_nb4 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1240685_never_nb10 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx1422227_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=17 res=10 disc=1
+n6_idx671310_never_nb15 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1147293_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=16 res=10 disc=1
+n6_idx120734_never_nb11 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx706897_never_nb8 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx221756_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1475787_never_nb3 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx484308_never_nb8 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1517785_never_nb6 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx895116_never_nb8 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=18 res=10 disc=1
+n6_idx582370_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx484751_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1426966_never_nb1 m=6 curves=4 tdeg=[1, 2, 1, 1] proj=11 res=6 disc=1
+n6_idx851527_never_nb11 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx934814_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1276286_never_nb2 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx375655_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx391548_never_nb11 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx106375_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx1322855_never_nb1 m=6 curves=4 tdeg=[1, 1, 2, 1] proj=11 res=6 disc=1
+n6_idx779366_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx506121_never_nb1 m=6 curves=4 tdeg=[1, 3, 2, 1] proj=13 res=6 disc=2
+n6_idx181150_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx237956_never_nb16 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx701167_never_nb2 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=12 res=6 disc=1
+n6_idx488349_never_nb1 m=6 curves=4 tdeg=[1, 1, 1, 1] proj=9 res=6 disc=0
+n6_idx1205512_never_nb12 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx93108_never_nb1 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx98916_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx166383_never_nb1 m=6 curves=5 tdeg=[1, 1, 2, 2, 1] proj=19 res=10 disc=2
+n6_idx257177_never_nb4 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx274807_never_nb9 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx842131_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1100875_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx480673_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=16 res=10 disc=1
+n6_idx530688_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 1, 1] proj=16 res=10 disc=0
+n6_idx1299982_never_nb6 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx462793_never_nb1 m=6 curves=4 tdeg=[1, 2, 1, 1] proj=11 res=6 disc=1
+n6_idx586399_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx143991_never_nb11 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx451965_never_nb16 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx709088_never_nb1 m=6 curves=4 tdeg=[1, 3, 2, 1] proj=13 res=6 disc=2
+n6_idx402019_never_nb9 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1236553_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1163099_never_nb14 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx507941_never_nb9 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1455607_never_nb12 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx1130637_never_nb4 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx622544_never_nb2 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx318659_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx847829_never_nb2 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx364612_never_nb10 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1273915_never_nb2 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx610744_never_nb10 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1496085_never_nb3 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx252387_never_nb15 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx520736_never_nb8 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=18 res=10 disc=1
+n6_idx581718_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx337685_never_nb16 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1342012_never_nb2 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx312507_never_nb7 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx851539_never_nb4 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx110121_never_nb2 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx225714_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1198099_never_nb4 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1238365_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx922268_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1539415_never_nb5 m=6 curves=5 tdeg=[1, 1, 1, 1, 1] proj=16 res=10 disc=0
+n6_idx1370200_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx676550_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx780660_never_nb11 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1404577_never_nb8 m=6 curves=5 tdeg=[1, 2, 1, 1, 1] proj=18 res=10 disc=1
+n6_idx1390952_never_nb8 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=18 res=10 disc=1
+n6_idx978541_never_nb8 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1222302_never_nb1 m=6 curves=4 tdeg=[1, 2, 1, 1] proj=11 res=6 disc=1
+n6_idx1000540_never_nb2 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx779367_never_nb7 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx621383_never_nb2 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx79223_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx604578_never_nb10 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1102677_never_nb1 m=6 curves=4 tdeg=[1, 1, 1, 1] proj=10 res=6 disc=0
+n6_idx1317340_never_nb5 m=6 curves=5 tdeg=[1, 1, 1, 2, 1] proj=17 res=10 disc=1
+n6_idx999466_never_nb14 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx591253_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx196492_never_nb2 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1190651_never_nb7 m=6 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx687790_never_nb1 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx632618_never_nb1 m=6 curves=5 tdeg=[1, 1, 1, 1, 1] proj=15 res=10 disc=0
+n6_idx240479_never_nb1 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx1100900_never_nb1 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx1434299_never_nb2 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx924963_never_nb3 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx447607_never_nb5 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx1338795_never_nb11 m=6 curves=4 tdeg=[1, 1, 3, 1] proj=12 res=6 disc=1
+n6_idx1216619_never_nb9 m=6 curves=5 tdeg=[1, 1, 1, 3, 1] proj=17 res=10 disc=1
+n6_idx496841_never_nb8 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx995191_never_nb1 m=6 curves=4 tdeg=[1, 2, 3, 1] proj=13 res=6 disc=2
+n6_idx680399_never_nb12 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx1205460_never_nb18 m=6 curves=4 tdeg=[1, 1, 4, 1] proj=11 res=6 disc=1
+n6_idx592891_never_nb3 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx382584_never_nb4 m=6 curves=3 tdeg=[1, 5, 1] proj=7 res=3 disc=1
+n6_idx973838_sub4 m=4 curves=5 tdeg=[1, 1, 1, 1, 1] proj=15 res=10 disc=0
+n6_idx465964_sub2 m=2 curves=3 tdeg=[1, 1, 1] proj=5 res=3 disc=0
+n6_idx780619_sub5 m=5 curves=4 tdeg=[1, 1, 3, 1] proj=11 res=6 disc=1
+n6_idx446265_sub2 m=2 curves=2 tdeg=[1, 1] proj=2 res=1 disc=0
+n6_idx1356059_sub2 m=2 curves=2 tdeg=[1, 1] proj=2 res=1 disc=0
+n6_idx153214_sub5 m=5 curves=5 tdeg=[1, 1, 2, 1, 1] proj=17 res=10 disc=1
+n6_idx175374_sub3 m=3 curves=4 tdeg=[1, 1, 1, 1] proj=8 res=6 disc=0
+n6_idx1141521_sub4 m=4 curves=4 tdeg=[1, 1, 1, 1] proj=9 res=6 disc=0
+n6_idx1100153_sub4 m=4 curves=3 tdeg=[1, 3, 1] proj=7 res=3 disc=1
+n6_idx446281_sub4 m=4 curves=4 tdeg=[1, 1, 2, 1] proj=11 res=6 disc=1
+resultant sign vs Sylvester, by (deg_t f, deg_t g): Counter({(1, 1, 1): 1159, (1, 3, -1): 215, (1, 4, 1): 188, (1, 2, 1): 143, (2, 1, 1): 104, (4, 1, 1): 94, (3, 1, 1): 87, (1, 5, -1): 64, (5, 1, 1): 64, (2, 2, 1): 12, (3, 2, 1): 5, (2, 3, 1): 2})
+ALL PROJECTION CHECKS PASSED on 321 cases

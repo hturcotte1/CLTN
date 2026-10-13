@@ -1,9 +1,9 @@
 {
- "graphs": 706,
- "never": 705,
+ "graphs": 390,
+ "never": 389,
  "stable_somewhere": 1,
  "escalate": 0,
  "complete": 1,
  "errors": 0,
- "seconds": 332.2
+ "seconds": 105.2
 }

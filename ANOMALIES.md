@@ -409,3 +409,26 @@ resultant(f, g) can return MINUS the Sylvester determinant when deg f < deg g
 and deg f * deg g is odd (resultant(t-1, t^3-8, t) = 7); harmless here (only
 zero sets are used) but never rely on its sign. The stable-cell tuples in the
 map are slices at the sample beta, not boxes (presentation fixed).
+
+## 2026-10-14  Full audit verdict and the follow-up checks
+Resumed audit workflow (6 agents): "major gaps, none blocking, no verdict
+error". Independent from-scratch symbolic re-derivation of the idx 1387528
+region reproduced {2 < beta < beta_1', every legal t} with the same minimal
+polynomial beta^5 - 3beta^4 + 3beta^3 - 3beta^2 + 2beta - 1 (isolating
+interval (152/73, 25/12), beta_1' ~ 2.08302; an earlier report draft wrote
+(152/73, 27/13), wrong, fixed). Fixes made: every HITS file is now tracked
+(the broad .gitignore pattern had excluded them), gzipped bulk records and a
+sha256 manifest committed; the aggregator uses the final-code replay run as
+the limit run (1,512,594 / 28,350) and reports the 34,071 as the certified
+superset; the report states the filter semantics correctly (no legal beta
+with all a_i > 0 does not exclude positive UNSTABLE fixed points -- the empty
+graph has one). Follow-up checks, no model in the loop: (i) the projection
+algebra of region2d (Delta_{m-1}, 1,900+ resultants, discriminants, covering)
+re-verified by independent Bareiss determinants on 321 cases
+(notes/projection_check_321_cases.log); (ii) adversarial spot-check of the
+151 'never' graphs with the widest positivity cells or >= 17 edges: 22,650
+exact random legal points concentrated near beta -> 2+, t -> t_min+ and large
+t, 0 stable points (certificates/n6_never_spotcheck.json). Remaining trust
+base: sympy 1.14 exact polynomial algebra, Routh-Hurwitz, Orlando; the
+never-side records are regenerable by the committed engine rather than
+self-contained.
