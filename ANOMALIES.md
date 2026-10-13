@@ -221,3 +221,17 @@ Per CLAUDE.md §3 the run is STOPPED here pending human hand-verification:
 certificates/COUNTEREXAMPLE_CANDIDATE_n6_idx1387528.json. The sweep had
 processed about 1.45M of 1.54M graphs (shard files intact, resumable with
 run_region_sweep.py --resume). Nothing has been built on the candidate.
+
+## 2026-10-13  Third limit-sweep hit (idx 1424629) is cospectral with Geneson's graph but not isomorphic
+After the human restarted the run, the sweep flagged idx 1424629 (key
+1069347459): 19 edges, 5 bidirected pairs, one mutually non-adjacent pair,
+trivial automorphism group, domination-free, NOT isomorphic to Geneson's graph
+and not its reversal (reversal keys of all three hits are not hits: reversing
+transposes W, preserving the stability spectrum but not positivity). Yet its
+limit boundary is the SAME sextic 797q^6 - 1686q^5 + ... and its compressed
+adjacency characteristic polynomial is the same 6l^5+19l^4+32l^3+32l^2+17l+4.
+Pointwise witnesses at beta = 53/26 (t = 100..10^5) are stable, positive,
+non-clique. Certificate: certificates/COUNTEREXAMPLE_CANDIDATE_n6_idx1424629.json.
+Lead for Stage 5: counterexamples may come in cospectral families (a
+switching-type operation on the nonedge set that preserves A|perp's spectrum).
+Hit 2 (idx 1387528, 18 edges, degree-5 critical value) is NOT cospectral with it.
