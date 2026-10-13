@@ -279,3 +279,12 @@ into, and characterise the operation.
 Slice facts: at eps = 1/10 only G and H have a stable window ((1, root in
 (81/80, 36/35))); hit 2 (idx 1387528) is stable at eps = 1/100 for
 1 < q < root in (693/650, 429/400) but has no window at eps = 1/10.
+
+## 2026-10-13  Full-support equivalence classes among the 34,071 n=6 survivors
+Grouping survivors by (det C, phi, omega, sorted adjugate sums) gives 21,800
+classes: 17,147 singletons, 2,994 pairs, ..., and classes of size up to 259.
+Geneson's class is exactly {idx 1000255, idx 1424629}; hit 2 (idx 1387528)
+is a singleton. All members of a class have identical 2-D regions, which gives
+a consistency check on the 2-D sweep (verdicts must agree within a class) and
+a 36% saving had the sweep run on representatives. The operation generating
+these classes is unidentified (certificates/n6_survivor_equivalence_classes.json).
