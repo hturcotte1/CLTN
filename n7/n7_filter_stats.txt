@@ -1,0 +1,4 @@
+total 222077354 domfree 27538055 survivors 237251 boundary 237221
+total 313577288 domfree 43999862 survivors 268998 boundary 268355
+total 306044487 domfree 40967399 survivors 99957 boundary 98770
+total 40334311 domfree 4727606 survivors 31836 boundary 31807

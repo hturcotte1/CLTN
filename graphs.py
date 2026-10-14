@@ -2,7 +2,7 @@
 graphs.py -- digraph enumeration up to isomorphism, with canonical forms.
 
 VALIDATION ANCHOR: the number of directed graphs on n nodes up to isomorphism
-is OEIS A000273:  n = 0..6  ->  1, 1, 3, 16, 218, 9608, 1540944
+is OEIS A000273:  n = 0..7  ->  1, 1, 3, 16, 218, 9608, 1540944, 882033440
 
 The n=5 entry (9608) is the same count that appears in Curto's published
 `n5-graphs-package`, so matching it is a genuine cross-check against the
@@ -19,7 +19,7 @@ enumerator without re-running the A000273 check.
 from itertools import permutations, combinations
 
 # OEIS A000273 -- digraphs on n nodes up to isomorphism
-A000273 = [1, 1, 3, 16, 218, 9608, 1540944]
+A000273 = [1, 1, 3, 16, 218, 9608, 1540944, 882033440]   # n=7 value reproduced by nauty geng|directg (Stage 6)
 
 
 # ------------------------------------------------------------------ encoding

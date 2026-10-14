@@ -469,3 +469,12 @@ certified by this route; the finite-eps two-parameter map is NOT (the
 positivity survivors would number in the millions and the CAD costs ~1 s
 each). Finite-eps counterexamples invisible in the limit cannot be excluded
 at n = 7 by this stage.
+
+## 2026-10-14  n = 7 enumeration: 882,033,440 digraphs (OEIS A000273(7)); an earlier figure was misquoted
+geng 7 r/4 | directg | filter7 over four shards: total 882,033,440, which IS
+A000273(7) (the value 880,471,142 quoted earlier in this log and in the
+report draft came from memory and was wrong; CLAUDE.md lists the sequence
+only through n = 6). graphs.A000273 extended with the n = 7 value.
+Domination-free: 117,232,922 (13.3%, same fraction as n = 6). Spectral
+survivors: 638,042, of which 1,889 strict (alpha < -1/2) and 636,153 boundary
+(alpha = -1/2 exactly or a zero coefficient/minor; never limit-stable).
