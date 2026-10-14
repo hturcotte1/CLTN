@@ -6861,5 +6861,7 @@
   [
    4393715579541
   ]
- ]
+ ],
+ "hits_with_a_stable_pointwise_witness": 123,
+ "note_witnesses": "each hit has at least one exact rational (eps, delta) at which ctln.analyze_support reports a stable positive full-support fixed point; smaller t may lie below the finite-t threshold T(beta) and then shows 'unstable' (expected from Lemma C)"
 }
