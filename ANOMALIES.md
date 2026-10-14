@@ -531,3 +531,21 @@ Consequence: the two-parameter CAD (10 s/graph at m = 7) is needed on roughly
 a tenth of the positivity survivors, not all of them. Unexpected: the first
 4,000 survivors in geng order (sparse) are ALL cheap_never; the survivors are
 dense graphs, as the counterexamples are.
+
+## 2026-10-14  n = 7 exact positivity prefilter complete: 9,632,133 of 882,033,440 digraphs
+geng 7 r/4 | directg | filter7p, four shards, 49 minutes wall on 4 cores:
+total 882,033,440 (= A000273(7), reproduced again), domination-free
+117,232,922 (as before), dropped by the exact Descartes test 107,600,789,
+kept 9,632,133 = 8,845,537 'P' (positivity certified at a rational beta > 2)
++ 786,596 'U' (undecided in C; exact Python resolution running; on shard 3,
+3,417 of 35,006 U lines are positive, 9.8%). 2,442,088 kept graphs carry two
+non-adjacent in-twins (Remark J.4', never stable). Kept fraction 1.09% vs
+1.84% at n = 6.
+Cheap necessary-condition pass (n7/cheap_prune.py) on a uniform random sample
+of 20,000 shard-3 survivors: 2,479 survive (12.4%), 17,521 cheap_never,
+64 ms/graph, 55,042 random exact legal points on cheap_never graphs all
+infeasible. None of the 2,479 survivors carries non-adjacent in-twins (same
+at n = 6: 0 of 2,538), so the J.4' prune is subsumed by the coefficient test.
+Projected CAD workload for the complete finite-eps n = 7 map: about 1.1
+million graphs at 10 s each, roughly 3,100 CPU-hours; the cheap pass itself
+about 160 CPU-hours. Previously "out of reach"; it is a rented-compute job.
