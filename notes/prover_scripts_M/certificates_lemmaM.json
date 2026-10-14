@@ -1,0 +1,540 @@
+{
+ "C1": {
+  "adjacency": [
+   [
+    0,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1
+   ],
+   [
+    1,
+    0,
+    0
+   ]
+  ],
+  "points": [
+   {
+    "beta": "22/5",
+    "t": "11/25",
+    "eps": "25/36",
+    "delta": "85/36",
+    "q": "187/180",
+    "legal": true,
+    "positive": false,
+    "stable": true,
+    "stability_detail": "all Hurwitz minors positive",
+    "SFP": false
+   },
+   {
+    "beta": "22/5",
+    "t": "1",
+    "eps": "1/2",
+    "delta": "17/10",
+    "q": "17/10",
+    "legal": true,
+    "positive": false,
+    "stable": false,
+    "stability_detail": "Hurwitz minor 2 negative",
+    "SFP": false
+   },
+   {
+    "beta": "22/5",
+    "t": "100",
+    "eps": "1/101",
+    "delta": "17/505",
+    "q": "340/101",
+    "legal": true,
+    "positive": false,
+    "stable": false,
+    "stability_detail": "negative coefficient",
+    "SFP": false
+   }
+  ],
+  "omega_minor_signs_at_beta": [
+   -1,
+   -1
+  ],
+  "s": "339/25"
+ },
+ "C2": {
+  "d6": "&FK@dyUfXp?",
+  "adjacency": [
+   [
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1
+   ],
+   [
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ]
+  ],
+  "domination_free": true,
+  "points": [
+   {
+    "beta": "10561/5000",
+    "t": "10",
+    "eps": "1/11",
+    "delta": "5561/55000",
+    "q": "5561/5500",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "stability_detail": "all Hurwitz minors positive",
+    "SFP": true
+   },
+   {
+    "beta": "10561/5000",
+    "t": "1000",
+    "eps": "1/1001",
+    "delta": "5561/5005000",
+    "q": "5561/5005",
+    "legal": true,
+    "positive": true,
+    "stable": false,
+    "stability_detail": "Hurwitz minor 6 negative",
+    "SFP": false
+   }
+  ],
+  "omega_minor_signs_at_beta": [
+   1,
+   1,
+   1,
+   1,
+   -1,
+   -1
+  ],
+  "s": "3707020373003304856491527/15625000000000000000000",
+  "FLAG": "t=10 point is a legal finite-eps non-clique SFP of a graph already in COUNTEREXAMPLE_CANDIDATES_n7_limit.jsonl"
+ },
+ "C3": [
+  {
+   "d6": "&EODUpt{",
+   "adjacency": [
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "dominated_nodes": [
+    0,
+    2,
+    4
+   ],
+   "point": {
+    "beta": "9/4",
+    "t": "11/2",
+    "eps": "2/13",
+    "delta": "5/26",
+    "q": "55/52",
+    "legal": true,
+    "positive": false,
+    "stable": true,
+    "stability_detail": "all Hurwitz minors positive",
+    "SFP": false
+   },
+   "omega_minor_signs_at_beta2": [
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "s2": "4"
+  },
+  {
+   "d6": "&EIKDw\\{",
+   "adjacency": [
+    [
+     0,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "dominated_nodes": [
+    0,
+    1,
+    4,
+    5
+   ],
+   "point": {
+    "beta": "9/4",
+    "t": "11/2",
+    "eps": "2/13",
+    "delta": "5/26",
+    "q": "55/52",
+    "legal": true,
+    "positive": false,
+    "stable": true,
+    "stability_detail": "all Hurwitz minors positive",
+    "SFP": false
+   },
+   "omega_minor_signs_at_beta2": [
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "s2": "4"
+  }
+ ],
+ "C4": [
+  {
+   "d6": "&FNALh\\Uwp?",
+   "adjacency": [
+    [
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "domination_free": true,
+   "point": {
+    "beta": "40000019/19000000",
+    "t": "19/2",
+    "eps": "2/21",
+    "delta": "21000019/199500000",
+    "q": "21000019/21000000",
+    "legal": true,
+    "positive": false,
+    "stable": true,
+    "stability_detail": "all Hurwitz minors positive",
+    "SFP": false
+   },
+   "omega_minor_signs_at_beta2": [
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "s2": "143",
+   "region2d_verdict": "never",
+   "region2d_positivity_cells": []
+  },
+  {
+   "d6": "&FM?_~LVd~?",
+   "adjacency": [
+    [
+     0,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "domination_free": true,
+   "point": {
+    "beta": "44000021/21000000",
+    "t": "21/2",
+    "eps": "2/23",
+    "delta": "23000021/241500000",
+    "q": "23000021/23000000",
+    "legal": true,
+    "positive": false,
+    "stable": true,
+    "stability_detail": "all Hurwitz minors positive",
+    "SFP": false
+   },
+   "omega_minor_signs_at_beta2": [
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "s2": "11",
+   "region2d_verdict": "never",
+   "region2d_positivity_cells": [
+    [
+     "16/7",
+     "51/22"
+    ]
+   ]
+  }
+ ],
+ "C5": {
+  "d6": "&FK@dyUfXp?",
+  "beta_c_interval": [
+   "5811083/2751293",
+   "10757427/5093170"
+  ],
+  "finite_t": {
+   "10": [
+    "5829737/2758886",
+    "11656129/5516189"
+   ],
+   "100": [
+    "7489127/3545640",
+    "6438213/3048097"
+   ],
+   "1000": [
+    "24168728/11442791",
+    "3886767/1840207"
+   ]
+  }
+ }
+}

@@ -1,0 +1,1614 @@
+[
+ {
+  "d6": "&FMC`j\\BTt?",
+  "complete": false,
+  "alpha": -0.5088811351084579,
+  "beta_c": 2.0361669475287583,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.011868463698030275,
+  "beta_c3_R": -0.10019237143243485,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FK@dyUfXp?",
+  "complete": false,
+  "alpha": -0.5265438473344871,
+  "beta_c": 2.112128006722683,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.0008199572750481914,
+  "beta_c3_R": 0.007725950645140749,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FK@drUvHw?",
+  "complete": false,
+  "alpha": -0.5132662502151611,
+  "beta_c": 2.0545113225496507,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.010151559460446708,
+  "beta_c3_R": 0.08803561041055073,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMEHz\\rsp?",
+  "complete": false,
+  "alpha": -0.5210849547901628,
+  "beta_c": 2.088053006482285,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.02663105717911419,
+  "beta_c3_R": -0.24244485093129123,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMEHz\\vpv?",
+  "complete": false,
+  "alpha": -0.5338989595421622,
+  "beta_c": 2.145457557910037,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009756302039998617,
+  "beta_c3_R": 0.09634851375991071,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMEHz\\vtt?",
+  "complete": false,
+  "alpha": -0.5338989595421616,
+  "beta_c": 2.145457557910034,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009756302039998204,
+  "beta_c3_R": 0.09634851375990627,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMEHz\\vxr?",
+  "complete": false,
+  "alpha": -0.5338989595421619,
+  "beta_c": 2.145457557910036,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.00975630203999882,
+  "beta_c3_R": 0.0963485137599126,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMEHz\\r|p?",
+  "complete": false,
+  "alpha": -0.5250203983209243,
+  "beta_c": 2.105353569847951,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.033375916170273995,
+  "beta_c3_R": -0.31146433156058373,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMEHz\\v|p?",
+  "complete": false,
+  "alpha": -0.5338989595421616,
+  "beta_c": 2.145457557910034,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.00975630203999851,
+  "beta_c3_R": 0.09634851375990929,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMBlWKt\\y?",
+  "complete": false,
+  "alpha": -0.5045627666650725,
+  "beta_c": 2.0184191512388328,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.01071871401005932,
+  "beta_c3_R": 0.08814075335026783,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMBlhKRTx?",
+  "complete": false,
+  "alpha": -0.5023694182896454,
+  "beta_c": 2.0095228001522805,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.007682727248520296,
+  "beta_c3_R": -0.06234393772707294,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMAlW\\d\\y?",
+  "complete": false,
+  "alpha": -0.5558864164672463,
+  "beta_c": 2.251676231214057,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.022625972441180798,
+  "beta_c3_R": -0.2583004031760547,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMAkxXbD{?",
+  "complete": false,
+  "alpha": -0.5062137800315214,
+  "beta_c": 2.025167895661074,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.024361403526578992,
+  "beta_c3_R": -0.20234170616137315,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMALx\\Tpv?",
+  "complete": false,
+  "alpha": -0.503018855405992,
+  "beta_c": 2.0121487723984304,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.03010716784148379,
+  "beta_c3_R": -0.2452732398560027,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMAlh\\r|p?",
+  "complete": false,
+  "alpha": -0.5166658612470012,
+  "beta_c": 2.068962069552956,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.03096118938657274,
+  "beta_c3_R": -0.27420490693211297,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMAlh\\v|p?",
+  "complete": false,
+  "alpha": -0.5250203983209247,
+  "beta_c": 2.1053535698479533,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.03337591617027325,
+  "beta_c3_R": -0.3114643315605778,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMAlx\\r|p?",
+  "complete": false,
+  "alpha": -0.5250203983209238,
+  "beta_c": 2.1053535698479493,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.033375916170274376,
+  "beta_c3_R": -0.3114643315605865,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMAlx\\v|p?",
+  "complete": false,
+  "alpha": -0.533898959542162,
+  "beta_c": 2.1454575579100363,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009756302039998839,
+  "beta_c3_R": 0.09634851375991284,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMAlx\\v|x?",
+  "complete": false,
+  "alpha": -0.5016707516006766,
+  "beta_c": 2.006705412560243,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.028421687526563124,
+  "beta_c3_R": -0.22966812593829314,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMELx\\Vpv?",
+  "complete": false,
+  "alpha": -0.525020398320925,
+  "beta_c": 2.105353569847954,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.033375916170273336,
+  "beta_c3_R": -0.3114643315605789,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMELx\\Vtt?",
+  "complete": false,
+  "alpha": -0.5250203983209245,
+  "beta_c": 2.1053535698479524,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.033375916170273634,
+  "beta_c3_R": -0.31146433156058095,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMELx\\Vxr?",
+  "complete": false,
+  "alpha": -0.525020398320925,
+  "beta_c": 2.105353569847954,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.03337591617027338,
+  "beta_c3_R": -0.3114643315605793,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMELx\\R|p?",
+  "complete": false,
+  "alpha": -0.5166658612470014,
+  "beta_c": 2.068962069552957,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.030961189386572233,
+  "beta_c3_R": -0.27420490693210897,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMELx\\V|p?",
+  "complete": false,
+  "alpha": -0.5250203983209245,
+  "beta_c": 2.1053535698479524,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.03337591617027399,
+  "beta_c3_R": -0.31146433156058423,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMELx\\vpv?",
+  "complete": false,
+  "alpha": -0.5338989595421608,
+  "beta_c": 2.1454575579100306,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009756302039997231,
+  "beta_c3_R": 0.09634851375989618,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMELx\\vtt?",
+  "complete": false,
+  "alpha": -0.5338989595421615,
+  "beta_c": 2.1454575579100337,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.00975630203999792,
+  "beta_c3_R": 0.0963485137599034,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMELx\\vxr?",
+  "complete": false,
+  "alpha": -0.5338989595421615,
+  "beta_c": 2.1454575579100337,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009756302039998185,
+  "beta_c3_R": 0.09634851375990602,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMELx\\r|p?",
+  "complete": false,
+  "alpha": -0.5250203983209241,
+  "beta_c": 2.10535356984795,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.033375916170274515,
+  "beta_c3_R": -0.31146433156058817,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMELx\\v|p?",
+  "complete": false,
+  "alpha": -0.5338989595421617,
+  "beta_c": 2.1454575579100346,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009756302039998345,
+  "beta_c3_R": 0.09634851375990772,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMELx\\vxz?",
+  "complete": false,
+  "alpha": -0.5016707516006766,
+  "beta_c": 2.006705412560243,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.028421687526563176,
+  "beta_c3_R": -0.22966812593829355,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMELx\\v|x?",
+  "complete": false,
+  "alpha": -0.5016707516006769,
+  "beta_c": 2.006705412560244,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.028421687526562753,
+  "beta_c3_R": -0.22966812593829045,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FKDHy]rsp?",
+  "complete": false,
+  "alpha": -0.5021978640693523,
+  "beta_c": 2.0088302717514193,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.021332468683200552,
+  "beta_c3_R": -0.17293020232982068,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNDH~\\uts?",
+  "complete": false,
+  "alpha": -0.5331479106301389,
+  "beta_c": 2.14200605024551,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.026326229411309257,
+  "beta_c3_R": -0.2587323547397623,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNE[lLQ{`?",
+  "complete": false,
+  "alpha": -0.5048357798126142,
+  "beta_c": 2.0195320243889356,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.012265482532821535,
+  "beta_c3_R": 0.10102686379389149,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FNFL|\\ulo?",
+  "complete": false,
+  "alpha": -0.5527219281243795,
+  "beta_c": 2.2357456420937196,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.019901709935752094,
+  "beta_c3_R": -0.22241166990830885,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNFL|\\u|o?",
+  "complete": false,
+  "alpha": -0.5603906816550773,
+  "beta_c": 2.2747470498689206,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.027221820478993394,
+  "beta_c3_R": -0.3204176987574906,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNFL|\\u|w?",
+  "complete": false,
+  "alpha": -0.5115382320220898,
+  "beta_c": 2.0472431325377,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.01185445603266987,
+  "beta_c3_R": -0.10171614660390185,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FND|mGu\\k?",
+  "complete": false,
+  "alpha": -0.5644898597263788,
+  "beta_c": 2.296157787214145,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.029577323159730665,
+  "beta_c3_R": 0.35806679761066507,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FNDL}[ulw?",
+  "complete": false,
+  "alpha": -0.525109268421196,
+  "beta_c": 2.105747561497857,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.0218881886427765,
+  "beta_c3_R": -0.20437545757063236,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNDL}[u|o?",
+  "complete": false,
+  "alpha": -0.5179414073509385,
+  "beta_c": 2.074436625026617,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.03633476513971407,
+  "beta_c3_R": 0.32435669888966345,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FNDL}[u|w?",
+  "complete": false,
+  "alpha": -0.5331479106301391,
+  "beta_c": 2.1420060502455107,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.026326229411309035,
+  "beta_c3_R": -0.2587323547397604,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNDL~[uds?",
+  "complete": false,
+  "alpha": -0.5251092684211955,
+  "beta_c": 2.1057475614978554,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.021888188642777386,
+  "beta_c3_R": -0.2043754575706401,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNDL~[ulo?",
+  "complete": false,
+  "alpha": -0.5179414073509376,
+  "beta_c": 2.0744366250266135,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.03633476513971304,
+  "beta_c3_R": 0.3243566988896525,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FNDL~[uls?",
+  "complete": false,
+  "alpha": -0.533147910630139,
+  "beta_c": 2.1420060502455103,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.026326229411309247,
+  "beta_c3_R": -0.25873235473976236,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNDL~[ulw?",
+  "complete": false,
+  "alpha": -0.533147910630139,
+  "beta_c": 2.1420060502455103,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.026326229411309292,
+  "beta_c3_R": -0.2587323547397628,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNDL~[uts?",
+  "complete": false,
+  "alpha": -0.5331479106301391,
+  "beta_c": 2.1420060502455107,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.02632622941130884,
+  "beta_c3_R": -0.25873235473975853,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNFL~[uto?",
+  "complete": false,
+  "alpha": -0.5527219281243791,
+  "beta_c": 2.235745642093718,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.019901709935752087,
+  "beta_c3_R": -0.22241166990830824,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNFL~[u|o?",
+  "complete": false,
+  "alpha": -0.560390681655077,
+  "beta_c": 2.274747049868919,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.027221820478993852,
+  "beta_c3_R": -0.32041769875749526,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNFL~[u|w?",
+  "complete": false,
+  "alpha": -0.5115382320220905,
+  "beta_c": 2.0472431325377025,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.011854456032668773,
+  "beta_c3_R": -0.10171614660389285,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FMDh~\\v\\s?",
+  "complete": false,
+  "alpha": -0.5109543381418071,
+  "beta_c": 2.0447988357577276,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.021539066174892287,
+  "beta_c3_R": -0.18415293212025663,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FM@|vCtxi?",
+  "complete": false,
+  "alpha": -0.5167595458669227,
+  "beta_c": 2.0693631740620266,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.03964572985321026,
+  "beta_c3_R": 0.3513229865540387,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&FMDl~[v\\s?",
+  "complete": false,
+  "alpha": -0.5109543381418075,
+  "beta_c": 2.044798835757729,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.021539066174891746,
+  "beta_c3_R": -0.18415293212025236,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNFH[Yepu?",
+  "complete": false,
+  "alpha": -0.5071489230259864,
+  "beta_c": 2.0290104794733494,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.0031147046836456993,
+  "beta_c3_R": -0.026017750592332897,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FN?|v^qTm?",
+  "complete": false,
+  "alpha": -0.5260615632475614,
+  "beta_c": 2.109978685949773,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.00039404158927461926,
+  "beta_c3_R": -0.0037014873273912056,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FN?|~^oTm?",
+  "complete": false,
+  "alpha": -0.5260615632475614,
+  "beta_c": 2.109978685949773,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.00039404158927471456,
+  "beta_c3_R": -0.0037014873273921007,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNcXvZVlM?",
+  "complete": false,
+  "alpha": -0.5260615632475615,
+  "beta_c": 2.1099786859497733,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.00039404158927437303,
+  "beta_c3_R": -0.0037014873273888953,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&FNcXv^VkL?",
+  "complete": false,
+  "alpha": -0.5260615632475618,
+  "beta_c": 2.1099786859497747,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.000394041589273833,
+  "beta_c3_R": -0.0037014873273838295,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F]SpqXRDk?",
+  "complete": false,
+  "alpha": -0.5091218990621902,
+  "beta_c": 2.0371656386575934,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.0007764611591565574,
+  "beta_c3_R": 0.0065644563158925116,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F]S`YTbKx?",
+  "complete": false,
+  "alpha": -0.5315716799016316,
+  "beta_c": 2.1347983396691372,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.0035821789860992835,
+  "beta_c3_R": 0.03485120919683968,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^UX_TE{h?",
+  "complete": false,
+  "alpha": -0.5425065265403584,
+  "beta_c": 2.1858235319464425,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.008926806193451063,
+  "beta_c3_R": 0.09322693311808398,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^UWxTClb?",
+  "complete": false,
+  "alpha": -0.5228938856142422,
+  "beta_c": 2.0959697850182306,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.026140460343116786,
+  "beta_c3_R": 0.24069567378378137,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^VGzKUpo?",
+  "complete": false,
+  "alpha": -0.5021777227375838,
+  "beta_c": 2.008748996728549,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.011350656063471316,
+  "beta_c3_R": 0.09200215135438215,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^UXb\\Eoh?",
+  "complete": false,
+  "alpha": -0.5074104533324788,
+  "beta_c": 2.030087740929998,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.004051052493194992,
+  "beta_c3_R": -0.03389317833149758,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^VLOSekx?",
+  "complete": false,
+  "alpha": -0.5729830644472023,
+  "beta_c": 2.341827493809919,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.010089186474753513,
+  "beta_c3_R": 0.12957489046098392,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F]VhW[rSp?",
+  "complete": false,
+  "alpha": -0.5001416099971291,
+  "beta_c": 2.0005666004610956,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.01063940637808033,
+  "beta_c3_R": -0.08518761103109324,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F]UhoTFLx?",
+  "complete": false,
+  "alpha": -0.5135215225016834,
+  "beta_c": 2.055589396559605,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.003338630602812843,
+  "beta_c3_R": -0.028998629700675974,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F]UgxDVWr?",
+  "complete": false,
+  "alpha": -0.5063014549779541,
+  "beta_c": 2.0255275412151468,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.017698977845387976,
+  "beta_c3_R": 0.14708305562811397,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F]UHOTfkx?",
+  "complete": false,
+  "alpha": -0.5244451652856237,
+  "beta_c": 2.1028069257262656,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.001881635552581333,
+  "beta_c3_R": -0.01749579600884374,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F]UGx\\Dhq?",
+  "complete": false,
+  "alpha": -0.545199793902813,
+  "beta_c": 2.1987676931402014,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.011136053533304872,
+  "beta_c3_R": -0.1183775511438014,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F]ShY\\`Dq?",
+  "complete": false,
+  "alpha": -0.5026581224987074,
+  "beta_c": 2.010689317022979,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.0011858639830464508,
+  "beta_c3_R": -0.009639839217063781,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F]UhqLPT}?",
+  "complete": false,
+  "alpha": -0.53871910857775,
+  "beta_c": 2.1678764904324077,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.0009726712763779645,
+  "beta_c3_R": -0.009909909721507291,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F]UhY\\`Dr?",
+  "complete": false,
+  "alpha": -0.5063014549779548,
+  "beta_c": 2.0255275412151494,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.017698977845388583,
+  "beta_c3_R": 0.14708305562811963,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F]UhA\\bT{?",
+  "complete": false,
+  "alpha": -0.5027472689182406,
+  "beta_c": 2.011049789157574,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.011577316118732386,
+  "beta_c3_R": 0.09416214878670467,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^UXk\\Esb?",
+  "complete": false,
+  "alpha": -0.5968666016753967,
+  "beta_c": 2.4805684772235104,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.006425047043792249,
+  "beta_c3_R": -0.09806859948495561,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^UXkHQte?",
+  "complete": false,
+  "alpha": -0.5072735611604606,
+  "beta_c": 2.029523729952836,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.012321580234080592,
+  "beta_c3_R": -0.10300274772899029,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^UXc\\Cxi?",
+  "complete": false,
+  "alpha": -0.5560931334652683,
+  "beta_c": 2.252724783931134,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.01959103213962576,
+  "beta_c3_R": 0.2239658116095473,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^UXk\\Eop?",
+  "complete": false,
+  "alpha": -0.5367646708083422,
+  "beta_c": 2.1587299952812162,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.058533605729008474,
+  "beta_c3_R": -0.5888440024795085,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^VH[Xacv?",
+  "complete": false,
+  "alpha": -0.5387191085777495,
+  "beta_c": 2.167876490432406,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.000972671276378474,
+  "beta_c3_R": -0.009909909721512457,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^VH[Tch}?",
+  "complete": false,
+  "alpha": -0.5424444536671145,
+  "beta_c": 2.185526998884786,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.004914875662074492,
+  "beta_c3_R": -0.05130752472888659,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^VXkXups?",
+  "complete": false,
+  "alpha": -0.5084438883022836,
+  "beta_c": 2.0343557453618892,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.008104711775880328,
+  "beta_c3_R": -0.06823674061282338,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^TXmOEwd?",
+  "complete": false,
+  "alpha": -0.5264898553617792,
+  "beta_c": 2.1118871714227723,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.0014800262397469221,
+  "beta_c3_R": -0.013940602740027074,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^TxULoDi?",
+  "complete": false,
+  "alpha": -0.5203645241285426,
+  "beta_c": 2.0849166717351006,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.005249835153033804,
+  "beta_c3_R": 0.047578612510634104,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^TXeLUoh?",
+  "complete": false,
+  "alpha": -0.5103166734417247,
+  "beta_c": 2.0421361025879117,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.03246135458809305,
+  "beta_c3_R": -0.27645260605698657,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^V\\K[epa?",
+  "complete": false,
+  "alpha": -0.5098760742549153,
+  "beta_c": 2.040300314823039,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.01352070391375121,
+  "beta_c3_R": 0.11483693486287087,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^V\\K[spa?",
+  "complete": false,
+  "alpha": -0.5397852855092862,
+  "beta_c": 2.1728987981330135,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.022476978334593892,
+  "beta_c3_R": -0.23059847245222964,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^VKlKQsp?",
+  "complete": false,
+  "alpha": -0.5033801783107817,
+  "beta_c": 2.013612740221622,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.0037611714822724483,
+  "beta_c3_R": 0.030707961371230993,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^V[tSUhw?",
+  "complete": false,
+  "alpha": -0.5051187701249342,
+  "beta_c": 2.020686863093298,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.012411115157935462,
+  "beta_c3_R": -0.10240186336392902,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^V[tSUxw?",
+  "complete": false,
+  "alpha": -0.5439764182432065,
+  "beta_c": 2.1928690532791792,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.048608855737073624,
+  "beta_c3_R": -0.5125703656396805,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^UK|\\Udy?",
+  "complete": false,
+  "alpha": -0.5212856417525455,
+  "beta_c": 2.088928361499208,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.02408025961723202,
+  "beta_c3_R": 0.21949862498264094,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^VLM[eov?",
+  "complete": false,
+  "alpha": -0.559821968895962,
+  "beta_c": 2.271808062505613,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.11063664178690903,
+  "beta_c3_R": -1.2972207723956677,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F]UxsTFHj?",
+  "complete": false,
+  "alpha": -0.5112079601510321,
+  "beta_c": 2.0458598309190767,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.018478914850103972,
+  "beta_c3_R": 0.1582355607053331,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F]Th]CvWr?",
+  "complete": false,
+  "alpha": -0.6009728428728272,
+  "beta_c": 2.5060950918718867,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.005955149749764347,
+  "beta_c3_R": 0.09373144766425415,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^vlKUe[R?",
+  "complete": false,
+  "alpha": -0.5854391517535105,
+  "beta_c": 2.412191127622887,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.025717138423304624,
+  "beta_c3_R": -0.3609589292487069,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^vk\\Yo\\U?",
+  "complete": false,
+  "alpha": -0.5735384106012807,
+  "beta_c": 2.3448770648018487,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.023112885272034818,
+  "beta_c3_R": -0.29799872095373314,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^vL[Yqt[?",
+  "complete": false,
+  "alpha": -0.565756062741682,
+  "beta_c": 2.3028531067438522,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.022624487390522176,
+  "beta_c3_R": -0.27629781909765994,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^uk\\^_TU?",
+  "complete": false,
+  "alpha": -0.5774737975053679,
+  "beta_c": 2.3667171268809164,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.019734190622937842,
+  "beta_c3_R": 0.26161243297476183,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^uK\\^clR?",
+  "complete": false,
+  "alpha": -0.521285641752545,
+  "beta_c": 2.088928361499206,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.02408025961723123,
+  "beta_c3_R": 0.21949862498263303,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^ulC^a{\\?",
+  "complete": false,
+  "alpha": -0.5186982628842127,
+  "beta_c": 2.0776987134775893,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.0031664479471848477,
+  "beta_c3_R": -0.028400112846651615,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^vleMoT]?",
+  "complete": false,
+  "alpha": -0.5275110652089103,
+  "beta_c": 2.1164516803809357,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.01784353679724923,
+  "beta_c3_R": -0.1691632475864503,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^vl]UakR?",
+  "complete": false,
+  "alpha": -0.5946189833426415,
+  "beta_c": 2.466815067576865,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.013399560947805351,
+  "beta_c3_R": -0.20114088001055308,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^uleNUTW?",
+  "complete": false,
+  "alpha": -0.5598219688959598,
+  "beta_c": 2.2718080625056016,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.11063664178690445,
+  "beta_c3_R": -1.2972207723955942,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^u|uVEhI?",
+  "complete": false,
+  "alpha": -0.5113907085619266,
+  "beta_c": 2.046625018236561,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.012037681264553792,
+  "beta_c3_R": 0.10319476726829115,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^u|uNOlI?",
+  "complete": false,
+  "alpha": -0.5098122557622942,
+  "beta_c": 2.040034684170055,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.06578678696932556,
+  "beta_c3_R": -0.558536204812077,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^v|^Fo\\B?",
+  "complete": false,
+  "alpha": -0.5064446450017615,
+  "beta_c": 2.0261151862156757,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.05037442876864366,
+  "beta_c3_R": -0.4189889114577584,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^vlmZEPT?",
+  "complete": false,
+  "alpha": -0.5073222502516148,
+  "beta_c": 2.029724298510961,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.01838180641349421,
+  "beta_c3_R": 0.15370901536793025,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^UxkNSta?",
+  "complete": false,
+  "alpha": -0.504717551742693,
+  "beta_c": 2.019049945174888,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.0012179366573121968,
+  "beta_c3_R": 0.01002457313523907,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^V\\[]e`e?",
+  "complete": false,
+  "alpha": -0.5045316725286301,
+  "beta_c": 2.018292481183439,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.0389748405277309,
+  "beta_c3_R": 0.32043257059480623,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^V{\\Uchb?",
+  "complete": false,
+  "alpha": -0.6246851692251258,
+  "beta_c": 2.664429748047532,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.031226557446981246,
+  "beta_c3_R": -0.5906591416122512,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^S{^ReL|?",
+  "complete": false,
+  "alpha": -0.519430272535629,
+  "beta_c": 2.08086348941765,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009287435906428523,
+  "beta_c3_R": 0.08368094967093949,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^V|mMSPb?",
+  "complete": false,
+  "alpha": -0.6175350955431333,
+  "beta_c": 2.614618984244023,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.06935062118601985,
+  "beta_c3_R": 1.2395829271128072,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^U|m^SPb?",
+  "complete": false,
+  "alpha": -0.5073222502516153,
+  "beta_c": 2.029724298510963,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.018381806413494847,
+  "beta_c3_R": 0.153709015367936,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^U|]VeLk?",
+  "complete": false,
+  "alpha": -0.5580510927126188,
+  "beta_c": 2.2627049948779283,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.03462844153685162,
+  "beta_c3_R": -0.40115919679406636,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^UluNQT|?",
+  "complete": false,
+  "alpha": -0.5194302725356283,
+  "beta_c": 2.0808634894176468,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009287435906427164,
+  "beta_c3_R": 0.08368094967092689,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^Ul]NsTu?",
+  "complete": false,
+  "alpha": -0.5194302725356279,
+  "beta_c": 2.080863489417645,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009287435906426665,
+  "beta_c3_R": 0.08368094967092217,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^U|m^QTq?",
+  "complete": false,
+  "alpha": -0.5425455151756328,
+  "beta_c": 2.1860098286804095,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.015282728880193525,
+  "beta_c3_R": -0.15964570516669868,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^U|eNUTw?",
+  "complete": false,
+  "alpha": -0.59665463933182,
+  "beta_c": 2.479264911696033,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.03097687369280343,
+  "beta_c3_R": 0.47206998371090697,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^U|uJQT|?",
+  "complete": false,
+  "alpha": -0.5194302725356279,
+  "beta_c": 2.080863489417645,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009287435906426892,
+  "beta_c3_R": 0.08368094967092422,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^v\\SYfdM?",
+  "complete": false,
+  "alpha": -0.5421387525656416,
+  "beta_c": 2.184067783861454,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.006020868975735604,
+  "beta_c3_R": 0.06272743294186091,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^v[\\UpkN?",
+  "complete": false,
+  "alpha": -0.528489571745686,
+  "beta_c": 2.1208438670218333,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.0013080462113385864,
+  "beta_c3_R": 0.012478120642708914,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^v\\eMp{J?",
+  "complete": false,
+  "alpha": -0.5425455151756327,
+  "beta_c": 2.186009828680409,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.015282728880193393,
+  "beta_c3_R": -0.15964570516669718,
+  "positive_at_beta_c": true,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^v\\]YddU?",
+  "complete": false,
+  "alpha": -0.5667891140253171,
+  "beta_c": 2.3083445785303756,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": -0.0002784126345774759,
+  "beta_c3_R": -0.0034244502098124525,
+  "positive_at_beta_c": false,
+  "prediction": "M holds near (beta_c, inf)"
+ },
+ {
+  "d6": "&F^u\\eNVoJ?",
+  "complete": false,
+  "alpha": -0.5966546393318197,
+  "beta_c": 2.4792649116960317,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.030976873692803227,
+  "beta_c3_R": 0.4720699837109031,
+  "positive_at_beta_c": false,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^u\\mFTxJ?",
+  "complete": false,
+  "alpha": -0.5194302725356283,
+  "beta_c": 2.0808634894176468,
+  "critical_kinds": [
+   "moving"
+  ],
+  "R": 0.009287435906427614,
+  "beta_c3_R": 0.08368094967093094,
+  "positive_at_beta_c": true,
+  "prediction": "T(beta) bounded above just right of beta_c (M fails)"
+ },
+ {
+  "d6": "&F^v|~^v|~?",
+  "complete": true,
+  "alpha": -0.9999999999999996,
+  "beta_c": Infinity,
+  "critical_kinds": [
+   "fixed"
+  ],
+  "R": null,
+  "beta_c3_R": null,
+  "positive_at_beta_c": null,
+  "prediction": null
+ }
+]

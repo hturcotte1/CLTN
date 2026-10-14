@@ -1,0 +1,338 @@
+[
+ {
+  "d6": "&EPKebpY",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "18",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EQETbhy",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "38",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EULdJ\\y",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "7",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EWETqhu",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "10",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EIHFpTu",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "29/5",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EKhFRlu",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "10",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EWBFrtm",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "8",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&ERLsh\\m",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "15",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EULpJ\\m",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "7",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EBgFpT]",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "29/5",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&ELbVyt]",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "8",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EJeVxt]",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "8",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&ELiVrt]",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "8",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EDbsJl]",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "10",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&E[iFrx}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "6",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&ETMeJx}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "6",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&ELeRZx}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "8",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EWBFqd}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "11",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EEgBYT}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "18",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EWDFbt}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "8",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&ELiRZt}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "8",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&ERMsiL}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "4",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EWMFrl}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "4",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EXMFrl}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "7",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&ETMqJl}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "6",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EFkqX\\}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "3",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&EEgDR\\}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "12",
+    null
+   ]
+  ]
+ },
+ {
+  "d6": "&E^nvz|}",
+  "curve": "stable_somewhere",
+  "omega2_hurwitz": true,
+  "alpha_lt_minus_half": true,
+  "stable_cells": [
+   [
+    "0",
+    null
+   ]
+  ]
+ }
+]

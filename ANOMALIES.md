@@ -549,3 +549,57 @@ at n = 6: 0 of 2,538), so the J.4' prune is subsumed by the coefficient test.
 Projected CAD workload for the complete finite-eps n = 7 map: about 1.1
 million graphs at 10 s each, roughly 3,100 CPU-hours; the cheap pass itself
 about 160 CPU-hours. Previously "out of reach"; it is a rented-compute job.
+
+## 2026-10-14  RUN STOPPED again: a finite-eps-ONLY counterexample at n = 7, invisible in the limit
+Workflow wf_945cf15e-c68 (one prover, two independent refuters, six exact referees) set out to
+prove "Lemma M": stability at a legal finite t implies limit stability at the same beta
+(which would have reduced the finite-eps n = 7 map to the spectral survivors). It is FALSE,
+with exact certificates at every level:
+* pure positive stability of K, m = 3: A = 011/001/100, beta = 22/5: stable at t = 11/25
+  (legal, q = 187/180), unstable at t = 1 and t = 100 (also 011/101/100 at beta = 4 and
+  011/100/010 at beta = 50/11). Positivity fails there, so no CTLN consequence.
+* WITH positivity, n = 7: graph &FNFL~[udo? (labelg canonical &FS@{`]f|~?), 28 edges,
+  domination-free, not a clique, spectral abscissa alpha(A|perp) = -1/2 EXACTLY
+  (7 chi_perp = (l+1)(l^2+l+1)(7l^3+14l^2+14l+5); filter7 flag 'B'), hence NEVER limit-stable
+  and NOT among the 123 limit candidates. ctln.analyze_support: eps = 1/49, delta = 33/1568
+  (beta = 65/32, t = 48, q = 99/98): legal, x > 0, all Hurwitz minors positive -- a stable
+  positive non-clique full-support fixed point; also eps = 1/36, delta = 17/588 (beta = 100/49,
+  t = 35). At the same beta and t = 100, 1000: unstable (minor 6 negative, decided).
+  region2d: stable_somewhere; at beta = 53/26 the stable t-range is (26, 53), bounded above.
+  Found independently by both refuters (different labellings, recognised as isomorphic only by
+  labelg), each confirmed by an independent exact referee. Certificate:
+  certificates/COUNTEREXAMPLE_CANDIDATE_n7_finite_FNFL.json (re-runnable:
+  n7/write_finite_certificates.py). Per CLAUDE.md section 3 the run is STOPPED: no sweep
+  stage was launched after this; the candidate awaits human hand-verification together
+  with the 123 limit candidates.
+* "Bulge": for limit candidates &FNDL}[u|o? and &FK@dyUfXp? the finite-eps stable region
+  extends to beta ABOVE beta_c and is bounded above in t there (e.g. &FNDL}[u|o?: beta =
+  52/25 > beta_c in (56/27, 27/13), stable at t = 20, unstable at t = 60 and 10^5). Lemma AS
+  (prover, PROVED): nu_A(c) = -alpha + R*/c + O(c^-2); the bulge occurs iff R* > 0; a float
+  table predicts 39 of the 123 candidates bulge. So the t -> infinity classification
+  understates the stable regions of some candidates (n = 6: none bulge; no stable cell
+  bounded in t). certificates/n7_limit_hits_finite_eps_bulge_witnesses.json.
+Consequence for the map: "finite-stable => limit-stable" fails, so the finite-eps n = 7 map
+cannot be read off the limit stage, and the finite-eps counterexample set is strictly larger
+than the limit set (at least 124 non-clique graphs at n = 7).
+
+## 2026-10-14  Lemma R (ray reduction) makes the finite-eps n = 7 map cheap after all
+Prover (PROVED, re-derived here): K(lambda beta, lambda t) = (1-lambda) I + lambda K(beta, t)
+(Remark F), so stability propagates down every ray to the legality curve t(beta-2) = 1;
+f(lambda) = lambda t (lambda beta - 2) - 1 changes sign on (2/beta, 1). Hence the full support
+is stable at some legal (eps, delta) iff K(2 + 1/t, t) is stable for some t > 0 -- an exact
+ONE-dimensional problem: t K = L(t) = tI + (2t+1)N + t^2 J, integer polynomial matrix,
+critical set = positive roots of det L and Delta_{m-1}(t). n7/curve_test.py (from the prover's
+curve1d.py): 35-45 ms per 7-node graph; prover's validation: all 9,608 five-node digraphs
+(95 stable, each with an exact legal witness), all 124 limit-stable n = 7 graphs stable (as
+Lemma R requires), 16,000 random n = 7 positivity survivors all 'never'. Strictly stronger than
+the coefficient-sign prune (which it subsumes) at the same cost. Also PROVED and re-derived:
+e_2(K) = B(1+2t) + Nn(1-beta)(1+beta+2t) + O(1 - t(beta-2)) over bidirected / non-adjacent /
+one-way pairs, so legal stability forces B > Nn, i.e. edges >= m(m-1)/2 + 1 = 22 at n = 7
+(4,045,243 of the 9,632,133 prefilter lines). Revised cost of the complete finite-eps n = 7
+map: curve test on <= 8.9 M survivors (~100 CPU-hours, ~50 with the edge bound) + region2d on
+the curve-stable graphs (hundreds, 10 s each). It fits on this 4-core machine in about a day;
+previously estimated at 3,300 CPU-hours (CAD on 1.1 M graphs). NOT launched: the run is stopped.
+Scratch-directory collision: two workflow agents wrote into the same scratch directory and one
+overwrote the other's scan_pos.py; the prover moved its work and reported it. No repository file
+was touched; future workflow prompts assign disjoint directories per agent label.

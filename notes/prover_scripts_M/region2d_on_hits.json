@@ -1,0 +1,21 @@
+[
+ {
+  "d6": "&FNALh\\Uwp?",
+  "curve": "stable_somewhere|alpha>=-1/2",
+  "region2d": "never",
+  "positivity_cells": [],
+  "stable_cells": []
+ },
+ {
+  "d6": "&FM?_~LVd~?",
+  "curve": "stable_somewhere|alpha>=-1/2",
+  "region2d": "never",
+  "positivity_cells": [
+   [
+    "16/7",
+    "51/22"
+   ]
+  ],
+  "stable_cells": []
+ }
+]
