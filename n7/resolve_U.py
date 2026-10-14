@@ -50,10 +50,11 @@ def main():
                     st["U_resolved_never"] += 1
                     if drop: drop.write(f"{s} {e} U {tw} {c.get('reason')}\n")
                 else:
-                    st["other_verdict"] += 1
-                    if drop: drop.write(f"{s} {e} U {tw} OTHER:{c['verdict']}\n")
+                    st["other_verdict"] += 1            # fail-safe: an unexpected verdict is KEPT (flag X), never dropped
+                    out.write(f"{s} {e} X {tw}\n")
+                    if drop: drop.write(f"{s} {e} U {tw} KEPT-OTHER:{c['verdict']}\n")
     st["seconds"] = round(time.time() - t0, 1)
-    st["kept"] = st["P"] + st["U_resolved_positive"]
+    st["kept"] = st["P"] + st["U_resolved_positive"] + st["other_verdict"]
     json.dump(st, open(a.out + ".stats.json", "w"), indent=1)
     print(json.dumps(st))
 

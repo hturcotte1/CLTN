@@ -1,0 +1,11 @@
+{
+ "graphs": 300,
+ "from_full_test": 276,
+ "points": 6000,
+ "stable_true": [],
+ "stable_none": 0,
+ "edges_range": [
+  22,
+  40
+ ]
+}

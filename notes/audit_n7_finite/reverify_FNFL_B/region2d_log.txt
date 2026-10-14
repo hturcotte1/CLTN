@@ -1,0 +1,1 @@
+verdict stable_somewhere stable_cells [('2', '27/13', '53/26', '26', '53')] elapsed 6.6

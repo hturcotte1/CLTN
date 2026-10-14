@@ -26,10 +26,12 @@ def main():
             if r["verdict"] != rf["verdict"]: dis += 1
             c[r["verdict"]] += 1
             if r["verdict"] == "stable_somewhere":
-                cell = next(x for x in r["cells"] if x["stable"]); t = F(cell["sample_t"]); beta = 2 + 1 / t + F(1, 10 ** 6)
-                eps = 1 / (t + 1); delta = (beta - 1) * eps
-                w = analyze_support(A, list(range(5)), eps, delta)
-                if w["stable"] is not True: wit_fail += 1
+                cell = next(x for x in r["cells"] if x["stable"]); t = F(cell["sample_t"])
+                ok = False
+                for k in range(6, 13):                      # eta = 10^-6 ... 10^-12: openness guarantees a witness for small eta
+                    beta = 2 + 1 / t + F(1, 10 ** k); eps = 1 / (t + 1); delta = (beta - 1) * eps
+                    if analyze_support(A, list(range(len(A))), eps, delta)["stable"] is True: ok = True; break
+                if not ok: wit_fail += 1
         print(json.dumps({"n5_graphs": len(out), **c, "fast_disagreements": dis, "witness_failures": wit_fail, "seconds": round(time.time() - t0, 1)}))
     if a.n6:
         c = {"never": 0, "stable_somewhere": 0, "escalate": 0}; stable = []

@@ -1,0 +1,32 @@
+d6 n = 7 pad bits [0, 0, 0, 0, 0]
+adjacency_rows == digraph6 decode: True
+re-encode: &FNFL~[udo? == cert: True
+diag zero: True edges: 28 cert edges: 28
+clique: False
+chi_A - chi_{A+J} = (l + 1)*(l**2 + l + 1)*(7*l**3 + 14*l**2 + 14*l + 5)
+chi_perp monic? lc = 1  degree 6
+chi_perp via explicit compression equals (chi_A - chi_{A+J})/n: True
+factor over Q: (1/7, [(l + 1, 1), (l**2 + l + 1, 1), (7*l**3 + 14*l**2 + 14*l + 5, 1)])
+7*chi_perp == claimed product: True
+
+factor l + 1 mult 1 deg 1
+  real root in [-1, -1]
+  f(x-1/2) coeffs [1, 1/2] Hurwitz minors [1/2] all coeff>0: True
+  gcd(Re,Im) of f(-1/2+iw) in w: 1
+  sum-of-pairs resultant R(s) factors: (1, [(s + 2, 1)])
+
+factor l**2 + l + 1 mult 1 deg 2
+  complex root in Re[-1/2,-524287/1048576] x Im[-454047/524288,-908093/1048576]
+  complex root in Re[-1/2,-524287/1048576] x Im[908093/1048576,454047/524288]
+  f(x-1/2) coeffs [1, 0, 3/4] Hurwitz minors [0, 0] all coeff>0: False
+  gcd(Re,Im) of f(-1/2+iw) in w: w**2 - 3/4
+  sum-of-pairs resultant R(s) factors: (1, [(s + 1, 2), (s**2 + 2*s + 4, 1)])
+
+factor 7*l**3 + 14*l**2 + 14*l + 5 mult 1 deg 3
+  real root in [-1283/2046, -1019/1625]
+  complex root in Re[-719807/1048576,-359903/524288] x Im[-428457/524288,-856913/1048576]
+  complex root in Re[-719807/1048576,-359903/524288] x Im[856913/1048576,428457/524288]
+  f(x-1/2) coeffs [7, 7/2, 21/4, 5/8] Hurwitz minors [7/2, 14, 35/4] all coeff>0: True
+  gcd(Re,Im) of f(-1/2+iw) in w: 1
+  sum-of-pairs resultant R(s) factors: (343, [(7*s**3 + 28*s**2 + 56*s + 40, 1), (7*s**3 + 28*s**2 + 42*s + 23, 2)])
+

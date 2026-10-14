@@ -76,7 +76,8 @@ def coeffs_at(P, t):
 def curve_test(A, P=None):
     m = len(A)
     P = P or coeff_polys(A)
-    assert P[0] == [1], "p is not monic"
+    if P[0] != [1]:
+        raise ArithmeticError("p is not monic")
     zc = [k for k in range(1, m + 1) if not P[k]]
     if zc:
         return {"verdict": "never", "reason": f"coefficient(s) {zc} identically zero along the curve (b1)",

@@ -1,0 +1,15 @@
+PASS Remark F identity
+PASS lam* solves f = 0
+PASS lam*<1 equivalence algebra
+PASS t'(beta'-2) = 1
+PASS t K(2+1/t,t) = L(t)
+PASS bidirected minor = 1+2t
+PASS non-adjacent minor = (1-beta)(1+beta+2t)
+PASS one-way minor (N_ij=1) = 1 - t(beta-2)
+PASS one-way minor (N_ji=1) = 1 - t(beta-2)
+PASS e_2 = t Phi + B + O - Nn(beta^2-1) (with m(m-1) = 2(B+Nn+O))
+PASS e_2 - (B-Nn)(1+2t) = -Nn(beta^2-2+2t(beta-2)) + O(1-t(beta-2))
+PASS m=7: edges >= 22 <=> B > Nn over all (B,Nn,O) with B+Nn+O=21
+PASS det(zI-(cJ-A)) = chi - c psi and psi = m det(zI + A|perp) on 12 random graphs
+PASS s'(z0) = psi1'(z0)/chi1(z0) when psi1(z0)=0
+ALL PASS

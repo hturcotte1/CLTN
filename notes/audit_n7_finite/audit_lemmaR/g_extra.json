@@ -1,0 +1,19 @@
+{
+ "tournaments_n7": {
+  "n": 40,
+  "never_zero_branch": 40,
+  "points": 200,
+  "stable_true": 0,
+  "zero_coeffs": [
+   "coefficient(s) [2] identically zero along the curve (b1)"
+  ]
+ },
+ "all_n5": {
+  "graphs": 9608,
+  "stable_somewhere": 95,
+  "never": 9513,
+  "escalate": 0,
+  "stable_with_B_le_Nn": 0,
+  "fast_disagree": 0
+ }
+}

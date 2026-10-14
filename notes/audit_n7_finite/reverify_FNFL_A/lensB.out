@@ -1,0 +1,34 @@
+chi_A - chi_{A+J} = 7*l**6 + 28*l**5 + 56*l**4 + 68*l**3 + 52*l**2 + 24*l + 5
+factor_list: (1, [(l + 1, 1), (l**2 + l + 1, 1), (7*l**3 + 14*l**2 + 14*l + 5, 1)])
+PASS chi_A - chi_{A+J} == (l+1)(l^2+l+1)(7l^3+14l^2+14l+5)
+PASS same polynomial for A^T
+  factor l + 1: all Re< -1/2 strictly: True; roots with Re = -1/2 exactly: False (gcd Poly(1, y, domain='QQ'))
+    roots in closed box Re(m)>=0: 0
+  factor l**2 + l + 1: all Re< -1/2 strictly: False; roots with Re = -1/2 exactly: True (gcd Poly(y**2 - 3/4, y, domain='QQ'))
+    roots in closed box Re(m)>=0: 2
+  factor 7*l**3 + 14*l**2 + 14*l + 5: all Re< -1/2 strictly: True; roots with Re = -1/2 exactly: False (gcd Poly(1, y, domain='QQ'))
+    roots in closed box Re(m)>=0: 0
+PASS cubic 7l^3+14l^2+14l+5: every root Re < -1/2 (shifted poly Hurwitz)
+PASS l^2+l+1 roots have Re exactly -1/2
+PASS irreducible factors over Q are exactly these three
+  irreducible factors: [(l + 1, 1), (l**2 + l + 1, 1), (7*l**3 + 14*l**2 + 14*l + 5, 1)] content 1
+=> alpha(A|perp) = -1/2 exactly (attained by primitive cube roots of unity)
+fastregion INF verdict: never {} 0.0s
+PASS fastregion limit verdict == never
+PASS own digraph6 encoding &FNFL~[udo? == cert &FNFL~[udo?
+limit file keys: ['d6', 'key', 'edges', 'complete', 'verdict', 'cert', 'stable_q_limit', 'A', 'clique', 'targets', 'pointwise_witnesses']
+PASS 123 limit records, all with digraph6
+PASS labelg returned 124 lines
+canonical form: &FS@{`]f|~? | cert labelg_canonical: &FS@{`]f|~?
+PASS canonical form matches certificate
+PASS not among the 123 limit candidates (canonical)
+PASS 123 limit candidates pairwise non-isomorphic
+  (informative) transpose canonical in limit set? False
+region2d 7.1s verdict stable_somewhere
+stable_cells mine: [['2', '27/13', '53/26', '26', '53']]
+stable_cells cert: [['2', '27/13', '53/26', '26', '53']]
+PASS region2d stable_cells == certificate
+PASS region2d verdict == certificate
+PASS region2d full record == certificate region2d
+
+ALL LENS-B CHECKS PASS

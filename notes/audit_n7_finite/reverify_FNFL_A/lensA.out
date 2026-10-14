@@ -1,0 +1,83 @@
+PASS n == 7
+PASS zero diagonal
+PASS digraph6 decodes to n=7
+PASS digraph6 adjacency == adjacency_rows
+PASS padding bits zero
+PASS edge count 28 == cert 28
+PASS not a clique
+  non-edges: 14 [(0, 1), (0, 6), (1, 0), (1, 5), (1, 6), (4, 0)] ...
+PASS domination-free (own Lemma D reading): dominating pairs=[]
+PASS graphs.is_domination_free agrees
+PASS full support: no node outside sigma (condition 2 vacuous, no targets possible)
+PASS I - W == -delta I + (1+delta) J - (eps+delta) A^T  (symbolic identity)
+  closed form with A (not A^T) equals I-W? False
+
+=== W1 stable: eps=1/49 delta=33/1568
+  t=48 beta=65/32 q=99/98 legal=True  t(beta-2)=3/2
+  x = ['491930208/2263336739', '1536539648/24896704129', '1092471023/24896704129', '1092471023/24896704129', '5088247808/24896704129', '178831968/2263336739', '8750946848/24896704129']
+  x positive: True  residual zero: True
+  charpoly: ['1', '7', '683903/2458624', '19840025/963780608', '501245915/863547424768', '149344556577/9478296534253568', '66146200193/232218265089212416', '24896704129/22757389978742816768']
+  Hurwitz signs: ['+', '+', '+', '+', '+', '+', '+']  stable(all>0): True
+  root isolation (left,right): (7, 0)
+  ctln: stable= True | all Hurwitz minors positive | x match: True
+PASS W1 stable: legal
+PASS W1 stable: fixed-point residual 0
+PASS W1 stable: x > 0
+PASS W1 stable: all charpoly coeffs >0 and all Hurwitz minors >0
+PASS W1 stable: root isolation: 7 roots in open LHP
+PASS W1 stable: ctln.analyze_support stable == True
+PASS W1 stable: ctln x == sympy x
+PASS W1 stable: certificate witness present
+PASS W1 stable: cert x matches
+PASS W1 stable: cert charpoly matches
+PASS W1 stable: cert t,beta,q match
+PASS W1 stable: cert stable_detail == ctln detail
+
+=== W2 stable: eps=1/36 delta=17/588
+  t=35 beta=100/49 q=85/84 legal=True  t(beta-2)=10/7
+  x = ['5735969694/25733553709', '1547910294/25733553709', '935910294/25733553709', '935910294/25733553709', '5294910894/25733553709', '2135910294/25733553709', '9194850294/25733553709']
+  x positive: True  residual zero: True
+  charpoly: ['1', '7', '1168891/3111696', '104966395/2744515872', '4731527645/3227550665472', '29036750947/533756191302432', '825473847773/614887132380401664', '25733553709/3689322794282409984']
+  Hurwitz signs: ['+', '+', '+', '+', '+', '+', '+']  stable(all>0): True
+  root isolation (left,right): (7, 0)
+  ctln: stable= True | all Hurwitz minors positive | x match: True
+PASS W2 stable: legal
+PASS W2 stable: fixed-point residual 0
+PASS W2 stable: x > 0
+PASS W2 stable: all charpoly coeffs >0 and all Hurwitz minors >0
+PASS W2 stable: root isolation: 7 roots in open LHP
+PASS W2 stable: ctln.analyze_support stable == True
+PASS W2 stable: ctln x == sympy x
+PASS W2 stable: certificate witness present
+PASS W2 stable: cert x matches
+PASS W2 stable: cert charpoly matches
+PASS W2 stable: cert t,beta,q match
+PASS W2 stable: cert stable_detail == ctln detail
+
+=== W3 unstable same beta: eps=1/101 delta=33/3232
+  t=100 beta=65/32 q=825/808 legal=True  t(beta-2)=25/8
+  x = ['11153764512/51362645657', '3167153152/51362645657', '2251828027/51362645657', '2251828027/51362645657', '10488020992/51362645657', '4054741152/51362645657', '18037665952/51362645657']
+  x positive: True  residual zero: True
+  charpoly: ['1', '7', '1406079/10445824', '40908345/8440225792', '7222636285/109115239038976', '308871745697/352660452573970432', '137142821837/17809352854985506816', '51362645657/3597489276707072376832']
+  Hurwitz signs: ['+', '+', '+', '+', '+', '-', '-']  stable(all>0): False
+   Delta_6 = -209622392210809820337905999880827073826310052449/781121191448936414964433281638257036095441599782934453456264115402047488
+   Delta_7 = -10766760652896501647031697877253205221032942387755072063993/2810075110046200871872077836998456291876744133037142132878999249459475811959214344619494998016
+  root isolation (left,right): (5, 2)
+  ctln: stable= False | Hurwitz minor 6 negative | x match: True
+PASS W3 unstable same beta: legal
+PASS W3 unstable same beta: fixed-point residual 0
+PASS W3 unstable same beta: x > 0
+PASS W3 unstable same beta: NOT stable
+PASS W3 unstable same beta: no vanishing minor (strictly decided)
+PASS W3 unstable same beta: some minor strictly negative
+PASS W3 unstable same beta: root isolation finds a root with Re>0 or not all left
+PASS W3 unstable same beta: ctln.analyze_support stable == False
+PASS W3 unstable same beta: ctln x == sympy x
+PASS W3 unstable same beta: certificate witness present
+PASS W3 unstable same beta: cert x matches
+PASS W3 unstable same beta: cert charpoly matches
+PASS W3 unstable same beta: cert t,beta,q match
+PASS W3 unstable same beta: cert stable_detail == ctln detail
+PASS W1 and W3 share beta
+
+ALL LENS-A CHECKS PASS

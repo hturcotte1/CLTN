@@ -1,0 +1,2998 @@
+{
+ "fnfl_rows_match_d6": true,
+ "n_graphs": 129,
+ "bad": [],
+ "fnfl_witness_projection": [
+  {
+   "eps": "1/49",
+   "delta": "33/1568",
+   "stable_fp": true,
+   "stable": true,
+   "curve_t_bracket": [
+    "25038085/524288",
+    "50076171/1048576"
+   ],
+   "bracket_inside_a_stable_cell": true
+  },
+  {
+   "eps": "1/36",
+   "delta": "17/588",
+   "stable_fp": true,
+   "stable": true,
+   "curve_t_bracket": [
+    "36483017/1048576",
+    "18241509/524288"
+   ],
+   "bracket_inside_a_stable_cell": true
+  }
+ ],
+ "results": [
+  {
+   "tag": "limit_hit",
+   "d6": "&FMC`j\\BTt?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "31",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "32",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.07
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FK@dyUfXp?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.064
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FK@drUvHw?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "17",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "18",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.08
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMEHz\\rsp?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "14",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "15",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.078
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMEHz\\vpv?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.079
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMEHz\\vtt?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.071
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMEHz\\vxr?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.067
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMEHz\\r|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "13",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "14",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.077
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMEHz\\v|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.066
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMBlWKt\\y?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "50",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "51",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.074
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMBlhKRTx?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "112",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "113",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.087
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMAlW\\d\\y?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "5",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "6",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.083
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMAkxXbD{?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "48",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "49",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.071
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMALx\\Tpv?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "103",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "104",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.078
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMAlh\\r|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "19",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "20",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.069
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMAlh\\v|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "13",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "14",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.074
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMAlx\\r|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "13",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "14",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.073
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMAlx\\v|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.05
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMAlx\\v|x?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "184",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "185",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.056
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\Vpv?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "13",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "14",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.06
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\Vtt?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "13",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "14",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.057
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\Vxr?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "13",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "14",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.057
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\R|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "19",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "20",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.055
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\V|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "13",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "14",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.056
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\vpv?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.049
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\vtt?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.055
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\vxr?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.069
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\r|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "13",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "14",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.071
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\v|p?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.067
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\vxz?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "184",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "185",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.073
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMELx\\v|x?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "184",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "185",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.071
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FKDHy]rsp?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "133",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "134",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.084
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNDH~\\uts?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.059
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNE[lLQ{`?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "47",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "48",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.078
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNFL|\\ulo?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "6",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "7",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.08
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNFL|\\u|o?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "5",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "6",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.061
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNFL|\\u|w?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "24",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "25",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.075
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FND|mGu\\k?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "17/5",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "22/5",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.079
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNDL}[ulw?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "12",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "13",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.101
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNDL}[u|o?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.078
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNDL}[u|w?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.079
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNDL~[uds?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "12",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "13",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.103
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNDL~[ulo?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.073
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNDL~[uls?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.059
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNDL~[ulw?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.075
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNDL~[uts?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.062
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNFL~[uto?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "6",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "7",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.067
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNFL~[u|o?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "5",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "6",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.061
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNFL~[u|w?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "24",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "25",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.073
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMDh~\\v\\s?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "27",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "28",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.075
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FM@|vCtxi?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.087
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FMDl~[v\\s?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "27",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "28",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.086
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNFH[Yepu?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "36",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "37",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.075
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FN?|v^qTm?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.059
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FN?|~^oTm?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.059
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNcXvZVlM?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.064
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&FNcXv^VkL?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.08
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]SpqXRDk?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "27",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "28",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.098
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]S`YTbKx?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "8",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "9",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.089
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UX_TE{h?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "5",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "6",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.072
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UWxTClb?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.066
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^VGzKUpo?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "104",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "105",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.095
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UXb\\Eoh?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "35",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "36",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.109
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^VLOSekx?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "3",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "4",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.104
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]VhW[rSp?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "1916",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "1917",
+     true,
+     7
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": true,
+   "sec": 0.104
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]UhoTFLx?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "19",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "20",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.074
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]UgxDVWr?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "34",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "35",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.087
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]UHOTfkx?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.081
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]UGx\\Dhq?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "6",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "7",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.104
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]ShY\\`Dq?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "95",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "96",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.077
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]UhqLPT}?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "679/113",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "792/113",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.085
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]UhY\\`Dr?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "34",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "35",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.083
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]UhA\\bT{?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "83",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "84",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.083
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UXk\\Esb?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "9/4",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "13/4",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.08
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UXkHQte?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "38",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "39",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.083
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UXc\\Cxi?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "41/10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "51/10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.076
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UXk\\Eop?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.074
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^VH[Xacv?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "679/113",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "792/113",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.081
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^VH[Tch}?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "6",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "7",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.08
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^VXkXups?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "32",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "33",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.075
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^TXmOEwd?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.08
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^TxULoDi?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "12",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "13",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.069
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^TXeLUoh?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "31",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "32",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.083
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^V\\K[epa?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "23",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "24",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.077
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^V\\K[spa?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "8",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "9",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.077
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^VKlKQsp?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "72",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "73",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.077
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^V[tSUhw?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "54",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "55",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.081
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^V[tSUxw?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "8",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "9",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.061
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UK|\\Udy?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.064
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^VLM[eov?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "7",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "8",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.054
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]UxsTFHj?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "19",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "20",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.055
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F]Th]CvWr?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "2",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "3",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.06
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^vlKUe[R?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "4",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "5",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.06
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^vk\\Yo\\U?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "4",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "5",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.056
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^vL[Yqt[?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "5",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "6",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.059
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^uk\\^_TU?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "2",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "3",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.044
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^uK\\^clR?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.075
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^ulC^a{\\?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "14",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "15",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.066
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^vleMoT]?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "10",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "11",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.057
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^vl]UakR?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "5/2",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "7/2",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.056
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^uleNUTW?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "7",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "8",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.054
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^u|uVEhI?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "20",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "21",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.093
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^u|uNOlI?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "39",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "40",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.073
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^v|^Fo\\B?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 1,
+   "stable_cells": [
+    [
+     "55",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "56",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.061
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^vlmZEPT?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "29",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "30",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.087
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UxkNSta?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "52",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "53",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.097
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^V\\[]e`e?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "38",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "39",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.063
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^V{\\Uchb?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "15/7",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "22/7",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.073
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^S{^ReL|?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "12",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "13",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.068
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^V|mMSPb?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "5/3",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "8/3",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.064
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^U|m^SPb?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "29",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "30",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.077
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^U|]VeLk?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "6",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "7",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.06
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^UluNQT|?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "12",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "13",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.063
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^Ul]NsTu?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "12",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "13",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.1
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^U|m^QTq?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "7",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "8",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.1
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^U|eNUTw?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "3",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "4",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.109
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^U|uJQT|?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "12",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "13",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.068
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^v\\SYfdM?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "6",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "7",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.074
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^v[\\UpkN?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.058
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^v\\eMp{J?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "7",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "8",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.061
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^v\\]YddU?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "7/2",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "9/2",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.081
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^u\\eNVoJ?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "3",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "4",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.079
+  },
+  {
+   "tag": "limit_hit",
+   "d6": "&F^u\\mFTxJ?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "12",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "13",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.064
+  },
+  {
+   "tag": "K7",
+   "d6": null,
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 0,
+   "stable_cells": [
+    [
+     "0",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "1",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.035
+  },
+  {
+   "tag": "FNFL",
+   "d6": "&FNFL~[udo?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "6",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "7",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.054
+  },
+  {
+   "tag": "sec2.2",
+   "d6": "&FK@dyUfXp?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 3,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.046
+  },
+  {
+   "tag": "sec2.2b",
+   "d6": "&FMEHz\\vpv?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 2,
+   "stable_cells": [
+    [
+     "9",
+     null
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "10",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.05
+  },
+  {
+   "tag": "sec2.4a",
+   "d6": "&FNALh\\Uwp?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 4,
+   "stable_cells": [
+    [
+     "9",
+     "10"
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "19/2",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.053
+  },
+  {
+   "tag": "sec2.4b",
+   "d6": "&FM?_~LVd~?",
+   "verdict": "stable_somewhere",
+   "fast": "stable_somewhere",
+   "n_critical": 5,
+   "stable_cells": [
+    [
+     "10",
+     "11"
+    ]
+   ],
+   "escalated_cells": 0,
+   "witness": [
+    [
+     "21/2",
+     true,
+     6
+    ]
+   ],
+   "witness_needed_eta_below_1e-6": false,
+   "sec": 0.058
+  }
+ ]
+}

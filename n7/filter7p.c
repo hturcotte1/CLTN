@@ -155,6 +155,12 @@ static const int SAMPLES[][2] = { {1,1},{1,2},{1,4},{1,8},{2,1},{1,16},{4,1},{1,
 
 int main(int argc, char **argv) {
     char line[256];
+    /* audit 2026-10-14 (Hadamard bound on the __int128 Bareiss minors, n <= 8): every sample must have
+       max(2q+p', q) <= 193, otherwise a_eval can overflow silently (only P/U flags could be affected, never drops). */
+    for (int s = 0; s < NSAMPLES; s++) {
+        long long pp = 2LL * SAMPLES[s][1] + SAMPLES[s][0], qq = SAMPLES[s][1];
+        if (pp > 193 || qq > 193) { fprintf(stderr, "sample %d outside the proven overflow-safe range\n", s); return 6; }
+    }
     unsigned long long total = 0, domfree = 0, dropN = 0, keptP = 0, keptU = 0, twins = 0;
     int statsonly = (argc > 1 && strcmp(argv[1], "--stats-only") == 0);
     while (fgets(line, sizeof line, stdin)) {

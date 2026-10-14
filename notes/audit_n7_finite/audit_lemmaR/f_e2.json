@@ -1,0 +1,9 @@
+{
+ "graphs": 2000,
+ "points": 3500,
+ "fails": [],
+ "n_fails": 0,
+ "ineq_e2_le_(B-Nn)(1+2t)_fail": 0,
+ "pos_file_lines_checked": 20000,
+ "pos_file_edge_col_fail": 0
+}

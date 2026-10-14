@@ -616,3 +616,30 @@ already pin down exactly the stable-fixed-point graphs; the 2-D map was needed o
 the regions themselves. The prover's figure of 28 legal-stable n = 6 graphs counts ALL
 digraphs (most not positive anywhere). Projected n = 7 cost of the curve stage: 8.9 M
 survivors at ~10-15 ms = 25-40 CPU-hours. Not launched (run stopped).
+
+## 2026-10-14  Audit workflow wf_56c77840-9ba: prefilter, Lemma R, curve test, edge bound, FNFL certificate -- no blocking issue
+Six agents (notes/audit_n7_finite_workflow.json, artifacts in notes/audit_n7_finite/).
+Prefilter + resolver: SOUND, both lenses. 979,800 exact sympy-vs-C a_eval values on 6,000
+graphs, 0 mismatches; all 786,596 n = 7 U lines recomputed by an independent sympy-free
+Fraction/Descartes decider, byte-identical (63,586 positive); n = 6 counts reproduced;
+domination test matches Curto 2510.05098 Def 1.1 read from the paper; 105,000-graph
+relabelling test, 0 decision changes. Lemma R + n7/curve_test.py + edge bound: SOUND.
+Remark F re-derived symbolically; critical-set sufficiency confirmed by an independent
+all-minors Routh-Hurwitz arrangement over ZZ[t] on 3,129 graphs (21,805 cells, 0
+mismatches); 0 disagreements curve_test vs curve_test_fast on 3,000 random n = 7 graphs;
+300 never-graphs x 20 random exact legal points, 0 stable; e_2 - (B-Nn)(1+2t) <= 0 at every
+legal point, so edges >= 22 at m = 7. FNFL certificate: HOLDS under both lenses (own sympy
+rebuild of W, exact RHP root counts 0/0/2; chi_perp factorisation two ways, alpha = -1/2
+exactly; labelg non-membership among the 123 also by brute force over 5040 permutations;
+region2d reproduced key-by-key). Non-blocking follow-ups applied: overflow guard on the
+prefilter samples (proven safe iff max(2q+p', q) <= 193 for n <= 8; the current 14 samples
+are), resolver keeps unexpected verdicts, assert -> raise in curve_test, adaptive witness
+eta in the validator (&F]VhW[rSp? needs eta = 10^-7 at t = 1917: an exact witness at a fixed
+offset is not guaranteed, only for small enough offset). Logged, not changed: CLAUDE.md
+section 2's closed form I - W_sigma = -delta I + (1+delta) J - (eps+delta) A_sigma holds with
+A^T (W reads A[j][i]); ctln.identity_check_IminusW already uses the transpose and every
+computation is consistent, so this is a wording note for the human, per section 2. Also:
+geng res/mod classes at n = 7 are very uneven (17 of 300 empty, some ~2e8 digraphs); the
+total count check covers truncation. All prunes are proved for the FULL support only; the
+survivor file must not be reused to prune size-5/6 supports (those reduce to induced
+subgraphs by Theorem F anyway).

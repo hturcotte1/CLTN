@@ -1,0 +1,17 @@
+{
+ "items": 3129,
+ "not_ok": 0,
+ "verdict_pairs": {
+  "('never', 'never')": 2128,
+  "('stable_somewhere', 'stable_somewhere')": 1001
+ },
+ "coeff_mismatch": 0,
+ "Delta_mismatch": 0,
+ "stability_changes_not_at_cm_or_Delta": 0,
+ "fine_cells_total": 21805,
+ "fine_cells_attributed": 16979,
+ "fine_cell_mismatch": 0,
+ "special_and_hits": {
+  "('stable_somewhere', 'stable_somewhere', True)": 129
+ }
+}

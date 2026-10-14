@@ -1,0 +1,10 @@
+fastregion INF verdict: never
+  stable_beta: None
+  cells: [{"lo": -1, "hi": 0, "sample_beta": "53/26", "sample_q": "27/26", "positive": true, "off_ok": true, "stable": false, "detail": "Hurwitz minor 5 negative"}, {"lo": 0, "hi": 1, "sample_beta": "685/312", "sample_q": "373/312", "positive": false, "off_ok": true, "stable": false, "detail": "Hurwitz minor 5 negative"}, {"lo": 1, "hi": 2, "sample_beta": "5/2", "sample_q": "3/2", "positive": false, "off_ok": true, "stable": false, "detail": "Hurwitz minor 2 negative"}, {"lo": 2, "hi": 3, "sample_beta": "23/8", "sample_q": "15/8", "positive": false, "off_ok": true, "stable": false, "detail": "negative coefficient"}, {"lo": 3, "hi": 4, "sample_beta": "41/10", "sample_q": "31/10", "positive": false, "off_ok": true, "stable": false, "detail": "negative coefficient"}, {"lo": 4, "hi": null, "sample_beta
+fastregion INF verdict (crosscheck, replay): never
+number of limit candidates: 123 distinct d6: 123
+labelg canonical of graph: &FS@{`]f|~?  cert labelg_canonical: &FS@{`]f|~?
+labelg: graph canonical form among 123 candidate canonical forms: False ; distinct candidate canonical forms: 123
+labelg sanity (idempotent, relabel-invariant): True
+candidates passing invariant filter / isomorphic by brute force: 1 / []
+edge counts of candidates: [23, 24, 25, 26, 27, 28, 29, 30, 31]
