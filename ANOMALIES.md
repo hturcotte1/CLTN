@@ -478,3 +478,16 @@ only through n = 6). graphs.A000273 extended with the n = 7 value.
 Domination-free: 117,232,922 (13.3%, same fraction as n = 6). Spectral
 survivors: 638,042, of which 1,889 strict (alpha < -1/2) and 636,153 boundary
 (alpha = -1/2 exactly or a zero coefficient/minor; never limit-stable).
+
+## 2026-10-14  RUN STOPPED: 123 limit counterexamples at n = 7
+Exact limit stage on the 1,889 strict survivors (fastregion limit mode with
+replay): 1,726 never_positivity, 39 never (positivity possible, never limit-
+stable), K7 stable, and 123 NON-COMPLETE graphs limit-stable, 0 escalations,
+37.5 s. Every hit carries four exact pointwise witnesses (ctln.analyze_support
+at beta inside the stable cell, t = 100, 1000, 10^4, 10^5), all stable
+positive non-clique full supports at legal parameters. Critical values
+include the PLASTIC NUMBER q^3 - q - 1 = 0 (q_c ~ 1.3247), higher than any
+n = 6 reach (1.1664). Certificates: certificates/COUNTEREXAMPLE_CANDIDATES_n7_
+limit.jsonl (+ _summary.json with D-equivalence classes, edge counts, twin
+pairs). Per CLAUDE.md §3 the run is STOPPED pending human hand-verification;
+no 2-D regions, structural analysis or theorems have been built on them.

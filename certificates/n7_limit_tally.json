@@ -1,0 +1,11 @@
+{
+ "strict": 1889,
+ "boundary": 636153,
+ "never_positivity": 1726,
+ "never_full": 39,
+ "stable_somewhere": 124,
+ "escalate": 0,
+ "complete": 1,
+ "stable_noncomplete": 123,
+ "seconds": 37.5
+}
