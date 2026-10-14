@@ -491,3 +491,27 @@ n = 6 reach (1.1664). Certificates: certificates/COUNTEREXAMPLE_CANDIDATES_n7_
 limit.jsonl (+ _summary.json with D-equivalence classes, edge counts, twin
 pairs). Per CLAUDE.md §3 the run is STOPPED pending human hand-verification;
 no 2-D regions, structural analysis or theorems have been built on them.
+
+## 2026-10-14  "Finite-eps map at n = 7 out of reach" was a cost estimate, not a fact; measured now
+The earlier entry put the n = 7 two-parameter map out of reach on an estimate
+(positivity survivors "in the millions", CAD "~1 s each"). Measured today:
+* region2d at m = 7: 10.1 s/graph mean over 15 seven-node graphs (positive
+  somewhere, never limit-stable), 9.9-13.2 s, all 'never', 0 escalations;
+  the n = 6 map cost 1.9 s/graph (65,000 CPU-s / 34,071).
+* New exact C prefilter n7/filter7p.c (domination-free AND some beta > 2 with
+  all a_i(beta) > 0, the Lemma A.2 condition, decided by exact integer
+  Cramer evaluation + a Descartes drop test on a_i(2+u); undecided lines go
+  to n7/resolve_U.py = fastregion.region positivity_only, exact). Validated
+  on ALL 1,540,944 six-node digraphs: keeps 28,739 (28,312 P + 427 U), the
+  resolver keeps 28,350 (38 of the U lines positive, 389 never), and that set
+  equals the n = 6 strict positivity survivor set EXACTLY (labelg canonical
+  forms, diff zero in both directions); domination-free count 204,378 matches
+  the report. 2.8 microseconds per graph including generation. The n = 7
+  run over all 882,033,440 digraphs is in progress (four geng shards).
+* n = 6 evidence on monotonicity in t: among the 4 stable n = 6 graphs no
+  stable cell is bounded above in t (t_hi = None everywhere), consistent with
+  "stable at a legal finite t => limit-stable at the same beta" (Lemma M,
+  unproved; the general-matrix analogue is false, and at m = 2 the one-edge
+  graph is stable exactly for illegal t < 1/(beta-2)). If Lemma M holds the
+  n = 7 finite-eps map reduces to the 638,042 spectral survivors; if not the
+  full positivity survivor set must be certified in two parameters.
