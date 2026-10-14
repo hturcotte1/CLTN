@@ -13,3 +13,6 @@ n7/filter7
 n7/n7_survivors_part*.txt
 n7/*.stats
 n7/filter7p
+n7/n7_pos_survivors.txt
+n7/curve/*.log
+n7/curve/curve_ckpt_*
