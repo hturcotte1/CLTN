@@ -603,3 +603,16 @@ previously estimated at 3,300 CPU-hours (CAD on 1.1 M graphs). NOT launched: the
 Scratch-directory collision: two workflow agents wrote into the same scratch directory and one
 overwrote the other's scan_pos.py; the prover moved its work and reported it. No repository file
 was touched; future workflow prompts assign disjoint directories per agent label.
+
+## 2026-10-14  Curve test validated: on the n = 6 positivity survivors it isolates EXACTLY the 4 stable graphs
+n7/validate_curve_test.py: n = 5, all 9,608 digraphs: 9,513 never, 95 stable_somewhere,
+0 escalate, 0 disagreements between curve_test and curve_test_fast, every stable graph
+confirmed by an exact legal witness (ctln.analyze_support at beta = 2 + 1/t + 10^-6);
+identical to the prover's independent count. n = 6, all 28,350 strict positivity
+survivors: 28,346 never, 4 stable_somewhere (K6, Geneson idx 1000255, idx 1387528,
+idx 1424629), 0 escalate, 192.6 s (6.8 ms/graph, the coefficient fast path decides most).
+So at n = 6 "positive somewhere" and "stable somewhere in the legal region" together
+already pin down exactly the stable-fixed-point graphs; the 2-D map was needed only for
+the regions themselves. The prover's figure of 28 legal-stable n = 6 graphs counts ALL
+digraphs (most not positive anywhere). Projected n = 7 cost of the curve stage: 8.9 M
+survivors at ~10-15 ms = 25-40 CPU-hours. Not launched (run stopped).
