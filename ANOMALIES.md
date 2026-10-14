@@ -515,3 +515,19 @@ The earlier entry put the n = 7 two-parameter map out of reach on an estimate
   graph is stable exactly for illegal t < 1/(beta-2)). If Lemma M holds the
   n = 7 finite-eps map reduces to the 638,042 spectral survivors; if not the
   full positivity survivor set must be certified in two parameters.
+
+## 2026-10-14  A cheap exact necessary condition kills 91% of the n = 6 positivity survivors
+n7/cheap_prune.py decides exactly whether some legal (beta, t) has all a_i > 0
+AND all coefficients of det(mu I + K) = phi + t*omega positive (Stodola; the
+constraints are linear in t, so the feasible t-set at each beta is an
+interval; root isolation of a_i, phi_k, omega_k, the pairwise numerators and
+the legality numerators gives sign-invariant beta-cells, one exact sample
+each). On the 28,350 strict n = 6 survivors: 25,812 cheap_never, 2,538
+survive (9.0%), 38 ms/graph, in 1,085 s. All 4 stable n = 6 graphs, K5 and
+all 124 limit-stable n = 7 graphs survive; 30 of the 39 n = 7 'never with
+cert' graphs are killed. n = 5: 343 of 390 killed, K5 survives; 17,197 random
+exact legal points on cheap_never graphs were all infeasible (self-check).
+Consequence: the two-parameter CAD (10 s/graph at m = 7) is needed on roughly
+a tenth of the positivity survivors, not all of them. Unexpected: the first
+4,000 survivors in geng order (sparse) are ALL cheap_never; the survivors are
+dense graphs, as the counterexamples are.
