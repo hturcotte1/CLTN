@@ -446,3 +446,26 @@ The project owner hand-verified certificates/COUNTEREXAMPLE_CANDIDATE_n6_
 idx1387528.json and _idx1424629.json and signed them off; the CLAUDE.md §3
 gate is closed and the n = 6 theorem stands as stated in notes/REPORT_n6.md.
 Stage 6 (n = 7) starts now.
+
+## 2026-10-14  Stage 6 (n = 7) tooling: nauty + exact C filter, validated at n = 6
+nauty 2.8.8 (from the pynauty sdist) built; geng | directg reproduces
+A000273 for n = 3..6 (16, 218, 9608, 1540944) and showg confirms the digraph6
+bit (i,j) = 1 iff i -> j convention on Geneson's graph (all 19 arcs). filter7.c
+applies two PROVEN necessary conditions for limit stability of the full
+support: domination-free (Lemma D) and alpha(A|perp) < -1/2 (Lemma I.3/I.5),
+the latter as an exact __int128 Hurwitz test of 2^(m-1) m chi_perp(mu - 1/2);
+a vanishing minor is kept as 'B'. At n = 6: domination-free 204,378 (exactly
+our Python count; reversal-sensitive), 3,594 survivors (28 'S', 3,566 'B'),
+the four limit-stable graphs all 'S'; verdicts agree with an independent
+Python implementation on all survivors plus 528 random domination-free
+graphs (0 mismatches once the same coefficient rule is used; ctln.hurwitz_
+stable is over-conservative when a zero and a negative coefficient coexist).
+Since limit stability at some legal beta <=> alpha < -1/2 strictly, 'B'
+graphs are certified never limit-stable; only 'S' graphs go to the exact
+limit stage. Whole n = 6 pipeline: 2.6 s; n = 7 (880,471,142 graphs) runs in
+four geng res/mod shards.
+SCOPE of Stage 6: the eps -> 0 (limit) classification at n = 7 is complete and
+certified by this route; the finite-eps two-parameter map is NOT (the
+positivity survivors would number in the millions and the CAD costs ~1 s
+each). Finite-eps counterexamples invisible in the limit cannot be excluded
+at n = 7 by this stage.
