@@ -1,5 +1,5 @@
 {
- "status": "CLAIMED COUNTEREXAMPLE. Independently VERIFIED by an adversarial 7-agent workflow (notes/candidate_1424629_verification_workflow.json): exact Hurwitz/Routh, exact Lyapunov + Sylvester, Fraction-only recomputation matching ctln.analyze_support entrywise, convention skeptic reproducing Geneson Thm 3.2 end-to-end, eigenvalue skeptic with certified bounds max Re(lambda) <= -498/872525 (P1) and <= -23/390905 (P2) and full nondegeneracy. Not in Geneson's paper nor the ipitchford repo. STRUCTURE: equals Geneson's graph after relabelling with one out-edge moved between the in-twin pair {3,5} (same in-neighbours {1,2,4}, mutually bidirected); this twin move preserves chi_A, chi_{A+J}, the full-support characteristic polynomial and the fixed point identically, so the parameter region is exactly Geneson's. Human hand-verification still requested per CLAUDE.md section 3.",
+ "status": "CLAIMED COUNTEREXAMPLE. Independently VERIFIED by an adversarial 7-agent workflow (notes/candidate_1424629_verification_workflow.json): exact Hurwitz/Routh, exact Lyapunov + Sylvester, Fraction-only recomputation matching ctln.analyze_support entrywise, convention skeptic reproducing Geneson Thm 3.2 end-to-end, eigenvalue skeptic with certified bounds max Re(lambda) <= -498/872525 (P1) and <= -23/390905 (P2) and full nondegeneracy. Not in Geneson's paper nor the ipitchford repo. STRUCTURE: equals Geneson's graph after relabelling with one out-edge moved between the in-twin pair {3,5} (same in-neighbours {1,2,4}, mutually bidirected); this twin move preserves chi_A, chi_{A+J}, the full-support characteristic polynomial and the fixed point identically, so the parameter region is exactly Geneson's. Human hand-verification DONE 2026-10-14 (see human_sign_off).",
  "n": 6,
  "idx": 1424629,
  "canonical_key": 1069347459,
@@ -435,5 +435,9 @@
   }
  ],
  "how_to_rerun": "fastregion.region(A, range(n), fastregion.INF) reproduces limit_certificate; ctln.analyze_support(A, range(n), eps, delta) with each witness's eps, delta reproduces that witness",
- "isomorphic_to_geneson": false
+ "isomorphic_to_geneson": false,
+ "human_sign_off": {
+  "status": "HAND-VERIFIED AND SIGNED OFF by the project owner (henry@zelcast.com) on 2026-10-14",
+  "scope": "the pointwise witnesses and the certificate as committed"
+ }
 }

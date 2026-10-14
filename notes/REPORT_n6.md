@@ -4,7 +4,8 @@ Status: COMPLETE for the full-support problem at n = 6 (and hence, by
 Theorem F, for the conjecture at n = 6). Every number below is backed by a
 file in `certificates/` and every lemma by a proof in `notes/`. The two new
 counterexamples were independently verified by adversarial agent workflows
-and still await the human hand-verification that CLAUDE.md §3 requires. A
+and were hand-verified and signed off by the project owner on 2026-10-14
+(CLAUDE.md §3 gate closed; `human_sign_off` field in both certificates). A
 replay of the limit sweep with the final code and an adversarial audit of the
 whole chain (section 7) are complete.
 
@@ -113,7 +114,7 @@ unrefereed GitHub claims (Aug and Oct 2026) by an independent exact method.
   sweep and all five slices; no survivor is missing. `certificates/n6_summary.json`,
   `notes/n6_map.md`.
 
-**Theorem (computer-certified, modulo human sign-off on the certificates).**
+**Theorem (computer-certified; human sign-off on the two new certificates recorded 2026-10-14).**
 Among the 1,540,944 digraphs on 6 nodes, exactly three non-complete graphs
 have a positive, linearly stable full-support fixed point at some legal
 parameter: Geneson's graph, its bidirected-twin-switch partner (index

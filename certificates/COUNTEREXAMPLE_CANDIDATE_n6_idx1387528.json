@@ -1,5 +1,5 @@
 {
- "status": "CLAIMED COUNTEREXAMPLE. Independently VERIFIED by an adversarial 7-agent workflow (notes/candidate_1387528_verification_workflow.json): exact Hurwitz minors, exact Routh table, exact Lyapunov solve with Sylvester minors, Lienard-Chipart, certified root isolation + Sturm count of a resultant; legality and Geneson nondegeneracy checked; positive/negative controls pass; graph not found in Geneson's paper or the ipitchford repo. Human hand-verification still requested per CLAUDE.md section 3. Known windows: eps = 1/101 stable for 1 < q <= ~1.0723 (positivity ends first), eps = 1/1001 for 1 < q <= ~1.0819.",
+ "status": "CLAIMED COUNTEREXAMPLE. Independently VERIFIED by an adversarial 7-agent workflow (notes/candidate_1387528_verification_workflow.json): exact Hurwitz minors, exact Routh table, exact Lyapunov solve with Sylvester minors, Lienard-Chipart, certified root isolation + Sturm count of a resultant; legality and Geneson nondegeneracy checked; positive/negative controls pass; graph not found in Geneson's paper or the ipitchford repo. Human hand-verification DONE 2026-10-14 (see human_sign_off). Known windows: eps = 1/101 stable for 1 < q <= ~1.0723 (positivity ends first), eps = 1/1001 for 1 < q <= ~1.0819.",
  "n": 6,
  "idx": 1387528,
  "canonical_key": 1066791683,
@@ -499,5 +499,9 @@
   }
  ],
  "how_to_rerun": "fastregion.region(A, range(6), fastregion.INF) reproduces limit_certificate; ctln.analyze_support(A, range(6), eps, delta) with each witness's eps, delta reproduces that witness",
- "isomorphic_to_geneson": false
+ "isomorphic_to_geneson": false,
+ "human_sign_off": {
+  "status": "HAND-VERIFIED AND SIGNED OFF by the project owner (henry@zelcast.com) on 2026-10-14",
+  "scope": "the pointwise witnesses and the certificate as committed"
+ }
 }

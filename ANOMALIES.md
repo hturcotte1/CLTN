@@ -440,3 +440,9 @@ survivors, K5 the only limit-stable graph; 2-D certification of the 390:
 graphs are ever stable. Identical verdicts to the superseded-code runs (706
 superset: 705 never + K5). The k <= 4 literature theorem is now corroborated,
 not depended on, by the committed engine.
+
+## 2026-10-14  Human sign-off on the two new n = 6 counterexamples
+The project owner hand-verified certificates/COUNTEREXAMPLE_CANDIDATE_n6_
+idx1387528.json and _idx1424629.json and signed them off; the CLAUDE.md §3
+gate is closed and the n = 6 theorem stands as stated in notes/REPORT_n6.md.
+Stage 6 (n = 7) starts now.
