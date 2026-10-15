@@ -756,3 +756,11 @@ F_k is stable only up to some k (exact: at eps = 1/21, delta = 11/210 stable for
 at k = 41, 45, 60), so unbounded support size at a fixed parameter remains open for both groups.
 Positioning: cite as an unrefereed preprint; "independently obtained / consistent with"; no
 priority language.
+
+## 2026-10-15  Nondegeneracy certified exactly at every witness point
+n7/nondegeneracy_check.py: for Geneson's graph at the paper's parameters, the two other n = 6
+hits at their witnesses, and all 124 n = 7 candidates at a rational point inside their first
+stable cell: every one of the 2^n - 1 supports has det(I - W_sigma) != 0, a fixed point with no
+zero coordinate and no off-support drive exactly 0, and the full support is stable there. So all
+witnesses are nondegenerate CTLNs in the sense the conjecture requires.
+certificates/nondegeneracy_witnesses.json.
