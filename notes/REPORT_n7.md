@@ -113,7 +113,8 @@ q^3 - q - 1, six graphs). The finite-eps supremum q_7* over the 124 regions is c
 `n7/qstar.py --sharpen` on the two-parameter certificates: see `certificates/qstar/qstar_n7_finite.json`
 and the line below.
 
-**Result (from the certificates; the exact `qstar --sharpen` run is the independent confirmation).**
+**Result (derived from the certificates and confirmed by the independent exact `qstar --sharpen` run,
+`certificates/qstar/qstar_n7_finite.json`: upper bound = lower bound, exact, no undecided cells).**
 `q_7* = rho`, the plastic number, the real root of `q^3 - q - 1` (about 1.3247), a supremum that is not
 attained: six graphs approach it as t -> infinity with beta -> 1 + rho. Derivation: q < beta - 1 on
 every cell; on the 258 stable cells unbounded in t the supremum is beta_hi - 1 exactly and the right

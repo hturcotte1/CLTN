@@ -890,3 +890,10 @@ is attained for every N (no universal bound). Referee defects, non-fatal: the no
 m = 2p(1) - 1 should read 2p(1) - 3 (code and numbers correct); N >= 6 thresholds not computed.
 OPEN: the growth rate of q_n* (n0(N) here is super-exponential; Geneson's upper bound is n - 2).
 All graphs with n >= 8 remain candidates.
+
+## 2026-10-15  q_7* confirmed by the independent exact tool: the plastic number, no undecided cells
+n7/qstar.py --sharpen over all 124 two-parameter certificates (298 stable cells, 40 of them bounded
+in t, sharpened by the level-curve procedure): upper bound = lower bound = root of q^3 - q - 1 in
+(45/34, 4/3), exact = true, attained as a supremum by the six plastic-number graphs along t -> infinity;
+every bounded cell's sharpened supremum lies below. certificates/qstar/qstar_n7_finite.json (the run
+took 5 h 20 min; the derivation from the certificates in REPORT_n7 section 4 agrees).
