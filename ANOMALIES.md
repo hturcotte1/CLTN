@@ -930,3 +930,17 @@ contained the pattern; the fix is a kill script on disk that assembles its patte
 invoked by a command line containing none of them (scratchpad/kill_n8.sh). ETA on 3 cores: about a week.
 Also running: n7/run_n7_proper_supports.py (12,241 graphs, ~0.4 s each, three shards) and a paper-draft
 workflow.
+
+## 2026-10-15  Stage 4 at n = 7 done: every stable non-clique PROPER support classified (12,288 pairs)
+Theorem F reduces a proper support to its induced subgraph plus the off-support condition; the only
+non-clique induced subgraphs with a stable positive full support are the three n = 6 hits, so every stable
+non-clique proper support at n = 7 is (base on 6 nodes) + a 7th node with one of 4096 in/out patterns.
+All three bases have trivial automorphism groups, so the 12,288 (graph, support) pairs are pairwise
+non-isomorphic. region2d with o_6 (certificates/n7_proper_supports_all.jsonl, 29 MB; summary json):
+7,744 pairs stable somewhere in the legal plane, 4,544 never, 0 escalations, 35 CPU-minutes. Sanity: node
+6 a target of the support (receives from all six) is never stable (192/192); node 6 receiving nothing is
+always stable (192/192); no stable cell is bounded in t (the bases do not bulge). A first pass deduplicated
+by the 7-node graph alone and silently dropped 47 pairs whose graphs coincide with another base's graph
+under a different support -- fixed by deduplicating per base under its automorphism group (resume kept the
+12,241 computed records). Combined with the 124 full supports this is the complete list of stable
+non-clique supports of every kind at n = 7.

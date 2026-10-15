@@ -44,6 +44,7 @@ are labelled approximations only.
 | `theorem_A_fixed_parameter_instances.json`, `../notes/theorem_A_fixed/` | Theorem A (unbounded support size at the fixed point eps = 1/21, delta = 11/210): R_k for k = 0..15; referee record `../notes/theorem_A_fixed_workflow.json` | |
 | `n8_instances_region2d.json` | two-parameter certificates of three 8-node family instances (candidates) | `n7/n8_instances_region2d.py` |
 | `qstar/qstar_n7_finite.json` | q_7* = plastic number, exact, sharpened over all 298 stable cells | `n7/qstar.py --sharpen` |
+| `n7_proper_supports_all.jsonl`, `_summary.json` | every stable non-clique PROPER support at n = 7 (12,288 pairs; 7,744 stable, 4,544 never, 0 escalations) | `n7/run_n7_proper_supports.py` |
 | `SHA256SUMS_jsonl.txt` | checksums of the bulk files | |
 
 ## Theory (notes/)

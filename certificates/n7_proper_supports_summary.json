@@ -1,0 +1,59 @@
+{
+ "scope": "every stable NON-CLIQUE PROPER support at n = 7. By Theorem F a proper support is stable iff the induced subgraph has a stable positive full support and the off-support condition (2) holds; the only non-clique induced subgraphs with a stable positive full support have 6 nodes and are the three verified n = 6 counterexamples (no 5-node or smaller ones exist). So every such (graph, support) pair is one of the three bases on the support plus a 7th node with one of 4096 in/out patterns; the bases have trivial automorphism groups, so all 12,288 pairs are distinct up to isomorphism.",
+ "pairs_enumerated": 12288,
+ "verdicts": {
+  "stable_somewhere": 7744,
+  "never": 4544
+ },
+ "by_base": {
+  "geneson_idx1000255": {
+   "stable_somewhere": 2752,
+   "never": 1344
+  },
+  "idx1387528": {
+   "stable_somewhere": 2240,
+   "never": 1856
+  },
+  "idx1424629": {
+   "stable_somewhere": 2752,
+   "never": 1344
+  }
+ },
+ "distinct_7node_graphs": 12241,
+ "distinct_7node_graphs_with_a_stable_proper_support": 7734,
+ "stable_pairs_bounded_in_t_somewhere": 0,
+ "node6_target_verdicts": {
+  "never": 192
+ },
+ "node6_no_in_verdicts": {
+  "stable_somewhere": 192
+ },
+ "stable_by_node6_indegree": {
+  "0": {
+   "stable_somewhere": 192
+  },
+  "1": {
+   "stable_somewhere": 1152
+  },
+  "2": {
+   "stable_somewhere": 2752,
+   "never": 128
+  },
+  "3": {
+   "stable_somewhere": 3008,
+   "never": 832
+  },
+  "4": {
+   "never": 2240,
+   "stable_somewhere": 640
+  },
+  "5": {
+   "never": 1152
+  },
+  "6": {
+   "never": 192
+  }
+ },
+ "method": "region2d on the support {0..5} with the off-support polynomial o_6 in the boundary set, cross-checked pointwise, root counts replayed; 0 escalations",
+ "status": "certified; the n = 6 bases are hand-verified; the 7-node pairs were not individually hand-verified"
+}

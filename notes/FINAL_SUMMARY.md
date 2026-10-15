@@ -14,6 +14,7 @@ conjecture for q >= n - 2 - (n - 3) eps/2, where q = delta(1 - eps)/eps > 1 is t
 | <= 5 | no counterexample at any legal parameter (also reproduced the published n = 5 classification) | none | certified |
 | 6 | exactly 3 non-clique stable full supports among 1,540,944 digraphs (Geneson's graph, its bidirected in-twin partner, one new graph) | q_6* = root of 797q^6 - 1686q^5 + 2159q^4 - 3004q^3 + 2499q^2 - 2158q + 1521, about 1.1664 | certified, audited, hand-verified |
 | 7 | exactly 124 among 882,033,440 digraphs, at every legal parameter; 123 visible in the eps -> 0 limit, one (`&FNFL~[udo?`) only at finite eps | q_7* = the plastic number, root of q^3 - q - 1, about 1.3247, not attained (two independent exact derivations) | certified, audited, hand-verified, confirmed by four independent implementations |
+| 7, proper supports | every stable non-clique proper support classified: 7,744 of the 12,288 (graph, size-6 support) pairs built on the three n = 6 counterexamples are stable somewhere, 4,544 never | (inherits q_6*) | certified |
 | all n >= 6 | counterexamples exist for every n (Theorem F); an infinite family invisible in the limit (Theorem E); the critical q is unbounded: q_n* -> infinity (Theorem U); unbounded support size at one fixed parameter (Theorem A) | q_n* >= 1709/1001 (n = 8), 17691/10010 (n = 9), 18418/10001 (n = 10), 25000/10001 (n = 47) | proved and refereed; instances certified (n >= 8 not hand-verified) |
 
 So for n <= 7 the conjecture holds at every legal parameter with q >= 1.3247 and fails for every

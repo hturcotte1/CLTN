@@ -99,6 +99,19 @@ Files: `n7/filter7p.c`, `n7/resolve_U.py`, `n7/curve_test.py`, `n7/run_n7_curve.
   (closed-twin blow-up), and the factor l^2 + l + 1 is a moving eigenvalue pair on the boundary line.
   `certificates/COUNTEREXAMPLE_CANDIDATE_n7_finite_FNFL.json`.
 
+## 3b. All stable non-clique supports at n = 7, not only full ones
+
+By Theorem F a proper support is stable iff its induced subgraph has a stable positive full support and
+the off-support condition holds; the only non-clique induced subgraphs with a stable positive full support
+have 6 nodes (the three n = 6 counterexamples). Enumerating each base plus a seventh node with any of the
+4096 in/out patterns (the bases have trivial automorphism groups, so the 12,288 pairs are pairwise
+non-isomorphic) and certifying the size-6 support with region2d including the off-support polynomial:
+7,744 pairs are stable somewhere in the legal plane, 4,544 never, 0 escalations
+(`certificates/n7_proper_supports_all.jsonl`, `_summary.json`). A seventh node that is a target of the
+support is never stable (192 of 192), one receiving nothing always is (192 of 192), and no proper-support
+region is bounded in t. Together with the 124 full supports this is the complete list of stable non-clique
+supports at n = 7.
+
 ## 4. Thresholds
 
 **n = 6 (final).** The supremum of q over all stable non-clique full supports at n = 6 is

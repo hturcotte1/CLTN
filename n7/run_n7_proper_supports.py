@@ -30,26 +30,44 @@ def load_hits():
     return out
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--shard", default="0/1"); ap.add_argument("--out", default="certificates")
+    ap = argparse.ArgumentParser(); ap.add_argument("--shard", default="0/1"); ap.add_argument("--out", default="certificates"); ap.add_argument("--resume", action="store_true"); ap.add_argument("--resume-from", default=None)
     a = ap.parse_args(); k, K = map(int, a.shard.split("/"))
     hits = load_hits(); sigma = [0, 1, 2, 3, 4, 5]
+    # Pairs (graph, support) up to isomorphism: the three bases are pairwise non-isomorphic, so two pairs are
+    # isomorphic iff they come from the same base and their node-6 patterns are related by an automorphism of
+    # the base. (Deduplicating by the 7-node graph alone would merge pairs with DIFFERENT supports.)
+    import itertools
     cases = []
-    seen = set()
     for name, H in hits.items():
+        auts = [perm for perm in itertools.permutations(range(6)) if all(H[perm[i]][perm[j]] == H[i][j] for i in range(6) for j in range(6))]
+        seen = set()
         for pat in range(4096):
-            A = [row[:] + [(pat >> i) & 1] for i, row in enumerate(H)] + [[(pat >> (6 + j)) & 1 for j in range(6)] + [0]]
-            key = key_to_int(canonical_form(A)[0])
-            if key in seen:
+            ins = [(pat >> i) & 1 for i in range(6)]; outs = [(pat >> (6 + j)) & 1 for j in range(6)]
+            canon = min(tuple(ins[perm[i]] for i in range(6)) + tuple(outs[perm[j]] for j in range(6)) for perm in auts)
+            if canon in seen:
                 continue
-            seen.add(key); cases.append((name, pat, key, A))
-    cases.sort(key=lambda c: c[2])
+            seen.add(canon)
+            A = [row[:] + [ins[i]] for i, row in enumerate(H)] + [outs + [0]]
+            key = key_to_int(canonical_form(A)[0])
+            cases.append((name, pat, key, A))
+        print(f"{name}: |Aut| = {len(auts)}, {len(seen)} pattern classes", flush=True)
+    cases.sort(key=lambda c: (c[0], c[1]))
     mine = [c for i, c in enumerate(cases) if i % K == k]
     print(f"{len(cases)} distinct graphs; shard {a.shard} has {len(mine)}", flush=True)
     base = os.path.join(a.out, f"n7_proper_supports_shard{k}of{K}")
     tally = {"graphs": 0, "never": 0, "stable_somewhere": 0, "escalate": 0, "errors": 0, "distinct_total": len(cases)}
+    done = {}
+    if a.resume:
+        import glob as _g
+        for pth in _g.glob(os.path.join(a.out, "n7_proper_supports_shard*of*.jsonl")) + _g.glob(a.resume_from or "/nonexistent"):
+            for line in open(pth):
+                r = json.loads(line); done[(r["base"], r["pattern"])] = line
     t0 = time.time()
     with open(base + ".jsonl", "w") as fh:
         for name, pat, key, A in mine:
+            if (name, pat) in done:
+                r = json.loads(done[(name, pat)]); tally["graphs"] += 1; tally[r["verdict"] if r["verdict"] in tally else "errors"] += 1
+                fh.write(done[(name, pat)] if done[(name, pat)].endswith("\n") else done[(name, pat)] + "\n"); continue
             tally["graphs"] += 1
             try:
                 c = region2d(A, sigma, crosscheck=True, replay=True)
