@@ -1,0 +1,444 @@
+[
+ {
+  "d6": "&FNDL}[uts?",
+  "edges": 28,
+  "c_flag": "S",
+  "py_F2": "S",
+  "g": [
+   448,
+   448,
+   784,
+   608,
+   260,
+   76,
+   7
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&F]Vh{\\fHu?",
+  "edges": 29,
+  "c_flag": "S",
+  "py_F2": "S",
+  "g": [
+   448,
+   512,
+   1008,
+   896,
+   500,
+   192,
+   29
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.03
+ },
+ {
+  "d6": "&F^vleMt\\Z?",
+  "edges": 32,
+  "c_flag": "S",
+  "py_F2": "S",
+  "g": [
+   448,
+   704,
+   1040,
+   992,
+   644,
+   284,
+   55
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&F^Vlu]uxy?",
+  "edges": 33,
+  "c_flag": "S",
+  "py_F2": "S",
+  "g": [
+   448,
+   768,
+   1072,
+   1024,
+   468,
+   80,
+   1
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&F^V|UUe\\h?",
+  "edges": 30,
+  "c_flag": "S",
+  "py_F2": "S",
+  "g": [
+   448,
+   576,
+   976,
+   672,
+   292,
+   116,
+   19
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FMAlh\\V|w?",
+  "edges": 27,
+  "c_flag": "S",
+  "py_F2": "S",
+  "g": [
+   448,
+   384,
+   816,
+   576,
+   276,
+   88,
+   1
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FMagaNBPy?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   240,
+   384,
+   884,
+   672,
+   269
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FLdO]AdxE?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   880,
+   384,
+   436,
+   288,
+   21
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FFAOgNQxy?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   176,
+   640,
+   788,
+   288,
+   9
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FJaOc^DoN?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   1008,
+   64,
+   788,
+   176,
+   341
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FND\\nKUw|?",
+  "edges": 28,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   448,
+   976,
+   864,
+   356,
+   140,
+   35
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FM?OYZ`hn?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   560,
+   0,
+   532,
+   0,
+   273
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.02
+ },
+ {
+  "d6": "&FNDWQGqdm?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   1328,
+   512,
+   596,
+   64,
+   305
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FNa[sJbLl?",
+  "edges": 25,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   256,
+   48,
+   0,
+   276,
+   816,
+   145
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FF@O]@fwf?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   240,
+   192,
+   212,
+   208,
+   53
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FNdkQAaDm?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   240,
+   832,
+   20,
+   624,
+   389
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.02
+ },
+ {
+  "d6": "&FIBO{Yp`u?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   496,
+   832,
+   276,
+   560,
+   21
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FJBGSVqhw?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   560,
+   576,
+   564,
+   432,
+   297
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.02
+ },
+ {
+  "d6": "&FJ`_YAbL|?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   496,
+   128,
+   628,
+   352,
+   125
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FIAocXdp}?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   752,
+   448,
+   340,
+   592,
+   213
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.02
+ },
+ {
+  "d6": "&FL`W]EbgJ?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   240,
+   896,
+   948,
+   672,
+   189
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FLBWWCfxz?",
+  "edges": 23,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   128,
+   48,
+   0,
+   308,
+   184,
+   9
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FFAOlJFwd?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   688,
+   896,
+   148,
+   480,
+   265
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FL@sYAbLu?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   1072,
+   0,
+   404,
+   64,
+   113
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FK@giMfwv?",
+  "edges": 23,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   128,
+   112,
+   0,
+   212,
+   376,
+   381
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ },
+ {
+  "d6": "&FIeg{Dd`e?",
+  "edges": 21,
+  "c_flag": "B",
+  "py_F2": "B",
+  "g": [
+   448,
+   0,
+   176,
+   256,
+   468,
+   320,
+   57
+  ],
+  "region_verdict": "never",
+  "region_sec": 0.01
+ }
+]

@@ -643,3 +643,51 @@ geng res/mod classes at n = 7 are very uneven (17 of 300 empty, some ~2e8 digrap
 total count check covers truncation. All prunes are proved for the FULL support only; the
 survivor file must not be reused to prune size-5/6 supports (those reduce to induced
 subgraphs by Theorem F anyway).
+
+## 2026-10-15  Research workflow wf_a743d04d-73f: infinite families, q_n* lower bounds, n = 8 filter, scoop check
+(notes/research_n7_parallel_workflow.json; artifacts notes/research_wf3/; theory notes
+notes/research_wf3/theory/notes_theory.md. Every n >= 7 instance is a CANDIDATE pending
+hand-verification; the theorems are exact algebra on the verified n = 6 bases.)
+* THEOREM F (prover; REFEREE CONFIRMED): Geneson's graph plus a bidirected clique class of k
+  nodes (closed-twin blow-up, n = 6 + k) is limit-stable for EVERY k >= 0: alpha < -1/2 for all
+  k (Hurwitz minors 16(k+1), 64(k+1)(k+16), 8192(k+1)^2(3k+16)), positive on (2, 1 + plastic).
+  So the target-free clique conjecture fails for every n >= 6, with sup q = 1.1664 (n = 6),
+  1.2747 (n = 7), the plastic number 1.3247 (n = 8..14), then decreasing to 1. F_1 is one
+  of the 123 n = 7 candidates.
+* Lemma W / X (REFEREE CONFIRMED): closed-twin blow-ups preserve the full-support fixed-point
+  data by explicit charpoly identities; 9 (n = 6) + 617 (n = 7) clique-class families proved
+  for all k >= 1 by exact root isolation in k (not yet refereed).
+* THEOREM E (not yet refereed): a finite-eps-ONLY family E_a (n = 7 + a), alpha = -1/2 EXACTLY
+  for every a (Phi = z(z^2+z+1)((a+7) z(z^2+z+1) + 2)), stable positive at legal points with
+  eps -> 0, beta -> 2+ (R* = 1/4). &FNFL~[udo? itself is the n = 6 hit idx 1387528 with one
+  node doubled; the factor l^2 + l + 1 is a MOVING eigenvalue pair sitting on Re = -1/2.
+* Growing q (not yet refereed; instances re-verified by a referee): families Q (n = 7 + k,
+  q -> 1.8442), Q2 (n = 7 + 4k, q -> 3), Y (n = 8 + 5k, q_n* >= 3.8 for n >= 1823); exact
+  lower bounds on the full-support q_n*: n = 8: 1709/1001, n = 9: 17691/10010, n = 10:
+  18418/10001, n = 11: 17220/9091, n = 47: 25000/10001. Conjecture: sup_n q_n* = infinity
+  (Geneson's safe bound n - 2 is the only upper bound known). Conjecture SL (every limit
+  polynomial has a root on Re = -1/2) REFUTED exactly (55 of 135).
+* Exact q* tool n7/qstar.py (not yet refereed): q_6* = root of 797q^6 - 1686q^5 + 2159q^4 -
+  3004q^3 + 2499q^2 - 2158q + 1521 in (561/481, 7/6), Geneson's limit sextic, so at n = 6 the
+  conjecture holds for all legal parameters with q >= q_6* and fails for every q in (1, q_6*).
+  For &FNFL~[udo? the supremum of q over its stable region is a DEGREE-25 algebraic number in
+  (685003/657781, 2170535/2084278) ~ 1.0414, attained along the Hurwitz curve Delta_6 = 0 at
+  t ~ 25, NOT at the positivity boundary (beta_hi - 1 ~ 1.0830 is not reached). The maximum
+  of beta_c - 1 over the 123 limit candidates is the plastic number (6 graphs); 6 of 123 have
+  limit intervals starting strictly above q = 1. FNFL is 'undecided' (vanishing Hurwitz
+  minor) at beta = 3 away from any boundary.
+* n = 8 spectral filter n7/filter8.c (every integer operation overflow-guarded; overflow ->
+  kept with flag 'O'): byte-identical to filter7 on all 1,540,944 n = 6 digraphs and on the
+  638,042 n = 7 survivors; forced-overflow build loses nothing; 0 overflows on 155 M n = 8
+  digraphs (max |charpoly coefficient| 5376). Rate ~0.9 M digraphs/s per core, directg-bound.
+  Full n = 8 limit map: 500-800 CPU-hours, expected 1e5-5e5 strict survivors -- RENTED
+  COMPUTE needed. Incidental n = 8 limit candidate &GLjlNZ}NzH\o (41 arcs) found in a random
+  dense sample (notes/research_wf3/filter8/CANDIDATE_n8_limit_GLjlNZ.json).
+* Scoop check: NOT scooped. Partial overlap: anonymous Zenodo/GitHub preprint "Six Is
+  Minimal" (ipitchford/ctln-six-is-minimal, zenodo.23089682, 2026-10-01): n <= 5 exclusion,
+  Geneson's graph as the 6-witness, a family on 5r + 6 vertices; no n = 6 classification, no
+  n = 7, no finite-eps-only example, no threshold; its counts (9,846 classes; 1,052,741
+  labelled) match neither A000273(5) = 9,608 nor 2^20. A claims diff is running.
+* Hygiene: the n = 73 witness in family_Y_certificate.json uses a non-standard digraph6
+  header (chr(n+63)); decode from the adjacency rows. Referee workflow wf_452fbfe3-f07 is
+  checking Theorems E, Q, Q2, Y, the catalogue, claim 16 and the q* tool.

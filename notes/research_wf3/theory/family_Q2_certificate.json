@@ -1,0 +1,144 @@
+{
+ "family": "W_k = &F^U|m^QTq? + sink class V1 (size k, in-set all but node 2) + sink class V2 (size 3k, in-set all but node 3); n = 7 + 4k",
+ "B_rows": [
+  "0111110",
+  "1011011",
+  "1101101",
+  "1100111",
+  "1101001",
+  "0010101",
+  "1100100"
+ ],
+ "classes": [
+  [
+   [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   1
+  ],
+  [
+   [
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   3
+  ]
+ ],
+ "W1_formula_checked_k_1_2": true,
+ "W2_limit_polynomial": "z**3*(2*z**2 + z + 2)**2/4",
+ "W3_positivity_all_beta_gt_2": {
+  "det": {
+   "poly": "4*beta**5 - 11*beta**4 + 18*beta**3 - 12*beta**2 + 7*beta - 1",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 479
+  },
+  "adj0": {
+   "poly": "beta**4 - 2*beta**3 + 3*beta**2 - beta + 1",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 52
+  },
+  "adj1": {
+   "poly": "beta**4 - 2*beta**3 + 3*beta**2 - beta + 1",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 52
+  },
+  "adj2": {
+   "poly": "(beta - 1)**2*(beta**2 - beta + 1)",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 28
+  },
+  "adj3": {
+   "poly": "beta**4 - 3*beta**3 + 4*beta**2 - 2*beta + 1",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 31
+  },
+  "adj4": {
+   "poly": "beta**2 - beta + 1",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 7
+  },
+  "adj5": {
+   "poly": "beta**4 - 3*beta**3 + 5*beta**2 - 3*beta + 1",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 37
+  },
+  "adj6": {
+   "poly": "beta**2 - beta + 1",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 7
+  },
+  "sigma-1_num_1101111": {
+   "poly": "beta**4 - beta**3 + 3*beta**2 - beta + 1",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 79
+  },
+  "sigma-1_num_1110111": {
+   "poly": "(beta**2 + 1)*(beta**2 - beta + 1)",
+   "roots_in_[2,inf)": 0,
+   "value_at_3": 70
+  }
+ },
+ "W4_thresholds": {
+  "5/2": {
+   "k0": 1,
+   "n0": 11,
+   "q_limit": "3/2"
+  },
+  "3": {
+   "k0": 3,
+   "n0": 19,
+   "q_limit": "2"
+  },
+  "7/2": {
+   "k0": 10,
+   "n0": 47,
+   "q_limit": "5/2"
+  },
+  "19/5": {
+   "k0": 33,
+   "n0": 139,
+   "q_limit": "14/5"
+  }
+ },
+ "W5_witnesses": [
+  {
+   "k": 3,
+   "n": 19,
+   "d6": "&R^^~u~~|g~}^_BR~}T~~q^~~v~~|~~~^~~v~~|~~~^~~v~~|~~~^~~v~~|~~~?",
+   "beta": "3",
+   "t": "10000",
+   "eps": "1/10001",
+   "delta": "2/10001",
+   "q": "20000/10001",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 10,
+   "n": 47,
+   "d6": "&n^^~~~~~~Z~~~~~~~Y?F~~~~}^~o????LN~~~~~~d^~~~~~~q^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~?",
+   "beta": "7/2",
+   "t": "10000",
+   "eps": "1/10001",
+   "delta": "5/20002",
+   "q": "25000/10001",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive"
+  }
+ ]
+}

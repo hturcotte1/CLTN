@@ -1,0 +1,35 @@
+{
+ "family": "E_a = closed-twin blow-up of H=&FNDL~[uds? with class sizes (1,1,2,a,1,1,1); n = 7 + a",
+ "H_rows": [
+  "0011110",
+  "0010100",
+  "1101111",
+  "1110111",
+  "0011011",
+  "0100101",
+  "1101000"
+ ],
+ "E1_lemmaW_checked_a_1_to_8": true,
+ "E2_Phi_closed_form": "z*(z**2 + z + 1)*(a*z**3 + a*z**2 + a*z + 7*z**3 + 7*z**2 + 7*z + 2)",
+ "E2_a0_direct": true,
+ "E3_shifted_cubic_coeffs": [
+  "c",
+  "c/2",
+  "3*c/4",
+  "(3*c - 16)/8"
+ ],
+ "E3_Hurwitz_Delta2": "2*c",
+ "E3_conclusion": "all roots of (a+7) z(z^2+z+1)+2 have Re > -1/2 iff a+7 > 16/3; holds for all a >= 0",
+ "E4_det(z0 I + A_Q)": "-1/2 + sqrt(3)*I/2",
+ "E5_inverse_s_prime": "1/4 - sqrt(3)*I/12",
+ "E5_R_star": "1/4",
+ "E6_y_at_beta_2": [
+  "6/(18*a + 17)",
+  "2/(18*a + 17)",
+  "2/(18*a + 17)",
+  "18/(18*a + 17)",
+  "6/(18*a + 17)",
+  "2/(18*a + 17)",
+  "10/(18*a + 17)"
+ ]
+}

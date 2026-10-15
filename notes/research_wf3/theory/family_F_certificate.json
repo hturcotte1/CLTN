@@ -1,0 +1,292 @@
+{
+ "family": "F_k = Geneson G1 + bidirected clique class V (|V| = k); V -> all of G1; G1 nodes 0..4 -> V; node 5 -/-> V",
+ "G1_rows": [
+  "011011",
+  "101011",
+  "110101",
+  "111000",
+  "011000",
+  "000110"
+ ],
+ "S": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  0
+ ],
+ "T": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  1
+ ],
+ "F1_lemmaX1_explicit_k_1_10": true,
+ "F2": {
+  "z_psi_D": "z**2*(6*z**4 + 11*z**3 + 16*z**2 + 10*z + 3)",
+  "chi_L": "z**4*(z**2 + z + 1)",
+  "R_k": "z**4*(k + 6) + z**3*(k + 11) + z**2*(k + 16) + 10*z + 3"
+ },
+ "F3": {
+  "shifted_coeffs": [
+   "16*(k + 6)",
+   "16*(k + 1)",
+   "8*(2*k + 17)",
+   "12*(k + 1)",
+   "3*k + 16"
+  ],
+  "Delta2": "64*(k + 1)*(k + 16)",
+  "Delta3": "8192*(k + 1)**2",
+  "conclusion": "all Hurwitz data positive for k > -1: every root zeta of R_k has Re zeta > -1/2, so alpha(F_k|perp) = -1 - min Re zeta < -1/2"
+ },
+ "F3_explicit_alpha_lt_-1/2_k_0_15": true,
+ "F4": {
+  "det": "-2*beta**5 + 7*beta**4 - 12*beta**3 + 10*beta**2 - 6*beta + 1",
+  "adj1": [
+   "-(beta - 1)*(beta**3 - 2*beta**2 + beta - 1)",
+   "-beta**2 + beta - 1",
+   "-beta**2 + beta - 1",
+   "-(beta - 1)**2*(beta**2 - beta + 1)",
+   "beta**3 - 3*beta**2 + 2*beta - 1",
+   "-beta**4 + 3*beta**3 - 4*beta**2 + 2*beta - 1"
+  ],
+  "sigma_minus_1_numerator": "-beta**2 + beta - 1",
+  "root_counts_in_[2,93/40]": {
+   "det": 0,
+   "adj0": 0,
+   "adj1": 0,
+   "adj2": 0,
+   "adj3": 0,
+   "adj4": 1,
+   "adj5": 0
+  },
+  "values_at_beta_2": {
+   "det": -19,
+   "adj0": -1,
+   "adj1": -3,
+   "adj2": -3,
+   "adj3": -3,
+   "adj4": -1,
+   "adj5": -5
+  },
+  "conclusion": "Pos(F_k, beta) for all k >= 1 and beta in (2, b_p), b_p = 1 + plastic number (root of b^3-3b^2+2b-1); fails on (b_p, 93/40]"
+ },
+ "F5_beta_c_table": [
+  {
+   "k": 0,
+   "n": 6,
+   "beta_c_minpoly": "797*beta**6 - 6468*beta**5 + 22544*beta**4 - 44440*beta**3 + 53280*beta**2 - 38016*beta + 13824",
+   "beta_c_approx_display_only": "2.16635502785",
+   "q_lim_sup_display_only": "1.16635502785"
+  },
+  {
+   "k": 1,
+   "n": 7,
+   "beta_c_minpoly": "227*beta**6 - 1950*beta**5 + 7171*beta**4 - 14880*beta**3 + 18760*beta**2 - 14112*beta + 5488",
+   "beta_c_approx_display_only": "2.27474704987",
+   "q_lim_sup_display_only": "1.27474704987"
+  },
+  {
+   "k": 2,
+   "n": 8,
+   "beta_c_minpoly": "1033*beta**6 - 9308*beta**5 + 35792*beta**4 - 77480*beta**3 + 101760*beta**2 - 79872*beta + 32768",
+   "beta_c_approx_display_only": "2.33914467333",
+   "q_lim_sup_display_only": "1.32471795724"
+  },
+  {
+   "k": 3,
+   "n": 9,
+   "beta_c_minpoly": "293*beta**6 - 2751*beta**5 + 10985*beta**4 - 24640*beta**3 + 33480*beta**2 - 27216*beta + 11664",
+   "beta_c_approx_display_only": "2.37197201365",
+   "q_lim_sup_display_only": "1.32471795724"
+  },
+  {
+   "k": 4,
+   "n": 10,
+   "beta_c_minpoly": "53*beta**6 - 516*beta**5 + 2128*beta**4 - 4920*beta**3 + 6880*beta**2 - 5760*beta + 2560",
+   "beta_c_approx_display_only": "2.38331632949",
+   "q_lim_sup_display_only": "1.32471795724"
+  },
+  {
+   "k": 5,
+   "n": 11,
+   "beta_c_minpoly": "373*beta**6 - 3752*beta**5 + 15911*beta**4 - 37760*beta**3 + 54120*beta**2 - 46464*beta + 21296",
+   "beta_c_approx_display_only": "2.38085323090",
+   "q_lim_sup_display_only": "1.32471795724"
+  },
+  {
+   "k": 6,
+   "n": 12,
+   "beta_c_minpoly": "1673*beta**6 - 17340*beta**5 + 75344*beta**4 - 182920*beta**3 + 267840*beta**2 - 235008*beta + 110592",
+   "beta_c_approx_display_only": "2.37010799260",
+   "q_lim_sup_display_only": "1.32471795724"
+  },
+  {
+   "k": 7,
+   "n": 13,
+   "beta_c_minpoly": "467*beta**6 - 4977*beta**5 + 22093*beta**4 - 54720*beta**3 + 81640*beta**2 - 73008*beta + 35152",
+   "beta_c_approx_display_only": "2.35485699604",
+   "q_lim_sup_display_only": "1.32471795724"
+  },
+  {
+   "k": 8,
+   "n": 14,
+   "beta_c_minpoly": "2077*beta**6 - 22724*beta**5 + 102800*beta**4 - 259160*beta**3 + 393120*beta**2 - 357504*beta + 175616",
+   "beta_c_approx_display_only": "2.33755471291",
+   "q_lim_sup_display_only": "1.32471795724"
+  },
+  {
+   "k": 9,
+   "n": 15,
+   "beta_c_minpoly": "23*beta**6 - 258*beta**5 + 1187*beta**4 - 3040*beta**3 + 4680*beta**2 - 4320*beta + 2160",
+   "beta_c_approx_display_only": "2.31971710694",
+   "q_lim_sup_display_only": "1.31971710694"
+  },
+  {
+   "k": 10,
+   "n": 16,
+   "beta_c_minpoly": "2537*beta**6 - 29148*beta**5 + 136144*beta**4 - 353640*beta**3 + 551680*beta**2 - 516096*beta + 262144",
+   "beta_c_approx_display_only": "2.30222853360",
+   "q_lim_sup_display_only": "1.30222853360"
+  },
+  {
+   "k": 11,
+   "n": 17,
+   "beta_c_minpoly": "697*beta**6 - 8195*beta**5 + 38801*beta**4 - 102080*beta**3 + 161160*beta**2 - 152592*beta + 78608",
+   "beta_c_approx_display_only": "2.28556715757",
+   "q_lim_sup_display_only": "1.28556715757"
+  },
+  {
+   "k": 12,
+   "n": 18,
+   "beta_c_minpoly": "3053*beta**6 - 36708*beta**5 + 175952*beta**4 - 468280*beta**3 + 747360*beta**2 - 715392*beta + 373248",
+   "beta_c_approx_display_only": "2.26996011736",
+   "q_lim_sup_display_only": "1.26996011736"
+  }
+ ],
+ "F6_witnesses": [
+  {
+   "k": 1,
+   "n": 7,
+   "d6": "&FZt|^DaK~?",
+   "beta": "21/10",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/210",
+   "q": "22/21",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  },
+  {
+   "k": 2,
+   "n": 8,
+   "d6": "&GZy~VwuKW~^w",
+   "beta": "58/25",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/175",
+   "q": "44/35",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  },
+  {
+   "k": 3,
+   "n": 9,
+   "d6": "&HZ|^t~FWwo~^|~o",
+   "beta": "58/25",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/175",
+   "q": "44/35",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  },
+  {
+   "k": 4,
+   "n": 10,
+   "d6": "&IZ}n|^w|bp_~^}~|~w",
+   "beta": "58/25",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/175",
+   "q": "44/35",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  },
+  {
+   "k": 5,
+   "n": 11,
+   "d6": "&JZ~V~V~FuNb?~^~^~^~^~?",
+   "beta": "58/25",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/175",
+   "q": "44/35",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  },
+  {
+   "k": 6,
+   "n": 12,
+   "d6": "&KZ~j~t~w~W~E?~^~n~v~z~|~}",
+   "beta": "21/10",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/210",
+   "q": "22/21",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  },
+  {
+   "k": 8,
+   "n": 14,
+   "d6": "&MZ~y~~V~w~uN{W?~^~z~~^~z~~^~z~~^~w",
+   "beta": "21/10",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/210",
+   "q": "22/21",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  },
+  {
+   "k": 10,
+   "n": 16,
+   "d6": "&OZ~}n~|^~w~|b~p_?~^~}~~|~~z~~v~~n~~^~}~~|~~w",
+   "beta": "21/10",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/210",
+   "q": "22/21",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  }
+ ]
+}

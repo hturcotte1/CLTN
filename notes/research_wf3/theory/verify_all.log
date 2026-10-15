@@ -1,0 +1,9 @@
+family F witnesses OK: 8
+family E witnesses + exact alpha = -1/2 OK: 6
+n=8 finite-eps-only boundary candidates OK: 15
+high-q instances OK; best certified q per n: {8: ('1709/1001', 1.7072927072927073), 9: ('17691/10010', 1.7673326673326673), 10: ('18418/10001', 1.8416158384161583), 11: ('17220/9091', 1.894181058189418)}
+family_Q_certificate.json instances OK: 1
+family_Q2_certificate.json instances OK: 2
+family_Y_certificate.json instances OK: 1
+best certified q per n (all records): {8: ('1709/1001', 1.7072927072927073), 9: ('17691/10010', 1.7673326673326673), 10: ('18418/10001', 1.8416158384161583), 11: ('17220/9091', 1.894181058189418), 19: ('20000/10001', 1.9998000199980002), 32: ('15000/10001', 1.4998500149985001), 47: ('25000/10001', 2.4997500249975), 73: ('20000/10001', 1.9998000199980002)}
+ALL CHECKS PASSED (78 records)

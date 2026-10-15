@@ -1,0 +1,151 @@
+{
+ "Q1": {
+  "z_psi_D": "z**3*(7*z**4 + 12*z**3 + 19*z**2 + 11*z + 4)",
+  "chi_L": "z**3*(z**4 + z**3 + 3*z**2 + z + 1)"
+ },
+ "Q3": {
+  "5/2": {
+   "k0": 25,
+   "n0": 32,
+   "minors": [
+    {
+     "degree_in_k": 1,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 1,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 2,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 3,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 4,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 5,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 6,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 7,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    }
+   ],
+   "conclusion": "for every integer k >= 25, Q_k (n = 7 + k >= 32) is limit-stable at beta = 5/2; with Q2 it is an SFP for all small eps, q -> 3/2"
+  },
+  "27/10": {
+   "k0": 79,
+   "n0": 86,
+   "minors": [
+    {
+     "degree_in_k": 1,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 1,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 2,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 3,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 4,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 5,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 6,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 7,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    }
+   ],
+   "conclusion": "for every integer k >= 79, Q_k (n = 7 + k >= 86) is limit-stable at beta = 27/10; with Q2 it is an SFP for all small eps, q -> 17/10"
+  },
+  "14/5": {
+   "k0": 286,
+   "n0": 293,
+   "minors": [
+    {
+     "degree_in_k": 1,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 1,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 2,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 3,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 4,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 5,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 6,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    },
+    {
+     "degree_in_k": 7,
+     "LC_positive": true,
+     "real_roots_>=k0": 0
+    }
+   ],
+   "conclusion": "for every integer k >= 286, Q_k (n = 7 + k >= 293) is limit-stable at beta = 14/5; with Q2 it is an SFP for all small eps, q -> 9/5"
+  }
+ },
+ "Q4_display_only": {
+  "min_Re_spec_L": "-0.351597056401649751850011165948",
+  "beta_inf": "2.84416488077090

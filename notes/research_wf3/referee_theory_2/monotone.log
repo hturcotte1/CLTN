@@ -1,0 +1,14 @@
+leading coeff in k (c3(r)) = 2*r*(2*r - 1)*(4*r**2 - 2*r + 1)**2
+Res_r(D3, dD3/dk): degree 24  real roots >= 8: None
+real roots k >= 4 of Res(D3, D3_k): [4.2619464]
+real roots k >= 4 of Res(D3, D3_r) (discriminant): []
+4 beta_c ~ 2.383316330  k*(beta_c-2) ~ 1.53327
+5 beta_c ~ 2.380853231  k*(beta_c-2) ~ 1.90427
+6 beta_c ~ 2.370107993  k*(beta_c-2) ~ 2.22065
+8 beta_c ~ 2.337554713  k*(beta_c-2) ~ 2.70044
+9 beta_c ~ 2.319717107  k*(beta_c-2) ~ 2.87745
+20 beta_c ~ 2.181807610  k*(beta_c-2) ~ 3.63615
+100 beta_c ~ 2.039537900  k*(beta_c-2) ~ 3.95379
+1000 beta_c ~ 2.003995940  k*(beta_c-2) ~ 3.99594
+100000 beta_c ~ 2.000040000  k*(beta_c-2) ~ 3.99996
+a4 > 0 for all k >= 0, r in [0,1/2]; lead_r(D3) = 64(k+6)^3 > 0; unique critical k in [4, inf) is < 5, no double roots: beta_c strictly monotone on k >= 5 (decreasing, as beta_c(5) > beta_c(6)), -> 2 since c3(r) < 0 on (0, 1/2)

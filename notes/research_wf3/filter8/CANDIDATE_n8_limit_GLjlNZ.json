@@ -1,0 +1,178 @@
+{
+ "status": "CANDIDATE -- pending human hand-verification; NOT an established counterexample",
+ "n": 8,
+ "digraph6_as_found": "&GLjlNZ}NzH\\o",
+ "digraph6_canonical_labelg": "&GKYM\\R~Ryn^w",
+ "arcs": 41,
+ "A_as_found": [
+  [
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   0
+  ],
+  [
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1
+  ],
+  [
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  [
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1
+  ],
+  [
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1
+  ],
+  [
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0
+  ]
+ ],
+ "convention": "A[i][j]=1 iff i->j",
+ "support": "full (0..7)",
+ "is_clique": false,
+ "domination_free": true,
+ "F2_flag_filter8": "S",
+ "limit_certificate_fastregion_region_INF": {
+  "verdict": "stable_somewhere",
+  "stable_intervals": [
+   {
+    "lo": {
+     "kind": "beta_min",
+     "beta": "2",
+     "q": "1"
+    },
+    "hi": {
+     "kind": "root",
+     "index": 0,
+     "beta_interval": [
+      "16/7",
+      "23/10"
+     ],
+     "beta_minpoly_hi_to_lo": [
+      18381,
+      -241828,
+      1509660,
+      -5854080,
+      15588192,
+      -29931840,
+      42288192,
+      -43823104,
+      32342016,
+      -15728640,
+      4194304
+     ],
+     "vanishing": [
+      "Delta"
+     ],
+     "q_interval": [
+      "9/7",
+      "13/10"
+     ],
+     "q_minpoly_hi_to_lo": [
+      18381,
+      -58018,
+      160353,
+      -276888,
+      426570,
+      -635724,
+      624954,
+      -684568,
+      562473,
+      -385122,
+      361253
+     ]
+    }
+   }
+  ]
+ },
+ "finite_eps_spot_checks_ctln_analyze_support": [
+  {
+   "eps": "1/1000",
+   "delta": "11/10000",
+   "beta": "21/10",
+   "q": "10989/10000",
+   "positive": true,
+   "off_support_ok": true,
+   "stable": true
+  },
+  {
+   "eps": "1/100",
+   "delta": "11/1000",
+   "beta": "21/10",
+   "q": "1089/1000",
+   "positive": true,
+   "off_support_ok": true,
+   "stable": true
+  },
+  {
+   "eps": "1/1000",
+   "delta": "3/2000",
+   "beta": "5/2",
+   "q": "2997/2000",
+   "positive": true,
+   "off_support_ok": true,
+   "stable": false,
+   "note": "beyond the certified upper endpoint beta in (16/7, 23/10)"
+  }
+ ],
+ "how_found": "random dense 8-node digraph sample (gen_dense.py seed 8, N=3000000) used only to exercise filter8; not from a canonical enumeration"
+}

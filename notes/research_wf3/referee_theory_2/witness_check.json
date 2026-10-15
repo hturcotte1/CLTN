@@ -1,0 +1,95 @@
+{
+ "own_witnesses": [
+  {
+   "k": 0,
+   "n": 6,
+   "beta": "21/10",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/210",
+   "q": "22/21",
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 7,
+   "n": 13,
+   "beta": "21/10",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/210",
+   "q": "22/21",
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 9,
+   "n": 15,
+   "beta": "21/10",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/210",
+   "q": "22/21",
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 12,
+   "n": 18,
+   "beta": "21/10",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/210",
+   "q": "22/21",
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 20,
+   "n": 26,
+   "beta": "21/10",
+   "t": "20",
+   "eps": "1/21",
+   "delta": "11/210",
+   "q": "22/21",
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 2,
+   "n": 8,
+   "beta": "23247/10000",
+   "t": "1000",
+   "eps": "1/1001",
+   "delta": "1019/770000",
+   "q": "1019/770",
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 5,
+   "n": 11,
+   "beta": "23247/10000",
+   "t": "1000",
+   "eps": "1/1001",
+   "delta": "1019/770000",
+   "q": "1019/770",
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 8,
+   "n": 14,
+   "beta": "23247/10000",
+   "t": "1000",
+   "eps": "1/1001",
+   "delta": "1019/770000",
+   "q": "1019/770",
+   "detail": "all Hurwitz minors positive"
+  }
+ ],
+ "results": {
+  "k0_beta_2.1": true,
+  "k7_beta_2.1": true,
+  "k9_beta_2.1": true,
+  "k12_beta_2.1": true,
+  "k20_beta_2.1": true,
+  "k2_beta_2.3247": true,
+  "k5_beta_2.3247": true,
+  "k8_beta_2.3247": true
+ },
+ "all_cert_witnesses_ok": true
+}

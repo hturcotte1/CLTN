@@ -1,0 +1,31 @@
+cert k=1 n=7 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+cert k=2 n=8 eps=1/21 delta=11/175 q=44/35 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+cert k=3 n=9 eps=1/21 delta=11/175 q=44/35 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+cert k=4 n=10 eps=1/21 delta=11/175 q=44/35 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+cert k=5 n=11 eps=1/21 delta=11/175 q=44/35 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+cert k=6 n=12 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+cert k=8 n=14 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+cert k=10 n=16 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+F_family_witnesses k=1 n=7 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+F_family_witnesses k=2 n=8 eps=1/21 delta=11/175 q=44/35 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+F_family_witnesses k=3 n=9 eps=1/21 delta=11/175 q=44/35 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+F_family_witnesses k=4 n=10 eps=1/21 delta=11/175 q=44/35 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+F_family_witnesses k=2 n=8 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+F_family_witnesses k=3 n=9 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+F_family_witnesses k=4 n=10 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+F_family_witnesses k=6 n=12 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+F_family_witnesses k=10 n=16 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+own k=0 beta=21/10 t=20 n=6 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+own k=7 beta=21/10 t=20 n=13 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+own k=9 beta=21/10 t=20 n=15 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+own k=12 beta=21/10 t=20 n=18 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+own k=20 beta=21/10 t=20 n=26 eps=1/21 delta=11/210 q=22/21 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+own k=2 beta=23247/10000 t=1000 n=8 eps=1/1001 delta=1019/770000 q=1019/770 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+own k=5 beta=23247/10000 t=1000 n=11 eps=1/1001 delta=1019/770000 q=1019/770 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+own k=8 beta=23247/10000 t=1000 n=14 eps=1/1001 delta=1019/770000 q=1019/770 legal=True pos=True stable=True (all Hurwitz minors positive) clique=False -> OK
+above b_p k=2 t=100 positive=False
+above b_p k=2 t=10000 positive=False
+above b_p k=5 t=100 positive=False
+above b_p k=5 t=10000 positive=False
+{'k0_beta_2.1': True, 'k7_beta_2.1': True, 'k9_beta_2.1': True, 'k12_beta_2.1': True, 'k20_beta_2.1': True, 'k2_beta_2.3247': True, 'k5_beta_2.3247': True, 'k8_beta_2.3247': True}
+ALL CERT WITNESSES OK

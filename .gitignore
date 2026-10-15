@@ -17,3 +17,6 @@ n7/n7_pos_survivors.txt
 n7/curve/*.log
 n7/curve/curve_ckpt_*
 n7/curve/
+n7/filter8
+notes/research_wf3/filter8/filter8
+notes/research_wf3/filter8/filter8_ovftest

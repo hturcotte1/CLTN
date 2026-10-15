@@ -1,0 +1,467 @@
+[
+ {
+  "canon": "&G@aq[o~Oz~^w",
+  "d6": "&GM@RYJvJzp^w",
+  "n": 8,
+  "R_star": "1/6",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "48",
+   "beta": "647/320",
+   "eps": "1/49",
+   "delta": "327/15680",
+   "q": "981/980",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "526415094031680/2930471836643623",
+    "156985736499200/2930471836643623",
+    "186713137423680/2930471836643623",
+    "504118673408000/2930471836643623",
+    "186713137423680/2930471836643623",
+    "421229429838994/2930471836643623",
+    "858845143311680/2930471836643623",
+    "103823893854674/2930471836643623"
+   ]
+  }
+ },
+ {
+  "canon": "&GAiqRRU^w~^w",
+  "d6": "&GMPRYJvJzp^w",
+  "n": 8,
+  "R_star": "1/2",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/5246115342816841",
+    "190651571040000/5246115342816841",
+    "288269154440400/5246115342816841",
+    "679581504000000/5246115342816841",
+    "288269154440400/5246115342816841",
+    "402147729022158/5246115342816841",
+    "1194180258440400/5246115342816841",
+    "1555979255911479/5246115342816841"
+   ]
+  }
+ },
+ {
+  "canon": "&GCyC]R~RY~^w",
+  "d6": "&GMPVYJvNzpNw",
+  "n": 8,
+  "R_star": "1/3",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/3847953255768841",
+    "190651571040000/3847953255768841",
+    "288269154440400/3847953255768841",
+    "679581504000000/3847953255768841",
+    "288269154440400/3847953255768841",
+    "402147729022158/3847953255768841",
+    "1194180258440400/3847953255768841",
+    "87909064511079/3847953255768841"
+   ]
+  }
+ },
+ {
+  "canon": "&GAxFKJe^y~^w",
+  "d6": "&GMPVZJvJzpNw",
+  "n": 8,
+  "R_star": "1/3",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/3847953255768841",
+    "190651571040000/3847953255768841",
+    "288269154440400/3847953255768841",
+    "679581504000000/3847953255768841",
+    "288269154440400/3847953255768841",
+    "402147729022158/3847953255768841",
+    "1194180258440400/3847953255768841",
+    "87909064511079/3847953255768841"
+   ]
+  }
+ },
+ {
+  "canon": "&GYBCMbk^z~^w",
+  "d6": "&GMRF^JtJzpNw",
+  "n": 8,
+  "R_star": "1/3",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/3847953255768841",
+    "190651571040000/3847953255768841",
+    "87909064511079/3847953255768841",
+    "679581504000000/3847953255768841",
+    "288269154440400/3847953255768841",
+    "602507818951479/3847953255768841",
+    "1194180258440400/3847953255768841",
+    "87909064511079/3847953255768841"
+   ]
+  }
+ },
+ {
+  "canon": "&GKIoNR}^Z~^w",
+  "d6": "&GNRf^jv\\YoNw",
+  "n": 8,
+  "R_star": "1/6",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/3921356765338861",
+    "190651571040000/3921356765338861",
+    "87909064511079/3921356765338861",
+    "679581504000000/3921356765338861",
+    "679581504000000/3921356765338861",
+    "288269154440400/3921356765338861",
+    "1194180258440400/3921356765338861",
+    "87909064511079/3921356765338861"
+   ]
+  }
+ },
+ {
+  "canon": "&GAiqRRe^w~^w",
+  "d6": "&GNAb^rb\\Yw^w",
+  "n": 8,
+  "R_star": "1/2",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/5246115342816841",
+    "190651571040000/5246115342816841",
+    "1947291605471079/5246115342816841",
+    "288269154440400/5246115342816841",
+    "679581504000000/5246115342816841",
+    "288269154440400/5246115342816841",
+    "1194180258440400/5246115342816841",
+    "10835379462558/5246115342816841"
+   ]
+  }
+ },
+ {
+  "canon": "&GCgnSXr^w~^w",
+  "d6": "&GNQb^rb\\Yw^w",
+  "n": 8,
+  "R_star": "1/2",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/6717680939434861",
+    "190651571040000/6717680939434861",
+    "1947291605471079/6717680939434861",
+    "288269154440400/6717680939434861",
+    "679581504000000/6717680939434861",
+    "288269154440400/6717680939434861",
+    "108561841676400/610698267221351",
+    "1555979255911479/6717680939434861"
+   ]
+  }
+ },
+ {
+  "canon": "&GCyC^R~RY~^w",
+  "d6": "&GNQf^rb\\ZwNw",
+  "n": 8,
+  "R_star": "1/4",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/5319518852386861",
+    "190651571040000/5319518852386861",
+    "1947291605471079/5319518852386861",
+    "288269154440400/5319518852386861",
+    "679581504000000/5319518852386861",
+    "288269154440400/5319518852386861",
+    "1194180258440400/5319518852386861",
+    "87909064511079/5319518852386861"
+   ]
+  }
+ },
+ {
+  "canon": "&GQPNShr^y~^w",
+  "d6": "&GNQf^rr\\YwNw",
+  "n": 8,
+  "R_star": "1/4",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/5319518852386861",
+    "190651571040000/5319518852386861",
+    "1947291605471079/5319518852386861",
+    "288269154440400/5319518852386861",
+    "679581504000000/5319518852386861",
+    "288269154440400/5319518852386861",
+    "1194180258440400/5319518852386861",
+    "87909064511079/5319518852386861"
+   ]
+  }
+ },
+ {
+  "canon": "&GPQMYzNGz~^w",
+  "d6": "&GNQf^rbXyo^w",
+  "n": 8,
+  "R_star": "1/6",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "48",
+   "beta": "647/320",
+   "eps": "1/49",
+   "delta": "327/15680",
+   "q": "981/980",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "105283018806336/599390314484315",
+    "6279429459968/119878062896863",
+    "126608048679497/2996951572421575",
+    "37342627484736/599390314484315",
+    "20164746936320/119878062896863",
+    "37342627484736/599390314484315",
+    "171769028662336/599390314484315",
+    "466310005287497/2996951572421575"
+   ]
+  }
+ },
+ {
+  "canon": "&G[AcUpx^z~^w",
+  "d6": "&GNQf^zr\\IsNw",
+  "n": 8,
+  "R_star": "1/4",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/5319518852386861",
+    "190651571040000/5319518852386861",
+    "87909064511079/5319518852386861",
+    "2147651695400400/5319518852386861",
+    "679581504000000/5319518852386861",
+    "288269154440400/5319518852386861",
+    "1194180258440400/5319518852386861",
+    "87909064511079/5319518852386861"
+   ]
+  }
+ },
+ {
+  "canon": "&GQQMUxB^y~^w",
+  "d6": "&GNQf^zbXYo^w",
+  "n": 8,
+  "R_star": "1/6",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "48",
+   "beta": "647/320",
+   "eps": "1/49",
+   "delta": "327/15680",
+   "q": "981/980",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "105283018806336/599390314484315",
+    "6279429459968/119878062896863",
+    "126608048679497/2996951572421575",
+    "37342627484736/599390314484315",
+    "20164746936320/119878062896863",
+    "37342627484736/599390314484315",
+    "171769028662336/599390314484315",
+    "466310005287497/2996951572421575"
+   ]
+  }
+ },
+ {
+  "canon": "&GS?~KJy^z~^w",
+  "d6": "&GNRf^zr\\ioNw",
+  "n": 8,
+  "R_star": "1/6",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "20",
+   "beta": "821/400",
+   "eps": "1/21",
+   "delta": "421/8400",
+   "q": "421/420",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "752810658440400/3921356765338861",
+    "190651571040000/3921356765338861",
+    "679581504000000/3921356765338861",
+    "87909064511079/3921356765338861",
+    "679581504000000/3921356765338861",
+    "288269154440400/3921356765338861",
+    "1194180258440400/3921356765338861",
+    "87909064511079/3921356765338861"
+   ]
+  }
+ },
+ {
+  "canon": "&G[AcUph^z~^w",
+  "d6": "&GNRb^zrXIo^w",
+  "n": 8,
+  "R_star": "1/6",
+  "phi3_multiplicity": 1,
+  "other_roots_strictly_below_-1/2": true,
+  "never_limit_stable_reason": "l^2+l+1 divides n*chi_perp exactly, so alpha(A|perp) >= -1/2 (Lemma I.3(d): never limit-stable at legal beta)",
+  "witness": {
+   "t": "48",
+   "beta": "647/320",
+   "eps": "1/49",
+   "delta": "327/15680",
+   "q": "981/980",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false,
+   "x": [
+    "105283018806336/599390314484315",
+    "6279429459968/119878062896863",
+    "126608048679497/2996951572421575",
+    "126608048679497/2996951572421575",
+    "20164746936320/119878062896863",
+    "37342627484736/599390314484315",
+    "171769028662336/599390314484315",
+    "105283018806336/599390314484315"
+   ]
+  }
+ }
+]

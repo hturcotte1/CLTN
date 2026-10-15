@@ -1,0 +1,11 @@
+OK   n=47 family_Q2_certificate.json n=47 []
+OK   n=32 family_Q_certificate.json n=32 []
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf3/referee_theory_1/verify_instances.py", line 173, in <module>
+    Ae = check_point(w['d6'], w['eps'], w['delta'], w['beta'], w['q'], w['t'])
+  File "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf3/referee_theory_1/verify_instances.py", line 113, in check_point
+    A = my_d6(d6); assert A == repo_from_d6(d6), 'decoder mismatch ' + d6
+  File "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf3/referee_theory_1/verify_instances.py", line 18, in my_d6
+    n = ord(s[1]) - 63; assert 0 < n < 63
+                               ^^^^^^^^^^
+AssertionError
