@@ -1,7 +1,9 @@
 """
 handcheck.py -- print everything a human needs to verify one candidate by hand, exactly.
 
-   python3 n7/handcheck.py '<digraph6>' <eps> <delta>          e.g. '&FNFL~[udo?' 1/49 33/1568
+   python3 n7/handcheck.py '<digraph6>' <eps> <delta> [support]   e.g. '&FNFL~[udo?' 1/49 33/1568
+   support: comma-separated node list (default: all nodes); for a proper support the off-support drives
+   theta + sum_j W[k][j] x_j of the outside nodes k are printed too (condition 2 needs them < 0).
 
 Prints: the adjacency rows (row i = out-neighbours of i), the parameters (t, beta, q, legality),
 the matrix I - W with every entry as a fraction (W[i][j] = -1+eps if A[j][i] = 1, else -1-delta,
@@ -42,7 +44,7 @@ def hurwitz_minors(coeffs):
 
 def main():
     d6, eps, delta = sys.argv[1], F(sys.argv[2]), F(sys.argv[3])
-    A = from_d6(d6); n = len(A); V = list(range(n))
+    A = from_d6(d6); n = len(A); V = [int(v) for v in sys.argv[4].split(",")] if len(sys.argv) > 4 else list(range(n))
     t = (1 - eps) / eps; beta = 1 + delta / eps; q = delta * (1 - eps) / eps
     print(f"graph {d6}: {n} nodes, {sum(map(sum, A))} arcs; clique: {is_clique(A, V)}; domination-free: {is_domination_free(A)}")
     for i, row in enumerate(A):
@@ -53,7 +55,14 @@ def main():
     for i in range(n):
         print("  [" + ", ".join(str((1 if i == j else 0) - W[i][j]) for j in range(n)) + "]")
     r = analyze_support(A, V, eps, delta)
-    print("solution x of (I - W) x = 1:", [str(v) for v in r["x"]] if r["x"] is not None else None)
+    print("support:", V)
+    print("solution x of (I - W_sigma) x = 1:", [str(v) for v in r["x"]] if r["x"] is not None else None)
+    if r["x"] is not None and len(V) < n:
+        xs = {v: F(str(x)) for v, x in zip(V, r["x"])}
+        for k in range(n):
+            if k not in V:
+                drive = 1 + sum(W[k][j] * xs[j] for j in V)
+                print(f"  off-support node {k}: drive = {drive}  ({'< 0 ok' if drive < 0 else 'NOT < 0'})")
     print("all x_i > 0:", r["x"] is not None and all(F(str(v)) > 0 for v in r["x"]))
     cp = [F(str(c)) for c in r["charpoly"]]
     print("characteristic polynomial of -I + W (highest degree first):", [str(c) for c in cp])
