@@ -14,7 +14,7 @@ conjecture for q >= n - 2 - (n - 3) eps/2, where q = delta(1 - eps)/eps > 1 is t
 | <= 5 | no counterexample at any legal parameter (also reproduced the published n = 5 classification) | none | certified |
 | 6 | exactly 3 non-clique stable full supports among 1,540,944 digraphs (Geneson's graph, its bidirected in-twin partner, one new graph) | q_6* = root of 797q^6 - 1686q^5 + 2159q^4 - 3004q^3 + 2499q^2 - 2158q + 1521, about 1.1664 | certified, audited, hand-verified |
 | 7 | exactly 124 among 882,033,440 digraphs, at every legal parameter; 123 visible in the eps -> 0 limit, one (`&FNFL~[udo?`) only at finite eps | q_7* = the plastic number, root of q^3 - q - 1, about 1.3247, not attained | certified, audited, hand-verified, confirmed by four independent implementations |
-| all n >= 6 | counterexamples exist for every n (Theorem F, Geneson's graph + a bidirected clique class); an infinite family invisible in the limit (Theorem E); families whose critical q tends to 1.84, 3 and above 3.8 | q_n* >= 1709/1001 (n = 8), 17691/10010 (n = 9), 18418/10001 (n = 10), 25000/10001 (n = 47) | proved and refereed; instances certified (n >= 8 not hand-verified) |
+| all n >= 6 | counterexamples exist for every n (Theorem F); an infinite family invisible in the limit (Theorem E); the critical q is unbounded: q_n* -> infinity (Theorem U) | q_n* >= 1709/1001 (n = 8), 17691/10010 (n = 9), 18418/10001 (n = 10), 25000/10001 (n = 47) | proved and refereed; instances certified (n >= 8 not hand-verified) |
 
 So for n <= 7 the conjecture holds at every legal parameter with q >= 1.3247 and fails for every
 q in (1, 1.3247); Geneson's safe region q >= n - 2 is replaced by a constant at these n, while the
@@ -63,8 +63,9 @@ families show the true threshold grows with n without any known bound.
 * **Open question A** (shared with the preprint): at one FIXED legal (eps, delta), are there stable
   non-clique supports of unbounded size? All known families use size-dependent parameters.
   (prover + referee workflow in progress at the time of writing; result appended below when it lands)
-* **Open question B:** is sup_n q_n* = infinity? Proved >= 3.8 along one family; Geneson's n - 2 is
-  the only upper bound. (prover + referee workflow in progress at the time of writing)
+* **Question B, settled (Theorem U, refereed):** q_n* -> infinity. For every N there is n0(N) with
+  q_n* >= N - 1 for all n >= n0(N); certified thresholds q_n* >= 2, 3, 4, 9/2, 23/5 for n >= 1812, 219,
+  657, 2475, 4909. The growth rate (Geneson's n - 2 versus these super-exponential n0) is open.
 * Formalisation gaps: the converse of Lemma R (openness of stability) and the spectral limit
   lemma (Lemma I) are not in Lean.
 * Next sizes at finite eps are out of reach by enumeration (n = 8 has 1.79 trillion digraphs); the

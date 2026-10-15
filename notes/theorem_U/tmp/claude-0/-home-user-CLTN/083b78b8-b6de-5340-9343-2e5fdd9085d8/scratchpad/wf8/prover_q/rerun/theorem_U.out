@@ -1,0 +1,7 @@
+N=3 (beta*=3, q->2): W=1  d=6  core m=257 (3 digits)  k0=1555  0.3s
+N=4 (beta*=4, q->3): W=2  d=8  core m=442233 (6 digits)  k0=5772762  2.0s
+N=5 (beta*=5, q->4): W=2  d=10  core m=44039851 (8 digits)  k0=1546715677  54.0s
+
+real	0m56.790s
+user	0m55.929s
+sys	0m0.063s

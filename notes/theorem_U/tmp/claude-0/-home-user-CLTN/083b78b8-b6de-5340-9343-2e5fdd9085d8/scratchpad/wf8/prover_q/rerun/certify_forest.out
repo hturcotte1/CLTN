@@ -1,0 +1,8 @@
+{"beta*": "4", "m_core": 65, "C3_k0": 154, "n0": 219, "certified": true, "seconds": 0.3}
+{"beta*": "5", "m_core": 65, "C3_k0": 592, "n0": 657, "certified": true, "seconds": 7.4}
+{"beta*": "11/2", "m_core": 65, "C3_k0": 2410, "n0": 2475, "certified": true, "seconds": 0.2}
+{"beta*": "28/5", "m_core": 65, "C3_k0": 4844, "n0": 4909, "certified": true, "seconds": 0.2}
+
+real	0m8.593s
+user	0m8.410s
+sys	0m0.064s

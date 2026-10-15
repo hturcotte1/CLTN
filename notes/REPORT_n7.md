@@ -21,7 +21,7 @@ rationals, exact root isolation, Hurwitz determinants); decimals appear only as 
 | 4 | **Lemma R (ray reduction).** The full support is stable at some legal parameter iff it is stable on the legality curve t(beta - 2) = 1; an exact one-dimensional test that makes the finite-eps map affordable (16 CPU-hours at n = 7). | PROVED, audited |
 | 5 | **Theorem F.** Geneson's graph plus a bidirected clique class of k nodes is limit-stable for every k >= 0: **the conjecture fails for every n >= 6**, with sup q = 1.1664 (n = 6), 1.2747 (n = 7), the plastic number 1.3247 (n = 8..14), then decreasing to 1. | PROVED, refereed |
 | 6 | **Theorem E.** An infinite family E_a (n = 7 + a) of finite-eps-only counterexamples: spectral abscissa exactly -1/2 for every a, stable positive at legal points with eps -> 0, beta -> 2+. `&FNFL~[udo?` is E_0 = the n = 6 hit idx 1387528 with one node doubled. | PROVED, refereed |
-| 7 | **Growing thresholds.** Families Q (n = 7 + k, q -> 1.8442), Q2 (n = 7 + 4k, q -> 3), Y (n = 8 + 5k, q >= 3.8 for k >= 363); exact lower bounds on the largest counterexample q at n = 8: 1709/1001, n = 9: 17691/10010, n = 10: 18418/10001, n = 47: 25000/10001. Conjecture: sup_n q_n* = infinity. | PROVED, refereed |
+| 7 | **Growing thresholds.** Families Q (n = 7 + k, q -> 1.8442), Q2 (n = 7 + 4k, q -> 3), Y (n = 8 + 5k, q >= 3.8 for k >= 363); exact lower bounds at n = 8: 1709/1001, n = 9: 17691/10010, n = 10: 18418/10001, n = 47: 25000/10001. **Theorem U: q_n* -> infinity** (q_n* >= N - 1 for all n >= n0(N), every N). | PROVED, refereed |
 | 8 | **Exact thresholds.** q_6* = root of 797q^6 - 1686q^5 + 2159q^4 - 3004q^3 + 2499q^2 - 2158q + 1521 in (561/481, 7/6): at n = 6 the conjecture holds for every legal parameter with q >= q_6* and fails for every q in (1, q_6*). **q_7* = the plastic number**, root of q^3 - q - 1 (1.3247): for n <= 7 the conjecture holds at every legal parameter with q >= rho and fails for every q in (1, rho) (section 4). | CERTIFIED (q_6* final; q_7* candidates) |
 | 9 | Not scooped as of 2026-10-14; an unrefereed Zenodo preprint independently confirms the n <= 5 exclusion and the value of q_6* (section 9). | checked |
 | 10 | Every witness (the three n = 6 graphs and all 124 n = 7 candidates) is a **nondegenerate** CTLN at its witness parameters, certified exactly over all 2^n - 1 supports. | CERTIFIED |
@@ -174,8 +174,10 @@ ray segments from the curve, and the two-parameter CAD is needed only for the cu
   a = 0..5). E_0 is `&FNFL~[udo?`.
 * **Theorems Q, Q2, Y (refereed).** Sink-class blow-ups of three 7- and 8-node cores give limit-stable
   families with q -> 1.8442 (n = 7 + k), q -> 3 (n = 7 + 4k) and q >= 3.8 for n = 8 + 5k, k >= 363.
-  So the largest counterexample q grows without any known bound; Geneson's safe region q >= n - 2 is
-  the only upper bound. A catalogue of 9 (n = 6) + 617 (n = 7) clique-class families, each proved for
+  **Theorem U (refereed).** q_n* -> infinity: for every N there is n0(N) with q_n* >= N - 1 for all
+  n >= n0(N) (arms-forest cores realising prescribed limit polynomials plus one sink class; certified
+  thresholds q_n* >= 2, 3, 4, 9/2, 23/5 for n >= 1812, 219, 657, 2475, 4909; explicit graphs at n = 28 and
+  41). Geneson's q >= n - 2 remains the only upper bound; the growth rate of q_n* is open. A catalogue of 9 (n = 6) + 617 (n = 7) clique-class families, each proved for
   all k >= 1 by exact root isolation in k, is in `families_catalogue_n6.json` / `_n7.json`
   (refereed: all 626 entries re-proved independently for all real k >= 1).
 * **Refuted on the way.** "Every limit polynomial has a root on Re = -1/2" (55 of 135 do not), and

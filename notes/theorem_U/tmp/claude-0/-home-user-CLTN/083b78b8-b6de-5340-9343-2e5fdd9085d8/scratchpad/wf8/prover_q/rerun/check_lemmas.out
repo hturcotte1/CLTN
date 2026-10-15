@@ -1,0 +1,9 @@
+Lemma T: 40 random in-trees + 5 arms forests: all exact identities hold
+Lemma P: cycle residual = 0 ; closed form = direct exact solve in 12 cases
+u_c1 numerator: (F0 - F1*r + r**2)*(r**2 - r + 1)
+u_c0 numerator: -F0*r**3 + F0*r**2 - F0*r + F0 - F1*r + F2*r**2 + r**4 - r**3 + r**2
+eps_c2 * Den  : r*(F0 - F1*r + F2*r**2 + r**4 - r**3 + r**2)
+
+real	0m7.072s
+user	0m6.959s
+sys	0m0.068s

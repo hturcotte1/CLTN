@@ -1,0 +1,551 @@
+{
+ "lemma_T_random_intrees": [
+  {
+   "m": 10,
+   "N_size": 5,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 19,
+   "N_size": 12,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 11,
+   "N_size": 7,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 19,
+   "N_size": 13,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 22,
+   "N_size": 14,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 5,
+   "N_size": 4,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 5,
+   "N_size": 2,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 12,
+   "N_size": 6,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 19,
+   "N_size": 11,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 9,
+   "N_size": 6,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 18,
+   "N_size": 11,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 21,
+   "N_size": 12,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 18,
+   "N_size": 12,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 8,
+   "N_size": 5,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 24,
+   "N_size": 16,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 13,
+   "N_size": 7,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 14,
+   "N_size": 7,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 24,
+   "N_size": 16,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 4,
+   "N_size": 3,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 11,
+   "N_size": 9,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 17,
+   "N_size": 10,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 24,
+   "N_size": 18,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 5,
+   "N_size": 2,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 11,
+   "N_size": 8,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 7,
+   "N_size": 4,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 23,
+   "N_size": 14,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 22,
+   "N_size": 14,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 24,
+   "N_size": 15,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 4,
+   "N_size": 2,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 8,
+   "N_size": 4,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 4,
+   "N_size": 2,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 13,
+   "N_size": 11,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 17,
+   "N_size": 10,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 12,
+   "N_size": 6,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 7,
+   "N_size": 4,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 6,
+   "N_size": 3,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 11,
+   "N_size": 7,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 25,
+   "N_size": 15,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 11,
+   "N_size": 6,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  },
+  {
+   "m": 22,
+   "N_size": 14,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true
+  }
+ ],
+ "lemma_T_arms_forests": [
+  {
+   "c": [
+    1,
+    1,
+    2,
+    2,
+    2,
+    1,
+    1
+   ],
+   "m": 17,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true,
+   "chi_L_equals_z^(m-d)p": true
+  },
+  {
+   "c": [
+    1,
+    1,
+    4,
+    3,
+    4,
+    2,
+    1
+   ],
+   "m": 29,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true,
+   "chi_L_equals_z^(m-d)p": true
+  },
+  {
+   "c": [
+    1,
+    1,
+    11,
+    7,
+    10,
+    3,
+    1
+   ],
+   "m": 65,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true,
+   "chi_L_equals_z^(m-d)p": true
+  },
+  {
+   "c": [
+    1,
+    1,
+    3,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   "m": 21,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true,
+   "chi_L_equals_z^(m-d)p": true
+  },
+  {
+   "c": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    3
+   ],
+   "m": 15,
+   "chi_L": true,
+   "chi_D": true,
+   "psi_D": true,
+   "chi_L_equals_z^(m-d)p": true
+  }
+ ],
+ "lemma_P": {
+  "cycle_system_residual": "0",
+  "u_c1_numerator": "(F0 - F1*r + r**2)*(r**2 - r + 1)",
+  "u_c0_numerator": "-F0*r**3 + F0*r**2 - F0*r + F0 - F1*r + F2*r**2 + r**4 - r**3 + r**2",
+  "eps_c2_times_Den": "r*(F0 - F1*r + F2*r**2 + r**4 - r**3 + r**2)",
+  "direct_vs_closed_form": [
+   {
+    "c": [
+     1,
+     1,
+     4,
+     3,
+     4,
+     2,
+     1
+    ],
+    "beta": "3",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     4,
+     3,
+     4,
+     2,
+     1
+    ],
+    "beta": "7/2",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     4,
+     3,
+     4,
+     2,
+     1
+    ],
+    "beta": "5",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     4,
+     3,
+     4,
+     2,
+     1
+    ],
+    "beta": "11/2",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     11,
+     7,
+     10,
+     3,
+     1
+    ],
+    "beta": "3",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     11,
+     7,
+     10,
+     3,
+     1
+    ],
+    "beta": "7/2",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     11,
+     7,
+     10,
+     3,
+     1
+    ],
+    "beta": "5",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     11,
+     7,
+     10,
+     3,
+     1
+    ],
+    "beta": "11/2",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     3,
+     1,
+     2,
+     1,
+     1,
+     1,
+     1
+    ],
+    "beta": "3",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     3,
+     1,
+     2,
+     1,
+     1,
+     1,
+     1
+    ],
+    "beta": "7/2",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     3,
+     1,
+     2,
+     1,
+     1,
+     1,
+     1
+    ],
+    "beta": "5",
+    "lambda_matches": true,
+    "positive": true
+   },
+   {
+    "c": [
+     1,
+     1,
+     3,
+     1,
+     2,
+     1,
+     1,
+     1,
+     1
+    ],
+    "beta": "11/2",
+    "lambda_matches": true,
+    "positive": true
+   }
+  ]
+ }
+}

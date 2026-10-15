@@ -1,0 +1,30 @@
+{
+ "prover_G1_isomorphic_to_repo_Geneson": true,
+ "perm": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "V1": {
+  "lim_at_561/481": true,
+  "pos_at_561/481": true,
+  "lim_at_7/6": false
+ },
+ "V1_ctln_point": {
+  "q": "5100000/4372771",
+  "stable_fixed_point": true,
+  "detail": "all Hurwitz minors positive"
+ },
+ "V2": {
+  "lim_2.2746": true,
+  "lim_2.2748": false
+ },
+ "V3": {
+  "pos_2.3247": true,
+  "pos_2.3248": false,
+  "lim_2.3248": true
+ }
+}

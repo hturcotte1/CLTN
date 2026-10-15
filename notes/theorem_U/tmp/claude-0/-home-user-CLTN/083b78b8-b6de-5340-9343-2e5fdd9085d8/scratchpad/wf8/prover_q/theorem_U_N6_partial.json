@@ -1,0 +1,26 @@
+{
+ "N": 6,
+ "W": 2,
+ "c": [
+  1,
+  1,
+  364,
+  303,
+  48162,
+  32057,
+  2855618,
+  1424693,
+  76148425,
+  25316879,
+  794853814,
+  132124195,
+  2128867915
+ ],
+ "C1": [
+  "True",
+  "all Hurwitz minors positive"
+ ],
+ "C2_ok": true,
+ "m_core": "6323344851",
+ "C3_k0": "not computed (sympy minors in k exceeded the session budget)"
+}

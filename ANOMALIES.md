@@ -870,3 +870,23 @@ Lemma W predicts, so the whole family E_a shares one region. F_2 (Geneson + a cl
 limit-stable, two unbounded cells up to beta ~ 2.32, no bulge. The incidental n = 8 limit candidate
 &GLjlNZ}NzH\o (41 arcs): five unbounded stable cells reaching beta in (41/18, 693/302), no bulge.
 The m = 8 two-parameter certification costs ~40 s per graph, four times the m = 7 cost.
+
+## 2026-10-15  THEOREM U (prover, REFEREE CONFIRMED): q_n* -> infinity
+Workflow wf_1bf94cc4-bf6 (notes/theorem_U_workflow.json; artifacts notes/theorem_U/). For every
+N >= 3 there is n0(N) such that for every n >= n0(N) some non-clique n-node digraph has a stable
+positive full support at legal (eps, delta) = (1/(1+t), (N-1)/(1+t)) for all large t, so q -> N - 1
+and q_n* >= N - 1. Construction: an "arms-forest" core whose nonedge matrix is an in-tree on a
+3-cycle (Lemma T: chi_L(z) = z^m Lam(1/z) realises any polynomial with nonnegative integer
+coefficients and c_1 = 1), plus one sink class of k nodes; Lemma Q (Sherman-Morrison) for psi_D,
+Lemma P (closed-form positivity), a Rouche strip argument (Lemma S) placing all roots in
+-3/(4N) < Re z < -1/(4N), and root continuity for the class threshold k0. Certified instances:
+N = 3, 4, 5 with n0 = 1812, 6,214,995, 1,590,755,528 (reduced certificates; the 442k- and 44M-node
+cores were not built explicitly); the 65-node core [1,1,11,7,10,3,1] gives q_n* >= 3, 4, 9/2, 23/5
+for all n >= 219, 657, 2475, 4909; explicit ctln-certified graphs n = 28 at q = 20000/10001 and
+n = 41 at q = 22500/10001 (certificates/theorem_U_explicit_instances.json, x_min recomputed here:
+the prover's file used a string-valued min). Negative controls: k0 - 1 fails exactly. Also proved: a
+normal out-regular core alone has alpha(A|perp) >= -1/2 (a class is necessary), and alpha < -1 + 1/N
+is attained for every N (no universal bound). Referee defects, non-fatal: the notes' formula
+m = 2p(1) - 1 should read 2p(1) - 3 (code and numbers correct); N >= 6 thresholds not computed.
+OPEN: the growth rate of q_n* (n0(N) here is super-exponential; Geneson's upper bound is n - 2).
+All graphs with n >= 8 remain candidates.

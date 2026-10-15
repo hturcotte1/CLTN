@@ -1,0 +1,92 @@
+[
+ {
+  "c": [
+   1,
+   1,
+   5,
+   3,
+   1
+  ],
+  "beta": "3",
+  "k": 8,
+  "n": 27,
+  "limit_alpha_lt_-gamma": "False",
+  "detail": "Hurwitz minor 2 negative",
+  "positive": true
+ },
+ {
+  "c": [
+   1,
+   1,
+   5,
+   3,
+   1
+  ],
+  "beta": "3",
+  "k": 9,
+  "n": 28,
+  "limit_alpha_lt_-gamma": "True",
+  "detail": "all Hurwitz minors positive",
+  "positive": true
+ },
+ {
+  "c": [
+   1,
+   1,
+   5,
+   3,
+   1
+  ],
+  "beta": "3",
+  "k": 10,
+  "n": 29,
+  "limit_alpha_lt_-gamma": "True",
+  "detail": "all Hurwitz minors positive",
+  "positive": true
+ },
+ {
+  "c": [
+   1,
+   1,
+   4,
+   2,
+   1
+  ],
+  "beta": "13/4",
+  "k": 25,
+  "n": 40,
+  "limit_alpha_lt_-gamma": "False",
+  "detail": "Hurwitz minor 3 negative",
+  "positive": true
+ },
+ {
+  "c": [
+   1,
+   1,
+   4,
+   2,
+   1
+  ],
+  "beta": "13/4",
+  "k": 26,
+  "n": 41,
+  "limit_alpha_lt_-gamma": "True",
+  "detail": "all Hurwitz minors positive",
+  "positive": true
+ },
+ {
+  "c": [
+   1,
+   1,
+   4,
+   2,
+   1
+  ],
+  "beta": "13/4",
+  "k": 27,
+  "n": 42,
+  "limit_alpha_lt_-gamma": "True",
+  "detail": "all Hurwitz minors positive",
+  "positive": true
+ }
+]

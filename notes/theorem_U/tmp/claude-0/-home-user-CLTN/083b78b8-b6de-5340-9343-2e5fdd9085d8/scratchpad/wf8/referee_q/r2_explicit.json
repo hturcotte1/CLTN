@@ -1,0 +1,99 @@
+[
+ {
+  "c": [
+   1,
+   1,
+   5,
+   3,
+   1
+  ],
+  "k": 9,
+  "n": 28,
+  "beta": "3",
+  "eps": "1/10001",
+  "delta": "2/10001",
+  "eps_matches_prover": true,
+  "delta_matches_prover": true,
+  "X1_psi_identity": true,
+  "psi_sympy_crosscheck": true,
+  "k0_referee": 9,
+  "k0_secs": 0.1,
+  "explicit_limit_test": {
+   "8": false,
+   "9": true,
+   "10": true
+  },
+  "own_graph_ctln": {
+   "q": "20000/10001",
+   "is_fixed_point": true,
+   "positive": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "clique": false,
+   "stable_fixed_point": true,
+   "agrees": false
+  },
+  "own_graph_legal": true,
+  "own_graph_x_min": "70007/8470136",
+  "own_ctln_secs": 3.0,
+  "prover_graph_ctln": {
+   "is_fixed_point": true,
+   "positive": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "clique": false,
+   "stable_fixed_point": true
+  },
+  "same_degree_multiset": true,
+  "same_charpoly_A": true,
+  "same_x_min": true
+ },
+ {
+  "c": [
+   1,
+   1,
+   4,
+   2,
+   1
+  ],
+  "k": 26,
+  "n": 41,
+  "beta": "13/4",
+  "eps": "1/10001",
+  "delta": "9/40004",
+  "eps_matches_prover": true,
+  "delta_matches_prover": true,
+  "X1_psi_identity": true,
+  "k0_referee": 26,
+  "k0_secs": 0.1,
+  "explicit_limit_test": {
+   "25": false,
+   "26": true,
+   "27": true
+  },
+  "own_graph_ctln": {
+   "q": "22500/10001",
+   "is_fixed_point": true,
+   "positive": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "clique": false,
+   "stable_fixed_point": true,
+   "agrees": false
+  },
+  "own_graph_legal": true,
+  "own_graph_x_min": "85128512/29296244437",
+  "own_ctln_secs": 12.5,
+  "prover_graph_ctln": {
+   "is_fixed_point": true,
+   "positive": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "clique": false,
+   "stable_fixed_point": true
+  },
+  "same_degree_multiset": true,
+  "same_charpoly_A": true,
+  "same_x_min": true
+ }
+]

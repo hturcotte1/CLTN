@@ -1,0 +1,35 @@
+{
+ "V1_n6_G1_qstar_bracket": {
+  "stable_at_q=561/481": "True",
+  "positive_at_q=561/481": true,
+  "stable_at_q=7/6": "False",
+  "pass": true
+ },
+ "V2_n7_F1_beta_c": {
+  "n": 7,
+  "stable_at_2.2746": "True",
+  "stable_at_2.2748": "False",
+  "positive_at_2.2746": true,
+  "pass": true
+ },
+ "V3_n8_F2_plastic_positivity": {
+  "n": 8,
+  "positive_at_2.3247": true,
+  "positive_at_2.3248": false,
+  "stable_at_2.3248": "True",
+  "plastic_poly_sign_change": true,
+  "pass": true
+ },
+ "V4_n7_core_Q": {
+  "chi_L": "z**7 + z**6 + 3*z**5 + z**4 + z**3",
+  "pass_chi_L": true,
+  "positive_beta3": true,
+  "positive_beta10": true,
+  "pass": true
+ },
+ "V5_n7_core_Q2": {
+  "chi_L": "z**7 + z**6 + 9*z**5/4 + z**4 + z**3",
+  "pass": true
+ },
+ "ALL_PASS": true
+}
