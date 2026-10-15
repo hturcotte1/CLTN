@@ -965,3 +965,14 @@ restored below if present. Draft-side wording the referee fixed: "four of five p
 are), the k <= 4 base case now rests on our own region2d certification of all 237 graphs on 2-4 nodes
 rather than on a cited result whose hypotheses were not checked, suprema are "approached" not
 "attained", and all n >= 8 instances carry the not-hand-verified label.
+
+## 2026-10-15  The n = 8 local run dies with the container: idle sessions are reclaimed within minutes
+Second unplanned restart (uptime 0 min at 21:58, woken by the scheduled check): every background process
+was gone and the four in-flight shards (about 2 h of work each) were lost; only the 5 committed shards
+survived. Pattern across the whole session: the container stayed alive for hours whenever a
+harness-tracked background task (a run_in_background waiter) was armed, and was reclaimed within minutes of
+my turn ending whenever none was. So nohup alone does not keep a multi-day computation alive here. Fix:
+keep a 2-hour background waiter armed at all times (re-armed on every expiry) and keep the 3-hourly
+scheduled check as the backstop that relaunches from the last finished shard. Lost work is bounded by the
+shard size; the heavy shards at K = 4000 still take 1-3 h each, so a container loss costs up to four of
+them.
