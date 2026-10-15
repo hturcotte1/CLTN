@@ -780,3 +780,15 @@ Lemma R's forward direction in eps/delta language (stable at a legal point => st
 with q = 1 exactly). Every theorem depends only on propext, Classical.choice, Quot.sound; 0
 sorryAx. NOT formalised: the converse of Lemma R (openness of stability needs eigenvalue
 continuity, absent from Mathlib) and everything spectral/exact-arithmetic downstream.
+
+## 2026-10-15  Lean batch 2: the pipeline's prune lemmas are machine-checked (57 theorems total, no sorry)
+notes/lean/CtlnCert/{LemmaA2,EdgeBound,Domination}.lean. Lemma A.2: positive stability => det K > 0
+(proved by a continuity argument: x -> det(xI + K) is monic with no root in [0, inf), so positive at
+0), Cramer in adjugate form, and the CTLN statement "under Hurwitz stability, x > 0 iff adj(K) 1 > 0"
+(positivity is t-free). The e_2 edge bound: e_2(K) = B(1+2t) + Nn(1-beta)(1+beta+2t) + O(1-t(beta-2))
+over any commutative ring for 0/1 zero-diagonal A, pair counting, and -- the spectral step included,
+via Mathlib's charpoly coefficients as sums of principal minors and Gauss-Lucas -- positive stability
+at a legal point implies Nn < B and m(m-1) + 2 <= 2 #arcs, in eps/delta language. Lemma D: a
+dominated node forces x_j = 0 at any fixed point with theta_j <= theta_k (so no positive full-support
+fixed point), including the induced-subgraph form. Axiom audit: 57 theorems, only propext,
+Classical.choice, Quot.sound; 0 sorryAx. Unexpected: nothing had to be left as a hypothesis.
