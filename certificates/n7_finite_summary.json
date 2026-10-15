@@ -1,0 +1,420 @@
+{
+ "n": 7,
+ "scope": "complete finite-eps classification of the FULL support of every digraph on 7 nodes (all legal eps, delta); proper supports reduce to induced subgraphs by Theorem F",
+ "status": "CANDIDATES -- awaiting human hand-verification (CLAUDE.md section 3)",
+ "chain": {
+  "digraphs": 882033440,
+  "A000273_7": 882033440,
+  "dominated_dropped_LemmaD": 764800518,
+  "domination_free": 117232922,
+  "never_positive_C_descartes_LemmaA2": 107600789,
+  "prefilter_kept": 9632133,
+  "prefilter_P": 8845537,
+  "prefilter_U": 786596,
+  "U_resolved_never_exact": 723010,
+  "U_resolved_positive": 63586,
+  "U_other_kept": 0,
+  "positivity_survivors": 8909123,
+  "curve_stage": {
+   "lines": 8909123,
+   "edges_lt_22": 5135775,
+   "never": 3773183,
+   "stable_somewhere": 165,
+   "escalate": 0,
+   "errors": 0,
+   "shards": 4,
+   "written": 165
+  },
+  "region2d_stage": {
+   "graphs": 165,
+   "never": 40,
+   "stable_somewhere": 125,
+   "escalate": 0,
+   "error": 0,
+   "complete": 1
+  }
+ },
+ "accounting_ok": true,
+ "stable_noncomplete": 124,
+ "complete_graph_stable": true,
+ "escalations": 0,
+ "escalated": [],
+ "limit_candidates": 123,
+ "limit_candidates_all_stable_here": true,
+ "limit_candidates_missing": [],
+ "new_finite_eps_only": 1,
+ "new_finite_eps_only_d6": [
+  "&FNFL~[udo?"
+ ],
+ "bounded_in_t_count": 40,
+ "D_equivalence_classes": 91,
+ "class_sizes": [
+  [
+   1,
+   71
+  ],
+  [
+   2,
+   16
+  ],
+  [
+   4,
+   2
+  ],
+  [
+   5,
+   1
+  ],
+  [
+   8,
+   1
+  ]
+ ],
+ "classes": [
+  [
+   "&FGcp}Zr\\~?",
+   "&FGcp~RV\\~?",
+   "&FESPu\\vl~?",
+   "&F@a|d^f\\^?",
+   "&FGcp}Vt\\~?",
+   "&FDA|b^f\\n?",
+   "&FDA|d^e|n?",
+   "&FDSPq^V|~?"
+  ],
+  [
+   "&FWbk\\Vfx~?",
+   "&FUCxvVVl}?",
+   "&FRExlNr\\}?",
+   "&FRF\\LMvxn?",
+   "&FRFX\\Mvx}?"
+  ],
+  [
+   "&FDSPq^R|~?",
+   "&FGdP}Ytx~?",
+   "&FGeP|ZF{~?",
+   "&FGeP|Zdl~?"
+  ],
+  [
+   "&FWE`{\\V|~?",
+   "&FWF@}]vl^?",
+   "&FWD`y^V\\~?",
+   "&FWEP{^U|~?"
+  ],
+  [
+   "&FBSPuZU|~?",
+   "&FDSPq^T|~?"
+  ],
+  [
+   "&FBSP}ZU|~?",
+   "&FCs`y^R|~?"
+  ],
+  [
+   "&FBuH^Pvxv?",
+   "&FBuHnJQ|~?"
+  ],
+  [
+   "&FDS`i^R|~?",
+   "&FCsPq^tl~?"
+  ],
+  [
+   "&FGeP|^fl~?",
+   "&FHD`}Mv|~?"
+  ],
+  [
+   "&FGqSx^tt~?",
+   "&FDS`y^R|~?"
+  ],
+  [
+   "&FKQdh^bt~?",
+   "&FKT@zNVxv?"
+  ],
+  [
+   "&FKs`zVRl~?",
+   "&FJSP}Xv{v?"
+  ],
+  [
+   "&FOuHt^tl^?",
+   "&FQSh]Lv\\~?"
+  ],
+  [
+   "&FQ@|fHtX}?",
+   "&FSB[RYf{|?"
+  ],
+  [
+   "&FQCx^Gv|~?",
+   "&FW@p}ZV\\~?"
+  ],
+  [
+   "&FSCWx^f{~?",
+   "&FCs@y^T|~?"
+  ],
+  [
+   "&FTCwx^f|~?",
+   "&FEsPz^Vl~?"
+  ],
+  [
+   "&FTEWzVq|~?",
+   "&FMSXu\\v{n?"
+  ],
+  [
+   "&FWBP}]vl~?",
+   "&FSCwx^f|~?"
+  ],
+  [
+   "&FWaps^V|~?",
+   "&FWbPu]vl~?"
+  ],
+  [
+   "&F@a{dNS|n?"
+  ],
+  [
+   "&F@uG|NTp]?"
+  ],
+  [
+   "&F@uG~JSt]?"
+  ],
+  [
+   "&FAa[TTthn?"
+  ],
+  [
+   "&FAo{UDt\\z?"
+  ],
+  [
+   "&FBCXUPeln?"
+  ],
+  [
+   "&FBCXUPqln?"
+  ],
+  [
+   "&FBShmXe||?"
+  ],
+  [
+   "&FBTHIXf|~?"
+  ],
+  [
+   "&FCEX`^F{~?"
+  ],
+  [
+   "&FCotQVd\\^?"
+  ],
+  [
+   "&FCsPq^T{~?"
+  ],
+  [
+   "&FCsPq^V|~?"
+  ],
+  [
+   "&FCs`y^T|~?"
+  ],
+  [
+   "&FCsha^b[^?"
+  ],
+  [
+   "&FCtKJYfpv?"
+  ],
+  [
+   "&FDUGjLV|~?"
+  ],
+  [
+   "&FDtGjNS|v?"
+  ],
+  [
+   "&FEO{JXfXv?"
+  ],
+  [
+   "&FEO{JXfX{?"
+  ],
+  [
+   "&FEO{P\\fL{?"
+  ],
+  [
+   "&FEShNPfXv?"
+  ],
+  [
+   "&FEUHH\\fpv?"
+  ],
+  [
+   "&FEsgzZFx~?"
+  ],
+  [
+   "&FEuHs\\fl~?"
+  ],
+  [
+   "&FFEXO^dlz?"
+  ],
+  [
+   "&FFQ[\\Lfp}?"
+  ],
+  [
+   "&FGpT^Gv{~?"
+  ],
+  [
+   "&FHDP}Mv|~?"
+  ],
+  [
+   "&FHTDUUql}?"
+  ],
+  [
+   "&FHUDtVEl{?"
+  ],
+  [
+   "&FHpTeMt{n?"
+  ],
+  [
+   "&FHrD\\Vc|z?"
+  ],
+  [
+   "&FIOtQTbL|?"
+  ],
+  [
+   "&FIQdK\\fXv?"
+  ],
+  [
+   "&FIQk\\Lvl~?"
+  ],
+  [
+   "&FISO|HVd}?"
+  ],
+  [
+   "&FISP]Pf{n?"
+  ],
+  [
+   "&FIuDk\\fx~?"
+  ],
+  [
+   "&FJPTeMq|~?"
+  ],
+  [
+   "&FJUDSTfkz?"
+  ],
+  [
+   "&FKOsrFRLz?"
+  ],
+  [
+   "&FKP|a^f|~?"
+  ],
+  [
+   "&FKSPqVdhz?"
+  ],
+  [
+   "&FKshi^p\\~?"
+  ],
+  [
+   "&FKshr^rl}?"
+  ],
+  [
+   "&FMSgzTfwt?"
+  ],
+  [
+   "&FPDG\\Eslz?"
+  ],
+  [
+   "&FPFHK^c|v?"
+  ],
+  [
+   "&FPFLeUu|z?"
+  ],
+  [
+   "&FPUHK^c|v?"
+  ],
+  [
+   "&FPdhMZq|v?"
+  ],
+  [
+   "&FQCx^Hv\\~?"
+  ],
+  [
+   "&FQDhUGvd{?"
+  ],
+  [
+   "&FQShULv\\~?"
+  ],
+  [
+   "&FRFHK]exm?"
+  ],
+  [
+   "&FS@{JUtXv?"
+  ],
+  [
+   "&FS@{`]f|~?"
+  ],
+  [
+   "&FS@{bZFXm?"
+  ],
+  [
+   "&FSFLP]fdx?"
+  ],
+  [
+   "&FUC{jVV\\~?"
+  ],
+  [
+   "&FUFHLXfsv?"
+  ],
+  [
+   "&FWE`kZF\\|?"
+  ],
+  [
+   "&FWb{lNps~?"
+  ],
+  [
+   "&FWtP}Npt~?"
+  ],
+  [
+   "&FXDPuERkx?"
+  ],
+  [
+   "&FXEglNS|~?"
+  ],
+  [
+   "&FXPkNEq\\v?"
+  ],
+  [
+   "&FYOteTv\\~?"
+  ],
+  [
+   "&F[D`mUVx~?"
+  ],
+  [
+   "&F[EPqVDhj?"
+  ]
+ ],
+ "edge_counts": [
+  [
+   23,
+   7
+  ],
+  [
+   24,
+   7
+  ],
+  [
+   25,
+   18
+  ],
+  [
+   26,
+   10
+  ],
+  [
+   27,
+   6
+  ],
+  [
+   28,
+   22
+  ],
+  [
+   29,
+   34
+  ],
+  [
+   30,
+   17
+  ],
+  [
+   31,
+   3
+  ]
+ ],
+ "with_bidirected_in_twins": 64
+}

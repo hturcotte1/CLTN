@@ -699,3 +699,19 @@ Lemma-R curve test, 165 'stable_somewhere', 0 escalations, 0 errors. Every digra
 is now accounted for by a proved necessary condition except these 165 (which include K7 and the
 124 known candidates if the pipeline is consistent -- checked by the aggregator). Far below the
 earlier projection of ~1.1 M two-parameter certifications. Two-parameter stage running on the 165.
+
+## 2026-10-15  COMPLETE finite-eps map at n = 7: exactly 124 non-clique stable full supports
+Two-parameter stage (region2d, crosscheck + replay) on the 165 curve-stable graphs: 125
+stable_somewhere (K7 + 124 non-complete), 40 never (stable somewhere but never positive at
+the same point), 0 escalations, 0 errors, 3,467 CPU-s. Aggregation (n7/aggregate_n7.py,
+accounting_ok = True): 882,033,440 digraphs = 764,800,518 dominated (Lemma D) + 107,600,789
+never positive (exact Descartes, Lemma A.2) + 723,010 never positive (exact resolver) +
+5,135,775 with <= 21 edges (e_2 bound) + 3,773,183 never stable on the legality curve (Lemma R)
++ 40 stable-but-never-positive-together (CAD) + 125 stable positive (CAD). The 124 non-clique
+graphs are EXACTLY the 123 limit candidates plus &FNFL~[udo?: no other finite-eps-only graph
+exists at n = 7. 40 of the 124 have a stable cell bounded above in t (the "bulge": the limit
+classification understates their regions); 91 D-equivalence classes (71 singletons, 16 pairs,
+two of size 4, one of 5, one of 8); 64 carry bidirected in-twins; edge counts 23..31.
+Certificates: certificates/n7_finite_summary.json, certificates/COUNTEREXAMPLE_CANDIDATES_n7_finite.jsonl
+(every hit with its full two-parameter certificate, exact limit status and class key),
+certificates/n7_region2d/ (all 165 records). All 124 remain CANDIDATES pending hand-verification.

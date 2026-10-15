@@ -1,0 +1,41 @@
+{
+ "graphs": 42,
+ "never": 7,
+ "stable_somewhere": 35,
+ "escalate": 0,
+ "complete": 0,
+ "errors": 0,
+ "shard": "0/4",
+ "assigned": 42,
+ "seconds": 870.7
+}{
+ "graphs": 41,
+ "never": 12,
+ "stable_somewhere": 29,
+ "escalate": 0,
+ "complete": 1,
+ "errors": 0,
+ "shard": "1/4",
+ "assigned": 41,
+ "seconds": 861.5
+}{
+ "graphs": 41,
+ "never": 13,
+ "stable_somewhere": 28,
+ "escalate": 0,
+ "complete": 0,
+ "errors": 0,
+ "shard": "2/4",
+ "assigned": 41,
+ "seconds": 878.4
+}{
+ "graphs": 41,
+ "never": 8,
+ "stable_somewhere": 33,
+ "escalate": 0,
+ "complete": 0,
+ "errors": 0,
+ "shard": "3/4",
+ "assigned": 41,
+ "seconds": 856.0
+}

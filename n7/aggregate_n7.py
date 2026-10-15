@@ -55,13 +55,13 @@ def main():
         for k, v in re.findall(r"([a-zA-Z]+) (\d+)", line):
             pre[k] = pre.get(k, 0) + int(v)
     res_stats = {"U": 0, "U_resolved_positive": 0, "U_resolved_never": 0, "other_verdict": 0, "kept": 0, "P": 0}
-    for p in glob.glob("n7/n7_pos_part?_resolved.txt.stats.json") + glob.glob(os.environ.get("N7_RESOLVED_STATS_GLOB", "/nonexistent/*")):
+    for p in sorted(glob.glob("n7/n7_pos_part?_resolved.stats.json")):
         s = json.load(open(p))
         for k in res_stats:
             res_stats[k] += s.get(k, 0)
     curve = json.load(open("n7/curve/curve_TOTAL.json"))
     recs = []
-    for p in sorted(glob.glob("n7/region2d/region2d_n7_shard*.jsonl")):
+    for p in sorted(x for x in glob.glob("n7/region2d/region2d_n7_shard*.jsonl") if not x.endswith("_HITS.jsonl")):
         for line in open(p):
             recs.append(json.loads(line))
     tally = {"graphs": len(recs), "never": 0, "stable_somewhere": 0, "escalate": 0, "error": 0, "complete": 0}
