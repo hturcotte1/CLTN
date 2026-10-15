@@ -831,3 +831,13 @@ at q = 1, so the union of the candidates' intervals covers (1, rho) with no gap.
 verification: for n <= 7 the conjecture holds for every legal parameter with q >= rho and fails for
 every q in (1, rho). The exact qstar --sharpen run (independent machinery) is still computing; its
 output is the confirmation certificate (certificates/qstar/qstar_n7_finite.json when done).
+
+## 2026-10-15  Human hand-verification of the 124 n = 7 candidates recorded; independent machine verification launched
+The user reports having hand-verified all 124 candidates (certificates/COUNTEREXAMPLE_CANDIDATES_n7_finite.jsonl)
+without full confidence and asked for independent machine verification. Workflow wf_e7b72ed9-c86:
+four verifiers with separately written exact implementations (sympy Rationals + own Hurwitz minors;
+pure Fractions with own elimination/charpoly/minors; exact right-half-plane root counting without
+Hurwitz minors; structural and limit claims incl. pairwise non-isomorphism, domination-freeness and the
+exact limit test), none using the project's code. Sign-off is recorded only after this workflow
+reports every graph confirmed by at least three implementations. Rented compute for n = 8 is deferred
+by the user.
