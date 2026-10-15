@@ -213,5 +213,18 @@ preprint, "independently obtained / consistent with", and claim no priority eith
 2. **n = 8 limit map**: the overflow-guarded filter `n7/filter8.c` is validated byte-identical on all
    n <= 7 data; the full pass is 500-800 CPU-hours (runbook `n7/REPRODUCE_n8_limit.md`) and needs
    rented compute. An incidental n = 8 limit candidate was already found in a random dense sample.
-3. **Theory**: prove or refute sup_n q_n* = infinity; characterise the limit-stable graphs (Conjecture P);
-   Lean formalisation of Lemmas A, R and Theorem F (Lean is not installed here).
+3. **Theory**: prove or refute sup_n q_n* = infinity; characterise the limit-stable graphs (Conjecture P
+   is refuted, so a different invariant is needed); extend the Lean formalisation.
+
+## 11. Machine-checked statements (Lean 4 + Mathlib)
+
+`notes/lean/CtlnCert/` (toolchain lean4 v4.35.0, Mathlib v4.35.0; `lake build` passes; axiom audit:
+only propext, Classical.choice, Quot.sound; no `sorry`): 26 theorems, among them Remark F's affine
+identity `K(l beta, l t) = (1 - l) I + l K(beta, t)` over any commutative ring; the characteristic-polynomial
+scaling and the eigenvalue decomposition along rays; positive stability propagates down rays for
+0 < l <= 1; the intermediate-value step with the explicit unique root `(t + sqrt(t^2 + beta t))/(beta t)`
+in (2/beta, 1); the CLAUDE.md section 2 closed form `I - W = -delta I + (1 + delta) J - (eps + delta) A^T`
+(with the transpose, as the code uses it); `I - W = eps K(J - I - A^T, beta, t)`; `q > 1 <-> t(beta - 2) > 1`;
+Hurwitz stability of `-I + W` iff positive stability of K; and the forward direction of Lemma R in
+eps/delta language. The converse of Lemma R (openness of stability) is not formalised. A second batch
+(Lemma A.2, the e_2 edge bound, Lemma D) is in progress.
