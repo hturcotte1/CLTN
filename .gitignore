@@ -25,3 +25,4 @@ n7/proper/*.log
 n8/parts/*.tmp
 n8/run_n8_local.log
 n8/parts/progress.log
+n8/commit_progress.log
