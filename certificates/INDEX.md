@@ -24,7 +24,7 @@ are labelled approximations only.
 | `n6_summary.json`, `n6_survivors.idx`, `n6_survivor_equivalence_classes.json`, `n6_never_spotcheck.json` | aggregation, survivor list, D-classes, random exact spot-check |
 | `qstar/qstar_n6.json` | q_6* exact (sextic), the threshold theorem at n = 6 |
 
-## n = 7 (complete; all hits are CANDIDATES pending hand-verification)
+## n = 7 (complete; all 124 hits VERIFIED 2026-10-15: human hand-verification + four independent machine verifications)
 | file | certifies | regenerate |
 |---|---|---|
 | `../n7/n7_survivors_all.txt.gz`, `../n7/n7_filter_stats.txt` | limit prefilter over all 882,033,440 digraphs: 638,042 spectral survivors (1,889 strict) | `geng 7 \| directg \| filter7` |
@@ -37,6 +37,9 @@ are labelled approximations only.
 | `n7_limit_hits_finite_eps_bulge_witnesses.json` | two limit candidates stable beyond beta_c at finite t | same |
 | `nondegeneracy_witnesses.json` | nondegeneracy over all supports at a witness point of every n = 6 and n = 7 hit | `n7/nondegeneracy_check.py` |
 | `qstar/qstar_fnfl.json`, `qstar/qstar_n7limit.json`, `qstar/qstar_n7_finite.json` | exact suprema of q (FNFL: degree-25 number; limit candidates: plastic number; finite map: see file) | `n7/qstar.py` |
+| `n7_candidates_legal_witnesses.json` | one LEGAL exact witness per n = 7 counterexample (first legal stored witness + an interior cell point), as re-decided by four independent verifiers | `notes/verify_124/` |
+| `n7_bulge_Rstar_exact.json` | exact sign of R* (Lemma AS) for all 124; bounded-in-t iff R* > 0 and positive at beta_c | `notes/bulge_exact/` |
+| `../notes/verify_124_workflow.json`, `../notes/verify_124/` | the independent machine verification of all 124 (four implementations, 742 points, 0 undecided); statuses in the summary files read VERIFIED | |
 | `SHA256SUMS_jsonl.txt` | checksums of the bulk files | |
 
 ## Theory (notes/)
