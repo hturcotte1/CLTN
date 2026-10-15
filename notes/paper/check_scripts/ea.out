@@ -1,0 +1,7 @@
+a= 0 n= 7 [('27', True, True), ('40', True, True), ('53', True, True), ('107/2', True, True), ('54', True, False), ('60', True, False)]
+a= 1 n= 8 [('27', True, True), ('40', True, True), ('53', True, True), ('107/2', True, False), ('54', True, False), ('60', True, False)]
+a= 2 n= 9 [('27', True, True), ('40', True, True), ('53', True, True), ('107/2', True, False), ('54', True, False), ('60', True, False)]
+a= 3 n= 10 [('27', True, True), ('40', True, True), ('53', True, True), ('107/2', True, False), ('54', True, False), ('60', True, False)]
+--- detail at t=107/2
+a= 0 eps 2/109 delta 27/1417 {'positive': True, 'off_support_ok': True, 'stable': True, 'stability_detail': 'all Hurwitz minors positive', 'stable_fixed_point': True, 'BOUNDARY': False}
+a= 1 eps 2/109 delta 27/1417 {'positive': True, 'off_support_ok': True, 'stable': False, 'stability_detail': 'Hurwitz minor 7 negative', 'stable_fixed_point': False, 'BOUNDARY': False}

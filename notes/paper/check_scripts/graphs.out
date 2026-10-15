@@ -1,0 +1,11 @@
+&FNFL~[udo? True 0011110 0011100 1101111 1110111 0011011 0100101 1100000 28
+&F^U|m^QTq? True 0111110 1011011 1101101 1100111 1101001 0010101 1100100 30
+FNFL 7chi_perp (z + 1)*(z**2 + z + 1)*(7*z**3 + 14*z**2 + 14*z + 5)
+G1 paper rows 011011 101011 110101 111000 011000 000110 19
+geneson.d6 011011 101011 110101 111000 011000 000110
+COUNTEREXAMPLE_CANDIDATE_n6_idx1387528.json 1387528 011000 000011 000111 110010 100101 111110 18 False
+  features {'edges': 18, 'nonedges': [[0, 3], [0, 4], [0, 5], [1, 0], [1, 2], [1, 3], [2, 0], [2, 1], [3, 2], [3, 5], [4, 1], [4, 2]], 'mutually_nonadjacent_pairs': [[1, 2]], 'bidirected_pairs': 4, 'oneway_edges': 10, 'indeg': [3, 3, 2, 3, 4, 3], 'outdeg': [2, 2, 3, 3, 3, 5], 'automorphisms': 1, 'domination_free': True, 'isomorphic_to_geneson': False, 'compressed_charpoly_hi_to_lo': [6, 18, 30, 29, 16, 4]}
+  stable_q_limit [['1', 'root of [1, 2, 1, -2, -2, -1] in (1, 13/12)']]
+COUNTEREXAMPLE_CANDIDATE_n6_idx1424629.json 1424629 011000 000101 000111 100011 110101 111110 19 False
+  features {'edges': 19, 'nonedges': [[0, 3], [0, 4], [0, 5], [1, 0], [1, 2], [1, 4], [2, 0], [2, 1], [3, 1], [3, 2], [4, 2]], 'mutually_nonadjacent_pairs': [[1, 2]], 'bidirected_pairs': 5, 'oneway_edges': 9, 'indeg': [3, 3, 2, 4, 3, 4], 'outdeg': [2, 2, 3, 3, 4, 5], 'automorphisms': 1, 'domination_free': True, 'isomorphic_to_geneson': False, 'compressed_charpoly_hi_to_lo': [6, 19, 32, 32, 17, 4]}
+  stable_q_limit [['1', 'root of [797, -1686, 2159, -3004, 2499, -2158, 1521] in (358/307, 7/6)']]

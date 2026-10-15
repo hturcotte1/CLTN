@@ -8,7 +8,7 @@ are labelled approximations only.
 ## Validation gate
 | file | certifies | regenerate |
 |---|---|---|
-| `stage0_geneson.json` | Geneson's 6-node counterexample (arXiv:2607.21396) reproduced: stable positive non-clique full support at eps = 1/100, delta = 29/2500 | `python3 test_ctln.py` (block 8) |
+| `stage0_geneson_2607.21396.json` | Geneson's 6-node counterexample (arXiv:2607.21396) reproduced: stable positive non-clique full support at eps = 1/100, delta = 29/2500 | `python3 test_ctln.py` (block 8) |
 | `stage1_n5_diff.json`, `../data/n5_package_FP.csv` | the published n = 5 classification (ccurto/n5-graphs-package) reproduced with diff zero | `stage1_n5_diff.py` |
 | `validate_fastregion_n4.json`, `_n5.json` | the fast exact region engine agrees with `symbolic.q_region` | `validate_fastregion.py` |
 | `region2d_n2to4_all.json`, `region2d_v2_validation.json` | the two-parameter engine on all digraphs with n <= 4; v1/v2 agreement | `region2d.py` |

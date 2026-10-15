@@ -95,7 +95,7 @@ Files: `n7/filter7p.c`, `n7/resolve_U.py`, `n7/curve_test.py`, `n7/run_n7_curve.
 * `&FNFL~[udo?` (28 arcs): `7 chi_perp = (l + 1)(l^2 + l + 1)(7l^3 + 14l^2 + 14l + 5)`, so
   alpha = -1/2 exactly; never limit-stable; stable positive at eps = 1/49, delta = 33/1568 (q = 99/98)
   and eps = 1/36, delta = 17/588; unstable for larger t at the same beta; region bounded in t at every
-  beta (cell at beta = 53/26: t in (26, 53)). It is the n = 6 hit idx 1387528 with one node doubled
+  beta (cell at beta = 53/26: t from 26 up to a root t_1 in (53, 54)). It is the n = 6 hit idx 1387528 with one node doubled
   (closed-twin blow-up), and the factor l^2 + l + 1 is a moving eigenvalue pair on the boundary line.
   `certificates/COUNTEREXAMPLE_CANDIDATE_n7_finite_FNFL.json`.
 

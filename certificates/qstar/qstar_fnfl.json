@@ -181,5 +181,6 @@
     }
    }
   ]
- }
+ },
+ "status_update_2026_10_15": "VERIFIED graph (human + four independent verifiers, wf_e7b72ed9-c86). The 'aggregate' block of this file is the sample-slice bound only; the exact supremum (degree-25 algebraic number in (685003/657781, 2170535/2084278), approached at the corner where Delta_6 = 0 meets the positivity line beta = beta_pos at t ~ 25.009) is in cells[0].sharpened and in qstar_n7_finite.json."
 }

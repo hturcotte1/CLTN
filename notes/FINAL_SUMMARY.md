@@ -37,7 +37,8 @@ families show the true threshold grows with n without any known bound.
   hence more than half of all arcs (e_2 bound); every coefficient of det(mu I + K) is positive
   (Stodola); two non-adjacent in-twins force the eigenvalue delta (never stable).
 * **Closed-twin blow-ups** preserve the full-support fixed-point data (Lemmas W, X), which is how
-  every infinite family is built and why E_1 at n = 8 has exactly the same region as its 7-node base.
+  every infinite family is built; the finite-eps regions of E_0 and E_1 agree to the rational hulls of their
+  cell boundaries but are not identical (at beta = 53/26, t = 107/2 the base is stable and E_1 is not).
 * **Refuted on the way:** Conjecture P (positivity of the resolvent vector forces an eigenvalue at
   Re <= -1/2), and "every limit polynomial has a root on Re = -1/2".
 
@@ -62,7 +63,7 @@ families show the true threshold grows with n without any known bound.
 * **Pinned (needs rented compute):** the n = 8 limit map, 500-800 CPU-hours, runbook
   `n7/REPRODUCE_n8_limit.md`, overflow-safe filter validated; one n = 8 limit candidate already found.
 * **Question A, settled (Theorem A, refereed by an independent second proof):** yes. At the single
-  legal point eps = 1/21, delta = 11/210 (where Geneson's clique-class family dies at size 48) the
+  legal point eps = 1/21, delta = 11/210 (where Geneson's clique-class family is stable only up to 46 nodes) the
   family R_k built on the 7-node counterexample `&F^U|m^QTq?` is a stable positive non-clique full
   support for every k >= 0 (n = 7 + k); every legal point with beta < 4.9607 carries such a family,
   and conditionally on the Theorem U lemmas every legal point does.

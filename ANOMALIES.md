@@ -944,3 +944,24 @@ by the 7-node graph alone and silently dropped 47 pairs whose graphs coincide wi
 under a different support -- fixed by deduplicating per base under its automorphism group (resume kept the
 12,241 computed records). Combined with the 124 full supports this is the complete list of stable
 non-clique supports of every kind at n = 7.
+
+## 2026-10-15  Paper draft written and refereed (185 numbers checked); corrections to my own notes
+Workflow wf_0108dbba-3f9: a 20-page LaTeX draft (notes/paper/paper.tex, compiled pdf alongside; author
+field empty) built from the reports, then a referee checked every number, polynomial, graph string and
+attribution against the certificates: 11 discrepancies, 6 overclaims, 8 missing caveats, all applied in
+the stored version (the pre-check draft is kept as paper_draft_before_check.tex). Source-side errors it
+found in MY notes, corrected here: (1) the entry of 2026-10-15 saying E_1 (n = 8) has "EXACTLY the same
+stable cell" as E_0 = &FNFL~[udo? is WRONG as an exact statement: only the rational hulls of the cell
+boundaries coincide; at beta = 53/26, t = 107/2 (eps = 2/109, delta = 27/1417) E_0 is stable while E_1,
+E_2, E_3 are positive but decidedly unstable (minor 7 negative). Lemma W preserves the limit data, not the
+finite-t region, because the quotient matrix depends on the class sizes. (2) "Geneson's family dies at
+size 48" in FINAL_SUMMARY: F_k is stable at (1/21, 11/210) for k <= 40 only, i.e. up to 46 nodes
+(an earlier entry's "k <= 38" was itself superseded). (3) FNFL's bounded cell ends at a root t_1 in
+(53, 54), not at 53. (4) certificates/INDEX.md named stage0_geneson.json; the file is
+stage0_geneson_2607.21396.json. (5) qstar_fnfl.json still carried a CANDIDATE status and a stale
+aggregate block; a status_update field now points to the exact supremum. (6) The claims diff against the
+preprint was not archived (notes/referee_wf4/lit_diff/ empty) because its files sat in a subdirectory;
+restored below if present. Draft-side wording the referee fixed: "four of five prunes in Lean" (all five
+are), the k <= 4 base case now rests on our own region2d certification of all 237 graphs on 2-4 nodes
+rather than on a cited result whose hypotheses were not checked, suprema are "approached" not
+"attained", and all n >= 8 instances carry the not-hand-verified label.

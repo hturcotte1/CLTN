@@ -1,0 +1,1073 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hmargin=0.9in,vmargin=0.85in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+\DeclareUrlCommand\dsix{\urlstyle{tt}}   % digraph6 strings, written \dsix+...+
+\DeclareUrlCommand\cf{\urlstyle{tt}}     % file names in the project archive
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{question}[theorem]{Question}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\perpc}[1]{#1|_{\perp}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\spec}{\operatorname{spec}}
+\newcommand{\Rea}{\operatorname{Re}}
+\newcommand{\lean}{\textsuperscript{\textsf{L}}}
+\newcommand{\st}[1]{\textsc{#1}}
+
+\title{The target-free clique conjecture for threshold-linear networks:\\
+complete exact maps for $n\le 7$, infinite families,\\ and unbounded thresholds}
+\author{}
+\date{Draft, October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For combinatorial threshold-linear networks (CTLNs), Curto and Morrison asked whether the supports of
+stable fixed points are exactly the target-free cliques of the underlying digraph. Geneson disproved this
+with a six-node graph near $q=1$, where $q=\delta(1-\eps)/\eps>1$ is the legality parameter, and proved
+that the conjecture holds once $q\ge n-2-(n-3)\eps/2$. We study the gap between these two results
+with exact arithmetic throughout. First, a reduction theorem shows that at every legal parameter the
+conjecture on $n$ nodes is equivalent to the statement that no non-complete digraph on $k\le n$ nodes
+has a positive, linearly stable full-support fixed point. Second, using the rank-one structure of the
+weight matrix, an exact $\eps\to0$ spectral criterion, Hurwitz determinants with a three-valued
+treatment of boundary points, a cylindrical decomposition of the two-parameter legal region, and a
+new ray reduction to the legality curve, we obtain complete certified maps of stable non-clique full
+supports: there are none for $n\le5$; at $n=6$ exactly three of the $1{,}540{,}944$ digraphs have one; at
+$n=7$ exactly $124$ of the $882{,}033{,}440$ digraphs do, one of which is invisible in the $\eps\to0$ limit. The exact
+thresholds are $q_6^*\approx1.1664$, a root of an explicit sextic, and $q_7^*=\rho\approx1.3247$, the
+plastic number: for $n\le7$ the conjecture holds at every legal parameter with $q\ge\rho$ and fails for
+every $q\in(1,\rho)$. Third, closed-twin blow-ups yield infinite families: counterexamples on every
+$n\ge6$ nodes, finite-$\eps$-only counterexamples on every $n\ge7$ nodes, a proof that the critical
+value $q_n^*$ tends to infinity, and a single legal parameter point at which stable non-clique supports
+of every size $n\ge 6$ exist. Several of the necessary conditions used to prune the search are
+machine-checked in Lean~4.
+\end{abstract}
+
+%======================================================================
+\section{Introduction}\label{sec:intro}
+
+\subsection{The conjecture}
+A \emph{threshold-linear network} on $n$ neurons is the dynamical system
+\begin{equation}\label{eq:tln}
+\frac{dx_i}{dt}=-x_i+\Bigl[\sum_{j=1}^n W_{ij}x_j+\theta\Bigr]_+,\qquad i=1,\dots,n,
+\end{equation}
+with $[u]_+=\max(u,0)$ and a constant external drive $\theta>0$. A \emph{combinatorial} TLN (CTLN)
+builds $W$ from a directed graph $G$ and two parameters $\eps,\delta>0$: weak inhibition $-1+\eps$
+along edges and strong inhibition $-1-\delta$ along non-edges (Section~\ref{sec:prelim}). The CTLN is
+\emph{legal} when $\delta>0$, $0<\eps<\delta/(\delta+1)$, which we write as $q:=\delta(1-\eps)/\eps>1$.
+Fixed points of~\eqref{eq:tln} are indexed by their supports $\sigma\subseteq[n]$, and a central theme of
+the CTLN programme is to read the fixed-point structure off the graph \cite{CurtoMorrison2023}.
+
+A subset $\sigma$ is a \emph{clique} if every pair of distinct nodes of $\sigma$ is joined by edges in
+both directions; a node $k\notin\sigma$ is a \emph{target} of $\sigma$ if every node of $\sigma$ sends an
+edge to $k$; $\sigma$ is \emph{target-free} if it is a clique with no target. Open Question~10 of
+Curto and Morrison \cite{CurtoMorrison2023} is the \emph{target-free clique conjecture}: \emph{the
+supports of stable fixed points of a CTLN are exactly its target-free cliques.} One direction is a
+classical graph rule: every target-free clique supports a stable fixed point at every legal parameter
+(Lemma~\ref{lem:clique}). The content of the conjecture is the converse.
+
+\subsection{Geneson's counterexample and bound}
+Geneson \cite{Geneson2026} disproved the conjecture with an explicit graph on six nodes and
+$\delta=\tfrac{29}{25}\eps$ for all sufficiently small $\eps$ (so $q\approx 29/25$), and proved
+that it does hold whenever
+\begin{equation}\label{eq:geneson-bound}
+q\;\ge\; n-2-\tfrac{(n-3)\eps}{2}.
+\end{equation}
+This leaves a gap between $q$ slightly above $1$ and $q$ near $n-2$. The present paper maps that gap
+exactly for $n\le7$ and studies its behaviour for large $n$.
+
+\subsection{Our results}
+Throughout, results are labelled \st{proved} (a proof is given here or in the project notes),
+\st{certified} (an exact rational or algebraic computation recorded in a re-runnable certificate file),
+or \st{Lean} (machine-checked in Lean~4 with Mathlib; marked \lean\ in statements). No floating-point
+number enters any decision; decimals in the text are display approximations of exactly specified
+algebraic numbers. Graphs on $n\le7$ nodes reported as counterexamples have been checked by hand and by
+four independently written exact verifiers; family members on $n\ge8$ nodes are certified instances
+of proved theorems but have \emph{not} been hand-verified (Section~\ref{sec:verification}).
+
+\paragraph{Reduction and exact machinery.} At every legal parameter, the conjecture on $n$ nodes is
+equivalent to the absence of a non-complete digraph on $k\le n$ nodes whose full support is a positive,
+linearly stable fixed point (Theorem~\ref{thm:reduction}). The full-support problem has a rank-one
+structure: positivity depends on one parameter only, and the $\eps\to0$ limit is an exact spectral
+condition on the adjacency matrix compressed to $\one^\perp$ (Lemmas~\ref{lem:rankone}
+and~\ref{lem:limit}). Stability at some legal point is equivalent to stability on the one-dimensional
+legality curve (Lemma~\ref{lem:rayR}). Together with five necessary conditions valid at every parameter
+(domination, positivity, an edge bound, Stodola's condition and a twin obstruction, Section~\ref{sec:prunes})
+these reduce the problem to a manageable set of exact one- and two-parameter certifications.
+
+\paragraph{Complete maps for $n\le6$.} No digraph on at most five nodes is a counterexample at any legal
+parameter. Among the $1{,}540{,}944$ digraphs on six nodes exactly three non-complete graphs have a
+stable positive full support at some legal parameter: Geneson's graph, a partner obtained from it by a
+bidirected in-twin switch, and one further 18-edge graph (Theorem~\ref{thm:n6}). The critical value is
+$q_6^*\approx1.1664$, the root in $(561/481,7/6)$ of
+$797q^6-1686q^5+2159q^4-3004q^3+2499q^2-2158q+1521$ (Theorem~\ref{thm:q6}).
+
+\paragraph{The complete map at $n=7$.} Every one of the $882{,}033{,}440$ digraphs on seven nodes is either
+excluded by a proved necessary condition or carries an exact two-parameter certificate. Exactly $124$
+non-complete graphs have a stable positive full support at some legal parameter
+(Theorem~\ref{thm:n7}). Of these, $123$ are visible in the $\eps\to0$ limit and one is not: its
+compressed adjacency has spectral abscissa exactly $-1/2$ and it is stable only in a window of moderate
+$\eps$. The natural monotonicity statement ``stable at finite $\eps$ implies stable in the limit'' is
+false (Proposition~\ref{prop:Mfalse}), and an exact first-order coefficient $R^*$ decides when a stable
+region bulges past its limit boundary (Theorem~\ref{thm:AS}). The threshold is $q_7^*=\rho$, the plastic
+number (real root of $q^3=q+1$), and for $n\le7$ the conjecture holds at every legal parameter with
+$q\ge\rho$ and fails for every $q\in(1,\rho)$ (Theorem~\ref{thm:q7}).
+
+\paragraph{Infinite families and unbounded thresholds.} Closed-twin blow-ups preserve full-support
+fixed-point data in closed form (Lemmas~\ref{lem:W} and~\ref{lem:X}). This yields: counterexamples on
+every $n\ge6$ (Theorem~\ref{thm:famF}); finite-$\eps$-only counterexamples on every $n\ge7$
+(Theorem~\ref{thm:famE}); families whose thresholds approach $1.84$, $3$ and $3.96$
+(Theorem~\ref{thm:QQ2Y}); and, via an in-tree construction realising prescribed limit polynomials, a proof
+that $q_n^*\to\infty$ (Theorem~\ref{thm:U}). Finally, at the single legal point
+$(\eps,\delta)=(1/21,11/210)$ there are stable non-clique full supports on $n$ nodes for every
+$n\ge6$, and on no $n\le5$ (Theorem~\ref{thm:A}).
+
+\paragraph{Verification.} Every count and critical value is backed by a re-runnable certificate file
+(Appendix~\ref{app:certs}); the pipelines and theorems were independently audited; all $n\le7$ counterexamples were
+hand-verified and re-decided by four independently written exact verifiers; and $87$ supporting theorems are machine-checked
+(Section~\ref{sec:verification}).
+
+\subsection{Related work}
+The conjecture and the surrounding graph rules are from Curto and Morrison \cite{CurtoMorrison2023}.
+Graphical domination, which we use as a prune in its verbatim form, is due to Curto \cite{Curto2025}.
+Geneson \cite{Geneson2026} gave the first counterexample and the bound~\eqref{eq:geneson-bound}; he does
+not pose or treat the gap question.
+An unrefereed preprint, ``Six Is Minimal'' \cite{SixIsMinimal2026}, obtained independently and by
+different exact methods that no digraph on at most five nodes has a stable non-clique support, used
+Geneson's graph as the six-node witness, computed the full-support region of that graph, and gave a
+family on $5r+6$ nodes. Their conventions agree with ours up to a transpose of the non-edge matrix; their
+exclusion for $n\le5$ agrees with our $n=5$ map; their region for Geneson's graph gives
+$1+u^*=1.16635502785\ldots$, the same sextic root as our $q_6^*$; and their family is a clique-class
+blow-up of the same seed with $q\to1$, an instance of Lemma~\ref{lem:W}. Their work does not classify
+$n=6$ or treat $n\ge7$, finite-$\eps$-only examples, the reduction theorem or growing thresholds; it does
+give an explicit rational parameter schedule for its family and global nondegeneracy certificates, which
+prompted our nondegeneracy check. We regard the two works as independent and consistent.
+Our comparison is based on reading their repository; we did not run their code.
+
+%======================================================================
+\section{Preliminaries}\label{sec:prelim}
+
+\subsection{Conventions}
+A digraph $G$ on $[n]$ is encoded by its adjacency matrix $A$, with
+\[
+A_{ij}=1\iff\text{there is an edge } i\to j\qquad(\text{row } i \text{ lists the nodes that } i \text{ sends to}).
+\]
+The CTLN weight matrix is
+\begin{equation}\label{eq:W}
+W_{ij}=\begin{cases}0,& i=j,\\ -1+\eps,& i\neq j,\ A_{ji}=1\quad(j\to i:\ \text{weak inhibition}),\\
+-1-\delta,& i\neq j,\ A_{ji}=0\quad(j\not\to i:\ \text{strong inhibition}).\end{cases}
+\end{equation}
+Note the transpose: $W_{ij}$ is the influence of $j$ on $i$ and therefore reads $A_{ji}$. For a support
+$\sigma$ of size $m$ with induced adjacency $A_\sigma$, with $J=\one\one^{T}$ the all-ones matrix,
+\begin{equation}\label{eq:closed}
+I-W_\sigma\;=\;-\delta I+(1+\delta)J-(\eps+\delta)A_\sigma^{T}.
+\end{equation}
+Every entry is a polynomial in $(\eps,\delta)$ with integer coefficients. Identity~\eqref{eq:closed},
+including the transpose, is machine-checked (\texttt{closed\_form}\lean).
+
+\begin{definition}\label{def:sfp}
+A nonempty $\sigma\subseteq[n]$ \emph{supports a stable fixed point} (SFP) if
+\begin{enumerate}
+\item[(1)] $(I-W_\sigma)x=\theta\one$ has a solution with $x>0$ entrywise;
+\item[(2)] $\theta+\sum_{j\in\sigma}W_{kj}x_j<0$ for every $k\notin\sigma$;
+\item[(3)] every eigenvalue of $-I+W_\sigma$ has negative real part.
+\end{enumerate}
+\end{definition}
+If (1)--(3) hold, the zero-extension of $x$ is an equilibrium of~\eqref{eq:tln} near which the vector field is
+affine with Jacobian spectrum $\spec(-I+W_\sigma)\cup\{-1\}$, so it is linearly, hence locally
+asymptotically, stable. ``Stable'' always means linearly stable in this strict sense: points where
+$I-W_\sigma$ is singular or a Hurwitz determinant vanishes are never counted as stable. When
+$\sigma=[n]$, condition~(2) is vacuous and ``target-free clique'' reduces to ``complete bidirected''.
+
+Condition (3) is decided by the Hurwitz determinants of the exact characteristic polynomial: for a real
+$f(z)=c_0z^m+\dots+c_m$ with $c_0>0$, $\Delta_k(f)=\det[c_{2i-j}]_{i,j=1}^{k}$ (with $c_l=0$ outside
+$0\le l\le m$), and $f$ has all roots in $\Rea z<0$ iff $\Delta_1,\dots,\Delta_m>0$ (Routh--Hurwitz;
+see Gantmacher, \emph{The Theory of Matrices}, Vol.~II, Ch.~XV).
+
+\subsection{Reparametrisation and legality}
+Put
+\[
+t=\frac{1-\eps}{\eps},\qquad \beta=1+\frac{\delta}{\eps},\qquad \gamma=1-\frac1\beta,\qquad
+q=\frac{\delta(1-\eps)}{\eps}=\frac{(\beta-1)t}{t+1}.
+\]
+The map $(\eps,\delta)\mapsto(\beta,t)$ is a homeomorphism of $(0,1)\times(0,\infty)$ onto
+$(1,\infty)\times(0,\infty)$ with inverse $\eps=1/(1+t)$, $\delta=(\beta-1)/(1+t)$, and
+\begin{equation}\label{eq:legal}
+\text{legal}\iff q>1\iff t(\beta-2)>1
+\end{equation}
+(\texttt{legal\_iff}\lean). In particular every legal point has $\beta>2$ and $\gamma\in(1/2,1)$, and
+along a ray $\delta=(\beta-1)\eps$, $\eps\to0$, one has $t\to\infty$ and $q\to\beta-1$. The drive
+$\theta>0$ only rescales fixed points: each of (1)--(3), and every boundary event, has the same truth
+value at every $\theta>0$ (Lemma~G of the reduction note\footnote{\cf{notes/lemma_F_reduction.md}, \S1.}).
+
+Let $N:=J-I-A_\sigma^T$ be the \emph{receiver-first non-edge matrix}: $N_{ab}=1$ iff $a\ne b$ and
+$\sigma_b\not\to\sigma_a$. Put $C:=I+\beta N$ and $K:=C+tJ$.
+
+\subsection{Rank-one structure}
+\begin{lemma}[Rank-one structure; proved]\label{lem:rankone}
+Let $\eps>0$. Then
+\begin{enumerate}
+\item[(i)] $I-W_\sigma=\eps K$ (\texttt{IminusW\_eq}\lean);
+\item[(ii)] $a:=\adj(K)\one=\adj(C)\one$ for every value of $t$; each $a_i\in\mathbb Z[\beta]$ has degree $\le m-1$;
+\item[(iii)] $\det K=d+ts$ with $d=\det C$ and $s=\one^Ta$;
+\item[(iv)] $\det(\mu I+K)=\phi(\mu)+t\,\omega(\mu)$ with $\phi(\mu)=\det(\mu I+C)$ and
+$\omega(\mu)=\one^T\adj(\mu I+C)\one$, where $\omega$ has degree exactly $m-1$ in $\mu$ and leading coefficient $m$;
+\item[(v)] if $D:=\det K\ne0$, the solution of (1) is $x=(\theta/\eps)\,a/D$, and for $k\notin\sigma$ the
+drive in (2) equals $\theta\, o_k/D$ with $o_k=d-\beta\sum_b N_{kb}a_b$, where $N_{kb}=1$ iff $\sigma_b\not\to k$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}[Sketch]
+(i) is an entrywise check using $\eps\beta=\eps+\delta$ and $\eps t=1-\eps$. (ii)--(iv) follow from the
+adjugate form of the matrix determinant lemma, $\det(M+\tau\one\one^T)=\det M+\tau\,\one^T\adj(M)\one$,
+valid over any commutative ring, and Cramer's rule in column form: in $K$ with column $i$ replaced by
+$\one$, subtracting $t$ times that column from the others gives $C$ with column $i$ replaced by $\one$.
+(v) is Cramer's rule together with $W_{kb}=-\eps(t+\beta N_{kb})$. No step divides by $\det C$.
+Full proofs: \cf{notes/lemmas.md}, \S1.
+\end{proof}
+
+\begin{lemma}[Positivity is $t$-free; proved, \lean]\label{lem:A2}
+If $K$ is positive stable (equivalently, (3) holds) then $\det K>0$. Hence, at every point with $\eps>0$,
+\[
+\sigma\text{ is an SFP}\iff a_i(\beta)>0\ \forall i,\quad o_k(\beta)<0\ \forall k\notin\sigma,\quad
+\det(\mu I+K)\ \text{Hurwitz}.
+\]
+\end{lemma}
+\begin{proof}[Sketch]
+$\det K$ is the product of the eigenvalues; real ones are positive and complex ones pair to
+$|\lambda|^2>0$. The Lean proof (\texttt{det\_pos\_of\_posStable}, \texttt{ctln\_pos\_iff\_adjugate\_pos})
+argues instead that $x\mapsto\det(xI+K)$ is monic with no root in $[0,\infty)$.
+\end{proof}
+Thus in the $(\beta,t)$ quarter-plane the SFP set is a product of a set of $\beta$-intervals (positivity
+and the off-support condition) with $(0,\infty)$, intersected with the stability set and the legal
+region; only stability depends on $t$.
+
+\subsection{The \texorpdfstring{$\eps\to0$}{eps -> 0} limit}
+Let $U\in\R^{m\times(m-1)}$ have orthonormal columns spanning $\one^\perp$ and write
+$\perpc{X}:=U^TXU$. Let $\alpha:=\max\Rea\spec(\perpc{A_\sigma})$ be the spectral abscissa of the
+compressed adjacency; it depends on the graph only. Exactly, $\spec\perpc{A}$ can be computed over $\Q$
+from any rational basis of $\one^\perp$.
+
+\begin{lemma}[Limit criterion; proved]\label{lem:limit}
+Let $\beta>1$ and $\gamma=1-1/\beta$.
+\begin{enumerate}
+\item[(a)] $\omega(\mu;\beta)=m\det\bigl((\mu+1)I_{m-1}+\beta\,\perpc{N}\bigr)$, and as $t\to\infty$ one eigenvalue
+of $K(\beta,t)$ is $mt+O(1)$ while the other $m-1$ converge to $\spec\bigl((1-\beta)I-\beta\perpc{A}^T\bigr)$.
+\item[(b)] If $\alpha<-\gamma$ there is $T$ with $K(\beta,t)$ positive stable for all $t>T$; if
+$\alpha>-\gamma$, then $K(\beta,t)$ is unstable for all large $t$; $\alpha=-\gamma$ is undecided by the limit.
+The limit-stable set of legal $\beta$ is the interval $(2,\beta_c)$, $\beta_c=1/(1+\alpha)$, nonempty iff
+$\alpha<-1/2$; always $\alpha\ge-1$, with equality iff $G[\sigma]$ is complete bidirected. The threshold $T$ is
+uniform on compact subsets of $(2,\beta_c)$.
+\item[(c)] $a(\beta)$ is one-signed $\iff$ $A^T+\gamma I$ is nonsingular and $w:=(A^T+\gamma I)^{-1}\one>0$; then $a$ is a
+nonzero multiple of $w$, and condition (1) holds at $(\beta,t)$ for some, equivalently every, $t>0$ iff $w>0$. For $k\notin\sigma$,
+$o_ks<0$ iff $\sum_{b:\sigma_b\to k}w_b<1$.
+\item[(d)] If $\alpha<-\gamma$ at a legal $\beta$, then $G[\sigma]$ has more than $m(m-1)/2$ edges.
+\end{enumerate}
+\end{lemma}
+\begin{proof}[Sketch]
+(a) Conjugating by the orthogonal matrix $[\one/\sqrt m\,|\,U]$ turns $tJ$ into $tm\,e_1e_1^T$, and the
+determinant is affine in the $(1,1)$ entry with slope the complementary minor; root continuity (Rouch\'e,
+or an elementary continuity lemma) gives the eigenvalue statement. (b) follows from (a) and
+$\perpc{J}=0$, since $\perpc{N}=-I-\perpc{A}^T$. (c) uses $Ca=d\one$ and $C=-\beta(A^T+\gamma I)+\beta J$, so
+$(A^T+\gamma I)a=\frac{\beta s-d}{\beta}\one$, together with $\det(A^T+\gamma I)=(-1/\beta)^m(d-\beta s)$. (d) is
+a trace computation: $\operatorname{tr}\perpc{A}=-|E|/m$ and the maximum real part dominates the mean.
+Full proofs: \cf{notes/lemmas.md}, \S4, and \cf{notes/lemma_I_spectral.md}, \S\S2--6.
+\end{proof}
+
+Combining (b) and (c): if $w(\gamma)>0$ and $\alpha<-\gamma$ at some rational $\beta>2$, then the full support
+is an SFP at the legal points $(\eps,\delta)=(1/(1+t),(\beta-1)/(1+t))$ for all $t>T(\beta)$. We call such a
+graph \emph{limit-stable}. Lemma~\ref{lem:limit} is the shared dependency of every ``for all $k$''
+statement in Section~\ref{sec:families}; it is not formalised in Lean.
+
+\subsection{Reduction to full supports}
+\begin{lemma}[Cliques; proved]\label{lem:clique}
+Let $0<\eps<1$, $\delta>0$, $\theta>0$ and let $\sigma$ be a clique of size $m$. Then $x=c\one$ with
+$c=\theta/(\eps+m(1-\eps))$ solves (1), (3) holds, and the drive at $k\notin\sigma$ is
+$\theta[\eps-r(\eps+\delta)]/(\eps+m(1-\eps))$ where $r$ is the number of $j\in\sigma$ with $j\not\to k$.
+Hence a clique is an SFP iff it is target-free.
+\end{lemma}
+
+For a legal point $p$ and $k\ge2$ let $\mathrm{FS}(k,p)$ be the statement ``every $k$-node digraph whose full
+support satisfies (1) and (3) at $p$ is complete bidirected''.
+
+\begin{theorem}[Reduction to full supports; proved]\label{thm:reduction}
+Fix a legal $p=(\eps,\delta)$ and $n\ge1$. The following are equivalent:
+\begin{enumerate}
+\item[(i)] the target-free clique conjecture holds for every $n$-node CTLN at $p$;
+\item[(ii)] for every $n$-node $G$, every SFP support of $G$ at $p$ is a clique;
+\item[(iii)] $\mathrm{FS}(k,p)$ holds for every $k\in\{2,\dots,n\}$.
+\end{enumerate}
+\end{theorem}
+\begin{proof}[Sketch]
+(i)$\Leftrightarrow$(ii) by Lemma~\ref{lem:clique}. (iii)$\Rightarrow$(ii): conditions (1) and (3) for
+$\sigma$ in $G$ involve only $W_\sigma$, which is the weight matrix of the induced subgraph $G[\sigma]$; so a
+non-clique SFP $\sigma$ would give a non-complete $|\sigma|$-node graph satisfying (1) and (3) on its full
+support. (ii)$\Rightarrow$(iii) by padding: given a non-complete $H$ on $k\le n$ nodes with (1) and (3) on
+its full support, add $n-k$ nodes receiving no edges from $H$. At such a node the drive is
+$\theta-\sum_jc_{kj}x_j$ with all $c_{kj}=1+\delta$; subtracting row $i$ of the fixed-point equation
+shows it is at most $-\delta x_i<0$, so (2) holds and $V(H)$ is a non-clique SFP of the padded graph.
+Condition (2) enters only to exclude targets of cliques. Full proof:
+\cf{notes/lemma_F_reduction.md}, \S6 (there called Theorem~F).
+\end{proof}
+
+\begin{corollary}\label{cor:monotone}
+Let $\mathrm{Bad}(n)$ be the set of legal points at which the conjecture fails for some $n$-node graph, and $S_H$
+the set of legal points at which the full support of $H$ is an SFP. Then
+$\mathrm{Bad}(n)=\bigcup_{k\le n}\bigcup_{H}S_H$ over non-complete $k$-node $H$, and
+$\mathrm{Bad}(n)\subseteq\mathrm{Bad}(n+1)$.
+\end{corollary}
+
+\begin{lemma}[Openness; proved]\label{lem:open}
+Each $S_H$ is open in the $(\eps,\delta)$ plane. Consequently every nonempty $S_H$ contains rational points,
+and at every point of $S_H$ all Hurwitz determinants and coefficients of the characteristic polynomial are
+strictly positive: a counterexample point is never an ``undecided'' point.
+\end{lemma}
+
+We write $q_n^*$ for the supremum of $q$ over legal points at which some non-complete $n$-node digraph has a
+stable positive full-support fixed point. By Corollary~\ref{cor:monotone}, the conjecture for all graphs
+on at most $n$ nodes holds at every legal point with $q\ge\max_{k\le n}q_k^*$ and fails at points with $q$
+arbitrarily close to that maximum. For $k\le4$ there is no counterexample at any legal parameter: $k=2$ by
+a direct eigenvalue computation (for a one-way edge $\det K=1-t(\beta-2)$, negative exactly at legal points), $k=3$ by Theorem~4.1 of \cite{Geneson2026}, $k=4$ by a result of Curto, Geneson and Morrison as
+summarised in \cite{Geneson2026}, and all three cases are re-certified by our two-parameter engine on all
+digraphs with at most four nodes.\footnote{\cf{certificates/region2d_n2to4_all.json}; \cf{notes/lemma_F_reduction.md}, \S\S5, 8.}
+
+%======================================================================
+\section{The exact machinery}\label{sec:machinery}
+
+\subsection{Boundary sets and three-valued decisions}
+At a single sampled parameter a vanishing Hurwitz determinant says nothing about the neighbourhood, so
+every pointwise procedure in this work returns one of three values: \emph{stable}, \emph{not stable}, or
+\emph{undecided}. An undecided sample is never counted as unstable and never as a counterexample. Regions
+are decided instead on open cells of a decomposition whose walls are the zero sets of a proved boundary set.
+
+\begin{lemma}[Imaginary-axis roots; proved]\label{lem:b3}
+If $f$ is real of degree $m\ge2$ and $f(iw)=0$ for some real $w\neq0$, then $\Delta_{m-1}(f)=0$.
+\end{lemma}
+\begin{proof}[Sketch]
+With $P(x)=x^mf(1/x)$, the factor $1+w^2x^2$ divides $P=(1+w^2x^2)R$; for $V(x)=xR(-x)\neq0$ the product $PV$ is odd,
+and its even coefficients are exactly the entries of $H_{m-1}v$ where $H_{m-1}$ is the matrix whose determinant is
+$\Delta_{m-1}$. This is the special case of Orlando's formula that is needed; it is proved self-contained in
+\cf{notes/lemmas.md}, \S2.
+\end{proof}
+
+\begin{lemma}[Boundary set at fixed $t$; proved]\label{lem:B}
+Fix $t>0$ and let $p_t(\mu;\beta)=\det(\mu I+K)$. Let $P_t$ be the family
+$a_1,\dots,a_m$, $D_t=d+ts$, $o_k$ ($k\notin\sigma$), $\Delta_{m-1}(p_t)$, all in $\Q[\beta]$. If some member is
+identically zero, $\sigma$ is an SFP at no legal $\beta$. Otherwise the SFP verdict is constant on each component of the
+legal $\beta$-range minus the real roots of $P_t$, and false at those roots. The same holds with $\beta$ fixed and $t$
+varying, and in the limit $t=\infty$ with $\omega$, $s$, $\Delta_{m-2}(\omega)$ in place of $p_t$, $D_t$,
+$\Delta_{m-1}(p_t)$.
+\end{lemma}
+\begin{proof}[Sketch]
+On a component, every member of $P_t$ has constant sign; by Lemma~\ref{lem:b3} no root of $p_t$ meets the imaginary
+axis; by continuity of roots the number of roots in the right half-plane is locally constant. \cf{notes/lemmas.md}, \S2.
+\end{proof}
+
+The two-parameter version (Lemma~B$'$ and Corollaries~B$''$, B$'''$ of the project
+notes\footnote{\cf{notes/lemma_Bprime_2d.md}.}) shows that the verdict is invariant on connected components of
+the complement of the curves $\{a_i=0\}$, $\{D=0\}$, $\{\Delta_{m-1}=0\}$ and the legality boundary
+$L(\beta,t)=t(\beta-2)-1=0$ in the open legal region, and that over each open $\beta$-interval free of the roots of a
+projection set (leading coefficients, discriminants and pairwise resultants of these polynomials in $t$) the sectors
+of a cylindrical algebraic decomposition are sign-invariant cells. Each full-dimensional cell is decided at one exact
+rational sample; lower-dimensional cells are boundary points and are never SFP.
+
+\subsection{The engines}
+\paragraph{One-parameter engine.} At fixed $t$ (or $t=\infty$), the polynomials of Lemma~\ref{lem:B} are obtained by
+exact integer evaluation and interpolation with provably sufficient degree bounds, their real roots are isolated by
+continued fractions into irreducible minimal polynomials with rational isolating intervals, and each cell is decided
+at an exact sample by the Hurwitz routine. Every isolation is replayed by Sturm counts and every sample is
+cross-checked against an independent pointwise verifier. The engine agrees with an independent symbolic path on
+all $7{,}194$ (graph, support, $\eps$) cases at $n=4$ and on $900$ at $n=5$.\footnote{\cf{certificates/validate_fastregion_n4.json}, \cf{certificates/validate_fastregion_n5.json}.}
+
+\paragraph{Two-parameter engine.} A cylindrical algebraic decomposition of the legal $(\beta,t)$ plane on the proved
+boundary set, restricted to the positivity cells, with a Descartes-bisection replay of every root count that is
+independent of the isolator. It reproduces the theorem for $k\le4$ on all digraphs with at most four nodes and agrees
+with an earlier implementation on all $706$ five-node survivors of a weaker filter.\footnote{\cf{certificates/region2d_n2to4_all.json}, \cf{certificates/region2d_v2_validation.json}.}
+
+\paragraph{Policy.} A cell whose Hurwitz test is undecided at three samples is \emph{escalated}, not decided; there were $0$
+escalations at $n=5,6,7$. By Lemma~\ref{lem:open} undecided points cannot hide counterexamples.
+
+\subsection{Ray reduction to the legality curve}
+\begin{lemma}[Ray identity; proved, \lean]\label{lem:rayF}
+$K(\lambda\beta,\lambda t)=(1-\lambda)I+\lambda K(\beta,t)$. Hence if $K(\beta,t)$ is positive stable, so is
+$K(\lambda\beta,\lambda t)$ for every $\lambda\in(0,1]$ (\texttt{affine\_identity}, \texttt{posStable\_ray}\lean).
+\end{lemma}
+
+\begin{lemma}[Ray reduction; proved, forward direction \lean]\label{lem:rayR}
+The full support is stable at some legal $(\eps,\delta)$ if and only if $K(2+1/t,\,t)$ is positive stable for some
+$t>0$. Moreover, if the full support is an SFP at a legal $(\beta_0,t_0)$, the corresponding curve point has
+$\beta'<\beta_0$.
+\end{lemma}
+\begin{proof}
+($\Leftarrow$) Positive stability is open, so $K(2+1/t+\eta,t)$ is stable for small $\eta>0$, and that point is legal.
+($\Rightarrow$) Let $(\beta,t)$ be legal and stable and $f(\lambda)=\lambda t(\lambda\beta-2)-1$. Then $f(2/\beta)=-1<0<f(1)$, so
+$f$ has a root $\lambda^*\in(2/\beta,1)$, explicitly $\lambda^*=(t+\sqrt{t^2+\beta t})/(\beta t)$; the point
+$(\lambda^*\beta,\lambda^*t)$ lies on the curve $t(\beta-2)=1$ and is stable by Lemma~\ref{lem:rayF}.
+The forward direction is \texttt{lemmaR\_forward\_ctln}\lean; the converse needs continuity of eigenvalues and is not
+formalised.
+\end{proof}
+
+Since positivity is $t$-free (Lemma~\ref{lem:A2}), a graph that is never stable on the curve has no SFP anywhere in
+the legal plane. Along the curve, $tK(2+1/t,t)=L(t):=tI+(2t+1)N+t^2J$ is an integer polynomial matrix; the coefficient
+of $\mu^{m-k}$ in $\det(\mu I+L(t))$ has $t$-degree at most $k+1$, and by Lemma~\ref{lem:B} with $t$ as the parameter
+the verdict changes only at positive roots of $\det L(t)$ and of $\Delta_{m-1}(t)$. One exact sample per root-free
+interval decides the curve (the \emph{curve test}). A fast path discards a graph when no $t>0$ makes every coefficient
+positive (Stodola's condition, below). The curve test takes about 35--45~ms per seven-node graph, and on all $9{,}608$
+five-node digraphs returns $95$ stable and $9{,}513$ never, each of the $95$ with an exact legal witness.\footnote{\cf{n7/validate_curve_n5.json}; \cf{notes/lemma_M_refuted.md}, \S3.}
+
+\subsection{Necessary conditions valid at every parameter}\label{sec:prunes}
+Every prune below is a theorem valid at \emph{every} legal parameter; four of the five are machine-checked.
+
+\begin{lemma}[Domination; proved, \lean]\label{lem:D}
+Node $k$ \emph{graphically dominates} $j\ne k$ if $j\to k$, $k\not\to j$, and every $i\notin\{j,k\}$ with $i\to j$ also has
+$i\to k$ \cite[Def.~1.1]{Curto2025}. If $k$ dominates $j$, then every fixed point of~\eqref{eq:tln} with uniform drive has
+$x_j=0$, for every $\eps>0$ and $\delta\ge0$; in particular the full support has no positive fixed point. The same holds
+for domination inside an induced subgraph $G[\sigma]$ (\texttt{lemmaD}, \texttt{lemmaD\_full\_support}, \texttt{lemmaD\_induced}\lean).
+\end{lemma}
+\begin{proof}[Sketch]
+For $x\ge0$ one has $y_j(x)-y_k(x)\le(1-\eps)x_j-(1+\delta)x_k$, where $y_l$ is the input to node $l$. At a fixed
+point with $x_j>0$ this forces $y_k>0$ and then $0\ge\eps x_j+\delta x_k>0$. Neither $\eps<1$ nor legality is used, but
+the uniform drive is: with $\theta_j>\theta_k$ the conclusion fails. \cf{notes/lemmas.md}, \S5.
+\end{proof}
+
+\begin{lemma}[Edge bound; proved, \lean]\label{lem:e2}
+Let $B$, $N_n$, $O$ be the numbers of bidirected, non-adjacent and one-way unordered pairs of an $m$-node graph. The
+sum of the $2\times2$ principal minors of $K$ is
+\[
+e_2(K)=B(1+2t)+N_n(1-\beta)(1+\beta+2t)+O\bigl(1-t(\beta-2)\bigr).
+\]
+If $K$ is positive stable at a legal point then $e_2(K)>0$, hence $B>N_n$ and the graph has at least $m(m-1)/2+1$ edges
+(\texttt{e2\_closed\_form}, \texttt{edge\_bound\_ctln}\lean).
+\end{lemma}
+At a legal point the non-adjacent and one-way terms are negative, which gives $B>N_n$. In Lean the spectral step
+(positive stability forces $e_2>0$) is proved from Mathlib's description of characteristic-polynomial coefficients as
+sums of principal minors and the Gauss--Lucas theorem. For $n=7$ the bound reads ``at least $22$ edges''.
+
+\begin{lemma}[Stodola; proved, \lean]\label{lem:stodola}
+A monic real polynomial with all roots in $\Rea z<0$ has all coefficients positive. Hence if $K$ is positive stable,
+every coefficient of $\det(\mu I+K)$ is positive (\texttt{stodola}, \texttt{coeff\_pos\_of\_posStable}, \texttt{ctln\_coeff\_pos}\lean).
+\end{lemma}
+
+\begin{lemma}[Twin obstruction; proved, \lean]\label{lem:twin}
+If $u,v\in\sigma$ are non-adjacent and have the same in-neighbours in $\sigma\setminus\{u,v\}$, then $e_u-e_v$ is a left
+eigenvector of $W_\sigma$ with eigenvalue $1+\delta$, so $-I+W_\sigma$ has the eigenvalue $\delta>0$ and $\sigma$ is never
+stable, for every $\eps$ and every $\delta>0$ (\texttt{twin\_not\_hurwitz}, \texttt{twin\_not\_hurwitz\_induced}\lean). For
+bidirected in-twins the eigenvalue is $-\eps$.
+\end{lemma}
+
+Together with Lemma~\ref{lem:A2} (a positive stable full support needs a legal $\beta$ with all $a_i(\beta)>0$) and the
+density bound Lemma~\ref{lem:limit}(d) for the limit, these are the only prunes used. An early placeholder for domination
+was replaced by the verbatim definition of \cite{Curto2025} before any sweep used it.
+
+%======================================================================
+\section{Complete maps for \texorpdfstring{$n\le6$}{n <= 6}}\label{sec:n6}
+
+\subsection{Validation gates}
+Two published results were reproduced before any new computation was trusted.
+
+\emph{Geneson's counterexample.} The paper \cite{Geneson2026} gives its graph as a receiver-first non-edge matrix; our
+adjacency matrix is its complement and transpose, and the weight convention is the same. The printed integer
+certificate $Cv=179298949\cdot\one$ reproduces exactly, our fixed point is proportional to the paper's $v$, and the
+full support is a stable non-clique fixed point at $\eps=1/100$, $\delta=29/2500$ and at $\eps=1/1000$,
+$\delta=29\eps/25$, while it is a positive but unstable fixed point at $\eps=1/10,1/20,1/50$ on the same ray.\footnote{\cf{certificates/stage0_geneson_2607.21396.json}; a permanent test in the project's test suite.}
+
+\emph{The published $n=5$ classification} (the package accompanying Curto's $n=5$ data, which stores the transpose of
+our adjacency matrix). At its default parameters $\eps=1/4$, $\delta=1/2$, every recorded fixed-point support of every
+one of the $9{,}608$ five-node digraphs matches our exact verifier: $24{,}442$ supports, $0$ disagreements, $0$ boundary
+cases (the package records no stability data; our verifier finds $14{,}488$ of the supports stable). Under the wrong (untransposed) convention a sampled version of this check fails on
+$27$ of $30$ graphs.\footnote{\cf{certificates/stage1_n5_diff.json}.}
+
+Our enumerations reproduce the number of digraphs up to isomorphism (OEIS A000273): $9{,}608$ for $n=5$,
+$1{,}540{,}944$ for $n=6$ and $882{,}033{,}440$ for $n=7$.
+
+\subsection{\texorpdfstring{$n\le5$}{n <= 5}}
+\begin{theorem}[$n\le5$; certified]\label{thm:n5}
+No non-complete digraph on at most five nodes has a stable positive full-support fixed point at any legal parameter.
+Consequently, by Theorem~\ref{thm:reduction}, the target-free clique conjecture holds for every CTLN on at most five
+nodes at every legal parameter.
+\end{theorem}
+Of the $9{,}608$ five-node digraphs, $390$ admit a legal $\beta$ with all $a_i(\beta)>0$; the two-parameter
+decomposition certifies $389$ of them as never stable and only $K_5$ as stable, with $0$ escalations. (An earlier,
+weaker common-sign filter left a superset of $706$, which was also certified in full: $705$ never, $K_5$
+stable.)\footnote{\cf{certificates/region2d_n5_shard0of1_tally.json}, \cf{certificates/n5_summary.json}.}
+This agrees with the independent result of \cite{SixIsMinimal2026}.
+
+\subsection{\texorpdfstring{$n=6$}{n = 6}}
+\begin{theorem}[$n=6$; certified, hand-verified]\label{thm:n6}
+Among the $1{,}540{,}944$ digraphs on six nodes, exactly three non-complete graphs have a stable positive full-support
+fixed point at some legal parameter (Table~\ref{tab:n6}). Every other six-node graph is certified never stable and
+positive at every legal $(\eps,\delta)$.
+\end{theorem}
+
+\begin{table}[ht]
+\centering
+\footnotesize
+\begin{tabular}{@{}llccl@{}}
+\toprule
+graph & adjacency rows & edges & limit-stable $q$ & relation\\
+\midrule
+$G_1$ (index $1{,}000{,}255$) & \texttt{011000 000011 000111 110011 110101 101110} & 19 & $(1,q_6^*)$ & Geneson\\
+$G_2$ (index $1{,}424{,}629$) & \texttt{011000 000101 000111 100011 110101 111110} & 19 & $(1,q_6^*)$ & switch of $G_1$\\
+$H_3$ (index $1{,}387{,}528$) & \texttt{011000 000011 000111 110010 100101 111110} & 18 & $(1,q_c')$ & new\\
+\bottomrule
+\end{tabular}
+\caption{The three six-node counterexamples, in canonical labelling (row $i$ lists the $j$ with $i\to j$); $G_2$ is a
+bidirected in-twin switch of $G_1$. $q_c'\approx1.0830$ is the root in $(1,13/12)$ of
+$q^5+2q^4+q^3-2q^2-2q-1$.}\label{tab:n6}
+\end{table}
+
+\paragraph{The chain.} In the limit sweep over all $1{,}540{,}944$ graphs, $1{,}512{,}594$ have no legal $\beta$ with all
+$a_i>0$ and therefore (Lemma~\ref{lem:A2}) no stable positive full support at any parameter; $28{,}350$ strict survivors
+remain, all among the $204{,}378$ domination-free graphs; exactly four are limit-stable ($K_6$, $G_1$, $G_2$, $H_3$);
+$0$ escalations. The two-parameter decomposition was run on a superset of $34{,}071$ survivors (an earlier weaker
+filter): $34{,}067$ never stable anywhere, $4$ stable somewhere, $0$ escalations, $0$ errors, every cell cross-checked
+pointwise and every root count replayed. Exact $\beta$-slices at $\eps=1/1000$ and $1/100$ show $K_6$ and the three
+graphs; at $\eps=1/10$ only $K_6$ and Geneson's class; at $\eps=1/4$ and $1/2$ only $K_6$.\footnote{\cf{certificates/n6_summary.json}; \cf{certificates/region2d_n6_shard{0,1,2}of3*}; \cf{certificates/region_n6_eps*}.}
+
+\paragraph{The regions.} For $G_1$ and $G_2$ the stable positive region is
+$\{2<\beta<\beta_c,\ t>\max(1/(\beta-2),T(\beta))\}$ with $T(\beta)<1/(\beta-2)$ on an initial interval $(2,\beta_1)$,
+$\beta_1$ a degree-$14$ algebraic number in $(17/8,15/7)$: these graphs are stable at \emph{every} legal $t$ when $\delta/\eps$
+is close enough to $1$, so counterexamples exist with $q$ arbitrarily close to $1$. For $H_3$ the two thresholds
+coincide: the full support is an SFP iff $2<\beta<\beta_1'$, at every legal $t$, where $\beta_1'\approx2.08302$ is the root
+in $(152/73,25/12)$ of $\beta^5-3\beta^4+3\beta^3-3\beta^2+2\beta-1$, a positivity boundary ($a_5=0$). A witness is
+$\eps=1/101$, $\delta=27/2626$, $q=1350/1313$.\footnote{\cf{certificates/COUNTEREXAMPLE_CANDIDATE_n6_idx1387528.json}, \cf{certificates/COUNTEREXAMPLE_CANDIDATE_n6_idx1424629.json}.}
+
+\paragraph{Twins.} $G_2$ is obtained from $G_1$ by moving one out-edge between a pair of bidirected in-twins.
+
+\begin{proposition}[Bidirected in-twin switching; proved]\label{prop:J4}
+Let $u\leftrightarrow v$ be bidirected and have the same in-neighbours outside $\{u,v\}$, and let $G'$ be obtained from $G$
+by replacing an edge $u\to w$ (with $v\not\to w$) by $v\to w$. Then for every support, every $\eps,\delta>0$ and every
+$\theta$, $G$ and $G'$ have the same fixed points (same vectors) and the same Jacobian characteristic polynomials.
+\end{proposition}
+More generally, two graphs have identical full-support data for all parameters iff after relabelling they are cospectral
+and have the same in-walk counts $(A^T)^k\one$ for all $k$; the $34{,}071$ six-node survivors form $21{,}800$ such classes.
+Bidirected in-twin switching preserves all supports, whereas other members of a class can differ in their proper
+supports.\footnote{\cf{notes/lemma_J_equivalence.md}; \cf{certificates/n6_survivor_equivalence_classes.json}.}
+So modulo twin switching there are exactly two six-node counterexample graphs.
+
+\subsection{The threshold at \texorpdfstring{$n\le6$}{n <= 6}}
+In the limit, $\beta_c(G_1)=-1/\Rea\nu_1$, where $\nu_1$ is a root of the quartic factor $6z^4+11z^3+16z^2+10z+3$ of the
+characteristic polynomial of the compressed non-edge matrix (the other factor is $z$, from a pair of twins). Real parts of
+roots of a quartic are roots of a polynomial of degree at most $\binom42=6$; here $\beta_c$ is a root of the irreducible sextic
+$797b^6-6468b^5+22544b^4-44440b^3+53280b^2-38016b+13824$, and the substitution $b=q+1$ gives the sextic in $q$ below.
+
+\begin{theorem}[Threshold for $n\le6$; certified]\label{thm:q6}
+Let $q_6^*$ be the root in $(561/481,\,7/6)$ of
+\[
+797q^6-1686q^5+2159q^4-3004q^3+2499q^2-2158q+1521\qquad(q_6^*\approx1.1664).
+\]
+For every graph on at most six nodes, the target-free clique conjecture holds at every legal parameter with
+$q\ge q_6^*$; for every $q\in(1,q_6^*)$ there is a legal parameter with that value of $q$ at which it fails for a six-node
+graph. The supremum is approached by $G_1$ and $G_2$ as $t\to\infty$ and is not attained.
+\end{theorem}
+\begin{proof}[Sketch]
+By Theorem~\ref{thm:n5}, Theorem~\ref{thm:n6} and Corollary~\ref{cor:monotone}, $\mathrm{Bad}(6)=S_{G_1}\cup S_{G_2}\cup S_{H_3}$. On every
+finite-$t$ cell $q=(\beta-1)t/(t+1)<\beta-1$, and the exact suprema over the certified cells are computed by the
+threshold tool from the two-parameter certificates; the limit interval of $G_1$ starts at $q=1$, so the union covers
+$(1,q_6^*)$.\footnote{\cf{certificates/qstar/qstar_n6.json}, tool \cf{n7/qstar.py}.}
+\end{proof}
+Geneson's bound~\eqref{eq:geneson-bound} at $n=6$ reads $q\ge4-3\eps/2$; Theorem~\ref{thm:q6} shows the true value is
+$q_6^*\approx1.1664$. The same sextic root, $1.16635502785\ldots$, was obtained independently in \cite{SixIsMinimal2026}.
+
+%======================================================================
+\section{The complete map at \texorpdfstring{$n=7$}{n = 7}}\label{sec:n7}
+
+\subsection{The accounting chain}
+\begin{theorem}[$n=7$; certified, hand-verified]\label{thm:n7}
+Among the $882{,}033{,}440$ digraphs on seven nodes, exactly $124$ non-complete graphs have a stable positive full-support
+fixed point at some legal $(\eps,\delta)$. Each carries an exact two-parameter region certificate. Of the $124$, exactly
+$123$ are limit-stable; the remaining graph, \dsix+&FNFL~[udo?+, is stable only at finite $\eps$.
+\end{theorem}
+
+Every digraph is either removed by a necessary condition valid at every legal parameter, or certified by the
+two-parameter engine (Table~\ref{tab:chain}). Each stage was validated before use against the $n=6$ map (the positivity
+stages reproduce the $28{,}350$ six-node strict survivors exactly, with zero difference in both directions; the curve
+test applied to those survivors returns exactly the four stable six-node graphs).
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{@{}cp{0.52\textwidth}rr@{}}
+\toprule
+stage & condition (where proved) & removed & remaining\\
+\midrule
+0 & enumeration (OEIS A000273) & & $882{,}033{,}440$\\
+1 & a dominated node (Lemma~\ref{lem:D}) & $764{,}800{,}518$ & $117{,}232{,}922$\\
+2 & no $\beta>2$ with all $a_i(\beta)>0$, exact Descartes bounds (Lemma~\ref{lem:A2}) & $107{,}600{,}789$ & $9{,}632{,}133$\\
+3 & undecided lines of stage 2 resolved by exact root isolation & $723{,}010$ & $8{,}909{,}123$\\
+4 & at most $21$ edges (Lemma~\ref{lem:e2}) & $5{,}135{,}775$ & $3{,}773{,}348$\\
+5 & never stable on the legality curve (Lemma~\ref{lem:rayR}) & $3{,}773{,}183$ & $165$\\
+6 & stable somewhere, never stable and positive together (CAD) & $40$ & $125$\\
+\bottomrule
+\end{tabular}
+\caption{Accounting chain at $n=7$. The $125$ survivors are $K_7$ and the $124$ counterexamples; $0$ escalations at every
+stage.}\label{tab:chain}
+\end{table}
+
+Of the $9{,}632{,}133$ lines kept at stage 2, $8{,}845{,}537$ were certified positive and $786{,}596$ were undecided by the
+fast exact filter; stage 3 resolved the latter exactly. Stage 5 took $16.4$ CPU-hours ($6.6$ ms per line).\footnote{\cf{certificates/n7_finite_summary.json} (field \texttt{chain}, \texttt{accounting\_ok = true}); \cf{certificates/n7_curve_TOTAL.json}; \cf{certificates/n7_region2d/}; runbook \cf{n7/REPRODUCE_n7_finite.md}.}
+Independently, the limit classification was run first: a spectral prefilter over all $882{,}033{,}440$ digraphs left $638{,}042$
+survivors ($1{,}889$ strict), whose exact limit classification gave the $123$ limit-stable non-clique graphs and
+$K_7$.\footnote{\cf{certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit.jsonl}, \cf{certificates/n7_limit_tally.json}.}
+The finite-$\eps$ map contains all of them, as Lemma~\ref{lem:limit} requires.
+
+\subsection{The 124 graphs}
+\begin{itemize}
+\item Edge counts range from $23$ to $31$ of $42$ possible (counts $7,7,18,10,6,22,34,17,3$ for $23,\dots,31$ edges); all
+satisfy the edge bound ($\ge22$) and all are domination-free.
+\item They form $91$ classes of identical full-support data (Section~\ref{sec:n6}): $71$ singletons, $16$ pairs, two classes of
+$4$, one of $5$ and one of $8$; $64$ graphs carry a bidirected in-twin pair.
+\item Of the $123$ limit-stable graphs, the limit critical values $q_c$ (right ends of the limit-stable $q$-intervals) have $69$ distinct minimal polynomials;
+the most frequent is $q^5+2q^4+q^3-2q^2-2q-1$ ($17$ graphs, the same quintic as for $H_3$), and the largest $q_c$ is the plastic
+number, the real root of $q^3-q-1$ ($6$ graphs). For $6$ of the $123$ the positivity set starts strictly above $\beta=2$.
+\item $21$ of the $123$ contain a six-node counterexample as an induced subgraph; none contains $K_6$.
+\end{itemize}
+Every graph comes with a legal exact witness point.\footnote{\cf{certificates/COUNTEREXAMPLE_CANDIDATES_n7_finite.jsonl}; \cf{certificates/n7_candidates_legal_witnesses.json}.}
+
+\begin{corollary}[certified]\label{cor:alpha7}
+Every seven-node graph whose full support is an SFP at some legal parameter has $\alpha\le-1/2$, with equality only for
+\dsix+&FNFL~[udo?+.
+\end{corollary}
+
+\subsection{A counterexample invisible in the limit}
+The graph $E_0=$ \dsix+&FNFL~[udo?+ ($28$ edges) has adjacency rows \texttt{0011110} \texttt{0011100} \texttt{1101111}
+\texttt{1110111} \texttt{0011011} \texttt{0100101} \texttt{1100000}. Its compressed adjacency satisfies
+\[
+7\chi_{\perpc{A}}(\lambda)=(\lambda+1)(\lambda^2+\lambda+1)(7\lambda^3+14\lambda^2+14\lambda+5),
+\]
+so $\alpha=-1/2$ exactly and, by Lemma~\ref{lem:limit}(b), the graph is limit-stable at no legal $\beta$. Nevertheless its full
+support is a stable positive fixed point at $\eps=1/49$, $\delta=33/1568$ ($q=99/98$) and at $\eps=1/36$, $\delta=17/588$. Its
+stable region is bounded in $t$ at every $\beta$: on the cell $2<\beta<27/13$, at the sample $\beta=53/26$, the stable range is
+$26<t<t_1$ with $t_1$ an algebraic number in $(53,54)$, and the full support is unstable for larger $t$. The supremum of $q$
+over its region is an algebraic number of degree $25$ in $(685003/657781,\,2170535/2084278)$, about $1.0414$, reached at the
+corner where $\Delta_6=0$ meets the positivity boundary, not as $t\to\infty$.\footnote{\cf{certificates/COUNTEREXAMPLE_CANDIDATE_n7_finite_FNFL.json}; \cf{certificates/qstar/qstar_fnfl.json} (the exact bracket is recorded there and in \cf{qstar_n7_finite.json}; the file's aggregate block is stale and reports only a weaker sample bound).}
+Structurally, $E_0$ is $H_3$ with one node doubled into a closed-twin pair, and the factor $\lambda^2+\lambda+1$ is a \emph{moving}
+eigenvalue pair (not an eigenvalue of $A$) that sits exactly on the boundary line; see Theorem~\ref{thm:famE}.
+
+\subsection{The limit does not determine the finite map}
+Write $c=1+t/\beta>1$. A one-line computation gives the identity
+\begin{equation}\label{eq:E}
+K=\beta\,(cJ-A^T-\gamma I),
+\end{equation}
+so $K$ is positive stable iff $\nu_A(c):=\min\Rea\spec(cJ-A)>\gamma$, and legality is $\gamma>c-\sqrt{c^2-c}$, which is the
+stability boundary of a single one-way edge. As $c\to\infty$, $\nu_A(c)\to-\alpha$. The natural hope is that
+$\nu_A$ is nondecreasing, i.e.\ that stability at a legal finite $t$ implies stability for all larger $t$ at the same $\beta$
+(``Lemma~M'').
+
+\begin{proposition}[Lemma M is false; certified]\label{prop:Mfalse}
+(a) For $A$ with rows \texttt{011 001 100} and $\beta=22/5$, $K$ is positive stable at the legal point $t=11/25$ and not at
+$t=1$ or $t=100$; here $\alpha=-2/3>-17/22=-\gamma$.
+(b) For the domination-free seven-node graph \dsix+&FK@dyUfXp?+ (one of the $123$) at $\beta=10561/5000$, the full support is
+an SFP at $t=10$ and positive but unstable at $t=1000$, and the limit polynomial is not Hurwitz.
+\end{proposition}
+Example (a) is not a CTLN counterexample (it fails positivity), but (b) shows the failure persists with positivity. In the
+latter, the right end of the stable $\beta$-interval at $t=10,30,100,1000,10^4$ lies strictly above the limit value
+$\beta_c$.\footnote{\cf{notes/lemma_M_refuted.md}, \S2; scripts in \cf{notes/prover_scripts_M/}.}
+Lemma~\ref{lem:A2} shows that every such failure under positivity is an imaginary-pair crossing: on the positivity set
+$s>0$, so $D=d+ts$ increases in $t$ and a real eigenvalue crosses $0$ only upward.
+
+\subsection{The bulge criterion}
+Let $\chi(z)=\det(zI+A)$, $\psi(z)=\one^T\adj(zI+A)\one$ and $\hat s=\psi/\chi=\one^T(zI+A)^{-1}\one$. Then
+$\det(zI-(cJ-A))=\chi(z)-c\psi(z)$; roots of $\gcd(\chi,\psi)$ are eigenvalues for every $c$ (\emph{fixed}), the others are
+\emph{moving}.
+
+\begin{theorem}[First-order asymptotics; proved]\label{thm:AS}
+Assume $\nu_\infty:=-\alpha\in(1/2,1)$ and that every root $z_0$ of $\psi$ with $\Rea z_0=\nu_\infty$ is simple and not a root of
+$\chi$. Let $R^*=\min\Rea\bigl(1/\hat s\,'(z_0)\bigr)$ over these roots. Then $\nu_A(c)=\nu_\infty+R^*/c+O(c^{-2})$, and the
+boundary of the stable region near $(\beta_c,\infty)$ is $\beta=\beta_c+\beta_c^3R^*/t+O(t^{-2})$.
+\begin{enumerate}
+\item[(a)] If $R^*>0$, then for every $\beta$ slightly above $\beta_c$ the stable $t$-set is nonempty and bounded above; if
+moreover $a(\beta_c)>0$, these points are SFPs.
+\item[(b)] If $R^*<0$, the stable $t$-set is upward closed for large $t$ near $\beta_c$.
+\end{enumerate}
+\end{theorem}
+\begin{proof}[Sketch]
+With $e=1/c$ the moving eigenvalues solve $\psi_1(z)-e\chi_1(z)=0$ ($\chi=h\chi_1$, $\psi=h\psi_1$, $h=\gcd$); the implicit function
+theorem gives an analytic branch $z(e)=z_0+e\,\chi_1(z_0)/\psi_1'(z_0)+O(e^2)$, and $\chi_1(z_0)/\psi_1'(z_0)=1/\hat s\,'(z_0)$.
+\cf{notes/lemma_M_refuted.md}, \S4.
+\end{proof}
+
+\begin{proposition}[Bulge rule at $n=7$; certified]\label{prop:bulge}
+For all $124$ graphs, $R^*$ was computed exactly ($51$ positive, $73$ negative, none zero; every critical root simple and not
+shared with $\chi$). A graph has a stable cell bounded above in $t$ if and only if $R^*>0$ and its fixed point is positive at
+$\beta_c$; this holds for exactly $40$ graphs, and every bounded cell starts exactly at $\beta_c$. The $11$ graphs with $R^*>0$
+that lose positivity before $\beta_c$ do not bulge as fixed points. For $E_0$, $R^*=1/4$ and $\beta_c=2$.\footnote{\cf{certificates/n7_bulge_Rstar_exact.json}; \cf{notes/bulge_exact/}.}
+\end{proposition}
+
+At $n=6$ no stable cell is bounded in $t$ (Geneson's class has $R^*<0$, and the limit interval of $H_3$ ends at a positivity
+root), so the $\eps\to0$ classification describes the six-node regions faithfully, while it understates the regions of $40$ of
+the seven-node graphs and misses $E_0$ entirely.
+
+\subsection{The threshold at \texorpdfstring{$n\le7$}{n <= 7}}
+\begin{theorem}[Threshold for $n\le7$; certified, hand-verified]\label{thm:q7}
+Let $\rho\approx1.3247$ be the plastic number, the real root of $q^3-q-1$ (isolated in $(45/34,4/3)$). Then $q_7^*=\rho$, and
+the supremum is not attained. Consequently, for every graph on at most seven nodes the target-free clique conjecture holds at
+every legal parameter with $q\ge\rho$, and for every $q\in(1,\rho)$ there is a legal parameter with that value of $q$ at which it
+fails for a seven-node graph.
+\end{theorem}
+\begin{proof}[Sketch]
+On every finite cell $q<\beta-1$. On the $258$ stable cells unbounded in $t$ the supremum is $\beta_{\mathrm{hi}}-1$ with
+$\beta_{\mathrm{hi}}$ a limit endpoint, and the largest is $1+\rho$ (six graphs, whose limit interval ends at the positivity root
+$\beta^3-3\beta^2+2\beta-1=0$, i.e.\ $q^3-q-1=0$, with the stability boundary further right). On the $40$ bounded cells the outer
+isolating bound gives $\beta_{\mathrm{hi}}\le16/7$, so $q<9/7<\rho$. Four of the six plastic-number graphs have limit intervals
+starting at $q=1$, so the union of regions covers $(1,\rho)$. Combine with Theorem~\ref{thm:q6} and
+Corollary~\ref{cor:monotone}. An independent run of the exact threshold tool over all $298$ stable cells returns matching
+upper and lower bounds with no undecided cell.\footnote{\cf{certificates/qstar/qstar_n7_finite.json}; \cf{certificates/qstar/qstar_n7limit.json}.}
+\end{proof}
+
+Geneson's bound gives $q\ge5-2\eps$ at $n=7$; the true threshold is the plastic number. The clique-class family of
+Theorem~\ref{thm:famF} alone reaches only about $1.2747$ at $n=7$, and other graphs attain the maximum.
+
+%======================================================================
+\section{Infinite families}\label{sec:families}
+
+All statements in this section are proved for every member of a family; instances on $n\ge8$ nodes are certified by
+the pointwise exact verifier but have \emph{not} been hand-verified, and are reported as candidates in that sense. The
+proofs use the base graphs only as explicit matrices. Every ``for all $k$'' statement rests on Lemma~\ref{lem:limit}
+(transfer from the limit to finite $t$).
+
+\subsection{The non-edge picture and blow-ups}
+Let $D:=J-I-A$ be the sender-first non-edge matrix ($D=N^T$ for the full support) and
+$\psi_D(z):=\one^T\adj(zI-D)\one=m\,\chi_{\perpc{D}}(z)$. Since $\perpc{A}=-I-\perpc{D}$, Lemma~\ref{lem:limit} reads:
+\emph{the full support is limit-stable at $\beta$ iff every root of $\psi_D$ has real part $>-1/\beta$}; and the fixed point is
+positive iff $u:=(D^T+\beta^{-1}I)^{-1}\one>0$ and $\one^Tu>1$, in which case $w=u/(\one^Tu-1)$.
+
+\begin{lemma}[Closed-twin blow-up; proved]\label{lem:W}
+Let $H$ have $m$ nodes and let $\mu\in\mathbb Z_{>0}^m$, $M=\operatorname{diag}(\mu)$. Let $H^\mu$ replace node $a$ by a bidirected
+clique of $\mu_a$ nodes, with every node of class $a$ sending to every node of class $b\ne a$ iff $a\to b$ in $H$; $n=\sum\mu_a$.
+Then
+\[
+n\,\chi_{\perpc{D'}}(z)=z^{n-m}\,\mu^T\adj(zI-DM)\one,
+\]
+and for every $\gamma$ with $A'^T+\gamma I$ nonsingular the positivity vector of $H^\mu$ is constant on classes, $w'=Ey$ with
+$\bigl((A^T+I)M+(\gamma-1)I\bigr)y=\one$, where $E$ is the class-indicator matrix.
+\end{lemma}
+\begin{proof}[Sketch]
+$D'=EDE^T$ and $E^TE=M$; push-through $(zI-EDE^T)^{-1}E=E(zI-DM)^{-1}$ and Sylvester's identity
+$\det(zI_n-EDE^T)=z^{n-m}\det(zI_m-DM)$.\footnote{\cf{notes/research_wf3/theory/notes_theory.md}, \S2.}
+\end{proof}
+
+For a base $G$, in-set $S$ and out-set $T$, let $G[S,T;k]$ add a bidirected clique $V$ of $k$ nodes, with $i\to v$ for all $v\in V$
+iff $S_i=1$ and $v\to i$ iff $T_i=1$; put $b=\one-S$, $c=\one-T$.
+
+\begin{lemma}[Clique-class extension; proved]\label{lem:X}
+(X1) $n\,\chi_{\perpc{D'}}=z^{k-1}\Phi_k$ with $\Phi_k(z)=z\,\psi_D(z)+k\,\chi_L(z)$, $L:=D-b\one^T-\one c^T$.
+(X2) If $T$ is all of $G$, then for every $k\ge1$ and rational $\beta>1$ the full support of $G[S,T;k]$ is positive iff
+$w_G(\beta)>0$ and $\sigma_S(\beta):=\sum_{i\in S}w_{G,i}(\beta)>1$; this does not depend on $k$ or $t$.
+(X3) As $k\to\infty$ the moving spectrum converges to $\spec(L)$. With several sink classes of sizes $k_j$ and in-sets $S_j$,
+the same holds with $L$ replaced by $D-\bar b\one^T$, $\bar b$ the size-weighted mean of the $b_j$, and positivity holds iff
+$w_G>0$ and $\sigma_{S_j}>1$ for every $j$.
+\end{lemma}
+
+\subsection{Counterexamples on every \texorpdfstring{$n\ge6$}{n >= 6}}
+Let $G_1$ be Geneson's graph in the paper's labelling (rows \texttt{011011 101011 110101 111000 011000 000110}), $S=(1,1,1,1,1,0)$,
+and $F_k:=G_1[S,\text{all};k]$, $n=6+k$.
+
+\begin{theorem}[Clique-class family; proved, refereed]\label{thm:famF}
+For every $k\ge0$, $\alpha(\perpc{F_k})<-1/2$, and $F_k$ is positive at every $\beta\in(2,b_p)$, where $b_p-1=\rho$ is the
+plastic number. Hence for each $k$ and each rational $\beta\in(2,\min(b_p,\beta_c(k)))$ the full support of $F_k$ is a stable
+positive non-clique fixed point at $(\eps,\delta)=(1/(1+t),(\beta-1)/(1+t))$ for all large $t$. In particular the target-free
+clique conjecture fails for every $n\ge6$.
+\end{theorem}
+\begin{proof}[Sketch]
+By Lemma~\ref{lem:X}, $\Phi_k=z^2R_k$ with $R_k=(6+k)z^4+(11+k)z^3+(16+k)z^2+10z+3$. The shifted polynomial
+$16R_k(-\tfrac12-x)=16(k+6)x^4+16(k+1)x^3+8(2k+17)x^2+12(k+1)x+(3k+16)$ has Hurwitz determinants
+$16(k+1)$, $64(k+1)(k+16)$, $8192(k+1)^2$ and $8192(k+1)^2(3k+16)$, all positive for $k>-1$. Positivity: the components of
+$\adj(\beta A^T+(\beta-1)I)\one$ and $\sigma_S-1$ are explicit polynomials; exact root counting on $[2,93/40]$ shows a single
+sign change, at the root $b_p$ of $b^3-3b^2+2b-1$.\footnote{\cf{notes/research_wf3/theory/family_F_certificate.json} (script \cf{family_F_proof.py}); witnesses for $k=1,\dots,6,8,10$ ($n=7,\dots,16$) at $(\eps,\delta)=(1/21,11/210)$ or $(1/21,11/175)$.}
+\end{proof}
+The limit supremum of $q$ along the family is $\min(b_p,\beta_c(k))-1$: about $1.1664$ ($k=0$), $1.2747$ ($k=1$), the plastic
+number $1.3247$ for $k=2,\dots,8$ ($n=8,\dots,14$), then decreasing to $1$ (since $\chi_L=z^4(z^2+z+1)$ has roots on
+$\Rea z=-1/2$). The same construction proves $9$ families on the three six-node graphs and $617$ families on $117$ of the
+$124$ seven-node graphs, each for every $k\ge1$, by exact real-root isolation in $k$; an independent referee re-proved all $626$
+for every real $k\ge1$.\footnote{\cf{notes/research_wf3/theory/families_catalogue_n6.json}, \cf{families_catalogue_n7.json}.}
+
+\subsection{Finite-\texorpdfstring{$\eps$}{eps}-only counterexamples on every \texorpdfstring{$n\ge7$}{n >= 7}}
+\begin{lemma}[Boundary mechanism; proved]\label{lem:Bmech}
+Suppose (i) $\psi$ has a conjugate pair of simple roots $z_0,\bar z_0$ with $\Rea z_0=1/2$ and $\chi(z_0)\ne0$; (ii) every other
+root of $\psi$ has real part $>1/2$; (iii) $R:=\Rea\bigl(\chi(z_0)/\psi'(z_0)\bigr)>1/8$; (iv) $w(2)=(A^T+\tfrac12I)^{-1}\one>0$.
+Then $\alpha=-1/2$, so the graph is never limit-stable at a legal $\beta$, yet its full support is a stable positive fixed point at
+legal points with $\eps$ arbitrarily small (and $\beta\to2^+$).
+\end{lemma}
+\begin{proof}[Sketch]
+By Theorem~\ref{thm:AS}, $\nu_A(c)=\tfrac12+R/c+O(c^{-2})$, while the legality boundary is
+$c-\sqrt{c^2-c}=\tfrac12+\tfrac1{8c}+O(c^{-2})$. If $R>1/8$ there is room between them for all large $c$; choose a rational
+$\gamma$ in between. Positivity holds near $\beta=2$ by (iv) and is $t$-free.
+\end{proof}
+
+Let $H=$ \dsix+&FNDL~[uds?+ (one of the $123$) and let $E_a$ be its blow-up with class sizes $(1,1,2,a,1,1,1)$, $n=7+a$; $E_0$ is
+\dsix+&FNFL~[udo?+.
+
+\begin{theorem}[Finite-$\eps$-only family; proved, refereed]\label{thm:famE}
+For every $a\ge0$, $E_a$ is not a clique, $\alpha(\perpc{E_a})=-1/2$ exactly, and the full support of $E_a$ is a stable positive
+fixed point at legal points with $\eps$ arbitrarily small. Thus for every $n\ge7$ there is a counterexample on $n$ nodes that
+is invisible in the $\eps\to0$ limit.
+\end{theorem}
+\begin{proof}[Sketch]
+Lemma~\ref{lem:W} gives $\Phi=z(z^2+z+1)\bigl((a+7)z(z^2+z+1)+2\bigr)$ identically in $a$ (non-edge picture); the cubic factor has all roots
+in $\Rea z>-1/2$ iff $a+7>16/3$; in the adjacency picture, at $z_0=\tfrac12-\tfrac{\sqrt3}{2}i$ one has $1/\hat s\,'(z_0)=\tfrac14-\tfrac{\sqrt3}{12}i$, so $R^*=1/4>1/8$
+for every $a$; and the class vector at $\beta=2$ is $(6,2,2,18,6,2,10)/(18a+17)>0$. Apply Lemma~\ref{lem:Bmech}.
+Instances $a=0,\dots,5$ are certified at $t=20$, $\beta=821/400$, $(\eps,\delta)=(1/21,421/8400)$, $q=421/420$.\footnote{\cf{notes/research_wf3/theory/family_E_certificate_part1.json}, \cf{family_E_witnesses.json}.}
+\end{proof}
+The two-parameter engine applied to $E_1$ returns exactly the stable cell of $E_0$, as Lemma~\ref{lem:W} predicts; so the whole
+family shares one region.\footnote{\cf{certificates/n8_instances_region2d.json}.} The cube-root factor arises from the root
+locus of the class size: for the blow-up family of $H_3$ one has $\Phi_k(\omega)=(k-1)\omega^2$ at a primitive cube root of
+unity $\omega$, so the locus passes through $\omega$ exactly at class size $2$. Among all one-node extensions of the $124$
+seven-node graphs, exactly $15$ eight-node graphs satisfy every hypothesis of Lemma~\ref{lem:Bmech}, each with an exact legal
+witness.\footnote{\cf{notes/research_wf3/theory/cube_n8_witnesses.json}.}
+
+\subsection{Growing thresholds}
+\begin{theorem}[Families Q, Q2, Y; proved, refereed]\label{thm:QQ2Y}
+(Q) For the core \dsix+&F^S{^ReL|?+ with one sink class of size $k$ ($n=7+k$), every member is positive at every $\beta>2$, and
+is limit-stable at $\beta=5/2$, $27/10$, $14/5$ for all $k\ge25$, $79$, $286$ respectively. So for every $n\ge32$ ($86$,
+$293$) there are counterexamples on $n$ nodes with $q$ arbitrarily close to $3/2$ ($17/10$, $9/5$); along the family the limit
+value of $q$ tends to $1.84416\ldots$.
+(Q2) For the core \dsix+&F^U|m^QTq?+ with two sink classes of sizes $k$ and $3k$ ($n=7+4k$), limit polynomial
+$z^3(2z^2+z+2)^2/4$, every member is positive at every $\beta>2$, and is limit-stable at $\beta=5/2$, $3$, $7/2$, $19/5$ for all
+$k\ge1$, $3$, $10$, $33$.
+(Y) For the eight-node core \dsix+&G^ZZZr|KjqTo+ with two sink classes of sizes $4k$ and $k$ ($n=8+5k$), every member is positive
+at every $\beta>2$, and is limit-stable at $\beta=3$, $7/2$, $4$, $9/2$, $24/5$ for all $k\ge13$, $24$, $46$, $117$, $363$; the
+family ceiling is $\beta\approx4.9607$.
+\end{theorem}
+Each threshold is proved sharp by exact real-root isolation in $k$ of the Hurwitz determinants of the shifted limit polynomial.
+The eight-node core of (Y) is not among the hand-verified graphs.\footnote{\cf{notes/research_wf3/theory/family_Q_certificate.json}, \cf{family_Q2_certificate.json}, \cf{family_Y_certificate.json}.}
+Certified instances include $n=32$ at $q=15000/10001$ (Q), $n=19$ at $q=20000/10001$ and $n=47$ at $q=25000/10001$ (Q2), and
+$n=73$ at $q=20000/10001$ (Y). Exact lower bounds at small $n$ found by search and certified pointwise are listed in
+Table~\ref{tab:qlow}.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{@{}rlll@{}}
+\toprule
+$n$ & graph & $(\eps,\delta)$ & $q$ (exact)\\
+\midrule
+8 & \dsix+&G^ZnRba\ba^w+ & $(1/1001,\ 1709/1001000)$ & $1709/1001\approx1.7073$\\
+9 & \dsix+&H^\us{\HrEa^|~_+ & $(1/1001,\ 17691/10010000)$ & $17691/10010\approx1.7673$\\
+10 & \dsix+&I^Qz|NbkfuNa^}~|tw+ & $(1/10001,\ 9209/50005000)$ & $18418/10001\approx1.8416$\\
+11 & \dsix+&J^R\~R{\a^k^a^~^~]n^~?+ & $(1/100001,\ 861/45455000)$ & $17220/9091\approx1.8942$\\
+\bottomrule
+\end{tabular}
+\caption{Certified lower bounds $q_n^*\ge q$ (not hand-verified).}\label{tab:qlow}
+\end{table}
+
+\subsection{\texorpdfstring{$q_n^*\to\infty$}{q*_n -> infinity}}
+A fixed core with sink classes cannot push the limit threshold past the number of core nodes: the limit matrix
+$D-\bar b\one^T$ has trace $\le-1$ when no class is a join. The way around this is a family of cores whose limit polynomial can be
+prescribed.
+
+\begin{theorem}[Unbounded thresholds; proved, refereed]\label{thm:U}
+For every integer $N\ge3$ there is $n_0(N)$ such that for every $n\ge n_0(N)$ some non-complete $n$-node digraph has a stable
+positive full-support fixed point at the legal points $(\eps,\delta)=(1/(1+t),(N-1)/(1+t))$ for all large $t$. Hence
+$q_n^*\ge N-1$ for $n\ge n_0(N)$, and $q_n^*\to\infty$.
+\end{theorem}
+\begin{proof}[Sketch]
+\emph{Arms forest.} In the non-edge digraph $D$, take a directed $3$-cycle $c_0\to c_1\to c_2\to c_0$ and attach ``arms'' $c_2\to a\to z_a\to(\text{target})$,
+so that every node other than $c_2$ has exactly one $D$-out-neighbour and reaches $c_2$ (an in-tree rooted at $c_2$), while $c_2$
+sends to $c_0$ and to the first node of each arm. By the matrix determinant lemma (Lemma~T of the
+notes), $\chi_{D-e_{c_2}\one^T}(z)=z^{m-d}p(z)$ for any $p=z^d+z^{d-1}+c_2z^{d-2}+\dots+c_d$ with integers $c_2\ge1$, $c_j\ge0$
+satisfying a mild forest constraint; the core has $m=2p(1)-3$ nodes. Lemma~Q (Sherman--Morrison) gives $\psi_D$ in closed form and
+Lemma~P gives positivity in closed form. A single sink class receiving from every core node except $c_2$ has
+$\Phi_k=z^{m-d}(G+kp)$ with $G$ fixed.
+\emph{Target polynomial.} With $s=1/(2N)$ and an integer $W$, round the coefficients of
+$\prod_{k=1}^N\bigl((z+s)^2+W^2k^2\bigr)$ (except the first two) to the nearest integer. By Rouch\'e (Lemma~S), for
+$W>W_0(N)=2N\,4^N(N+1)^{2N-2}$ all roots of the rounded polynomial $\tilde p$ satisfy $-3/(4N)<\Rea z<-1/(4N)$, and all its
+coefficients from $c_2$ on are $\ge1$.
+\emph{Positivity} at $\beta=N$ holds for large $W$ because the top coefficient dominates.
+\emph{Class size.} $\Phi_k/(m+k)\to\chi_L=z^{m-d}\tilde p$, so by root continuity there is $k_0$ with all roots of $\Phi_k$ in
+$\Rea z>-1/N$ for $k\ge k_0$. Lemma~\ref{lem:limit} at the rational $\beta=N$ finishes, with $n_0=m+k_0$.\footnote{Theorem~U, \cf{notes/theorem_U/}; referee record \cf{notes/theorem_U_workflow.json}.}
+\end{proof}
+The bound $n_0(N)$ is super-exponential, and $k_0$ is not explicit in general. Exact reduced certificates give $n_0=1{,}812$,
+$6{,}214{,}995$ and $1{,}590{,}755{,}528$ for $N=3,4,5$; a $65$-node core with $p$-coefficients $(1,1,11,7,10,3,1)$ gives
+$q_n^*\ge3$, $4$, $9/2$, $23/5$ for all $n\ge219$, $657$, $2{,}475$, $4{,}909$. Two explicit graphs are certified directly by the
+pointwise verifier without using any lemma: $n=28$ at $q=20000/10001$ and $n=41$ at $q=22500/10001$; at $k_0-1$ the explicit limit
+test fails with a negative Hurwitz determinant, so the reduced thresholds are sharp there.\footnote{\cf{certificates/theorem_U_explicit_instances.json}.}
+The only known upper bound remains $q_n^*\lesssim n-2$ from~\eqref{eq:geneson-bound}.
+
+\subsection{Unbounded support size at one parameter point}
+Theorem~\ref{thm:famF} uses a $k$-dependent schedule $\beta\to2$. At a fixed legal point the family $F_k$ eventually dies: at
+$(\eps,\delta)=(1/21,11/210)$ it is stable exactly for $k=0,\dots,40$ and unstable for every $k\ge41$, and in fact at every fixed
+legal point for large $k$, because $\chi_L$ has the factor $z^2+z+1$ with roots on $\Rea z=-1/2$. A different core avoids this.
+
+Let $R=$ \dsix+&F^U|m^QTq?+ (one of the $124$; rows \texttt{0111110} \texttt{1011011} \texttt{1101101} \texttt{1100111} \texttt{1101001}
+\texttt{0010101} \texttt{1100100}),
+$S=(1,1,0,1,1,1,1)$ and $R_k:=R[S,\text{all};k]$, $n=7+k$.
+
+\begin{theorem}[One point, every size; proved, refereed]\label{thm:A}
+At $(\eps,\delta)=(1/21,11/210)$, i.e.\ $t=20$, $\beta=21/10$, $q=22/21$, the full support of $R_k$ is a stable positive non-clique
+fixed point for every $k\ge0$. Consequently, at this point a non-complete $n$-node digraph with a stable positive full-support fixed
+point exists if and only if $n\ge6$.
+\end{theorem}
+\begin{proof}[Sketch]
+In the non-edge picture, (3) holds iff every eigenvalue of $D'+aJ$, $a=t/\beta$, has real part $>-1/\beta$, and for sink-class
+families $\det(zI-aJ-D')=z^{p-1}\Psi(z)$ with $\Psi=z\det(zI-D-aJ)-a\sum_jk_j\det(zI-D+b_j\one^T)$. Here $\Psi_k=z^3g_k$ with
+$g_k(z)=z^5-3z^2-2z-1-a[(k+7)z^4+(k+12)z^3+(3k+21)z^2+(k+13)z+(k+5)]$. At $a=200/21$, after the shift $z=-10/21-x$, every Hurwitz
+determinant is a polynomial in $k$ with only positive coefficients (for example $21\Delta_1=200k+1450$), hence positive for all
+$k\ge0$. Positivity: $w_R(21/10)>0$ and $\sigma_S=381654/295819>1$, so Lemma~\ref{lem:X}(X2) applies for every $k$. The
+``only if'' part is Theorem~\ref{thm:n5}; $n=6$ is $G_1$.\footnote{Theorem~A, \cf{notes/theorem_A_fixed/}; \cf{certificates/theorem_A_fixed_parameter_instances.json} ($k=0,\dots,15$); referee record \cf{notes/theorem_A_fixed_workflow.json}.}
+\end{proof}
+An independent second proof (equitable-partition quotient, separate exact code) confirms the result; members up to $n=107$
+were certified pointwise. Also proved and refereed:
+$R_k$ is an SFP at \emph{every} legal point with $\beta\le43/20$, for every $k\ge0$; every legal point with $\beta<4.9607$ carries an
+infinite family (via Theorem~\ref{thm:QQ2Y}(Y)); and, conditionally on the lemmas of Theorem~\ref{thm:U}, every legal point
+does, with an exact instance at $(\eps,\delta)=(1/2,2)$ for all $k\ge1581$. The $k$-fold self-join of $R$ ($n=7k$), which is not a
+blow-up, is an SFP at every legal point with $\beta\le21/10$ for every $k\ge1$.
+
+\begin{proposition}[A refuted conjecture; certified]\label{prop:P}
+It is not true that positivity of $(D^T+rI)^{-1}\one$ for some $r\in(0,1/2)$ forces $D$ to have an eigenvalue with real part
+$\le-1/2$. For example, the non-edge matrix of \dsix+&F^U|m^QTq?+ has every eigenvalue with real part $>-10/21$ while
+$(D^T+\tfrac{10}{21}I)^{-1}\one>0$; and $33$ of the $54$ catalogue entries with $S$ equal to all nodes, e.g.\ the base \dsix+&FMAlW\d\y?+ with
+$\chi_D=z^7-z^5-7z^4-10z^3-9z^2-4z-1$, have every eigenvalue of $D$ in $\Rea z>-1/2$ and a positive vector at $r=49/100$. In
+particular the joins $G\vee K_k$ of such bases are limit-stable for every $k\ge1$.
+\end{proposition}
+(This was ``Conjecture P'' of the project notes; see Question~\ref{q:char}.)
+
+%======================================================================
+\section{Verification and reproducibility}\label{sec:verification}
+
+\subsection{Certificates}
+Every number in Sections~\ref{sec:n6}--\ref{sec:families} is read from a certificate file that can be regenerated by a named
+script (Appendix~\ref{app:certs}). Values are stored exactly: integers, rationals, and algebraic numbers as an irreducible
+integer minimal polynomial together with a rational isolating interval; decimals appear only as labelled approximations. A
+region certificate stores, for each cell, the isolating data of its walls, an exact sample, the verdict with its reason (for
+example ``Hurwitz determinant~6 negative''), and the outcome of the pointwise cross-check. The ``never'' records of the large
+sweeps store critical values and cell counts rather than full decompositions, so verifying them means re-running the committed
+engine; the records of all stable graphs are self-contained. Bulk files carry SHA-256 checksums.
+
+\subsection{Independent audits}
+The engine and the $n=6$ map were audited adversarially, including a from-scratch symbolic re-derivation of the region of $H_3$
+(same set and same minimal polynomial). The $n=7$ prefilter and resolver were audited twice ($979{,}800$ exact comparisons; all
+$786{,}596$ undecided lines recomputed independently, byte-identical), and the ray reduction, curve test and edge bound once (an
+independent all-minors computation on $3{,}129$ graphs and $6{,}000$ random exact legal points on never-stable graphs). The family
+theorems (Theorems~\ref{thm:famF}, \ref{thm:famE}, \ref{thm:QQ2Y}, \ref{thm:U}, \ref{thm:A}), the $626$-entry catalogue and the
+threshold tool were each refereed by a separate reviewer who re-derived the steps; no blocking issue was found. Non-fatal defects found
+by the referees (e.g.\ a misprinted node count, $2p(1)-1$ for $2p(1)-3$, in the notes on Theorem~\ref{thm:U}) are logged and
+corrected here.
+
+\subsection{Human verification}
+The two new six-node counterexamples were hand-verified on 14 October 2026, and all $124$ seven-node counterexamples on
+15 October 2026. The latter were additionally re-decided by four exact verifiers written from the definitions without access
+to the project's code: one with exact rationals and its own Hurwitz determinants; one with pure fractions and its own
+elimination and characteristic polynomials (with the transpose convention reversed, $0$ of the $124$ survive, a useful
+convention check); one by exact right-half-plane root counting without Hurwitz determinants (Routh array, Sturm sequences and
+exact isolation, required to agree); and one checking structural claims (pairwise non-isomorphism, domination-freeness,
+non-completeness, the exact limit test and $\alpha(E_0)=-1/2$). All $124$ were confirmed at $742$ legal points with $0$ undecided
+cases.\footnote{\cf{notes/verify_124_workflow.json}; \cf{certificates/n7_candidates_legal_witnesses.json}.} The verification also
+found that $15$ of the first stored witnesses in the limit file are illegal points ($q\le1$); a separate file lists one legal
+witness per graph. Graphs with $n\ge8$ nodes have not been hand-verified.
+
+\subsection{Nondegeneracy}
+The conjecture is usually stated for nondegenerate CTLNs. At a witness point of each of the three six-node and $124$ seven-node
+counterexamples we certified exactly that every one of the $2^n-1$ supports has $\det(I-W_\sigma)\ne0$, a fixed point with no zero
+coordinate and no off-support drive equal to $0$, and that the full support is stable there.\footnote{\cf{certificates/nondegeneracy_witnesses.json}, script \cf{n7/nondegeneracy_check.py}.}
+
+\subsection{Machine-checked statements}
+Lean~4 (toolchain v4.35.0) with Mathlib (tag v4.35.0) checks $87$ theorems with no \texttt{sorry}; the axiom audit shows only
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}. They comprise: the closed form~\eqref{eq:closed} with the
+transpose and $I-W=\eps K$; the legality equivalence~\eqref{eq:legal}; Hurwitz stability of $-I+W$ iff positive stability of $K$;
+the ray identity, characteristic-polynomial scaling and propagation of stability down rays (Lemma~\ref{lem:rayF}); the
+intermediate-value step with the explicit root, and the forward direction of Lemma~\ref{lem:rayR}; Lemma~\ref{lem:A2};
+Lemma~\ref{lem:e2} including its spectral step; Lemma~\ref{lem:D} with its induced-subgraph form; Stodola's condition
+(Lemma~\ref{lem:stodola}); and the twin eigenvalue (Lemma~\ref{lem:twin}). Not formalised: the converse of Lemma~\ref{lem:rayR}
+(it needs continuity of eigenvalues), the limit criterion Lemma~\ref{lem:limit}, the rank-one identities of
+Lemma~\ref{lem:rankone}(ii)--(v), the off-support condition, and the full certificate lemma ``(1)--(3) imply a stable equilibrium of
+\eqref{eq:tln} with support $\sigma$''.\footnote{\cf{notes/lean/README.md}, \cf{notes/lean/CtlnCert/}.}
+
+\paragraph{Trust base.} The certificates rely on: exact polynomial arithmetic of a standard computer-algebra system for the projection polynomials of the
+decomposition (determinants, factorisation, gcd, resultants, discriminants; the projection identities were re-verified by
+independent fraction-free determinants on a sample of $321$ records); the Routh--Hurwitz theorem, which is cited; nauty's
+\texttt{geng}/\texttt{directg} for the seven-node enumeration, validated by its count; and the C prefilters, validated by
+reproducing the six-node data exactly.
+
+%======================================================================
+\section{Open problems}\label{sec:open}
+
+\begin{question}[Growth rate]\label{q:growth}
+How fast does $q_n^*$ grow? Theorem~\ref{thm:U} gives $q_n^*\to\infty$ with a super-exponential $n_0(N)$; the certified points
+are $q$ close to $2$ at $n=19$, $5/2$ at $n=47$ and $23/5$ for $n\ge4{,}909$, while the only upper bound is Geneson's $n-2$. Is
+$q_n^*\ge c\log n$, or $q_n^*\ge n^c$? The bottleneck is integer polynomials with $c_1=1$, nonnegative coefficients, roots in a thin
+strip $\Rea z>-1/N$, and small value at $1$.
+\end{question}
+
+\begin{question}[The $n=8$ map]
+Complete the $\eps\to0$ classification at $n=8$. An overflow-guarded spectral prefilter reproduces all $n\le7$ data exactly; the
+full pass is estimated at $500$--$800$ CPU-hours, and one eight-node limit-stable graph, \dsix+&GLjlNZ}NzH\o+ ($41$ edges), is
+already known from a random sample. The finite-$\eps$ map at $n=8$ ($1.79$ trillion digraphs) is out of reach by enumeration alone.
+\end{question}
+
+\begin{question}[Formalisation]
+Formalise the converse of Lemma~\ref{lem:rayR} (openness of positive stability), the limit criterion Lemma~\ref{lem:limit}, and the
+certificate lemma (1)--(3)$\Rightarrow$ stable equilibrium, so that every certified case becomes a checked instance.
+\end{question}
+
+\begin{question}[Characterising limit-stable graphs]\label{q:char}
+Proposition~\ref{prop:P} refutes the natural spectral obstruction. Which graphs are limit-stable, i.e.\ have $w(\gamma)>0$ and
+$\alpha<-\gamma$ at a common $\beta>2$? A related question: is $\alpha\le-1/2$ for every graph whose full support is an SFP at some
+legal point? This holds for $n\le7$ (Corollary~\ref{cor:alpha7}), with equality attained for every $n\ge7$ by Theorem~\ref{thm:famE};
+no proof is known.
+\end{question}
+
+\begin{question}[Proper supports]
+The truth of the conjecture depends only on full supports (Theorem~\ref{thm:reduction}), but listing all pairs $(G,\sigma)$
+realising a counterexample needs condition~(2): describe the admissible in-sets for the $n\le7$ counterexamples.
+\end{question}
+
+%======================================================================
+\appendix
+\section{Certificates}\label{app:certs}
+Paths are relative to the project archive. ``Script'' is the program that regenerates the file.
+
+\begingroup\footnotesize
+\begin{longtable}{@{}p{0.18\textwidth}p{0.49\textwidth}p{0.26\textwidth}@{}}
+\toprule
+claim & certificate & script\\
+\midrule
+\endhead
+Geneson's graph reproduced & \cf{certificates/stage0_geneson_2607.21396.json} & test suite, block 8\\
+$n=5$ package, diff zero & \cf{certificates/stage1_n5_diff.json} & \cf{stage1_n5_diff.py}\\
+engine validation & \cf{certificates/validate_fastregion_n4.json}, \cf{_n5.json}, \cf{region2d_v2_validation.json} & \cf{validate_fastregion.py}, \cf{region2d.py}\\
+$k\le4$ & \cf{certificates/region2d_n2to4_all.json} & \cf{region2d.py}\\
+Theorem~\ref{thm:n5} & \cf{certificates/region2d_n5_shard0of1*}, \cf{n5_summary.json} & \cf{region2d.py}\\
+Theorem~\ref{thm:n6} & \cf{certificates/n6_summary.json}, \cf{region_n6_limit_*}, \cf{region2d_n6_shard*}, \cf{region_n6_eps*}, \cf{COUNTEREXAMPLE_CANDIDATE_n6_idx*.json} & \cf{fastregion.py}, \cf{region2d.py}\\
+twin classes & \cf{certificates/n6_survivor_equivalence_classes.json} & \cf{notes/prover_scripts_J/}\\
+Theorem~\ref{thm:q6} & \cf{certificates/qstar/qstar_n6.json} & \cf{n7/qstar.py}\\
+Table~\ref{tab:chain} & \cf{certificates/n7_finite_summary.json}, \cf{n7_curve_TOTAL.json}, \cf{n7_region2d/} & \cf{n7/run_n7_curve.py}, \cf{run_n7_region2d.py}, \cf{aggregate_n7.py}\\
+limit map $n=7$ & \cf{certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit.jsonl}, \cf{n7_limit_tally.json} & \cf{n7/run_n7_limit.py}\\
+the $124$ graphs & \cf{certificates/COUNTEREXAMPLE_CANDIDATES_n7_finite.jsonl}, \cf{n7_candidates_legal_witnesses.json} & \cf{n7/aggregate_n7.py}, \cf{notes/verify_124/}\\
+$E_0$ & \cf{certificates/COUNTEREXAMPLE_CANDIDATE_n7_finite_FNFL.json}, \cf{qstar/qstar_fnfl.json} & \cf{n7/write_finite_certificates.py}, \cf{n7/qstar.py}\\
+Proposition~\ref{prop:Mfalse} & \cf{notes/lemma_M_refuted.md}, \S2 & \cf{notes/prover_scripts_M/}\\
+Proposition~\ref{prop:bulge} & \cf{certificates/n7_bulge_Rstar_exact.json}, \cf{n7_limit_hits_finite_eps_bulge_witnesses.json} & \cf{notes/bulge_exact/}\\
+Theorem~\ref{thm:q7} & \cf{certificates/qstar/qstar_n7_finite.json}, \cf{qstar_n7limit.json} & \cf{n7/qstar.py --sharpen}\\
+Theorems~\ref{thm:famF}, \ref{thm:famE}, \ref{thm:QQ2Y}, Table~\ref{tab:qlow} & \cf{notes/research_wf3/theory/family_*_certificate.json}, \cf{family_E_witnesses.json}, \cf{cert_q_910.json}, \cf{cert_q_11.json}, \cf{families_catalogue_n{6,7}.json} & \cf{family_*_proof.py}, \cf{certify_q.py}, \cf{run_family_prover.py}, \cf{verify_all.py}\\
+eight-node instances & \cf{certificates/n8_instances_region2d.json}, \cf{notes/research_wf3/theory/cube_n8_witnesses.json} & \cf{n7/n8_instances_region2d.py}, \cf{witness_cube.py}\\
+Theorem~\ref{thm:U} & \cf{certificates/theorem_U_explicit_instances.json}, \cf{notes/theorem_U/} & \cf{theorem_U.py}, \cf{certify_forest.py}, \cf{certify_explicit.py}\\
+Theorem~\ref{thm:A} & \cf{certificates/theorem_A_fixed_parameter_instances.json}, \cf{notes/theorem_A_fixed/} & \cf{theorem_A.py}, \cf{independent_A.py}\\
+nondegeneracy & \cf{certificates/nondegeneracy_witnesses.json} & \cf{n7/nondegeneracy_check.py}\\
+Lean & \cf{notes/lean/CtlnCert/} & \texttt{lake build}, \texttt{Audit.lean}\\
+\bottomrule
+\end{longtable}
+\endgroup
+
+{\small
+\bibliographystyle{plain}
+\bibliography{refs}
+}
+
+\end{document}
