@@ -1,0 +1,5 @@
+Y 3 pos True k0 22 tries [(22, 0)] 48.4 s
+Y 7/2 pos True k0 53 tries [(53, 0)] 8.1 s
+Y 4 pos True k0 133 tries [(133, 0)] 7.9 s
+Y 9/2 pos True k0 502 tries [(401, 2), (502, 0)] 8.0 s
+Y 24/5 pos True k0 1764 tries [(1411, 2), (1764, 0)] 9.0 s

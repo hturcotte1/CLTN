@@ -1,0 +1,199 @@
+{
+ "family": "k-fold self-join of &F^U|m^QTq? (n = 7k)",
+ "base_rows": [
+  "0111110",
+  "1011011",
+  "1101101",
+  "1100111",
+  "1101001",
+  "0010101",
+  "1100100"
+ ],
+ "J1_J2": [
+  {
+   "P(z,c)": "z**2*(-7*c*z**4 - 12*c*z**3 - 21*c*z**2 - 13*c*z - 5*c + z**5 - 3*z**2 - 2*z - 1)",
+   "z_power_removed": 2,
+   "g": "-7*c*z**4 - 12*c*z**3 - 21*c*z**2 - 13*c*z - 5*c + z**5 - 3*z**2 - 2*z - 1",
+   "beta1": "21/10",
+   "r1": "10/21",
+   "h_coeffs": [
+    "1",
+    "7*c + 50/21",
+    "4*c/3 + 1000/441",
+    "281*c/21 + 37783/9261",
+    "2461*c/1323 + 216698/194481",
+    "73225*c/27783 + 3072781/4084101"
+   ],
+   "minors": [
+    {
+     "minor": 1,
+     "degree_in_c": 1,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": true,
+     "poly": "7*c + 50/21"
+    },
+    {
+     "minor": 2,
+     "degree_in_c": 2,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": true,
+     "poly": "28*c**2/3 + 17*c/3 + 12217/9261"
+    },
+    {
+     "minor": 3,
+     "degree_in_c": 3,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": true,
+     "poly": "911*c**3/27 + 8930*c**2/567 + 128533*c/27783 + 10498423/12252303"
+    },
+    {
+     "minor": 4,
+     "degree_in_c": 4,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": true,
+     "poly": "1070371*c**4/35721 + 84825917*c**3/5250987 + 289342367*c**2/257298363 + 1625818295*c/16209796869 + 2236037176717/16679880978201"
+    },
+    {
+     "minor": 5,
+     "degree_in_c": 5,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": true,
+     "poly": "78377916475*c**5/992436543 + 1055599271564*c**4/16209796869 + 324212750535902*c**3/21445561257687 + 3500610995997506*c**2/3152497504879989 + 66234769076467030*c/154472377739119461 + 6870852551909639977/68122318582951682301"
+    }
+   ],
+   "ALL_MINORS_POSITIVE_FOR_ALL_c>=0": true,
+   "positivity_w_R_on_[2,beta1]": true,
+   "PROVED": true
+  },
+  {
+   "P(z,c)": "z**2*(-7*c*z**4 - 12*c*z**3 - 21*c*z**2 - 13*c*z - 5*c + z**5 - 3*z**2 - 2*z - 1)",
+   "z_power_removed": 2,
+   "g": "-7*c*z**4 - 12*c*z**3 - 21*c*z**2 - 13*c*z - 5*c + z**5 - 3*z**2 - 2*z - 1",
+   "beta1": "43/20",
+   "r1": "20/43",
+   "h_coeffs": [
+    "1",
+    "7*c + 100/43",
+    "44*c/43 + 4000/1849",
+    "24669*c/1849 + 318521/79507",
+    "124369*c/79507 + 3503238/3418801",
+    "8945785*c/3418801 + 108864803/147008443"
+   ],
+   "minors": [
+    {
+     "minor": 1,
+     "degree_in_c": 1,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": true,
+     "poly": "7*c + 100/43"
+    },
+    {
+     "minor": 2,
+     "degree_in_c": 2,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": true,
+     "poly": "308*c**2/43 + 7731*c/1849 + 81479/79507"
+    },
+    {
+     "minor": 3,
+     "degree_in_c": 3,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": false,
+     "poly": "1503971*c**3/79507 + 5665740*c**2/3418801 - 19099777*c/147008443 + 1806872859/6321363049"
+    },
+    {
+     "minor": 4,
+     "degree_in_c": 4,
+     "positive_on_[0,inf)": false,
+     "info": "roots in [0,inf): 1",
+     "all_coefficients_positive": false,
+     "poly": "65814090979*c**4/6321363049 - 1778117820183*c**3/271818611107 - 117009974434711*c**2/11688200277601 - 1304835295161195*c/502592611936843 - 2864489332747967/21611482313284249"
+    },
+    {
+     "minor": 5,
+     "degree_in_c": 5,
+     "positive_on_[0,inf)": false,
+     "info": "roots in [0,inf): 1",
+     "all_coefficients_positive": false,
+     "poly": "588758707868573515*c**5/21611482313284249 - 8741821674972866518*c**4/929293739471222707 - 1240320520353432862084*c**3/39959630797262576401 - 24411043826793440190008*c**2/1718264124282290785243 - 167675743060727118888680*c/73885357344138503765449 - 311842066905208876105501/3177070365797955661914307"
+    }
+   ],
+   "ALL_MINORS_POSITIVE_FOR_ALL_c>=0": false,
+   "positivity_w_R_on_[2,beta1]": true,
+   "PROVED": false
+  },
+  {
+   "P(z,c)": "z**2*(-7*c*z**4 - 12*c*z**3 - 21*c*z**2 - 13*c*z - 5*c + z**5 - 3*z**2 - 2*z - 1)",
+   "z_power_removed": 2,
+   "g": "-7*c*z**4 - 12*c*z**3 - 21*c*z**2 - 13*c*z - 5*c + z**5 - 3*z**2 - 2*z - 1",
+   "beta1": "11/5",
+   "r1": "5/11",
+   "h_coeffs": [
+    "1",
+    "7*c + 25/11",
+    "8*c/11 + 250/121",
+    "1611*c/121 + 5243/1331",
+    "1707*c/1331 + 13773/14641",
+    "38090*c/14641 + 117591/161051"
+   ],
+   "minors": [
+    {
+     "minor": 1,
+     "degree_in_c": 1,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": true,
+     "poly": "7*c + 25/11"
+    },
+    {
+     "minor": 2,
+     "degree_in_c": 2,
+     "positive_on_[0,inf)": true,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": true,
+     "poly": "56*c**2/11 + 339*c/121 + 1007/1331"
+    },
+    {
+     "minor": 3,
+     "degree_in_c": 3,
+     "positive_on_[0,inf)": false,
+     "info": "roots in [0,inf): 1",
+     "all_coefficients_positive": false,
+     "poly": "6573*c**3/1331 - 165960*c**2/14641 - 712384*c/161051 - 388649/1771561"
+    },
+    {
+     "minor": 4,
+     "degree_in_c": 4,
+     "positive_on_[0,inf)": false,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": false,
+     "poly": "-5844209*c**4/1771561 - 426867229*c**3/19487171 - 3749935401*c**2/214358881 - 10464877825*c/2357947691 - 8294519133/25937424601"
+    },
+    {
+     "minor": 5,
+     "degree_in_c": 5,
+     "positive_on_[0,inf)": false,
+     "info": "roots in [0,inf): 0",
+     "all_coefficients_positive": false,
+     "poly": "-222605920810*c**5/25937424601 - 16946599133129*c**4/285311670611 - 193030783749429*c**3/3138428376721 - 839565850093241*c**2/34522712143931 - 1546513682095545*c/379749833583241 - 975360799368603/4177248169415651"
+    }
+   ],
+   "ALL_MINORS_POSITIVE_FOR_ALL_c>=0": false,
+   "positivity_w_R_on_[2,beta1]": true,
+   "PROVED": false
+  }
+ ],
+ "J3_decomposition_checked_k": [
+  2,
+  3
+ ],
+ "seconds": 238.2
+}

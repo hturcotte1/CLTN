@@ -1,0 +1,13 @@
+m 65
+charpolys 174.4
+factor (lam+eps)^ 59 remaining degree 7
+minor 1 deg 1 LC>0 True largest root ~ -72.0
+minor 2 deg 2 LC>0 True largest root ~ 312.76633351641334
+minor 3 deg 3 LC>0 True largest root ~ 1344.0707059749877
+minor 4 deg 4 LC>0 True largest root ~ 1574.1633042467456
+minor 5 deg 5 LC>0 True largest root ~ 1580.0407634190065
+minor 6 deg 6 LC>0 True largest root ~ 1580.1408553269773
+minor 7 deg 7 LC>0 True largest root ~ 1580.1408553269773
+kstar 1581 (True, 'all Hurwitz minors positive') (False, 'Hurwitz minor 5 negative')
+positivity k>=1: True True SM check True
+SFP for every integer k >= 1581

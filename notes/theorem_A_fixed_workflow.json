@@ -1,0 +1,84 @@
+{
+ "workflow": "wf_0446254a-a07",
+ "date": "2026-10-15",
+ "agents": [
+  {
+   "key": "v2:342aebb64c98352f5c3cc2afcdfde0966b11c907c9a1a39b0a42442ccf992db3",
+   "agentId": "ae8a5032fb9c2f594",
+   "result": {
+    "answer": "exists_proved",
+    "statement": "YES. At the single legal point (eps, delta) = (1/21, 11/210) (beta = 21/10, t = 20, q = 22/21), where Geneson's clique-class family F_k is stable only for k = 0..40, the family R_k := R[S, all; k] is a stable positive fixed point (full support, non-clique) for EVERY k >= 0. Here R = &F^U|m^QTq? is a signed-off n=7 counterexample. The k new nodes form a bidirected clique that sends to all of R and receives from every node of R except node 2; n = 7 + k. The same holds at every legal point with beta = 1 + delta/eps <= 43/20, for every k >= 0 (Theorem A+). A second, structurally different family at the same point is the k-fold self-join R v R v ... v R (n = 7k): an SFP for every k >= 1 at every legal point with beta <= 21/10. It is not a blow-up and has no growing clique class (Theorem SJ). Unconditionally proved: every legal point with beta < beta_Y = 4.9607 carries an infinite family. Conditionally (on three lemmas of the parallel Theorem U, recorded as refereed in the project summary; two re-verified here on an instance): every legal (eps, delta) carries one (Theorem \u039b), with an exact instance at (1/2, 2), beta = 5 > beta_Y, for all k >= 1581.",
+    "proof_or_evidence": "PROVED: Lemma S says the full support is stable iff every eigenvalue of D'+aJ has Re > -1/beta, where D' = J-I-A, a = t/beta, legal iff t(beta-2) > 1. I re-derived I - W = eps(I + beta N + tJ), N = J-I-A^T, by hand. Lemma P gives det(zI-aJ-D') = z^(p-1)(z det(zI-D-aJ) - a sum_j k_j det(zI-D+b_j 1^T)). Lemma X2' makes positivity independent of k and t. Theorem A: at a = 200/21, r = 10/21, all 8 Hurwitz minors of h_k(x) = Psi_k(-r-x) are polynomials in k with only positive coefficients (degree-5 core g_k = z^5-3z^2-2z-1-a[(k+7)z^4+(k+12)z^3+(3k+21)z^2+(k+13)z+(k+5)]). With w_R > 0 and sigma_S = 381654/295819 > 1, R_k is an SFP for every real k >= 0.\n\nRe-proved this session by a separate sympy-free Fraction path (independent_A.py). Each minor is a polynomial of degree <= j in k, recovered exactly by interpolation and confirmed at 6 more points; it matches the stored polynomials, all coefficients are positive, and ctln.hurwitz_stable is True for k = 0..2000.\n\nTheorem FP (Rouch\u00e9): at a fixed legal point, sink-class families are eventually SFP iff positivity holds and the limit spectrum spec(D - bbar 1^T) lies in Re > -1/beta; the limit is independent of t. Region Theorem B: Y gives every beta <= 24/5.\n\nNew this session:\n- (1) Lemma SJ: spec(D'+aJ) = spec(D+akJ) u spec(D)^(k-1). Positivity of G^{vk} iff w_G > 0. Theorem SJ: all 5 minors of det(zI-D_R-cJ) shifted by 10/21 have positive coefficients in c.\n- (2) Lemma M2: eigenvalues of geometric multiplicity >= 2 survive the rank-one aJ term. So self-joins need beta < m-1, and symmetric cores cannot raise ceilings.\n- (3) Question (a) for Q2 and Y: T_k(beta) decreases to the legal boundary. Theorem B's k0 is sharp at beta1 = 3 (Q2: T_5 = 1.132 > 1, T_6 = 1; Y: T_21 = 1.018 > 1, T_22 = 1).\n- (4) Theorem \u039b: N > 3beta/4, Rouch\u00e9 strip Re > -3/(4N) > -1/beta, and Theorem U's positivity limits carried over to any fixed r in (0, 1/2), then FP(i). The 65-node core c = [1,1,11,7,10,3,1] is verified exactly with my own tools: Lemma T, Hurwitz and positivity at beta = 5, 11/2, 28/5; beta = 6 is UNDECIDED (zero coefficient); exact k0 = 1581 at (1/2, 2); ctln agrees on the explicit 66-node member.\n\nRe-run audit: every proof and certificate script from the previous attempt was re-run. All exit 0 and every JSON is identical to the original apart from timing fields. verify_all --full re-verified all 21 instance records with ctln, including both n = 107 members. Negative: F_k is unstable for every k >= 41 at the KNOWN point and fails at every fixed point for large k (chi_L has the factor z^2+z+1). Uniform blow-ups fail at every point. Conjecture P is refuted. OPEN: whether mixed join/non-join sink-class cores obey beta_inf <= m (heuristic says yes with margin); the growth rate of the smallest family member. All graphs with n >= 8 are CANDIDATES pending human hand-verification.",
+    "certificates": [
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/cert_R_eps1_21.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/cert_R_eps1_8.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/cert_Q2_eps1_2.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/cert_selfjoin_R_eps1_21.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/theorem_A_certificate.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/independent_A.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/selfjoin_certificate.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/theorem_B_certificate_R.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/theorem_B_certificate_Q_Q2.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/theorem_B_certificate_Y.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/extend_lambda.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/negative_certificate.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/conjP_refutation.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/ceilings.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/positivity_ranges.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/pointwise_thresholds.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/Tk_table.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/Tk_extra.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/check_lemmaP.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/check_X2.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/crosscheck_region.json"
+    ],
+    "notes_file": "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/notes_fixed.md",
+    "files": [
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/notes_fixed.md",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/fixlib.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/theorem_A.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/theorem_B.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/certify_members.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/verify_all.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/independent_A.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/selfjoin.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/verify_selfjoin.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/extend_lambda.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/Tk_table.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/Tk_extra.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/negative.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/ceilings.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/conjP_refutation.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/positivity_ranges.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/pointwise_thresholds.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/check_lemmaP.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/check_X2.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/crosscheck_region.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/diff_outputs.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/rerun_chain2.sh",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/rerun_chain3.sh",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/heur_mixed_cap.py",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/heur_mixed_cap.json",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/rerun_logs",
+     "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/prover_fixed/orig_outputs"
+    ]
+   }
+  },
+  {
+   "key": "v2:5ff6708b005f88a4e8682ee1635926337a74b443451a0ed14797c7a81e2f122a",
+   "agentId": "a1c30a12a83108441",
+   "result": {
+    "holds": true,
+    "confidence": "high",
+    "reasoning": "The main claim holds, and I proved it a second way. At the one legal point (eps, delta) = (1/21, 11/210), with q = 22/21, R_k = R[S, all; k] is a stable positive fixed point with non-clique full support for every k >= 0.\n\nMy proof does not use the prover's Lemma S, Lemma P or the D-picture. I decoded R = &F^U|m^QTq? with my own decoder, and its rows match the prover's.\n\n**Proof route.**\n- Stability: the partition {0},...,{6},{class} of M = -I + W is equitable. Class vectors with zero sum form an invariant subspace with eigenvalue -eps. So charpoly(M) = chi_Q(lam)(lam + eps)^(k-1), where Q is the 8x8 quotient with k symbolic.\n- I checked that identity exactly against ctln.charpoly on the explicit graphs at k = 1..6 and k = 30.\n- All 8 Hurwitz minors of chi_Q are polynomials in k with only positive coefficients, so they are positive for every k >= 1.\n- Positivity: x = P y, with y_i = c_i/(3433400k + 8122137) and every c_i > 0. This denominator matches the constant in the prover's Delta_5.\n- k = 0 is R itself, certified by ctln.\n\n**ctln certificates.** I ran ctln.analyze_support at the same (eps, delta) for every k. In each case the point is legal, x > 0, stable is True with all Hurwitz minors positive, and the graph is not a clique.\n- k = 0, 1, 2, 3, 4, 5, 6, 10, 20.\n- k = 41, 60 and 100 (n = 48, 67, 107). k = 41 is already past the point where Geneson's family F_k dies at these parameters.\n\n**Secondary claims.**\n- Theorem A+ (every legal point with beta <= 43/20, every k): at 28 exact legal points, including the corners near the legal boundary and at t = 10^4, the all-k quotient proof succeeds and k = 0 passes ctln. A control at beta = 11/5, t = 5.01 fails for k = 0..3 and passes for k = 4, 5. That matches the prover's Theorem B threshold k0 = 4 there.\n- Theorem SJ (the self-join of k copies of R): proved independently at the main point, using a Kronecker block decomposition checked against ctln for k = 1..4, positive minors in k, and Sherman\u2013Morrison for positivity. It also holds at 3 more points with beta <= 21/10. At beta = 43/20 it fails, as the prover says. ctln certifies k = 2, 3, 5.\n- The (1/2, 2) instance behind Theorem \u039b: my own quotient method gives the exact threshold k* = 1581. k = 1581 passes and k = 1580 fails (Hurwitz minor 5 negative), matching the prover.\n- Y family: thresholds are 31 at (1/2, 9/8), matching the prover. At beta = 24/5 they are 1413 and 363, both within Theorem B's 1764. At beta = 49/10 it is 1325. At beta = 5, above the ceiling beta_Y = 4.9607, the family is not eventually stable, consistent with that ceiling.\n\nI found no error anywhere.",
+    "exact_checks_run": "All files are in /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf7/referee_fixed/.\n- reflib.py: my own digraph6 decoder and the family builders.\n- proof_Rk.py -> proof_Rk_eps1_21.json: the all-k proof at (1/21, 11/210), with the identity checked against ctln for k = 1..6 and 30.\n- cert_Rk.py -> cert_Rk_small.json (k = 0, 1, 2, 3, 4, 5, 6, 10, 20) and cert_Rk_large.json (k = 41, 60, 100): ctln certificates.\n- region_Aplus.py -> region_Aplus.json, with per-point proofs in pts/: Theorem A+ at 28 legal points.\n- region_k0.py -> region_k0.json: k = 0 at those points, plus the beta = 11/5 control.\n- proof_SJ.py -> proof_SJ_eps1_21.json: the self-join proof.\n- sj_points.py -> sj_points.json: the self-join at 5 more points and ctln certificates for k = 2, 3, 5.\n- check_lambda_instance.py -> check_lambda_instance.json: the (1/2, 2) instance, k* = 1581.\n- quotient_family.py -> qf_Y_1_2_9_8.json, qf_Y_24_5_tlow.json, qf_Y_24_5_thigh.json, qf_Y_49_10_3.json, qf_Y_5_1.json: the Y family.\n- Notes: notes_referee_fixed.md.",
+    "gaps": [
+     "Theorem \u039b (an infinite family at every legal point) depends on Lemma S, the Rouch\u00e9 coefficient rounding in the parallel Theorem U work. I did not re-prove that lemma. I read the prover's extension of Step 3 to any fixed r but did not re-prove it. Only the beta = 5 instance at (1/2, 2) was re-verified exactly.",
+     "Theorem A+ and Theorem B as region statements, uniform over all legal (beta, t), were not re-proved symbolically in (a, k). I tested them at 28 exact points plus a control, and every test agreed.",
+     "Theorem FP (the Rouch\u00e9 limit argument) was read and found correct, but only instances were machine-checked.",
+     "Every graph with n >= 8, including R_k for k >= 1 and the self-joins for k >= 2, remains a candidate counterexample pending human hand-verification under CLAUDE.md section 3."
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+beta1 21/10 minors>0 for all c>=0: True pos True [(1, 'roots in [0,inf): 0', True), (2, 'roots in [0,inf): 0', True), (3, 'roots in [0,inf): 0', True), (4, 'roots in [0,inf): 0', True), (5, 'roots in [0,inf): 0', True)]
+beta1 43/20 minors>0 for all c>=0: False pos True [(1, 'roots in [0,inf): 0', True), (2, 'roots in [0,inf): 0', True), (3, 'roots in [0,inf): 0', False), (4, 'roots in [0,inf): 1', False), (5, 'roots in [0,inf): 1', False)]
+beta1 11/5 minors>0 for all c>=0: False pos True [(1, 'roots in [0,inf): 0', True), (2, 'roots in [0,inf): 0', True), (3, 'roots in [0,inf): 1', False), (4, 'roots in [0,inf): 0', False), (5, 'roots in [0,inf): 0', False)]
+J3 decomposition identity verified on explicit graphs k = 2, 3
+selfjoin k 1 n 7 certified True all Hurwitz minors positive 0.0 s
+selfjoin k 2 n 14 certified True all Hurwitz minors positive 0.1 s
+selfjoin k 3 n 21 certified True all Hurwitz minors positive 1.0 s
+selfjoin k 5 n 35 certified True all Hurwitz minors positive 7.9 s
+selfjoin k 10 n 70 certified True all Hurwitz minors positive 217.6 s

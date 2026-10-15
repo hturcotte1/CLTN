@@ -1,0 +1,204 @@
+{
+ "points": [
+  {
+   "beta": "43/20",
+   "t": "20003/3000",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "43/20",
+   "t": "203/30",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "43/20",
+   "t": "40/3",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "43/20",
+   "t": "200/3",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "43/20",
+   "t": "10000",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "21/10",
+   "t": "10001/1000",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "21/10",
+   "t": "101/10",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "21/10",
+   "t": "20",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "21/10",
+   "t": "100",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "21/10",
+   "t": "10000",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "41/20",
+   "t": "20001/1000",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "41/20",
+   "t": "201/10",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "41/20",
+   "t": "40",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "41/20",
+   "t": "200",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "41/20",
+   "t": "10000",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "201/100",
+   "t": "100001/1000",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "201/100",
+   "t": "1001/10",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "201/100",
+   "t": "200",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "201/100",
+   "t": "1000",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "201/100",
+   "t": "10000",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "2083/1000",
+   "t": "198186/3071",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "2039/1000",
+   "t": "68551/1443",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "2013/1000",
+   "t": "38937/481",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "1069/500",
+   "t": "31817/2553",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "1047/500",
+   "t": "74618/1739",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "403/200",
+   "t": "12992/111",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "213/100",
+   "t": "9420/481",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  },
+  {
+   "beta": "201/100",
+   "t": "3877/37",
+   "k0_sfp": true,
+   "all_k_ge_1": true
+  }
+ ],
+ "control": [
+  {
+   "k": 0,
+   "sfp": false,
+   "detail": "Hurwitz minor 4 negative"
+  },
+  {
+   "k": 1,
+   "sfp": false,
+   "detail": "Hurwitz minor 5 negative"
+  },
+  {
+   "k": 2,
+   "sfp": false,
+   "detail": "Hurwitz minor 5 negative"
+  },
+  {
+   "k": 3,
+   "sfp": false,
+   "detail": "Hurwitz minor 6 negative"
+  },
+  {
+   "k": 4,
+   "sfp": true,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 5,
+   "sfp": true,
+   "detail": "all Hurwitz minors positive"
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "eps": "1/2",
+ "delta": "2",
+ "m": 65,
+ "lam_plus_eps_power": 59,
+ "g_degree": 7,
+ "minors": [
+  {
+   "j": 1,
+   "deg": 1,
+   "LC_positive": true,
+   "largest_real_root": "-72",
+   "largest_real_root_float_display": -72.0
+  },
+  {
+   "j": 2,
+   "deg": 2,
+   "LC_positive": true,
+   "largest_real_root": "131 + 3*sqrt(3671)",
+   "largest_real_root_float_display": 312.76633351641334
+  },
+  {
+   "j": 3,
+   "deg": 3,
+   "LC_positive": true,
+   "largest_real_root": "CRootOf(70*x**3 - 87720*x**2 - 8412409*x - 191574508, 2)",
+   "largest_real_root_float_display": 1344.0707059749877
+  },
+  {
+   "j": 4,
+   "deg": 4,
+   "LC_positive": true,
+   "largest_real_root": "CRootOf(9991*x**4 - 14362795*x**3 - 2086584075*x**2 - 96097137660*x - 1446594286767, 3)",
+   "largest_real_root_float_display": 1574.1633042467456
+  },
+  {
+   "j": 5,
+   "deg": 5,
+   "LC_positive": true,
+   "largest_real_root": "CRootOf(29642889*x**5 - 41505757416*x**4 - 8066931486480*x**3 - 552939781606875*x**2 - 16495484833303140*x - 182137885008923887, 4)",
+   "largest_real_root_float_display": 1580.0407634190065
+  },
+  {
+   "j": 6,
+   "deg": 6,
+   "LC_positive": true,
+   "largest_real_root": "CRootOf(24864100493*x**6 - 33885198784564*x**5 - 8072243376467720*x**4 - 716664866625591695*x**3 - 31117632550609237080*x**2 - 667019342202593864619*x - 5665744476829982162308, 3)",
+   "largest_real_root_float_display": 1580.1408553269773
+  },
+  {
+   "j": 7,
+   "deg": 7,
+   "LC_positive": true,
+   "largest_real_root": "CRootOf(24864100493*x**6 - 33885198784564*x**5 - 8072243376467720*x**4 - 716664866625591695*x**3 - 31117632550609237080*x**2 - 667019342202593864619*x - 5665744476829982162308, 3)",
+   "largest_real_root_float_display": 1580.1408553269773
+  }
+ ],
+ "k_threshold": 1581,
+ "at_kstar": "(True, 'all Hurwitz minors positive')",
+ "at_kstar_minus_1": "(False, 'Hurwitz minor 5 negative')",
+ "positivity_den_ok": true,
+ "positivity_num_ok": true,
+ "SM_check_k3": true,
+ "VERDICT": "SFP for every integer k >= 1581",
+ "seconds": 177.5
+}

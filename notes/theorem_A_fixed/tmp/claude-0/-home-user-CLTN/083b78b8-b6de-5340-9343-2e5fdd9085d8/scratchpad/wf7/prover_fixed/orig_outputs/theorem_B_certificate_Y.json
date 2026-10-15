@@ -1,0 +1,594 @@
+[
+ {
+  "family": "Y",
+  "base": "&G^ZZZr|KjqTo",
+  "classes": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "rhos": [
+   4,
+   1
+  ],
+  "beta1": "3",
+  "r1": "1/3",
+  "a1": "1/3",
+  "t1_legal_boundary": "1",
+  "positivity_on_[2,beta1]": true,
+  "positivity_detail": {
+   "det": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj0": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj1": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj2": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj3": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj4": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj5": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj6": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj7": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma0-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma1-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   }
+  },
+  "z_power_removed": 2,
+  "g": "-5*a*k*z**6 - 5*a*k*z**5 - 12*a*k*z**4 - 7*a*k*z**3 - 7*a*k*z**2 - 2*a*k*z - a*k - 8*a*z**6 - 16*a*z**5 - 30*a*z**4 - 32*a*z**3 - 22*a*z**2 - 13*a*z - 5*a + z**7 - 3*z**4 - 4*z**3 - 3*z**2 - 2*z - 1",
+  "tries": [
+   {
+    "k0": 22,
+    "per_minor_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "neg_coeffs": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "k0": 22,
+  "PROVED": true,
+  "statement": "for every legal (eps, delta) with 1 + delta/eps <= 3 and every integer k >= 22, the full support of Y_k is a stable positive fixed point",
+  "seconds": 45.0
+ },
+ {
+  "family": "Y",
+  "base": "&G^ZZZr|KjqTo",
+  "classes": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "rhos": [
+   4,
+   1
+  ],
+  "beta1": "7/2",
+  "r1": "2/7",
+  "a1": "4/21",
+  "t1_legal_boundary": "2/3",
+  "positivity_on_[2,beta1]": true,
+  "positivity_detail": {
+   "det": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj0": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj1": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj2": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj3": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj4": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj5": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj6": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj7": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma0-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma1-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   }
+  },
+  "z_power_removed": 2,
+  "g": "-5*a*k*z**6 - 5*a*k*z**5 - 12*a*k*z**4 - 7*a*k*z**3 - 7*a*k*z**2 - 2*a*k*z - a*k - 8*a*z**6 - 16*a*z**5 - 30*a*z**4 - 32*a*z**3 - 22*a*z**2 - 13*a*z - 5*a + z**7 - 3*z**4 - 4*z**3 - 3*z**2 - 2*z - 1",
+  "tries": [
+   {
+    "k0": 53,
+    "per_minor_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "neg_coeffs": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "k0": 53,
+  "PROVED": true,
+  "statement": "for every legal (eps, delta) with 1 + delta/eps <= 7/2 and every integer k >= 53, the full support of Y_k is a stable positive fixed point",
+  "seconds": 7.5
+ },
+ {
+  "family": "Y",
+  "base": "&G^ZZZr|KjqTo",
+  "classes": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "rhos": [
+   4,
+   1
+  ],
+  "beta1": "4",
+  "r1": "1/4",
+  "a1": "1/8",
+  "t1_legal_boundary": "1/2",
+  "positivity_on_[2,beta1]": true,
+  "positivity_detail": {
+   "det": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj0": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj1": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj2": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj3": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj4": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj5": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj6": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj7": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma0-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma1-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   }
+  },
+  "z_power_removed": 2,
+  "g": "-5*a*k*z**6 - 5*a*k*z**5 - 12*a*k*z**4 - 7*a*k*z**3 - 7*a*k*z**2 - 2*a*k*z - a*k - 8*a*z**6 - 16*a*z**5 - 30*a*z**4 - 32*a*z**3 - 22*a*z**2 - 13*a*z - 5*a + z**7 - 3*z**4 - 4*z**3 - 3*z**2 - 2*z - 1",
+  "tries": [
+   {
+    "k0": 133,
+    "per_minor_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "neg_coeffs": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "k0": 133,
+  "PROVED": true,
+  "statement": "for every legal (eps, delta) with 1 + delta/eps <= 4 and every integer k >= 133, the full support of Y_k is a stable positive fixed point",
+  "seconds": 7.3
+ },
+ {
+  "family": "Y",
+  "base": "&G^ZZZr|KjqTo",
+  "classes": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "rhos": [
+   4,
+   1
+  ],
+  "beta1": "9/2",
+  "r1": "2/9",
+  "a1": "4/45",
+  "t1_legal_boundary": "2/5",
+  "positivity_on_[2,beta1]": true,
+  "positivity_detail": {
+   "det": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj0": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj1": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj2": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj3": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj4": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj5": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj6": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj7": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma0-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma1-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   }
+  },
+  "z_power_removed": 2,
+  "g": "-5*a*k*z**6 - 5*a*k*z**5 - 12*a*k*z**4 - 7*a*k*z**3 - 7*a*k*z**2 - 2*a*k*z - a*k - 8*a*z**6 - 16*a*z**5 - 30*a*z**4 - 32*a*z**3 - 22*a*z**2 - 13*a*z - 5*a + z**7 - 3*z**4 - 4*z**3 - 3*z**2 - 2*z - 1",
+  "tries": [
+   {
+    "k0": 401,
+    "per_minor_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "neg_coeffs": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "k0": 502,
+    "per_minor_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "neg_coeffs": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "k0": 502,
+  "PROVED": true,
+  "statement": "for every legal (eps, delta) with 1 + delta/eps <= 9/2 and every integer k >= 502, the full support of Y_k is a stable positive fixed point",
+  "seconds": 7.1
+ },
+ {
+  "family": "Y",
+  "base": "&G^ZZZr|KjqTo",
+  "classes": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "rhos": [
+   4,
+   1
+  ],
+  "beta1": "24/5",
+  "r1": "5/24",
+  "a1": "25/336",
+  "t1_legal_boundary": "5/14",
+  "positivity_on_[2,beta1]": true,
+  "positivity_detail": {
+   "det": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj0": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj1": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj2": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj3": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj4": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj5": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj6": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "adj7": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma0-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   },
+   "sigma1-1_num": {
+    "roots_in_[2,beta1]": 0,
+    "sign_matches_det_at_mid": true
+   }
+  },
+  "z_power_removed": 2,
+  "g": "-5*a*k*z**6 - 5*a*k*z**5 - 12*a*k*z**4 - 7*a*k*z**3 - 7*a*k*z**2 - 2*a*k*z - a*k - 8*a*z**6 - 16*a*z**5 - 30*a*z**4 - 32*a*z**3 - 22*a*z**2 - 13*a*z - 5*a + z**7 - 3*z**4 - 4*z**3 - 3*z**2 - 2*z - 1",
+  "tries": [
+   {
+    "k0": 1411,
+    "per_minor_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     false
+    ],
+    "neg_coeffs": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "k0": 1764,
+    "per_minor_ok": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "neg_coeffs": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "k0": 1764,
+  "PROVED": true,
+  "statement": "for every legal (eps, delta) with 1 + delta/eps <= 24/5 and every integer k >= 1764, the full support of Y_k is a stable positive fixed point",
+  "seconds": 7.5
+ }
+]

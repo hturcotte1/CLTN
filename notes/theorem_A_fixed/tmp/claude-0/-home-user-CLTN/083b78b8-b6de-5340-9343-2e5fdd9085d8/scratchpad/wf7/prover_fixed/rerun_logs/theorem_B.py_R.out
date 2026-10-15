@@ -1,0 +1,8 @@
+R 43/20 pos True k0 0 tries [(0, 0)] 6.3 s
+R 11/5 pos True k0 4 tries [(4, 0)] 3.1 s
+R 23/10 pos True k0 10 tries [(10, 0)] 2.5 s
+R 12/5 pos True k0 19 tries [(19, 0)] 2.9 s
+R 5/2 pos True k0 33 tries [(33, 0)] 2.8 s
+R 13/5 pos True k0 60 tries [(60, 0)] 3.1 s
+R 27/10 pos True k0 127 tries [(127, 0)] 2.3 s
+R 14/5 pos True k0 627 tries [(501, 2), (627, 0)] 2.6 s

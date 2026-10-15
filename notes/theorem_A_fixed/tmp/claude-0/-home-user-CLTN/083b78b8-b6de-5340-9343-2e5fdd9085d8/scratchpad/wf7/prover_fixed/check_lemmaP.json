@@ -1,0 +1,2094 @@
+{
+ "C1": [
+  {
+   "case": "R",
+   "core_d6": "&F^U|m^QTq?",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "ok": true
+  },
+  {
+   "case": "R",
+   "core_d6": "&F^U|m^QTq?",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "case": "R",
+   "core_d6": "&F^U|m^QTq?",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "case": "Q",
+   "core_d6": "&F^S{^ReL|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "ok": true
+  },
+  {
+   "case": "Q",
+   "core_d6": "&F^S{^ReL|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "case": "Q",
+   "core_d6": "&F^S{^ReL|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "case": "Q2",
+   "core_d6": "&F^U|m^QTq?",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    3
+   ],
+   "ok": true
+  },
+  {
+   "case": "Q2",
+   "core_d6": "&F^U|m^QTq?",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2,
+    6
+   ],
+   "ok": true
+  },
+  {
+   "case": "Y",
+   "core_d6": "&G^ZZZr|KjqTo",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    4,
+    1
+   ],
+   "ok": true
+  },
+  {
+   "case": "F",
+   "core_d6": "&EZjtwWE",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "ok": true
+  },
+  {
+   "case": "F",
+   "core_d6": "&EZjtwWE",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "case": "F",
+   "core_d6": "&EZjtwWE",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "case": "random0",
+   "core_d6": "&CKDg",
+   "classes": [
+    [
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "ok": true
+  },
+  {
+   "case": "random1",
+   "core_d6": "&DKEKA?",
+   "classes": [
+    [
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    1
+   ],
+   "ok": true
+  },
+  {
+   "case": "random2",
+   "core_d6": "&EVHFakM",
+   "classes": [
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "case": "random3",
+   "core_d6": "&DPNRO?",
+   "classes": [
+    [
+     1,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "ok": true
+  },
+  {
+   "case": "random4",
+   "core_d6": "&EWLeAcA",
+   "classes": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    1,
+    3
+   ],
+   "ok": true
+  },
+  {
+   "case": "random5",
+   "core_d6": "&CWhO",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "case": "random6",
+   "core_d6": "&D\\\\CH?",
+   "classes": [
+    [
+     0,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "case": "random7",
+   "core_d6": "&D@FHX?",
+   "classes": [
+    [
+     1,
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "ok": true
+  },
+  {
+   "case": "random8",
+   "core_d6": "&BDO",
+   "classes": [
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "ok": true
+  },
+  {
+   "case": "random9",
+   "core_d6": "&CC@O",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    2,
+    2
+   ],
+   "ok": true
+  },
+  {
+   "case": "random10",
+   "core_d6": "&CUTg",
+   "classes": [
+    [
+     1,
+     0,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "ok": true
+  },
+  {
+   "case": "random11",
+   "core_d6": "&C[GO",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    3
+   ],
+   "ok": true
+  }
+ ],
+ "C2": [
+  {
+   "d6": "&F^RwPEbwz?",
+   "beta": "239/100",
+   "t": "107/3",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&CSSg",
+   "beta": "279/100",
+   "t": "344",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&D^RU^?",
+   "beta": "281/100",
+   "t": "275/3",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&DQNRU?",
+   "beta": "393/100",
+   "t": "22",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&C[Xo",
+   "beta": "94/25",
+   "t": "223/10",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&FRvXvLro\\?",
+   "beta": "361/100",
+   "t": "117",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&CY|w",
+   "beta": "15/4",
+   "t": "95/3",
+   "ctln": true,
+   "lemmaS": true
+  },
+  {
+   "d6": "&B\\_",
+   "beta": "259/100",
+   "t": "60",
+   "ctln": true,
+   "lemmaS": true
+  },
+  {
+   "d6": "&DS\\]F?",
+   "beta": "92/25",
+   "t": "19",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&C]`G",
+   "beta": "281/100",
+   "t": "42",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&B[o",
+   "beta": "5/2",
+   "t": "131/19",
+   "ctln": true,
+   "lemmaS": true
+  },
+  {
+   "d6": "&FYp|}^v[n?",
+   "beta": "371/100",
+   "t": "175/8",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&CIpg",
+   "beta": "113/50",
+   "t": "73/4",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&DTE\\Z?",
+   "beta": "21/10",
+   "t": "20/19",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&BXo",
+   "beta": "79/20",
+   "t": "301/4",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&CKDW",
+   "beta": "383/100",
+   "t": "44/5",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&F^Ox{NvtU?",
+   "beta": "271/100",
+   "t": "356/9",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&B[_",
+   "beta": "17/5",
+   "t": "8/5",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&BLo",
+   "beta": "79/25",
+   "t": "161/5",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&E^Gdx[}",
+   "beta": "57/25",
+   "t": "35/4",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&DNFT]?",
+   "beta": "393/100",
+   "t": "33",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&BD_",
+   "beta": "123/50",
+   "t": "106/5",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&DJRO^?",
+   "beta": "271/100",
+   "t": "173/11",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&EFeqq|y",
+   "beta": "69/20",
+   "t": "155/6",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&FXoxfBfTu?",
+   "beta": "193/50",
+   "t": "247/17",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&EMFtqxo",
+   "beta": "109/50",
+   "t": "335",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&F\\DOzHFcN?",
+   "beta": "207/100",
+   "t": "21/2",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&BXo",
+   "beta": "323/100",
+   "t": "122/5",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&B\\_",
+   "beta": "283/100",
+   "t": "138/11",
+   "ctln": true,
+   "lemmaS": true
+  },
+  {
+   "d6": "&FLvL~^Vtv?",
+   "beta": "203/100",
+   "t": "105/8",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&EZhPbww",
+   "beta": "73/25",
+   "t": "217/3",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&C]gO",
+   "beta": "79/20",
+   "t": "233/6",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&DF^QU?",
+   "beta": "239/100",
+   "t": "282/11",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&DLMVM?",
+   "beta": "149/50",
+   "t": "155/8",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&CUpw",
+   "beta": "37/10",
+   "t": "17/3",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&CIt_",
+   "beta": "109/50",
+   "t": "299/6",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&BD_",
+   "beta": "76/25",
+   "t": "365/9",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&FZt{f[C|r?",
+   "beta": "317/100",
+   "t": "169/6",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&E]iFGss",
+   "beta": "89/25",
+   "t": "25",
+   "ctln": false,
+   "lemmaS": false
+  },
+  {
+   "d6": "&CUxW",
+   "beta": "14/5",
+   "t": "119/3",
+   "ctln": false,
+   "lemmaS": false
+  }
+ ],
+ "C3": [
+  {
+   "core": "&CM|_",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "189/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&EShta[U",
+   "classes": [
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1,
+    2
+   ],
+   "beta": "137/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&D^\\FV?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "beta": "89/20",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C]Tg",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    1,
+    2
+   ],
+   "beta": "341/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B\\o",
+   "classes": [
+    [
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "51/20",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C?\\o",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "beta": "181/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C]tw",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "92/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C]|g",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "beta": "68/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&ETNfz`}",
+   "classes": [
+    [
+     0,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2,
+    3
+   ],
+   "beta": "116/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&DMJ^V?",
+   "classes": [
+    [
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1,
+    2
+   ],
+   "beta": "72/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&BDo",
+   "classes": [
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1,
+    2
+   ],
+   "beta": "129/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&BWO",
+   "classes": [
+    [
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "233/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B\\o",
+   "classes": [
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "311/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B\\o",
+   "classes": [
+    [
+     1,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "beta": "11/5",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&BHo",
+   "classes": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1,
+    3
+   ],
+   "beta": "333/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B\\o",
+   "classes": [
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3,
+    1
+   ],
+   "beta": "53/20",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B\\_",
+   "classes": [
+    [
+     0,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "beta": "103/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&E^nvrKk",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    1
+   ],
+   "beta": "267/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B\\O",
+   "classes": [
+    [
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    2,
+    3
+   ],
+   "beta": "123/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&CU{o",
+   "classes": [
+    [
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    3,
+    1
+   ],
+   "beta": "131/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&ENlvW{u",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2,
+    1
+   ],
+   "beta": "51/20",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&CGWW",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2,
+    3
+   ],
+   "beta": "437/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B[o",
+   "classes": [
+    [
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "118/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&ETIf`|I",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1,
+    1
+   ],
+   "beta": "289/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&EQivX\\u",
+   "classes": [
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2,
+    1
+   ],
+   "beta": "66/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&E\\jvo|]",
+   "classes": [
+    [
+     1,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2,
+    3
+   ],
+   "beta": "461/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C[xw",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1,
+    2
+   ],
+   "beta": "393/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B[o",
+   "classes": [
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    3
+   ],
+   "beta": "5/2",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&CCHw",
+   "classes": [
+    [
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    2
+   ],
+   "beta": "339/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&D]^^^?",
+   "classes": [
+    [
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    3,
+    3
+   ],
+   "beta": "41/20",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C]Lo",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "beta": "253/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C]w_",
+   "classes": [
+    [
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "beta": "97/20",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&DNUV\\?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    2,
+    3
+   ],
+   "beta": "227/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&BXo",
+   "classes": [
+    [
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "beta": "114/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&E\\lvzx{",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     0,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "311/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B[o",
+   "classes": [
+    [
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "417/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&ENbeZx{",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    3,
+    2
+   ],
+   "beta": "233/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B[_",
+   "classes": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    2,
+    1
+   ],
+   "beta": "337/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&DTZ[N?",
+   "classes": [
+    [
+     1,
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "beta": "399/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&CMlw",
+   "classes": [
+    [
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    3
+   ],
+   "beta": "18/5",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C[|W",
+   "classes": [
+    [
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    1,
+    1
+   ],
+   "beta": "49/20",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C]tG",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "beta": "169/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&DV^^Z?",
+   "classes": [
+    [
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    3,
+    2
+   ],
+   "beta": "341/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&D^VBU?",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    3
+   ],
+   "beta": "124/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&EWndrX}",
+   "classes": [
+    [
+     0,
+     1,
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     1,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    1
+   ],
+   "beta": "59/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B\\?",
+   "classes": [
+    [
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    3
+   ],
+   "beta": "341/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&BSO",
+   "classes": [
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    3,
+    2
+   ],
+   "beta": "69/20",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&E^_qxX]",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "463/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&CM\\W",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "beta": "403/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&B?o",
+   "classes": [
+    [
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    2
+   ],
+   "beta": "403/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&E^NtZt]",
+   "classes": [
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "beta": "453/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&EVnu@x}",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3,
+    1
+   ],
+   "beta": "331/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&E^ntz[}",
+   "classes": [
+    [
+     1,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3,
+    1
+   ],
+   "beta": "217/50",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&DMEQ^?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3,
+    3
+   ],
+   "beta": "337/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&DNJB^?",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3,
+    1
+   ],
+   "beta": "317/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&D^^?R?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    1
+   ],
+   "beta": "53/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&D^TN^?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "sizes": [
+    3,
+    2
+   ],
+   "beta": "313/100",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&DNQ\\V?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "sizes": [
+    1,
+    2
+   ],
+   "beta": "113/25",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&C[hw",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "sizes": [
+    1
+   ],
+   "beta": "29/10",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "core": "&CW|_",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     0
+    ]
+   ],
+   "sizes": [
+    3
+   ],
+   "beta": "363/100",
+   "pred": false,
+   "ctln_positive": false
+  }
+ ]
+}

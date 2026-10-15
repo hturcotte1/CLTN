@@ -1,0 +1,6 @@
+Q 21/10 pos True k0 4 tries [(4, 0)] 5.5 s
+Q 5/2 pos True k0 40 tries [(40, 0)] 2.6 s
+Q2 5/2 pos True k0 2 tries [(2, 0)] 7.3 s
+Q2 3 pos True k0 6 tries [(6, 0)] 2.7 s
+Q2 7/2 pos True k0 19 tries [(19, 0)] 2.8 s
+Q2 19/5 pos True k0 73 tries [(73, 0)] 2.8 s

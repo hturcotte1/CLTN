@@ -1,0 +1,7 @@
+R_k is an SFP at (eps, delta) = (1/21, 11/210) for every integer k >= 0 (n >= 7)
+R_k is an SFP at (eps, delta) = (1/8, 23/160) for every integer k >= 0 (n >= 7)
+Q_k is an SFP at (eps, delta) = (1/21, 11/210) for every integer k >= 3 (n >= 10)
+Q2_k is an SFP at (eps, delta) = (1/2, 9/8) for every integer k >= 9 (n >= 43)
+Q2_k is an SFP at (eps, delta) = (1/2, 5/4) for every integer k >= 16 (n >= 71)
+Y_k is an SFP at (eps, delta) = (1/2, 9/8) for every integer k >= 31 (n >= 163)
+Y_k is an SFP at (eps, delta) = (1/2, 3/2) for every integer k >= 90 (n >= 458)

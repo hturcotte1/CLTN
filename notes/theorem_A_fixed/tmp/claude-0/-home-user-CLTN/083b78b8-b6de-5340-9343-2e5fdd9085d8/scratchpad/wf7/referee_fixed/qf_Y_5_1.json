@@ -1,0 +1,74 @@
+{
+ "family": "Y",
+ "eps": "1/2",
+ "delta": "2",
+ "legal": true,
+ "identity_check": {
+  "1": true,
+  "2": true
+ },
+ "minors": [
+  {
+   "j": 1,
+   "deg": 1,
+   "LC_sign": 1,
+   "largest_root": -3.6
+  },
+  {
+   "j": 2,
+   "deg": 2,
+   "LC_sign": 1,
+   "largest_root": 0.6813960227233307
+  },
+  {
+   "j": 3,
+   "deg": 3,
+   "LC_sign": 1,
+   "largest_root": 2.7151061778204975
+  },
+  {
+   "j": 4,
+   "deg": 4,
+   "LC_sign": 1,
+   "largest_root": 4.68359562821748
+  },
+  {
+   "j": 5,
+   "deg": 5,
+   "LC_sign": 1,
+   "largest_root": 9.751016831027908
+  },
+  {
+   "j": 6,
+   "deg": 6,
+   "LC_sign": 1,
+   "largest_root": 8.192590371012246
+  },
+  {
+   "j": 7,
+   "deg": 7,
+   "LC_sign": 1,
+   "largest_root": 12.773579163670894
+  },
+  {
+   "j": 8,
+   "deg": 8,
+   "LC_sign": 1,
+   "largest_root": 224.63529725659893
+  },
+  {
+   "j": 9,
+   "deg": 9,
+   "LC_sign": -1,
+   "largest_root": 7.763836783928265
+  },
+  {
+   "j": 10,
+   "deg": 10,
+   "LC_sign": -1,
+   "largest_root": 7.763836783928265
+  }
+ ],
+ "eventually_stable": false,
+ "k_threshold": null
+}

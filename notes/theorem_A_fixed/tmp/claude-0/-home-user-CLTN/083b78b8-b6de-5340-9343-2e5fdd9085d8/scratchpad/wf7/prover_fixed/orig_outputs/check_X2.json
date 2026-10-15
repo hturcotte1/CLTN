@@ -1,0 +1,1710 @@
+{
+ "cases": [
+  {
+   "base": "&F]UHOTfkx?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "2887/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]UHOTfkx?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2521/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]UGx\\Dhq?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "353/125",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F]UGx\\Dhq?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "2097/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]UhA\\bT{?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "1073/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^v\\eMp{J?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "261/100",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]UHOTfkx?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "267/100",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^vleMoT]?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "713/250",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F^vk\\Yo\\U?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2037/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]S`YTbKx?",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "523/200",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]S`YTbKx?",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "467/200",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^VH[Tch}?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "633/250",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F]S`YTbKx?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "314/125",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^U|m^QTq?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "2469/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UxkNSta?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "513/200",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]UhoTFLx?",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2323/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&G^ZZZr|KjqTo",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    4,
+    1
+   ],
+   "k": 1,
+   "beta": "287/125",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^vleMoT]?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2577/1000",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F]UxsTFHj?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "2111/1000",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&FNFH[Yepu?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2069/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^VH[Tch}?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2219/1000",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F^UWxTClb?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "1241/500",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F^VKlKQsp?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "243/100",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^VH[Tch}?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "1399/500",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F^S{^ReL|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "209/100",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^vleMoT]?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "252/125",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^S{^ReL|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "1069/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^u\\mFTxJ?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "503/250",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]SpqXRDk?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "2817/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UX_TE{h?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2699/1000",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F]UGx\\Dhq?",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "1261/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^U|m^QTq?",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "243/100",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^vleMoT]?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "481/200",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UXk\\Eop?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "2001/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]UhA\\bT{?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2907/1000",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F]S`YTbKx?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "274/125",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^u\\mFTxJ?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "511/250",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UXk\\Eop?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "2453/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^ulC^a{\\?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "349/125",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F]S`YTbKx?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "599/250",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UluNQT|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2093/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UX_TE{h?",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "252/125",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]ShY\\`Dq?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "1319/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^Ul]NsTu?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "2983/1000",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F^U|uJQT|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "361/125",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F]UgxDVWr?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2643/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^TxULoDi?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2931/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^V\\K[epa?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2743/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UXk\\Esb?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "1379/500",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F]S`YTbKx?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "363/125",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F^Ul]NsTu?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "304/125",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UX_TE{h?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "264/125",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&G^ZZZr|KjqTo",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    4,
+    1
+   ],
+   "k": 3,
+   "beta": "1493/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]S`YTbKx?",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "1379/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]UhoTFLx?",
+   "classes": [
+    [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "2431/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]S`YTbKx?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2533/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^vleMoT]?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "213/100",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&FNFH[Yepu?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2573/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]UhqLPT}?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "1109/500",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F^S{^ReL|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "2071/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UX_TE{h?",
+   "classes": [
+    [
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2457/1000",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F^vk\\Yo\\U?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "256/125",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^VH[Xacv?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "1189/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^v[\\UpkN?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2371/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]UHOTfkx?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "2339/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^U|uJQT|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "1473/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UxkNSta?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "2933/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^TxULoDi?",
+   "classes": [
+    [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "1493/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UluNQT|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2613/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F]S`YTbKx?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "2069/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^VGzKUpo?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "107/50",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UluNQT|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 3,
+   "beta": "308/125",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^u\\mFTxJ?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 2,
+   "beta": "1461/500",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UluNQT|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2361/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UxkNSta?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2923/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^UX_TE{h?",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2967/1000",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F]UhoTFLx?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2587/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&FMC`j\\BTt?",
+   "classes": [
+    [
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2389/1000",
+   "pred": false,
+   "ctln_positive": false
+  },
+  {
+   "base": "&F^S{^ReL|?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 1,
+   "beta": "2083/1000",
+   "pred": true,
+   "ctln_positive": true
+  },
+  {
+   "base": "&F^vleMoT]?",
+   "classes": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ]
+   ],
+   "rhos": [
+    1
+   ],
+   "k": 4,
+   "beta": "283/125",
+   "pred": true,
+   "ctln_positive": true
+  }
+ ],
+ "n_positive": 61,
+ "n": 80
+}

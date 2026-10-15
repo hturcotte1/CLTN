@@ -1,0 +1,7 @@
+R_eps1_8 k 0 n 7 certified True all Hurwitz minors positive 4.2 s
+R_eps1_8 k 1 n 8 certified True all Hurwitz minors positive 0.5 s
+R_eps1_8 k 2 n 9 certified True all Hurwitz minors positive 0.4 s
+R_eps1_8 k 5 n 12 certified True all Hurwitz minors positive 0.5 s
+R_eps1_8 k 10 n 17 certified True all Hurwitz minors positive 0.7 s
+R_eps1_8 k 20 n 27 certified True all Hurwitz minors positive 2.6 s
+R_eps1_8 k 100 n 107 certified True all Hurwitz minors positive 781.8 s

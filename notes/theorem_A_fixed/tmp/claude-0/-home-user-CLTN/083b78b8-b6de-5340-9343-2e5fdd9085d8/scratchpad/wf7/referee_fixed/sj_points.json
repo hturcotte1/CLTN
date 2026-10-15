@@ -1,0 +1,78 @@
+{
+ "points": [
+  {
+   "beta": "21/10",
+   "t": "10001/1000",
+   "all_k_SFP": true,
+   "tail": [
+    "minor 7 True",
+    "VERDICT True"
+   ]
+  },
+  {
+   "beta": "21/10",
+   "t": "1000",
+   "all_k_SFP": true,
+   "tail": [
+    "minor 7 True",
+    "VERDICT True"
+   ]
+  },
+  {
+   "beta": "41/20",
+   "t": "201/10",
+   "all_k_SFP": true,
+   "tail": [
+    "minor 7 True",
+    "VERDICT True"
+   ]
+  },
+  {
+   "beta": "43/20",
+   "t": "7",
+   "all_k_SFP": false,
+   "tail": [
+    "minor 7 True",
+    "VERDICT False"
+   ]
+  },
+  {
+   "beta": "43/20",
+   "t": "100",
+   "all_k_SFP": false,
+   "tail": [
+    "minor 7 True",
+    "VERDICT False"
+   ]
+  }
+ ],
+ "instances": [
+  {
+   "k": 2,
+   "n": 14,
+   "sfp": true,
+   "stable": true,
+   "positive": true,
+   "clique": false,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 3,
+   "n": 21,
+   "sfp": true,
+   "stable": true,
+   "positive": true,
+   "clique": false,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 5,
+   "n": 35,
+   "sfp": true,
+   "stable": true,
+   "positive": true,
+   "clique": false,
+   "detail": "all Hurwitz minors positive"
+  }
+ ]
+}

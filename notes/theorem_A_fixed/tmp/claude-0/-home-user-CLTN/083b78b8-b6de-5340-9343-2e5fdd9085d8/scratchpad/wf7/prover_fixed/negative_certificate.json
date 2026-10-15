@@ -1,0 +1,138 @@
+{
+ "point": {
+  "beta": "21/10",
+  "t": "20",
+  "eps": "1/21",
+  "delta": "11/210",
+  "q": "22/21"
+ },
+ "N1_chi_L": "z**4*(z**2 + z + 1)",
+ "N1_minors": [
+  {
+   "minor": 1,
+   "degree": 1,
+   "LC_sign": 1,
+   "value_at_0_positive": true,
+   "smallest_root_>=0": null
+  },
+  {
+   "minor": 2,
+   "degree": 2,
+   "LC_sign": 1,
+   "value_at_0_positive": true,
+   "smallest_root_>=0": null
+  },
+  {
+   "minor": 3,
+   "degree": 3,
+   "LC_sign": 1,
+   "value_at_0_positive": true,
+   "smallest_root_>=0": null
+  },
+  {
+   "minor": 4,
+   "degree": 4,
+   "LC_sign": 1,
+   "value_at_0_positive": true,
+   "smallest_root_>=0": null
+  },
+  {
+   "minor": 5,
+   "degree": 5,
+   "LC_sign": -1,
+   "value_at_0_positive": true,
+   "smallest_root_>=0": "CRootOf(524328134400000000000000*x**5 - 21946104738538848000000000*x**4 - 380421979076644648976000000*x**3 - 1870700393862446037701040000*x**2 - 3142747062753076938965620800*x - 888006239312370537995978133, 4) ~ 55.9872579419"
+  },
+  {
+   "minor": 6,
+   "degree": 6,
+   "LC_sign": -1,
+   "value_at_0_positive": true,
+   "smallest_root_>=0": "CRootOf(5671712000000000*x**4 - 189490629616000000*x**3 - 1624976974490640000*x**2 - 1328335585251752800*x - 273944862241641103, 3) ~ 40.6079333317"
+  },
+  {
+   "minor": 7,
+   "degree": 7,
+   "LC_sign": -1,
+   "value_at_0_positive": true,
+   "smallest_root_>=0": "CRootOf(5671712000000000*x**4 - 189490629616000000*x**3 - 1624976974490640000*x**2 - 1328335585251752800*x - 273944862241641103, 3) ~ 40.6079333317"
+  }
+ ],
+ "N1_kstar": "40.6079333316528",
+ "N1_minor6_negative_on_[41,inf)": true,
+ "N1_explicit": [
+  {
+   "k": 38,
+   "psi_hurwitz": true,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 39,
+   "psi_hurwitz": true,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 40,
+   "psi_hurwitz": true,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 41,
+   "psi_hurwitz": false,
+   "detail": "Hurwitz minor 6 negative"
+  },
+  {
+   "k": 45,
+   "psi_hurwitz": false,
+   "detail": "Hurwitz minor 6 negative"
+  },
+  {
+   "k": 60,
+   "psi_hurwitz": false,
+   "detail": "Hurwitz minor 5 negative"
+  },
+  {
+   "k": 40,
+   "n": 46,
+   "ctln_positive": true,
+   "ctln_stable": true,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "k": 41,
+   "n": 47,
+   "ctln_positive": true,
+   "ctln_stable": false,
+   "detail": "Hurwitz minor 29 negative"
+  }
+ ],
+ "N1_conclusion": "F_k is stable at (1/21, 11/210) for k = 0..40 and unstable for every k >= 41 (all positive)",
+ "N2_trace_aJ+D": "200/3",
+ "N2_Nstar": 1,
+ "N2_history": [
+  {
+   "N": 1,
+   "stable": true
+  },
+  {
+   "N": 2,
+   "stable": false
+  }
+ ],
+ "N2_explicit": [
+  {
+   "N": 1,
+   "n": 7,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "N": 2,
+   "n": 14,
+   "positive": true,
+   "stable": false,
+   "detail": "Hurwitz minor 4 negative"
+  }
+ ]
+}

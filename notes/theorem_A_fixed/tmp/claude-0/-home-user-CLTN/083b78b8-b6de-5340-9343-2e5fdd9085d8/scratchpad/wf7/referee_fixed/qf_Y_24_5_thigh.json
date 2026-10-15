@@ -1,0 +1,77 @@
+{
+ "family": "Y",
+ "eps": "1/1001",
+ "delta": "19/5005",
+ "legal": true,
+ "identity_check": {
+  "1": true,
+  "2": true
+ },
+ "minors": [
+  {
+   "j": 1,
+   "deg": 1,
+   "LC_sign": 1,
+   "largest_root": -1.602
+  },
+  {
+   "j": 2,
+   "deg": 2,
+   "LC_sign": 1,
+   "largest_root": 0.22864337109699737
+  },
+  {
+   "j": 3,
+   "deg": 3,
+   "LC_sign": 1,
+   "largest_root": 0.5585574622925861
+  },
+  {
+   "j": 4,
+   "deg": 4,
+   "LC_sign": 1,
+   "largest_root": 1.5671175316292694
+  },
+  {
+   "j": 5,
+   "deg": 5,
+   "LC_sign": 1,
+   "largest_root": 3.8710043651601067
+  },
+  {
+   "j": 6,
+   "deg": 6,
+   "LC_sign": 1,
+   "largest_root": 3.108888025191786
+  },
+  {
+   "j": 7,
+   "deg": 7,
+   "LC_sign": 1,
+   "largest_root": 5.376980895983271
+  },
+  {
+   "j": 8,
+   "deg": 8,
+   "LC_sign": 1,
+   "largest_root": 71.93724671602081
+  },
+  {
+   "j": 9,
+   "deg": 9,
+   "LC_sign": 1,
+   "largest_root": 362.60412951671543
+  },
+  {
+   "j": 10,
+   "deg": 10,
+   "LC_sign": 1,
+   "largest_root": 362.60412951671543
+  }
+ ],
+ "eventually_stable": true,
+ "k_threshold": 363,
+ "at_kstar": "(True, 'all Hurwitz minors positive')",
+ "at_kstar_minus_1": "(False, 'Hurwitz minor 9 negative')",
+ "positive_k_ge_threshold": true
+}

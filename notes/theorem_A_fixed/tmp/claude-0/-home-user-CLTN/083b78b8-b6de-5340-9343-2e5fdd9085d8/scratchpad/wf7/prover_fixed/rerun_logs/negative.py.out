@@ -1,0 +1,21 @@
+{
+ "N1_kstar": "40.6079333316528",
+ "N1_conclusion": "F_k is stable at (1/21, 11/210) for k = 0..40 and unstable for every k >= 41 (all positive)",
+ "N2_Nstar": 1,
+ "N2_explicit": [
+  {
+   "N": 1,
+   "n": 7,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive"
+  },
+  {
+   "N": 2,
+   "n": 14,
+   "positive": true,
+   "stable": false,
+   "detail": "Hurwitz minor 4 negative"
+  }
+ ]
+}

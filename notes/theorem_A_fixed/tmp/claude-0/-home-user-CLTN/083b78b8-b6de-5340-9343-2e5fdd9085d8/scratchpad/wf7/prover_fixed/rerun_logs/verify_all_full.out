@@ -1,0 +1,22 @@
+cert_Q2_eps1_2.json k 9 n 43 OK
+cert_Q2_eps1_2.json k 10 n 47 OK
+cert_Q2_eps1_2.json k 12 n 55 OK
+cert_R_eps1_21.json k 0 n 7 OK
+cert_R_eps1_21.json k 1 n 8 OK
+cert_R_eps1_21.json k 2 n 9 OK
+cert_R_eps1_21.json k 5 n 12 OK
+cert_R_eps1_21.json k 10 n 17 OK
+cert_R_eps1_21.json k 20 n 27 OK
+cert_R_eps1_21.json k 100 n 107 OK
+cert_R_eps1_8.json k 0 n 7 OK
+cert_R_eps1_8.json k 1 n 8 OK
+cert_R_eps1_8.json k 2 n 9 OK
+cert_R_eps1_8.json k 5 n 12 OK
+cert_R_eps1_8.json k 10 n 17 OK
+cert_R_eps1_8.json k 20 n 27 OK
+cert_R_eps1_8.json k 100 n 107 OK
+G1 (n = 6) at (1/21, 11/210): SFP, not a clique  OK
+join R v K_1 (n = 8) OK
+join R v K_5 (n = 12) OK
+join R v K_20 (n = 27) OK
+ALL CHECKS PASSED (21 instance records re-verified)

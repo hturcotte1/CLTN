@@ -1,0 +1,8 @@
+21/10 10001/1000 True ["fixed factor (True, 'all Hurwitz minors positive')"]
+21/10 1000 True ["fixed factor (True, 'all Hurwitz minors positive')"]
+41/20 201/10 True ["fixed factor (True, 'all Hurwitz minors positive')"]
+43/20 7 False ["fixed factor (False, 'Hurwitz minor 5 negative')"]
+43/20 100 False ["fixed factor (False, 'Hurwitz minor 5 negative')"]
+SJ ctln 2 14 True all Hurwitz minors positive False
+SJ ctln 3 21 True all Hurwitz minors positive False
+SJ ctln 5 35 True all Hurwitz minors positive False

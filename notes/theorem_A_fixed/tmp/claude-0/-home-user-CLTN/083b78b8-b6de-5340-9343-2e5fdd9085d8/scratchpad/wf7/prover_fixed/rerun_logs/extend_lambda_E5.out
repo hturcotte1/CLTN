@@ -1,0 +1,8 @@
+E1 ok, m = 65 0.9 s
+beta 5 True all Hurwitz minors positive pos True
+beta 11/2 True all Hurwitz minors positive pos True
+beta 28/5 True all Hurwitz minors positive pos True
+beta 6 None zero coefficient -- boundary case pos True
+chi_a done 36.0 s
+E4 k0 = 1581 n0 = 1646 36.3 s
+E5 {'k': 1, 'n': 66, 'ctln_positive': True, 'ctln_stable': False, 'ctln_detail': 'Hurwitz minor 7 negative', 'psi_verdict': False, 'agree': True, 'clique': False, 'seconds': 58.2}

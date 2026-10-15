@@ -1,0 +1,276 @@
+[
+ {
+  "family": "Q2",
+  "beta": "3",
+  "legal_boundary_t": "1",
+  "rows": [
+   {
+    "k": 0,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 1,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 2,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 3,
+    "stable_t_intervals_display": [
+     [
+      "13.83698288",
+      "inf"
+     ]
+    ],
+    "T_k": "13.8369828841",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 4,
+    "stable_t_intervals_display": [
+     [
+      "2.093217741",
+      "inf"
+     ]
+    ],
+    "T_k": "2.09321774054",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 5,
+    "stable_t_intervals_display": [
+     [
+      "1.132098555",
+      "inf"
+     ]
+    ],
+    "T_k": "1.13209855474",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 6,
+    "stable_t_intervals_display": [
+     [
+      "1.000000000",
+      "inf"
+     ]
+    ],
+    "T_k": "1.00000000000",
+    "T_k_is_legal_boundary": true
+   },
+   {
+    "k": 7,
+    "stable_t_intervals_display": [
+     [
+      "1.000000000",
+      "inf"
+     ]
+    ],
+    "T_k": "1.00000000000",
+    "T_k_is_legal_boundary": true
+   },
+   {
+    "k": 10,
+    "stable_t_intervals_display": [
+     [
+      "1.000000000",
+      "inf"
+     ]
+    ],
+    "T_k": "1.00000000000",
+    "T_k_is_legal_boundary": true
+   },
+   {
+    "k": 20,
+    "stable_t_intervals_display": [
+     [
+      "1.000000000",
+      "inf"
+     ]
+    ],
+    "T_k": "1.00000000000",
+    "T_k_is_legal_boundary": true
+   }
+  ]
+ },
+ {
+  "family": "Y",
+  "beta": "3",
+  "legal_boundary_t": "1",
+  "rows": [
+   {
+    "k": 0,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 1,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 2,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 5,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 10,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 15,
+    "stable_t_intervals_display": [
+     [
+      "3.100161814",
+      "inf"
+     ]
+    ],
+    "T_k": "3.10016181361",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 20,
+    "stable_t_intervals_display": [
+     [
+      "1.146091130",
+      "inf"
+     ]
+    ],
+    "T_k": "1.14609113042",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 21,
+    "stable_t_intervals_display": [
+     [
+      "1.018079306",
+      "inf"
+     ]
+    ],
+    "T_k": "1.01807930593",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 22,
+    "stable_t_intervals_display": [
+     [
+      "1.000000000",
+      "inf"
+     ]
+    ],
+    "T_k": "1.00000000000",
+    "T_k_is_legal_boundary": true
+   },
+   {
+    "k": 30,
+    "stable_t_intervals_display": [
+     [
+      "1.000000000",
+      "inf"
+     ]
+    ],
+    "T_k": "1.00000000000",
+    "T_k_is_legal_boundary": true
+   }
+  ]
+ },
+ {
+  "family": "Y",
+  "beta": "9/2",
+  "legal_boundary_t": "2/5",
+  "rows": [
+   {
+    "k": 20,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 50,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 100,
+    "stable_t_intervals_display": [],
+    "T_k": "inf (unstable for all large t)",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 150,
+    "stable_t_intervals_display": [
+     [
+      "3.449655368",
+      "inf"
+     ]
+    ],
+    "T_k": "3.44965536754",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 200,
+    "stable_t_intervals_display": [
+     [
+      "1.396110246",
+      "inf"
+     ]
+    ],
+    "T_k": "1.39611024559",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 300,
+    "stable_t_intervals_display": [
+     [
+      "0.6377893537",
+      "inf"
+     ]
+    ],
+    "T_k": "0.637789353724",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 400,
+    "stable_t_intervals_display": [
+     [
+      "0.4133980325",
+      "inf"
+     ]
+    ],
+    "T_k": "0.413398032546",
+    "T_k_is_legal_boundary": false
+   },
+   {
+    "k": 502,
+    "stable_t_intervals_display": [
+     [
+      "0.4000000000",
+      "inf"
+     ]
+    ],
+    "T_k": "0.400000000000",
+    "T_k_is_legal_boundary": true
+   }
+  ]
+ }
+]

@@ -897,3 +897,23 @@ in t, sharpened by the level-curve procedure): upper bound = lower bound = root 
 (45/34, 4/3), exact = true, attained as a supremum by the six plastic-number graphs along t -> infinity;
 every bounded cell's sharpened supremum lies below. certificates/qstar/qstar_n7_finite.json (the run
 took 5 h 20 min; the derivation from the certificates in REPORT_n7 section 4 agrees).
+
+## 2026-10-15  THEOREM A (prover, REFEREE CONFIRMED by a second proof): unbounded stable supports at ONE fixed legal point
+Workflow wf_0446254a-a07 (notes/theorem_A_fixed_workflow.json; artifacts notes/theorem_A_fixed/).
+At the single legal point (eps, delta) = (1/21, 11/210) -- beta = 21/10, t = 20, q = 22/21, the very
+point where Geneson's clique-class family F_k dies at k = 41 -- the family R_k (verified n = 7
+counterexample &F^U|m^QTq? plus a bidirected clique class of k nodes sending to all of the core and
+receiving from every core node but node 2) is a stable positive non-clique full support for EVERY
+k >= 0: all eight Hurwitz minors of the quotient characteristic polynomial are polynomials in k with
+positive coefficients, positivity is k-free (Lemma X2'). The referee re-proved it by an independent
+route (equitable partition: charpoly = chi_Q(lam) (lam + eps)^(k-1), own quotient, own positivity
+formula with denominator 3433400 k + 8122137) and certified k = 0..6, 10, 20, 41, 60, 100 (n up to
+107) with ctln. Also PROVED: Theorem A+ (same at every legal point with beta <= 43/20), Theorem SJ
+(the k-fold self-join of the core, n = 7k, is a stable fixed point at every legal point with
+beta <= 21/10 for every k; not a blow-up), and unconditionally every legal point with beta < 4.9607
+carries an infinite family (Theorem B via the Y family); conditionally on the Theorem U lemmas, EVERY
+legal point does (Theorem Lambda; exact instance at (1/2, 2), beta = 5, k >= 1581, referee-checked).
+Lemma M2: eigenvalues of geometric multiplicity >= 2 survive the rank-one class term, so self-joins
+need beta < m - 1. The preprint's and our own open question is thus answered: support size is
+unbounded at a fixed parameter. certificates/theorem_A_fixed_parameter_instances.json (k = 0..15
+recomputed here). All n >= 8 members are candidates pending hand-verification.

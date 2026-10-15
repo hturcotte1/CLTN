@@ -1,0 +1,64 @@
+{
+ "A_rows": [
+  "0111110",
+  "1011011",
+  "1101101",
+  "1100111",
+  "1101001",
+  "0010101",
+  "1100100"
+ ],
+ "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+ "P1_all_eigs_Re_>_-1/2": [
+  true,
+  "all Hurwitz minors positive"
+ ],
+ "P1_all_eigs_Re_>_-10/21": [
+  true,
+  "all Hurwitz minors positive"
+ ],
+ "P2_u": [
+  "2741781/3072781",
+  "2741781/3072781",
+  "841071/3072781",
+  "1282071/3072781",
+  "695100/3072781",
+  "1767171/3072781",
+  "695100/3072781"
+ ],
+ "P2_U": "10764075/3072781",
+ "P3_join_k0_at_(1/21,11/210)": 0,
+ "P3_instances": [
+  {
+   "k": 1,
+   "n": 8,
+   "d6": "&G^Z^Zr|Kjq^w",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  },
+  {
+   "k": 5,
+   "n": 12,
+   "d6": "&K^^l~u~r~s~I~q^~n~v~z~|~}",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  },
+  {
+   "k": 20,
+   "n": 27,
+   "d6": "&Z^^~~|n~~~u~~~}^~~~s~~~xV~~~q^~~~|~~~~v~~~~^~~~|~~~~v~~~~^~~~|~~~~v~~~~^~~~|~~~~v~~~~^~~~|~~~~v~~~~^~~~|~~~~v~~~~^~~~|~~~~o",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "detail": "all Hurwitz minors positive",
+   "clique": false
+  }
+ ],
+ "conclusion": "Conjecture P is FALSE (exact).  The join R v K_k is an SFP at (1/21, 11/210) for every k >= 0 (members are CANDIDATE counterexamples pending hand-verification)."
+}

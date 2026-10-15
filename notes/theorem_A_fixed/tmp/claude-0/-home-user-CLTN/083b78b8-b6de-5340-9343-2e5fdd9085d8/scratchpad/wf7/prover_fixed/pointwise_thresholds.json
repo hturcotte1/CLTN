@@ -1,0 +1,86 @@
+[
+ {
+  "family": "R",
+  "beta": "21/10",
+  "t": "20",
+  "eps": "1/21",
+  "delta": "11/210",
+  "q": "22/21",
+  "positive_all_members": true,
+  "k0": 0,
+  "n_at_k0": 7,
+  "statement": "R_k is an SFP at (eps, delta) = (1/21, 11/210) for every integer k >= 0"
+ },
+ {
+  "family": "R",
+  "beta": "43/20",
+  "t": "7",
+  "eps": "1/8",
+  "delta": "23/160",
+  "q": "161/160",
+  "positive_all_members": true,
+  "k0": 0,
+  "n_at_k0": 7,
+  "statement": "R_k is an SFP at (eps, delta) = (1/8, 23/160) for every integer k >= 0"
+ },
+ {
+  "family": "Q",
+  "beta": "21/10",
+  "t": "20",
+  "eps": "1/21",
+  "delta": "11/210",
+  "q": "22/21",
+  "positive_all_members": true,
+  "k0": 3,
+  "n_at_k0": 10,
+  "statement": "Q_k is an SFP at (eps, delta) = (1/21, 11/210) for every integer k >= 3"
+ },
+ {
+  "family": "Q2",
+  "beta": "13/4",
+  "t": "1",
+  "eps": "1/2",
+  "delta": "9/8",
+  "q": "9/8",
+  "positive_all_members": true,
+  "k0": 9,
+  "n_at_k0": 43,
+  "statement": "Q2_k is an SFP at (eps, delta) = (1/2, 9/8) for every integer k >= 9"
+ },
+ {
+  "family": "Q2",
+  "beta": "7/2",
+  "t": "1",
+  "eps": "1/2",
+  "delta": "5/4",
+  "q": "5/4",
+  "positive_all_members": true,
+  "k0": 16,
+  "n_at_k0": 71,
+  "statement": "Q2_k is an SFP at (eps, delta) = (1/2, 5/4) for every integer k >= 16"
+ },
+ {
+  "family": "Y",
+  "beta": "13/4",
+  "t": "1",
+  "eps": "1/2",
+  "delta": "9/8",
+  "q": "9/8",
+  "positive_all_members": true,
+  "k0": 31,
+  "n_at_k0": 163,
+  "statement": "Y_k is an SFP at (eps, delta) = (1/2, 9/8) for every integer k >= 31"
+ },
+ {
+  "family": "Y",
+  "beta": "4",
+  "t": "1",
+  "eps": "1/2",
+  "delta": "3/2",
+  "q": "3/2",
+  "positive_all_members": true,
+  "k0": 90,
+  "n_at_k0": 458,
+  "statement": "Y_k is an SFP at (eps, delta) = (1/2, 3/2) for every integer k >= 90"
+ }
+]
