@@ -226,5 +226,10 @@ scaling and the eigenvalue decomposition along rays; positive stability propagat
 in (2/beta, 1); the CLAUDE.md section 2 closed form `I - W = -delta I + (1 + delta) J - (eps + delta) A^T`
 (with the transpose, as the code uses it); `I - W = eps K(J - I - A^T, beta, t)`; `q > 1 <-> t(beta - 2) > 1`;
 Hurwitz stability of `-I + W` iff positive stability of K; and the forward direction of Lemma R in
-eps/delta language. The converse of Lemma R (openness of stability) is not formalised. A second batch
-(Lemma A.2, the e_2 edge bound, Lemma D) is in progress.
+eps/delta language. A second batch (31 more theorems) machine-checks the pipeline's prune lemmas: Lemma A.2
+(positive stability forces det K > 0; under Hurwitz stability x > 0 iff adj(K) 1 > 0, so positivity is
+t-free), the e_2 edge bound including its spectral step (via Mathlib's charpoly coefficients as sums of
+principal minors and Gauss-Lucas: Hurwitz stability at a legal point forces more bidirected than
+non-adjacent pairs and at least m(m - 1)/2 + 1 arcs), and Lemma D (a dominated node forces x_j = 0 at
+every fixed point, also on induced subgraphs). 57 theorems in all, no `sorry`, axiom audit clean. The
+converse of Lemma R (openness of stability) is not formalised.
