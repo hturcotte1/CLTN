@@ -22,7 +22,8 @@ rationals, exact root isolation, Hurwitz determinants); decimals appear only as 
 | 6 | **Theorem E.** An infinite family E_a (n = 7 + a) of finite-eps-only counterexamples: spectral abscissa exactly -1/2 for every a, stable positive at legal points with eps -> 0, beta -> 2+. `&FNFL~[udo?` is E_0 = the n = 6 hit idx 1387528 with one node doubled. | PROVED, refereed |
 | 7 | **Growing thresholds.** Families Q (n = 7 + k, q -> 1.8442), Q2 (n = 7 + 4k, q -> 3), Y (n = 8 + 5k, q >= 3.8 for k >= 363); exact lower bounds on the largest counterexample q at n = 8: 1709/1001, n = 9: 17691/10010, n = 10: 18418/10001, n = 47: 25000/10001. Conjecture: sup_n q_n* = infinity. | PROVED, refereed |
 | 8 | **Exact thresholds.** q_6* = root of 797q^6 - 1686q^5 + 2159q^4 - 3004q^3 + 2499q^2 - 2158q + 1521 in (561/481, 7/6): at n = 6 the conjecture holds for every legal parameter with q >= q_6* and fails for every q in (1, q_6*). At n = 7 the largest limit q is the plastic number (6 graphs); the exact finite-eps supremum q_7* is in section 4. | CERTIFIED (q_6* final; q_7* candidates) |
-| 9 | Not scooped as of 2026-10-14; partial overlap with an unrefereed Zenodo preprint (section 9). | checked |
+| 9 | Not scooped as of 2026-10-14; an unrefereed Zenodo preprint independently confirms the n <= 5 exclusion and the value of q_6* (section 9). | checked |
+| 10 | Every witness (the three n = 6 graphs and all 124 n = 7 candidates) is a **nondegenerate** CTLN at its witness parameters, certified exactly over all 2^n - 1 supports. | CERTIFIED |
 
 ## 1. Setting
 
@@ -161,10 +162,13 @@ ray segments from the curve, and the two-parameter CAD is needed only for the cu
   So the largest counterexample q grows without any known bound; Geneson's safe region q >= n - 2 is
   the only upper bound. A catalogue of 9 (n = 6) + 617 (n = 7) clique-class families, each proved for
   all k >= 1 by exact root isolation in k, is in `families_catalogue_n6.json` / `_n7.json`
-  (referee pending).
-* **Refuted on the way.** "Every limit polynomial has a root on Re = -1/2" (55 of 135 do not).
-  **Open:** Conjecture P (positivity of (D^T + rI)^-1 1 for r in (0, 1/2) forces an eigenvalue with
-  Re <= -1/2; proved for normal D; 38,452 exact cases); sup_n q_n* = infinity.
+  (refereed: all 626 entries re-proved independently for all real k >= 1).
+* **Refuted on the way.** "Every limit polynomial has a root on Re = -1/2" (55 of 135 do not), and
+  Conjecture P (positivity of (D^T + rI)^-1 1 for r in (0, 1/2) forces an eigenvalue with Re <= -1/2):
+  33 catalogue bases, e.g. `&FMAlW\d\y?`, have all eigenvalues of D strictly right of -1/2 and a positive
+  vector at r = 49/100; the joins G v K_k are limit-stable for every k. **Open:** sup_n q_n* = infinity;
+  and, at a FIXED legal (eps, delta), whether the stable non-clique support size is unbounded (the
+  clique-class family F_k is stable at eps = 1/21, delta = 11/210 only for k <= 38).
 
 ## 8. Verification status
 
@@ -176,7 +180,13 @@ ray segments from the curve, and the two-parameter CAD is needed only for the cu
   issue (`notes/audit_n7_finite_workflow.json`, artifacts `notes/audit_n7_finite/`).
 * Theory: Lemma D1/D2, Lemmas W/X, Theorem F, Theorem E + Lemma B, Theorems Q/Q2/Y refereed
   (`notes/research_n7_parallel_workflow.json`, `notes/research_wf3/`); catalogue, claim 16 and the
-  q* tool: referee run in progress at the time of writing (referee workflow wf_452fbfe3-f07 resumed 2026-10-15 02:28 UTC).
+  the 626-entry catalogue, claim 16 and the q* tool refereed as well (`notes/referee_n7_theory_workflow.json`,
+  artifacts `notes/referee_wf4/`): every claim holds with high confidence; the referees' write-up notes are
+  logged in ANOMALIES.md (2026-10-15). All family statements rest on Lemma I.3/I.4 (limit-to-finite-t
+  transfer), refereed in the n = 6 phase.
+* Nondegeneracy: `n7/nondegeneracy_check.py` certifies at a witness point of every hit that all 2^n - 1
+  supports are nonsingular with no zero coordinate and no zero off-support drive
+  (`certificates/nondegeneracy_witnesses.json`).
 * Human sign-off: n = 6 hits signed off 2026-10-14; the 124 n = 7 graphs (and the family instances)
   await hand-verification. Suggested order: `&FNFL~[udo?` (two rational witnesses, section 3), then
   one representative per D-class from `certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit_summary.json`.
@@ -187,7 +197,15 @@ No published or posted work classifies n = 6, treats n = 7, exhibits finite-eps-
 or improves Geneson's threshold. Geneson arXiv:2607.21396 is v1 only. An anonymous, unrefereed
 Zenodo/GitHub preprint ("Six Is Minimal", 2026-10-01) proves n <= 5 has no counterexample, uses
 Geneson's graph as the 6-witness, and gives a family on 5r + 6 nodes; it reports counts that match
-neither A000273(5) nor 2^20, and a claims diff is in progress (`notes/research_wf3/literature/`).
+A000273(1) + ... + A000273(5) = 9,846 and sum 2^(m(m-1)) = 1,052,741, i.e. all digraphs on up to five
+nodes. A claims diff (their repository read, not run; `notes/referee_wf4/lit_diff/`) finds the two works
+consistent: their conventions equal ours up to a transpose of the nonedge matrix; their n <= 5 exclusion
+equals our n = 5 map; their Geneson-class region gives 1 + u* = 1.16635502785, the same sextic as our
+q_6*; their family on 5r + 6 nodes is a clique-class blow-up of the same seed with q -> 1 (a Lemma W
+instance). They do not classify n = 6, treat n >= 7, exhibit finite-eps-only examples, or state Theorem F
+or the growing-q families; they do give an explicit rational parameter schedule for their family and
+global nondegeneracy certificates, which prompted our `nondegeneracy_check.py`. We cite it as an unrefereed
+preprint, "independently obtained / consistent with", and claim no priority either way.
 
 ## 10. What is next
 
