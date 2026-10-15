@@ -861,3 +861,12 @@ certificates/n7_candidates_legal_witnesses.json now lists one legal witness per 
 interior cell point. The field agrees_with_conjecture is meaningless at those illegal points. A
 verifier's interim run flagged 46 graphs because repeated eigenvalues (twin structure, off the
 imaginary axis) were treated as undecided by one method; fixed, final: 0 undecided.
+
+## 2026-10-15  Three 8-node instances certified in two parameters (candidates; m = 8 CAD ~40 s each)
+certificates/n8_instances_region2d.json. E_1 (finite-eps-only family, a = 1): limit never, region2d
+stable_somewhere with EXACTLY the same stable cell as E_0 = &FNFL~[udo? (beta in (2, 27/13), t in
+(26, 53) at beta = 53/26) -- the closed-twin blow-up leaves the full-support region unchanged, as
+Lemma W predicts, so the whole family E_a shares one region. F_2 (Geneson + a clique class of 2):
+limit-stable, two unbounded cells up to beta ~ 2.32, no bulge. The incidental n = 8 limit candidate
+&GLjlNZ}NzH\o (41 arcs): five unbounded stable cells reaching beta in (41/18, 693/302), no bulge.
+The m = 8 two-parameter certification costs ~40 s per graph, four times the m = 7 cost.

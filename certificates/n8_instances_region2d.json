@@ -1,0 +1,1411 @@
+{
+ "status": "CANDIDATES (n = 8; not hand-verified)",
+ "instances": [
+  {
+   "name": "E_1 (n=8, finite-eps-only family)",
+   "n": 8,
+   "adjacency_rows": [
+    "00111110",
+    "00110100",
+    "11011111",
+    "11101111",
+    "11110111",
+    "00111011",
+    "01000101",
+    "11001000"
+   ],
+   "clique": false,
+   "domination_free": true,
+   "limit_verdict": "never",
+   "limit_intervals": null,
+   "region2d_verdict": "stable_somewhere",
+   "stable_cells": [
+    [
+     "2",
+     "27/13",
+     "53/26",
+     "26",
+     "53"
+    ]
+   ],
+   "bounded_in_t_somewhere": true,
+   "seconds": 44.0,
+   "region2d": {
+    "sigma": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "method": "CAD on {a_i, o_k, D, Delta_{m-1}, L} restricted to the positivity set; Descartes replay",
+    "positivity_cells": [
+     [
+      "2",
+      "27/13"
+     ]
+    ],
+    "positivity_critical": [
+     {
+      "interval": [
+       "2",
+       "19/9"
+      ],
+      "minpoly_hi_to_lo": [
+       1,
+       -3,
+       3,
+       -3,
+       2,
+       -1
+      ]
+     },
+     {
+      "interval": [
+       "9/4",
+       "7/3"
+      ],
+      "minpoly_hi_to_lo": [
+       1,
+       -3,
+       2,
+       -1
+      ]
+     }
+    ],
+    "cells": [
+     {
+      "beta_cell": [
+       "2",
+       "27/13"
+      ],
+      "beta_sample": "53/26",
+      "t_cells": [
+       {
+        "t_lo": "26",
+        "t_hi": "53",
+        "t_sample": "79/2",
+        "positive": true,
+        "off_ok": true,
+        "stable": true,
+        "detail": "all Hurwitz minors positive",
+        "crosscheck": true,
+        "stable_fp": true
+       },
+       {
+        "t_lo": "54",
+        "t_hi": null,
+        "t_sample": "55",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 7 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       }
+      ],
+      "t_critical": [
+       {
+        "interval": [
+         "53",
+         "54"
+        ],
+        "minpoly_hi_to_lo": [
+         14664459737227064286199808,
+         -765247902975693538010388480,
+         -1007227395041207070870849216,
+         377153086739750116042678704,
+         798209478568329158750044444,
+         133579293167248823762723449
+        ]
+       }
+      ]
+     }
+    ],
+    "stable_cells": [
+     [
+      "2",
+      "27/13",
+      "53/26",
+      "26",
+      "53"
+     ]
+    ],
+    "projection_names": [
+     "lc_D",
+     "lc_Delta7_f0",
+     "lc_Delta7_f1",
+     "disc_Delta7_f1",
+     "lc_L",
+     "res_D_Delta7_f0",
+     "res_D_Delta7_f1",
+     "res_D_L",
+     "res_Delta7_f0_Delta7_f1",
+     "res_Delta7_f0_L",
+     "res_Delta7_f1_L"
+    ],
+    "beta_critical": [
+     {
+      "interval": [
+       "27/13",
+       "25/12"
+      ],
+      "minpoly_hi_to_lo": [
+       1,
+       -3,
+       3,
+       -3,
+       2,
+       -1
+      ],
+      "positivity_root": true
+     }
+    ],
+    "verdict": "stable_somewhere"
+   },
+   "stored_witness": {
+    "eps": "1/21",
+    "delta": "421/8400",
+    "stable": true,
+    "positive": true
+   }
+  },
+  {
+   "name": "F_2 (n=8, Geneson + clique class of 2)",
+   "n": 8,
+   "adjacency_rows": [
+    "01101111",
+    "10101111",
+    "11010111",
+    "11100011",
+    "01100011",
+    "00011000",
+    "11111101",
+    "11111110"
+   ],
+   "clique": false,
+   "domination_free": true,
+   "limit_verdict": "stable_somewhere",
+   "limit_intervals": [
+    {
+     "lo": {
+      "kind": "beta_min",
+      "beta": "2",
+      "q": "1"
+     },
+     "hi": {
+      "kind": "root",
+      "index": 0,
+      "beta_interval": [
+       "86/37",
+       "7/3"
+      ],
+      "beta_minpoly_hi_to_lo": [
+       1,
+       -3,
+       2,
+       -1
+      ],
+      "vanishing": [
+       "a4"
+      ],
+      "q_interval": [
+       "49/37",
+       "4/3"
+      ],
+      "q_minpoly_hi_to_lo": [
+       1,
+       0,
+       -1,
+       -1
+      ]
+     }
+    }
+   ],
+   "region2d_verdict": "stable_somewhere",
+   "stable_cells": [
+    [
+     "2",
+     "9/4",
+     "17/8",
+     "8",
+     null
+    ],
+    [
+     "16/7",
+     "809/348",
+     "11231/4872",
+     "8",
+     null
+    ]
+   ],
+   "bounded_in_t_somewhere": false,
+   "seconds": 39.0,
+   "region2d": {
+    "sigma": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "method": "CAD on {a_i, o_k, D, Delta_{m-1}, L} restricted to the positivity set; Descartes replay",
+    "positivity_cells": [
+     [
+      "2",
+      "9/4"
+     ]
+    ],
+    "positivity_critical": [
+     {
+      "interval": [
+       "2",
+       "3"
+      ],
+      "minpoly_hi_to_lo": [
+       1,
+       -3,
+       2,
+       -1
+      ]
+     }
+    ],
+    "cells": [
+     {
+      "beta_cell": [
+       "2",
+       "9/4"
+      ],
+      "beta_sample": "17/8",
+      "t_cells": [
+       {
+        "t_lo": "8",
+        "t_hi": null,
+        "t_sample": "9",
+        "positive": true,
+        "off_ok": true,
+        "stable": true,
+        "detail": "all Hurwitz minors positive",
+        "crosscheck": true,
+        "stable_fp": true
+       }
+      ],
+      "t_critical": []
+     },
+     {
+      "beta_cell": [
+       "16/7",
+       "809/348"
+      ],
+      "beta_sample": "11231/4872",
+      "t_cells": [
+       {
+        "t_lo": "4872/1487",
+        "t_hi": "7",
+        "t_sample": "15281/2974",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 5 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       },
+       {
+        "t_lo": "8",
+        "t_hi": null,
+        "t_sample": "9",
+        "positive": true,
+        "off_ok": true,
+        "stable": true,
+        "detail": "all Hurwitz minors positive",
+        "crosscheck": true,
+        "stable_fp": true
+       }
+      ],
+      "t_critical": [
+       {
+        "interval": [
+         "7",
+         "8"
+        ],
+        "minpoly_hi_to_lo": [
+         5529968895918484543593898837987198009344,
+         -26581457123221539844775665418230556107776,
+         -88138228490581821493563382544784161598528,
+         -47336030274383093137501961339040356794752,
+         1117257849501981455557816508715260554171
+        ]
+       }
+      ]
+     }
+    ],
+    "stable_cells": [
+     [
+      "2",
+      "9/4",
+      "17/8",
+      "8",
+      null
+     ],
+     [
+      "16/7",
+      "809/348",
+      "11231/4872",
+      "8",
+      null
+     ]
+    ],
+    "projection_names": [
+     "lc_D",
+     "lc_Delta7_f0",
+     "lc_Delta7_f1",
+     "disc_Delta7_f1",
+     "lc_L",
+     "res_D_Delta7_f0",
+     "res_D_Delta7_f1",
+     "res_D_L",
+     "res_Delta7_f0_Delta7_f1",
+     "res_Delta7_f0_L",
+     "res_Delta7_f1_L"
+    ],
+    "beta_critical": [
+     {
+      "interval": [
+       "9/4",
+       "16/7"
+      ],
+      "minpoly_hi_to_lo": [
+       43,
+       -498,
+       2828,
+       -10610,
+       29523,
+       -64818,
+       116498,
+       -175042,
+       222268,
+       -239200,
+       217744,
+       -164768,
+       102144,
+       -47104,
+       16384
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "809/348",
+       "630/271"
+      ],
+      "minpoly_hi_to_lo": [
+       1,
+       -3,
+       2,
+       -1
+      ],
+      "positivity_root": true
+     },
+     {
+      "interval": [
+       "269/115",
+       "938/401"
+      ],
+      "minpoly_hi_to_lo": [
+       1033,
+       -9308,
+       35792,
+       -77480,
+       101760,
+       -79872,
+       32768
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "19/8",
+       "12/5"
+      ],
+      "minpoly_hi_to_lo": [
+       97412,
+       -2212742,
+       20804539,
+       -113373522,
+       408731400,
+       -1039981552,
+       1928728345,
+       -2637015064,
+       2642256880,
+       -1893580624,
+       922852224,
+       -276495744,
+       39371072
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "97/39",
+       "5/2"
+      ],
+      "minpoly_hi_to_lo": [
+       43,
+       -498,
+       2828,
+       -10610,
+       29523,
+       -64818,
+       116498,
+       -175042,
+       222268,
+       -239200,
+       217744,
+       -164768,
+       102144,
+       -47104,
+       16384
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "38/15",
+       "33/13"
+      ],
+      "minpoly_hi_to_lo": [
+       1,
+       -18,
+       98,
+       -294,
+       565,
+       -684,
+       568,
+       -312,
+       128
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "83/32",
+       "13/5"
+      ],
+      "minpoly_hi_to_lo": [
+       1033,
+       -9308,
+       35792,
+       -77480,
+       101760,
+       -79872,
+       32768
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "11/4",
+       "3"
+      ],
+      "minpoly_hi_to_lo": [
+       308,
+       -5452,
+       46573,
+       -254182,
+       991142,
+       -2932148,
+       6831191,
+       -12856134,
+       19903887,
+       -25683616,
+       27861368,
+       -25514528,
+       19714531,
+       -12778228,
+       6859552,
+       -2978232,
+       1001856,
+       -239616,
+       32768
+      ],
+      "positivity_root": false
+     }
+    ],
+    "verdict": "stable_somewhere"
+   },
+   "stored_witness": {
+    "eps": "1/21",
+    "delta": "11/175",
+    "stable": true,
+    "positive": true
+   }
+  },
+  {
+   "name": "n8 limit candidate &GLjlNZ}NzH\\o",
+   "n": 8,
+   "adjacency_rows": [
+    "00110110",
+    "10111011",
+    "01001111",
+    "01101111",
+    "11100011",
+    "11111011",
+    "00100101",
+    "11011100"
+   ],
+   "clique": false,
+   "domination_free": true,
+   "limit_verdict": "stable_somewhere",
+   "limit_intervals": [
+    {
+     "lo": {
+      "kind": "beta_min",
+      "beta": "2",
+      "q": "1"
+     },
+     "hi": {
+      "kind": "root",
+      "index": 0,
+      "beta_interval": [
+       "16/7",
+       "23/10"
+      ],
+      "beta_minpoly_hi_to_lo": [
+       18381,
+       -241828,
+       1509660,
+       -5854080,
+       15588192,
+       -29931840,
+       42288192,
+       -43823104,
+       32342016,
+       -15728640,
+       4194304
+      ],
+      "vanishing": [
+       "Delta"
+      ],
+      "q_interval": [
+       "9/7",
+       "13/10"
+      ],
+      "q_minpoly_hi_to_lo": [
+       18381,
+       -58018,
+       160353,
+       -276888,
+       426570,
+       -635724,
+       624954,
+       -684568,
+       562473,
+       -385122,
+       361253
+      ]
+     }
+    }
+   ],
+   "region2d_verdict": "stable_somewhere",
+   "stable_cells": [
+    [
+     "2",
+     "64/31",
+     "63/31",
+     "31",
+     null
+    ],
+    [
+     "95/46",
+     "13/6",
+     "146/69",
+     "69/8",
+     null
+    ],
+    [
+     "11/5",
+     "9/4",
+     "89/40",
+     "40/9",
+     null
+    ],
+    [
+     "61/27",
+     "25/11",
+     "673/297",
+     "6",
+     null
+    ],
+    [
+     "41/18",
+     "693/302",
+     "3107/1359",
+     "20",
+     null
+    ]
+   ],
+   "bounded_in_t_somewhere": false,
+   "seconds": 39.8,
+   "region2d": {
+    "sigma": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "method": "CAD on {a_i, o_k, D, Delta_{m-1}, L} restricted to the positivity set; Descartes replay",
+    "positivity_cells": [
+     [
+      "2",
+      "5/2"
+     ]
+    ],
+    "positivity_critical": [
+     {
+      "interval": [
+       "2",
+       "3"
+      ],
+      "minpoly_hi_to_lo": [
+       1,
+       -4,
+       5,
+       -4,
+       2,
+       -1
+      ]
+     }
+    ],
+    "cells": [
+     {
+      "beta_cell": [
+       "2",
+       "64/31"
+      ],
+      "beta_sample": "63/31",
+      "t_cells": [
+       {
+        "t_lo": "31",
+        "t_hi": null,
+        "t_sample": "32",
+        "positive": true,
+        "off_ok": true,
+        "stable": true,
+        "detail": "all Hurwitz minors positive",
+        "crosscheck": true,
+        "stable_fp": true
+       }
+      ],
+      "t_critical": []
+     },
+     {
+      "beta_cell": [
+       "95/46",
+       "13/6"
+      ],
+      "beta_sample": "146/69",
+      "t_cells": [
+       {
+        "t_lo": "69/8",
+        "t_hi": null,
+        "t_sample": "77/8",
+        "positive": true,
+        "off_ok": true,
+        "stable": true,
+        "detail": "all Hurwitz minors positive",
+        "crosscheck": true,
+        "stable_fp": true
+       }
+      ],
+      "t_critical": []
+     },
+     {
+      "beta_cell": [
+       "11/5",
+       "9/4"
+      ],
+      "beta_sample": "89/40",
+      "t_cells": [
+       {
+        "t_lo": "40/9",
+        "t_hi": null,
+        "t_sample": "49/9",
+        "positive": true,
+        "off_ok": true,
+        "stable": true,
+        "detail": "all Hurwitz minors positive",
+        "crosscheck": true,
+        "stable_fp": true
+       }
+      ],
+      "t_critical": []
+     },
+     {
+      "beta_cell": [
+       "61/27",
+       "25/11"
+      ],
+      "beta_sample": "673/297",
+      "t_cells": [
+       {
+        "t_lo": "297/79",
+        "t_hi": "5",
+        "t_sample": "346/79",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 5 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       },
+       {
+        "t_lo": "6",
+        "t_hi": null,
+        "t_sample": "7",
+        "positive": true,
+        "off_ok": true,
+        "stable": true,
+        "detail": "all Hurwitz minors positive",
+        "crosscheck": true,
+        "stable_fp": true
+       }
+      ],
+      "t_critical": [
+       {
+        "interval": [
+         "5",
+         "6"
+        ],
+        "minpoly_hi_to_lo": [
+         491371068563105876010719335730997756246888,
+         283198564953022074872734101154776091329600,
+         -9883436169186451460519103516339525519977118,
+         -18883390683003078965941890278617242655376460,
+         -12146747633984379699518242026048029670088584,
+         -2624931424205342751496311838274272944252265
+        ]
+       }
+      ]
+     },
+     {
+      "beta_cell": [
+       "41/18",
+       "693/302"
+      ],
+      "beta_sample": "3107/1359",
+      "t_cells": [
+       {
+        "t_lo": "1359/389",
+        "t_hi": "19",
+        "t_sample": "4375/389",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 5 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       },
+       {
+        "t_lo": "20",
+        "t_hi": null,
+        "t_sample": "21",
+        "positive": true,
+        "off_ok": true,
+        "stable": true,
+        "detail": "all Hurwitz minors positive",
+        "crosscheck": true,
+        "stable_fp": true
+       }
+      ],
+      "t_critical": [
+       {
+        "interval": [
+         "19",
+         "20"
+        ],
+        "minpoly_hi_to_lo": [
+         905361472022390321014813669220884724255945021851800,
+         -11464582220818176335236258670091789914237245839372600,
+         -111303046800239537856401230985324641759013613021364722,
+         -188651266746042745295083836895628503249028703886143564,
+         -117584375884170901399624244875108453451310644846128896,
+         -25139730290497868963708864654573285794060055776840715
+        ]
+       }
+      ]
+     },
+     {
+      "beta_cell": [
+       "218/95",
+       "37/16"
+      ],
+      "beta_sample": "7003/3040",
+      "t_cells": [
+       {
+        "t_lo": "3040/923",
+        "t_hi": null,
+        "t_sample": "3963/923",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 4 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       }
+      ],
+      "t_critical": []
+     },
+     {
+      "beta_cell": [
+       "44/19",
+       "51/22"
+      ],
+      "beta_sample": "1937/836",
+      "t_cells": [
+       {
+        "t_lo": "836/265",
+        "t_hi": null,
+        "t_sample": "1101/265",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 4 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       }
+      ],
+      "t_critical": []
+     },
+     {
+      "beta_cell": [
+       "58/25",
+       "156/67"
+      ],
+      "beta_sample": "3893/1675",
+      "t_cells": [
+       {
+        "t_lo": "1675/543",
+        "t_hi": null,
+        "t_sample": "2218/543",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 4 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       }
+      ],
+      "t_critical": []
+     },
+     {
+      "beta_cell": [
+       "631/271",
+       "96/41"
+      ],
+      "beta_sample": "51887/22222",
+      "t_cells": [
+       {
+        "t_lo": "22222/7443",
+        "t_hi": null,
+        "t_sample": "29665/7443",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 4 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       }
+      ],
+      "t_critical": []
+     },
+     {
+      "beta_cell": [
+       "185/79",
+       "17/7"
+      ],
+      "beta_sample": "1319/553",
+      "t_cells": [
+       {
+        "t_lo": "553/213",
+        "t_hi": "5",
+        "t_sample": "809/213",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 4 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       },
+       {
+        "t_lo": "6",
+        "t_hi": null,
+        "t_sample": "7",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 4 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       }
+      ],
+      "t_critical": [
+       {
+        "interval": [
+         "5",
+         "6"
+        ],
+        "minpoly_hi_to_lo": [
+         13856925254188534882738677700669179349345717800,
+         -4266091941481043422354847620160482934419312700,
+         -255359859996183150609723579857104603352602410846,
+         -466534448497009194657973193580700690965081046152,
+         -300289222598070482473310748827406467360470378228,
+         -65834112382279419449904782160716106515038269795
+        ]
+       }
+      ]
+     },
+     {
+      "beta_cell": [
+       "5/2",
+       "23/9"
+      ],
+      "beta_sample": "91/36",
+      "t_cells": [
+       {
+        "t_lo": "36/19",
+        "t_hi": null,
+        "t_sample": "55/19",
+        "positive": true,
+        "off_ok": true,
+        "stable": false,
+        "detail": "Hurwitz minor 4 negative",
+        "crosscheck": true,
+        "stable_fp": false
+       }
+      ],
+      "t_critical": []
+     }
+    ],
+    "stable_cells": [
+     [
+      "2",
+      "64/31",
+      "63/31",
+      "31",
+      null
+     ],
+     [
+      "95/46",
+      "13/6",
+      "146/69",
+      "69/8",
+      null
+     ],
+     [
+      "11/5",
+      "9/4",
+      "89/40",
+      "40/9",
+      null
+     ],
+     [
+      "61/27",
+      "25/11",
+      "673/297",
+      "6",
+      null
+     ],
+     [
+      "41/18",
+      "693/302",
+      "3107/1359",
+      "20",
+      null
+     ]
+    ],
+    "projection_names": [
+     "lc_D",
+     "lc_Delta7_f0",
+     "lc_Delta7_f1",
+     "disc_Delta7_f1",
+     "lc_L",
+     "res_D_Delta7_f0",
+     "res_D_Delta7_f1",
+     "res_D_L",
+     "res_Delta7_f0_Delta7_f1",
+     "res_Delta7_f0_L",
+     "res_Delta7_f1_L"
+    ],
+    "beta_critical": [
+     {
+      "interval": [
+       "64/31",
+       "95/46"
+      ],
+      "minpoly_hi_to_lo": [
+       5802701,
+       -128144090,
+       1324626205,
+       -8816182292,
+       44942698856,
+       -199835121156,
+       826902149716,
+       -3136975969128,
+       10418302651780,
+       -29310357292160,
+       68880463296800,
+       -134689106462976,
+       218933971940416,
+       -295250769220096,
+       328650722076160,
+       -298913201999872,
+       218267128518656,
+       -124228637122560,
+       52336012050432,
+       -14743533551616,
+       2134352609280
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "13/6",
+       "11/5"
+      ],
+      "minpoly_hi_to_lo": [
+       1,
+       -4,
+       8,
+       -2,
+       -40,
+       98,
+       -138,
+       124,
+       -78,
+       30,
+       -8
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "9/4",
+       "61/27"
+      ],
+      "minpoly_hi_to_lo": [
+       17,
+       -308,
+       3078,
+       -21298,
+       111686,
+       -466006,
+       1592830,
+       -4548360,
+       10999534,
+       -22750666,
+       40521252,
+       -62412392,
+       83274416,
+       -96143424,
+       95654272,
+       -81297280,
+       58196224,
+       -34185216,
+       15826944,
+       -5242880,
+       1048576
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "25/11",
+       "41/18"
+      ],
+      "minpoly_hi_to_lo": [
+       109205,
+       29134108,
+       -1175027740,
+       22358352496,
+       -276489119440,
+       2510489382272,
+       -17854861088512,
+       103508721393920,
+       -502353637769728,
+       2079638740315136,
+       -7443249373666304,
+       23258687879749632,
+       -63906221737725952,
+       155185038581088256,
+       -334227192390205440,
+       639894557792993280,
+       -1090364963710828544,
+       1653966571943755776,
+       -2231753162232168448,
+       2673975886396522496,
+       -2836513610740531200,
+       2652481045391212544,
+       -2173358763971444736,
+       1547411165347315712,
+       -946447425441103872,
+       489377799295991808,
+       -209034683906785280,
+       71221965200818176,
+       -18273883253637120,
+       3166593487994880,
+       -281474976710656
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "693/302",
+       "218/95"
+      ],
+      "minpoly_hi_to_lo": [
+       18381,
+       -241828,
+       1509660,
+       -5854080,
+       15588192,
+       -29931840,
+       42288192,
+       -43823104,
+       32342016,
+       -15728640,
+       4194304
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "37/16",
+       "44/19"
+      ],
+      "minpoly_hi_to_lo": [
+       109205,
+       29134108,
+       -1175027740,
+       22358352496,
+       -276489119440,
+       2510489382272,
+       -17854861088512,
+       103508721393920,
+       -502353637769728,
+       2079638740315136,
+       -7443249373666304,
+       23258687879749632,
+       -63906221737725952,
+       155185038581088256,
+       -334227192390205440,
+       639894557792993280,
+       -1090364963710828544,
+       1653966571943755776,
+       -2231753162232168448,
+       2673975886396522496,
+       -2836513610740531200,
+       2652481045391212544,
+       -2173358763971444736,
+       1547411165347315712,
+       -946447425441103872,
+       489377799295991808,
+       -209034683906785280,
+       71221965200818176,
+       -18273883253637120,
+       3166593487994880,
+       -281474976710656
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "51/22",
+       "58/25"
+      ],
+      "minpoly_hi_to_lo": [
+       17,
+       -321,
+       2783,
+       -14792,
+       55392,
+       -171695,
+       602929,
+       -3066834,
+       18068394,
+       -95940929,
+       424638835,
+       -1551975008,
+       4719621701,
+       -12071733576,
+       26238678006,
+       -48893691820,
+       78668902591,
+       -109895767839,
+       133812361579,
+       -142363330838,
+       132453221209,
+       -107680275676,
+       76283021692,
+       -46850982528,
+       24742876960,
+       -11096413120,
+       4146190400,
+       -1252691968,
+       291078144,
+       -47185920,
+       4194304
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "156/67",
+       "631/271"
+      ],
+      "minpoly_hi_to_lo": [
+       5802701,
+       -128144090,
+       1324626205,
+       -8816182292,
+       44942698856,
+       -199835121156,
+       826902149716,
+       -3136975969128,
+       10418302651780,
+       -29310357292160,
+       68880463296800,
+       -134689106462976,
+       218933971940416,
+       -295250769220096,
+       328650722076160,
+       -298913201999872,
+       218267128518656,
+       -124228637122560,
+       52336012050432,
+       -14743533551616,
+       2134352609280
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "96/41",
+       "185/79"
+      ],
+      "minpoly_hi_to_lo": [
+       18381,
+       -241828,
+       1509660,
+       -5854080,
+       15588192,
+       -29931840,
+       42288192,
+       -43823104,
+       32342016,
+       -15728640,
+       4194304
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "17/7",
+       "5/2"
+      ],
+      "minpoly_hi_to_lo": [
+       17,
+       -308,
+       3078,
+       -21298,
+       111686,
+       -466006,
+       1592830,
+       -4548360,
+       10999534,
+       -22750666,
+       40521252,
+       -62412392,
+       83274416,
+       -96143424,
+       95654272,
+       -81297280,
+       58196224,
+       -34185216,
+       15826944,
+       -5242880,
+       1048576
+      ],
+      "positivity_root": false
+     },
+     {
+      "interval": [
+       "23/9",
+       "41/16"
+      ],
+      "minpoly_hi_to_lo": [
+       1,
+       -4,
+       5,
+       -4,
+       2,
+       -1
+      ],
+      "positivity_root": true
+     },
+     {
+      "interval": [
+       "14/5",
+       "3"
+      ],
+      "minpoly_hi_to_lo": [
+       109205,
+       29134108,
+       -1175027740,
+       22358352496,
+       -276489119440,
+       2510489382272,
+       -17854861088512,
+       103508721393920,
+       -502353637769728,
+       2079638740315136,
+       -7443249373666304,
+       23258687879749632,
+       -63906221737725952,
+       155185038581088256,
+       -334227192390205440,
+       639894557792993280,
+       -1090364963710828544,
+       1653966571943755776,
+       -2231753162232168448,
+       2673975886396522496,
+       -2836513610740531200,
+       2652481045391212544,
+       -2173358763971444736,
+       1547411165347315712,
+       -946447425441103872,
+       489377799295991808,
+       -209034683906785280,
+       71221965200818176,
+       -18273883253637120,
+       3166593487994880,
+       -281474976710656
+      ],
+      "positivity_root": false
+     }
+    ],
+    "verdict": "stable_somewhere"
+   }
+  }
+ ]
+}
