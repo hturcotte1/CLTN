@@ -40,6 +40,10 @@ are labelled approximations only.
 | `n7_candidates_legal_witnesses.json` | one LEGAL exact witness per n = 7 counterexample (first legal stored witness + an interior cell point), as re-decided by four independent verifiers | `notes/verify_124/` |
 | `n7_bulge_Rstar_exact.json` | exact sign of R* (Lemma AS) for all 124; bounded-in-t iff R* > 0 and positive at beta_c | `notes/bulge_exact/` |
 | `../notes/verify_124_workflow.json`, `../notes/verify_124/` | the independent machine verification of all 124 (four implementations, 742 points, 0 undecided); statuses in the summary files read VERIFIED | |
+| `theorem_U_explicit_instances.json`, `../notes/theorem_U/` | Theorem U (q_n* -> infinity): explicit n = 28 and n = 41 instances; arms-forest construction, thresholds; referee record `../notes/theorem_U_workflow.json` | |
+| `theorem_A_fixed_parameter_instances.json`, `../notes/theorem_A_fixed/` | Theorem A (unbounded support size at the fixed point eps = 1/21, delta = 11/210): R_k for k = 0..15; referee record `../notes/theorem_A_fixed_workflow.json` | |
+| `n8_instances_region2d.json` | two-parameter certificates of three 8-node family instances (candidates) | `n7/n8_instances_region2d.py` |
+| `qstar/qstar_n7_finite.json` | q_7* = plastic number, exact, sharpened over all 298 stable cells | `n7/qstar.py --sharpen` |
 | `SHA256SUMS_jsonl.txt` | checksums of the bulk files | |
 
 ## Theory (notes/)

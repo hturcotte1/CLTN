@@ -184,9 +184,13 @@ ray segments from the curve, and the two-parameter CAD is needed only for the cu
 * **Refuted on the way.** "Every limit polynomial has a root on Re = -1/2" (55 of 135 do not), and
   Conjecture P (positivity of (D^T + rI)^-1 1 for r in (0, 1/2) forces an eigenvalue with Re <= -1/2):
   33 catalogue bases, e.g. `&FMAlW\d\y?`, have all eigenvalues of D strictly right of -1/2 and a positive
-  vector at r = 49/100; the joins G v K_k are limit-stable for every k. **Open:** sup_n q_n* = infinity;
-  and, at a FIXED legal (eps, delta), whether the stable non-clique support size is unbounded (the
-  clique-class family F_k is stable at eps = 1/21, delta = 11/210 only for k <= 38).
+  vector at r = 49/100; the joins G v K_k are limit-stable for every k. **Settled:** sup_n q_n* = infinity (Theorem U), and at a FIXED legal (eps, delta) the stable
+  non-clique support size IS unbounded (Theorem A, refereed by an independent second proof): at
+  eps = 1/21, delta = 11/210, where Geneson's clique-class family dies at k = 41, the family R_k built on
+  the 7-node counterexample `&F^U|m^QTq?` is a stable positive non-clique full support for every k >= 0;
+  every legal point with beta < 4.9607 carries such a family (unconditionally), and conditionally on the
+  Theorem U lemmas every legal point does. **Open:** the growth rate of q_n* and of the smallest family
+  member.
 
 ## 8. Verification status
 
@@ -232,8 +236,8 @@ preprint, "independently obtained / consistent with", and claim no priority eith
 2. **n = 8 limit map**: the overflow-guarded filter `n7/filter8.c` is validated byte-identical on all
    n <= 7 data; the full pass is 500-800 CPU-hours (runbook `n7/REPRODUCE_n8_limit.md`) and needs
    rented compute. An incidental n = 8 limit candidate was already found in a random dense sample.
-3. **Theory**: prove or refute sup_n q_n* = infinity; characterise the limit-stable graphs (Conjecture P
-   is refuted, so a different invariant is needed); extend the Lean formalisation.
+3. **Theory**: characterise the limit-stable graphs (Conjecture P is refuted, so a different invariant
+   is needed); the growth rate of q_n*; extend the Lean formalisation (Theorems F, E, U, A).
 
 ## 11. Machine-checked statements (Lean 4 + Mathlib)
 
