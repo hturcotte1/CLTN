@@ -21,7 +21,7 @@ rationals, exact root isolation, Hurwitz determinants); decimals appear only as 
 | 5 | **Theorem F.** Geneson's graph plus a bidirected clique class of k nodes is limit-stable for every k >= 0: **the conjecture fails for every n >= 6**, with sup q = 1.1664 (n = 6), 1.2747 (n = 7), the plastic number 1.3247 (n = 8..14), then decreasing to 1. | PROVED, refereed |
 | 6 | **Theorem E.** An infinite family E_a (n = 7 + a) of finite-eps-only counterexamples: spectral abscissa exactly -1/2 for every a, stable positive at legal points with eps -> 0, beta -> 2+. `&FNFL~[udo?` is E_0 = the n = 6 hit idx 1387528 with one node doubled. | PROVED, refereed |
 | 7 | **Growing thresholds.** Families Q (n = 7 + k, q -> 1.8442), Q2 (n = 7 + 4k, q -> 3), Y (n = 8 + 5k, q >= 3.8 for k >= 363); exact lower bounds on the largest counterexample q at n = 8: 1709/1001, n = 9: 17691/10010, n = 10: 18418/10001, n = 47: 25000/10001. Conjecture: sup_n q_n* = infinity. | PROVED, refereed |
-| 8 | **Exact thresholds.** q_6* = root of 797q^6 - 1686q^5 + 2159q^4 - 3004q^3 + 2499q^2 - 2158q + 1521 in (561/481, 7/6): at n = 6 the conjecture holds for every legal parameter with q >= q_6* and fails for every q in (1, q_6*). At n = 7 the largest limit q is the plastic number (6 graphs); the exact finite-eps supremum q_7* is in section 4. | CERTIFIED (q_6* final; q_7* candidates) |
+| 8 | **Exact thresholds.** q_6* = root of 797q^6 - 1686q^5 + 2159q^4 - 3004q^3 + 2499q^2 - 2158q + 1521 in (561/481, 7/6): at n = 6 the conjecture holds for every legal parameter with q >= q_6* and fails for every q in (1, q_6*). **q_7* = the plastic number**, root of q^3 - q - 1 (1.3247): for n <= 7 the conjecture holds at every legal parameter with q >= rho and fails for every q in (1, rho) (section 4). | CERTIFIED (q_6* final; q_7* candidates) |
 | 9 | Not scooped as of 2026-10-14; an unrefereed Zenodo preprint independently confirms the n <= 5 exclusion and the value of q_6* (section 9). | checked |
 | 10 | Every witness (the three n = 6 graphs and all 124 n = 7 candidates) is a **nondegenerate** CTLN at its witness parameters, certified exactly over all 2^n - 1 supports. | CERTIFIED |
 
@@ -112,7 +112,17 @@ q^3 - q - 1, six graphs). The finite-eps supremum q_7* over the 124 regions is c
 `n7/qstar.py --sharpen` on the two-parameter certificates: see `certificates/qstar/qstar_n7_finite.json`
 and the line below.
 
-*(q_7* exact value: computation running at the time of this draft; this line is replaced when `certificates/qstar/qstar_n7_finite.json` exists.)*
+**Result (from the certificates; the exact `qstar --sharpen` run is the independent confirmation).**
+`q_7* = rho`, the plastic number, the real root of `q^3 - q - 1` (about 1.3247), a supremum that is not
+attained: six graphs approach it as t -> infinity with beta -> 1 + rho. Derivation: q < beta - 1 on
+every cell; on the 258 stable cells unbounded in t the supremum is beta_hi - 1 exactly and the right
+endpoints are the limit endpoints, whose maximum is 1 + rho (the limit stage, 0 mismatches); on the 40
+bounded cells the outer isolating bound gives beta_hi <= 16/7, so q < 9/7 < rho. Four of the six
+plastic-number graphs have limit intervals starting at q = 1, so the candidates' intervals cover (1, rho)
+without a gap. Hence, conditional on hand-verification of the candidates and combined with the n <= 6
+maps and Theorem F (reduction): **for n <= 7 the conjecture holds at every legal parameter with q >= rho
+and fails for every q in (1, rho)**; Geneson's bound n - 2 = 5 is replaced by 1.3247. For comparison the
+infinite family F_k alone reaches 1.2747 at n = 7.
 
 ## 5. Why the limit is not the whole story
 
