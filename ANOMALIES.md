@@ -691,3 +691,11 @@ hand-verification; the theorems are exact algebra on the verified n = 6 bases.)
 * Hygiene: the n = 73 witness in family_Y_certificate.json uses a non-standard digraph6
   header (chr(n+63)); decode from the adjacency rows. Referee workflow wf_452fbfe3-f07 is
   checking Theorems E, Q, Q2, Y, the catalogue, claim 16 and the q* tool.
+
+## 2026-10-15  n = 7 curve stage complete: 165 graphs are stable somewhere in the legal plane
+n7/run_n7_curve.py over all 8,909,123 positivity survivors, 4 shards, 4.1 h wall (16.4 CPU-h,
+6.6 ms/line): 5,135,775 dropped by the edge bound (edges <= 21), 3,773,183 'never' by the exact
+Lemma-R curve test, 165 'stable_somewhere', 0 escalations, 0 errors. Every digraph on 7 nodes
+is now accounted for by a proved necessary condition except these 165 (which include K7 and the
+124 known candidates if the pipeline is consistent -- checked by the aggregator). Far below the
+earlier projection of ~1.1 M two-parameter certifications. Two-parameter stage running on the 165.

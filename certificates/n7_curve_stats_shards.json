@@ -1,0 +1,49 @@
+{
+ "shard": "0/4",
+ "lines": 2227281,
+ "edges_lt_22": 1284055,
+ "never": 943181,
+ "stable_somewhere": 45,
+ "escalate": 0,
+ "errors": 0,
+ "last_line": 8909120,
+ "seconds": 14754.9,
+ "ms_per_line": 6.62,
+ "done": true
+}{
+ "shard": "1/4",
+ "lines": 2227281,
+ "edges_lt_22": 1283984,
+ "never": 943256,
+ "stable_somewhere": 41,
+ "escalate": 0,
+ "errors": 0,
+ "last_line": 8909121,
+ "seconds": 14649.3,
+ "ms_per_line": 6.57,
+ "done": true
+}{
+ "shard": "2/4",
+ "lines": 2227281,
+ "edges_lt_22": 1283663,
+ "never": 943582,
+ "stable_somewhere": 36,
+ "escalate": 0,
+ "errors": 0,
+ "last_line": 8909122,
+ "seconds": 14818.8,
+ "ms_per_line": 6.64,
+ "done": true
+}{
+ "shard": "3/4",
+ "lines": 2227280,
+ "edges_lt_22": 1284073,
+ "never": 943164,
+ "stable_somewhere": 43,
+ "escalate": 0,
+ "errors": 0,
+ "last_line": 8909119,
+ "seconds": 14691.5,
+ "ms_per_line": 6.59,
+ "done": true
+}

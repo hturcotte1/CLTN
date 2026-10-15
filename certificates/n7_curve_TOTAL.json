@@ -1,0 +1,10 @@
+{
+ "lines": 8909123,
+ "edges_lt_22": 5135775,
+ "never": 3773183,
+ "stable_somewhere": 165,
+ "escalate": 0,
+ "errors": 0,
+ "shards": 4,
+ "written": 165
+}
