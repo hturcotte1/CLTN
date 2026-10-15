@@ -1,0 +1,38 @@
+{
+ "scale_law": {
+  "trials": 25,
+  "Phi_identity_ok": 25,
+  "u_identity_ok": 25
+ },
+ "Q": {
+  "limit_eq_det": true,
+  "trace_L": "-1",
+  "trace_bound_minRe_le": "-1/7"
+ },
+ "Q2": {
+  "limit_eq_det": true,
+  "trace_L": "-1",
+  "trace_bound_minRe_le": "-1/7"
+ },
+ "Y": {
+  "limit_eq_det": true,
+  "trace_L": "-1",
+  "trace_bound_minRe_le": "-1/8"
+ },
+ "ceilings": {
+  "Q quartic, beta 2.8441 / 2.8442": [
+   true,
+   false
+  ],
+  "Q2 (2z^2+z+2), beta 3999/1000 / 4": [
+   true,
+   null
+  ],
+  "Y sextic ceiling bracket": [
+   "4.960659402131569",
+   "4.960659402133388",
+   "display only"
+  ],
+  "Y sextic, beta 24/5 stable": true
+ }
+}

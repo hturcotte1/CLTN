@@ -1,0 +1,86 @@
+[
+ {
+  "family": "Q2",
+  "k": 3,
+  "n": 19,
+  "beta": "3",
+  "eps": "1/10001",
+  "delta": "2/10001",
+  "q": "20000/10001",
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "detail": "all Hurwitz minors positive",
+  "clique": false,
+  "stable_fixed_point": true,
+  "x_first": [
+   "40004/831551",
+   "40004/831551",
+   "40004/1544309"
+  ],
+  "seconds": 0
+ },
+ {
+  "family": "Q",
+  "k": 25,
+  "n": 32,
+  "beta": "5/2",
+  "eps": "1/10001",
+  "delta": "3/20002",
+  "q": "15000/10001",
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "detail": "all Hurwitz minors positive",
+  "clique": false,
+  "stable_fixed_point": true,
+  "x_first": [
+   "1520152/351142157",
+   "1520152/351142157",
+   "1520152/351142157"
+  ],
+  "seconds": 4
+ },
+ {
+  "family": "Q2",
+  "k": 10,
+  "n": 47,
+  "beta": "7/2",
+  "eps": "1/10001",
+  "delta": "5/20002",
+  "q": "25000/10001",
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "detail": "all Hurwitz minors positive",
+  "clique": false,
+  "stable_fixed_point": true,
+  "x_first": [
+   "31543154/1825671351",
+   "31543154/1825671351",
+   "6500650/608557117"
+  ],
+  "seconds": 20
+ },
+ {
+  "family": "Y",
+  "k": 13,
+  "n": 73,
+  "beta": "3",
+  "eps": "1/10001",
+  "delta": "2/10001",
+  "q": "20000/10001",
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "detail": "all Hurwitz minors positive",
+  "clique": false,
+  "stable_fixed_point": true,
+  "x_first": [
+   "1910191/54905608",
+   "4030403/109811216",
+   "2590259/109811216"
+  ],
+  "seconds": 163
+ }
+]

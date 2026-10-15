@@ -1,0 +1,876 @@
+{
+ "all": [
+  {
+   "i": 8,
+   "base": "&FK@drUvHw?",
+   "chi_D": "(z**2 + z + 1)*(z**5 - z**4 - z**3 - 8*z**2 - 6*z - 3)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 29,
+   "base": "&FMBlWKt\\y?",
+   "chi_D": "(z**2 + z + 1)*(z**5 - z**4 - z**3 - 4*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 34,
+   "base": "&FMAlW\\d\\y?",
+   "chi_D": "z**7 - z**5 - 7*z**4 - 10*z**3 - 9*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 111,
+   "base": "&FNE[lLQ{`?",
+   "chi_D": "z**7 - z**5 - 8*z**4 - 12*z**3 - 11*z**2 - 5*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 155,
+   "base": "&FM@|vCtxi?",
+   "chi_D": "(z**2 + z + 1)*(z**5 - z**4 - z**3 - 4*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 162,
+   "base": "&FNFH[Yepu?",
+   "chi_D": "z**7 - z**5 - 7*z**4 - 9*z**3 - 8*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 183,
+   "base": "&F]SpqXRDk?",
+   "chi_D": "z**7 - 10*z**4 - 15*z**3 - 22*z**2 - 14*z - 6",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 203,
+   "base": "&F]S`YTbKx?",
+   "chi_D": "z**7 - 10*z**4 - 16*z**3 - 20*z**2 - 12*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 218,
+   "base": "&F^UX_TE{h?",
+   "chi_D": "z**7 - 8*z**4 - 11*z**3 - 14*z**2 - 8*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 223,
+   "base": "&F^UWxTClb?",
+   "chi_D": "z**7 - 6*z**4 - 8*z**3 - 8*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 235,
+   "base": "&F^VGzKUpo?",
+   "chi_D": "z**7 - 7*z**4 - 9*z**3 - 10*z**2 - 5*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 240,
+   "base": "&F^UXb\\Eoh?",
+   "chi_D": "(z**2 + z + 1)*(z**5 - z**4 - 5*z**2 - z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 251,
+   "base": "&F]UhoTFLx?",
+   "chi_D": "z**7 - 7*z**4 - 10*z**3 - 13*z**2 - 8*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 262,
+   "base": "&F]UgxDVWr?",
+   "chi_D": "z**7 - 7*z**4 - 9*z**3 - 11*z**2 - 6*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 270,
+   "base": "&F]UHOTfkx?",
+   "chi_D": "z**7 - 8*z**4 - 12*z**3 - 15*z**2 - 9*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 281,
+   "base": "&F]UGx\\Dhq?",
+   "chi_D": "z**7 - 8*z**4 - 12*z**3 - 15*z**2 - 9*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 291,
+   "base": "&F]UhqLPT}?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 4*z - 2)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 300,
+   "base": "&F]UhY\\`Dr?",
+   "chi_D": "z**7 - 7*z**4 - 9*z**3 - 11*z**2 - 6*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 309,
+   "base": "&F]UhA\\bT{?",
+   "chi_D": "z**7 - 6*z**4 - 8*z**3 - 10*z**2 - 6*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 314,
+   "base": "&F^UXk\\Esb?",
+   "chi_D": "z**7 - 6*z**4 - 8*z**3 - 8*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 332,
+   "base": "&F^VH[Xacv?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 4*z - 2)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 342,
+   "base": "&F^VH[Tch}?",
+   "chi_D": "z*(z**6 - 5*z**3 - 5*z**2 - 4*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 356,
+   "base": "&F^TXmOEwd?",
+   "chi_D": "z**7 - 9*z**4 - 12*z**3 - 18*z**2 - 10*z - 5",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 365,
+   "base": "&F^TxULoDi?",
+   "chi_D": "z**7 - 7*z**4 - 9*z**3 - 12*z**2 - 7*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 377,
+   "base": "&F^V\\K[epa?",
+   "chi_D": "z**7 - 5*z**4 - 6*z**3 - 6*z**2 - 3*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 390,
+   "base": "&F^VKlKQsp?",
+   "chi_D": "z**7 - 8*z**4 - 11*z**3 - 13*z**2 - 8*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 399,
+   "base": "&F^V[tSUhw?",
+   "chi_D": "z*(z**2 + z + 2)*(z**4 - z**3 - z**2 - 3*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 409,
+   "base": "&F^UK|\\Udy?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 415,
+   "base": "&F^VLM[eov?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 3*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 421,
+   "base": "&F]UxsTFHj?",
+   "chi_D": "z**7 - 5*z**4 - 6*z**3 - 7*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": false
+   }
+  },
+  {
+   "i": 424,
+   "base": "&F]Th]CvWr?",
+   "chi_D": "z**7 - 6*z**4 - 8*z**3 - 8*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 429,
+   "base": "&F^vlKUe[R?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 3*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 441,
+   "base": "&F^vk\\Yo\\U?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 447,
+   "base": "&F^vL[Yqt[?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 453,
+   "base": "&F^uK\\^clR?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 462,
+   "base": "&F^ulC^a{\\?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 471,
+   "base": "&F^vleMoT]?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 477,
+   "base": "&F^vl]UakR?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 483,
+   "base": "&F^uleNUTW?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 3*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 488,
+   "base": "&F^u|uVEhI?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 506,
+   "base": "&F^UxkNSta?",
+   "chi_D": "z**7 - 5*z**4 - 5*z**3 - 5*z**2 - 2*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 510,
+   "base": "&F^V\\[]e`e?",
+   "chi_D": "z**2*(z**2 + z + 2)*(z**3 - z**2 - z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 520,
+   "base": "&F^S{^ReL|?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 536,
+   "base": "&F^UluNQT|?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 546,
+   "base": "&F^Ul]NsTu?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 556,
+   "base": "&F^U|m^QTq?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 561,
+   "base": "&F^U|eNUTw?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 3*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 571,
+   "base": "&F^U|uJQT|?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 576,
+   "base": "&F^v\\SYfdM?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 3*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 585,
+   "base": "&F^v[\\UpkN?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 595,
+   "base": "&F^v\\eMp{J?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 600,
+   "base": "&F^v\\]YddU?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 605,
+   "base": "&F^u\\eNVoJ?",
+   "chi_D": "z*(z**2 + z + 1)*(z**4 - z**3 - 3*z - 1)",
+   "all_eigs_Re_gt_-1/2": false,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 615,
+   "base": "&F^u\\mFTxJ?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  }
+ ],
+ "violations": [
+  {
+   "i": 34,
+   "base": "&FMAlW\\d\\y?",
+   "chi_D": "z**7 - z**5 - 7*z**4 - 10*z**3 - 9*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 111,
+   "base": "&FNE[lLQ{`?",
+   "chi_D": "z**7 - z**5 - 8*z**4 - 12*z**3 - 11*z**2 - 5*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 162,
+   "base": "&FNFH[Yepu?",
+   "chi_D": "z**7 - z**5 - 7*z**4 - 9*z**3 - 8*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 183,
+   "base": "&F]SpqXRDk?",
+   "chi_D": "z**7 - 10*z**4 - 15*z**3 - 22*z**2 - 14*z - 6",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 203,
+   "base": "&F]S`YTbKx?",
+   "chi_D": "z**7 - 10*z**4 - 16*z**3 - 20*z**2 - 12*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 218,
+   "base": "&F^UX_TE{h?",
+   "chi_D": "z**7 - 8*z**4 - 11*z**3 - 14*z**2 - 8*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 223,
+   "base": "&F^UWxTClb?",
+   "chi_D": "z**7 - 6*z**4 - 8*z**3 - 8*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 235,
+   "base": "&F^VGzKUpo?",
+   "chi_D": "z**7 - 7*z**4 - 9*z**3 - 10*z**2 - 5*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 251,
+   "base": "&F]UhoTFLx?",
+   "chi_D": "z**7 - 7*z**4 - 10*z**3 - 13*z**2 - 8*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 262,
+   "base": "&F]UgxDVWr?",
+   "chi_D": "z**7 - 7*z**4 - 9*z**3 - 11*z**2 - 6*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 270,
+   "base": "&F]UHOTfkx?",
+   "chi_D": "z**7 - 8*z**4 - 12*z**3 - 15*z**2 - 9*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 281,
+   "base": "&F]UGx\\Dhq?",
+   "chi_D": "z**7 - 8*z**4 - 12*z**3 - 15*z**2 - 9*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 300,
+   "base": "&F]UhY\\`Dr?",
+   "chi_D": "z**7 - 7*z**4 - 9*z**3 - 11*z**2 - 6*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 309,
+   "base": "&F]UhA\\bT{?",
+   "chi_D": "z**7 - 6*z**4 - 8*z**3 - 10*z**2 - 6*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 314,
+   "base": "&F^UXk\\Esb?",
+   "chi_D": "z**7 - 6*z**4 - 8*z**3 - 8*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 342,
+   "base": "&F^VH[Tch}?",
+   "chi_D": "z*(z**6 - 5*z**3 - 5*z**2 - 4*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 356,
+   "base": "&F^TXmOEwd?",
+   "chi_D": "z**7 - 9*z**4 - 12*z**3 - 18*z**2 - 10*z - 5",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 365,
+   "base": "&F^TxULoDi?",
+   "chi_D": "z**7 - 7*z**4 - 9*z**3 - 12*z**2 - 7*z - 3",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 377,
+   "base": "&F^V\\K[epa?",
+   "chi_D": "z**7 - 5*z**4 - 6*z**3 - 6*z**2 - 3*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 390,
+   "base": "&F^VKlKQsp?",
+   "chi_D": "z**7 - 8*z**4 - 11*z**3 - 13*z**2 - 8*z - 2",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 424,
+   "base": "&F]Th]CvWr?",
+   "chi_D": "z**7 - 6*z**4 - 8*z**3 - 8*z**2 - 4*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 441,
+   "base": "&F^vk\\Yo\\U?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 462,
+   "base": "&F^ulC^a{\\?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 471,
+   "base": "&F^vleMoT]?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 506,
+   "base": "&F^UxkNSta?",
+   "chi_D": "z**7 - 5*z**4 - 5*z**3 - 5*z**2 - 2*z - 1",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 520,
+   "base": "&F^S{^ReL|?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 536,
+   "base": "&F^UluNQT|?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 546,
+   "base": "&F^Ul]NsTu?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 556,
+   "base": "&F^U|m^QTq?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 571,
+   "base": "&F^U|uJQT|?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 585,
+   "base": "&F^v[\\UpkN?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 595,
+   "base": "&F^v\\eMp{J?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  },
+  {
+   "i": 615,
+   "base": "&F^u\\mFTxJ?",
+   "chi_D": "z**2*(z**5 - 3*z**2 - 2*z - 1)",
+   "all_eigs_Re_gt_-1/2": true,
+   "u_pos": {
+    "1/2": true,
+    "49/100": true
+   }
+  }
+ ]
+}

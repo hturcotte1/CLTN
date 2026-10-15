@@ -1,0 +1,16 @@
+{
+ "matches_FNFL_certificate_rows": true,
+ "nodes_2_3_closed_twins": true,
+ "delete_2_iso_to_H3": "(2, 1, 5, 4, 3, 0)",
+ "delete_3_iso_to_H3": "(2, 1, 5, 4, 3, 0)",
+ "7chi_perp_factor": "(l + 1)*(l**2 + l + 1)*(7*l**3 + 14*l**2 + 14*l + 5)",
+ "7chi_perp_claim_ok": true,
+ "Phi_k_claim_ok": true,
+ "Phi_1_factor": "z*(z**2 + z + 1)*(7*z**3 + 7*z**2 + 7*z + 2)",
+ "Phi_k_mod_(z^2+z+1)": "-k + z*(1 - k) + 1",
+ "Phi_k_omega_claim_ok": true,
+ "zpsiD_mod": "z + 1",
+ "chiL_mod": "-z - 1",
+ "X1_consistency": true,
+ "three_cycle_modules": []
+}

@@ -1,0 +1,29 @@
+{
+ "n7_limit_CANDIDATES_lower_bound": {
+  "status": "CANDIDATES pending human hand-verification; LOWER bound on q_7* only",
+  "n_graphs_intervals": 123,
+  "unbounded": [],
+  "max_beta_c_minus_1": {
+   "minpoly_hi_to_lo": [
+    1,
+    0,
+    -1,
+    -1
+   ],
+   "isolating_interval": [
+    "49/37",
+    "53/40"
+   ],
+   "degree": 3,
+   "approx_decimal_NOT_A_CERTIFICATE": "1.324717957244746"
+  },
+  "attained_by": [
+   "&F^UXk\\Esb?",
+   "&F^U|eNUTw?",
+   "&F^VLOSekx?",
+   "&F^u\\eNVoJ?",
+   "&F^uk\\^_TU?",
+   "&F^vlKUe[R?"
+  ]
+ }
+}

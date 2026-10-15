@@ -1,0 +1,358 @@
+{
+ "n6_full_support": {
+  "aggregate": {
+   "n_stable_cells": 5,
+   "n_certificates": 3,
+   "undecided_cells": [],
+   "upper": {
+    "minpoly_hi_to_lo": [
+     797,
+     -1686,
+     2159,
+     -3004,
+     2499,
+     -2158,
+     1521
+    ],
+    "isolating_interval": [
+     "561/481",
+     "7/6"
+    ],
+    "degree": 6,
+    "approx_decimal_NOT_A_CERTIFICATE": "1.166355027849143"
+   },
+   "upper_attained_by": [
+    "idx1000255",
+    "idx1424629"
+   ],
+   "upper_beta_hi": {
+    "minpoly_hi_to_lo": [
+     797,
+     -6468,
+     22544,
+     -44440,
+     53280,
+     -38016,
+     13824
+    ],
+    "isolating_interval": [
+     "1042/481",
+     "13/6"
+    ],
+    "degree": 6,
+    "approx_decimal_NOT_A_CERTIFICATE": "2.166355027849143"
+   },
+   "lower": {
+    "minpoly_hi_to_lo": [
+     797,
+     -1686,
+     2159,
+     -3004,
+     2499,
+     -2158,
+     1521
+    ],
+    "isolating_interval": [
+     "561/481",
+     "7/6"
+    ],
+    "degree": 6,
+    "approx_decimal_NOT_A_CERTIFICATE": "1.166355027849143"
+   },
+   "lower_attained_by": [
+    "idx1000255",
+    "idx1424629"
+   ],
+   "exact": true,
+   "q_star": {
+    "minpoly_hi_to_lo": [
+     797,
+     -1686,
+     2159,
+     -3004,
+     2499,
+     -2158,
+     1521
+    ],
+    "isolating_interval": [
+     "561/481",
+     "7/6"
+    ],
+    "degree": 6,
+    "approx_decimal_NOT_A_CERTIFICATE": "1.166355027849143"
+   }
+  },
+  "cells": [
+   {
+    "label": "idx1424629",
+    "beta_cell_hull": [
+     "2",
+     "17/8"
+    ],
+    "beta_sample": "33/16",
+    "t_hull": [
+     "16",
+     null
+    ],
+    "upper_beta_hi_minus_1": {
+     "minpoly_hi_to_lo": [
+      43,
+      104,
+      219,
+      202,
+      110,
+      -330,
+      -622,
+      -906,
+      -561,
+      -302,
+      411,
+      592,
+      880,
+      512,
+      416
+     ],
+     "isolating_interval": [
+      "71/63",
+      "62/55"
+     ],
+     "degree": 14,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.127161367797639"
+    },
+    "lower": {
+     "minpoly_hi_to_lo": [
+      43,
+      104,
+      219,
+      202,
+      110,
+      -330,
+      -622,
+      -906,
+      -561,
+      -302,
+      411,
+      592,
+      880,
+      512,
+      416
+     ],
+     "isolating_interval": [
+      "71/63",
+      "62/55"
+     ],
+     "degree": 14,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.127161367797639"
+    },
+    "exact_sup": true,
+    "lower_reason": "t unbounded above on the cell: sup = beta_hi - 1 (S2)"
+   },
+   {
+    "label": "idx1424629",
+    "beta_cell_hull": [
+     "15/7",
+     "1029/475"
+    ],
+    "beta_sample": "7164/3325",
+    "t_hull": [
+     "29",
+     null
+    ],
+    "upper_beta_hi_minus_1": {
+     "minpoly_hi_to_lo": [
+      797,
+      -1686,
+      2159,
+      -3004,
+      2499,
+      -2158,
+      1521
+     ],
+     "isolating_interval": [
+      "561/481",
+      "7/6"
+     ],
+     "degree": 6,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.166355027849143"
+    },
+    "lower": {
+     "minpoly_hi_to_lo": [
+      797,
+      -1686,
+      2159,
+      -3004,
+      2499,
+      -2158,
+      1521
+     ],
+     "isolating_interval": [
+      "561/481",
+      "7/6"
+     ],
+     "degree": 6,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.166355027849143"
+    },
+    "exact_sup": true,
+    "lower_reason": "t unbounded above on the cell: sup = beta_hi - 1 (S2)"
+   },
+   {
+    "label": "idx1387528",
+    "beta_cell_hull": [
+     "2",
+     "152/73"
+    ],
+    "beta_sample": "149/73",
+    "t_hull": [
+     "73/3",
+     null
+    ],
+    "upper_beta_hi_minus_1": {
+     "minpoly_hi_to_lo": [
+      1,
+      2,
+      1,
+      -2,
+      -2,
+      -1
+     ],
+     "isolating_interval": [
+      "92/85",
+      "13/12"
+     ],
+     "degree": 5,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.083024803855043"
+    },
+    "lower": {
+     "minpoly_hi_to_lo": [
+      1,
+      2,
+      1,
+      -2,
+      -2,
+      -1
+     ],
+     "isolating_interval": [
+      "92/85",
+      "13/12"
+     ],
+     "degree": 5,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.083024803855043"
+    },
+    "exact_sup": true,
+    "lower_reason": "t unbounded above on the cell: sup = beta_hi - 1 (S2)"
+   },
+   {
+    "label": "idx1000255",
+    "beta_cell_hull": [
+     "2",
+     "17/8"
+    ],
+    "beta_sample": "33/16",
+    "t_hull": [
+     "16",
+     null
+    ],
+    "upper_beta_hi_minus_1": {
+     "minpoly_hi_to_lo": [
+      43,
+      104,
+      219,
+      202,
+      110,
+      -330,
+      -622,
+      -906,
+      -561,
+      -302,
+      411,
+      592,
+      880,
+      512,
+      416
+     ],
+     "isolating_interval": [
+      "71/63",
+      "62/55"
+     ],
+     "degree": 14,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.127161367797639"
+    },
+    "lower": {
+     "minpoly_hi_to_lo": [
+      43,
+      104,
+      219,
+      202,
+      110,
+      -330,
+      -622,
+      -906,
+      -561,
+      -302,
+      411,
+      592,
+      880,
+      512,
+      416
+     ],
+     "isolating_interval": [
+      "71/63",
+      "62/55"
+     ],
+     "degree": 14,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.127161367797639"
+    },
+    "exact_sup": true,
+    "lower_reason": "t unbounded above on the cell: sup = beta_hi - 1 (S2)"
+   },
+   {
+    "label": "idx1000255",
+    "beta_cell_hull": [
+     "15/7",
+     "1029/475"
+    ],
+    "beta_sample": "7164/3325",
+    "t_hull": [
+     "29",
+     null
+    ],
+    "upper_beta_hi_minus_1": {
+     "minpoly_hi_to_lo": [
+      797,
+      -1686,
+      2159,
+      -3004,
+      2499,
+      -2158,
+      1521
+     ],
+     "isolating_interval": [
+      "561/481",
+      "7/6"
+     ],
+     "degree": 6,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.166355027849143"
+    },
+    "lower": {
+     "minpoly_hi_to_lo": [
+      797,
+      -1686,
+      2159,
+      -3004,
+      2499,
+      -2158,
+      1521
+     ],
+     "isolating_interval": [
+      "561/481",
+      "7/6"
+     ],
+     "degree": 6,
+     "approx_decimal_NOT_A_CERTIFICATE": "1.166355027849143"
+    },
+    "exact_sup": true,
+    "lower_reason": "t unbounded above on the cell: sup = beta_hi - 1 (S2)"
+   }
+  ]
+ }
+}

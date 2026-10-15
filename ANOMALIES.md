@@ -715,3 +715,44 @@ two of size 4, one of 5, one of 8); 64 carry bidirected in-twins; edge counts 23
 Certificates: certificates/n7_finite_summary.json, certificates/COUNTEREXAMPLE_CANDIDATES_n7_finite.jsonl
 (every hit with its full two-parameter certificate, exact limit status and class key),
 certificates/n7_region2d/ (all 165 records). All 124 remain CANDIDATES pending hand-verification.
+
+## 2026-10-15  Referee workflow wf_452fbfe3-f07: every refereed theory claim holds; Conjecture P refuted; preprint count note corrected
+(notes/referee_n7_theory_workflow.json; artifacts notes/referee_wf4/.) Four independent referees,
+all "holds, high confidence": Theorem E + Lemma B (finite-eps-only family, R* = 1/4 for all a,
+every proof step re-derived, instances a = 0..5 recomputed; write-up gaps: pick a rational gamma
+in Lemma B, mention the roots at z = 1 in step 2, a missing 3c/4 coefficient in the notes, an
+unrecorded AMAX = 5 run); Theorems Q, Q2, Y (thresholds k >= 25/79/286, 3/10/33, 13/24/46/117/363
+proved sharp by exact root isolation in k; Y covers n = 8 + 5k only; the "many-class ceiling" is
+a class-size-limit statement, not a bound for finite classes); the 626-entry catalogue (all
+re-proved independently, for all REAL k >= 1; entry 616, base &FNFL~[udo?, fails at k = 0 exactly
+as alpha = -1/2 predicts) and claim 16 (21 of 123 candidates contain an n = 6 hit; none contains
+K6); the q* tool (q_6* confirmed as Geneson's sextic to 4e-31; the FNFL supremum, a degree-25
+number ~1.0414, is the CORNER where Delta_6 = 0 meets the positivity line beta = beta_pos at
+t ~ 25.009, not the t -> infinity end; qstar_fnfl.json's aggregate block is stale and reports only
+the weaker sample bound 1.0195; --selftest is documented but not implemented).
+Shared dependency of every "for all k" statement: Lemma I.3/I.4 (limit-to-finite-t transfer,
+notes/lemma_I_spectral.md), refereed in the n = 6 phase and corroborated at every sampled finite t
+here, not re-proved by these referees.
+CONJECTURE P REFUTED exactly (side finding of the catalogue referee): 33 of the 54 "S = all"
+catalogue entries, e.g. base &FMAlW\d\y? with chi_D = z^7 - z^5 - 7z^4 - 10z^3 - 9z^2 - 4z - 1,
+have every eigenvalue of D = J - I - A with Re > -1/2 AND u = (D^T + rI)^-1 1 > 0 at r = 49/100;
+so positivity does not force an eigenvalue at or beyond Re = -1/2, and the joins G v K_k are
+limit-stable for every k >= 1 (notes/research_wf3/theory/notes_theory.md item 13 is wrong as
+stated OPEN; the catalogue proves the opposite).
+Correction (append-only) to the entry of 2026-10-15 on the "Six Is Minimal" preprint: its counts
+are NOT inconsistent -- 9,846 = A000273(1) + ... + A000273(5) and 1,052,741 = sum of 2^(m(m-1)) for
+m = 1..5; my note compared them with the m = 5 values alone. The claims diff (literature agent;
+their repository cloned read-only): their conventions equal ours up to a transpose of the nonedge
+matrix; their n <= 5 exclusion equals our n = 5 map; their Geneson-class region gives
+1 + u* = 1.16635502785 = our q_6* (same sextic, same degree-14 beta polynomial): an INDEPENDENT
+confirmation of q_6*; their 5r + 6 family is a Lemma-W clique-expansion of the same seed with
+q -> 1. They have no n = 6 classification, no n >= 7 statement, no finite-eps-only example, no
+Theorem F, no growing-q families. They have an explicit rational parameter schedule for all r and
+global NONDEGENERACY certificates (parity trick D K = I mod 2); Geneson's conjecture is stated for
+nondegenerate CTLNs, so n7/nondegeneracy_check.py now certifies nondegeneracy exactly (all 2^n - 1
+supports: nonsingular, no zero coordinate, no zero drive) at a witness point of every hit.
+Their open question, which Theorem F does not answer: at FIXED (eps, delta) the clique-class family
+F_k is stable only up to some k (exact: at eps = 1/21, delta = 11/210 stable for k <= 38, unstable
+at k = 41, 45, 60), so unbounded support size at a fixed parameter remains open for both groups.
+Positioning: cite as an unrefereed preprint; "independently obtained / consistent with"; no
+priority language.

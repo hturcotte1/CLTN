@@ -1,0 +1,268 @@
+{
+ "Q2": {
+  "Phi(z,k)": "z**3*(4*k*z**4 + 4*k*z**3 + 9*k*z**2 + 4*k*z + 4*k + 7*z**4 + 12*z**3 + 21*z**2 + 13*z + 5)",
+  "z_psi_D": "z**3*(7*z**4 + 12*z**3 + 21*z**2 + 13*z + 5)",
+  "coeff_of_k": "z**3*(2*z**2 + z + 2)**2",
+  "limit_poly_monic": "z**3*(2*z**2 + z + 2)**2/4",
+  "explicit_check": [
+   [
+    1,
+    11,
+    true
+   ],
+   [
+    2,
+    15,
+    true
+   ],
+   [
+    3,
+    19,
+    true
+   ]
+  ],
+  "positivity_all_beta_gt_2": true,
+  "positivity_polys": {
+   "det": [
+    "4*beta**5 - 11*beta**4 + 18*beta**3 - 12*beta**2 + 7*beta - 1",
+    0,
+    479
+   ],
+   "w0": [
+    "beta**4 - 2*beta**3 + 3*beta**2 - beta + 1",
+    0,
+    52
+   ],
+   "w1": [
+    "beta**4 - 2*beta**3 + 3*beta**2 - beta + 1",
+    0,
+    52
+   ],
+   "w2": [
+    "(beta - 1)**2*(beta**2 - beta + 1)",
+    0,
+    28
+   ],
+   "w3": [
+    "beta**4 - 3*beta**3 + 4*beta**2 - 2*beta + 1",
+    0,
+    31
+   ],
+   "w4": [
+    "beta**2 - beta + 1",
+    0,
+    7
+   ],
+   "w5": [
+    "beta**4 - 3*beta**3 + 5*beta**2 - 3*beta + 1",
+    0,
+    37
+   ],
+   "w6": [
+    "beta**2 - beta + 1",
+    0,
+    7
+   ],
+   "sigma-1 S=1101111": [
+    "beta**4 - beta**3 + 3*beta**2 - beta + 1",
+    0,
+    79
+   ],
+   "sigma-1 S=1110111": [
+    "(beta**2 + 1)*(beta**2 - beta + 1)",
+    0,
+    70
+   ]
+  },
+  "thresholds": {
+   "5/2": {
+    "k0_claimed": 1,
+    "all_minors_LCpos_and_no_root_ge_k0": true,
+    "least_K_all_good_from_K_on": 1,
+    "minors": [
+     {
+      "deg": 1,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 1,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 2,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 3,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 4,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 5,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 6,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 7,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     }
+    ]
+   },
+   "3": {
+    "k0_claimed": 3,
+    "all_minors_LCpos_and_no_root_ge_k0": true,
+    "least_K_all_good_from_K_on": 3,
+    "minors": [
+     {
+      "deg": 1,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 1,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 2,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 3,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 4,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 5,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 6,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 7,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     }
+    ]
+   },
+   "7/2": {
+    "k0_claimed": 10,
+    "all_minors_LCpos_and_no_root_ge_k0": true,
+    "least_K_all_good_from_K_on": 10,
+    "minors": [
+     {
+      "deg": 1,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 1,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 2,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 3,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 4,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 5,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 6,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 7,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     }
+    ]
+   },
+   "19/5": {
+    "k0_claimed": 33,
+    "all_minors_LCpos_and_no_root_ge_k0": true,
+    "least_K_all_good_from_K_on": 33,
+    "minors": [
+     {
+      "deg": 1,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 1,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 2,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 3,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 4,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 5,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 6,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     },
+     {
+      "deg": 7,
+      "LC_pos": true,
+      "roots_ge_k0": 0
+     }
+    ]
+   }
+  }
+ }
+}
