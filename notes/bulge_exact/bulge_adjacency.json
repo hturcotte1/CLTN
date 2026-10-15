@@ -1,0 +1,722 @@
+[
+ {
+  "d6": "&FK@drUvHw?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "55856/27187",
+     "35/17"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "40"
+    ],
+    "display_only_first_order_t_hi": 39.42209253560996,
+    "beta_c_display": 2.054511322549649,
+    "beta_sample_display": 2.0566674383734442
+   }
+  ]
+ },
+ {
+  "d6": "&F^UX_TE{h?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "35/16",
+     "11/5"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "10"
+    ],
+    "display_only_first_order_t_hi": 11.535509946520957,
+    "beta_c_display": 2.1858235319464443,
+    "beta_sample_display": 2.19375
+   }
+  ]
+ },
+ {
+  "d6": "&F^u\\mFTxJ?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "4915/2362",
+     "25/12"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "66"
+    ],
+    "display_only_first_order_t_hi": 61.94156176734894,
+    "beta_c_display": 2.080863489417646,
+    "beta_sample_display": 2.082098504092577
+   }
+  ]
+ },
+ {
+  "d6": "&FMELx\\vxr?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "103/48",
+     "58/27"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "62"
+    ],
+    "display_only_first_order_t_hi": 57.63654251190627,
+    "beta_c_display": 2.1454575579100332,
+    "beta_sample_display": 2.146990740740741
+   }
+  ]
+ },
+ {
+  "d6": "&FNDL}[u|o?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "83/40",
+     "277/133"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "72"
+    ],
+    "display_only_first_order_t_hi": 57.733696894113706,
+    "beta_c_display": 2.0744366250266153,
+    "beta_sample_display": 2.0788533834586467
+   }
+  ]
+ },
+ {
+  "d6": "&F]SpqXRDk?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "21706/10655",
+     "218/107"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "60"
+    ],
+    "display_only_first_order_t_hi": 54.36558972264599,
+    "beta_c_display": 2.0371656386575956,
+    "beta_sample_display": 2.037274413749852
+   }
+  ]
+ },
+ {
+  "d6": "&F]UhY\\`Dr?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "25629/12653",
+     "69/34"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "75"
+    ],
+    "display_only_first_order_t_hi": 42.71149301994076,
+    "beta_c_display": 2.025527541215147,
+    "beta_sample_display": 2.027469653790545
+   }
+  ]
+ },
+ {
+  "d6": "&F^V\\[]e`e?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "331/164",
+     "77/38"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "79"
+    ],
+    "display_only_first_order_t_hi": 61.28325450629821,
+    "beta_c_display": 2.0182924811834395,
+    "beta_sample_display": 2.022304236200257
+   }
+  ]
+ },
+ {
+  "d6": "&FMAlx\\v|p?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "103/48",
+     "58/27"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "62"
+    ],
+    "display_only_first_order_t_hi": 57.63654251190627,
+    "beta_c_display": 2.1454575579100332,
+    "beta_sample_display": 2.146990740740741
+   }
+  ]
+ },
+ {
+  "d6": "&F^U|uJQT|?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "4915/2362",
+     "25/12"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "66"
+    ],
+    "display_only_first_order_t_hi": 61.94156176734894,
+    "beta_c_display": 2.080863489417646,
+    "beta_sample_display": 2.082098504092577
+   }
+  ]
+ },
+ {
+  "d6": "&FMELx\\vtt?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "103/48",
+     "58/27"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "62"
+    ],
+    "display_only_first_order_t_hi": 57.63654251190627,
+    "beta_c_display": 2.1454575579100332,
+    "beta_sample_display": 2.146990740740741
+   }
+  ]
+ },
+ {
+  "d6": "&F^VGzKUpo?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "252787/125843",
+     "209/104"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "212"
+    ],
+    "display_only_first_order_t_hi": 186.90872588808878,
+    "beta_c_display": 2.0087489967285492,
+    "beta_sample_display": 2.009182190690598
+   }
+  ]
+ },
+ {
+  "d6": "&F^TxULoDi?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "319/153",
+     "71/34"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "27"
+    ],
+    "display_only_first_order_t_hi": 26.837394839727224,
+    "beta_c_display": 2.084916671735101,
+    "beta_sample_display": 2.0866013071895426
+   }
+  ]
+ },
+ {
+  "d6": "&F^v\\SYfdM?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "83/38",
+     "46/21"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "16"
+    ],
+    "display_only_first_order_t_hi": 18.818728177469886,
+    "beta_c_display": 2.184067783861453,
+    "beta_sample_display": 2.18734335839599
+   }
+  ]
+ },
+ {
+  "d6": "&FMEHz\\v|p?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "103/48",
+     "58/27"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "62"
+    ],
+    "display_only_first_order_t_hi": 57.63654251190627,
+    "beta_c_display": 2.1454575579100332,
+    "beta_sample_display": 2.146990740740741
+   }
+  ]
+ },
+ {
+  "d6": "&F^UWxTClb?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "65/31",
+     "19/9"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "29"
+    ],
+    "display_only_first_order_t_hi": 22.682543223329134,
+    "beta_c_display": 2.0959697850182297,
+    "beta_sample_display": 2.1039426523297493
+   }
+  ]
+ },
+ {
+  "d6": "&F^V\\K[epa?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "18479/9057",
+     "47/23"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "71"
+    ],
+    "display_only_first_order_t_hi": 53.16652378649182,
+    "beta_c_display": 2.04030031482304,
+    "beta_sample_display": 2.041889290531945
+   }
+  ]
+ },
+ {
+  "d6": "&F^UxkNSta?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "7949/3937",
+     "105/52"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "110"
+    ],
+    "display_only_first_order_t_hi": 90.59529303279777,
+    "beta_c_display": 2.0190499451748902,
+    "beta_sample_display": 2.0191404036654226
+   }
+  ]
+ },
+ {
+  "d6": "&FNE[lLQ{`?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "7858/3891",
+     "95/47"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "114"
+    ],
+    "display_only_first_order_t_hi": 112.72502469275352,
+    "beta_c_display": 2.0195320243889388,
+    "beta_sample_display": 2.020404424831991
+   }
+  ]
+ },
+ {
+  "d6": "&F^u|uVEhI?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "395/193",
+     "41/20"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "60"
+    ],
+    "display_only_first_order_t_hi": 50.26397926888548,
+    "beta_c_display": 2.0466250182365595,
+    "beta_sample_display": 2.048316062176166
+   }
+  ]
+ },
+ {
+  "d6": "&FMEHz\\vxr?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "103/48",
+     "58/27"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "62"
+    ],
+    "display_only_first_order_t_hi": 57.63654251190627,
+    "beta_c_display": 2.1454575579100332,
+    "beta_sample_display": 2.146990740740741
+   }
+  ]
+ },
+ {
+  "d6": "&F^UluNQT|?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "4915/2362",
+     "25/12"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "66"
+    ],
+    "display_only_first_order_t_hi": 61.94156176734894,
+    "beta_c_display": 2.080863489417646,
+    "beta_sample_display": 2.082098504092577
+   }
+  ]
+ },
+ {
+  "d6": "&F]UhA\\bT{?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "156337/77739",
+     "167/83"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "187"
+    ],
+    "display_only_first_order_t_hi": 162.1934670514138,
+    "beta_c_display": 2.0110497891575765,
+    "beta_sample_display": 2.011548993798681
+   }
+  ]
+ },
+ {
+  "d6": "&F^v[\\UpkN?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "3317/1564",
+     "87/41"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "21"
+    ],
+    "display_only_first_order_t_hi": 16.329476375176966,
+    "beta_c_display": 2.120843867021833,
+    "beta_sample_display": 2.121397604641008
+   }
+  ]
+ },
+ {
+  "d6": "&FMBlWKt\\y?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "39121/19382",
+     "101/50"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "112"
+    ],
+    "display_only_first_order_t_hi": 103.67988133330981,
+    "beta_c_display": 2.018419151238834,
+    "beta_sample_display": 2.0192095758951605
+   }
+  ]
+ },
+ {
+  "d6": "&F^U|m^SPb?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "751/370",
+     "59/29"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "63"
+    ],
+    "display_only_first_order_t_hi": 35.03703861621464,
+    "beta_c_display": 2.0297242985109634,
+    "beta_sample_display": 2.0321062441752096
+   }
+  ]
+ },
+ {
+  "d6": "&FMELx\\vpv?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "103/48",
+     "58/27"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "62"
+    ],
+    "display_only_first_order_t_hi": 57.63654251190627,
+    "beta_c_display": 2.1454575579100332,
+    "beta_sample_display": 2.146990740740741
+   }
+  ]
+ },
+ {
+  "d6": "&FNDL~[ulo?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "83/40",
+     "277/133"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "72"
+    ],
+    "display_only_first_order_t_hi": 57.733696894113706,
+    "beta_c_display": 2.0744366250266153,
+    "beta_sample_display": 2.0788533834586467
+   }
+  ]
+ },
+ {
+  "d6": "&F]UgxDVWr?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "96565/47674",
+     "69/34"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "75"
+    ],
+    "display_only_first_order_t_hi": 42.711511249049764,
+    "beta_c_display": 2.025527541215147,
+    "beta_sample_display": 2.027469652961659
+   }
+  ]
+ },
+ {
+  "d6": "&F^VKlKQsp?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "35649/17704",
+     "145/72"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "220"
+    ],
+    "display_only_first_order_t_hi": 218.28073952947756,
+    "beta_c_display": 2.013612740221618,
+    "beta_sample_display": 2.0137508158859267
+   }
+  ]
+ },
+ {
+  "d6": "&F^vlmZEPT?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "751/370",
+     "59/29"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "63"
+    ],
+    "display_only_first_order_t_hi": 35.03703861621464,
+    "beta_c_display": 2.0297242985109634,
+    "beta_sample_display": 2.0321062441752096
+   }
+  ]
+ },
+ {
+  "d6": "&F^Ul]NsTu?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "4915/2362",
+     "25/12"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "66"
+    ],
+    "display_only_first_order_t_hi": 61.94156176734894,
+    "beta_c_display": 2.080863489417646,
+    "beta_sample_display": 2.082098504092577
+   }
+  ]
+ },
+ {
+  "d6": "&FMEHz\\vpv?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "103/48",
+     "58/27"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "62"
+    ],
+    "display_only_first_order_t_hi": 57.63654251190627,
+    "beta_c_display": 2.1454575579100332,
+    "beta_sample_display": 2.146990740740741
+   }
+  ]
+ },
+ {
+  "d6": "&F]S`YTbKx?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "190/89",
+     "62/29"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "21"
+    ],
+    "display_only_first_order_t_hi": 21.29701914981693,
+    "beta_c_display": 2.134798339669137,
+    "beta_sample_display": 2.136381247578458
+   }
+  ]
+ },
+ {
+  "d6": "&F^UXc\\Cxi?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "205/91",
+     "25/11"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "21"
+    ],
+    "display_only_first_order_t_hi": 10.960259804137912,
+    "beta_c_display": 2.252724783931131,
+    "beta_sample_display": 2.2627372627372626
+   }
+  ]
+ },
+ {
+  "d6": "&FK@dyUfXp?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "923/437",
+     "112/53"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "16"
+    ],
+    "display_only_first_order_t_hi": 13.399887201477211,
+    "beta_c_display": 2.1121280067226844,
+    "beta_sample_display": 2.1126678468114504
+   }
+  ]
+ },
+ {
+  "d6": "&FMEHz\\vtt?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "103/48",
+     "58/27"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "62"
+    ],
+    "display_only_first_order_t_hi": 57.63654251190627,
+    "beta_c_display": 2.1454575579100332,
+    "beta_sample_display": 2.146990740740741
+   }
+  ]
+ },
+ {
+  "d6": "&FMELx\\v|p?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "103/48",
+     "58/27"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "62"
+    ],
+    "display_only_first_order_t_hi": 57.63654251190627,
+    "beta_c_display": 2.1454575579100332,
+    "beta_sample_display": 2.146990740740741
+   }
+  ]
+ },
+ {
+  "d6": "&FNFL~[udo?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "2",
+     "27/13"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "53"
+    ],
+    "display_only_first_order_t_hi": 52.0,
+    "beta_c_display": 2.0,
+    "beta_sample_display": 2.0384615384615383
+   }
+  ]
+ },
+ {
+  "d6": "&F^S{^ReL|?",
+  "bounded_cells": [
+   {
+    "beta_cell": [
+     "4915/2362",
+     "25/12"
+    ],
+    "left_critical_is_beta_c": true,
+    "t_hi_at_sample": [
+     "66"
+    ],
+    "display_only_first_order_t_hi": 61.94156176734894,
+    "beta_c_display": 2.080863489417646,
+    "beta_sample_display": 2.082098504092577
+   }
+  ]
+ }
+]

@@ -84,7 +84,11 @@ Files: `n7/filter7p.c`, `n7/resolve_U.py`, `n7/curve_test.py`, `n7/run_n7_curve.
   value q_c, the most frequent being q^5 + 2q^4 + q^3 - 2q^2 - 2q - 1 (17 graphs; the same quintic as
   the n = 6 hit idx 1387528), and the plastic number q^3 - q - 1 (6 graphs, the largest q_c).
 * 40 of the 124 have a stable cell bounded above in t: at beta slightly above beta_c the full support
-  is stable for a window of moderate t only (the "bulge"). Exact witnesses for two of them:
+  is stable for a window of moderate t only (the "bulge"). Exactly characterised (Lemma AS, exact R*
+  for all 124, `certificates/n7_bulge_Rstar_exact.json`): a graph bulges iff R* > 0 AND its fixed point
+  is positive at beta_c; 51 have R* > 0 but 11 of those lose positivity before beta_c, and every bounded
+  cell starts exactly at beta_c. The six plastic-number graphs do not bulge (their limit interval ends at
+  a positivity root). Exact witnesses for two bulging graphs:
   `certificates/n7_limit_hits_finite_eps_bulge_witnesses.json`.
 * 21 of the 123 contain an n = 6 counterexample as an induced subgraph; none contains K6.
 * `&FNFL~[udo?` (28 arcs): `7 chi_perp = (l + 1)(l^2 + l + 1)(7l^3 + 14l^2 + 14l + 5)`, so

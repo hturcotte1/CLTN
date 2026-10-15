@@ -807,3 +807,17 @@ eigenvalue 1 + delta (non-adjacent) or 1 - eps (bidirected); hence -I + W has th
 > 0 and is never Hurwitz stable when two non-adjacent in-twins lie in the support, for every eps
 and every delta > 0, including the induced-subgraph form. Axiom audit: 87 theorems, standard
 axioms only, 0 sorryAx.
+
+## 2026-10-15  The bulge criterion, exactly: bounded-in-t stable cells <=> R* > 0 AND positive at beta_c (124/124)
+Exact R* (Lemma AS) for all 124 n = 7 hits (notes/bulge_exact/, certificates/n7_bulge_Rstar_exact.json):
+51 positive, 73 negative, none zero; every critical root simple and not shared with chi. R* > 0 alone
+matches the 40 graphs with a stable cell bounded above in t on 113 of 124; the 11 exceptions all have
+R* > 0 but FAIL positivity at beta_c (their limit interval ends at a positivity root a_k below the
+Hurwitz boundary), so their bulge beyond beta_c is pure stability, never a stable fixed point. With
+the positivity condition the rule is exact: 40 true/true, 84 false/false. All 40 bounded cells start
+exactly at beta_c (gcd test against the CAD critical points); no bounded cell occurs anywhere else.
+FNFL: R* = 1/4 exactly, beta_c = 2. The SIX PLASTIC-NUMBER graphs (largest limit q_c) do NOT bulge:
+their limit interval ends at 1 + rho because positivity ends there, with the stability boundary
+further right (beta_c ~ 2.33 to 2.5). Validation: the right end of all 93 Delta-terminated limit
+intervals equals the exact beta_c (0 mismatches); the float first-order table agreed on sign(R*) for
+all 123; the CAD t_hi values match beta_c^3 R*/(beta - beta_c) to first order (e.g. 13.4 vs 16).
