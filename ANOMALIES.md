@@ -917,3 +917,16 @@ Lemma M2: eigenvalues of geometric multiplicity >= 2 survive the rank-one class 
 need beta < m - 1. The preprint's and our own open question is thus answered: support size is
 unbounded at a fixed parameter. certificates/theorem_A_fixed_parameter_instances.json (k = 0..15
 recomputed here). All n >= 8 members are candidates pending hand-verification.
+
+## 2026-10-15  n = 8 prefilter started LOCALLY at low priority (free alternative to rented compute, days of wall time)
+n8/run_n8_local.sh: geng 8 15:28 k/K | directg -e29:56 | filter8, the arcs >= 29 restriction justified by
+the (Lean-checked) e_2 edge bound, in resumable shards at nice 19 with 3 workers. Lessons: (1) the first
+version used plain sh, where `jobs -p` inside $(...) does not see the parent's jobs, so all 400 shards
+started at once (140 filter processes); rewritten as a bash job pool with `wait -n`. (2) geng's res/mod
+classes at n = 8 are extremely uneven: of 400 shards, 367 held 31,894 digraphs in total and the other 33
+essentially all 1.79 trillion, so the split was raised to K = 4000 for resumability. (3) Killing stray
+pipelines by pattern killed the orchestrator's own shell three times, because the invoking command line
+contained the pattern; the fix is a kill script on disk that assembles its patterns at runtime and is
+invoked by a command line containing none of them (scratchpad/kill_n8.sh). ETA on 3 cores: about a week.
+Also running: n7/run_n7_proper_supports.py (12,241 graphs, ~0.4 s each, three shards) and a paper-draft
+workflow.
