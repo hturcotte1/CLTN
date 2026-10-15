@@ -821,3 +821,13 @@ their limit interval ends at 1 + rho because positivity ends there, with the sta
 further right (beta_c ~ 2.33 to 2.5). Validation: the right end of all 93 Delta-terminated limit
 intervals equals the exact beta_c (0 mismatches); the float first-order table agreed on sign(R*) for
 all 123; the CAD t_hi values match beta_c^3 R*/(beta - beta_c) to first order (e.g. 13.4 vs 16).
+
+## 2026-10-15  q_7* is the plastic number, exactly, and it is not attained
+From the 124 two-parameter certificates: every stable cell unbounded in t has sup q = beta_hi - 1 with
+beta_hi a limit endpoint (max 1 + rho, six graphs); every one of the 40 bounded cells has the outer
+isolating bound beta_hi <= 16/7, so q < 9/7 there; hence q_7* = rho = root of q^3 - q - 1 ~ 1.3247,
+approached only as t -> infinity. Four of the six plastic-number graphs have limit intervals starting
+at q = 1, so the union of the candidates' intervals covers (1, rho) with no gap. Conditional on hand-
+verification: for n <= 7 the conjecture holds for every legal parameter with q >= rho and fails for
+every q in (1, rho). The exact qstar --sharpen run (independent machinery) is still computing; its
+output is the confirmation certificate (certificates/qstar/qstar_n7_finite.json when done).
