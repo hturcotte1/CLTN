@@ -21,3 +21,6 @@ n7/filter8
 notes/research_wf3/filter8/filter8
 notes/research_wf3/filter8/filter8_ovftest
 n7/region2d/
+n7/proper/*.log
+n8/parts/*.tmp
+n8/run_n8_local.log
