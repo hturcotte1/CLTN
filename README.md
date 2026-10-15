@@ -35,4 +35,7 @@ If you swap in nauty, re-run the A000273 check first.
   graphs, 123 visible in the eps -> 0 limit and one only at finite eps. All 124 are candidates pending
   human hand-verification.
 * All n >= 6: counterexamples exist for every n (Theorem F), including an infinite family invisible in
-  the limit (Theorem E), and families whose critical q grows without known bound.
+  the limit (Theorem E); the critical q is unbounded in n (Theorem U); and at one fixed legal parameter
+  the stable non-clique support size is unbounded (Theorem A). All theorems refereed by independent
+  agents; 87 supporting lemmas machine-checked in Lean 4 + Mathlib (notes/lean/).
+* Start with notes/FINAL_SUMMARY.md.
