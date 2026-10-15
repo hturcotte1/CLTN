@@ -26,3 +26,6 @@ n8/parts/*.tmp
 n8/run_n8_local.log
 n8/parts/progress.log
 n8/commit_progress.log
+n7/proper/*.jsonl
+n7/proper/*_tally.json
+n8/parts/*.txt.tmp
