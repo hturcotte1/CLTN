@@ -764,3 +764,19 @@ stable cell: every one of the 2^n - 1 supports has det(I - W_sigma) != 0, a fixe
 zero coordinate and no off-support drive exactly 0, and the full support is stable there. So all
 witnesses are nondegenerate CTLNs in the sense the conjecture requires.
 certificates/nondegeneracy_witnesses.json.
+
+## 2026-10-15  Lean 4 + Mathlib available after all; 26 theorems machine-checked (no sorry)
+elan installs; the Mathlib olean cache downloads (9,031 archives in 95 s); toolchain
+leanprover/lean4:v4.35.0, Mathlib tag v4.35.0. notes/lean/CtlnCert/ (sources, lakefile, manifest,
+build and axiom-audit logs; the 7.3 GB .lake directory is not committed): Remark F's affine
+identity K(l beta, l t) = (1-l) I + l K(beta, t) over any commutative ring; the characteristic
+polynomial scaling eval x charpoly(c I + l M) = l^m eval((x-c)/l) charpoly(M); eigenvalues of
+K along a ray are (1-l) + l nu; positive stability propagates down rays (0 < l <= 1); the IVT
+step and the explicit root lamStar = (t + sqrt(t^2 + beta t))/(beta t) of l t (l beta - 2) = 1 in
+(2/beta, 1), unique positive root; the CLAUDE.md section 2 closed form I - W = -delta I +
+(1+delta) J - (eps+delta) A^T (machine-checking the transpose reading); I - W = eps K(J - I - A^T,
+beta, t); q > 1 <-> t(beta-2) > 1; Hurwitz stability of -I + W <-> positive stability of K; and
+Lemma R's forward direction in eps/delta language (stable at a legal point => stable at a point
+with q = 1 exactly). Every theorem depends only on propext, Classical.choice, Quot.sound; 0
+sorryAx. NOT formalised: the converse of Lemma R (openness of stability needs eigenvalue
+continuity, absent from Mathlib) and everything spectral/exact-arithmetic downstream.
