@@ -30,3 +30,5 @@ n7/proper/*.jsonl
 n7/proper/*_tally.json
 n8/parts/*.txt.tmp
 n7/proper_v2/
+n8/after_prefilter.log
+n8/run_n8_limit.log
