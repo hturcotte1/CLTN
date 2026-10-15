@@ -792,3 +792,18 @@ at a legal point implies Nn < B and m(m-1) + 2 <= 2 #arcs, in eps/delta language
 dominated node forces x_j = 0 at any fixed point with theta_j <= theta_k (so no positive full-support
 fixed point), including the induced-subgraph form. Axiom audit: 57 theorems, only propext,
 Classical.choice, Quot.sound; 0 sorryAx. Unexpected: nothing had to be left as a hypothesis.
+
+## 2026-10-15  Lean batch 3: Stodola and Remark J.4' machine-checked (87 theorems total, no sorry)
+notes/lean/CtlnCert/{Stodola,Twins}.lean. Stodola: a monic real polynomial whose complex roots
+all have negative real part has every coefficient positive (strong induction on the degree,
+splitting off a real linear or a conjugate-pair quadratic factor; products of positive-coefficient
+polynomials); corollaries: every coefficient of charpoly(-K) is positive when K is positive stable
+(the k = 0 case is det K > 0, agreeing with Lemma A.2), and at the CTLN level for -I + W. This is
+the statement behind the curve test's fast path (coeff_never); the two remaining links -- that
+L(t) = tK(2 + 1/t, t) has K's stability for t > 0 (positive scaling, eig_affine) and that the
+Python builds exactly this L(t) -- are stated in the README, not as Lean theorems. Twins: for
+in-twins u, v (same in-neighbours off {u, v}) the vector e_u - e_v is a left eigenvector of W with
+eigenvalue 1 + delta (non-adjacent) or 1 - eps (bidirected); hence -I + W has the eigenvalue delta
+> 0 and is never Hurwitz stable when two non-adjacent in-twins lie in the support, for every eps
+and every delta > 0, including the induced-subgraph form. Axiom audit: 87 theorems, standard
+axioms only, 0 sorryAx.

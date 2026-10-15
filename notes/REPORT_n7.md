@@ -231,5 +231,9 @@ eps/delta language. A second batch (31 more theorems) machine-checks the pipelin
 t-free), the e_2 edge bound including its spectral step (via Mathlib's charpoly coefficients as sums of
 principal minors and Gauss-Lucas: Hurwitz stability at a legal point forces more bidirected than
 non-adjacent pairs and at least m(m - 1)/2 + 1 arcs), and Lemma D (a dominated node forces x_j = 0 at
-every fixed point, also on induced subgraphs). 57 theorems in all, no `sorry`, axiom audit clean. The
-converse of Lemma R (openness of stability) is not formalised.
+every fixed point, also on induced subgraphs). A third batch adds Stodola's criterion (a monic real
+polynomial with all roots in the open left half-plane has all coefficients positive; hence every
+coefficient of det(mu I + K) is positive when K is positive stable, the statement behind the curve test's
+fast path) and Remark J.4' (two non-adjacent in-twins in the support give -I + W the eigenvalue delta,
+so it is never Hurwitz stable, for every eps and delta > 0). 87 theorems in all, no `sorry`, axiom audit
+clean. The converse of Lemma R (openness of stability) is not formalised.

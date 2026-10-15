@@ -6,3 +6,5 @@ import CtlnCert.LemmaR
 import CtlnCert.LemmaA2
 import CtlnCert.EdgeBound
 import CtlnCert.Domination
+import CtlnCert.Stodola
+import CtlnCert.Twins

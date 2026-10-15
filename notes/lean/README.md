@@ -1,4 +1,4 @@
-# Lean formalisation: Remark F, Lemma R (forward), Lemma A.2, the e_2 edge bound, Lemma D
+# Lean formalisation: Remark F, Lemma R (forward), Lemma A.2, the e_2 edge bound, Lemma D, Stodola, twin eigenvalue (J.4')
 
 Source mathematics: notes/lemmas.md section 7 (Remark F), notes/lemma_M_refuted.md section 3.1 (Lemma R),
 ANOMALIES.md entry "2026-10-14 Lemma R". Conventions: CLAUDE.md section 2 and notes/lemmas.md section 0.
@@ -26,8 +26,10 @@ Nothing in the repository was modified; everything lives under this directory.
 | `CtlnCert/CtlnCert/LemmaA2.lean` | Lemma A.2 (`det_pos_of_posStable`), Cramer/adjugate consequences, spectral half of the e_2 bound (`sum_minors_two_pos`) |
 | `CtlnCert/CtlnCert/EdgeBound.lean` | `e2`, pair counts `nB nN nO arcs`, `e2_closed_form`, `bidir_gt_nonadj`, `arcs_lower_bound`, `edge_bound_posStable`, `edge_bound_ctln` |
 | `CtlnCert/CtlnCert/Domination.lean` | `Dominates` (Curto Def 1.1), `comparison` (D.1), `lemmaD`, `lemmaD_full_support` (D.3), `lemmaD_induced` (D.4) |
+| `CtlnCert/CtlnCert/Stodola.lean` | `PosCoeffs`, `PosCoeffs.mul`, `stodola` (Stodola's necessary condition), `coeff_pos_of_hurwitz`, `coeff_pos_of_posStable`, `ctln_coeff_pos` |
+| `CtlnCert/CtlnCert/Twins.lean` | `InTwins`, `twinVec`, `twin_W_nonadj`, `twin_W_bidir`, `twin_charpoly_root_*`, `twin_not_hurwitz`, `twin_not_hurwitz_induced` (Remark J.4') |
 | `CtlnCert/CtlnCert.lean` | root module importing all of the above |
-| `CtlnCert/Audit.lean` | `#print axioms` for all 57 theorems (26 batch 1 + 31 batch 2) |
+| `CtlnCert/Audit.lean` | `#print axioms` for all 87 theorems (26 batch 1 + 31 batch 2 + 30 batch 3) |
 | `CtlnCert/build.log`, `CtlnCert/audit.log` | output of the last clean build and of the axiom audit |
 
 ## Commands (re-run)
@@ -115,6 +117,54 @@ notes/lemma_M_refuted.md section 5 (e_2 closed form and the edge bound).
 - `W_submatrix`: W(A[f,f]) = W(A)[f,f] for injective f; `lemmaD_induced` (D.4): domination inside G[sigma] rules out
   x > 0 on sigma with (I - W_sigma) x = theta 1.
 - As in notes/lemmas.md: eps < 1, legality, theta > 0 and 0/1 entries are NOT used.
+
+## Batch 3 (2026-10-15): Stodola's condition and the twin eigenvalue -- statements proved (no sorry, no extra hypothesis)
+
+**Stodola (`Stodola.lean`).** `PosCoeffs f := forall k <= natDegree f, 0 < coeff f k`.
+- `PosCoeffs.mul`: products of positive-coefficient real polynomials have positive coefficients (coefficient k of
+  f g is a sum of nonnegative terms containing f_i g_(k-i) > 0 with i = min(k, deg f)).
+- `posCoeffs_linear` (X + a, a > 0), `posCoeffs_quadratic` (X^2 + b X + c, b, c > 0), `posCoeffs_one`.
+- `eval_map_conj`, `conj_root`: complex roots of a real polynomial are closed under conjugation.
+- `stodola_aux` / **`stodola`**: `p : R[X]` monic, every complex root of `p.map ofRealHom` has Re < 0 =>
+  `forall k <= p.natDegree, 0 < p.coeff k`. Proof by strong induction on the degree: take a complex root z
+  (`Complex.exists_root`). Real z: `p = (X + C(-z)) * (p /m (X - C z))`. Non-real z: `(X - z)(X - conj z) =
+  X^2 + b X + c` with `b = -2 Re z > 0`, `c = normSq z > 0`; it divides `p.map` over C (two distinct roots,
+  `mul_divByMonic_eq_iff_isRoot` twice), hence divides p over R (`Polynomial.map_dvd_map'`). The quotient is
+  monic of lower degree with roots among those of p.
+- `coeff_pos_of_hurwitz`: `HurwitzStable M -> forall k <= card n, 0 < M.charpoly.coeff k`.
+- **`coeff_pos_of_posStable`**: `PosStable K -> forall k <= card n, 0 < (charpoly (-K)).coeff k`
+  (charpoly(-K)(mu) = det(mu I + K); `coeff_zero_negK`: coefficient 0 is det K, so k = 0 is Lemma A.2).
+- **`ctln_coeff_pos`**: IsAdj A, eps > 0, `HurwitzStable (-1 + W A eps delta)` => every coefficient of
+  `charpoly(-1 + W)` and every coefficient of `charpoly(-K(Nmat A, 1 + delta/eps, (1-eps)/eps))` is positive.
+  Relation to the (b1) prune `coeff_never` in n7/curve_test.py: there `L(t) = t K(2 + 1/t, t)` and
+  `c_k(t)` is the coefficient of `mu^(m-k)` in `det(mu I + L(t))`, i.e. `(charpoly (-L(t))).coeff (m - k)`.
+  `coeff_pos_of_posStable` applies to any positive stable real matrix, so to `L(t)` whenever it is positive
+  stable; that `L(t)` (t > 0) and `K(2 + 1/t, t)` have the same positive stability is a positive scaling
+  (`eig_affine` with c = 0, l = t) and is not stated as a separate Lean theorem; the identification of the
+  Python's L(t) with this matrix is in the Python, not in Lean.
+
+**Remark J.4' (`Twins.lean`)**, notes/lemma_J_equivalence.md section 6.1. W from Bridge.lean (reads `A j i`).
+- `InTwins A u v := u != v and forall i, i != u -> i != v -> A i u = A i v` (same in-neighbours, full support);
+  `twinVec u v = e_u - e_v` (`Pi.single u 1 - Pi.single v 1`), `twinVec_ne_zero`.
+- `twin_left_eig` (generic): rows u, v of M agree off {u, v}, `M u u - M v u = lam`, `M u v - M v v = -lam` =>
+  `xi ᵥ* M = lam • xi`.
+- `twin_W_nonadj`: in-twins with `A u v = A v u = 0` => `xi ᵥ* W A eps delta = (1 + delta) • xi`.
+- `twin_W_bidir`: in-twins with `A u v = A v u = 1` => `xi ᵥ* W A eps delta = (1 - eps) • xi`.
+- `twin_negIW_nonadj` / `twin_negIW_bidir`: `xi ᵥ* (-1 + W) = delta • xi` resp. `(-eps) • xi`.
+- `charpoly_root_of_left_eig`: a nonzero left eigenvector gives a root of charpoly (via
+  `Matrix.exists_vecMul_eq_zero_iff`); `charpoly_transpose_root_of_left_eig` the same for `Mᵀ`
+  (`Matrix.charpoly_transpose`); `eig_of_left_eig`: hence `Eig (cplx M) lam` (a right eigenvector over C exists).
+- `twin_charpoly_root_nonadj`: delta is a root of `charpoly(-1 + W)`; `twin_charpoly_root_bidir`: -eps is a root.
+- **`twin_not_hurwitz`**: `InTwins A u v`, `A u v = 0`, `A v u = 0`, any eps, delta > 0 =>
+  `¬ HurwitzStable (-1 + W A eps delta)`.
+- `twin_not_hurwitz_induced`: the same for `-1 + W_sigma = -1 + (W A eps delta).submatrix f f` (f injective),
+  when u, v are non-adjacent in-twins of the induced graph `A.submatrix f f` (twins relative to sigma),
+  via `W_submatrix`.
+- Not used: IsAdj, eps > 0, eps < 1, legality, theta. Only delta > 0 enters (for the instability).
+
+Audit (batch 3): all 30 new theorems depend on `[propext, Classical.choice, Quot.sound]`; no `sorryAx`.
+Whole file: 87 lines, 84 with the three standard axioms, 3 (`affine_identity`, `K_apply`, `minor_pair`) with
+`[propext, Quot.sound]`.
 
 ## Not formalised
 

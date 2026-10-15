@@ -1,8 +1,8 @@
-⚠ [9047/9056] Replayed CtlnCert.Basic
+⚠ [9047/9058] Replayed CtlnCert.Basic
 warning: CtlnCert/Basic.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9049/9056] Replayed CtlnCert.IVTStep
+⚠ [9049/9058] Replayed CtlnCert.IVTStep
 warning: CtlnCert/IVTStep.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-✔ [9053/9056] Built CtlnCert.Domination (7.2s)
-✔ [9054/9056] Built CtlnCert.EdgeBound (9.1s)
-✔ [9055/9056] Built CtlnCert (4.5s)
-Build completed successfully (9056 jobs).
+✔ [9055/9058] Built CtlnCert.Twins (7.5s)
+✔ [9056/9058] Built CtlnCert.Stodola (8.3s)
+✔ [9057/9058] Built CtlnCert (4.6s)
+Build completed successfully (9058 jobs).
