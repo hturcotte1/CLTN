@@ -841,3 +841,23 @@ Hurwitz minors; structural and limit claims incl. pairwise non-isomorphism, domi
 exact limit test), none using the project's code. Sign-off is recorded only after this workflow
 reports every graph confirmed by at least three implementations. Rented compute for n = 8 is deferred
 by the user.
+
+## 2026-10-15  ALL 124 n = 7 COUNTEREXAMPLES VERIFIED: human + four independent exact implementations
+Workflow wf_e7b72ed9-c86 (notes/verify_124_workflow.json, artifacts notes/verify_124/): four verifiers
+written from the CLAUDE.md definitions without the project's code. sympy/Hurwitz: 124/124 at 249
+prescribed points and all 492 stored witnesses (flags and x identical to the files). Pure Fractions:
+124/124 at 422 points (first legal stored witness + an interior point of EVERY stable cell, 298 cells),
+stored unstable points re-decided unstable with strictly negative minors; with the transpose
+convention reversed 0/124 survive. Root counting without Hurwitz minors (exact Routh, Sturm/argument
+principle and exact isolation, all three required to agree, calibrated on 3,000 random polynomials):
+124/124 at 742 points, 0 undecided. Structural: 124 pairwise non-isomorphic (own canonical form and
+nauty), 124 domination-free, none complete (11-19 missing arcs), the 123 limit candidates identified
+up to isomorphism, limit stability of all 123 confirmed exactly at the cell sample (given Lemma I),
+FNFL's spectral abscissa -1/2 exact. Certificate statuses updated; the user's hand-verification of all
+124 (2026-10-15) is recorded alongside. Data-hygiene finding: 15 of the 123 limit candidates have an
+ILLEGAL first stored pointwise witness (t = 100, q <= 1, already flagged legal = false; &F]VhW[rSp?
+also at t = 1000) -- a hand check that used the first witness would have examined a non-CTLN point;
+certificates/n7_candidates_legal_witnesses.json now lists one legal witness per graph plus an
+interior cell point. The field agrees_with_conjecture is meaningless at those illegal points. A
+verifier's interim run flagged 46 graphs because repeated eigenvalues (twin structure, off the
+imaginary axis) were treated as undecided by one method; fixed, final: 0 undecided.

@@ -4,18 +4,19 @@ Date: 2026-10-15. Companion to `notes/REPORT_n6.md` (definitions, conventions, t
 its audit). Conventions are CLAUDE.md section 2 throughout; everything below is exact (integers,
 rationals, exact root isolation, Hurwitz determinants); decimals appear only as labelled approximations.
 
-> **Status of the n >= 7 graphs.** Every 7-node (and larger) graph named below as a counterexample is a
-> **candidate pending human hand-verification** (CLAUDE.md section 3). The n = 6 bases (Geneson's graph,
-> idx 1387528, idx 1424629) were hand-verified and signed off on 2026-10-14. The theorems about infinite
-> families are exact algebra on those verified bases and were refereed by independent agents; their
-> n >= 7 instances inherit the candidate label.
+> **Status.** The 124 seven-node counterexamples are **verified**: hand-verified by the user on 2026-10-15
+> and confirmed by four independent exact implementations written without the project's code
+> (`notes/verify_124_workflow.json`; 124/124 at every one of 742 legal points, 0 undecided). The n = 6
+> bases were signed off on 2026-10-14. Graphs on n >= 8 nodes from the infinite families remain
+> candidates in the sense of CLAUDE.md section 3 (the theorems are refereed exact algebra; the instances
+> were certified but not hand-verified).
 
 ## 0. Headline results
 
 | # | result | status |
 |---|---|---|
-| 1 | **Complete finite-eps classification at n = 7.** Among all 882,033,440 digraphs on 7 nodes, exactly **124 non-clique graphs** have a full support that is a stable positive fixed point at some legal (eps, delta), each with an exact two-parameter region certificate; K7 is the only clique. 0 escalations. | CERTIFIED (candidates) |
-| 2 | The 124 are **the 123 limit-stable graphs plus one graph, `&FNFL~[udo?`, invisible in the eps -> 0 limit** (spectral abscissa exactly -1/2; stable only for a bounded range of t at each beta). | CERTIFIED (candidates) |
+| 1 | **Complete finite-eps classification at n = 7.** Among all 882,033,440 digraphs on 7 nodes, exactly **124 non-clique graphs** have a full support that is a stable positive fixed point at some legal (eps, delta), each with an exact two-parameter region certificate; K7 is the only clique. 0 escalations. | CERTIFIED and VERIFIED |
+| 2 | The 124 are **the 123 limit-stable graphs plus one graph, `&FNFL~[udo?`, invisible in the eps -> 0 limit** (spectral abscissa exactly -1/2; stable only for a bounded range of t at each beta). | CERTIFIED and VERIFIED |
 | 3 | **The limit does not determine the finite-eps map**: "stable at finite eps => limit-stable" (Lemma M) is false, with exact certificates at m = 3 (pure stability) and n = 7 (with positivity). 40 of the 124 have stable regions that bulge past beta_c and are bounded above in t (Lemma AS: first-order coefficient R* > 0). | PROVED / CERTIFIED |
 | 4 | **Lemma R (ray reduction).** The full support is stable at some legal parameter iff it is stable on the legality curve t(beta - 2) = 1; an exact one-dimensional test that makes the finite-eps map affordable (16 CPU-hours at n = 7). | PROVED, audited |
 | 5 | **Theorem F.** Geneson's graph plus a bidirected clique class of k nodes is limit-stable for every k >= 0: **the conjecture fails for every n >= 6**, with sup q = 1.1664 (n = 6), 1.2747 (n = 7), the plastic number 1.3247 (n = 8..14), then decreasing to 1. | PROVED, refereed |
@@ -121,7 +122,7 @@ bounded cells the outer isolating bound gives beta_hi <= 16/7, so q < 9/7 < rho.
 plastic-number graphs have limit intervals starting at q = 1, so the candidates' intervals cover (1, rho)
 without a gap. Hence, conditional on hand-verification of the candidates and combined with the n <= 6
 maps and Theorem F (reduction): **for n <= 7 the conjecture holds at every legal parameter with q >= rho
-and fails for every q in (1, rho)**; Geneson's bound n - 2 = 5 is replaced by 1.3247. For comparison the
+and fails for every q in (1, rho)** (the conditionality on hand-verification is now discharged); Geneson's bound n - 2 = 5 is replaced by 1.3247. For comparison the
 infinite family F_k alone reaches 1.2747 at n = 7.
 
 ## 5. Why the limit is not the whole story
@@ -201,9 +202,10 @@ ray segments from the curve, and the two-parameter CAD is needed only for the cu
 * Nondegeneracy: `n7/nondegeneracy_check.py` certifies at a witness point of every hit that all 2^n - 1
   supports are nonsingular with no zero coordinate and no zero off-support drive
   (`certificates/nondegeneracy_witnesses.json`).
-* Human sign-off: n = 6 hits signed off 2026-10-14; the 124 n = 7 graphs (and the family instances)
-  await hand-verification. Suggested order: `&FNFL~[udo?` (two rational witnesses, section 3), then
-  one representative per D-class from `certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit_summary.json`.
+* Human sign-off: n = 6 hits 2026-10-14; the 124 n = 7 graphs hand-verified 2026-10-15 and machine-
+  confirmed the same day (four independent verifiers, section above). One legal witness per graph for
+  re-checking: `certificates/n7_candidates_legal_witnesses.json` (15 of the stored first witnesses in the
+  limit file are illegal points, flagged as such; use the legal-witness file).
 
 ## 9. Literature position (as of 2026-10-14)
 

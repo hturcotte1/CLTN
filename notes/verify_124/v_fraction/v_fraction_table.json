@@ -1,0 +1,3284 @@
+{
+ "summary": {
+  "transposed_convention_still_cex_at_primary_point": 0,
+  "n_graphs": 124,
+  "n_confirmed": 124,
+  "n_all_cells_confirmed": 124,
+  "n_points_checked": 422,
+  "distinct_d6": 124,
+  "n_failures": 0,
+  "n_first_witness_illegal": 15
+ },
+ "failures": [],
+ "discrepancies": [
+  "task text says Geneson node 0 -> 1,2,3,4; the specified decoding gives node 0 -> [1, 2, 4, 5] (row 0 = 011011 from Z=27). Column-major reading would give 0 -> {1,2,3}. Neither matches; the same decoder reproduces all 123 stored A matrices, FNFL rows and both bulge rows exactly, so the hint in the task text is taken to be wrong, not the decoder."
+ ],
+ "first_stored_witness_illegal": [
+  "&F]VhW[rSp?",
+  "&FMELx\\vxz?",
+  "&F^V\\[]e`e?",
+  "&F]ShY\\`Dq?",
+  "&F^VGzKUpo?",
+  "&FKDHy]rsp?",
+  "&F^UxkNSta?",
+  "&FNE[lLQ{`?",
+  "&FMELx\\v|x?",
+  "&F]UhA\\bT{?",
+  "&FMBlWKt\\y?",
+  "&FMAlx\\v|x?",
+  "&FMBlhKRTx?",
+  "&F^VKlKQsp?",
+  "&FMALx\\Tpv?"
+ ],
+ "unstable_points": [
+  {
+   "d6": "&FNFL~[udo?",
+   "eps": "1/101",
+   "delta": "33/3232",
+   "stable": "unstable",
+   "minor_signs": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "negative_minors": [
+    6,
+    7
+   ],
+   "zero_minors": [],
+   "decided_unstable_strict": true
+  },
+  {
+   "d6": "&FNFL~[udo?",
+   "eps": "1/1001",
+   "delta": "3/2912",
+   "stable": "unstable",
+   "minor_signs": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "negative_minors": [
+    6,
+    7
+   ],
+   "zero_minors": [],
+   "decided_unstable_strict": true
+  },
+  {
+   "d6": "&FNFL~[udo?",
+   "eps": "1/61",
+   "delta": "51/2989",
+   "stable": "unstable",
+   "minor_signs": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "negative_minors": [
+    6,
+    7
+   ],
+   "zero_minors": [],
+   "decided_unstable_strict": true
+  },
+  {
+   "d6": "&FNDL}[u|o?",
+   "eps": "1/61",
+   "delta": "27/1525",
+   "stable": "unstable",
+   "minor_signs": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "negative_minors": [
+    6,
+    7
+   ],
+   "zero_minors": [],
+   "decided_unstable_strict": true
+  },
+  {
+   "d6": "&FNDL}[u|o?",
+   "eps": "1/100001",
+   "delta": "27/2500025",
+   "stable": "unstable",
+   "minor_signs": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "negative_minors": [
+    6,
+    7
+   ],
+   "zero_minors": [],
+   "decided_unstable_strict": true
+  },
+  {
+   "d6": "&FK@dyUfXp?",
+   "eps": "1/1001",
+   "delta": "5561/5005000",
+   "stable": "unstable",
+   "minor_signs": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "negative_minors": [
+    6,
+    7
+   ],
+   "zero_minors": [],
+   "decided_unstable_strict": true
+  },
+  {
+   "d6": "&FK@dyUfXp?",
+   "eps": "1/10001",
+   "delta": "5561/50005000",
+   "stable": "unstable",
+   "minor_signs": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   "negative_minors": [
+    6,
+    7
+   ],
+   "zero_minors": [],
+   "decided_unstable_strict": true
+  }
+ ],
+ "table": [
+  {
+   "d6": "&FK@drUvHw?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "39/3838",
+    "q": "1950/1919",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/308",
+    "delta": "307/94248",
+    "beta": "613/306",
+    "t": "307",
+    "q": "94249/94248",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMEHz\\r|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/28",
+    "delta": "27/728",
+    "beta": "53/26",
+    "t": "27",
+    "q": "729/728",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\V|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "2/53",
+    "delta": "102/2597",
+    "beta": "100/49",
+    "t": "51/2",
+    "q": "2601/2597",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNFL|\\u|o?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "25/2222",
+    "q": "1250/1111",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/16",
+    "delta": "15/224",
+    "beta": "29/14",
+    "t": "15",
+    "q": "225/224",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNFH[Yepu?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "71/7070",
+    "q": "710/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/284",
+    "delta": "843/78952",
+    "beta": "559/278",
+    "t": "281/3",
+    "q": "78961/78952",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UX_TE{h?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "13/1212",
+    "q": "325/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/48",
+    "delta": "47/2208",
+    "beta": "93/46",
+    "t": "47",
+    "q": "2209/2208",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]VhW[rSp?",
+   "point_witness": {
+    "label": "stored_witness_2_first_legal",
+    "eps": "1/10001",
+    "delta": "3531/35303530",
+    "q": "3531000/3530353",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/3834",
+    "delta": "3833/14691888",
+    "beta": "7665/3832",
+    "t": "3833",
+    "q": "14691889/14691888",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UXk\\Eop?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/22",
+    "delta": "21/440",
+    "beta": "41/20",
+    "t": "21",
+    "q": "441/440",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^V[tSUxw?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "13/1212",
+    "q": "325/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/30",
+    "delta": "29/840",
+    "beta": "57/28",
+    "t": "29",
+    "q": "841/840",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^uleNUTW?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "9/808",
+    "q": "225/202",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/16",
+    "delta": "15/224",
+    "beta": "29/14",
+    "t": "15",
+    "q": "225/224",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^u\\mFTxJ?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "beta": "757/371",
+    "t": "386/15",
+    "q": "148996/148771",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMEHz\\rsp?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "25/2424",
+    "q": "625/606",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/48",
+    "delta": "47/2208",
+    "beta": "93/46",
+    "t": "47",
+    "q": "2209/2208",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMAkxXbD{?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "81/8080",
+    "q": "405/404",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/98",
+    "delta": "97/9408",
+    "beta": "193/96",
+    "t": "97",
+    "q": "9409/9408",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\vxr?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/20",
+    "delta": "19/360",
+    "beta": "37/18",
+    "t": "19",
+    "q": "361/360",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNDL}[u|o?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "28/2727",
+    "q": "2800/2727",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/38",
+    "delta": "37/1368",
+    "beta": "73/36",
+    "t": "37",
+    "q": "1369/1368",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]SpqXRDk?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "55/5454",
+    "q": "2750/2727",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/60",
+    "delta": "59/3480",
+    "beta": "117/58",
+    "t": "59",
+    "q": "3481/3480",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]UhqLPT}?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/146",
+    "delta": "145/21024",
+    "beta": "289/144",
+    "t": "145",
+    "q": "21025/21024",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^vl]UakR?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/28",
+    "delta": "27/728",
+    "beta": "53/26",
+    "t": "27",
+    "q": "729/728",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^u\\eNVoJ?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1313",
+    "q": "1500/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/18",
+    "delta": "17/288",
+    "beta": "33/16",
+    "t": "17",
+    "q": "289/288",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMAlx\\r|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/28",
+    "delta": "27/728",
+    "beta": "53/26",
+    "t": "27",
+    "q": "729/728",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\vxz?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "43/42900",
+    "q": "430/429",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/370",
+    "delta": "369/136160",
+    "beta": "737/368",
+    "t": "369",
+    "q": "136161/136160",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNFL~[uto?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/38",
+    "delta": "37/1368",
+    "beta": "73/36",
+    "t": "37",
+    "q": "1369/1368",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]UhY\\`Dr?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "81/8080",
+    "q": "405/404",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "571/45878",
+    "delta": "25870297/2052398208",
+    "beta": "90043/44736",
+    "t": "45307/571",
+    "q": "2052724249/2052398208",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UK|\\Udy?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "76/7373",
+    "q": "7600/7373",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/79",
+    "delta": "228/5767",
+    "beta": "149/73",
+    "t": "76/3",
+    "q": "5776/5767",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^vleMoT]?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "19/1818",
+    "q": "950/909",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/34",
+    "delta": "33/1088",
+    "beta": "65/32",
+    "t": "33",
+    "q": "1089/1088",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^V\\[]e`e?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "111/110110",
+    "q": "11100/11011",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "103/11468",
+    "delta": "1170595/129152616",
+    "beta": "22627/11262",
+    "t": "11365/103",
+    "q": "129163225/129152616",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^v\\eMp{J?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "13/1212",
+    "q": "325/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "87/2980",
+    "delta": "251691/8361880",
+    "beta": "5699/2806",
+    "t": "2893/87",
+    "q": "8369449/8361880",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 4,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMAlx\\v|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/20",
+    "delta": "19/360",
+    "beta": "37/18",
+    "t": "19",
+    "q": "361/360",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNDL}[u|w?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "287/27068",
+    "q": "7175/6767",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/62",
+    "delta": "177/3472",
+    "beta": "115/56",
+    "t": "59/3",
+    "q": "3481/3472",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNFL~[u|o?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "25/2222",
+    "q": "1250/1111",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/16",
+    "delta": "15/224",
+    "beta": "29/14",
+    "t": "15",
+    "q": "225/224",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FN?|~^oTm?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/62",
+    "delta": "177/3472",
+    "beta": "115/56",
+    "t": "59/3",
+    "q": "3481/3472",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]ShY\\`Dq?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "27/26884",
+    "q": "6750/6721",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/192",
+    "delta": "191/36480",
+    "beta": "381/190",
+    "t": "191",
+    "q": "36481/36480",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^uk\\^_TU?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "379/31108",
+    "q": "9475/7777",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/20",
+    "delta": "51/280",
+    "beta": "31/14",
+    "t": "17/3",
+    "q": "289/280",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^V|mMSPb?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "261/24947",
+    "q": "26100/24947",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "20/391",
+    "delta": "7420/137241",
+    "beta": "722/351",
+    "t": "371/20",
+    "q": "137641/137241",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^U|uJQT|?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "beta": "757/371",
+    "t": "386/15",
+    "q": "148996/148771",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\vtt?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/20",
+    "delta": "19/360",
+    "beta": "37/18",
+    "t": "19",
+    "q": "361/360",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FM@|vCtxi?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "33/3232",
+    "q": "825/808",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/34",
+    "delta": "33/1088",
+    "beta": "65/32",
+    "t": "33",
+    "q": "1089/1088",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^VGzKUpo?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "3/2990",
+    "q": "300/299",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "932/214917",
+    "delta": "199434020/45788711601",
+    "beta": "427038/213053",
+    "t": "213985/932",
+    "q": "45789580225/45788711601",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UXk\\Esb?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "9/808",
+    "q": "225/202",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/33",
+    "delta": "32/1023",
+    "beta": "63/31",
+    "t": "32",
+    "q": "1024/1023",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^TxULoDi?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "25/2424",
+    "q": "625/606",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "9/230",
+    "delta": "1989/48760",
+    "beta": "433/212",
+    "t": "221/9",
+    "q": "48841/48760",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]Th]CvWr?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "51/5050",
+    "q": "102/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "18/901",
+    "delta": "15894/779365",
+    "beta": "1748/865",
+    "t": "883/18",
+    "q": "779689/779365",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^v\\SYfdM?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "13/1212",
+    "q": "325/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "9/116",
+    "delta": "963/11368",
+    "beta": "205/98",
+    "t": "107/9",
+    "q": "11449/11368",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMEHz\\v|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/20",
+    "delta": "19/360",
+    "beta": "37/18",
+    "t": "19",
+    "q": "361/360",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMAlh\\v|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/28",
+    "delta": "27/728",
+    "beta": "53/26",
+    "t": "27",
+    "q": "729/728",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FKDHy]rsp?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "229/228228",
+    "q": "57250/57057",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/268",
+    "delta": "267/71288",
+    "beta": "533/266",
+    "t": "267",
+    "q": "71289/71288",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNDL~[uds?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "11/288",
+    "delta": "3047/76608",
+    "beta": "543/266",
+    "t": "277/11",
+    "q": "76729/76608",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UWxTClb?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "23/2222",
+    "q": "1150/1111",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/23",
+    "delta": "22/483",
+    "beta": "43/21",
+    "t": "22",
+    "q": "484/483",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UXkHQte?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "69/6868",
+    "q": "1725/1717",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/78",
+    "delta": "77/5928",
+    "beta": "153/76",
+    "t": "77",
+    "q": "5929/5928",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^V\\K[epa?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "51/5050",
+    "q": "102/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "51/2633",
+    "delta": "131682/6664123",
+    "beta": "5113/2531",
+    "t": "2582/51",
+    "q": "6666724/6664123",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UxkNSta?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "107/106106",
+    "q": "53500/53053",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/138",
+    "delta": "137/18768",
+    "beta": "273/136",
+    "t": "137",
+    "q": "18769/18768",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\Vxr?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "2/53",
+    "delta": "102/2597",
+    "beta": "100/49",
+    "t": "51/2",
+    "q": "2601/2597",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNE[lLQ{`?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "15/14872",
+    "q": "1875/1859",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "5/522",
+    "delta": "2585/267264",
+    "beta": "1029/512",
+    "t": "517/5",
+    "q": "267289/267264",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMDl~[v\\s?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "47/4646",
+    "q": "2350/2323",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/56",
+    "delta": "55/3024",
+    "beta": "109/54",
+    "t": "55",
+    "q": "3025/3024",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]UhoTFLx?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "37/3636",
+    "q": "925/909",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/39",
+    "delta": "38/1443",
+    "beta": "75/37",
+    "t": "38",
+    "q": "1444/1443",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^u|uVEhI?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "45/4444",
+    "q": "1125/1111",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/45",
+    "delta": "44/1935",
+    "beta": "87/43",
+    "t": "44",
+    "q": "1936/1935",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^V{\\Uchb?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "3951/372892",
+    "q": "98775/93223",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "115/1868",
+    "delta": "201595/3059784",
+    "beta": "3391/1638",
+    "t": "1753/115",
+    "q": "3073009/3059784",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMEHz\\vxr?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/20",
+    "delta": "19/360",
+    "beta": "37/18",
+    "t": "19",
+    "q": "361/360",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\R|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "31/3030",
+    "q": "310/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/60",
+    "delta": "59/3480",
+    "beta": "117/58",
+    "t": "59",
+    "q": "3481/3480",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNFL~[u|w?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "45/4444",
+    "q": "1125/1111",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/50",
+    "delta": "49/2400",
+    "beta": "97/48",
+    "t": "49",
+    "q": "2401/2400",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNcXvZVlM?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/62",
+    "delta": "177/3472",
+    "beta": "115/56",
+    "t": "59/3",
+    "q": "3481/3472",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^TXmOEwd?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "19/1818",
+    "q": "950/909",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "29/584",
+    "delta": "16095/307184",
+    "beta": "1081/526",
+    "t": "555/29",
+    "q": "308025/307184",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^v|^Fo\\B?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "79/7878",
+    "q": "3950/3939",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/112",
+    "delta": "111/12320",
+    "beta": "221/110",
+    "t": "111",
+    "q": "12321/12320",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UluNQT|?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "beta": "757/371",
+    "t": "386/15",
+    "q": "148996/148771",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMAlh\\r|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "31/3030",
+    "q": "310/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/60",
+    "delta": "59/3480",
+    "beta": "117/58",
+    "t": "59",
+    "q": "3481/3480",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\v|x?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "43/42900",
+    "q": "430/429",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/370",
+    "delta": "369/136160",
+    "beta": "737/368",
+    "t": "369",
+    "q": "136161/136160",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UXb\\Eoh?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "69/6868",
+    "q": "1725/1717",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/82",
+    "delta": "81/6560",
+    "beta": "161/80",
+    "t": "81",
+    "q": "6561/6560",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]UhA\\bT{?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "183/182182",
+    "q": "91500/91091",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/183",
+    "delta": "182/33123",
+    "beta": "363/181",
+    "t": "182",
+    "q": "33124/33123",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^TXeLUoh?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "49/4848",
+    "q": "1225/1212",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/64",
+    "delta": "63/3968",
+    "beta": "125/62",
+    "t": "63",
+    "q": "3969/3968",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^uK\\^clR?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "76/7373",
+    "q": "7600/7373",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/79",
+    "delta": "228/5767",
+    "beta": "149/73",
+    "t": "76/3",
+    "q": "5776/5767",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^v[\\UpkN?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "19/1818",
+    "q": "950/909",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "5/176",
+    "delta": "855/29216",
+    "beta": "337/166",
+    "t": "171/5",
+    "q": "29241/29216",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 4,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMBlWKt\\y?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "111/110110",
+    "q": "11100/11011",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/264",
+    "delta": "263/69168",
+    "beta": "525/262",
+    "t": "263",
+    "q": "69169/69168",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMAlx\\v|x?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "43/42900",
+    "q": "430/429",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/370",
+    "delta": "369/136160",
+    "beta": "737/368",
+    "t": "369",
+    "q": "136161/136160",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNFL|\\u|w?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "45/4444",
+    "q": "1125/1111",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/50",
+    "delta": "49/2400",
+    "beta": "97/48",
+    "t": "49",
+    "q": "2401/2400",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNDL~[uls?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/28",
+    "delta": "27/728",
+    "beta": "53/26",
+    "t": "27",
+    "q": "729/728",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^VH[Tch}?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "43/4242",
+    "q": "2150/2121",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/44",
+    "delta": "43/1848",
+    "beta": "85/42",
+    "t": "43",
+    "q": "1849/1848",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^VLM[eov?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "9/808",
+    "q": "225/202",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/16",
+    "delta": "15/224",
+    "beta": "29/14",
+    "t": "15",
+    "q": "225/224",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^U|m^SPb?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "69/6868",
+    "q": "1725/1717",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/208",
+    "delta": "615/42016",
+    "beta": "407/202",
+    "t": "205/3",
+    "q": "42025/42016",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMC`j\\BTt?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "57/5656",
+    "q": "1425/1414",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/64",
+    "delta": "63/3968",
+    "beta": "125/62",
+    "t": "63",
+    "q": "3969/3968",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNDL}[ulw?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/26",
+    "delta": "25/624",
+    "beta": "49/24",
+    "t": "25",
+    "q": "625/624",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FN?|v^qTm?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/62",
+    "delta": "177/3472",
+    "beta": "115/56",
+    "t": "59/3",
+    "q": "3481/3472",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^VH[Xacv?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/146",
+    "delta": "145/21024",
+    "beta": "289/144",
+    "t": "145",
+    "q": "21025/21024",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]UxsTFHj?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "75/7474",
+    "q": "3750/3737",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "5/374",
+    "delta": "1845/136136",
+    "beta": "733/364",
+    "t": "369/5",
+    "q": "136161/136136",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^u|uNOlI?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "51/5050",
+    "q": "102/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/80",
+    "delta": "79/6240",
+    "beta": "157/78",
+    "t": "79",
+    "q": "6241/6240",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMBlhKRTx?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "213/212212",
+    "q": "53250/53053",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/226",
+    "delta": "225/50624",
+    "beta": "449/224",
+    "t": "225",
+    "q": "50625/50624",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\vpv?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/20",
+    "delta": "19/360",
+    "beta": "37/18",
+    "t": "19",
+    "q": "361/360",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNDH~\\uts?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "287/27068",
+    "q": "7175/6767",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/62",
+    "delta": "177/3472",
+    "beta": "115/56",
+    "t": "59/3",
+    "q": "3481/3472",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNDL~[ulo?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "28/2727",
+    "q": "2800/2727",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/38",
+    "delta": "37/1368",
+    "beta": "73/36",
+    "t": "37",
+    "q": "1369/1368",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]UgxDVWr?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "81/8080",
+    "q": "405/404",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "2111/169612",
+    "delta": "353594611/28052128680",
+    "beta": "332891/165390",
+    "t": "167501/2111",
+    "q": "28056585001/28052128680",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^VKlKQsp?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "149/148148",
+    "q": "37250/37037",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "165/24572",
+    "delta": "4027155/595674424",
+    "beta": "48649/24242",
+    "t": "24407/165",
+    "q": "595701649/595674424",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^vlmZEPT?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "69/6868",
+    "q": "1725/1717",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/208",
+    "delta": "615/42016",
+    "beta": "407/202",
+    "t": "205/3",
+    "q": "42025/42016",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^Ul]NsTu?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "beta": "757/371",
+    "t": "386/15",
+    "q": "148996/148771",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMEHz\\vpv?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/20",
+    "delta": "19/360",
+    "beta": "37/18",
+    "t": "19",
+    "q": "361/360",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\Vpv?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "2/53",
+    "delta": "102/2597",
+    "beta": "100/49",
+    "t": "51/2",
+    "q": "2601/2597",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]S`YTbKx?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "17/1616",
+    "q": "425/404",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "43/724",
+    "delta": "29283/461912",
+    "beta": "1319/638",
+    "t": "681/43",
+    "q": "463761/461912",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^VLOSekx?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "87/6868",
+    "q": "2175/1717",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "60/341",
+    "delta": "16860/75361",
+    "beta": "502/221",
+    "t": "281/60",
+    "q": "78961/75361",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^UXc\\Cxi?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "9/808",
+    "q": "225/202",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "27/272",
+    "delta": "6615/59296",
+    "beta": "463/218",
+    "t": "245/27",
+    "q": "60025/59296",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^V\\K[spa?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "13/1212",
+    "q": "325/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/18",
+    "delta": "17/288",
+    "beta": "33/16",
+    "t": "17",
+    "q": "289/288",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^ulC^a{\\?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "9/262",
+    "delta": "2277/63928",
+    "beta": "497/244",
+    "t": "253/9",
+    "q": "64009/63928",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^v\\]YddU?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/28",
+    "delta": "27/728",
+    "beta": "53/26",
+    "t": "27",
+    "q": "729/728",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FK@dyUfXp?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "49/4545",
+    "q": "980/909",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "157/2114",
+    "delta": "307249/3805200",
+    "beta": "3757/1800",
+    "t": "1957/157",
+    "q": "3829849/3805200",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMAlW\\d\\y?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "9/808",
+    "q": "225/202",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/12",
+    "delta": "11/120",
+    "beta": "21/10",
+    "t": "11",
+    "q": "121/120",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\Vtt?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "2/53",
+    "delta": "102/2597",
+    "beta": "100/49",
+    "t": "51/2",
+    "q": "2601/2597",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FND|mGu\\k?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "433/37572",
+    "q": "10825/9393",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "61/494",
+    "delta": "26413/183768",
+    "beta": "805/372",
+    "t": "433/61",
+    "q": "187489/183768",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNDL~[ulw?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "287/27068",
+    "q": "7175/6767",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/62",
+    "delta": "177/3472",
+    "beta": "115/56",
+    "t": "59/3",
+    "q": "3481/3472",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]UHOTfkx?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/66",
+    "delta": "65/4224",
+    "beta": "129/64",
+    "t": "65",
+    "q": "4225/4224",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^VXkXups?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "61/6060",
+    "q": "305/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/156",
+    "delta": "155/24024",
+    "beta": "309/154",
+    "t": "155",
+    "q": "24025/24024",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^vk\\Yo\\U?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "19/1818",
+    "q": "950/909",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/26",
+    "delta": "25/624",
+    "beta": "49/24",
+    "t": "25",
+    "q": "625/624",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^U|]VeLk?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "75/7474",
+    "q": "3750/3737",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/76",
+    "delta": "75/5624",
+    "beta": "149/74",
+    "t": "75",
+    "q": "5625/5624",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMEHz\\vtt?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/20",
+    "delta": "19/360",
+    "beta": "37/18",
+    "t": "19",
+    "q": "361/360",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\r|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/28",
+    "delta": "27/728",
+    "beta": "53/26",
+    "t": "27",
+    "q": "729/728",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNDL~[uts?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "287/27068",
+    "q": "7175/6767",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/62",
+    "delta": "177/3472",
+    "beta": "115/56",
+    "t": "59/3",
+    "q": "3481/3472",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNcXv^VkL?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "21/2020",
+    "q": "105/101",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "3/62",
+    "delta": "177/3472",
+    "beta": "115/56",
+    "t": "59/3",
+    "q": "3481/3472",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F]UGx\\Dhq?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "13/1212",
+    "q": "325/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/32",
+    "delta": "31/960",
+    "beta": "61/30",
+    "t": "31",
+    "q": "961/960",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^V[tSUhw?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "99/9898",
+    "q": "4950/4949",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/110",
+    "delta": "109/11880",
+    "beta": "217/108",
+    "t": "109",
+    "q": "11881/11880",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^vL[Yqt[?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/28",
+    "delta": "27/728",
+    "beta": "53/26",
+    "t": "27",
+    "q": "729/728",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^U|eNUTw?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1313",
+    "q": "1500/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/18",
+    "delta": "17/288",
+    "beta": "33/16",
+    "t": "17",
+    "q": "289/288",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 3,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMALx\\Tpv?",
+   "point_witness": {
+    "label": "stored_witness_1_first_legal",
+    "eps": "1/1001",
+    "delta": "167/166166",
+    "q": "83500/83083",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/208",
+    "delta": "207/42848",
+    "beta": "413/206",
+    "t": "207",
+    "q": "42849/42848",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMELx\\v|p?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1414",
+    "q": "750/707",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/20",
+    "delta": "19/360",
+    "beta": "37/18",
+    "t": "19",
+    "q": "361/360",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNFL|\\ulo?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/38",
+    "delta": "37/1368",
+    "beta": "73/36",
+    "t": "37",
+    "q": "1369/1368",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FNFL~[udo?",
+   "point_witness": {
+    "label": "stored_witness_eps1/36",
+    "eps": "1/36",
+    "delta": "17/588",
+    "q": "85/84",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "2/81",
+    "delta": "1/39",
+    "beta": "53/26",
+    "t": "79/2",
+    "q": "79/78",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 0,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&FMDh~\\v\\s?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "47/4646",
+    "q": "2350/2323",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/56",
+    "delta": "55/3024",
+    "beta": "109/54",
+    "t": "55",
+    "q": "3025/3024",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^vlKUe[R?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "15/1313",
+    "q": "1500/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "1/36",
+    "delta": "35/1224",
+    "beta": "69/34",
+    "t": "35",
+    "q": "1225/1224",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 2,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^S{^ReL|?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "27/2626",
+    "q": "1350/1313",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "beta": "757/371",
+    "t": "386/15",
+    "q": "148996/148771",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 1,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  },
+  {
+   "d6": "&F^U|m^QTq?",
+   "point_witness": {
+    "label": "stored_witness_0",
+    "eps": "1/101",
+    "delta": "13/1212",
+    "q": "325/303",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "point_cell": {
+    "eps": "87/2980",
+    "delta": "251691/8361880",
+    "beta": "5699/2806",
+    "t": "2893/87",
+    "q": "8369449/8361880",
+    "legal": true,
+    "positive": true,
+    "stable": "stable"
+   },
+   "extra_cells_checked": 4,
+   "clique": false,
+   "verdict": "COUNTEREXAMPLE_CONFIRMED"
+  }
+ ]
+}

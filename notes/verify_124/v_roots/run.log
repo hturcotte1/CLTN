@@ -1,0 +1,200 @@
+{
+ "d6": "&EZjtwWE",
+ "n": 6,
+ "arcs": 19,
+ "rows": [
+  "011011",
+  "101011",
+  "110101",
+  "111000",
+  "011000",
+  "000110"
+ ],
+ "n7/geneson.d6": "&EZjtwWE",
+ "FNFL_rows_match_certificate": true
+}
+{'what': 'Geneson 6-node graph at eps=1/100 delta=29/2500 (expect counterexample)', 'clique': False, 'legal': True, 'positive': True, 'stable': True, 'rhp_routh': 0, 'rhp_cauchy': 0, 'rhp_sympy': 0, 'det_IminusW': '20884327249/9765625000000000000'}
+0 &FK@drUvHw? CONFIRMED [] 3s
+1 &FMEHz\r|p? CONFIRMED [] 5s
+2 &FMELx\V|p? CONFIRMED [] 8s
+3 &FNFL|\u|o? CONFIRMED [] 9s
+4 &FNFH[Yepu? CONFIRMED [] 12s
+5 &F^UX_TE{h? CONFIRMED [] 15s
+6 &F]VhW[rSp? CONFIRMED [] 21s
+7 &F^UXk\Eop? CONFIRMED [] 24s
+8 &F^V[tSUxw? CONFIRMED [] 27s
+9 &F^uleNUTW? CONFIRMED [] 29s
+10 &F^u\mFTxJ? CONFIRMED [] 31s
+11 &FMEHz\rsp? CONFIRMED [] 34s
+12 &FMAkxXbD{? CONFIRMED [] 38s
+13 &FMELx\vxr? CONFIRMED [] 40s
+14 &FNDL}[u|o? CONFIRMED [] 42s
+15 &F]SpqXRDk? CONFIRMED [] 45s
+16 &F]UhqLPT}? CONFIRMED [] 48s
+17 &F^vl]UakR? CONFIRMED [] 50s
+18 &F^u\eNVoJ? CONFIRMED [] 52s
+19 &FMAlx\r|p? CONFIRMED [] 55s
+20 &FMELx\vxz? CONFIRMED [] 59s
+21 &FNFL~[uto? CONFIRMED [] 61s
+22 &F]UhY\`Dr? CONFIRMED [] 65s
+23 &F^UK|\Udy? CONFIRMED [] 68s
+24 &F^vleMoT]? CONFIRMED [] 71s
+25 &F^V\[]e`e? CONFIRMED [] 75s
+26 &F^v\eMp{J? CONFIRMED [] 77s
+27 &FMAlx\v|p? CONFIRMED [] 78s
+28 &FNDL}[u|w? CONFIRMED [] 80s
+29 &FNFL~[u|o? CONFIRMED [] 81s
+30 &FN?|~^oTm? CONFIRMED [] 83s
+31 &F]ShY\`Dq? CONFIRMED [] 86s
+32 &F^uk\^_TU? CONFIRMED [] 89s
+33 &F^V|mMSPb? CONFIRMED [] 91s
+34 &F^U|uJQT|? CONFIRMED [] 93s
+35 &FMELx\vtt? CONFIRMED [] 94s
+36 &FM@|vCtxi? CONFIRMED [] 97s
+37 &F^VGzKUpo? CONFIRMED [] 102s
+38 &F^UXk\Esb? CONFIRMED [] 104s
+39 &F^TxULoDi? CONFIRMED [] 108s
+40 &F]Th]CvWr? CONFIRMED [] 110s
+41 &F^v\SYfdM? CONFIRMED [] 112s
+42 &FMEHz\v|p? CONFIRMED [] 114s
+43 &FMAlh\v|p? CONFIRMED [] 116s
+44 &FKDHy]rsp? CONFIRMED [] 120s
+45 &FNDL~[uds? CONFIRMED [] 123s
+46 &F^UWxTClb? CONFIRMED [] 126s
+47 &F^UXkHQte? CONFIRMED [] 130s
+48 &F^V\K[epa? CONFIRMED [] 134s
+49 &F^UxkNSta? CONFIRMED [] 137s
+50 &FMELx\Vxr? CONFIRMED [] 140s
+51 &FNE[lLQ{`? CONFIRMED [] 143s
+52 &FMDl~[v\s? CONFIRMED [] 145s
+53 &F]UhoTFLx? CONFIRMED [] 148s
+54 &F^u|uVEhI? CONFIRMED [] 152s
+55 &F^V{\Uchb? CONFIRMED [] 155s
+56 &FMEHz\vxr? CONFIRMED [] 156s
+57 &FMELx\R|p? CONFIRMED [] 159s
+58 &FNFL~[u|w? CONFIRMED [] 162s
+59 &FNcXvZVlM? CONFIRMED [] 163s
+60 &F^TXmOEwd? CONFIRMED [] 166s
+61 &F^v|^Fo\B? CONFIRMED [] 168s
+62 &F^UluNQT|? CONFIRMED [] 170s
+63 &FMAlh\r|p? CONFIRMED [] 172s
+64 &FMELx\v|x? CONFIRMED [] 176s
+65 &F^UXb\Eoh? CONFIRMED [] 180s
+66 &F]UhA\bT{? CONFIRMED [] 183s
+67 &F^TXeLUoh? CONFIRMED [] 186s
+68 &F^uK\^clR? CONFIRMED [] 189s
+69 &F^v[\UpkN? CONFIRMED [] 190s
+70 &FMBlWKt\y? CONFIRMED [] 194s
+71 &FMAlx\v|x? CONFIRMED [] 197s
+72 &FNFL|\u|w? CONFIRMED [] 200s
+73 &FNDL~[uls? CONFIRMED [] 201s
+74 &F^VH[Tch}? CONFIRMED [] 204s
+75 &F^VLM[eov? CONFIRMED [] 206s
+76 &F^U|m^SPb? CONFIRMED [] 210s
+77 &FMC`j\BTt? CONFIRMED [] 213s
+78 &FNDL}[ulw? CONFIRMED [] 216s
+79 &FN?|v^qTm? CONFIRMED [] 218s
+80 &F^VH[Xacv? CONFIRMED [] 220s
+81 &F]UxsTFHj? CONFIRMED [] 223s
+82 &F^u|uNOlI? CONFIRMED [] 225s
+83 &FMBlhKRTx? CONFIRMED [] 229s
+84 &FMELx\vpv? CONFIRMED [] 230s
+85 &FNDH~\uts? CONFIRMED [] 232s
+86 &FNDL~[ulo? CONFIRMED [] 234s
+87 &F]UgxDVWr? CONFIRMED [] 238s
+88 &F^VKlKQsp? CONFIRMED [] 242s
+89 &F^vlmZEPT? CONFIRMED [] 245s
+90 &F^Ul]NsTu? CONFIRMED [] 246s
+91 &FMEHz\vpv? CONFIRMED [] 248s
+92 &FMELx\Vpv? CONFIRMED [] 250s
+93 &F]S`YTbKx? CONFIRMED [] 253s
+94 &F^VLOSekx? CONFIRMED [] 256s
+95 &F^UXc\Cxi? CONFIRMED [] 259s
+96 &F^V\K[spa? CONFIRMED [] 262s
+97 &F^ulC^a{\? CONFIRMED [] 265s
+98 &F^v\]YddU? CONFIRMED [] 267s
+99 &FK@dyUfXp? CONFIRMED [] 270s
+100 &FMAlW\d\y? CONFIRMED [] 273s
+101 &FMELx\Vtt? CONFIRMED [] 275s
+102 &FND|mGu\k? CONFIRMED [] 277s
+103 &FNDL~[ulw? CONFIRMED [] 279s
+104 &F]UHOTfkx? CONFIRMED [] 282s
+105 &F^VXkXups? CONFIRMED [] 286s
+106 &F^vk\Yo\U? CONFIRMED [] 288s
+107 &F^U|]VeLk? CONFIRMED [] 290s
+108 &FMEHz\vtt? CONFIRMED [] 292s
+109 &FMELx\r|p? CONFIRMED [] 294s
+110 &FNDL~[uts? CONFIRMED [] 296s
+111 &FNcXv^VkL? CONFIRMED [] 297s
+112 &F]UGx\Dhq? CONFIRMED [] 300s
+113 &F^V[tSUhw? CONFIRMED [] 304s
+114 &F^vL[Yqt[? CONFIRMED [] 306s
+115 &F^U|eNUTw? CONFIRMED [] 308s
+116 &FMALx\Tpv? CONFIRMED [] 312s
+117 &FMELx\v|p? CONFIRMED [] 313s
+118 &FNFL|\ulo? CONFIRMED [] 315s
+119 &FNFL~[udo? CONFIRMED [] 317s
+120 &FMDh~\v\s? CONFIRMED [] 318s
+121 &F^vlKUe[R? CONFIRMED [] 321s
+122 &F^S{^ReL|? CONFIRMED [] 322s
+123 &F^U|m^QTq? CONFIRMED [] 324s
+{
+ "n_graphs": 124,
+ "n_confirmed": 124,
+ "n_points_checked": 742,
+ "n_points_counterexample": 726,
+ "n_undecided_points": 0,
+ "n_method_disagreements": 0,
+ "n_degenerate_points": 0,
+ "n_distinct_isomorphism_classes": 124,
+ "n_graphs_all_stored_witnesses_counterexample": 109,
+ "n_stored_witnesses_flagged_illegal_in_file": 16,
+ "n_points_with_repeated_roots": 186,
+ "failures": []
+}
+[
+ {
+  "what": "Geneson 6-node graph at eps=1/100 delta=29/2500 (expect counterexample)",
+  "clique": false,
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "rhp_routh": 0,
+  "rhp_cauchy": 0,
+  "rhp_sympy": 0,
+  "det_IminusW": "20884327249/9765625000000000000"
+ },
+ {
+  "what": "FNFL stored UNSTABLE point eps=1/101 delta=33/3232 (expect stable False)",
+  "legal": true,
+  "positive": true,
+  "stable": false,
+  "rhp": [
+   2,
+   2,
+   2
+  ]
+ },
+ {
+  "what": "FNFL stored UNSTABLE point eps=1/1001 delta=3/2912 (expect stable False)",
+  "legal": true,
+  "positive": true,
+  "stable": false,
+  "rhp": [
+   2,
+   2,
+   2
+  ]
+ },
+ {
+  "what": "FNFL stored UNSTABLE point eps=1/61 delta=51/2989 (expect stable False)",
+  "legal": true,
+  "positive": true,
+  "stable": false,
+  "rhp": [
+   2,
+   2,
+   2
+  ]
+ }
+]

@@ -1,7 +1,7 @@
 {
  "n": 7,
  "scope": "complete finite-eps classification of the FULL support of every digraph on 7 nodes (all legal eps, delta); proper supports reduce to induced subgraphs by Theorem F",
- "status": "CANDIDATES -- awaiting human hand-verification (CLAUDE.md section 3)",
+ "status": "VERIFIED (human + 4 independent machine verifications); the n = 7 finite-eps map and its 124 graphs are no longer candidates",
  "chain": {
   "digraphs": 882033440,
   "A000273_7": 882033440,
@@ -416,5 +416,28 @@
    3
   ]
  ],
- "with_bidirected_in_twins": 64
+ "with_bidirected_in_twins": 64,
+ "verification_2026_10_15": {
+  "human_hand_verification": {
+   "date": "2026-10-15",
+   "by": "the user",
+   "scope": "all 124 n = 7 candidates",
+   "confidence": "stated as not full; machine confirmation requested"
+  },
+  "machine_verification": {
+   "workflow": "wf_e7b72ed9-c86",
+   "date": "2026-10-15",
+   "verifiers": 4,
+   "independent_of_project_code": true,
+   "methods": [
+    "sympy Rationals, own Hurwitz minors, Routh cross-check",
+    "pure Fractions, own elimination, Faddeev-LeVerrier and Berkowitz charpolys, own minors",
+    "exact right-half-plane root counting by three methods (Routh, Sturm/argument principle, exact isolation), no Hurwitz minors",
+    "structural: non-clique, domination-free, pairwise non-isomorphic (own canonical form + nauty), limit stability exact, FNFL alpha = -1/2 exact"
+   ],
+   "result": "124/124 confirmed as counterexamples at legal rational parameters, 0 undecided, 0 disagreements; 742 points checked by the root-counting verifier alone",
+   "records": "notes/verify_124_workflow.json, notes/verify_124/"
+  },
+  "status": "VERIFIED (human + 4 independent machine verifications); the n = 7 finite-eps map and its 124 graphs are no longer candidates"
+ }
 }

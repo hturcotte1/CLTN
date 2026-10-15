@@ -362,7 +362,7 @@
   ]
  ],
  "all_witnesses_stable": false,
- "status": "CLAIMED COUNTEREXAMPLES -- RUN STOPPED, AWAITING HUMAN HAND-VERIFICATION (CLAUDE.md section 3). Nothing built on them.",
+ "status": "VERIFIED (human + 4 independent machine verifications); the n = 7 finite-eps map and its 124 graphs are no longer candidates",
  "rows": [
   {
    "key": 4111874024524,
@@ -6863,5 +6863,28 @@
   ]
  ],
  "hits_with_a_stable_pointwise_witness": 123,
- "note_witnesses": "each hit has at least one exact rational (eps, delta) at which ctln.analyze_support reports a stable positive full-support fixed point; smaller t may lie below the finite-t threshold T(beta) and then shows 'unstable' (expected from Lemma C)"
+ "note_witnesses": "each hit has at least one exact rational (eps, delta) at which ctln.analyze_support reports a stable positive full-support fixed point; smaller t may lie below the finite-t threshold T(beta) and then shows 'unstable' (expected from Lemma C)",
+ "verification_2026_10_15": {
+  "human_hand_verification": {
+   "date": "2026-10-15",
+   "by": "the user",
+   "scope": "all 124 n = 7 candidates",
+   "confidence": "stated as not full; machine confirmation requested"
+  },
+  "machine_verification": {
+   "workflow": "wf_e7b72ed9-c86",
+   "date": "2026-10-15",
+   "verifiers": 4,
+   "independent_of_project_code": true,
+   "methods": [
+    "sympy Rationals, own Hurwitz minors, Routh cross-check",
+    "pure Fractions, own elimination, Faddeev-LeVerrier and Berkowitz charpolys, own minors",
+    "exact right-half-plane root counting by three methods (Routh, Sturm/argument principle, exact isolation), no Hurwitz minors",
+    "structural: non-clique, domination-free, pairwise non-isomorphic (own canonical form + nauty), limit stability exact, FNFL alpha = -1/2 exact"
+   ],
+   "result": "124/124 confirmed as counterexamples at legal rational parameters, 0 undecided, 0 disagreements; 742 points checked by the root-counting verifier alone",
+   "records": "notes/verify_124_workflow.json, notes/verify_124/"
+  },
+  "status": "VERIFIED (human + 4 independent machine verifications); the n = 7 finite-eps map and its 124 graphs are no longer candidates"
+ }
 }

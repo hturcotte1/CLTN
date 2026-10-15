@@ -1,0 +1,87 @@
+{
+  "task": "Independent machine verification of the 124 n=7 full-support counterexample candidates (certificates/COUNTEREXAMPLE_CANDIDATES_n7_finite.jsonl)",
+  "verifiers": {
+    "sympy": {
+      "graphs_checked": 124, "confirmed": 124, "undecided_points": 0,
+      "points": "249 prescribed (stored witness + interior of first stable cell) + 492 stored limit-file witnesses; 476/492 stored points are counterexample points, flags and exact x agree with the file at all 492",
+      "method": "sympy Rational only; own digraph6 decoder; W from CLAUDE.md s2 with transpose, cross-checked against closed form; LUsolve + back-substitution for x>0; charpoly (Berkowitz) cross-checked by Bareiss det at 10 integer points; own Hurwitz minors (three-valued) cross-checked by Routh first column; brute-force isomorphism over 7!",
+      "failures_verbatim": [
+        "Point (a), the FIRST stored witness, fails for 15 of the 123 limit graphs. In every case the cause is that the point is ILLEGAL: q <= 1 at t = 100, eps = 1/101. The stored file already marks these 15 points legal=False, so the data is not wrong; the witness choice the protocol prescribes is. The 15 graphs: &F]VhW[rSp?, &FMELx\\vxz?, &F^V\\[]e`e?, &F]ShY\\`Dq?, &F^VGzKUpo?, &FKDHy]rsp?, &F^UxkNSta?, &FNE[lLQ{`?, &FMELx\\v|x?, &F]UhA\\bT{?, &FMBlWKt\\y?, &FMAlx\\v|x?, &FMBlhKRTx?, &F^VKlKQsp?, &FMALx\\Tpv?. At those points 14 graphs are positive and stable. &F]VhW[rSp? is also UNSTABLE there (q = 35310/35653 < 1), and the stored record says stable=False too. Its second stored witness (t = 1000, q = 32100/32123) is also illegal. Its first legal stored witness is at t = 10000.",
+        "Decoder hint mismatch: the task text says Geneson's '&EZjtwWE' has 'node 0 -> 1,2,3,4'. My decoder gives node 0 -> 1,2,4,5 ... The hint is wrong, not the decoder."
+      ],
+      "note": "The 15 CHECK_FAILED rows in v_sympy_table.json are all at illegal points the data file itself flags legal=false; every one of those 15 graphs has a COUNTEREXAMPLE_CONFIRMED row at its in-cell point (verified by collator)."
+    },
+    "fraction": {
+      "graphs_checked": 124, "confirmed": 124, "undecided_points": 0,
+      "points": "422 (first LEGAL stored witness + one interior point in EVERY stable cell, 298 cell points, all verified strictly inside their cells); plus the stored UNSTABLE points of FNFL and the two bulge graphs re-decided",
+      "method": "pure fractions.Fraction, no sympy/numpy; own decoder with padding check and encode(decode)=id; exact Gaussian elimination with residual check; charpoly by Faddeev-LeVerrier (Cayley-Hamilton enforced) AND Berkowitz, asserted equal, constant term = det(I-W); Hurwitz minors three-valued, Routh cross-check; transpose-convention sanity test (0/124 survive with A[i][j] instead of A[j][i], all fail positivity)",
+      "failures_verbatim": [],
+      "data_defect_verbatim": "for 15 of the 123 limit graphs, the FIRST stored pointwise witness is not a legal parameter point. At eps=1/101 those points have q <= 1, and the file itself already marks them 'legal': false ... On &F]VhW[rSp? the first witness is also unstable (minor 6 is negative), and the second (eps=1/1001) is still illegal. ... Read literally, the instruction 'use the first pointwise_witnesses entry' would have produced 15 false failures. If the human's hand verification used the first entry, those 15 graphs were checked at points that are not legal CTLNs.",
+      "unstable_points": "all stored UNSTABLE points (FNFL eps 1/101,1/1001,1/61; &FNDL}[u|o? eps 1/61,1/100001; &FK@dyUfXp? eps 1/1001,1/10001) decided unstable with minor signs [+,+,+,+,+,-,-], no zero minor, legal, x>0"
+    },
+    "roots": {
+      "graphs_checked": 124, "confirmed": 124, "undecided_points": 0,
+      "points": "742 (all 492 stored witnesses + new in-cell point at t = t_lo+(t_hi-t_lo)/3 or 3 t_lo+5 + stored CAD sample); 726 are legal positive stable non-clique points, the other 16 are the stored witnesses the file itself flags illegal",
+      "method": "Fraction/integer only; NO Hurwitz minors; condition (3) decided by counting roots with Re>=0 three independent ways that must all agree and be decided: exact Routh array, argument principle via own Sturm chain (Cauchy index), sympy square-free decomposition + exact interval isolation refined until each box lies on one side of Re=0; calibrated on 3000 random polynomials with known roots; charpoly by Faddeev-LeVerrier cross-checked by direct det at 4 rational r; all 124 pairwise non-isomorphic (5040 permutations)",
+      "failures_verbatim": [
+        "No graph failed. All 124 are CONFIRMED ... No point was undecided, no point was degenerate, and the three root-counting methods never disagreed.",
+        "Data-labelling defect, not a verification failure: 16 of the 492 stored pointwise_witnesses in certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit.jsonl are at an ILLEGAL point (q < 1, all at t = 100, plus one at t = 1000 for &F]VhW[rSp?). The file correctly sets 'legal': false on all 16 ... But 15 of them also carry 'agrees_with_conjecture': false (stable and positive, but illegal) and 1 carries 'agrees_with_conjecture': true (illegal and unstable). That field means nothing at an illegal point and could mislead a reader who skips 'legal'.",
+        "Interim result, superseded: my first run marked 46 graphs NOT CONFIRMED. ... (a) The counterexample test was applied to the 16 stored witnesses that the file itself labels illegal. (b) My sympy cross-check treated a repeated root as undecided. 186 points have repeated eigenvalues off the imaginary axis, from twin structure. ... After the fix every point is decided by all three methods."
+      ]
+    },
+    "structure": {
+      "graphs_checked": 124, "confirmed": 124, "undecided_points": 0,
+      "points": "every stable cell's sample point (298/298 confirm) + all 492 limit-file witnesses (476 confirm, 16 are the file-flagged illegal points) + both FNFL witnesses and FNFL cell sample",
+      "method": "integers/Fractions; own decoder+encoder; no loops, arc counts = 'edges', not complete bidirected (missing arcs 11..19), domination-free by Curto Def 1.1 literally over all ordered pairs, own canonical form + nauty labelg second opinion, 123 in_limit_candidates = limit file up to isomorphism; limit check via m*chi_perp = chi_A - chi_{A+J} (Faddeev-LeVerrier, cross-checked via (V^T V)^{-1} V^T A V), shifted Hurwitz at gamma = 1-1/beta_sample, w = (A^T+gamma I)^{-1} 1 > 0, beta > 2; FNFL: exact factorisation (l+1)(l^2+l+1)(7l^3+14l^2+14l+5), alpha = -1/2 exactly, so never limit-stable for any beta > 2",
+      "failures_verbatim": [],
+      "structural_results": "124/124 domination-free; 124 pairwise non-isomorphic (own canon and labelg agree); 123/123 limit graphs pass shifted Hurwitz 'stable' with w>0 and beta>2, all first cells unbounded in t; FNFL not in limit file, limit verdict 'never' proven by factorisation independent of sampling; every 'canonical' field isomorphic to its 'd6'",
+      "caveat": "limit check depends on Lemma I (notes/lemmas.md), not re-proved; finite-point checks do not depend on it"
+    }
+  },
+  "collator_cross_checks": {
+    "same_124_d6_in_all_four_tables_and_equal_to_finite_jsonl": true,
+    "sympy_CHECK_FAILED_rows": "15, all point_source = limit file pointwise_witnesses[0], all legal=False (14 stable+positive, 1 unstable+positive); each of those 15 graphs has a CONFIRMED row at its in-cell point",
+    "roots_table": "124 rows all (legal, positive, stable, not clique, det nonzero); 742 points, 726 counterexample points",
+    "structure_table": "124 rows all domination_free, not clique, legal, positive, stable; limit_shifted_hurwitz = 'stable' for 123, None for FNFL (not a limit candidate)",
+    "iso_log": "{n_graphs: 124, n_iso_classes: 124, duplicate_classes: []}",
+    "decoder_unanimous": "all four decoders agree: '&EZjtwWE' -> rows 011011/101011/110101/111000/011000/000110, 19 arcs, node 0 -> {1,2,4,5}; identical to n7/geneson.d6 and to GENESON_A in test_ctln.py; the task hint 'node 0 -> 1,2,3,4' is wrong. '&FNFL~[udo?' and all 123 stored 'A' matrices reproduced exactly"
+  },
+  "overall_verdict": {
+    "all_124_confirmed_at_legal_rational_parameters_by_at_least_three_independent_implementations": true,
+    "detail": "Four independent implementations (sympy Rational + Hurwitz; pure Fraction + Hurwitz with dual charpoly; pure Fraction + exact root counting by Routh/Cauchy-index/sympy isolation with no Hurwitz minors; Fraction structural + limit) each confirm 124/124: not complete bidirected, legal (q>1), x>0 strictly, all eigenvalues of -I+W in the open left half-plane. Zero undecided points, zero method disagreements, zero mismatches against stored x / charpoly / adjacency. Each graph confirmed at 4 to 6 distinct legal rational points.",
+    "structural_limit_claims_confirmed": true,
+    "structural_detail": "124 pairwise non-isomorphic (two independent canonical forms + nauty), 124 domination-free, 123 in_limit_candidates match the limit file up to isomorphism, 123/123 limit-stable at beta_sample (conditional on Lemma I), FNFL limit verdict 'never' proven exactly (alpha = -1/2), FNFL bounded stable cell t in [26,53] consistent with stored claim.",
+    "things_the_human_must_know": [
+      "15 of 123 limit graphs have an ILLEGAL first stored witness (t=100, q<=1; file flags legal=false). &F]VhW[rSp? has two illegal leading witnesses (t=100 and t=1000); its first legal witness is t=10000. If the hand verification used pointwise_witnesses[0], those 15 graphs were hand-checked at non-CTLN points. They are still confirmed counterexamples at their later legal witnesses and in-cell points.",
+      "In the limit file, 'agrees_with_conjecture' is set on illegal points (15 false, 1 true) and is meaningless there; consider nulling it when legal=false.",
+      "The task text's decoder hint for Geneson's graph (node 0 -> 1,2,3,4) is wrong; correct is 1,2,4,5.",
+      "The conventions line 'I - W = -delta I + (1+delta) J - (eps+delta) A_sigma' only holds with A_sigma read as the transpose (A^T restricted to sigma), which is what ctln.py/symbolic.py implement; a notation point, not a bug."
+    ],
+    "not_certified": "Whole stable-cell boundaries, CAD critical values / minimal polynomials, completeness of the 124 list (the search was not re-run), Lemma I."
+  },
+  "files_worth_keeping": [
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/synthesis6/SYNTHESIS.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_sympy/verify.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_sympy/all_witnesses.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_sympy/iso_check.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_sympy/v_sympy_table.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_sympy/v_sympy_results.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_sympy/v_sympy_all_witnesses.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_fraction/vf.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_fraction/run.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_fraction/v_fraction_table.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_fraction/v_fraction_results.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_roots/vroots.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_roots/test_methods.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_roots/run_verify.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_roots/v_roots_table.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_roots/v_roots_results.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_structure/exact.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_structure/verify.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_structure/fnfl.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_structure/table.py",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_structure/v_structure_table.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_structure/verify_out.json",
+    "/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/wf6/v_structure/fnfl_out.json"
+  ]
+}

@@ -1,0 +1,2730 @@
+[
+ {
+  "d6": "&FK@drUvHw?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "39/3838",
+   "q": "1950/1919"
+  },
+  "second_point": {
+   "eps": "1/924",
+   "delta": "307/282744",
+   "q": "283361/282744",
+   "where": "cell1_second_point beta=613/306 t=923"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMEHz\\r|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/84",
+   "delta": "9/728",
+   "q": "747/728",
+   "where": "cell1_second_point beta=53/26 t=83"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\V|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "2/159",
+   "delta": "34/2597",
+   "q": "2669/2597",
+   "where": "cell1_second_point beta=100/49 t=157/2"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNFL|\\u|o?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "25/2222",
+   "q": "1250/1111"
+  },
+  "second_point": {
+   "eps": "1/48",
+   "delta": "5/224",
+   "q": "235/224",
+   "where": "cell1_second_point beta=29/14 t=47"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNFH[Yepu?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "71/7070",
+   "q": "710/707"
+  },
+  "second_point": {
+   "eps": "1/284",
+   "delta": "281/78952",
+   "q": "79523/78952",
+   "where": "cell1_second_point beta=559/278 t=283"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UX_TE{h?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "13/1212",
+   "q": "325/303"
+  },
+  "second_point": {
+   "eps": "1/144",
+   "delta": "47/6624",
+   "q": "6721/6624",
+   "where": "cell1_second_point beta=93/46 t=143"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]VhW[rSp?",
+  "witness_point": {
+   "eps": "1/10001",
+   "delta": "3531/35303530",
+   "q": "3531000/3530353"
+  },
+  "second_point": {
+   "eps": "1/11502",
+   "delta": "3833/44075664",
+   "q": "44083333/44075664",
+   "where": "cell1_second_point beta=7665/3832 t=11501"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 4,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UXk\\Eop?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/66",
+   "delta": "7/440",
+   "q": "91/88",
+   "where": "cell1_second_point beta=41/20 t=65"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^V[tSUxw?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "13/1212",
+   "q": "325/303"
+  },
+  "second_point": {
+   "eps": "1/90",
+   "delta": "29/2520",
+   "q": "2581/2520",
+   "where": "cell1_second_point beta=57/28 t=89"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^uleNUTW?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "9/808",
+   "q": "225/202"
+  },
+  "second_point": {
+   "eps": "1/48",
+   "delta": "5/224",
+   "q": "235/224",
+   "where": "cell1_second_point beta=29/14 t=47"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^u\\mFTxJ?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "5/401",
+   "delta": "1930/148771",
+   "q": "152856/148771",
+   "where": "cell1_second_point beta=757/371 t=396/5"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMEHz\\rsp?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "25/2424",
+   "q": "625/606"
+  },
+  "second_point": {
+   "eps": "1/144",
+   "delta": "47/6624",
+   "q": "6721/6624",
+   "where": "cell1_second_point beta=93/46 t=143"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMAkxXbD{?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "81/8080",
+   "q": "405/404"
+  },
+  "second_point": {
+   "eps": "1/294",
+   "delta": "97/28224",
+   "q": "28421/28224",
+   "where": "cell1_second_point beta=193/96 t=293"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\vxr?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/60",
+   "delta": "19/1080",
+   "q": "1121/1080",
+   "where": "cell1_second_point beta=37/18 t=59"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNDL}[u|o?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "28/2727",
+   "q": "2800/2727"
+  },
+  "second_point": {
+   "eps": "1/114",
+   "delta": "37/4104",
+   "q": "4181/4104",
+   "where": "cell1_second_point beta=73/36 t=113"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]SpqXRDk?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "55/5454",
+   "q": "2750/2727"
+  },
+  "second_point": {
+   "eps": "1/180",
+   "delta": "59/10440",
+   "q": "10561/10440",
+   "where": "cell1_second_point beta=117/58 t=179"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]UhqLPT}?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "1/438",
+   "delta": "145/63072",
+   "q": "63365/63072",
+   "where": "cell1_second_point beta=289/144 t=437"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^vl]UakR?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "1/84",
+   "delta": "9/728",
+   "q": "747/728",
+   "where": "cell1_second_point beta=53/26 t=83"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^u\\eNVoJ?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1313",
+   "q": "1500/1313"
+  },
+  "second_point": {
+   "eps": "1/54",
+   "delta": "17/864",
+   "q": "901/864",
+   "where": "cell1_second_point beta=33/16 t=53"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMAlx\\r|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/84",
+   "delta": "9/728",
+   "q": "747/728",
+   "where": "cell1_second_point beta=53/26 t=83"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\vxz?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "43/42900",
+   "q": "430/429"
+  },
+  "second_point": {
+   "eps": "1/1110",
+   "delta": "123/136160",
+   "q": "136407/136160",
+   "where": "cell1_second_point beta=737/368 t=1109"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNFL~[uto?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "1/114",
+   "delta": "37/4104",
+   "q": "4181/4104",
+   "where": "cell1_second_point beta=73/36 t=113"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]UhY\\`Dr?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "81/8080",
+   "q": "405/404"
+  },
+  "second_point": {
+   "eps": "571/137634",
+   "delta": "25870297/6157194624",
+   "q": "6209913341/6157194624",
+   "where": "cell1_second_point beta=90043/44736 t=137063/571"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UK|\\Udy?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "76/7373",
+   "q": "7600/7373"
+  },
+  "second_point": {
+   "eps": "1/79",
+   "delta": "76/5767",
+   "q": "5928/5767",
+   "where": "cell1_second_point beta=149/73 t=78"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^vleMoT]?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "19/1818",
+   "q": "950/909"
+  },
+  "second_point": {
+   "eps": "1/102",
+   "delta": "11/1088",
+   "q": "1111/1088",
+   "where": "cell1_second_point beta=65/32 t=101"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^V\\[]e`e?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "111/110110",
+   "q": "11100/11011"
+  },
+  "second_point": {
+   "eps": "103/34404",
+   "delta": "1170595/387457848",
+   "q": "389830865/387457848",
+   "where": "cell1_second_point beta=22627/11262 t=34301/103"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^v\\eMp{J?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "13/1212",
+   "q": "325/303"
+  },
+  "second_point": {
+   "eps": "29/2980",
+   "delta": "83897/8361880",
+   "q": "8537243/8361880",
+   "where": "cell1_second_point beta=5699/2806 t=2951/29"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMAlx\\v|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/60",
+   "delta": "19/1080",
+   "q": "1121/1080",
+   "where": "cell1_second_point beta=37/18 t=59"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNDL}[u|w?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "287/27068",
+   "q": "7175/6767"
+  },
+  "second_point": {
+   "eps": "1/62",
+   "delta": "59/3472",
+   "q": "3599/3472",
+   "where": "cell1_second_point beta=115/56 t=61"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNFL~[u|o?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "25/2222",
+   "q": "1250/1111"
+  },
+  "second_point": {
+   "eps": "1/48",
+   "delta": "5/224",
+   "q": "235/224",
+   "where": "cell1_second_point beta=29/14 t=47"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FN?|~^oTm?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/62",
+   "delta": "59/3472",
+   "q": "3599/3472",
+   "where": "cell1_second_point beta=115/56 t=61"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]ShY\\`Dq?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "27/26884",
+   "q": "6750/6721"
+  },
+  "second_point": {
+   "eps": "1/576",
+   "delta": "191/109440",
+   "q": "21965/21888",
+   "where": "cell1_second_point beta=381/190 t=575"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^uk\\^_TU?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "379/31108",
+   "q": "9475/7777"
+  },
+  "second_point": {
+   "eps": "1/20",
+   "delta": "17/280",
+   "q": "323/280",
+   "where": "cell1_second_point beta=31/14 t=19"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^V|mMSPb?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "261/24947",
+   "q": "26100/24947"
+  },
+  "second_point": {
+   "eps": "20/1173",
+   "delta": "7420/411723",
+   "q": "427763/411723",
+   "where": "cell1_second_point beta=722/351 t=1153/20"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^U|uJQT|?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "5/401",
+   "delta": "1930/148771",
+   "q": "152856/148771",
+   "where": "cell1_second_point beta=757/371 t=396/5"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\vtt?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/60",
+   "delta": "19/1080",
+   "q": "1121/1080",
+   "where": "cell1_second_point beta=37/18 t=59"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FM@|vCtxi?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "33/3232",
+   "q": "825/808"
+  },
+  "second_point": {
+   "eps": "1/102",
+   "delta": "11/1088",
+   "q": "1111/1088",
+   "where": "cell1_second_point beta=65/32 t=101"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^VGzKUpo?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "3/2990",
+   "q": "300/299"
+  },
+  "second_point": {
+   "eps": "932/644751",
+   "delta": "199434020/137366134803",
+   "q": "137767608715/137366134803",
+   "where": "cell1_second_point beta=427038/213053 t=643819/932"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UXk\\Esb?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "9/808",
+   "q": "225/202"
+  },
+  "second_point": {
+   "eps": "1/99",
+   "delta": "32/3069",
+   "q": "3136/3069",
+   "where": "cell1_second_point beta=63/31 t=98"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^TxULoDi?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "25/2424",
+   "q": "625/606"
+  },
+  "second_point": {
+   "eps": "3/230",
+   "delta": "663/48760",
+   "q": "50167/48760",
+   "where": "cell1_second_point beta=433/212 t=227/3"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]Th]CvWr?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "51/5050",
+   "q": "102/101"
+  },
+  "second_point": {
+   "eps": "6/901",
+   "delta": "5298/779365",
+   "q": "158057/155873",
+   "where": "cell1_second_point beta=1748/865 t=895/6"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^v\\SYfdM?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "13/1212",
+   "q": "325/303"
+  },
+  "second_point": {
+   "eps": "3/116",
+   "delta": "321/11368",
+   "q": "12091/11368",
+   "where": "cell1_second_point beta=205/98 t=113/3"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMEHz\\v|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/60",
+   "delta": "19/1080",
+   "q": "1121/1080",
+   "where": "cell1_second_point beta=37/18 t=59"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMAlh\\v|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/84",
+   "delta": "9/728",
+   "q": "747/728",
+   "where": "cell1_second_point beta=53/26 t=83"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FKDHy]rsp?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "229/228228",
+   "q": "57250/57057"
+  },
+  "second_point": {
+   "eps": "1/804",
+   "delta": "89/71288",
+   "q": "71467/71288",
+   "where": "cell1_second_point beta=533/266 t=803"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNDL~[uds?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "11/864",
+   "delta": "3047/229824",
+   "q": "236281/229824",
+   "where": "cell1_second_point beta=543/266 t=853/11"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UWxTClb?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "23/2222",
+   "q": "1150/1111"
+  },
+  "second_point": {
+   "eps": "1/69",
+   "delta": "22/1449",
+   "q": "1496/1449",
+   "where": "cell1_second_point beta=43/21 t=68"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UXkHQte?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "69/6868",
+   "q": "1725/1717"
+  },
+  "second_point": {
+   "eps": "1/234",
+   "delta": "77/17784",
+   "q": "17941/17784",
+   "where": "cell1_second_point beta=153/76 t=233"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^V\\K[epa?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "51/5050",
+   "q": "102/101"
+  },
+  "second_point": {
+   "eps": "17/2633",
+   "delta": "43894/6664123",
+   "q": "6754512/6664123",
+   "where": "cell1_second_point beta=5113/2531 t=2616/17"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UxkNSta?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "107/106106",
+   "q": "53500/53053"
+  },
+  "second_point": {
+   "eps": "1/414",
+   "delta": "137/56304",
+   "q": "56581/56304",
+   "where": "cell1_second_point beta=273/136 t=413"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\Vxr?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "2/159",
+   "delta": "34/2597",
+   "q": "2669/2597",
+   "where": "cell1_second_point beta=100/49 t=157/2"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNE[lLQ{`?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "15/14872",
+   "q": "1875/1859"
+  },
+  "second_point": {
+   "eps": "5/1566",
+   "delta": "2585/801792",
+   "q": "807037/801792",
+   "where": "cell1_second_point beta=1029/512 t=1561/5"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMDl~[v\\s?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "47/4646",
+   "q": "2350/2323"
+  },
+  "second_point": {
+   "eps": "1/168",
+   "delta": "55/9072",
+   "q": "9185/9072",
+   "where": "cell1_second_point beta=109/54 t=167"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]UhoTFLx?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "37/3636",
+   "q": "925/909"
+  },
+  "second_point": {
+   "eps": "1/117",
+   "delta": "38/4329",
+   "q": "4408/4329",
+   "where": "cell1_second_point beta=75/37 t=116"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^u|uVEhI?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "45/4444",
+   "q": "1125/1111"
+  },
+  "second_point": {
+   "eps": "1/135",
+   "delta": "44/5805",
+   "q": "5896/5805",
+   "where": "cell1_second_point beta=87/43 t=134"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^V{\\Uchb?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "3951/372892",
+   "q": "98775/93223"
+  },
+  "second_point": {
+   "eps": "115/5604",
+   "delta": "201595/9179352",
+   "q": "9622217/9179352",
+   "where": "cell1_second_point beta=3391/1638 t=5489/115"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMEHz\\vxr?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/60",
+   "delta": "19/1080",
+   "q": "1121/1080",
+   "where": "cell1_second_point beta=37/18 t=59"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\R|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "31/3030",
+   "q": "310/303"
+  },
+  "second_point": {
+   "eps": "1/180",
+   "delta": "59/10440",
+   "q": "10561/10440",
+   "where": "cell1_second_point beta=117/58 t=179"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNFL~[u|w?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "45/4444",
+   "q": "1125/1111"
+  },
+  "second_point": {
+   "eps": "1/150",
+   "delta": "49/7200",
+   "q": "7301/7200",
+   "where": "cell1_second_point beta=97/48 t=149"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNcXvZVlM?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/62",
+   "delta": "59/3472",
+   "q": "3599/3472",
+   "where": "cell1_second_point beta=115/56 t=61"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^TXmOEwd?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "19/1818",
+   "q": "950/909"
+  },
+  "second_point": {
+   "eps": "29/1752",
+   "delta": "5365/307184",
+   "q": "318755/307184",
+   "where": "cell1_second_point beta=1081/526 t=1723/29"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^v|^Fo\\B?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "79/7878",
+   "q": "3950/3939"
+  },
+  "second_point": {
+   "eps": "1/336",
+   "delta": "37/12320",
+   "q": "2479/2464",
+   "where": "cell1_second_point beta=221/110 t=335"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UluNQT|?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "5/401",
+   "delta": "1930/148771",
+   "q": "152856/148771",
+   "where": "cell1_second_point beta=757/371 t=396/5"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMAlh\\r|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "31/3030",
+   "q": "310/303"
+  },
+  "second_point": {
+   "eps": "1/180",
+   "delta": "59/10440",
+   "q": "10561/10440",
+   "where": "cell1_second_point beta=117/58 t=179"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\v|x?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "43/42900",
+   "q": "430/429"
+  },
+  "second_point": {
+   "eps": "1/1110",
+   "delta": "123/136160",
+   "q": "136407/136160",
+   "where": "cell1_second_point beta=737/368 t=1109"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UXb\\Eoh?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "69/6868",
+   "q": "1725/1717"
+  },
+  "second_point": {
+   "eps": "1/246",
+   "delta": "27/6560",
+   "q": "1323/1312",
+   "where": "cell1_second_point beta=161/80 t=245"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]UhA\\bT{?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "183/182182",
+   "q": "91500/91091"
+  },
+  "second_point": {
+   "eps": "1/549",
+   "delta": "182/99369",
+   "q": "99736/99369",
+   "where": "cell1_second_point beta=363/181 t=548"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^TXeLUoh?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "49/4848",
+   "q": "1225/1212"
+  },
+  "second_point": {
+   "eps": "1/192",
+   "delta": "21/3968",
+   "q": "4011/3968",
+   "where": "cell1_second_point beta=125/62 t=191"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^uK\\^clR?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "76/7373",
+   "q": "7600/7373"
+  },
+  "second_point": {
+   "eps": "1/79",
+   "delta": "76/5767",
+   "q": "5928/5767",
+   "where": "cell1_second_point beta=149/73 t=78"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^v[\\UpkN?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "19/1818",
+   "q": "950/909"
+  },
+  "second_point": {
+   "eps": "5/528",
+   "delta": "285/29216",
+   "q": "29811/29216",
+   "where": "cell1_second_point beta=337/166 t=523/5"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMBlWKt\\y?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "111/110110",
+   "q": "11100/11011"
+  },
+  "second_point": {
+   "eps": "1/792",
+   "delta": "263/207504",
+   "q": "208033/207504",
+   "where": "cell1_second_point beta=525/262 t=791"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMAlx\\v|x?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "43/42900",
+   "q": "430/429"
+  },
+  "second_point": {
+   "eps": "1/1110",
+   "delta": "123/136160",
+   "q": "136407/136160",
+   "where": "cell1_second_point beta=737/368 t=1109"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNFL|\\u|w?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "45/4444",
+   "q": "1125/1111"
+  },
+  "second_point": {
+   "eps": "1/150",
+   "delta": "49/7200",
+   "q": "7301/7200",
+   "where": "cell1_second_point beta=97/48 t=149"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNDL~[uls?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "1/84",
+   "delta": "9/728",
+   "q": "747/728",
+   "where": "cell1_second_point beta=53/26 t=83"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^VH[Tch}?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "43/4242",
+   "q": "2150/2121"
+  },
+  "second_point": {
+   "eps": "1/132",
+   "delta": "43/5544",
+   "q": "5633/5544",
+   "where": "cell1_second_point beta=85/42 t=131"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^VLM[eov?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "9/808",
+   "q": "225/202"
+  },
+  "second_point": {
+   "eps": "1/48",
+   "delta": "5/224",
+   "q": "235/224",
+   "where": "cell1_second_point beta=29/14 t=47"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^U|m^SPb?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "69/6868",
+   "q": "1725/1717"
+  },
+  "second_point": {
+   "eps": "1/208",
+   "delta": "205/42016",
+   "q": "42435/42016",
+   "where": "cell1_second_point beta=407/202 t=207"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMC`j\\BTt?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "57/5656",
+   "q": "1425/1414"
+  },
+  "second_point": {
+   "eps": "1/192",
+   "delta": "21/3968",
+   "q": "4011/3968",
+   "where": "cell1_second_point beta=125/62 t=191"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNDL}[ulw?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/78",
+   "delta": "25/1872",
+   "q": "1925/1872",
+   "where": "cell1_second_point beta=49/24 t=77"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FN?|v^qTm?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/62",
+   "delta": "59/3472",
+   "q": "3599/3472",
+   "where": "cell1_second_point beta=115/56 t=61"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^VH[Xacv?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "1/438",
+   "delta": "145/63072",
+   "q": "63365/63072",
+   "where": "cell1_second_point beta=289/144 t=437"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]UxsTFHj?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "75/7474",
+   "q": "3750/3737"
+  },
+  "second_point": {
+   "eps": "5/1122",
+   "delta": "615/136136",
+   "q": "137391/136136",
+   "where": "cell1_second_point beta=733/364 t=1117/5"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^u|uNOlI?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "51/5050",
+   "q": "102/101"
+  },
+  "second_point": {
+   "eps": "1/240",
+   "delta": "79/18720",
+   "q": "18881/18720",
+   "where": "cell1_second_point beta=157/78 t=239"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMBlhKRTx?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "213/212212",
+   "q": "53250/53053"
+  },
+  "second_point": {
+   "eps": "1/678",
+   "delta": "75/50624",
+   "q": "50775/50624",
+   "where": "cell1_second_point beta=449/224 t=677"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\vpv?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/60",
+   "delta": "19/1080",
+   "q": "1121/1080",
+   "where": "cell1_second_point beta=37/18 t=59"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNDH~\\uts?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "287/27068",
+   "q": "7175/6767"
+  },
+  "second_point": {
+   "eps": "1/62",
+   "delta": "59/3472",
+   "q": "3599/3472",
+   "where": "cell1_second_point beta=115/56 t=61"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNDL~[ulo?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "28/2727",
+   "q": "2800/2727"
+  },
+  "second_point": {
+   "eps": "1/114",
+   "delta": "37/4104",
+   "q": "4181/4104",
+   "where": "cell1_second_point beta=73/36 t=113"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]UgxDVWr?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "81/8080",
+   "q": "405/404"
+  },
+  "second_point": {
+   "eps": "2111/508836",
+   "delta": "353594611/84156386040",
+   "q": "16975388845/16831277208",
+   "where": "cell1_second_point beta=332891/165390 t=506725/2111"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^VKlKQsp?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "149/148148",
+   "q": "37250/37037"
+  },
+  "second_point": {
+   "eps": "55/24572",
+   "delta": "1342385/595674424",
+   "q": "598386419/595674424",
+   "where": "cell1_second_point beta=48649/24242 t=24517/55"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^vlmZEPT?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "69/6868",
+   "q": "1725/1717"
+  },
+  "second_point": {
+   "eps": "1/208",
+   "delta": "205/42016",
+   "q": "42435/42016",
+   "where": "cell1_second_point beta=407/202 t=207"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^Ul]NsTu?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "5/401",
+   "delta": "1930/148771",
+   "q": "152856/148771",
+   "where": "cell1_second_point beta=757/371 t=396/5"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMEHz\\vpv?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/60",
+   "delta": "19/1080",
+   "q": "1121/1080",
+   "where": "cell1_second_point beta=37/18 t=59"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\Vpv?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "2/159",
+   "delta": "34/2597",
+   "q": "2669/2597",
+   "where": "cell1_second_point beta=100/49 t=157/2"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]S`YTbKx?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "17/1616",
+   "q": "425/404"
+  },
+  "second_point": {
+   "eps": "43/2172",
+   "delta": "9761/461912",
+   "q": "483283/461912",
+   "where": "cell1_second_point beta=1319/638 t=2129/43"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^VLOSekx?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "87/6868",
+   "q": "2175/1717"
+  },
+  "second_point": {
+   "eps": "20/341",
+   "delta": "5620/75361",
+   "q": "90201/75361",
+   "where": "cell1_second_point beta=502/221 t=321/20"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^UXc\\Cxi?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "9/808",
+   "q": "225/202"
+  },
+  "second_point": {
+   "eps": "9/272",
+   "delta": "2205/59296",
+   "q": "64435/59296",
+   "where": "cell1_second_point beta=463/218 t=263/9"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^V\\K[spa?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "13/1212",
+   "q": "325/303"
+  },
+  "second_point": {
+   "eps": "1/54",
+   "delta": "17/864",
+   "q": "901/864",
+   "where": "cell1_second_point beta=33/16 t=53"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^ulC^a{\\?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "3/262",
+   "delta": "759/63928",
+   "q": "65527/63928",
+   "where": "cell1_second_point beta=497/244 t=259/3"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^v\\]YddU?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "1/84",
+   "delta": "9/728",
+   "q": "747/728",
+   "where": "cell1_second_point beta=53/26 t=83"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FK@dyUfXp?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "49/4545",
+   "q": "980/909"
+  },
+  "second_point": {
+   "eps": "157/6342",
+   "delta": "307249/11415600",
+   "q": "2420809/2283120",
+   "where": "cell1_second_point beta=3757/1800 t=6185/157"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMAlW\\d\\y?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "9/808",
+   "q": "225/202"
+  },
+  "second_point": {
+   "eps": "1/36",
+   "delta": "11/360",
+   "q": "77/72",
+   "where": "cell1_second_point beta=21/10 t=35"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\Vtt?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "2/159",
+   "delta": "34/2597",
+   "q": "2669/2597",
+   "where": "cell1_second_point beta=100/49 t=157/2"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FND|mGu\\k?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "433/37572",
+   "q": "10825/9393"
+  },
+  "second_point": {
+   "eps": "61/1482",
+   "delta": "26413/551304",
+   "q": "615293/551304",
+   "where": "cell1_second_point beta=805/372 t=1421/61"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNDL~[ulw?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "287/27068",
+   "q": "7175/6767"
+  },
+  "second_point": {
+   "eps": "1/62",
+   "delta": "59/3472",
+   "q": "3599/3472",
+   "where": "cell1_second_point beta=115/56 t=61"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]UHOTfkx?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/198",
+   "delta": "65/12672",
+   "q": "12805/12672",
+   "where": "cell1_second_point beta=129/64 t=197"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^VXkXups?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "61/6060",
+   "q": "305/303"
+  },
+  "second_point": {
+   "eps": "1/468",
+   "delta": "155/72072",
+   "q": "72385/72072",
+   "where": "cell1_second_point beta=309/154 t=467"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^vk\\Yo\\U?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "19/1818",
+   "q": "950/909"
+  },
+  "second_point": {
+   "eps": "1/78",
+   "delta": "25/1872",
+   "q": "1925/1872",
+   "where": "cell1_second_point beta=49/24 t=77"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^U|]VeLk?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "75/7474",
+   "q": "3750/3737"
+  },
+  "second_point": {
+   "eps": "1/228",
+   "delta": "25/5624",
+   "q": "5675/5624",
+   "where": "cell1_second_point beta=149/74 t=227"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMEHz\\vtt?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/60",
+   "delta": "19/1080",
+   "q": "1121/1080",
+   "where": "cell1_second_point beta=37/18 t=59"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\r|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/84",
+   "delta": "9/728",
+   "q": "747/728",
+   "where": "cell1_second_point beta=53/26 t=83"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNDL~[uts?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "287/27068",
+   "q": "7175/6767"
+  },
+  "second_point": {
+   "eps": "1/62",
+   "delta": "59/3472",
+   "q": "3599/3472",
+   "where": "cell1_second_point beta=115/56 t=61"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNcXv^VkL?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "21/2020",
+   "q": "105/101"
+  },
+  "second_point": {
+   "eps": "1/62",
+   "delta": "59/3472",
+   "q": "3599/3472",
+   "where": "cell1_second_point beta=115/56 t=61"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F]UGx\\Dhq?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "13/1212",
+   "q": "325/303"
+  },
+  "second_point": {
+   "eps": "1/96",
+   "delta": "31/2880",
+   "q": "589/576",
+   "where": "cell1_second_point beta=61/30 t=95"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^V[tSUhw?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "99/9898",
+   "q": "4950/4949"
+  },
+  "second_point": {
+   "eps": "1/330",
+   "delta": "109/35640",
+   "q": "35861/35640",
+   "where": "cell1_second_point beta=217/108 t=329"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^vL[Yqt[?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "1/84",
+   "delta": "9/728",
+   "q": "747/728",
+   "where": "cell1_second_point beta=53/26 t=83"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^U|eNUTw?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1313",
+   "q": "1500/1313"
+  },
+  "second_point": {
+   "eps": "1/54",
+   "delta": "17/864",
+   "q": "901/864",
+   "where": "cell1_second_point beta=33/16 t=53"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMALx\\Tpv?",
+  "witness_point": {
+   "eps": "1/1001",
+   "delta": "167/166166",
+   "q": "83500/83083"
+  },
+  "second_point": {
+   "eps": "1/624",
+   "delta": "69/42848",
+   "q": "42987/42848",
+   "where": "cell1_second_point beta=413/206 t=623"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 5,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMELx\\v|p?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1414",
+   "q": "750/707"
+  },
+  "second_point": {
+   "eps": "1/60",
+   "delta": "19/1080",
+   "q": "1121/1080",
+   "where": "cell1_second_point beta=37/18 t=59"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNFL|\\ulo?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "1/114",
+   "delta": "37/4104",
+   "q": "4181/4104",
+   "where": "cell1_second_point beta=73/36 t=113"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FNFL~[udo?",
+  "witness_point": {
+   "eps": "1/49",
+   "delta": "33/1568",
+   "q": "99/98"
+  },
+  "second_point": {
+   "eps": "1/36",
+   "delta": "3/104",
+   "q": "105/104",
+   "where": "cell1_second_point beta=53/26 t=35"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 4,
+  "n_points_counterexample": 4,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&FMDh~\\v\\s?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "47/4646",
+   "q": "2350/2323"
+  },
+  "second_point": {
+   "eps": "1/168",
+   "delta": "55/9072",
+   "q": "9185/9072",
+   "where": "cell1_second_point beta=109/54 t=167"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^vlKUe[R?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "15/1313",
+   "q": "1500/1313"
+  },
+  "second_point": {
+   "eps": "1/108",
+   "delta": "35/3672",
+   "q": "3745/3672",
+   "where": "cell1_second_point beta=69/34 t=107"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^S{^ReL|?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "27/2626",
+   "q": "1350/1313"
+  },
+  "second_point": {
+   "eps": "5/401",
+   "delta": "1930/148771",
+   "q": "152856/148771",
+   "where": "cell1_second_point beta=757/371 t=396/5"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ },
+ {
+  "d6": "&F^U|m^QTq?",
+  "witness_point": {
+   "eps": "1/101",
+   "delta": "13/1212",
+   "q": "325/303"
+  },
+  "second_point": {
+   "eps": "29/2980",
+   "delta": "83897/8361880",
+   "q": "8537243/8361880",
+   "where": "cell1_second_point beta=5699/2806 t=2951/29"
+  },
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "det_IminusW_nonzero_at_witness": true,
+  "clique": false,
+  "n_points_checked": 6,
+  "n_points_counterexample": 6,
+  "verdict": "CONFIRMED"
+ }
+]

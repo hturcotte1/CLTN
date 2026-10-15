@@ -1,6 +1,6 @@
 {
  "claim": "non-clique full support of a 7-node digraph is a stable positive fixed point at legal finite (eps, delta); the graph is never limit-stable (alpha = -1/2 exactly), so it is invisible to the eps -> 0 classification; its stable region is bounded above in t",
- "status": "CANDIDATE -- awaiting human hand-verification (CLAUDE.md section 3); nothing is built on it",
+ "status": "VERIFIED (human + 4 independent machine verifications); the n = 7 finite-eps map and its 124 graphs are no longer candidates",
  "found_by": "workflow wf_945cf15e-c68, two independent refuters (float search heuristics, exact certification with ctln.analyze_support), each confirmed by an independent exact referee",
  "conventions": "CLAUDE.md section 2; A[i][j]=1 iff i->j; t=(1-eps)/eps; beta=1+delta/eps; legal iff t(beta-2)>1",
  "graph": {
@@ -331,5 +331,28 @@
     }
    ]
   }
+ },
+ "verification_2026_10_15": {
+  "human_hand_verification": {
+   "date": "2026-10-15",
+   "by": "the user",
+   "scope": "all 124 n = 7 candidates",
+   "confidence": "stated as not full; machine confirmation requested"
+  },
+  "machine_verification": {
+   "workflow": "wf_e7b72ed9-c86",
+   "date": "2026-10-15",
+   "verifiers": 4,
+   "independent_of_project_code": true,
+   "methods": [
+    "sympy Rationals, own Hurwitz minors, Routh cross-check",
+    "pure Fractions, own elimination, Faddeev-LeVerrier and Berkowitz charpolys, own minors",
+    "exact right-half-plane root counting by three methods (Routh, Sturm/argument principle, exact isolation), no Hurwitz minors",
+    "structural: non-clique, domination-free, pairwise non-isomorphic (own canonical form + nauty), limit stability exact, FNFL alpha = -1/2 exact"
+   ],
+   "result": "124/124 confirmed as counterexamples at legal rational parameters, 0 undecided, 0 disagreements; 742 points checked by the root-counting verifier alone",
+   "records": "notes/verify_124_workflow.json, notes/verify_124/"
+  },
+  "status": "VERIFIED (human + 4 independent machine verifications); the n = 7 finite-eps map and its 124 graphs are no longer candidates"
  }
 }

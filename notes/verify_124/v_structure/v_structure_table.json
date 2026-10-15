@@ -1,0 +1,3532 @@
+{
+ "summary": {
+  "n_graphs": 124,
+  "n_confirmed": 124,
+  "domination_free": 124,
+  "stable_cell_sample_points_confirmed": "298/298",
+  "limit_checks_ok": "123/123",
+  "limit_file_pointwise_witnesses_confirmed": "476/492",
+  "missing_arcs_distribution": {
+   "11": 3,
+   "12": 17,
+   "13": 34,
+   "14": 22,
+   "15": 6,
+   "16": 10,
+   "17": 18,
+   "18": 7,
+   "19": 7
+  },
+  "pairwise_non_isomorphic": "yes (own 5040-perm canonical form, and nauty labelg: 124 distinct)",
+  "in_limit_candidates_match": "123 finite records == the 123 limit-file graphs up to isomorphism; FNFL not among them",
+  "fnfl_factorization": "(1, [(l + 1, 1), (l**2 + l + 1, 1), (7*l**3 + 14*l**2 + 14*l + 5, 1)])",
+  "fnfl_quotient_shifted_hurwitz": "stable",
+  "fnfl_witnesses": [
+   [
+    "1/49",
+    "33/1568",
+    true,
+    true,
+    "stable"
+   ],
+   [
+    "1/36",
+    "17/588",
+    true,
+    true,
+    "stable"
+   ]
+  ],
+  "discrepancies": [],
+  "geneson_decode": {
+   "d6": "&EZjtwWE",
+   "n": 6,
+   "arcs": 19,
+   "rows": [
+    "011011",
+    "101011",
+    "110101",
+    "111000",
+    "011000",
+    "000110"
+   ],
+   "node0_out": [
+    1,
+    2,
+    4,
+    5
+   ],
+   "matches_n7_geneson_d6": true,
+   "loops": [],
+   "equals_paper_N_converted": true,
+   "isomorphic_to_paper": true
+  }
+ },
+ "table": [
+  {
+   "d6": "&FK@drUvHw?",
+   "arcs": 23,
+   "missing_arcs": 19,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "613/306",
+    "t": "307",
+    "eps": "1/308",
+    "delta": "307/94248",
+    "q": "94249/94248"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "613/306",
+    "gamma": "307/613"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMEHz\\r|p?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "53/26",
+    "t": "27",
+    "eps": "1/28",
+    "delta": "27/728",
+    "q": "729/728"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "53/26",
+    "gamma": "27/53"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\V|p?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "100/49",
+    "t": "51/2",
+    "eps": "2/53",
+    "delta": "102/2597",
+    "q": "2601/2597"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "100/49",
+    "gamma": "51/100"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNFL|\\u|o?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "29/14",
+    "t": "15",
+    "eps": "1/16",
+    "delta": "15/224",
+    "q": "225/224"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "29/14",
+    "gamma": "15/29"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNFH[Yepu?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "559/278",
+    "t": "281/3",
+    "eps": "3/284",
+    "delta": "843/78952",
+    "q": "78961/78952"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "559/278",
+    "gamma": "281/559"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UX_TE{h?",
+   "arcs": 24,
+   "missing_arcs": 18,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "93/46",
+    "t": "47",
+    "eps": "1/48",
+    "delta": "47/2208",
+    "q": "2209/2208"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "93/46",
+    "gamma": "47/93"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]VhW[rSp?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "7665/3832",
+    "t": "3833",
+    "eps": "1/3834",
+    "delta": "3833/14691888",
+    "q": "14691889/14691888"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "7665/3832",
+    "gamma": "3833/7665"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "2/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UXk\\Eop?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "41/20",
+    "t": "21",
+    "eps": "1/22",
+    "delta": "21/440",
+    "q": "441/440"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "41/20",
+    "gamma": "21/41"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^V[tSUxw?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "57/28",
+    "t": "29",
+    "eps": "1/30",
+    "delta": "29/840",
+    "q": "841/840"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "57/28",
+    "gamma": "29/57"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^uleNUTW?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "29/14",
+    "t": "15",
+    "eps": "1/16",
+    "delta": "15/224",
+    "q": "225/224"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "29/14",
+    "gamma": "15/29"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^u\\mFTxJ?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "757/371",
+    "t": "386/15",
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "q": "148996/148771"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "757/371",
+    "gamma": "386/757"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMEHz\\rsp?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "93/46",
+    "t": "47",
+    "eps": "1/48",
+    "delta": "47/2208",
+    "q": "2209/2208"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "93/46",
+    "gamma": "47/93"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMAkxXbD{?",
+   "arcs": 23,
+   "missing_arcs": 19,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "193/96",
+    "t": "97",
+    "eps": "1/98",
+    "delta": "97/9408",
+    "q": "9409/9408"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "193/96",
+    "gamma": "97/193"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\vxr?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "37/18",
+    "t": "19",
+    "eps": "1/20",
+    "delta": "19/360",
+    "q": "361/360"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "37/18",
+    "gamma": "19/37"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNDL}[u|o?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "73/36",
+    "t": "37",
+    "eps": "1/38",
+    "delta": "37/1368",
+    "q": "1369/1368"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "73/36",
+    "gamma": "37/73"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]SpqXRDk?",
+   "arcs": 23,
+   "missing_arcs": 19,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "117/58",
+    "t": "59",
+    "eps": "1/60",
+    "delta": "59/3480",
+    "q": "3481/3480"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "117/58",
+    "gamma": "59/117"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]UhqLPT}?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "289/144",
+    "t": "145",
+    "eps": "1/146",
+    "delta": "145/21024",
+    "q": "21025/21024"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "289/144",
+    "gamma": "145/289"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^vl]UakR?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "53/26",
+    "t": "27",
+    "eps": "1/28",
+    "delta": "27/728",
+    "q": "729/728"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "53/26",
+    "gamma": "27/53"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^u\\eNVoJ?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "33/16",
+    "t": "17",
+    "eps": "1/18",
+    "delta": "17/288",
+    "q": "289/288"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "33/16",
+    "gamma": "17/33"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMAlx\\r|p?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "53/26",
+    "t": "27",
+    "eps": "1/28",
+    "delta": "27/728",
+    "q": "729/728"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "53/26",
+    "gamma": "27/53"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\vxz?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "737/368",
+    "t": "369",
+    "eps": "1/370",
+    "delta": "369/136160",
+    "q": "136161/136160"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "737/368",
+    "gamma": "369/737"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNFL~[uto?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "73/36",
+    "t": "37",
+    "eps": "1/38",
+    "delta": "37/1368",
+    "q": "1369/1368"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "73/36",
+    "gamma": "37/73"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]UhY\\`Dr?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "90043/44736",
+    "t": "45307/571",
+    "eps": "571/45878",
+    "delta": "25870297/2052398208",
+    "q": "2052724249/2052398208"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "90043/44736",
+    "gamma": "45307/90043"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UK|\\Udy?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "149/73",
+    "t": "76/3",
+    "eps": "3/79",
+    "delta": "228/5767",
+    "q": "5776/5767"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "149/73",
+    "gamma": "76/149"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^vleMoT]?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "65/32",
+    "t": "33",
+    "eps": "1/34",
+    "delta": "33/1088",
+    "q": "1089/1088"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "65/32",
+    "gamma": "33/65"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^V\\[]e`e?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "22627/11262",
+    "t": "11365/103",
+    "eps": "103/11468",
+    "delta": "1170595/129152616",
+    "q": "129163225/129152616"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "22627/11262",
+    "gamma": "11365/22627"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^v\\eMp{J?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "5699/2806",
+    "t": "2893/87",
+    "eps": "87/2980",
+    "delta": "251691/8361880",
+    "q": "8369449/8361880"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "5/5",
+   "limit_point": {
+    "beta": "5699/2806",
+    "gamma": "2893/5699"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMAlx\\v|p?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "37/18",
+    "t": "19",
+    "eps": "1/20",
+    "delta": "19/360",
+    "q": "361/360"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "37/18",
+    "gamma": "19/37"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNDL}[u|w?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "115/56",
+    "t": "59/3",
+    "eps": "3/62",
+    "delta": "177/3472",
+    "q": "3481/3472"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "115/56",
+    "gamma": "59/115"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNFL~[u|o?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "29/14",
+    "t": "15",
+    "eps": "1/16",
+    "delta": "15/224",
+    "q": "225/224"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "29/14",
+    "gamma": "15/29"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FN?|~^oTm?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "115/56",
+    "t": "59/3",
+    "eps": "3/62",
+    "delta": "177/3472",
+    "q": "3481/3472"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "115/56",
+    "gamma": "59/115"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]ShY\\`Dq?",
+   "arcs": 23,
+   "missing_arcs": 19,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "381/190",
+    "t": "191",
+    "eps": "1/192",
+    "delta": "191/36480",
+    "q": "36481/36480"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "381/190",
+    "gamma": "191/381"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^uk\\^_TU?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "31/14",
+    "t": "17/3",
+    "eps": "3/20",
+    "delta": "51/280",
+    "q": "289/280"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "31/14",
+    "gamma": "17/31"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^V|mMSPb?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "722/351",
+    "t": "371/20",
+    "eps": "20/391",
+    "delta": "7420/137241",
+    "q": "137641/137241"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "722/351",
+    "gamma": "371/722"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^U|uJQT|?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "757/371",
+    "t": "386/15",
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "q": "148996/148771"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "757/371",
+    "gamma": "386/757"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\vtt?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "37/18",
+    "t": "19",
+    "eps": "1/20",
+    "delta": "19/360",
+    "q": "361/360"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "37/18",
+    "gamma": "19/37"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FM@|vCtxi?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "65/32",
+    "t": "33",
+    "eps": "1/34",
+    "delta": "33/1088",
+    "q": "1089/1088"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "65/32",
+    "gamma": "33/65"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^VGzKUpo?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "427038/213053",
+    "t": "213985/932",
+    "eps": "932/214917",
+    "delta": "199434020/45788711601",
+    "q": "45789580225/45788711601"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "427038/213053",
+    "gamma": "213985/427038"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UXk\\Esb?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "63/31",
+    "t": "32",
+    "eps": "1/33",
+    "delta": "32/1023",
+    "q": "1024/1023"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "63/31",
+    "gamma": "32/63"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^TxULoDi?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "433/212",
+    "t": "221/9",
+    "eps": "9/230",
+    "delta": "1989/48760",
+    "q": "48841/48760"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "433/212",
+    "gamma": "221/433"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]Th]CvWr?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "1748/865",
+    "t": "883/18",
+    "eps": "18/901",
+    "delta": "15894/779365",
+    "q": "779689/779365"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "1748/865",
+    "gamma": "883/1748"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^v\\SYfdM?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "205/98",
+    "t": "107/9",
+    "eps": "9/116",
+    "delta": "963/11368",
+    "q": "11449/11368"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "205/98",
+    "gamma": "107/205"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMEHz\\v|p?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "37/18",
+    "t": "19",
+    "eps": "1/20",
+    "delta": "19/360",
+    "q": "361/360"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "37/18",
+    "gamma": "19/37"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMAlh\\v|p?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "53/26",
+    "t": "27",
+    "eps": "1/28",
+    "delta": "27/728",
+    "q": "729/728"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "53/26",
+    "gamma": "27/53"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FKDHy]rsp?",
+   "arcs": 24,
+   "missing_arcs": 18,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "533/266",
+    "t": "267",
+    "eps": "1/268",
+    "delta": "267/71288",
+    "q": "71289/71288"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "533/266",
+    "gamma": "267/533"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNDL~[uds?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "543/266",
+    "t": "277/11",
+    "eps": "11/288",
+    "delta": "3047/76608",
+    "q": "76729/76608"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "543/266",
+    "gamma": "277/543"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UWxTClb?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "43/21",
+    "t": "22",
+    "eps": "1/23",
+    "delta": "22/483",
+    "q": "484/483"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "43/21",
+    "gamma": "22/43"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UXkHQte?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "153/76",
+    "t": "77",
+    "eps": "1/78",
+    "delta": "77/5928",
+    "q": "5929/5928"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "153/76",
+    "gamma": "77/153"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^V\\K[epa?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "5113/2531",
+    "t": "2582/51",
+    "eps": "51/2633",
+    "delta": "131682/6664123",
+    "q": "6666724/6664123"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "5113/2531",
+    "gamma": "2582/5113"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UxkNSta?",
+   "arcs": 27,
+   "missing_arcs": 15,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "273/136",
+    "t": "137",
+    "eps": "1/138",
+    "delta": "137/18768",
+    "q": "18769/18768"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "273/136",
+    "gamma": "137/273"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\Vxr?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "100/49",
+    "t": "51/2",
+    "eps": "2/53",
+    "delta": "102/2597",
+    "q": "2601/2597"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "100/49",
+    "gamma": "51/100"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNE[lLQ{`?",
+   "arcs": 24,
+   "missing_arcs": 18,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "1029/512",
+    "t": "517/5",
+    "eps": "5/522",
+    "delta": "2585/267264",
+    "q": "267289/267264"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "1029/512",
+    "gamma": "517/1029"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMDl~[v\\s?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "109/54",
+    "t": "55",
+    "eps": "1/56",
+    "delta": "55/3024",
+    "q": "3025/3024"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "109/54",
+    "gamma": "55/109"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]UhoTFLx?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "75/37",
+    "t": "38",
+    "eps": "1/39",
+    "delta": "38/1443",
+    "q": "1444/1443"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "75/37",
+    "gamma": "38/75"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^u|uVEhI?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "87/43",
+    "t": "44",
+    "eps": "1/45",
+    "delta": "44/1935",
+    "q": "1936/1935"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "87/43",
+    "gamma": "44/87"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^V{\\Uchb?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "3391/1638",
+    "t": "1753/115",
+    "eps": "115/1868",
+    "delta": "201595/3059784",
+    "q": "3073009/3059784"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "3391/1638",
+    "gamma": "1753/3391"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMEHz\\vxr?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "37/18",
+    "t": "19",
+    "eps": "1/20",
+    "delta": "19/360",
+    "q": "361/360"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "37/18",
+    "gamma": "19/37"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\R|p?",
+   "arcs": 27,
+   "missing_arcs": 15,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "117/58",
+    "t": "59",
+    "eps": "1/60",
+    "delta": "59/3480",
+    "q": "3481/3480"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "117/58",
+    "gamma": "59/117"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNFL~[u|w?",
+   "arcs": 31,
+   "missing_arcs": 11,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "97/48",
+    "t": "49",
+    "eps": "1/50",
+    "delta": "49/2400",
+    "q": "2401/2400"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "97/48",
+    "gamma": "49/97"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNcXvZVlM?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "115/56",
+    "t": "59/3",
+    "eps": "3/62",
+    "delta": "177/3472",
+    "q": "3481/3472"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "115/56",
+    "gamma": "59/115"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^TXmOEwd?",
+   "arcs": 24,
+   "missing_arcs": 18,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "1081/526",
+    "t": "555/29",
+    "eps": "29/584",
+    "delta": "16095/307184",
+    "q": "308025/307184"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "1081/526",
+    "gamma": "555/1081"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^v|^Fo\\B?",
+   "arcs": 31,
+   "missing_arcs": 11,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "221/110",
+    "t": "111",
+    "eps": "1/112",
+    "delta": "111/12320",
+    "q": "12321/12320"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "221/110",
+    "gamma": "111/221"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UluNQT|?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "757/371",
+    "t": "386/15",
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "q": "148996/148771"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "757/371",
+    "gamma": "386/757"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMAlh\\r|p?",
+   "arcs": 27,
+   "missing_arcs": 15,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "117/58",
+    "t": "59",
+    "eps": "1/60",
+    "delta": "59/3480",
+    "q": "3481/3480"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "117/58",
+    "gamma": "59/117"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\v|x?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "737/368",
+    "t": "369",
+    "eps": "1/370",
+    "delta": "369/136160",
+    "q": "136161/136160"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "737/368",
+    "gamma": "369/737"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UXb\\Eoh?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "161/80",
+    "t": "81",
+    "eps": "1/82",
+    "delta": "81/6560",
+    "q": "6561/6560"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "161/80",
+    "gamma": "81/161"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]UhA\\bT{?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "363/181",
+    "t": "182",
+    "eps": "1/183",
+    "delta": "182/33123",
+    "q": "33124/33123"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "363/181",
+    "gamma": "182/363"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^TXeLUoh?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "125/62",
+    "t": "63",
+    "eps": "1/64",
+    "delta": "63/3968",
+    "q": "3969/3968"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "125/62",
+    "gamma": "63/125"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^uK\\^clR?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "149/73",
+    "t": "76/3",
+    "eps": "3/79",
+    "delta": "228/5767",
+    "q": "5776/5767"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "149/73",
+    "gamma": "76/149"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^v[\\UpkN?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "337/166",
+    "t": "171/5",
+    "eps": "5/176",
+    "delta": "855/29216",
+    "q": "29241/29216"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "5/5",
+   "limit_point": {
+    "beta": "337/166",
+    "gamma": "171/337"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMBlWKt\\y?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "525/262",
+    "t": "263",
+    "eps": "1/264",
+    "delta": "263/69168",
+    "q": "69169/69168"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "525/262",
+    "gamma": "263/525"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMAlx\\v|x?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "737/368",
+    "t": "369",
+    "eps": "1/370",
+    "delta": "369/136160",
+    "q": "136161/136160"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "737/368",
+    "gamma": "369/737"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNFL|\\u|w?",
+   "arcs": 31,
+   "missing_arcs": 11,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "97/48",
+    "t": "49",
+    "eps": "1/50",
+    "delta": "49/2400",
+    "q": "2401/2400"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "97/48",
+    "gamma": "49/97"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNDL~[uls?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "53/26",
+    "t": "27",
+    "eps": "1/28",
+    "delta": "27/728",
+    "q": "729/728"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "53/26",
+    "gamma": "27/53"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^VH[Tch}?",
+   "arcs": 27,
+   "missing_arcs": 15,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "85/42",
+    "t": "43",
+    "eps": "1/44",
+    "delta": "43/1848",
+    "q": "1849/1848"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "85/42",
+    "gamma": "43/85"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^VLM[eov?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "29/14",
+    "t": "15",
+    "eps": "1/16",
+    "delta": "15/224",
+    "q": "225/224"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "29/14",
+    "gamma": "15/29"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^U|m^SPb?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "407/202",
+    "t": "205/3",
+    "eps": "3/208",
+    "delta": "615/42016",
+    "q": "42025/42016"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "407/202",
+    "gamma": "205/407"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMC`j\\BTt?",
+   "arcs": 23,
+   "missing_arcs": 19,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "125/62",
+    "t": "63",
+    "eps": "1/64",
+    "delta": "63/3968",
+    "q": "3969/3968"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "125/62",
+    "gamma": "63/125"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNDL}[ulw?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "49/24",
+    "t": "25",
+    "eps": "1/26",
+    "delta": "25/624",
+    "q": "625/624"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "49/24",
+    "gamma": "25/49"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FN?|v^qTm?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "115/56",
+    "t": "59/3",
+    "eps": "3/62",
+    "delta": "177/3472",
+    "q": "3481/3472"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "115/56",
+    "gamma": "59/115"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^VH[Xacv?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "289/144",
+    "t": "145",
+    "eps": "1/146",
+    "delta": "145/21024",
+    "q": "21025/21024"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "289/144",
+    "gamma": "145/289"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]UxsTFHj?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "733/364",
+    "t": "369/5",
+    "eps": "5/374",
+    "delta": "1845/136136",
+    "q": "136161/136136"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "733/364",
+    "gamma": "369/733"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^u|uNOlI?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "157/78",
+    "t": "79",
+    "eps": "1/80",
+    "delta": "79/6240",
+    "q": "6241/6240"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "157/78",
+    "gamma": "79/157"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMBlhKRTx?",
+   "arcs": 24,
+   "missing_arcs": 18,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "449/224",
+    "t": "225",
+    "eps": "1/226",
+    "delta": "225/50624",
+    "q": "50625/50624"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "449/224",
+    "gamma": "225/449"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\vpv?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "37/18",
+    "t": "19",
+    "eps": "1/20",
+    "delta": "19/360",
+    "q": "361/360"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "37/18",
+    "gamma": "19/37"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNDH~\\uts?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "115/56",
+    "t": "59/3",
+    "eps": "3/62",
+    "delta": "177/3472",
+    "q": "3481/3472"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "115/56",
+    "gamma": "59/115"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNDL~[ulo?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "73/36",
+    "t": "37",
+    "eps": "1/38",
+    "delta": "37/1368",
+    "q": "1369/1368"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "73/36",
+    "gamma": "37/73"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]UgxDVWr?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "332891/165390",
+    "t": "167501/2111",
+    "eps": "2111/169612",
+    "delta": "353594611/28052128680",
+    "q": "28056585001/28052128680"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "332891/165390",
+    "gamma": "167501/332891"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^VKlKQsp?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "48649/24242",
+    "t": "24407/165",
+    "eps": "165/24572",
+    "delta": "4027155/595674424",
+    "q": "595701649/595674424"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "48649/24242",
+    "gamma": "24407/48649"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^vlmZEPT?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "407/202",
+    "t": "205/3",
+    "eps": "3/208",
+    "delta": "615/42016",
+    "q": "42025/42016"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "407/202",
+    "gamma": "205/407"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^Ul]NsTu?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "757/371",
+    "t": "386/15",
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "q": "148996/148771"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "757/371",
+    "gamma": "386/757"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMEHz\\vpv?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "37/18",
+    "t": "19",
+    "eps": "1/20",
+    "delta": "19/360",
+    "q": "361/360"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "37/18",
+    "gamma": "19/37"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\Vpv?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "100/49",
+    "t": "51/2",
+    "eps": "2/53",
+    "delta": "102/2597",
+    "q": "2601/2597"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "100/49",
+    "gamma": "51/100"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]S`YTbKx?",
+   "arcs": 23,
+   "missing_arcs": 19,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "1319/638",
+    "t": "681/43",
+    "eps": "43/724",
+    "delta": "29283/461912",
+    "q": "463761/461912"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "1319/638",
+    "gamma": "681/1319"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^VLOSekx?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "502/221",
+    "t": "281/60",
+    "eps": "60/341",
+    "delta": "16860/75361",
+    "q": "78961/75361"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "502/221",
+    "gamma": "281/502"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^UXc\\Cxi?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "463/218",
+    "t": "245/27",
+    "eps": "27/272",
+    "delta": "6615/59296",
+    "q": "60025/59296"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "463/218",
+    "gamma": "245/463"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^V\\K[spa?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "33/16",
+    "t": "17",
+    "eps": "1/18",
+    "delta": "17/288",
+    "q": "289/288"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "33/16",
+    "gamma": "17/33"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^ulC^a{\\?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "497/244",
+    "t": "253/9",
+    "eps": "9/262",
+    "delta": "2277/63928",
+    "q": "64009/63928"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "497/244",
+    "gamma": "253/497"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^v\\]YddU?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "53/26",
+    "t": "27",
+    "eps": "1/28",
+    "delta": "27/728",
+    "q": "729/728"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "53/26",
+    "gamma": "27/53"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FK@dyUfXp?",
+   "arcs": 23,
+   "missing_arcs": 19,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "3757/1800",
+    "t": "1957/157",
+    "eps": "157/2114",
+    "delta": "307249/3805200",
+    "q": "3829849/3805200"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "3757/1800",
+    "gamma": "1957/3757"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMAlW\\d\\y?",
+   "arcs": 25,
+   "missing_arcs": 17,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "21/10",
+    "t": "11",
+    "eps": "1/12",
+    "delta": "11/120",
+    "q": "121/120"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "21/10",
+    "gamma": "11/21"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\Vtt?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "100/49",
+    "t": "51/2",
+    "eps": "2/53",
+    "delta": "102/2597",
+    "q": "2601/2597"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "100/49",
+    "gamma": "51/100"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FND|mGu\\k?",
+   "arcs": 27,
+   "missing_arcs": 15,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "805/372",
+    "t": "433/61",
+    "eps": "61/494",
+    "delta": "26413/183768",
+    "q": "187489/183768"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "805/372",
+    "gamma": "433/805"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNDL~[ulw?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "115/56",
+    "t": "59/3",
+    "eps": "3/62",
+    "delta": "177/3472",
+    "q": "3481/3472"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "115/56",
+    "gamma": "59/115"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]UHOTfkx?",
+   "arcs": 24,
+   "missing_arcs": 18,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "129/64",
+    "t": "65",
+    "eps": "1/66",
+    "delta": "65/4224",
+    "q": "4225/4224"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "129/64",
+    "gamma": "65/129"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^VXkXups?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "309/154",
+    "t": "155",
+    "eps": "1/156",
+    "delta": "155/24024",
+    "q": "24025/24024"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "309/154",
+    "gamma": "155/309"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^vk\\Yo\\U?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "49/24",
+    "t": "25",
+    "eps": "1/26",
+    "delta": "25/624",
+    "q": "625/624"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "49/24",
+    "gamma": "25/49"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^U|]VeLk?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "149/74",
+    "t": "75",
+    "eps": "1/76",
+    "delta": "75/5624",
+    "q": "5625/5624"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "149/74",
+    "gamma": "75/149"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMEHz\\vtt?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "37/18",
+    "t": "19",
+    "eps": "1/20",
+    "delta": "19/360",
+    "q": "361/360"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "37/18",
+    "gamma": "19/37"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\r|p?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "53/26",
+    "t": "27",
+    "eps": "1/28",
+    "delta": "27/728",
+    "q": "729/728"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "53/26",
+    "gamma": "27/53"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNDL~[uts?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "115/56",
+    "t": "59/3",
+    "eps": "3/62",
+    "delta": "177/3472",
+    "q": "3481/3472"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "115/56",
+    "gamma": "59/115"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNcXv^VkL?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "115/56",
+    "t": "59/3",
+    "eps": "3/62",
+    "delta": "177/3472",
+    "q": "3481/3472"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "115/56",
+    "gamma": "59/115"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F]UGx\\Dhq?",
+   "arcs": 24,
+   "missing_arcs": 18,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "61/30",
+    "t": "31",
+    "eps": "1/32",
+    "delta": "31/960",
+    "q": "961/960"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "61/30",
+    "gamma": "31/61"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^V[tSUhw?",
+   "arcs": 27,
+   "missing_arcs": 15,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "217/108",
+    "t": "109",
+    "eps": "1/110",
+    "delta": "109/11880",
+    "q": "11881/11880"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "217/108",
+    "gamma": "109/217"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^vL[Yqt[?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "53/26",
+    "t": "27",
+    "eps": "1/28",
+    "delta": "27/728",
+    "q": "729/728"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit_point": {
+    "beta": "53/26",
+    "gamma": "27/53"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^U|eNUTw?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "33/16",
+    "t": "17",
+    "eps": "1/18",
+    "delta": "17/288",
+    "q": "289/288"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "4/4",
+   "limit_point": {
+    "beta": "33/16",
+    "gamma": "17/33"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMALx\\Tpv?",
+   "arcs": 26,
+   "missing_arcs": 16,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "413/206",
+    "t": "207",
+    "eps": "1/208",
+    "delta": "207/42848",
+    "q": "42849/42848"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "413/206",
+    "gamma": "207/413"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "3/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMELx\\v|p?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "37/18",
+    "t": "19",
+    "eps": "1/20",
+    "delta": "19/360",
+    "q": "361/360"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "37/18",
+    "gamma": "19/37"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNFL|\\ulo?",
+   "arcs": 29,
+   "missing_arcs": 13,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "73/36",
+    "t": "37",
+    "eps": "1/38",
+    "delta": "37/1368",
+    "q": "1369/1368"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "73/36",
+    "gamma": "37/73"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FNFL~[udo?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": false,
+   "finite_point": {
+    "beta": "53/26",
+    "t": "79/2",
+    "eps": "2/81",
+    "delta": "1/39",
+    "q": "79/78"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "1/1",
+   "limit": "never (alpha = -1/2 exactly; factor l^2+l+1)",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&FMDh~\\v\\s?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "109/54",
+    "t": "55",
+    "eps": "1/56",
+    "delta": "55/3024",
+    "q": "3025/3024"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "109/54",
+    "gamma": "55/109"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^vlKUe[R?",
+   "arcs": 28,
+   "missing_arcs": 14,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "69/34",
+    "t": "35",
+    "eps": "1/36",
+    "delta": "35/1224",
+    "q": "1225/1224"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "3/3",
+   "limit_point": {
+    "beta": "69/34",
+    "gamma": "35/69"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^S{^ReL|?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "757/371",
+    "t": "386/15",
+    "eps": "15/401",
+    "delta": "5790/148771",
+    "q": "148996/148771"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "2/2",
+   "limit_point": {
+    "beta": "757/371",
+    "gamma": "386/757"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  },
+  {
+   "d6": "&F^U|m^QTq?",
+   "arcs": 30,
+   "missing_arcs": 12,
+   "clique": false,
+   "domination_free": true,
+   "in_limit_candidates": true,
+   "finite_point": {
+    "beta": "5699/2806",
+    "t": "2893/87",
+    "eps": "87/2980",
+    "delta": "251691/8361880",
+    "q": "8369449/8361880"
+   },
+   "legal": true,
+   "positive": true,
+   "stable": "stable",
+   "stable_cell_samples_confirmed": "5/5",
+   "limit_point": {
+    "beta": "5699/2806",
+    "gamma": "2893/5699"
+   },
+   "limit_legal": true,
+   "limit_w_positive": true,
+   "limit_shifted_hurwitz": "stable",
+   "limit_file_witnesses_confirmed": "4/4",
+   "verdict": "CONFIRMED counterexample"
+  }
+ ]
+}
