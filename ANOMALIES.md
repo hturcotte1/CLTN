@@ -1012,3 +1012,20 @@ them.
   the finite-eps-only E_1 (alpha = -1/2 exactly) as B, as it must. Note for the eventual report: this
   run is the eps -> 0 limit map only; finite-eps-only graphs at n = 8 (family E shows they exist) are
   exactly the B lines it discards, by design.
+
+## 2026-10-16  Container reclaimed again (00:10-00:23 UTC) with a background keep-alive task armed
+
+The earlier note "idle sessions are reclaimed within minutes unless a harness-tracked background task is
+armed" is refuted: the container that started at 21:57 was reclaimed between 00:10 and 00:23 while a 2-hour
+background waiter (armed 23:59) was running, yet the same container had survived an idle stretch from
+about 22:10 to 23:42 (the user's next message found it at uptime 1:45). Background shell tasks are
+therefore not what keeps the container alive; the only mechanism consistent with all three restarts
+(19:55, 21:58, 00:1x) is that reclamation follows some minutes after the session goes idle, with the
+22:10-23:42 survival unexplained (a connected client?). Nothing in the container documents the policy
+(no cgroup limits; 16 GB RAM, 4 cores, 16 GB free disk; `read_documentation` has no page on it).
+Consequence for the n = 8 run: the four in-flight jobs (started 00:04) were lost, about 1.3 worker-hours.
+Mitigation from now on: (1) the scheduled check runs hourly instead of every 3 hours and relaunches with
+`n8/relaunch.sh`; (2) the orchestrator keeps its turn active with foreground waits of <= 9.5 minutes while
+the run is unfinished, so the session is never idle; (3) jobs stay at <= 1.5 e9 digraphs (~1 hour each),
+so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the job size will be cut to
+0.5 e9. The run's bookkeeping (per-job .done + exact per-job totals) makes every restart safe.
