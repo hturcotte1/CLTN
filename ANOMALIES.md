@@ -1069,3 +1069,19 @@ so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the 
   56-bit arc masks and lex-leader pruning of partial orientations) would cut that share several-fold;
   not built yet because any new generator needs the full validation (per-graph Burnside counts and
   labelg set-equality against directg) before it may feed the production run.
+
+## 2026-10-16  First n = 8 strict survivors; a driver-stop mistake cost three jobs
+
+* Part 19/70 of `G]z~~{` (25 edges, |Aut| = 24): 497,538,439 digraphs, 348,862 spectral survivors of
+  which 348,851 boundary and **11 strict (S)** -- the first S lines of the n = 8 run, at 29-35 arcs, as
+  predicted (dense near-complete graphs). Partial outputs of parts 17 and 18 (discarded, see below) held 24
+  more S lines before they were cut off. Every S line goes through the exact limit stage at the end.
+* Orchestrator mistake: stopping the job driver by process name also killed its per-job wrapper
+  subshells (same command line), so four in-flight jobs lost their finalization; the relaunched driver
+  then started job 636 a second time while the orphaned pipeline was still writing the same files.
+  Resolution: both copies of 636 and the orphaned 637/638 pipelines killed and their partial files
+  deleted (the jobs are simply redone); 639's orphaned pipeline was allowed to finish and finalized by
+  hand after checking its stats line. No finished job was affected (every .done job still has its
+  stats total verified). Driver rewritten: main loop PID in `n8/jobs/driver.pid` (`n8/stop_driver.sh`
+  stops only the loop), no pipe around the loop (wrappers are children of the main shell), and a guard
+  that skips a job whose `job<j>.g6` is open in a running directg.

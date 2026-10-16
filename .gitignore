@@ -40,3 +40,4 @@ n8/jobs/progress.log
 n8/run_n8_jobs.log
 n8/after_prefilter2.log
 n8/check_accounting.log
+n8/jobs/driver.pid
