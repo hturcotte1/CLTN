@@ -1029,3 +1029,22 @@ Mitigation from now on: (1) the scheduled check runs hourly instead of every 3 h
 the run is unfinished, so the session is never idle; (3) jobs stay at <= 1.5 e9 digraphs (~1 hour each),
 so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the job size will be cut to
 0.5 e9. The run's bookkeeping (per-job .done + exact per-job totals) makes every restart safe.
+
+## 2026-10-16  Third restart in 24 h, this time during an ACTIVE turn; jobs cut to 5 e8 digraphs
+
+* The container that started at 00:23 was killed at about 01:42 while the orchestrator's turn was active
+  (a foreground wait got SIGKILL, exit 137) and the kernel changed from 6.18.44-fc-v114 to -v139, so the
+  restarts are host-side (migration/upgrade), not idle reclamation. Lifetimes so far: ~2 h, ~2.2 h, ~1.3 h.
+  Nothing on our side prevents them; what matters is (a) being woken at once (the harness does wake the
+  session when its worker process restarts) and (b) losing little work per restart.
+* The two finished 1.5 e9 jobs (ids 1, 3) ran at 0.5-0.7 M digraphs/s per pipeline (37 and 50 min) and
+  their totals matched the exact expectation. Four in-flight jobs were lost at each of the last two restarts.
+* `n8/make_jobs.py --repack 500000000`: finished jobs keep their ids and rows; the unfinished work was
+  re-packed into 1,761 jobs of <= 5 e8 digraphs (ids 616-2376; 793,433,090,529 digraphs), so a restart now
+  costs at most ~4 x 15 min. The job table is `n8/jobs/jobs.tsv` + `n8/jobs/graph_counts.json`; the checker
+  (`n8/check_accounting.py`) reads the table, so the accounting chain is unchanged: shards 0..8 + all jobs
+  must sum to 801,558,826,511.
+* Strict survivors so far: 0 (10.6 e9 digraphs, 11 units). Expected: the jobs run largest-first and the
+  large unsplit jobs are packed from sparse underlying graphs (geng order), and alpha(A|perp) < -1/2 needs
+  the 7 off-1 eigenvalues to sum below -3.5 with small spread, i.e. dense near-complete graphs; those come
+  later in the list. The positive controls (F_2, &GLjlNZ}NzH\o -> S) stand.
