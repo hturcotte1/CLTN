@@ -1048,3 +1048,24 @@ so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the 
   large unsplit jobs are packed from sparse underlying graphs (geng order), and alpha(A|perp) < -1/2 needs
   the 7 off-1 eigenvalues to sum below -3.5 with small spread, i.e. dense near-complete graphs; those come
   later in the list. The positive controls (F_2, &GLjlNZ}NzH\o -> S) stand.
+
+## 2026-10-16  directg is the bottleneck on high-symmetry graphs; jobs re-sized by |Aut(G)|
+
+* `directg` (nauty 2.8.8 source read) enumerates every labelled orientation in a backtrack over the
+  edges and tests each completed one for lex-maximality against the whole automorphism group
+  (`allgroup2` + `ismax`, with a reject-level backjump). Its cost therefore grows with |Aut(G)|, not
+  with the number of orbits: measured in production conditions, 0.5-0.7 M digraphs/s on graphs with
+  |Aut| <= 4, 0.3 M/s at |Aut| = 24 (`G]z~~{`, 25 edges), ~0.02 M/s (contended, nice 19) at |Aut| = 720
+  (`GTm|~{`), and for K8 (|Aut| = 40320, 575,009,339 orbits) not even 1/40 of the graph in 30 minutes.
+  By mass, the remaining space is 7% |Aut| = 1, 16% |Aut| = 2, 30% |Aut| 3-4, 22% |Aut| 5-12,
+  18% |Aut| 13-48 and 7% |Aut| > 48; the last 7% will take a large share of the time.
+* `directg -s p/P` has no overhead (part 0/70 of a 28.5 M graph costs 1.3% of the full run for 1.27% of
+  the output) but gets very uneven for large P (part 0/1916 of K8 held 680 digraphs; part 0/17797 of
+  the 27-edge graph held none), so P is capped at 600.
+* Repacked again (keeping finished and in-flight jobs) with per-|Aut| targets
+  [<=12: 5e8, <=48: 2.5e8, <=200: 1.5e8, <=2000: 5e7, else 5e6] digraphs: 2,605 jobs, K8 in 116 parts
+  of ~5 M orbits. Rough budget now: ~28 core-days, i.e. 7-9 days on this machine plus restart losses.
+* A faster generator for the high-symmetry graphs (orderly generation with the explicit group acting on
+  56-bit arc masks and lex-leader pruning of partial orientations) would cut that share several-fold;
+  not built yet because any new generator needs the full validation (per-graph Burnside counts and
+  labelg set-equality against directg) before it may feed the production run.

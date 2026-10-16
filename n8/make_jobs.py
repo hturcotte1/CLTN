@@ -21,14 +21,15 @@ TARGET = 1_500_000_000
 DONE_SHARDS = list(range(9)); K = 4000; N = 8; EDGES = '15:28'; LO = 29
 SPACE_TOTAL = 801_558_826_511          # n8/n8_restricted_counts.json
 
-def pack(graphs, cnt, target):
-    """pack graphs (in order) into jobs of <= target digraphs; a graph above target is split into
-    ceil(count/target) directg parts.  Returns job dicts without ids."""
+def pack(graphs, cnt, target, target_of=None, max_parts=600):
+    """pack graphs (in order) into jobs of <= target digraphs (per-graph target_of(g) if given, so that slow
+    high-symmetry graphs get smaller jobs); a graph above its target is split into min(ceil(count/target),
+    max_parts) directg parts (directg's parts get uneven when P is large).  Returns job dicts without ids."""
     jobs = []; cur, cur_sum = [], 0
     for g in graphs:
-        c = cnt[g]
-        if c > target:
-            P = math.ceil(c / target)
+        c = cnt[g]; tg = target_of(g) if target_of else target
+        if c > tg:
+            P = min(math.ceil(c / tg), max_parts)
             for p in range(P):
                 jobs.append({'expected': c // P, 'split': f'{p}/{P}', 'graphs': [g], 'exact': False})
             continue
@@ -46,7 +47,17 @@ def write_tables(jobs, gc_extra):
     gc_extra['jobs'] = jobs
     json.dump(gc_extra, open('n8/jobs/graph_counts.json', 'w'), indent=0)
 
-def repack(target):
+def running_job_ids():
+    """ids of jobs whose pipeline is alive right now (a directg reading its job<j>.g6)."""
+    import subprocess, re
+    out = subprocess.run(['ps', '-eo', 'args'], capture_output=True, text=True).stdout
+    return {int(m) for m in re.findall(r'n8/jobs/job(\d+)\.g6', out)}
+
+def aut_sizes(graphs):
+    idx = pair_index(N); EP, EF = perm_tables(N, idx)
+    return {g: int((graph6_edges(g, N)[0][EP] == graph6_edges(g, N)[0]).all(axis=1).sum()) for g in graphs}
+
+def repack(target, bands=None):
     """Re-pack the UNFINISHED work into smaller jobs (container restarts lose in-flight jobs).
     Finished jobs keep their ids and rows.  A split graph with some parts finished keeps its P and the
     unfinished parts become jobs of their own (a part cannot be sub-split); every other unfinished graph
@@ -55,6 +66,7 @@ def repack(target):
     gc = json.load(open('n8/jobs/graph_counts.json'))
     old = gc['jobs']; cnt = gc['graph_counts']; order = list(cnt.keys())      # geng order
     done = {j['job_id'] for j in old if os.path.exists(f"n8/jobs/job{j['job_id']}.done")}
+    done |= running_job_ids()            # in-flight jobs keep their rows (the new driver waits for their slots)
     kept = [j for j in old if j['job_id'] in done]
     covered = set()
     for j in kept:
@@ -72,7 +84,13 @@ def repack(target):
                 if p['job_id'] not in done:
                     extra.append(dict(p, job_id=next_id)); next_id += 1
             covered.add(g)
-    new = pack([g for g in order if g not in covered], cnt, target)
+    rem_graphs = [g for g in order if g not in covered]
+    target_of = None
+    if bands:                            # bands: list of [max_aut, target]; first band whose max_aut >= |Aut| applies
+        aut = aut_sizes(rem_graphs)
+        def target_of(g):
+            return next(t for m, t in bands if aut[g] <= m)
+    new = pack(rem_graphs, cnt, target, target_of)
     new.sort(key=lambda j: -j['expected'])
     for j in new: j['job_id'] = next_id; next_id += 1
     for j in old:
@@ -85,14 +103,15 @@ def repack(target):
     assert sum(cnt.values()) == sum(j['expected'] for j in jobs if j['exact']) + sum(cnt[g] for g in split_present), 'repack does not partition the remaining space'
     assert len({j['job_id'] for j in jobs}) == len(jobs), 'duplicate job id'
     total_new = sum(cnt[g] for g in order if g not in covered)
-    gc.update({'target': target, 'repacked': gc.get('repacked', []) + [{'kept_done_jobs': len(kept), 'kept_split_parts': len(extra), 'new_jobs': len(new), 'new_digraphs': total_new}]})
+    gc.update({'target': target, 'bands': bands, 'repacked': gc.get('repacked', []) + [{'kept_done_or_running_jobs': len(kept), 'kept_split_parts': len(extra), 'new_jobs': len(new), 'new_digraphs': total_new}]})
     write_tables(jobs, gc)
-    print(f'repack: kept {len(kept)} finished jobs, {len(extra)} unfinished parts of partly finished split graphs, '
+    print(f'repack: kept {len(kept)} finished/running jobs, {len(extra)} unfinished parts of partly finished split graphs, '
           f'{len(new)} new jobs (target {target:,}) over {total_new:,} digraphs; table now {len(jobs)} jobs')
 
 def main():
     if len(sys.argv) >= 3 and sys.argv[1] == '--repack':
-        repack(int(sys.argv[2])); return
+        bands = json.loads(sys.argv[3]) if len(sys.argv) > 3 else None     # e.g. '[[12,500000000],[48,250000000],[200,100000000],[2000,30000000],[99999999,10000000]]'
+        repack(int(sys.argv[2]), bands); return
     full = geng(N, EDGES)
     done = set()
     for k in DONE_SHARDS:
