@@ -976,3 +976,39 @@ keep a 2-hour background waiter armed at all times (re-armed on every expiry) an
 scheduled check as the backstop that relaunches from the last finished shard. Lost work is bounded by the
 shard size; the heavy shards at K = 4000 still take 1-3 h each, so a container loss costs up to four of
 them.
+
+## 2026-10-16  n = 8 local run: geng res/mod sharding was useless; re-sharded by underlying graph; exact space count
+
+* **Exact size of the n = 8 restricted space.** `n8/count_restricted.py` counts, by Burnside's lemma over
+  Aut(G) for each underlying graph G (cycle polynomial 2x^L + x^{2L} for a direction-preserving edge cycle,
+  x^{2L} for a reversing one), the digraphs that `geng 8 15:28 | directg -e29:56` must produce:
+  **801,558,826,511** digraphs on 5,350 underlying graphs (44.7% of A000273(8) = 1,793,359,192,848).
+  Validated with no arc bound against A000273(6) = 1,540,944 and A000273(7) = 882,033,440 (both exact).
+  This is the number the prefilter's stats must sum to; `n8/check_accounting.py` enforces it per shard/job.
+* **The 9 finished geng shards match the Burnside count exactly** (shard 0: 31,894 ... shard 6:
+  2,494,306,619): an independent check that geng + directg + filter8 read every digraph once.
+* **geng res/mod sharding with an edge window is catastrophically uneven:** of the 4,000 shards
+  (`k/4000`), 3,966 are empty; shard 25 alone holds 156,243,099,188 digraphs (19.5%), shards 28/27/33/22
+  hold 13.5%/9.3%/9.2%/7.5%. Single underlying graphs reach 22.2 e9 digraphs (`GUz~~{`, 24 edges,
+  |Aut| = 12). With 4 workers the tail would have been one shard of ~4.5 days, and every container
+  restart (two in the first day) would lose it whole. The first 5.1 e9 digraphs (0.64%) took the run's
+  first day mostly because of these restarts.
+* **Fix: shard by underlying graph with directg's own splitting.** `n8/make_jobs.py` packs the 1,988
+  graphs not covered by shards 0..8 (796,429,670,800 digraphs) into 616 jobs of <= 1.5 e9 digraphs
+  (median 1.39 e9), splitting the 106 graphs above that size with `directg -s p/P` (511 parts;
+  "splitting is done per input graph independently", each orientation in exactly one part -- measured on
+  `G?~v~{`: parts of 5.67 M and 6.21 M out of 47.04 M for P = 8, i.e. within 6% of even). Driver
+  `n8/run_n8_jobs.sh` (largest first, resumable per job, pipefail, per-job total == exact expected for
+  unsplit jobs, else no .done), `n8/after_prefilter2.sh` (accounting check, then the exact limit stage over
+  shards 0..8 + jobs), `n8/relaunch.sh` (idempotent restart). In-flight geng shards 9..12 were killed
+  (about 4 worker-hours lost) so that the two schemes partition the space cleanly: shards 0..8 + jobs.
+* **Measured rate with 4 pipelines on 4 cores: ~0.4 M digraphs/s per pipeline** (filter8 is the hot
+  process at n = 8, 80-87% CPU, directg 20-35%), i.e. ~1.5-1.7 M/s aggregate when all four are busy; the
+  remaining 7.96 e11 digraphs then need ~5.5-6 days if the container stays up. Tail now <= ~1 h per worker.
+* So far (5.1 e9 digraphs, 9 shards): 29,751 survivors of the spectral test, all 29,751 on the boundary
+  (flag B: a Hurwitz minor of chi_perp(x - 1/2) vanishes, so alpha(A|perp) >= -1/2 exactly -- never
+  limit-stable), **0 strict survivors (S), 0 overflows**. Positive controls: filter8 flags the two known
+  limit-stable 8-node graphs (F_2 = Geneson + 2-clique, and `&GLjlNZ}NzH\o` from the dense sample) as S and
+  the finite-eps-only E_1 (alpha = -1/2 exactly) as B, as it must. Note for the eventual report: this
+  run is the eps -> 0 limit map only; finite-eps-only graphs at n = 8 (family E shows they exist) are
+  exactly the B lines it discards, by design.

@@ -32,3 +32,11 @@ n8/parts/*.txt.tmp
 n7/proper_v2/
 n8/after_prefilter.log
 n8/run_n8_limit.log
+n8/jobs/*.g6
+n8/jobs/*.tmp
+n8/jobs/*.txt.tmp
+n8/jobs/*.bad
+n8/jobs/progress.log
+n8/run_n8_jobs.log
+n8/after_prefilter2.log
+n8/check_accounting.log

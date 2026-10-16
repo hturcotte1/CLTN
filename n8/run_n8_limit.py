@@ -4,7 +4,7 @@ survivors (S = alpha < -1/2 strictly, O = overflow-undecided) produced by n8/run
 Same logic as n7/run_n7_limit.py: fastregion.region(A, V, INF, replay=True) gives the exact positivity
 cells and the exact limit-stable beta-interval; every non-complete limit-stable graph is a CANDIDATE
 (hand-verification required) and gets exact pointwise witnesses from ctln.analyze_support at large t.
-   python3 n8/run_n8_limit.py [--parts n8/parts] [--out n8]
+   python3 n8/run_n8_limit.py [--parts n8/parts n8/jobs] [--out n8]   (part*.txt and job*.txt files)
 Resumable: graphs already in the results file are skipped. No floating point anywhere.
 """
 import glob, json, sys, time, os, argparse
@@ -17,10 +17,12 @@ from n7.curve_test import from_d6
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--parts", default="n8/parts"); ap.add_argument("--out", default="n8")
+    ap = argparse.ArgumentParser(); ap.add_argument("--parts", nargs="+", default=["n8/parts"]); ap.add_argument("--out", default="n8")
     a = ap.parse_args(); n = 8
     rows = []
-    for path in sorted(glob.glob(os.path.join(a.parts, "part*.txt"))):
+    paths = []
+    for d in a.parts: paths += glob.glob(os.path.join(d, "part*.txt")) + glob.glob(os.path.join(d, "job*.txt"))
+    for path in sorted(paths):
         for line in open(path):
             p = line.split()
             if len(p) >= 3 and p[2] in ("S", "O"):

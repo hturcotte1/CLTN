@@ -1,0 +1,617 @@
+job_id	expected_digraphs	split	graphs
+0	1499622223	-	GEr^~{ GEr~vw GEr~vk GEr~u{ GEr~v{ GEr~~{ GEhffo GEhffW GEhfew GEhfdw GEhffc GEhffS GEhfes GEhfe[ GEhfc{ GEhf`{ GEhffw GEhffs GEhff[ GEhfe{ GEhfd{ GEhff{ GEhevo GEhevg GEhevW GEhevS GEheus GEhets GEhevK GEherk GEher[ GEhevw GEhevs GEhevk GEhev[ GEhev{ GEhbvo GEhbvg GEhbvc GEhbus GEhbrs GEhbuk GEhbtk GEhbvw GEhbvs GEhbvk GEhbv{ GEhfvo GEhfvg GEhfuw GEhfrw GEhfvw GEhfvs GEhfvk GEhfu{ GEhfr{ GEhfv{ GEhf~w GEhf~{ GEjf`w GEjfbw GEjffc GEjffS GEjffK GEjfa{ GEjf`{ GEjffw GEjffs GEjffk GEjff[ GEjfe{ GEjfd{ GEjfb{ GEjff{ GEjerW GEjeqw GEjevW GEjeuw GEjerw GEjevc GEjevS GEjeus GEjets GEjevK GEjeuk GEjetk GEjerk GEjeu[ GEjet[ GEjer[ GEjeq{ GEjep{ GEjevw GEjevs GEjevk GEjev[ GEjeu{ GEjet{ GEjer{ GEjev{ GEjbuo GEjbro GEjbvG GEjbug GEjbtg GEjbvo GEjbvg GEjbvc GEjbus GEjbrs GEjbvK GEjbuk GEjbtk GEjbvw GEjbvs GEjbvk GEjbv{ GEjfNK GEjfJk GEjfK{ GEjfI{ GEjfNw GEjfNk GEjfM{ GEjfJ{ GEjfN{ GEjeno GEjenc GEjenS GEjemk GEjel[ GEjenw GEjens GEjenk GEjen[ GEjen{ GEjdno GEjdng GEjdnc GEjdnS GEjdlk GEjdm[ GEjdnw GEjdns GEjdnk GEjdn[ GEjdn{ GEjfrw GEjfvw GEjfvs GEjfvk GEjfu{ GEjfr{ GEjfv{ GEjfnw GEjfnk GEjfn[ GEjfm{ GEjfl{ GEjfn{ GEjf~w GEjf~{ GEirvg GEirvW GEirtw GEirvc GEirus GEirts GEirrs GEirvw GEirvs GEirt{ GEirv{ GEit^W GEit\w GEit^c GEit\s GEit\k GEit\[ GEit^w GEit^s GEit^k GEit^[ GEit\{ GEit^{ GEivvw GEivvs GEivv[ GEivt{ GEivr{
+1	1499235794	-	GCz~v{ GCvfVg GCvfVW GCvfRw GCvfVS GCvfRs GCvfRk GCvfR[ GCvfQ{ GCvfP{ GCvfVw GCvfVs GCvfVk GCvfV[ GCvfU{ GCvfT{ GCvfR{ GCvfV{ GCverw GCvevS GCveus GCvets GCvers GCver[ GCveq{ GCvep{ GCvevw GCvevs GCvev[ GCveu{ GCvet{ GCver{ GCvev{ GCvdrw GCvdvS GCvdrs GCvdr[ GCvdq{ GCvdvw GCvdvs GCvdv[ GCvdu{ GCvdr{ GCvdv{ GCvbvg GCvbvW GCvbuw GCvbtw GCvbrw GCvbvc GCvbrs GCvbuk GCvbrk GCvbvw GCvbvs GCvbvk GCvbv[ GCvbu{ GCvbt{ GCvbr{ GCvbv{ GCvfNo GCvfJw GCvfNK GCvfMk GCvfLk GCvfJk GCvfH{ GCvfNw GCvfNk GCvfN[ GCvfM{ GCvfL{ GCvfJ{ GCvfN{ GCveno GCvemw GCvejw GCvemk GCveh{ GCvenw GCvens GCvenk GCven[ GCvem{ GCvel{ GCvej{ GCven{ GCvdjw GCvdjs GCvdmk GCvdlk GCvdnw GCvdns GCvdnk GCvdn[ GCvdm{ GCvdl{ GCvdj{ GCvdn{ GCvbno GCvbng GCvbmk GCvblk GCvbl[ GCvbk{ GCvbnw GCvbnk GCvbn[ GCvbm{ GCvbl{ GCvbn{ GCvfvw GCvfvs GCvfvk GCvfu{ GCvfv{ GCvfnw GCvfnk GCvfn{ GCvf^w GCvf^s GCvf^k GCvf^[ GCvf]{ GCvfZ{ GCvf^{ GCve~w GCve~k GCve}{ GCve~{ GCvd~w GCvd~s GCvd~k GCvd~[
+2	1497840122	-	GE~vvs GE~vv[ GFzfvo GFzfuw GFzfvw GFzfvs
+3	1497344477	-	GEj^v{ GEj]~w GEj]}{ GEj]|{ GEj]~{ GEj\~{ GEh~fg GEh~fW GEh~ew GEh~dw GEh~bw GEh~fS GEh~es GEh~fK GEh~ek GEh~dk GEh~bk GEh~e[ GEh~d[ GEh~b[ GEh~fw GEh~fs GEh~fk GEh~f[ GEh~e{ GEh~d{ GEh~b{
+4	1496812892	-	GQy~vk GQy}~w GQy}~s GQy}~[
+5	1496733508	-	GUZvf[ GUZve{ GUZvf{ GUZuvo GUZuvW GUZurw GUZuvK GUZuuk GUZuvw GUZuvk GUZuv[ GUZuv{ GUZvvo GUZvvg GUZvvW GUZvvw GUZvvs GUZvnw GUZvnk
+6	1496116421	-	GEnvZ{ GEl~vw GEl~vs GEl}~w GEl}~s
+7	1494632429	-	GEzfv{ GEzf]w GEzf^w GEzf^[ GEzf]{ GEzf^{ GEzf~w GEzf~{ GEzTng GEzTmw GEzTlw GEzTnc GEzTms GEzTls GEzTlk GEzTnw GEzTns GEzTnk GEzTm{ GEzTl{ GEzTj{ GEzTn{ GEzVvw GEzVvs GEzVvk GEzVv[ GEzVu{ GEzVt{ GEzVv{ GEzVnw GEzVnk
+8	1486873797	-	GEzVm{ GEzVn{ GEzU~o GEzU~w GEzU}{ GEzU~{ GEzT~w GEzT~k GEzT}{ GEzT|{ GEzTz{ GEzT~{ GEzV~w GEzV~{ GEzvew GEzvfK GEzvek
+9	1484205325	-	GQz^vs GQz^vk GQy~fW GQy~ew GQy~fc GQy~fS GQy~es GQy~e[ GQy~d[ GQy~a{ GQy~fw GQy~fs GQy~f[ GQy~e{ GQy~f{ GQy~vw GQy~vs
+10	1483237566	-	GCzr~{ GCzv~{ GCznfW GCznbw GCznfc GCznfS GCznes GCznbs GCzne[ GCznb[ GCznc{ GCzna{ GCznfw GCznfs GCznf[ GCzne{ GCznb{ GCznf{ GCznvw GCznvs
+11	1483211556	-	GF~~~{ GQhTVw GQhTVs GQhTV{ GQhVfo GQhVfW GQhVfc GQhVes GQhVe[ GQhVfw GQhVfs GQhVf[ GQhVf{ GQhVVo GQhVVg GQhVTw GQhVVc GQhVVS GQhVTs GQhVUk GQhVTk GQhVVw GQhVVs GQhVVk GQhVT{ GQhVV{ GQhVvo GQhVvg GQhVvW GQhVvw GQhVvs GQhVvk GQhVv[ GQhVv{ GQhV~w GQhV~{ GQjdvo GQjdvg GQjdvW GQjdts GQjdtk GQjdq{ GQjdvw GQjdvs GQjdvk GQjdv[ GQjdu{ GQjdt{ GQjdv{ GQjfNK GQjfLk GQjfK{ GQjfNw GQjfNk GQjfN[ GQjfM{ GQjfL{ GQjfN{ GQjdmk GQjdm[ GQjdnw GQjdnk GQjdn[ GQjdm{ GQjdn{ GQjfvw GQjfvs GQjfv[ GQjfv{ GQjfnw GQjfns GQjfnk GQjfn[ GQjfm{ GQjfn{ GQjf^w GQjf^[ GQjf^{ GQje~w GQje~s GQje~[ GQje}{ GQjez{ GQje~{ GQjd~w GQjd~s GQjd~k GQjd~[ GQjd}{ GQjd|{ GQjd~{
+12	1480012120	0/15	GTz~~{
+13	1480012120	1/15	GTz~~{
+14	1480012120	2/15	GTz~~{
+15	1480012120	3/15	GTz~~{
+16	1480012120	4/15	GTz~~{
+17	1480012120	5/15	GTz~~{
+18	1480012120	6/15	GTz~~{
+19	1480012120	7/15	GTz~~{
+20	1480012120	8/15	GTz~~{
+21	1480012120	9/15	GTz~~{
+22	1480012120	10/15	GTz~~{
+23	1480012120	11/15	GTz~~{
+24	1480012120	12/15	GTz~~{
+25	1480012120	13/15	GTz~~{
+26	1480012120	14/15	GTz~~{
+27	1477981485	0/15	GUz~~{
+28	1477981485	1/15	GUz~~{
+29	1477981485	2/15	GUz~~{
+30	1477981485	3/15	GUz~~{
+31	1477981485	4/15	GUz~~{
+32	1477981485	5/15	GUz~~{
+33	1477981485	6/15	GUz~~{
+34	1477981485	7/15	GUz~~{
+35	1477981485	8/15	GUz~~{
+36	1477981485	9/15	GUz~~{
+37	1477981485	10/15	GUz~~{
+38	1477981485	11/15	GUz~~{
+39	1477981485	12/15	GUz~~{
+40	1477981485	13/15	GUz~~{
+41	1477981485	14/15	GUz~~{
+42	1475487466	0/9	G]~~~{
+43	1475487466	1/9	G]~~~{
+44	1475487466	2/9	G]~~~{
+45	1475487466	3/9	G]~~~{
+46	1475487466	4/9	G]~~~{
+47	1475487466	5/9	G]~~~{
+48	1475487466	6/9	G]~~~{
+49	1475487466	7/9	G]~~~{
+50	1475487466	8/9	G]~~~{
+51	1468914033	-	GQ~~~{ GUZvfo GUZvfg GUZvfK GUZvek GUZve[ GUZvd[ GUZvb[ GUZvfw GUZvfk
+52	1468268420	-	GCz\~{ GCx~fo GCx~ew GCx~fc GCx~fS GCx~es GCx~bs GCx~e[ GCx~b[ GCx~c{ GCx~fw GCx~fs GCx~f[ GCx~e{ GCx~f{ GCx}~w GCx}}{ GCx}|{ GCx}~{ GCx~~{ GCz~vw
+53	1466421763	-	GEu|~w GEu|z{ GEu|~{ GEv~vw
+54	1462912281	-	GQzl~s GQzl|{ GQzl~{ GQz^fo GQz^fc GQz^fS GQz^es GQz^ds GQz^e[ GQz^d[ GQz^b[ GQz^`{
+55	1459236625	0/4	GT~~~{
+56	1459236625	1/4	GT~~~{
+57	1459236625	2/4	GT~~~{
+58	1459236625	3/4	GT~~~{
+59	1455724733	0/6	G]~v~{
+60	1455724733	1/6	G]~v~{
+61	1455724733	2/6	G]~v~{
+62	1455724733	3/6	G]~v~{
+63	1455724733	4/6	G]~v~{
+64	1455724733	5/6	G]~v~{
+65	1455073823	0/24	G]z~~{
+66	1455073823	1/24	G]z~~{
+67	1455073823	2/24	G]z~~{
+68	1455073823	3/24	G]z~~{
+69	1455073823	4/24	G]z~~{
+70	1455073823	5/24	G]z~~{
+71	1455073823	6/24	G]z~~{
+72	1455073823	7/24	G]z~~{
+73	1455073823	8/24	G]z~~{
+74	1455073823	9/24	G]z~~{
+75	1455073823	10/24	G]z~~{
+76	1455073823	11/24	G]z~~{
+77	1455073823	12/24	G]z~~{
+78	1455073823	13/24	G]z~~{
+79	1455073823	14/24	G]z~~{
+80	1455073823	15/24	G]z~~{
+81	1455073823	16/24	G]z~~{
+82	1455073823	17/24	G]z~~{
+83	1455073823	18/24	G]z~~{
+84	1455073823	19/24	G]z~~{
+85	1455073823	20/24	G]z~~{
+86	1455073823	21/24	G]z~~{
+87	1455073823	22/24	G]z~~{
+88	1455073823	23/24	G]z~~{
+89	1453105933	0/12	GU~~~{
+90	1453105933	1/12	GU~~~{
+91	1453105933	2/12	GU~~~{
+92	1453105933	3/12	GU~~~{
+93	1453105933	4/12	GU~~~{
+94	1453105933	5/12	GU~~~{
+95	1453105933	6/12	GU~~~{
+96	1453105933	7/12	GU~~~{
+97	1453105933	8/12	GU~~~{
+98	1453105933	9/12	GU~~~{
+99	1453105933	10/12	GU~~~{
+100	1453105933	11/12	GU~~~{
+101	1452659333	-	GC~~~{ GErvfg GErvfK GErvek GErvfw GErvfk GErvf[ GErvf{ GErtrw GErtr[ GErtvw GErtvk GErtv[ GErtu{ GErtv{ GErvvW GErvvw GErvvs GErvvk GErvv[ GErvv{ GErvnk GErvn[ GErvm{ GErvl{
+102	1452191233	-	GEh~f{ GEh}vo GEh}vW GEh}uw GEh}tw GEh}rw GEh}us GEh}ts GEh}rs GEh}s{ GEh}p{ GEh}vw GEh}vs GEh}u{ GEh}t{ GEh}v{ GEhzvo GEhzrw GEhzvK GEhzuk GEhztk GEhzs{ GEhzq{ GEhzvw GEhzvk GEhzu{ GEhzr{ GEhzv{ GEh~vo GEh~rw GEh~vw GEh~vs GEh~r{ GEh~v{ GEh}~s GEh}}{ GEh}|{ GEh}~{ GEhz}{ GEhzz{
+103	1448472927	-	GEnfv{ GEnfnw GEnfns GEnfnk GEnfn[ GEnfm{ GEnfl{ GEnfj{ GEnfn{
+104	1448428762	-	GEne~w GEne}{ GEne|{ GEne~{ GEnb~g GEnb~w GEnb}{ GEnbz{ GEnb~{ GEnf~w
+105	1446420617	0/23	GU~v~{
+106	1446420617	1/23	GU~v~{
+107	1446420617	2/23	GU~v~{
+108	1446420617	3/23	GU~v~{
+109	1446420617	4/23	GU~v~{
+110	1446420617	5/23	GU~v~{
+111	1446420617	6/23	GU~v~{
+112	1446420617	7/23	GU~v~{
+113	1446420617	8/23	GU~v~{
+114	1446420617	9/23	GU~v~{
+115	1446420617	10/23	GU~v~{
+116	1446420617	11/23	GU~v~{
+117	1446420617	12/23	GU~v~{
+118	1446420617	13/23	GU~v~{
+119	1446420617	14/23	GU~v~{
+120	1446420617	15/23	GU~v~{
+121	1446420617	16/23	GU~v~{
+122	1446420617	17/23	GU~v~{
+123	1446420617	18/23	GU~v~{
+124	1446420617	19/23	GU~v~{
+125	1446420617	20/23	GU~v~{
+126	1446420617	21/23	GU~v~{
+127	1446420617	22/23	GU~v~{
+128	1442022118	-	GQzvnw GQzvnk GQzvn{
+129	1438460804	-	GQjf~w GQjf~{ GQjRfo GQjRfg GQjRfW GQjRew GQjRbw GQjRfK GQjRek GQjRe[ GQjRd[ GQjRa{ GQjRfw GQjRfk GQjRf[ GQjRe{ GQjRf{ GQjVfg GQjVfW GQjVbw GQjVfc GQjVes GQjVek GQjVb[ GQjVfw GQjVfs GQjVfk GQjVf[ GQjVe{ GQjVb{ GQjVf{ GQjVRg GQjVRW GQjVVo GQjVVg GQjVVW GQjVRw GQjVVc GQjVVS GQjVTs GQjVVK GQjVUk GQjVVw GQjVVs GQjVVk GQjVV[ GQjVV{ GQjRv_ GQjRro GQjRvG GQjRug GQjRvo GQjRvg GQjRvc GQjRvS GQjRrs GQjRvK GQjRuk GQjRvw GQjRvs GQjRvk GQjRv{ GQjVNo GQjVNg GQjVNc GQjVMs GQjVNK GQjVNw GQjVNs GQjVNk GQjVM{ GQjVN{ GQjUno GQjUmk GQjUl[ GQjUj[ GQjUnw GQjUnk GQjUn[ GQjUj{ GQjUn{ GQjVrw GQjVvw GQjVvs GQjVvk GQjVv[ GQjVr{ GQjVv{ GQjVnw GQjVnk GQjVn[ GQjVm{ GQjVn{ GQjV~w GQjV~{ GQinTw GQinVc GQinVS GQinTs GQinVw GQinVs GQinVk GQinV[ GQinT{ GQinV{ GQil^W GQil\[ GQil^w GQil^[ GQil^{ GQinvw GQinvs GQinvk GQinv[ GQinv{ GQin^w GQin^[ GQin\{ GQin^{ GQin~w GQin~{ GQjvfg GQjvfK GQjvek GQjve[ GQjvd[ GQjva{ GQjvfw GQjvfk GQjvf[ GQjve{ GQjvf{ GQjuvo GQjuvg GQjuuw GQjurw GQjuvK GQjuuk GQjurk GQjut[ GQjur[ GQjuvw GQjuvk GQjuv[ GQjur{ GQjuv{ GQjvvw GQjvvs GQjvvk GQjvv{ GQjvnk GQjvn[ GQjvm{ GQjvn{ GQjv^w GQjv^s GQjv^[ GQjv\{ GQjv^{ GQju~w GQju~[ GQjuz{ GQju~{
+130	1435648448	-	GUxv~w GUxv~{ GUzrvo GUzrvg GUzrvW GUzrvw
+131	1432310040	0/7	GTzvv{
+132	1432310040	1/7	GTzvv{
+133	1432310040	2/7	GTzvv{
+134	1432310040	3/7	GTzvv{
+135	1432310040	4/7	GTzvv{
+136	1432310040	5/7	GTzvv{
+137	1432310040	6/7	GTzvv{
+138	1432310040	0/7	GTzv^{
+139	1432310040	1/7	GTzv^{
+140	1432310040	2/7	GTzv^{
+141	1432310040	3/7	GTzv^{
+142	1432310040	4/7	GTzv^{
+143	1432310040	5/7	GTzv^{
+144	1432310040	6/7	GTzv^{
+145	1431375917	-	GFzvu{ GFzvnw GFzvnk
+146	1430860114	0/7	GEnv~{
+147	1430860114	1/7	GEnv~{
+148	1430860114	2/7	GEnv~{
+149	1430860114	3/7	GEnv~{
+150	1430860114	4/7	GEnv~{
+151	1430860114	5/7	GEnv~{
+152	1430860114	6/7	GEnv~{
+153	1430148786	0/7	GUzvv{
+154	1430148786	1/7	GUzvv{
+155	1430148786	2/7	GUzvv{
+156	1430148786	3/7	GUzvv{
+157	1430148786	4/7	GUzvv{
+158	1430148786	5/7	GUzvv{
+159	1430148786	6/7	GUzvv{
+160	1430145172	0/14	GUzv^{
+161	1430145172	1/14	GUzv^{
+162	1430145172	2/14	GUzv^{
+163	1430145172	3/14	GUzv^{
+164	1430145172	4/14	GUzv^{
+165	1430145172	5/14	GUzv^{
+166	1430145172	6/14	GUzv^{
+167	1430145172	7/14	GUzv^{
+168	1430145172	8/14	GUzv^{
+169	1430145172	9/14	GUzv^{
+170	1430145172	10/14	GUzv^{
+171	1430145172	11/14	GUzv^{
+172	1430145172	12/14	GUzv^{
+173	1430145172	13/14	GUzv^{
+174	1424562833	-	GEjvv{ GEjvnw GEjvnk GEjvn[ GEjvm{ GEjvl{ GEjvj{ GEjvn{ GEjv^w GEjv]{ GEjvZ{
+175	1421811676	-	GEivv{ GEivnw GEivns GEivnk GEivn[ GEivm{ GEivl{ GEivj{ GEivn{ GEiv^w GEiv^[ GEiv^{ GEit~w GEit~[ GEit|{ GEit~{ GEiv~w GEiv~{ GEhvFo GEhvFg GEhvEw GEhvDw GEhvFc GEhvFS GEhvEs GEhvDs GEhvBs GEhvEk GEhvDk GEhvC{ GEhvA{ GEhvFw GEhvFs GEhvFk GEhvE{ GEhvD{ GEhvF{ GEhuVo GEhuVg GEhuVW GEhuUw GEhuTw GEhuRw GEhuVc GEhuUs GEhuVw GEhuVs GEhuU{ GEhuV{ GEhvV_ GEhvUo GEhvRo GEhvUg GEhvTg GEhvSw GEhvQw GEhvVo GEhvVg GEhvUw GEhvTw GEhvVc GEhvVS GEhvUs GEhvTs GEhvRs GEhvUk GEhvTk GEhvS{ GEhvQ{ GEhvVw GEhvVs GEhvVk GEhvU{ GEhvT{ GEhvV{ GEhuuW GEhuvo GEhuvW GEhutw GEhurw GEhuts GEhurs GEhus{ GEhup{ GEhuvw GEhuvs GEhuu{ GEhut{ GEhuv{ GEhttW GEhtvW GEhtuw GEhttw GEhtts GEhttk GEhtrk GEhtt[ GEhts{ GEhtq{ GEhtp{ GEhtvw GEhtvs GEhtvk GEhtv[ GEhtu{ GEhtt{ GEhtr{ GEhtv{ GEhrvg GEhrvW GEhrts GEhrrs GEhrvK GEhrtk GEhrrk GEhru[ GEhrt[ GEhrr[ GEhrs{ GEhrq{ GEhrp{ GEhrvw GEhrvs GEhrvk GEhrv[ GEhru{ GEhrt{ GEhrr{ GEhrv{ GEhtno GEhtng GEhtlw GEhtlk GEhtnw GEhtns GEhtnk GEhtm{ GEhtl{ GEhtn{ GEhvvW GEhvvw GEhvvs GEhvvk GEhvv[ GEhvu{ GEhvt{ GEhvr{ GEhvv{ GEhvnw GEhvnk GEhvl{ GEhvn{ GEhu~w GEhu~k GEhu}{ GEhu|{ GEhuz{ GEhu~{ GEht~w GEht|{ GEht~{ GEhv~w GEhv~{ GEjvfK GEjvbk GEjve[ GEjvb[ GEjvc{ GEjvfw GEjvfk GEjvf[ GEjve{ GEjvd{ GEjvb{ GEjvf{ GEjvVo GEjvVg GEjvVW GEjvUw GEjvTw GEjvVK GEjvUk GEjvTk GEjvRk GEjvS{ GEjvQ{ GEjvVw GEjvVk GEjvU{ GEjvR{ GEjvV{ GEjurw GEjuvK GEjutk GEjuu[ GEjur[ GEjus{ GEjuvw GEjuvs GEjuvk GEjuv[ GEjuu{ GEjut{ GEjur{ GEjuv{ GEjtvW GEjttw GEjtvc GEjtvK GEjttk GEjtrk GEjtt[ GEjtr[ GEjts{ GEjtvw GEjtvs GEjtvk GEjtv[ GEjtu{ GEjtt{ GEjtr{ GEjtv{ GEjvvw GEjvvs
+176	1417566850	-	GQjv~{ GQjnfg GQjnfW GQjnew GQjndw GQjnfc GQjnfK GQjnek GQjndk GQjnd[ GQjna{ GQjnfw GQjnfs GQjnfk GQjnf[ GQjne{ GQjnd{ GQjnf{ GQjnVg GQjnTw GQjnVK GQjnTk GQjnT[ GQjnVw GQjnVk GQjnV[ GQjnT{ GQjnV{ GQjlvo GQjlvg GQjlvW GQjlvK GQjlt[ GQjlvw GQjlvk GQjlv[ GQjlv{ GQjnvw GQjnvs GQjnt{ GQjnv{ GQjn^w GQjn^[ GQjn\{ GQjn^{ GQjl~{ GQjn~{ GQj~vw GQj~vk GQj~v[
+177	1417160270	-	GEz~v[ GEvvvw GEvvvs GEvvnw GEvvnk
+178	1412278706	-	GFzvn{ GFz~vw
+179	1404138860	0/7	GE~v~{
+180	1404138860	1/7	GE~v~{
+181	1404138860	2/7	GE~v~{
+182	1404138860	3/7	GE~v~{
+183	1404138860	4/7	GE~v~{
+184	1404138860	5/7	GE~v~{
+185	1404138860	6/7	GE~v~{
+186	1399979728	0/14	GTz~v{
+187	1399979728	1/14	GTz~v{
+188	1399979728	2/14	GTz~v{
+189	1399979728	3/14	GTz~v{
+190	1399979728	4/14	GTz~v{
+191	1399979728	5/14	GTz~v{
+192	1399979728	6/14	GTz~v{
+193	1399979728	7/14	GTz~v{
+194	1399979728	8/14	GTz~v{
+195	1399979728	9/14	GTz~v{
+196	1399979728	10/14	GTz~v{
+197	1399979728	11/14	GTz~v{
+198	1399979728	12/14	GTz~v{
+199	1399979728	13/14	GTz~v{
+200	1398831064	0/14	GTzv~{
+201	1398831064	1/14	GTzv~{
+202	1398831064	2/14	GTzv~{
+203	1398831064	3/14	GTzv~{
+204	1398831064	4/14	GTzv~{
+205	1398831064	5/14	GTzv~{
+206	1398831064	6/14	GTzv~{
+207	1398831064	7/14	GTzv~{
+208	1398831064	8/14	GTzv~{
+209	1398831064	9/14	GTzv~{
+210	1398831064	10/14	GTzv~{
+211	1398831064	11/14	GTzv~{
+212	1398831064	12/14	GTzv~{
+213	1398831064	13/14	GTzv~{
+214	1398198289	0/14	GU~vv{
+215	1398198289	1/14	GU~vv{
+216	1398198289	2/14	GU~vv{
+217	1398198289	3/14	GU~vv{
+218	1398198289	4/14	GU~vv{
+219	1398198289	5/14	GU~vv{
+220	1398198289	6/14	GU~vv{
+221	1398198289	7/14	GU~vv{
+222	1398198289	8/14	GU~vv{
+223	1398198289	9/14	GU~vv{
+224	1398198289	10/14	GU~vv{
+225	1398198289	11/14	GU~vv{
+226	1398198289	12/14	GU~vv{
+227	1398198289	13/14	GU~vv{
+228	1398013539	0/14	GUz~v{
+229	1398013539	1/14	GUz~v{
+230	1398013539	2/14	GUz~v{
+231	1398013539	3/14	GUz~v{
+232	1398013539	4/14	GUz~v{
+233	1398013539	5/14	GUz~v{
+234	1398013539	6/14	GUz~v{
+235	1398013539	7/14	GUz~v{
+236	1398013539	8/14	GUz~v{
+237	1398013539	9/14	GUz~v{
+238	1398013539	10/14	GUz~v{
+239	1398013539	11/14	GUz~v{
+240	1398013539	12/14	GUz~v{
+241	1398013539	13/14	GUz~v{
+242	1397944293	-	G]zn\{ G]zl|{ G]~v~w
+243	1396878016	0/14	GUz^~{
+244	1396878016	1/14	GUz^~{
+245	1396878016	2/14	GUz^~{
+246	1396878016	3/14	GUz^~{
+247	1396878016	4/14	GUz^~{
+248	1396878016	5/14	GUz^~{
+249	1396878016	6/14	GUz^~{
+250	1396878016	7/14	GUz^~{
+251	1396878016	8/14	GUz^~{
+252	1396878016	9/14	GUz^~{
+253	1396878016	10/14	GUz^~{
+254	1396878016	11/14	GUz^~{
+255	1396878016	12/14	GUz^~{
+256	1396878016	13/14	GUz^~{
+257	1396855488	0/14	GUzv~{
+258	1396855488	1/14	GUzv~{
+259	1396855488	2/14	GUzv~{
+260	1396855488	3/14	GUzv~{
+261	1396855488	4/14	GUzv~{
+262	1396855488	5/14	GUzv~{
+263	1396855488	6/14	GUzv~{
+264	1396855488	7/14	GUzv~{
+265	1396855488	8/14	GUzv~{
+266	1396855488	9/14	GUzv~{
+267	1396855488	10/14	GUzv~{
+268	1396855488	11/14	GUzv~{
+269	1396855488	12/14	GUzv~{
+270	1396855488	13/14	GUzv~{
+271	1394535216	-	GEn~vw GEn~r{
+272	1393095266	0/4	GE~~~{
+273	1393095266	1/4	GE~~~{
+274	1393095266	2/4	GE~~~{
+275	1393095266	3/4	GE~~~{
+276	1392057233	0/3	GEu~n{
+277	1392057233	1/3	GEu~n{
+278	1392057233	2/3	GEu~n{
+279	1392057233	0/3	GEnvv{
+280	1392057233	1/3	GEnvv{
+281	1392057233	2/3	GEnvv{
+282	1392057233	0/3	GQz^v{
+283	1392057233	1/3	GQz^v{
+284	1392057233	2/3	GQz^v{
+285	1392057233	0/3	GUzvvk
+286	1392057233	1/3	GUzvvk
+287	1392057233	2/3	GUzvvk
+288	1391983194	0/8	G]zn~{
+289	1391983194	1/8	G]zn~{
+290	1391983194	2/8	G]zn~{
+291	1391983194	3/8	G]zn~{
+292	1391983194	4/8	G]zn~{
+293	1391983194	5/8	G]zn~{
+294	1391983194	6/8	G]zn~{
+295	1391983194	7/8	G]zn~{
+296	1389285862	0/12	G]~vv{
+297	1389285862	1/12	G]~vv{
+298	1389285862	2/12	G]~vv{
+299	1389285862	3/12	G]~vv{
+300	1389285862	4/12	G]~vv{
+301	1389285862	5/12	G]~vv{
+302	1389285862	6/12	G]~vv{
+303	1389285862	7/12	G]~vv{
+304	1389285862	8/12	G]~vv{
+305	1389285862	9/12	G]~vv{
+306	1389285862	10/12	G]~vv{
+307	1389285862	11/12	G]~vv{
+308	1388169864	0/12	G]y~~{
+309	1388169864	1/12	G]y~~{
+310	1388169864	2/12	G]y~~{
+311	1388169864	3/12	G]y~~{
+312	1388169864	4/12	G]y~~{
+313	1388169864	5/12	G]y~~{
+314	1388169864	6/12	G]y~~{
+315	1388169864	7/12	G]y~~{
+316	1388169864	8/12	G]y~~{
+317	1388169864	9/12	G]y~~{
+318	1388169864	10/12	G]y~~{
+319	1388169864	11/12	G]y~~{
+320	1385750107	-	GUzrv{ GUzvrw GUz^vs
+321	1377859580	-	GEhz~{ GEh~~{ GEj~vw
+322	1370404385	-	GQznvw GQznvs GQznvk GQzn^w GQzn^[ GQzn]{ GQzn\{ GQzn^{
+323	1368744590	-	GEzvn{ GEznfo GEznfW GEzndw GEznfc GEznfS GEznes GEzne[ GEznc{ GEzn`{ GEznfw GEznfs GEznf[ GEzne{ GEznd{ GEznf{
+324	1368191103	-	GUZ~~{ GUxvvo GUxvvg GUxvuw
+325	1341747574	-	GEv^~{ GEu~vw GEu~vs
+326	1339158200	-	GEnf~{ GEnvVo GEnvVW GEnvUw GEnvTw GEnvRw GEnvTk GEnvRk GEnvS{ GEnvQ{ GEnvVw GEnvVk GEnvU{ GEnvR{
+327	1337185380	-	GEv^v{ GEv]~w GEv]}{ GEv]|{ GEv]~{ GEv\~w
+328	1334782434	0/4	G^~~~{
+329	1334782434	1/4	G^~~~{
+330	1334782434	2/4	G^~~~{
+331	1334782434	3/4	G^~~~{
+332	1329572403	-	GEu~nw GEu~nk GEu~n[
+333	1329570611	-	GEnvV{ GEnvvw GEnvvs
+334	1329270008	-	GUxvvw GUxvvs GUxvvk GUxvv[ GUxvu{
+335	1328805666	-	GEnv^w GEnv]{
+336	1328568458	0/8	GV~~~{
+337	1328568458	1/8	GV~~~{
+338	1328568458	2/8	GV~~~{
+339	1328568458	3/8	GV~~~{
+340	1328568458	4/8	GV~~~{
+341	1328568458	5/8	GV~~~{
+342	1328568458	6/8	GV~~~{
+343	1328568458	7/8	GV~~~{
+344	1322377327	-	GTm~v{ GTm|~w GTm||{ GTm|~{ GTm~~{ G]zn^[
+345	1310593390	0/5	GQz~~{
+346	1310593390	1/5	GQz~~{
+347	1310593390	2/5	GQz~~{
+348	1310593390	3/5	GQz~~{
+349	1310593390	4/5	GQz~~{
+350	1310588730	0/5	G]zl~{
+351	1310588730	1/5	G]zl~{
+352	1310588730	2/5	G]zl~{
+353	1310588730	3/5	G]zl~{
+354	1310588730	4/5	G]zl~{
+355	1310057326	0/5	GEz~~{
+356	1310057326	1/5	GEz~~{
+357	1310057326	2/5	GEz~~{
+358	1310057326	3/5	GEz~~{
+359	1310057326	4/5	GEz~~{
+360	1309308706	0/5	GTnv~{
+361	1309308706	1/5	GTnv~{
+362	1309308706	2/5	GTnv~{
+363	1309308706	3/5	GTnv~{
+364	1309308706	4/5	GTnv~{
+365	1305021184	0/5	GEn~~{
+366	1305021184	1/5	GEn~~{
+367	1305021184	2/5	GEn~~{
+368	1305021184	3/5	GEn~~{
+369	1305021184	4/5	GEn~~{
+370	1301030772	-	GQy}}{ GQy}z{ GQz~vw
+371	1299729952	-	GEvv^{ GEv^vw GEv^vs
+372	1297972173	-	GEjv^{ GEju~s GEju}{ GEju|{ GEju~{ GEjt~s GEjt|{
+373	1294256618	-	GEv~t{ GEnfbW GEnffW GEnfbw GEnffS GEnffK GEnfdk GEnffw GEnffs GEnffk GEnff[ GEnff{ GEnbvG GEnbvo GEnbrw GEnbus GEnbvw GEnbvs GEnbu{ GEnbv{ GEnfvw GEnfvs GEnfu{ GEnfr{
+374	1274643658	-	GC~v~{
+375	1265072199	-	GQ~vv{
+376	1264753999	-	GErvn{ GErv]{ GErv\{ GErv^{ GEru~w GEru~s GEru}{ GEru~{ GErt~w GErt}{ GErt~{
+377	1262148819	-	GErv~{ GEr^fg GEr^fW GEr^fS GEr^es GEr^fK GEr^ek GEr^e[ GEr^fw GEr^fs GEr^fk GEr^f[ GEr^e{ GEr^d{ GEr^f{ GEr]vo GEr]uw GEr]vw GEr]u{ GEr]v{ GEr^vo GEr^uw GEr^vw GEr^vs GEr^v{ GEr]~w GEr]}{ GEr]~{
+378	1260079294	-	GQz^fw GQz^fs GQz^f[ GQz^d{ GQz^f{ GQz^vw
+379	1259964895	0/2	GEv~v{
+380	1259964895	1/2	GEv~v{
+381	1259752623	0/2	GQzn~{
+382	1259752623	1/2	GQzn~{
+383	1259704504	-	GFz~u{
+384	1258908255	0/2	GEzn~{
+385	1258908255	1/2	GEzn~{
+386	1258812895	0/4	GQz~v{
+387	1258812895	1/4	GQz~v{
+388	1258812895	2/4	GQz~v{
+389	1258812895	3/4	GQz~v{
+390	1258249055	0/4	GE~vv{
+391	1258249055	1/4	GE~vv{
+392	1258249055	2/4	GE~vv{
+393	1258249055	3/4	GE~vv{
+394	1257971807	0/4	GEz~v{
+395	1257971807	1/4	GEz~v{
+396	1257971807	2/4	GEz~v{
+397	1257971807	3/4	GEz~v{
+398	1257854244	0/2	GQy~~{
+399	1257854244	1/2	GQy~~{
+400	1257769523	0/4	GQzv~{
+401	1257769523	1/4	GQzv~{
+402	1257769523	2/4	GQzv~{
+403	1257769523	3/4	GQzv~{
+404	1256934707	0/4	GEzv~{
+405	1256934707	1/4	GEzv~{
+406	1256934707	2/4	GEzv~{
+407	1256934707	3/4	GEzv~{
+408	1256934707	0/4	GEvv~{
+409	1256934707	1/4	GEvv~{
+410	1256934707	2/4	GEvv~{
+411	1256934707	3/4	GEvv~{
+412	1256875618	-	GTz~v[
+413	1255197463	0/2	GTzvn{
+414	1255197463	1/2	GTzvn{
+415	1255191064	0/4	GTz~vw
+416	1255191064	1/4	GTz~vw
+417	1255191064	2/4	GTz~vw
+418	1255191064	3/4	GTz~vw
+419	1254920088	0/4	GTz~vk
+420	1254920088	1/4	GTz~vk
+421	1254920088	2/4	GTz~vk
+422	1254920088	3/4	GTz~vk
+423	1253905196	0/4	GEu~~{
+424	1253905196	1/4	GEu~~{
+425	1253905196	2/4	GEu~~{
+426	1253905196	3/4	GEu~~{
+427	1253299967	0/4	GUz]~{
+428	1253299967	1/4	GUz]~{
+429	1253299967	2/4	GUz]~{
+430	1253299967	3/4	GUz]~{
+431	1253299967	0/4	GUz~vw
+432	1253299967	1/4	GUz~vw
+433	1253299967	2/4	GUz~vw
+434	1253299967	3/4	GUz~vw
+435	1253079250	0/4	GEn~v{
+436	1253079250	1/4	GEn~v{
+437	1253079250	2/4	GEn~v{
+438	1253079250	3/4	GEn~v{
+439	1253031231	0/4	GUz~u{
+440	1253031231	1/4	GUz~u{
+441	1253031231	2/4	GUz~u{
+442	1253031231	3/4	GUz~u{
+443	1253008298	0/4	GUz~vk
+444	1253008298	1/4	GUz~vk
+445	1253008298	2/4	GUz~vk
+446	1253008298	3/4	GUz~vk
+447	1252073552	0/4	GUZv~{
+448	1252073552	1/4	GUZv~{
+449	1252073552	2/4	GUZv~{
+450	1252073552	3/4	GUZv~{
+451	1252012946	0/4	GQz^~{
+452	1252012946	1/4	GQz^~{
+453	1252012946	2/4	GQz^~{
+454	1252012946	3/4	GQz^~{
+455	1251427143	0/2	GU~vvw
+456	1251427143	1/2	GU~vvw
+457	1248399449	-	GQzm~w GQzm~s GQzm}{ GQzl~w
+458	1248222748	0/3	GFz~~{
+459	1248222748	1/3	GFz~~{
+460	1248222748	2/3	GFz~~{
+461	1247719768	-	GFzfvk GFzfu{ GFzfv{ GFzf~w GFzf~{ GFzvVo GFzvVg GFzvUw GFzvS{ GFzvVw GFzvU{ GFzvV{ GFzvvW GFzvvw
+462	1235039595	-	GEj~v{ GEzfvw GEzfvs GEzfvk GEzfv[ GEzfu{ GEzft{
+463	1234601338	0/2	GQ~v~{
+464	1234601338	1/2	GQ~v~{
+465	1233952069	-	GCzffW GCzfew GCzfbw GCzffc GCzffS GCzfes GCzffw GCzffs GCzff[ GCzff{ GCzfVg GCzfVW GCzfRw GCzfVS GCzfRs GCzfR[ GCzfQ{ GCzfVw GCzfVs GCzfV[ GCzfU{ GCzfR{ GCzfV{ GCzbvg GCzbvW GCzbrw GCzbrs GCzbrk GCzbvw GCzbvs GCzbvk GCzbv[ GCzbu{ GCzbr{ GCzbv{ GCzfvw GCzfvs GCzfvk GCzfv[ GCzfr{ GCzfv{ GCzfZw GCzf^w GCzf^[ GCzfZ{ GCzf^{ GCze~w GCze~s GCze~[ GCze}{ GCze|{ GCzez{ GCze~{ GCzb}w GCzbzw GCzb~w GCzbz{ GCzb~{ GCzf~w GCzf~{ GCxvFo GCxvFg GCxvFW GCxvEw GCxvBw GCxvFS GCxvBs GCxvFw GCxvFs GCxvF[ GCxvF{ GCxvf_ GCxvfO GCxveo GCxvbo GCxveW GCxvbW GCxvcw GCxvfo GCxvfW GCxvew GCxvfc GCxvfS GCxves GCxvbs GCxve[ GCxvb[ GCxvc{ GCxvfw GCxvfs GCxvf[ GCxve{ GCxvf{ GCxvVG GCxvVg GCxvRw GCxvVS GCxvVw GCxvVs GCxvV[ GCxvU{ GCxvR{ GCxvV{ GCxvvg GCxvvw GCxvvs GCxvvk GCxvv[ GCxvu{ GCxvr{ GCxvv{ GCxv]w GCxvZw GCxv^w GCxv^[ GCxvZ{ GCxv^{ GCxu}w GCxu|w GCxu~w GCxu~[ GCxu}{ GCxu|{ GCxu~{ GCxv~w GCxv~{ GCzvbo GCzvfo GCzvfg GCzvfW GCzvfK GCzvek GCzvbk GCzve[ GCzvb[ GCzvc{ GCzva{ GCzvfw GCzvfk GCzvf[ GCzve{ GCzvb{ GCzvf{ GCzvrw GCzvvw GCzvvs GCzvv{ GCzvnw GCzvnk GCzvj{ GCzvn{ GCzr~w GCzr~s GCzrz{
+466	1226755364	0/4	G]~vv[
+467	1226755364	1/4	G]~vv[
+468	1226755364	2/4	G]~vv[
+469	1226755364	3/4	G]~vv[
+470	1225999974	-	GEv~vk GEv~u{
+471	1225738822	0/4	GTzn~{
+472	1225738822	1/4	GTzn~{
+473	1225738822	2/4	GTzn~{
+474	1225738822	3/4	GTzn~{
+475	1224860545	0/4	G]~vvw
+476	1224860545	1/4	G]~vvw
+477	1224860545	2/4	G]~vvw
+478	1224860545	3/4	G]~vvw
+479	1219961977	-	GCv~v{ GC~vfo GC~vfW GC~vew GC~ve[ GC~vb[ GC~vc{ GC~vfw GC~vf[ GC~ve{ GC~vf{ GC~vvw GC~vvs
+480	1217722384	-	GEvvn[ GEvvn{
+481	1210108939	-	GCvd}{ GCvd|{ GCvdz{ GCvd~{ GCvb}w GCvb|w GCvb~w GCvb~s GCvb~k GCvb}{ GCvbz{ GCvb~{ GCvf~w GCvf~{ GCvUvw GCvUvs GCvUu{ GCvUv{ GCvVvw GCvVvs GCvVvk GCvVv[ GCvVu{ GCvVt{ GCvVv{ GCvV^w GCvV^[ GCvV]{ GCvV\{ GCvVZ{ GCvV^{ GCvU~w GCvU}{ GCvU|{ GCvU~{ GCvT~w GCvT|{ GCvT~{ GCvV~w GCvV~{ GCutvc GCutts GCutvw GCutvs GCutvk GCutv[ GCutu{ GCutt{ GCutv{ GCuvvw GCuvvs GCuvvk GCuvu{ GCuvt{ GCuvv{ GCuv^w GCuv^s GCuv^[ GCuv]{ GCuvZ{ GCuv^{ GCuu~w GCuu}{ GCuu|{ GCuu~{ GCuv~w GCuv~{ GCvvfg GCvvfK GCvve[ GCvvb[ GCvvc{ GCvvfw GCvvfk GCvvf[ GCvve{ GCvvd{ GCvvf{ GCvvvw GCvvvs GCvvvk GCvvt{
+482	1205859273	-	GUZu~w GUZu~[ GUZ~vw
+483	1201058240	-	GEznvw GEznvs GEznvk GEzn^w GEzn^[ GEzn^{
+484	1200398265	-	GQyv~{ GQzvVo GQzvVg GQzvVW GQzvUw GQzvTw GQzvVS GQzvVw GQzvVs GQzvV[ GQzvV{ GQzvvg GQzvvw GQzvvs
+485	1198494665	-	GCz^n{ GCz]~w GCz]~k GCz]}{ GCz]|{ GCz]~{ GCz\~k
+486	1194336725	-	GCvv~{ GCv^fo GCv^fW GCv^ew GCv^dw GCv^fS GCv^es GCv^e[ GCv^b[ GCv^c{ GCv^fw GCv^fs GCv^f[ GCv^e{ GCv^d{ GCv^f{ GCv^vw GCv^vs GCv^vk GCv^t{
+487	1186979656	-	GQzV~{ GQyvfo GQyvfW GQyvew GQyvfc GQyves GQyvfw GQyvfs GQyvf[ GQyve{ GQyvf{ GQyvVo GQyvTw GQyvVw GQyvVs GQyvV[ GQyvV{ GQyurg GQyuvg GQyurw GQyuuk GQyus{ GQyuvw GQyuvs GQyuvk GQyuu{ GQyuv{ GQyvvw GQyvvs GQyvvk GQyvv[ GQyvt{ GQyvv{ GQyv^w GQyv^[ GQyv\{
+488	1186788663	-	GCznvk GCznr{ GCznv{ GCzn^w GCzn^[ GCzn]{ GCznZ{ GCzn^{ GCzm~w GCzm~s GCzm}{ GCzm|{ GCzm~{ GCzj}{ GCzjz{ GCzj~{
+489	1155673399	-	GQzVv{ GQzV]w GQzV^w GQzV^[ GQzV]{ GQzV^{ GQzV~w
+490	1145979461	-	GCv^v{ GCv]~w GCv]}{ GCv]|{ GCv]~{ GCv\|{ GCv\~{ GCv^~{ GCu~fo GCu~fW GCu~fS GCu~ds GCu~e[ GCu~b[ GCu~c{ GCu~fw GCu~fs GCu~f[ GCu~e{ GCu~f{
+491	1117420561	0/3	GTnvv{
+492	1117420561	1/3	GTnvv{
+493	1117420561	2/3	GTnvv{
+494	1112903125	-	GEjr~{ GEj\s{ GEj\q{ GEj\vw GEj\u{ GEj\r{ GEj\v{ GEj^rw GEj^vw GEj^vs GEj^vk GEj^v[ GEj^t{ GEj^r{
+495	1112403572	0/3	GUz^v{
+496	1112403572	1/3	GUz^v{
+497	1112403572	2/3	GUz^v{
+498	1108852787	-	GEnvnw GEnvnk GEnvn[
+499	1101704518	-	GEl}}{ GEl}~{
+500	1100850474	0/3	GFzv~{
+501	1100850474	1/3	GFzv~{
+502	1100850474	2/3	GFzv~{
+503	1093328944	0/3	GEv~~{
+504	1093328944	1/3	GEv~~{
+505	1093328944	2/3	GEv~~{
+506	1088551487	-	GEv\~s GEv\|{ GEv\~{
+507	1051104212	-	GQz~vk
+508	1050212220	-	GTnvvw GTnvvs
+509	1050025300	-	GEz~vk
+510	1049549437	0/2	GQzvv{
+511	1049549437	1/2	GQzvv{
+512	1049549437	0/2	GQznv{
+513	1049549437	1/2	GQznv{
+514	1049549437	0/2	GQy~v{
+515	1049549437	1/2	GQy~v{
+516	1048482173	0/2	GEzvv{
+517	1048482173	1/2	GEzvv{
+518	1048482173	0/2	GEznv{
+519	1048482173	1/2	GEznv{
+520	1048482173	0/2	GEvvv{
+521	1048482173	1/2	GEvvv{
+522	1047738452	-	GTzvvs GTzvn[
+523	1047732257	-	GTzv^[
+524	1045952594	-	GUz^u{ GUz]}{
+525	1045950958	-	GUZvn{
+526	1045874247	0/2	GEu~v{
+527	1045874247	1/2	GEu~v{
+528	1045874247	0/2	GEnvn{
+529	1045874247	1/2	GEnvn{
+530	1045874247	0/2	GQzm~{
+531	1045874247	1/2	GQzm~{
+532	1045874247	0/2	GUzv^[
+533	1045874247	1/2	GUzv^[
+534	1045874247	0/2	GTzvvw
+535	1045874247	1/2	GTzvvw
+536	1045874247	0/2	GTzvvk
+537	1045874247	1/2	GTzvvk
+538	1045874247	0/2	GTzvv[
+539	1045874247	1/2	GTzvv[
+540	1045604206	-	GUZ~vk
+541	1045543196	-	GQz~u{
+542	1045530183	0/2	GEn~vk
+543	1045530183	1/2	GEn~vk
+544	1044652171	0/2	GCz^~{
+545	1044652171	1/2	GCz^~{
+546	1044652171	0/2	GEjv~{
+547	1044652171	1/2	GEjv~{
+548	1044652171	0/2	GEj^~{
+549	1044652171	1/2	GEj^~{
+550	1044123209	0/2	GQy}~{
+551	1044123209	1/2	GQy}~{
+552	1044123209	0/2	GUxvv{
+553	1044123209	1/2	GUxvv{
+554	1044110441	0/2	GEl~v{
+555	1044110441	1/2	GEl~v{
+556	1044110441	0/2	GUZvv{
+557	1044110441	1/2	GUZvv{
+558	1044069611	0/2	GUz^vw
+559	1044069611	1/2	GUz^vw
+560	1044052119	0/2	GEnv^{
+561	1044052119	1/2	GEnv^{
+562	1044052119	0/2	GUZv^{
+563	1044052119	1/2	GUZv^{
+564	1044052119	0/2	GUZu~{
+565	1044052119	1/2	GUZu~{
+566	1044045989	0/2	GUzvvw
+567	1044045989	1/2	GUzvvw
+568	1044045989	0/2	GUzvv[
+569	1044045989	1/2	GUzvv[
+570	1044045989	0/2	GUzv]{
+571	1044045989	1/2	GUzv]{
+572	1041642644	-	GEzvfw GEzvfk GEzvf[ GEzvf{ GEzvvw GEzvvs GEzvnw GEzvnk
+573	1028076142	-	GCu~~{ GCv~vw GCv~vk GCv~u{ GCv~t{
+574	1022331373	-	GTnvvk GTnvnk GTm~vw GTm~vs
+575	1003269700	-	GEjt~{ GEjr~w GEjr~s GEjr}{ GEjr|{ GEjrz{
+576	1002707074	-	GUZ~v{
+577	996607691	-	GUZv^w GUZv\{
+578	977124559	-	GQyv^{ GQyuzw GQyu~w GQyu~s GQyu~[ GQyu}{ GQyuz{ GQyu~{ GQyv~w
+579	931609839	0/2	GTn~~{
+580	931609839	1/2	GTn~~{
+581	911537841	-	GCzn~{ GCz^fo GCz^fg GCz^fW GCz^fS GCz^es GCz^ds GCz^bs GCz^fK GCz^ek GCz^dk GCz^bk GCz^d[ GCz^b[ GCz^c{ GCz^a{ GCz^`{ GCz^fw GCz^fs GCz^fk GCz^f[ GCz^e{ GCz^d{ GCz^b{ GCz^f{ GCz^vw GCz^vs GCz^vk GCz^t{
+582	900000322	-	GCvvv{ GCvvnk GCvvl{ GCvvn{ GCvt~w GCvt|{ GCvt~{
+583	883191985	-	GQz~t{ GQ~vvg GQ~vvw GQ~vvs
+584	863812016	-	GQj~v{ GQj~~{ GQzTrg GQzTvg GQzTvW GQzTuw GQzTus GQzTvw GQzTvs GQzTu{ GQzTv{ GQzVvg GQzVvw GQzVvs GQzVvk GQzVv[ GQzVu{ GQzVt{ GQzVr{
+585	852719246	-	GCz^v{ GCz^nw GCz^nk GCz^j{
+586	845531194	0/2	GCz~~{
+587	845531194	1/2	GCz~~{
+588	844126401	0/2	GFzvv{
+589	844126401	1/2	GFzvv{
+590	839384145	0/2	GCv~~{
+591	839384145	1/2	GCv~~{
+592	839379635	0/2	GTnvn{
+593	839379635	1/2	GTnvn{
+594	839195187	0/2	G]zn^w
+595	839195187	1/2	G]zn^w
+596	838085766	0/2	GU~vvs
+597	838085766	1/2	GU~vvs
+598	835640091	0/2	GEj~~{
+599	835640091	1/2	GEj~~{
+600	834810608	0/2	GEl~~{
+601	834810608	1/2	GEl~~{
+602	831995075	-	GEj~vk GEj~u{ GEj~r{
+603	826285868	0/2	GFz~v{
+604	826285868	1/2	GFz~v{
+605	822618574	0/2	G]zn^{
+606	822618574	1/2	G]zn^{
+607	820117861	0/2	G]~vvs
+608	820117861	1/2	G]~vvs
+609	670797103	-	GCz~vk GCz~v[ GCz~u{ GCz~r{
+610	665912074	-	GUZvn[ GUZvm{
+611	665795072	-	GC~vv{ GC~v~w
+612	575009339	-	G~~~~{
+613	526523610	-	GQz~v[
+614	500856192	-	GEvv^w GEvv]{
+615	316662577	-	GQ~v~w
