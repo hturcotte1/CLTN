@@ -1085,3 +1085,42 @@ so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the 
   stats total verified). Driver rewritten: main loop PID in `n8/jobs/driver.pid` (`n8/stop_driver.sh`
   stops only the loop), no pipe around the loop (wrappers are children of the main shell), and a guard
   that skips a job whose `job<j>.g6` is open in a running directg.
+
+## 2026-10-22  n = 8 run at 94 %: restart history, the high-symmetry tail, interim survivor structure
+
+* Restarts. The host restarted the container at 01:45 UTC on Oct 19 (after 2 d 8 h up) and at 03:38 UTC on
+  Oct 20 (`uptime -s`; after about 1 d 2 h). Each restart kills the driver and the four in-flight jobs; the
+  relaunch script restarts the driver on the next session wake and the jobs are redone from scratch. The
+  jobs with two `started` lines in `n8/jobs/progress.log` are 0-5 (early, before the driver rewrite),
+  636-638 (the Oct 16 driver-stop mistake), 2450-2453, 2494-2497, 3314-3317, 3710 and 3724-3726. A redone
+  job cannot double count: a job exists only once its `.done` marker is written, unsplit jobs are checked
+  `total == expected` on the spot, and the parts of a split graph are summed against its exact Burnside
+  count by `n8/check_accounting.py` at the end (parts are uneven by design: part 0/89 of `G]~~~{` held
+  143,850,129 digraphs against the nominal 149,206,597, which is not a mismatch).
+* The high-symmetry tail. Median per-worker rate by graph, from the started/finished pairs in
+  progress.log: 0.5-0.9 M digraphs/s on the low-symmetry 24/25-edge graphs, 0.42-0.57 M/s on the 40-part
+  graphs, 0.16 M/s on `GU~~~{` (70 parts), 0.11 M/s on `GFz~~{` (25 parts), 0.063 M/s on `GT~~~{` (39
+  parts of 149.7 M, 30-40 min each) and 0.051 M/s on part 0/89 of the 26-edge `G]~~~{` (48 min). At 00:37
+  UTC: 1,922 of 2,605 jobs done, 93.9 % of the 801,558,826,511 digraphs. The remaining 683 jobs (48.9e9
+  digraphs, 6 % of the space) are the 26-28-edge block: `G]~~~{` (K8 minus 2K2) 89 parts, `G]~v~{` (K8
+  minus 3K2) 59, `GV~~~{` (K8 minus P3) 213, `G^~~~{` (K8 minus an edge) 107, K8 116 parts of 5 M, plus
+  about 100 smaller parts. Job rate 11.5/h over the last 24 h but 6/h over the last 6 h; at 5-9 jobs/h the
+  block needs 3-5 more days (done around Oct 25-27). That agrees with the Oct 16 budget of 7-9 days plus
+  restart losses; the 1-day estimate carried on the task card since Oct 20 extrapolated the 24/25-edge job
+  rate and was wrong.
+* Interim survivor structure, 2,268 strict S lines from jobs 1-4269 (every graph with 15-25 edges; this
+  part of the space is complete). Every survivor lives on one of ten underlying graphs, all K8 minus 3 or
+  4 pairs (labelg canonical form, complement in brackets): missing 3 pairs `Gr^~~{` [P3+K2] 969,
+  `GR~~~{` [P4] 716, `GJ~~~{` [K_{1,3}] 533 -- every 3-edge forest, and not K8 minus a triangle;
+  missing 4 pairs `GJn~~{` [spider: K_{1,3} with one edge subdivided] 17, `GB~~~{` [C4] 13, `GR~v~{`
+  [P4+K2] 8, `Gd^~~{` [P5] 6, `Gr\~~{` [K_{1,3}+K2] 3, `GFz~~{` [K3+K2] 2, `Gt\~~{` [P3+P3] 1. So the
+  complement is not always a forest (C4 and K3+K2 occur), but no survivor is missing 5 or more pairs,
+  i.e. none has fewer than 24 edges although the e_2 bound allows 15. Arc counts 29-37 (mode 31 with 707
+  lines), bidirected pairs 4-12 (mode 6 with 710). S is necessary, not sufficient, for a limit
+  counterexample (n = 7: 1,889 S -> 123 counterexamples + K7); the exact limit stage runs on every S line
+  at the end.
+* First 26-edge parts. Part 0/89 of `G]~~~{`: 143,850,129 digraphs, 12,164,001 dominance-free, 117,396
+  spectral survivors of which 117,215 boundary and **181 strict** -- about 1.3 S per million digraphs,
+  against 0.003 per million over the whole 15-25-edge block. Parts 1 and 2 took the S count from 2,449 to
+  2,867. K8 minus two disjoint pairs is by far the richest stratum so far, and the 26-28-edge block (6 % of
+  the space) will probably hold most of the survivors; the 2,605-job budget already assumed its cost.
