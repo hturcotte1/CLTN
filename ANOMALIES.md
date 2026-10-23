@@ -1124,3 +1124,16 @@ so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the 
   against 0.003 per million over the whole 15-25-edge block. Parts 1 and 2 took the S count from 2,449 to
   2,867. K8 minus two disjoint pairs is by far the richest stratum so far, and the 26-28-edge block (6 % of
   the space) will probably hold most of the survivors; the 2,605-job budget already assumed its cost.
+
+## 2026-10-23  Fifth container restart; the relaunch script was fooled by a reused PID
+
+* The host restarted the container at 03:43 UTC on Oct 23 (previous boot 05:24 UTC Oct 22, so 22 h 19 min up).
+  The four in-flight jobs 4437-4440 (parts 8-11 of the 13-part graph `GTn~~{`) were killed and are redone;
+  no finished job was affected (2,086 done, 18,514 S lines, 0 overflow, 0 mismatches at the time).
+* New failure mode. `n8/relaunch.sh` trusted `n8/jobs/driver.pid` after checking only that the PID existed
+  (`kill -0`). After a reboot PIDs are handed out again from low numbers, and PID 250 belonged to another
+  process at relaunch time, so the script printed "running: driver (pid 250)" and started nothing; the run
+  sat idle for about 3 minutes until the next check saw 0 filter8 pipelines. Fixed: the check now also
+  requires `/proc/<pid>/cmdline` to contain the driver's script name. Re-learned on the same occasion: a
+  `pgrep -f` pattern must not appear literally in the invoking command line or it matches the caller
+  itself (use a bracketed pattern such as `run_n8_[j]obs`).

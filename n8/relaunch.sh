@@ -4,7 +4,7 @@
 # check, by hand).  The driver is detected by its pidfile (its job wrappers share its process name).
 cd "$(dirname "$0")/.." || exit 1
 p=$(cat n8/jobs/driver.pid 2>/dev/null)
-if [ -n "$p" ] && kill -0 "$p" 2>/dev/null; then echo "running: driver (pid $p)"
+if [ -n "$p" ] && kill -0 "$p" 2>/dev/null && tr "\0" " " < "/proc/$p/cmdline" 2>/dev/null | grep -q "run_n8_jobs"; then echo "running: driver (pid $p)"
 else rm -f n8/jobs/driver.pid; (nohup bash n8/run_n8_jobs.sh 4 > n8/run_n8_jobs.log 2>&1 &); echo "started: driver"; fi
 start() { local pat=$1 cmd=$2 log=$3
   if pgrep -f "$pat" > /dev/null; then echo "running: $cmd"
