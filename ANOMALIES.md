@@ -1137,3 +1137,23 @@ so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the 
   requires `/proc/<pid>/cmdline` to contain the driver's script name. Re-learned on the same occasion: a
   `pgrep -f` pattern must not appear literally in the invoking command line or it matches the caller
   itself (use a bracketed pattern such as `run_n8_[j]obs`).
+
+## 2026-10-23  Sixth restart 74 min after the fifth; the unfinished split jobs re-split 3x finer
+
+* The host restarted the container again at 04:57 UTC on Oct 23, 74 min after the 03:43 restart; jobs
+  4445-4448 were redone. That is the second pair of restarts about an hour apart (Oct 22: 04:39 and 05:24),
+  against parts that take 35-50 min, so the loss per restart had to come down.
+* `directg -s p/P` splitting is nested: part p/P equals the union of the parts (p+kP)/(mP), k < m. Verified
+  by set equality of the digraph6 output on three 17-edge graphs (|Aut| 1, 1 and about 82) for
+  P in {2, 5, 9, 10, 13, 59, 89, 107, 116, 213} and m in {2, 3}, and the full output equals the union of
+  all P parts for P = 5, 89 and 213. So a finished part stays valid when its unfinished siblings are split
+  finer, and the per-graph accounting (parts summed against the exact Burnside count) is unchanged.
+* Deployed at 05:00 UTC with `n8/resplit_jobs.py 3 --apply`: the 507 unfinished, not-running split rows of
+  `n8/jobs/jobs.tsv` were replaced by 1,521 sub-part rows (ids 10000-11520, split (p+kP)/(3P), nominal
+  expected = old/3), 2,605 rows -> 3,619, the four in-flight jobs kept; `graph_counts.json` 'jobs' updated
+  in step (same id set); backups `jobs.tsv.bak.20261023T050008` and `graph_counts.json.bak.20261023T050008`
+  kept beside the files. A coverage check confirms that for each of the 201 split graphs the remaining
+  parts hit every residue class exactly once. Driver loop stopped and relaunched; the running-job guard
+  skipped the four in-flight pipelines, which finalize on their own. Expected effect: parts of 12-17 min
+  instead of 35-50, so a restart costs about 1 CPU-hour instead of 3; total work unchanged (splitting has
+  no measurable overhead, see 2026-10-16).
