@@ -1299,3 +1299,12 @@ these until the user has hand-verified a sample and the independent machine conf
 verifiers of notes/verify_124, re-run on the n = 8 list) has passed.  Files: n8/n8_limit_HITS.jsonl (one record
 per candidate with the exact stable interval, critical minimal polynomials and four pointwise witnesses),
 n8/n8_limit_results.jsonl (every strict survivor), n8/n8_limit_tally.json, certificates/n8_limit_summary.json.
+
+## 2026-10-28  Orbit enumerator post-hoc check on K8-e: full set equality
+
+The 16 orbit parts of K8-e (parts 14 and 15 redone after the restart) re-enumerated all 5,339,129,738 digraphs
+with that underlying graph (orbitenum total = filter8 total = the exact Burnside count; 125,117 representatives
+B) and filter8 produced 143,266 strict-survivor lines, pairwise non-isomorphic, whose canonical forms are EXACTLY
+the 143,266 canonical strict-survivor lines of the 321 directg parts that the production run used.  This is the
+strongest content-level evidence for the enumerator that replaced directg on K8-K3, K8-K_{1,5} and
+K8-(K2+K_{1,5}): same classes, same verdicts, on the richest n = 8 graph.
