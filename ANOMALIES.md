@@ -1157,3 +1157,25 @@ so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the 
   skipped the four in-flight pipelines, which finalize on their own. Expected effect: parts of 12-17 min
   instead of 35-50, so a restart costs about 1 CPU-hour instead of 3; total work unchanged (splitting has
   no measurable overhead, see 2026-10-16).
+
+## 2026-10-27 Seventh container restart, 3 days 20 h after the sixth; the run recovered in under a minute
+
+* Host-side restart at 01:38:46 UTC on Oct 27 (uptime reset; every process gone with exit 137, the
+  foreground wait included). The sixth restart was at 04:57 UTC on Oct 23, so this one came after the
+  longest stable stretch of the run (3 d 20 h 41 min). `bash n8/relaunch.sh` at 01:39 brought back the
+  driver, the progress committer and the post-prefilter watcher; four `filter8` pipelines were up within
+  20 s. 3,099 of 3,619 parts were already on disk and committed (9a7a920 holds 3,098, the 3,099th was
+  picked up by the next progress commit), so no finished work was lost.
+* Lost in-flight work: the four parts running at the moment of the kill, ids 10999 (split 96/321, about
+  65 min in), 11000 (203/321, about 60 min), 11003 (204/321, about 27 min) and 11004 (311/321, about
+  7 min), all of K8 minus an edge. They restarted from scratch at 01:39, so the cost is about 2.7 CPU-h
+  (about 40 min of wall-clock on four cores). Two of the four lost parts were well past the 12-17 min
+  that the 3x re-split was designed around: parts of K8 minus an edge are very uneven (12 to 100 min
+  each for the same nominal count), so the re-split bounds the typical loss, not the worst case.
+* Timing pattern worth recording: all seven restarts fell between 01:38 and 05:24 UTC (01:45 Oct 19,
+  03:38 Oct 20, 04:39 and 05:24 Oct 22, 03:43 and 04:57 Oct 23, 01:38 Oct 27). Nothing in the run
+  changes at those hours; this looks like a host maintenance window rather than anything the workload
+  does. No action taken beyond the usual relaunch.
+* State at relaunch: 164,940 strict-survivor lines, 0 overflow lines, 0 count mismatches; about 290 of
+  the 321 parts of K8 minus an edge done; the 348-part K8 block not started. ETA unchanged (about
+  Oct 29-31).
