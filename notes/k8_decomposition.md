@@ -84,3 +84,33 @@ accepted only if the batch totals sum to exactly this number (`n8/check_accounti
    count (the sum of the dry-run counts of its B), which the driver checks job by job (a mismatch leaves no
    `.done`), and `check_k8decomp.py` compares the per-B line counts written by addarcs (`job<j>.genlog`) with
    the dry-run ledger B by B after the run.
+
+## Relative form: any underlying graph G (n8/orbitenum)
+
+The same argument works for an arbitrary underlying graph G on V, with Aut(G) in place of S_n.  Fix the
+labelled graph G.  A digraph with underlying graph exactly G is a pair (B, O) with B a subset of E(G) (the
+edges carrying both arcs) and O an orientation of G - B.  If pi D1 = D2 for two such digraphs then pi maps G
+onto G, so pi is in Aut(G), and B(D2) = pi(B(D1)), O(D2) = pi(O(D1)).  Hence, with R_G a set of
+representatives of the orbits of Aut(G) on the subsets of E(G), the isomorphism classes of digraphs with
+underlying graph isomorphic to G are in bijection with the pairs
+
+    (B in R_G,  orbit of Stab(B) = {g in Aut(G) : g(B) = B} on the orientations of G - B),
+
+by the same surjectivity and injectivity steps as in the lemma (sigma now ranges over Aut(G); B = B'
+because R_G has one representative per Aut(G)-orbit; pi lies in Stab(B)).  Arcs = |E(G)| + |B|, so the
+29..56-arc restriction is |B| >= 29 - |E(G)|.
+
+`n8/orbitenum/orbitenum G min_arcs [p/P]` implements this directly, without directg: Aut(G) by brute force
+over the n! vertex permutations; B is a representative iff it is the numerically least member of its
+Aut(G)-orbit (edge bitmask, edges of G in lexicographic order); an orientation O of G - B is a representative
+iff it is the least member of its Stab(B)-orbit (bit t = 1 iff the t-th free edge (u, v), u < v, is oriented
+v -> u).  Least-element representatives give exactly one member per orbit.  Representatives B are numbered
+in enumeration order and part p/P takes those with index = p (mod P), so the parts partition the output.
+Validation: `validate_orbit.sh` (canonical-form multiset equality with directg's enumeration of the same
+graph and the same arc bound, duplicate check, filter8 output equality) passed on K_5 - K_3, K_6 - K_3,
+K_6 - 3K_2, K_6 - K_{1,3}, K_7 - K_3, K_7 - 3K_2, K_7 - K_{1,4} and K_7 - (K_2 + K_{1,3}) (up to
+10,840,382 classes); the class counts equal directg's on 16 (graph, bound) cases; the count-only runs on the
+four n = 8 graphs it replaces (K_8 - 4K_2, K_8 - K_3, K_8 - K_{1,5}, K_8 - (K_2 + K_{1,5})) reproduce the
+exact Burnside counts of graph_counts.json (695,586,658; 1,179,317,832; 330,741,720; 84,866,528) in 12, 47,
+13 and 3 seconds; the union of the p/P parts equals the unsplit output (K_7 - (K_2 + K_{1,3}), P = 3).
+It refuses |Aut(G)| > 8192, so K_8 itself stays with the geng-based batches above.
