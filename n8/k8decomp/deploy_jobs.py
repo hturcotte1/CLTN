@@ -6,9 +6,17 @@ Refuses if any K8 part is done or running (the decomposition replaces ALL of K8;
 count).  New rows get ids 12000.., expected = the batch's exact count from the dry run (manifest batch_expected; the
 driver checks it), split = decomp:<batchfile>, exact False, so check_accounting.py also sums them against
 the exact K8 count like any split graph.  Backups are kept.
-Then: bash n8/stop_driver.sh; cp <patched driver>; bash n8/relaunch.sh."""
+ORDER MATTERS: the live driver loop has the whole job table buffered (process substitution), so it must be
+stopped BEFORE the table is rewritten, else it would start the superseded K8 parts from memory on empty
+inputs.  Sequence:  bash n8/stop_driver.sh;  python3 n8/k8decomp/deploy_jobs.py --apply;  cp <patched
+driver> n8/run_n8_jobs.sh;  bash n8/relaunch.sh.   This script refuses to apply while the loop is alive."""
 import json, os, re, subprocess, sys, shutil, time, glob
 apply = '--apply' in sys.argv
+def driver_alive():
+    try: pid = int(open('n8/jobs/driver.pid').read().strip())
+    except Exception: return False
+    try: return 'run_n8_jobs' in open(f'/proc/{pid}/cmdline', 'rb').read().replace(b'\0', b' ').decode()
+    except Exception: return False
 J = 'n8/jobs'; K8 = 'G~~~~{'
 rows = open(f'{J}/jobs.tsv').read().splitlines(); hdr, body = rows[0], rows[1:]
 running = subprocess.run(['ps', '-eo', 'args'], capture_output=True, text=True).stdout
@@ -25,6 +33,7 @@ exp = man['batch_expected']; assert sum(exp) == exact, (sum(exp), exact)   # exa
 new = [f'{12000 + k}\t{exp[k]}\tdecomp:{batches[k]}\t{K8}' for k in range(K)]
 print(f'K8 exact {exact}; replacing {len(old)} directg parts (ids {old[0].split(chr(9))[0]}..{old[-1].split(chr(9))[0]}) by {K} batches (ids 12000..{12000 + K - 1}); rows {len(body)} -> {len(keep) + K}')
 if not apply: sys.exit(0)
+assert not driver_alive(), 'the driver loop is alive: run bash n8/stop_driver.sh first'
 ts = time.strftime('%Y%m%dT%H%M%S'); shutil.copy(f'{J}/jobs.tsv', f'{J}/jobs.tsv.bak.{ts}'); shutil.copy(f'{J}/graph_counts.json', f'{J}/graph_counts.json.bak.{ts}')
 open(f'{J}/jobs.tsv', 'w').write('\n'.join([hdr] + keep + new) + '\n')
 sup = {int(l.split('\t')[0]) for l in old}

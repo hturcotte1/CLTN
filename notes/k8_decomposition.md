@@ -36,8 +36,14 @@ image of (B, [O(D')]).
 B' = pi(B), so B and B' are isomorphic members of R, hence B = B' and pi is in Aut(B); and O2 = pi(O1), so
 [O1] = [O2].  Conversely, if O2 = pi(O1) with pi in Aut(B) then pi D1 = (pi(B), pi(O1)) = (B, O2) = D2.
 (iv) Aut(K - B) = Aut(B): a permutation of V preserves the edge set of B iff it preserves its complement in P.
-So the orbits in the statement are the orbits of Aut(H) on the orientations of H = K - B, which is what
-nauty's `directg -o H` lists (one orientation per orbit of the automorphism group of its input graph).  QED.
+So the orbits in the statement are the orbits of Aut(H) on the orientations of H = K - B.  QED.
+
+What nauty's `directg -o H` lists is, in the words of its documentation, the orientations of H with
+"isomorphic directed graphs derived from the same input suppressed".  That is the same orbit set: an
+isomorphism between two orientations of the same labelled graph H maps H onto itself, so it is an element
+of Aut(H), and conversely every element of Aut(H) maps orientations of H to isomorphic orientations.  The
+output keeps the input labelling (vertex i of the output is vertex i of H), which is what addarcs relies on
+when it adds the arcs of B on the same labels.
 
 ## Arc count and the 29-arc bound
 
@@ -56,10 +62,17 @@ accepted only if the batch totals sum to exactly this number (`n8/check_accounti
 
 ## What the implementation relies on, and how each piece is checked
 
-1. `directg -o H` emits exactly one representative per Aut(H)-orbit of orientations (nauty semantics).
-   Checked by `n8/k8decomp/validate_decomp.sh n`: for n = 4..7 the canonical forms (labelg) of the decomposed
-   stream and of the reference `directg -e(C+1):(2C) K_n` stream are compared as sorted multisets, with a
-   duplicate check; the class counts also equal the Burnside numbers (38, 570, 21424, 2141832).
+1. `directg -o H` emits exactly one representative per Aut(H)-orbit of orientations, with the input
+   labelling (nauty semantics, see above).  Checked by `n8/k8decomp/validate_decomp.sh n`: for n = 4, 5, 6
+   and 7 the canonical forms (labelg) of the decomposed stream and of the reference `directg -e(C+1):(2C)
+   K_n` stream were compared as sorted multisets, with a duplicate check, and found equal (38, 570, 21,424
+   and 2,141,832 classes; the script prints the counts, and they were compared by hand with the Burnside
+   numbers from `polya_count.py`, which agree).  At n = 7 the decomposition took 7 s against 956 s for the
+   reference enumeration.  The count-only dry run `count_all_B.py 8` over all 12,345 B sums to exactly
+   575,009,339 (`k8_perB_counts.tsv`), and an independent per-B Burnside count over Aut(B) (referee check)
+   agrees with the dry run for every B.
+   Reproduction note: pass graph6 strings to printf as data, `printf '%s\n' "$H"`, never as the format
+   string, since graph6 can contain backslashes.
 2. `n8/k8decomp/addarcs B` ORs the bidirected arcs of B into each orientation (digraph6 in, digraph6 out).
    Unit-tested against a pure-Python reference (`test_addarcs.py`, 3,245 cases including nauty round trips).
 3. `filter8` is unchanged; its verdict is an isomorphism invariant (characteristic polynomials and the
@@ -67,5 +80,7 @@ accepted only if the batch totals sum to exactly this number (`n8/check_accounti
    lines on both streams after canonical labelling (V2).
 4. Accounting: the K_8 batches are registered in `n8/jobs/jobs.tsv` and `graph_counts.json` as parts of the
    graph `G~~~~{` with `exact: false`, so `check_accounting.py` sums them against the exact count exactly as
-   it does for every `directg -s` split graph.  The per-B line counts written by addarcs (`job<j>.genlog`)
-   give a second, finer ledger.
+   it does for every `directg -s` split graph.  In addition each batch row carries the batch's exact expected
+   count (the sum of the dry-run counts of its B), which the driver checks job by job (a mismatch leaves no
+   `.done`), and `check_k8decomp.py` compares the per-B line counts written by addarcs (`job<j>.genlog`) with
+   the dry-run ledger B by B after the run.

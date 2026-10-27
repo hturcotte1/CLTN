@@ -1,0 +1,285 @@
+{
+ "workflow": "wf_c8cc4e12-267",
+ "what": "four adversarial referees of the K8 bidirected-subgraph enumeration (proof, code, independent count, independent n=5 implementation), 2026-10-27",
+ "results": {
+  "aaba7d658ed16a67a": {
+   "verdict": "SOUND",
+   "summary": "I found no blocking or major error. The lemma in notes/k8_decomposition.md and its proof steps (i)-(iv) are correct. The arc-count identity holds, and so does the equivalence of 29..56 arcs with \"B nonempty\". The Burnside total checks out, and directg -o gives exactly the orbit set the lemma needs.\n\nHow each point was checked:\n- **(ii)** Only the existence of sigma is used, so the choice of sigma does not matter.\n- **(iii)** It only needs B to be isomorphic to B'. Because R has exactly one representative per class, that forces B = B' as labelled graphs. I confirmed geng's 12,345 representatives have pairwise distinct labelg canonical forms and equal geng 8 1:28 minus the empty graph.\n- **(iv)** It does need B and H on the same labelled vertex set. I re-checked all 12,345 batch lines with my own decoder: H is the exact labelled complement of B and e = |E(B)|.\n- **directg semantics.** The documentation says \"Isomorphic directed graphs derived from the same input are suppressed\". That is equivalent to one output per Aut(H)-orbit, because an isomorphism between two orientations of the same labelled H is an automorphism of H. I ran the production gen_batch.sh pipeline on 125 sampled B at n=8. For every B, each output has underlying graph K8 and bidirected set exactly B (so directg keeps the input labelling), labelg finds no duplicates, and the count equals an independent Burnside count over Aut(B). I also checked the author's 144 per-B counts, which include the heavy B with 1-5 edges, against independent Burnside: all match.\n- **Edge cases.** B = K8 gives exactly 1 digraph, identical to directg -e56:56 on K8. Tournaments (B empty) are excluded on both sides. On K3, directg -e4:6 gives 5 and plain directg gives 7, so -e counts arcs and the reference enumeration covers every digraph with underlying K_n.\n- **Counts.** An independent cycle-type Burnside gives 5, 38, 570, 21424, 2141832 and 575,009,339 for n = 3..8. The per-B orbit counts summed over all 12,345 B also give 575,009,339.\n- **filter8 is invariant under relabelling.** The domination test, the characteristic polynomials of A and A+J, the shifted polynomial g, the Hurwitz minors and the arc count are all permutation-invariant. The only label-dependent step is the order of partial sums inside charpoly (lines 106-110). In principle that could make an 'O' flag depend on labelling, but the guard there cannot fire at n = 8: entries stay below about 2^42. As an n=8 test I randomly relabelled 4,907,680 decomposition outputs (all B with at least 16 edges). filter8 gave identical stats (domfree 190,971, survivors 19,668, boundary 16,602, overflow 0) and identical canonical (digraph, arcs, flag) lines, with 0 duplicate classes.\n\nWhat remains is wording and robustness:\n- The note says validation passed for n = 4..7, but the n=7 run has not finished.\n- The note says the per-B genlog is a finer ledger, but nothing checks it against reference values.\n\nI computed exact per-B and per-batch expected counts in /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_proof/perB_expected.txt and /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_proof/perBatch_expected.txt. The scripts that produce them are check_batches.py, check_pipeline.py, burnB.py, perB_ledger.py, cyc.py and relabel_test.py in the same directory.",
+   "findings": [
+    {
+     "severity": "minor",
+     "where": "notes/k8_decomposition.md lines 59-62 (item 1)",
+     "claim": "The note says validate_decomp.sh was checked 'for n = 4..7' and lists 2141832 among the verified numbers. The n=7 validation has not finished, and the script itself never compares counts to the Burnside numbers.",
+     "evidence": "In /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/k8d/, val7.log is empty and val7/ holds only Kn.g6, batches, gen.log and ref.d6 (no dec.d6, dec.can or fcan). `ps` shows `bash validate_decomp.sh 7` still running. validate_decomp.sh lines 67-74 only cmp the ref and dec streams and echo $nr; there is no comparison to 38/570/21424/2141832. For n=4,5,6, ref.can and dec.can have 38, 570 and 21424 lines and the filter outputs match (3, 10 and 212 lines). I independently get 38, 570, 21424, 2141832 by cycle-type Burnside.",
+     "fix": "Change the text to 'n = 4..6 (n = 7 pending)' until val7 reports V1 and V2 EQUAL. Either say the Burnside comparison is a separate manual check, or add an assert in the script."
+    },
+    {
+     "severity": "minor",
+     "where": "notes/k8_decomposition.md line 70-71 (item 4); n8/k8decomp/deploy_jobs.py line 23/29; patched run_n8_jobs.sh lines 25-29",
+     "claim": "The note says the per-B genlog counts are a 'second, finer ledger', but no exact per-B or per-batch reference exists and nothing reads the genlog. The decomp jobs carry the nominal value expected = exact//K with exact: false, and the driver checks totals only when split == '-'. So a faulty batch is caught only at the very end by check_accounting.py, in aggregate, and is not localised.",
+     "evidence": "deploy_jobs.py: `f'{12000 + k}\\t{exact // K}\\tdecomp:...'` and `'exact': False`. In the driver, the per-job check is guarded by `if [ \"$split\" = \"-\" ]`. manifest.json has only 2^(C-e) weight estimates. I computed the exact per-B values with Burnside over Aut(B), with Aut found by backtracking (2 s for all 12,345 B). They sum to 575,009,339. They agree with all 144 of the author's directg per-B counts in k8_perB_counts.tsv, and the per-batch totals range from 95,664 (batch0) to about 11M (batch4).",
+     "fix": "Use /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_proof/perB_expected.txt (one line per B: batch, B, count) and perBatch_expected.txt as the reference. Join job<j>.genlog against them per B, and/or register each batch with its exact total so check_accounting.py checks every batch individually."
+    },
+    {
+     "severity": "note",
+     "where": "notes/k8_decomposition.md lines 32-37, proof (ii)-(iii)",
+     "claim": "The proof is correct. The map is well-defined because of the 'Conversely' sentence placed inside (iii), and (ii) needs only that some sigma exists, so the choice of sigma is irrelevant. (iii) needs only B isomorphic to B': uniqueness of representatives in R then gives B = B' as labelled graphs, and pi lies in Aut(B).",
+     "evidence": "Checked by reading. I also confirmed R is a genuine transversal: labelg canonical forms of the 12,345 batch B are pairwise distinct, the set equals `geng -q 8 1:28` exactly, and geng 8 gives 12,346 graphs of which 1 is edgeless (check_batches.py).",
+     "fix": "Optionally state well-definedness as its own step before surjectivity."
+    },
+    {
+     "severity": "note",
+     "where": "notes/k8_decomposition.md lines 38-40 (iv) and 59",
+     "claim": "The note treats directg's documented semantics as 'one orientation per orbit of Aut(H)'. The documentation actually says isomorphic digraphs from the same input are suppressed. The two are equivalent by a one-line argument (an isomorphism between two orientations of the same labelled H preserves H), which the note does not spell out. The equivalence also relies on directg keeping the input labelling, which addarcs needs. Both hold empirically at n=8.",
+     "evidence": "`directg -help`: 'Isomorphic directed graphs derived from the same input are suppressed'. check_pipeline.py ran the production gen_batch.sh on 125 B (all 100 B with e >= 22, plus 25 random B with e >= 12). Every output has all 28 pairs covered and bidirected set exactly equal to the labelled B, labelg finds no duplicates, and each count equals the independent Aut(B) Burnside count. B=K8: `printf 'G?????\\n' | directg -q -o | addarcs G~~~~{` gives &G^z~^z~^z~^w, the same as `directg -q -e56:56` on K8. K3: -e4:6 gives 5 and the unrestricted run gives 7, which confirms that -e counts arcs and that the reference enumeration is exactly the semicomplete digraphs.",
+     "fix": "Add the one-line equivalence argument, and note that the output labelling equals the input labelling."
+    },
+    {
+     "severity": "note",
+     "where": "notes/k8_decomposition.md lines 51-54 (Counting)",
+     "claim": "The wording 'S_8 acting on the 28 pairs with 3 states per pair' describes a plain product action, which is not the actual action: a permutation that reverses a pair swaps its two single-arc states. polya_count.py handles this correctly (a flipped cycle allows 1 state for 3-state digraphs and 0 for tournaments), so only the wording is off.",
+     "evidence": "Independent cycle-type computation (cyc.py, using gcd(a,b) pair-cycles between cycles, (a-1)/2 or (a-2)/2 non-flipped cycles within a cycle, plus one flipped cycle for even a) gives n=8: 575,016,219 semicomplete, 6,880 tournaments, difference 575,009,339. It also gives 5, 38, 570, 21424, 2141832 for n = 3..7.",
+     "fix": "Say: 'S_8 acting on assignments of states to pairs, where a pair mapped onto itself reversed swaps the two single-arc states'."
+    },
+    {
+     "severity": "note",
+     "where": "n7/filter8.c lines 97-121, 209-230; note item 3",
+     "claim": "filter8's verdict is invariant under relabelling, as the note claims. One step depends on labelling: the order of partial sums inside charpoly, whose overflow guard (lines 108-109) could in principle make an 'O' flag label-dependent. That guard cannot fire at n=8. Everything else, including the shift, the Hurwitz test, the S/B/O flags and the arc count, depends only on invariant data.",
+     "evidence": "Reading the code: domination_free tests whether some ordered pair satisfies a permutation-invariant condition; the charpoly of A and of A+J is a similarity invariant; p, g and the Hurwitz minors are functions of p alone; edges is the sum of A. Bound: entries of the Faddeev-LeVerrier intermediates are at most sum_j C(8,j) 16^j 2^(k-j) 8^(k-j-1), about 2^37, so partial sums are about 2^42, far below 2^63. Empirical test (relabel_test.py): 4,907,680 n=8 digraphs from the decomposition (all B with e >= 16), each randomly relabelled. Stats are identical (total 4907680, domfree 190971, survivors 19668, boundary 16602, overflow 0) and the canonical (digraph, arcs, flag) lines are identical.",
+     "fix": "None needed. Optionally state the charpoly bound in the note."
+    },
+    {
+     "severity": "note",
+     "where": "notes/k8_decomposition.md line 7",
+     "claim": "'12,345 enumerations with small automorphism groups' is not literally true, though this affects performance only, not correctness. Aut(H) = S_8 for B = K8 (H edgeless, 1 output), 1,440 for a single-edge B, and 5,040 for B = K7 plus an isolated vertex.",
+     "evidence": "Direct computation of Aut by backtracking in perB_ledger.py.",
+     "fix": "Reword to 'mostly small'."
+    }
+   ],
+   "numbers": {
+    "geng_8_1to28_B": 12345,
+    "geng_8_all": 12346,
+    "burnside_semicomplete_n8": 575016219,
+    "tournaments_n8": 6880,
+    "k8_classes_with_bidirected_pair": 575009339,
+    "sum_perB_burnside": 575009339,
+    "burnside_n3_to_n7": [
+     5,
+     38,
+     570,
+     21424,
+     2141832
+    ],
+    "pipeline_B_checked_exact_vs_burnside": 125,
+    "author_perB_counts_crosschecked": 144,
+    "author_perB_mismatches": 0,
+    "relabel_test_digraphs": 4907680,
+    "relabel_test_survivors": 19668,
+    "relabel_test_boundary": 16602,
+    "relabel_test_duplicates": 0,
+    "B_eq_K8_outputs": 1
+   }
+  },
+  "a2a6a8cd60abd9783": {
+   "verdict": "SOUND",
+   "summary": "Independent count of isomorphism classes of semicomplete digraphs on 8 vertices that are not tournaments: 575,009,339. Obtained by two independent methods written without looking at the author's code (brute-force Burnside over all 40,320 permutations acting on ordered pairs, /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_count/count.py; and a cycle-index-over-partitions computation, /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_count/cycidx.py). Both give identical values for n = 2..8. The n = 4..7 values (38, 570, 21424, 2141832) match the project's direct directg enumerations. OEIS A001174 (semicomplete / complete digraphs) gives a(8) = 575016219 and A000568 (tournaments) gives a(8) = 6880; difference 575009339. Only after obtaining these did I read n8/k8decomp/polya_count.py: its method is the same Burnside argument (3 choices per pair-cycle returning unswapped, 1 if swapped; 2/0 for tournaments) and its reported n=8 result 575009339 agrees. n8/jobs/graph_counts.json entry 'G~~~~{' (K8) is 575009339, also agreeing. No disagreement found at any n; the K8 target count used by the accounting is correct.",
+   "findings": [
+    {
+     "severity": "note",
+     "where": "n8/k8decomp/polya_count.py; n8/jobs/graph_counts.json key G~~~~{",
+     "claim": "The K8 target count 575,009,339 is correct and is confirmed by two independent computations and by OEIS (A001174(8) - A000568(8) = 575016219 - 6880).",
+     "evidence": "Brute-force Burnside over S_8 on ordered pairs and a partition-based cycle index (scripts under /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_count/) both output n=8: 575016219 semicomplete, 6880 tournaments, 575009339 non-tournament; n=4..7 reproduce 38, 570, 21424, 2141832.",
+     "fix": "None needed."
+    }
+   ],
+   "numbers": {
+    "semicomplete_classes": {
+     "2": 2,
+     "3": 7,
+     "4": 42,
+     "5": 582,
+     "6": 21480,
+     "7": 2142288,
+     "8": 575016219
+    },
+    "tournament_classes": {
+     "2": 1,
+     "3": 2,
+     "4": 4,
+     "5": 12,
+     "6": 56,
+     "7": 456,
+     "8": 6880
+    },
+    "semicomplete_non_tournament_classes": {
+     "2": 1,
+     "3": 5,
+     "4": 38,
+     "5": 570,
+     "6": 21424,
+     "7": 2141832,
+     "8": 575009339
+    },
+    "OEIS_A001174_n8": 575016219,
+    "OEIS_A000568_n8": 6880,
+    "OEIS_difference_n8": 575009339,
+    "author_polya_count_py_n8": 575009339,
+    "graph_counts_json_K8_entry": 575009339,
+    "project_direct_enumeration_n4_to_7": [
+     38,
+     570,
+     21424,
+     2141832
+    ],
+    "methods_used": [
+     "brute-force Burnside over 40320 permutations on ordered pairs",
+     "cycle index of S_n on unordered pairs summed over partitions with class sizes"
+    ]
+   }
+  },
+  "ace53b86a35251835": {
+   "verdict": "SOUND",
+   "summary": "The K8 bidirected-subgraph enumeration code is correct as far as I could break it: addarcs.c's digraph6/graph6 codecs are bit-exact (nauty round trips, labelg accepts its output, 64 bits = 11 chars with correct padding, CRLF/header/blank lines handled, short line / n mismatch / n=0 / graph6-instead-of-digraph6 are all fatal exit 2); test_addarcs.py passes 3,245/0; validate_decomp.sh 5 gives EQUAL sets (570 classes, no duplicates) and EQUAL filter8 outputs; the regenerated batches cover geng's 12,345 graphs exactly once with H = complement(B) and e = |E(B)| on every line, every manifest batch_expected equals the sum of the dry-run counts of its B's, and the sum is 575,009,339 = polya_count = graph_counts. The patched driver run in a fake repo layout takes a decomp batch through finished (3-column `d6 arcs flag` lines, arcs computed by filter8 from the decoded digraph, per-B genlog), MISMATCH (.txt.bad, no .done) and FAILED (no .done, no .txt.tmp) correctly; gen_batch.sh does not consume the loop's stdin, pipefail+exit 1 stops the stream on a bad line, and the ignored tag argument makes the pgrep guard work. check_accounting.py sums the 40 exact:false batches against the exact K8 count, and no glob picks up .genlog/.txt.bad/.txt.tmp. One MAJOR operational hazard: deploy_jobs.py's documented order (deploy, THEN stop the driver) is unsafe because the live driver loop (pid 269) has already buffered all 348 K8 rows in its pipe (no tail child; 14,638 bytes remained after row 11007) and will start K8 parts from memory as soon as a slot frees; after deploy those rows map to an empty job<j>.g6, and `directg | filter8` on empty input exits 0 with total 0, which the driver accepts for a `p/P` split and marks .done, leaving n_done = n_jobs + 1 so ALL_JOBS_DONE is never logged and after_prefilter2.sh never runs. Stop the driver first and refuse empty inputs. Also the wall-time estimate is off: measured filter8 throughput on K8-minus-an-edge is ~5,000 digraphs/s per pipeline, so the batches (3.69M..16.99M digraphs) take ~12..57 min each, ~8 h total at 4 slots, not \"well under an hour\". Note: my own fake-layout test briefly ran an unsplit K8 directg job for ~2 min (02:49-02:51 UTC) before I killed it; it held one filter8 slot and touched nothing under n8/.",
+   "findings": [
+    {
+     "severity": "major",
+     "where": "n8/k8decomp/deploy_jobs.py:9 (docstring order), :14 and :23 (point-in-time running check); scratchpad/k8d/run_n8_jobs.sh.patched run_job `if [ \"$split\" = \"-\" ] || [[ \"$split\" == decomp:* ]]` (MISMATCH still skipped for p/P splits) and n8/run_n8_jobs.sh:33 (job$j.g6 rebuilt from jobs.tsv)",
+     "claim": "Applying deploy_jobs.py while the old driver loop is alive (the order the docstring prescribes: deploy, then stop_driver.sh) lets the old loop start superseded K8 parts from memory, which then complete as empty phantom jobs with .done markers, so ALL_JOBS_DONE can never be logged and after_prefilter2.sh never runs.",
+     "evidence": "Live driver pid 269 has only its 4 wrappers and a `sleep 30` as children, no `tail -n +2` process: the whole remainder of jobs.tsv after row 11007 (14,638 bytes, including all 348 K8 rows at lines 3273-3620) is already in the pipe buffer, so rewriting jobs.tsv does not remove them from the loop. deploy's `ps` check is instantaneous; the loop re-checks slots every 30 s and 53 not-yet-started rows precede the K8 rows, so the K8 start is hours away but certain. After deploy, line 33 `awk '$1==j' jobs.tsv > job11173.g6` yields an EMPTY file (row removed). Verified: `directg -q -e29:56 -s0/348 < empty | filter8 | awk` exits 0 with `total 0 ...`; split `0/348` != `-` and is not `decomp:*`, so no MISMATCH check runs, .txt and .done are written for a job absent from jobs.tsv/graph_counts.json. Then `ls job*.done | wc -l` = n_jobs + 1 forever (run_n8_jobs.sh:39-41), ALL_JOBS_DONE is never written, after_prefilter2.sh:5 waits forever. check_accounting itself stays correct (it iterates gc['jobs']).",
+     "fix": "Order: `bash n8/stop_driver.sh` (and confirm `kill -0 $(cat n8/jobs/driver.pid)` fails) -> `python3 n8/k8decomp/deploy_jobs.py --apply` -> `cp` patched driver -> `bash n8/relaunch.sh`, in one command line; add to deploy_jobs.py an assertion that driver.pid is absent or dead; in run_job refuse to run when `[ ! -s $J/job$j.g6 ]` (or treat tot=0 as MISMATCH for every split)."
+    },
+    {
+     "severity": "minor",
+     "where": "n8/k8decomp/gen_batches.py:26 (weight `secs + count/5e5`) and task description / notes/k8_decomposition.md ('well under an hour')",
+     "claim": "The balancing weight assumes filter8 processes 500,000 digraphs/s; the measured rate is about 5,000/s per pipeline, so batch wall time is count-dominated, unbalanced 4.6x, and the whole K8 block takes roughly 8 hours at 4 slots.",
+     "evidence": "progress.log: K8-minus-an-edge parts of 16,632,802 digraphs: job 10990 22:26:32 -> 23:23:01 (56.5 min), job 10995 23:24:59 -> 00:18:23 (53.4 min), i.e. ~5,000 digraphs/s per pipeline. Manifest: batch_expected 3,693,418..16,985,304, batch_est_seconds 4.7..31.2 (directg -u time only, sum 395 s); the largest batch has the smallest est_seconds (16,985,304 / 4.7 s) and the smallest the largest (3,693,418 / 31.2 s), with identical weights 38.62, i.e. the packing equalised directg time, not filter8 time. 575,009,339 / (4 * 5,000/s) ~ 8 h.",
+     "fix": "Weight = count/5e3 + secs (or just count) and re-pack, or use ~80 batches so the tail is short; update the hour estimate."
+    },
+    {
+     "severity": "minor",
+     "where": "n8/k8decomp/gen_batch.sh:10-12",
+     "claim": "`while read -r B H e; do ...; done < \"$1\"` silently skips a final line that lacks a trailing newline, with exit 0.",
+     "evidence": "Batch file `G~~~~{ G????? 28\\nG~~~~z G????C 27` (no final newline): only `addarcs G~~~~{ lines 1` was produced, exit 0, no error. All 40 current batch files do end with a newline (checked), and the exact per-batch MISMATCH check would now catch the shortfall, so this is robustness only.",
+     "fix": "`while read -r B H e || [ -n \"$B\" ]; do`"
+    },
+    {
+     "severity": "minor",
+     "where": "n8/k8decomp/addarcs.c:21-34 (decode_g6) and :36-49 (decode_d6)",
+     "claim": "No line-length check: characters after the n*n bits of a digraph6 line, or after the 28 bits of the graph6 B argument, are silently ignored; padding bits are not checked to be zero.",
+     "evidence": "`printf '&G???????????~\\n' | addarcs G~~~~{` -> exit 0, output `&G^z~^z~^z~^w`; `addarcs 'G?????Z'` -> exit 0 (B treated as empty); `&G??????????A` (nonzero padding) accepted. directg/geng never emit such lines, so this cannot affect the deployed run; everything malformed in a detectable way (short line, `&` alone, `&?`, space inside, n=7 line with n=8 B, graph6 line instead of digraph6) is correctly fatal with exit 2.",
+     "fix": "Require strlen(line) == 2 + ceil(n*n/6) and strlen(B) == 1 + ceil(n(n-1)/2/6), and reject nonzero padding bits."
+    },
+    {
+     "severity": "minor",
+     "where": "n8/after_prefilter2.sh:11 and n8/commit_progress.sh:9 (`git add` lists); git status shows `?? n8/k8decomp/`",
+     "claim": "The second ledger (job<j>.genlog per-B counts, needed by check_k8decomp.py:18) and the batch definitions / dry-run counts (n8/k8decomp/batches, manifest.json, k8_perB_counts.tsv) are never committed, so the K8 certificate chain would not survive a container loss (eight restarts so far).",
+     "evidence": "`git add ... n8/jobs/*.done n8/jobs/*.stats n8/jobs/*.txt` in both scripts; no `*.genlog`; n8/k8decomp/ is untracked. check_k8decomp.py reads n8/jobs/job{jid}.genlog and n8/k8decomp/k8_perB_counts.tsv.",
+     "fix": "Add `n8/jobs/*.genlog` and `n8/k8decomp/` (sources, batches, manifest, k8_perB_counts.tsv, check_k8decomp.py) to the git add lists and commit the k8decomp directory before deploying."
+    },
+    {
+     "severity": "note",
+     "where": "n8/relaunch.sh:7-8 and the documented switch sequence (deploy_jobs.py:9)",
+     "claim": "If the scheduled relaunch fires between `stop_driver.sh` and the `cp` of the patched driver, the OLD driver restarts on the new jobs.tsv: the 40 decomp rows run as `directg -sdecomp:...`, fail, get no .done (harmless), but that driver then owns driver.pid and relaunch.sh keeps reporting `running: driver`, so the patched driver only starts after it exits.",
+     "evidence": "relaunch.sh:7 detects the driver by pidfile + cmdline; run_n8_jobs.sh:15 builds `-s$split` for any split != `-`. Self-healing, but confusing.",
+     "fix": "Do stop -> cp -> relaunch in one command line, or cp the patched driver before stopping (only the already-parsed while loop and run_job are in memory; the stop then prevents bash from reading the shifted tail of the file)."
+    },
+    {
+     "severity": "note",
+     "where": "scratchpad/k8d/run_n8_jobs.sh.patched (MISMATCH check for decomp jobs) and n8/k8decomp/check_k8decomp.py",
+     "claim": "The per-batch expected values come from `directg -u -o` of the same binary that generates the stream, so the MISMATCH check is self-referential; independence comes only from sum == Burnside (polya_count.py, graph_counts.json), V1/V2 at n <= 7, and check_k8decomp.py's exactly-once coverage.",
+     "evidence": "deploy_jobs.py:24 asserts sum(batch_expected) == exact; fake run: batch of the 9 graphs with 25..28 edges gave filter8 total 20 = my independent Burnside count 20 over Aut(B) orbits of orientations of H.",
+     "fix": "None needed; state it in notes/k8_decomposition.md item 4."
+    },
+    {
+     "severity": "note",
+     "where": "n8/run_n8_jobs.sh:29-30 (pgrep -f job<j>.g6 guard, pgrep -xc filter8 slot count); n8/run_n8_jobs.sh:38-41",
+     "claim": "The slot counter counts every filter8 on the machine (the n=7 validation's V2 step, referee tests) and the guard matches any command line containing the string; after the new driver's loop ends it waits only for its own children, so old in-flight K8-minus-an-edge wrappers finishing later produce a DRIVER_EXIT that the next relaunch turns into ALL_JOBS_DONE.",
+     "evidence": "Verified by reading; during my fake-layout test one extra filter8 (and, for ~2 min, my mistaken unsplit-K8 test pipeline, killed at 02:51) counted toward W; the production driver was at most delayed, nothing under n8/ was touched.",
+     "fix": "Existing documented behaviour; no change required."
+    },
+    {
+     "severity": "note",
+     "where": "n8/run_n8_limit.py:24,28; n8/check_accounting.py:36,41; n7/filter8.c:224-229",
+     "claim": "Confirmed: decomp jobs' job<j>.txt lines are the same 3-column `d6 arcs flag` format with arcs counted by filter8 from the decoded digraph (not from directg's -e option), job<j>.genlog / .txt.bad / .txt.tmp match no `job*.txt` glob, and the 40 exact:false batches are summed per graphs[0] = `G~~~~{` against 575,009,339.",
+     "evidence": "Fake decomp job output `&G^z~^z~^z~^w 56 S`; glob semantics checked by name; deploy dry run: rows 3619 -> 3311, ids 12000..12039, superseded 11173..11520.",
+     "fix": "None."
+    }
+   ],
+   "numbers": {
+    "test_addarcs_cases": 3245,
+    "test_addarcs_failures": 0,
+    "validate_n5_classes": 570,
+    "validate_n5_filter_lines": 10,
+    "batch_B_count": 12345,
+    "batch_B_equals_geng_8_1_28": true,
+    "batch_duplicate_B": 0,
+    "manifest_total_expected": 575009339,
+    "polya_count_8": 575009339,
+    "graph_counts_K8": 575009339,
+    "batch_expected_min": 3693418,
+    "batch_expected_max": 16985304,
+    "batch_est_seconds_min": 4.7,
+    "batch_est_seconds_max": 31.2,
+    "batch_sizes_min": 267,
+    "batch_sizes_max": 311,
+    "jobs_tsv_bytes_remaining_after_row_11007": 14638,
+    "driver_tail_process_alive": false,
+    "K8_rows_in_jobs_tsv": 348,
+    "first_K8_row_line": 3273,
+    "measured_filter8_rate_per_pipeline_per_s": 4950,
+    "K8_minus_edge_part_minutes": [
+     56.5,
+     53.4
+    ],
+    "estimated_K8_block_hours_at_4_slots": 8,
+    "fake_decomp_batch_total": 20,
+    "independent_burnside_e25_28": 20,
+    "empty_input_pipeline_exit": 0,
+    "empty_input_total": 0
+   }
+  },
+  "ac87921d20882b93a": {
+   "verdict": "SOUND",
+   "summary": "Independent implementer check of the K8 bidirected-subgraph decomposition. Written without reading validate_decomp.sh / gen_batch.sh / g6tools.py: a numpy labelled brute force over all 3^10 digraphs on K5 (58,025 with >=1 bidirected pair), canonicalized by lex-least adjacency matrix over all 120 permutations, gives 570 isomorphism classes in 33 classes of bidirected subgraph B. The project's decomposition for n=5 (geng 5 1:10, my own complement, directg -q -o | addarcs B) also gives 570 lines; matching the two per-B tables by labelg canonical form of B: 33 vs 33 B classes, 0 disagreements, totals 570 = 570; moreover the labelg canonical sets of the 570 brute-force representatives and of the 570 decomposition lines are identical, and the stream has no duplicates. n=6: decomposition stream 21,424 lines, 21,424 distinct labelg forms; a random sample of 2,000 labelled K6 digraphs with >=1 bidirected pair (1,893 distinct classes) occurs exactly once each in the canonicalized stream. Beyond the assignment: an independent Burnside count (my own code, different cycle bookkeeping from polya_count.py) gives 570 / 21,424 / 2,141,832 / 575,009,339 for n=5/6/7/8, equal to the decomposition totals at n=5,6,7 and to graph_counts.json's K8 count; an independent per-B orbit count (Aut(H) enumerated by brute force, Burnside over orientations) agrees with every one of the 33 / 155 / 1,043 per-B directg counts at n=5/6/7 and with the 80 spot-checked n=8 entries of k8_perB_counts.tsv (the 40 most symmetric B plus 40 random); the 40 batch files cover exactly the 12,345 geng graphs once each, every H equals my own complement, every e is correct, and the manifest's batch_expected sums agree with the dry-run counts file and total 575,009,339; gen_batch.sh run on the three most symmetric n=8 B gives line counts, labelg-distinct counts and filter8 totals equal to the tsv. I found no error in the lemma, addarcs, gen_batch.sh, gen_batches.py, deploy_jobs.py, the patched driver or check_accounting.py. The only incident was in my own harness (see note), which the project's scripts already avoid. Scratch files: /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_indep/{brute.py,decomp.py,match.py,burnside.py,perB_burnside.py,sample6.py,check_batches.py,brute5.txt,decomp5.txt,decomp6.txt,decomp7.txt}.",
+   "findings": [
+    {
+     "severity": "note",
+     "where": "n8/k8decomp/gen_batch.sh line 11 (correct) vs. the shorthand 'printf H | directg' in notes and the task description",
+     "claim": "graph6 strings can contain a backslash, so any reproduction that passes H as printf's FORMAT argument silently loses whole B classes; the project's script is safe because it uses printf '%s\\n' \"$H\".",
+     "evidence": "At n=7, B=F?aKW has complement H='F~\\r_'. My first harness used printf with H as the format string: directg received a corrupted line ('>E readgg: illegal character' on stderr, 0 lines for that B, non-fatal to the pipeline) and the n=7 total came out 2,141,386 instead of 2,141,832 (446 missing). With printf '%s\\n' \"$H\" the total is exactly 2,141,832 and all 1,043 per-B counts match the independent Burnside orbit counts. gen_batch.sh already quotes correctly; count_all_B.py passes H via subprocess input, also safe.",
+     "fix": "No code change needed. If the shorthand 'printf H | directg' is ever executed literally (e.g. by a referee or in a future script), use printf '%s\\n' \"$H\" or echo; worth one sentence in notes/k8_decomposition.md so nobody re-derives a wrong per-B count from an ad-hoc reproduction."
+    }
+   ],
+   "numbers": {
+    "n5_labelled_with_bidirected_pair": 58025,
+    "n5_classes_bruteforce": 570,
+    "n5_classes_decomposition": 570,
+    "n5_B_classes_brute": 33,
+    "n5_B_classes_decomp": 33,
+    "n5_perB_disagreements": 0,
+    "n5_canonical_set_equal": true,
+    "n6_decomp_lines": 21424,
+    "n6_decomp_distinct_labelg": 21424,
+    "n6_sample_labelled": 2000,
+    "n6_sample_distinct_classes": 1893,
+    "n6_sample_not_exactly_once": 0,
+    "n7_decomp_lines": 2141832,
+    "n7_perB_mismatches_vs_independent_burnside": 0,
+    "n7_B_graphs": 1043,
+    "independent_burnside_ge1_bidirected": {
+     "n5": 570,
+     "n6": 21424,
+     "n7": 2141832,
+     "n8": 575009339
+    },
+    "n8_B_graphs": 12345,
+    "n8_batches": 40,
+    "n8_batch_expected_total": 575009339,
+    "n8_batch_coverage_ok": true,
+    "n8_complement_mismatches": 0,
+    "n8_perB_spot_checked": 80,
+    "n8_perB_spot_mismatches": 0
+   }
+  }
+ }
+}

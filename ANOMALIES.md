@@ -1179,3 +1179,51 @@ so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the 
 * State at relaunch: 164,940 strict-survivor lines, 0 overflow lines, 0 count mismatches; about 290 of
   the 321 parts of K8 minus an edge done; the 348-part K8 block not started. ETA unchanged (about
   Oct 29-31).
+
+## 2026-10-27 K8 enumerated by its bidirected subgraph: 348 directg parts (days) replaced by 40 batches (minutes)
+
+* Why: the remaining work was almost entirely the complete graph K8 (348 directg parts, 575,009,339 digraphs,
+  |Aut| = 40,320).  directg's isomorph rejection cost grows with the automorphism group; the measured series
+  (0.051 M/s per worker at |Aut| 192, 0.023 at 240, 0.006 at 1,440) extrapolates to 0.0002-0.0005 M/s at
+  40,320, i.e. 3-8 days on four cores, against 0.5-0.9 M/s for every low-symmetry graph.  The filter itself
+  runs at 1.8 M digraphs/s (measured on 2.27 M n = 8 digraphs).
+* Method (notes/k8_decomposition.md, lemma with proof): the isomorphism classes of digraphs with underlying
+  graph K_n are in bijection with pairs (B, orbit of Aut(B) on the orientations of K_n - B), B over the
+  graphs on n vertices up to isomorphism; arcs = C + |E(B)|, so the 29..56-arc restriction is exactly
+  "B nonempty".  Implementation n8/k8decomp: for each of the 12,345 graphs B (geng 8 1:28), directg -o on
+  the complement of B (small automorphism groups) | addarcs B (ORs the bidirected arcs in) | filter8
+  (unchanged).  Not a prune: a re-enumeration of exactly the same classes, with the same filter.
+* Validation before deployment: addarcs/codec unit tests 3,245 cases, 0 failures (incl. nauty round trips);
+  validate_decomp.sh at n = 4, 5, 6, 7: canonical-form multiset equality with directg's reference enumeration
+  and no duplicates (38 / 570 / 21,424 / 2,141,832 classes = the Burnside numbers) and identical filter8
+  output lines (V2); at n = 7 the decomposition took 7 s against 956 s for the reference.  polya_count.py 8
+  = 575,009,339 = graph_counts.json.  Count-only dry run over all 12,345 B (k8_perB_counts.tsv): sum exactly
+  575,009,339 in 395 s of one core.
+* Four adversarial referees (workflow wf_c8cc4e12-267, record in notes/k8_decomposition_referees.json), all
+  SOUND: proof referee (also tested filter8's relabelling invariance on 4,907,680 n = 8 digraphs: identical
+  stats and canonical lines; independent per-B Burnside over Aut(B) agrees with the dry run for every one of
+  the 12,345 B); code referee (drove a decomp batch through finished / MISMATCH / FAILED in a fake layout;
+  one MAJOR operational hazard, below); independent counter (two methods of its own and OEIS A001174(8) -
+  A000568(8) = 575,016,219 - 6,880 = 575,009,339); independent implementer (labelled brute force on K5: 570
+  classes, per-B tables agree; n = 6: 2,000 random labelled digraphs each occur exactly once in the
+  canonicalized decomposition stream).
+* Fixes taken from the refereeing: (1) deployment order: the live driver loop had the whole job table
+  buffered (process substitution), so rewriting the table first would have let it start the superseded K8
+  parts from memory on empty inputs, which directg | filter8 accept with total 0 -- the driver now refuses
+  empty inputs, deploy_jobs.py refuses while the loop is alive, and the loop is stopped before the swap;
+  (2) each batch row carries its exact expected count (sum of the dry-run counts of its B; the 40 batches
+  were balanced on the measured per-B cost) and the driver's MISMATCH check now applies to batches;
+  (3) check_k8decomp.py compares the per-B addarcs line counts (job<j>.genlog) with the dry-run ledger after
+  the run; (4) wording: printf must get graph6 strings as data, never as the format string (graph6 can
+  contain backslashes; the implementer lost whole classes that way in its own harness; gen_batch.sh was
+  already safe).  The referee's claim that filter8 runs at 5,000 digraphs/s was wrong (that is directg's
+  rate on K8 minus an edge); measured 1.8 M/s.
+* Deployed 03:08 UTC: driver loop stopped (the four in-flight parts of K8 minus an edge kept running and
+  were skipped by the guard at relaunch), the 348 rows (ids 11173-11520) replaced by 40 batch rows (ids
+  12000-12039, exact expected 3,693,418..16,985,304, sum 575,009,339), patched driver installed, relaunched;
+  rows 3,619 -> 3,311; backups jobs.tsv.bak.20261027T030805 and graph_counts.json.bak.20261027T030805.
+  The accounting is unchanged in kind: check_accounting.py sums the batches against the exact K8 count as
+  for any split graph, plus the per-batch exact check and the per-B ledger.
+* Expected effect: the K8 block takes about 21 CPU-minutes (full pipeline about 450 K digraphs/s) instead of
+  days; it starts once the last 24 unstarted parts of K8 minus an edge are through (about 6 h).  New ETA for
+  the whole n = 8 prefilter: about 09:30-10:30 UTC on Oct 27, instead of Oct 29-31.
