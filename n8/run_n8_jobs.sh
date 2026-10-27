@@ -1,7 +1,9 @@
 #!/bin/bash
 # run_n8_jobs.sh [W] -- n = 8 limit prefilter over the (graph, directg part) jobs in n8/jobs/jobs.tsv
-# (a job whose split field is decomp:<batchfile> is a K8 bidirected-subgraph batch, see n8/k8decomp/).
+# (a job whose split field is decomp:<batchfile> is a K8 bidirected-subgraph batch, see n8/k8decomp/; one whose
+# split field is orbit:p/P is a part of one graph enumerated by n8/orbitenum instead of directg).
 # (built by n8/make_jobs.py).  Each job:  job<j>.g6 | directg -q -e29:56 [-s p/P] | filter8  -> job<j>.stats
+# (orbit:p/P rows:  n8/orbitenum/orbitenum @job<j>.g6 29 p/P | filter8, enumerator stderr -> job<j>.genlog)
 # (counts), job<j>.txt (S/O lines; B lines dropped: a vanishing Hurwitz minor at alpha = -1/2 means
 # alpha >= -1/2, never limit-stable, exact).
 # Resumable (job<j>.done), largest jobs first, at most W filter8 pipelines at once (counts ALL filter8
@@ -18,12 +20,18 @@ run_job() { local j=$1 split=$2 expected=$3 opt="" cmd
     # whose bidirected subgraph is one of the batch's graphs B; the batch file path follows "decomp:".
     # expected is the batch's exact count from the count-only dry run, so the MISMATCH check applies.
     cmd="set -o pipefail; bash n8/k8decomp/gen_batch.sh ${split#decomp:} $J/job$j.g6 2> $J/job$j.genlog | n7/filter8 2> $J/job$j.stats | awk '\$3!=\"B\"' > $J/job$j.txt.tmp"
+  elif [[ "$split" == orbit:* ]]; then
+    # one underlying graph by its bidirected subgraphs up to Aut(G) and the orientations up to the stabilizer
+    # (n8/orbitenum, notes/k8_decomposition.md "Relative form"); the part p/P follows "orbit:" and the graph is
+    # read from job<j>.g6.  expected is the part's exact count from the count-only dry run (n8/orbitenum/dryrun),
+    # so the MISMATCH check applies.
+    cmd="set -o pipefail; n8/orbitenum/orbitenum @$J/job$j.g6 29 ${split#orbit:} 2> $J/job$j.genlog | n7/filter8 2> $J/job$j.stats | awk '\$3!=\"B\"' > $J/job$j.txt.tmp"
   else
     [ "$split" != "-" ] && opt="-s$split"
     cmd="set -o pipefail; n7/directg -q -e29:56 $opt < $J/job$j.g6 | n7/filter8 2> $J/job$j.stats | awk '\$3!=\"B\"' > $J/job$j.txt.tmp"
   fi
   if nice -n 19 bash -c "$cmd"; then
-    if [ "$split" = "-" ] || [[ "$split" == decomp:* ]]; then
+    if [ "$split" = "-" ] || [[ "$split" == decomp:* ]] || [[ "$split" == orbit:* ]]; then
       tot=$(awk '{for(i=1;i<=NF;i++) if($i=="total") print $(i+1)}' "$J/job$j.stats")
       if [ "$tot" != "$expected" ]; then
         mv "$J/job$j.txt.tmp" "$J/job$j.txt.bad"; echo "$(date -u +%H:%M:%S) MISMATCH job $j total=$tot expected=$expected" >> "$J/progress.log"; return 1; fi

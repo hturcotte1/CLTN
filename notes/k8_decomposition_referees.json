@@ -281,5 +281,263 @@
     "n8_perB_spot_mismatches": 0
    }
   }
- }
+ },
+ "orbitenum_2026-10-27": [
+  {
+   "workflow": "wf_fca8b26f-bb6",
+   "agent": "lemma",
+   "verdict": "SOUND",
+   "summary": "I found no gap in the relative form or in the original K_n lemma. The orbitenum.c code implements the relative form correctly. The numerical checks agree with brute force and with directg everywhere I tested.\n\nProof in my own words:\n(a) A labelled digraph D whose underlying graph is exactly G is the same thing as a pair (B, O). B is a subset of E(G) (the edges carrying both arcs) and O is an orientation of G - B. The number of arcs is |E(G)| + |B|.\n\n(b) The group is Aut(G), no larger and no smaller. If pi is an isomorphism D1 -> D2 and both have underlying graph G, then G = U(D2) = pi(U(D1)) = pi(G), so pi is in Aut(G). Conversely, every element of Aut(G) sends digraphs on G to digraphs on G. So the isomorphism classes of digraphs whose underlying graph is isomorphic to G correspond to the Aut(G)-orbits on pairs (B, O). To reach that statement, first move any D with U(D) isomorphic to G onto U(D) = G by some tau. The notes leave this step implicit.\n\n(c) The map (B, O) -> B is Aut(G)-equivariant. By the standard fibration lemma, the orbits of a group H on X correspond to pairs (y, Stab_H(y)-orbit in the fibre over y), with y running over orbit representatives of Y. That lemma applies here directly:\n- Well-defined: the obvious map from pairs to orbits.\n- Surjective: move B(D) to its representative with some h in Aut(G).\n- Injective: if h x1 = x2 and both lie over the same B, then h(B) = B, so h is in Stab(B).\nSo quotienting by Aut(G) on B and then by Stab(B) on omega is the same as quotienting the pairs by Aut(G). Stab(B) preserves both E(G) and B, so it permutes the free edges and acts on the orientations of G - B.\n\n(d) Bitmask action. Take a free edge (u,v) with u < v whose image (g(u), g(v)) has g(u) > g(v). An arc u->v maps to g(u)->g(v), which is \"larger -> smaller\", so the image bit is the original bit complemented. The code does exactly this (eflip/pflip, XOR). An orientation is kept iff O <= g.O for every non-identity g in Stab(B). The full stabilizer is scanned, not a generating set, and perm[0] is always the identity because Heap's algorithm starts there. So \"kept\" means \"least member of its orbit\": exactly one per orbit. The same holds for B under all of Aut(G). Filtering by popcount before the least-element test is harmless because |B| is constant on an orbit.\n\n(e) Edge cases. With B empty, Stab(B) = Aut(G). With B = E(G), f = 0 and there is exactly one output. The arc bound is |B| >= min_arcs - |E(G)|.\n\n(f) Combining over geng representatives. The underlying graph's isomorphism class is a digraph invariant, so the classes split by underlying-graph class. With one G per class, every digraph class is listed exactly once.\n\n(g) The K_n section is the special case G = K_n. Aut(K_n) = S_n, R_G is the isomorphism classes of graphs B on V (isolated vertices included), and Stab(B) = Aut(B) = Aut(K_n - B). This is consistent with the relative form. The directg -o argument and the arc and count statements there are also correct; 12,346 is the number of graphs on 8 vertices (OEIS A000088), so 12,345 nonempty B is right.\n\nNumerical checks: all passed, zero mismatches. Every orbitenum output line was also checked to have underlying graph exactly G (labelled), no loops, and at least the stated number of arcs. My own compile of orbitenum.c (byte-identical to the repository source) and the production binary gave the same outcomes.\n\nOne rule breach to report: the l3 test at n=7 produced 6,925,308 classes. That is above the ~2 million class guideline I was given, although it finished in 29 s at nice 19 and wrote only into my scratch directory. Every other test stayed under 60 s and within the limits. Nothing I started is still running.\n\nFiles are in /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_orb_opusref/: uf.py, brute.py, cmp6.sh, cmpf.sh, autsz.py, aut7.txt.",
+   "flaws": [
+    {
+     "severity": "NOTE",
+     "where": "notes/k8_decomposition.md, 'Relative form' paragraph, surjectivity step ('sigma now ranges over Aut(G)')",
+     "description": "There is a small gap in the write-up, not in the math. For a digraph D whose underlying graph is isomorphic to G but not equal to it, you first need some permutation tau with tau(U(D)) = G. Only after that does a sigma from Aut(G) bring B(tau D) to its representative in R_G. As written, the text says sigma ranges over Aut(G) without this first step. The statement is still true; one sentence would close the gap."
+    },
+    {
+     "severity": "NOTE",
+     "where": "n8/orbitenum/orbitenum.c argument parsing (gstr[0]=='@')",
+     "description": "The graph6 string of the 1-vertex graph K_1 is '@', which collides with the '@file' syntax. orbitenum '@' 0 tries to open a file with an empty name and exits with 'cannot read'. Production (n = 8) is unaffected, since no 8-vertex graph6 string starts with '@'.",
+     "reproduction": "orbitenum '@' 0  -> 'cannot read', rc=1 (expected one digraph, &@?)"
+    },
+    {
+     "severity": "NOTE",
+     "where": "n8/orbitenum/orbitenum.c header comment, 'Stats on stderr'",
+     "description": "The header gives the summary line as 'orbitenum <G> min_arcs <a> part <p/P> subsets <k> total <N>'. The code actually prints an extra 'aut <|Aut(G)|>' field between part and subsets. Any parser written from the header would be off by one field."
+    }
+   ],
+   "tests_run": [
+    "Brute force via all n! permutations, every geng graph, n = 1..4, min_arcs 0, own compile and production binary: 218 classes at n=4, exact match (n=1 fails only because of the '@' argument-parsing collision)",
+    "Union-find orbits under S_n of all 4^C labelled loopless digraphs, n=4, min_arcs 0 and 7: 218 and 85 classes; orbitenum outputs distinct, cover every orbit, correct underlying graph",
+    "Same union-find check at n=5, min_arcs 0: 9,608 = A000273(5); min_arcs 11 and 16 with production binary: 3,969 and 84; all exact",
+    "n=5, all 34 graphs: orbitenum vs directg compared as sorted multisets of labelg canonical forms, with duplicate check: 9,608, zero mismatches",
+    "n=6, all 156 graphs, min_arcs 0: orbitenum vs directg canonical multisets, zero mismatches; per-graph totals 364,531 + 777,476 + 377,457 + 21,480 = 1,540,944 = A000273(6)",
+    "n=6, all 156 graphs, min_arcs 17, production binary: 452,649 classes equal to directg -e17:2m, zero mismatches",
+    "n=7, 33 graphs with |Aut| >= 48 and <= 13 edges, min_arcs 0: 131,826 classes, zero mismatches",
+    "n=7, 17 graphs with |Aut| >= 48 and >= 14 edges, min_arcs 2m-7: 980,331 classes, zero mismatches (includes K7, K6+K1, K7-K3 type graphs)",
+    "n=7, 40 graphs with 6 <= |Aut| < 48 and 12-14 edges, min_arcs 0, production binary: 6,925,308 classes, zero mismatches (above the ~2M class guideline; finished in 29 s)",
+    "p/P partition: for 3 graphs on 7 vertices (min_arcs 22, P=3) the union of parts 0/3, 1/3, 2/3 equals the unsplit output, as sorted multisets with no duplicates",
+    "Code read: Heap's algorithm generates all n! permutations, perm[0] is the identity, is_aut gives exactly Aut(G), emap/eflip orientation complement is correct, the least-element test runs over the full stabilizer, posOf is valid on free edges under Stab(B), the arc bound lo = min_arcs - m is correct, digraph6 encoding is row-major n^2 bits"
+   ]
+  },
+  {
+   "workflow": "wf_fca8b26f-bb6",
+   "agent": "code_vs_bruteforce",
+   "verdict": "SOUND",
+   "summary": "Independent referee of /home/user/CLTN/n8/orbitenum/orbitenum.c (read in full) against the spec in its header and in \"Relative form\" of notes/k8_decomposition.md, using a pure-Python oracle written from scratch in /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_orb_fable/ (g6codec.py: own graph6/digraph6 codec, graph6 = upper triangle column by column, for column j the entries (0,j)..(j-1,j); digraph6 = '&', N(n), n x n matrix row by row, bit (i,j) = arc i->j; 6-bit chunks, char = value+63, MSB first; self-tested on hand-worked examples and cross-checked against geng output round-trip and directg -T vs digraph6. oracle.py: canonical form = minimum over ALL n! vertex permutations of the n*n adjacency bitmask (reproduces OEIS A000273 digraph counts 1,3,16,218 for n=1..4), 3^|E| labelled enumeration, and an independent Burnside count over Aut(G) with edge-cycle flip parity). Code review found the method and all conventions correct: Aut(G) by Heap's algorithm with perm[0]=identity; edge images/flips; least-element representatives for B under Aut(G) and for O under Stab(B) with bit = orientation XOR flip; arcs = |E|+|B|; parts by representative index mod P; digraph6 emission exact. Results (every run niced, foreground, < 25 s): n=2,3,4: ALL labelled graphs (2+8+64), bounds {0,1,|E|,|E|+1,|E|+|E|/2,2|E|-1,2|E|,2|E|+1}: class set from all 3^|E| digraphs equals the set of canonical forms of orbitenum's lines exactly (no missing, no extra, no duplicates), every output line has underlying graph EXACTLY G and >= min_arcs arcs, stat total == line count, -u total == line count, p/P for P=2,3 partition the output as multisets, @file input identical, Burnside == brute force; 3,434 orbitenum runs. n=5: all 34 isomorphism classes, each fed as a RANDOM non-canonical labelling, same checks (1,819 runs; up to 1,788 classes per graph). n=6 (random relabellings): C6, 2K3, K_{3,3} full 3^|E| oracle at min_arcs=|E| and |E|+3 \u2014 exact agreement (74/24, 28/11, 374/229 classes); K6 minus perfect matching (|Aut|=48) and K6 minus triangle (|Aut|=36), |E|=12: line counts 11,625/9,481 and 16,830/13,694 equal the Burnside counts, no duplicate classes, all lines exactly on G with >= min_arcs arcs (count equality + distinctness + validity proves exactly one per class), plus 1,000 random labelled digraphs each whose classes were all present; parts P=2,5 and -u OK. n=7: K_{1,6} (|Aut|=720) and C7 full oracle at |E| and |E|+3 exact (28/10, 171/77); K7 (|Aut|=5040) count-only totals 1327/78/6/1 at min_arcs 36/38/40/42 equal Burnside. K8 refused with rc=3 and empty stdout as documented. The \"B <mask> <count>\" ledger is identical between -u and normal mode on 6 graphs x 4 bounds and sums to the line count. No discrepancy with the specification was found; only cosmetic input-handling notes below (none affect n=8 production). No file in the repository was created, modified or deleted; no process of mine is left running.",
+   "flaws": [
+    {
+     "severity": "MINOR",
+     "where": "orbitenum.c main(), line 87: if (gstr[0] == '@') { /* @file */",
+     "description": "The graph6 string of the 1-vertex graph is '@' (chr(64)), which collides with the '@file' switch: `orbitenum '@' 0` fails with 'cannot read ' (rc=1) instead of emitting the single empty digraph '&@?'. The @file route works ('@g1.txt' containing '@' gives total 1). Irrelevant for n=8 production, but a literal reading of the spec (any G) is violated for n=1.",
+     "reproduction": "nice -n 19 /home/user/CLTN/n8/orbitenum/orbitenum '@' 0   -> 'cannot read ', rc=1;  printf '%s\\n' '@' > g1.txt; orbitenum @g1.txt 0 -> '&@?', total 1"
+    },
+    {
+     "severity": "NOTE",
+     "where": "orbitenum.c main(), lines 84-85: atoi(argv[2]) and sscanf(argv[a], \"%d/%d\", ...)",
+     "description": "Lenient argument parsing: a non-numeric min_arcs ('abc') silently becomes 0 (full enumeration), and trailing junk after p/P ('0/1junk') is accepted. A typo in a job command would silently produce the wrong bound rather than an error. The downstream per-job expected-count check in the driver would catch a wrong total, so this is not a correctness hole in the pipeline.",
+     "reproduction": "orbitenum 'Bw' abc -u -> 'min_arcs 0 ... total 7', rc=0;  orbitenum 'Bw' 3 0/1junk -u -> rc=0"
+    },
+    {
+     "severity": "NOTE",
+     "where": "orbitenum.c decode_g6(), lines 42-49",
+     "description": "graph6 decoding does not accept the optional '>>graph6<<' header (on the command line or as the first line of an @file), ignores extra trailing characters ('Bww' is accepted as 'Bw'), and does not verify that padding bits are zero. Only single-byte n (n <= 62, here MAXN=10) is supported, which is fine for the stated use. Inputs in this project come from geng/own generation without headers, so no practical impact.",
+     "reproduction": "orbitenum '>>graph6<<Bw' 3 -u -> 'bad graph6' rc=1;  orbitenum 'Bww' 3 -u -> total 7 rc=0"
+    },
+    {
+     "severity": "NOTE",
+     "where": "orbitenum.c main(), line 97: tbl = calloc((size_t)naut * nbytes * 256, sizeof(u64)); if (!tbl) { oom }",
+     "description": "For the edgeless graph m=0 gives nbytes=0 and calloc(0, 8); glibc returns a non-NULL pointer so it works here (verified: empty graphs on 2..5 vertices produce exactly one digraph), but a libc returning NULL for size 0 would report 'oom'. Portability only.",
+     "reproduction": "orbitenum 'D??' 0 -u -> total 1 on this machine"
+    }
+   ],
+   "tests_run": [
+    "g6codec.py self-tests (hand-worked graph6/digraph6 examples, random round-trips n=0..6); geng -q 4 output decodes and re-encodes identically (11 graphs); directg -T arc lists vs directg digraph6 on K3 match my decoding",
+    "oracle canon(): invariance under random relabelling (n=3,4,5); loopless digraph class counts 1,3,16,218 for n=1..4 (OEIS A000273); specialised vs generic branch agreement",
+    "run_small.py 2, 3, 4: all labelled graphs (2, 8, 64 graphs), 8 bounds each, full 3^|E| oracle class set == orbitenum class set, no duplicates, underlying == G exactly, arcs >= bound, total == lines, -u, parts P=2,3 partition, @file, Burnside == brute force; 51 + 288 + 3,095 orbitenum runs, all OK",
+    "run_small.py 5 (slices 0:20, 20:30, 30:34): all 34 iso classes with random labelled representatives, same checks; 1,819 orbitenum runs, max 1,788 classes/graph, all OK",
+    "run_n6.py: C6, 2K3, K33 full oracle (729, 729, 19683 digraphs) checked at min_arcs |E| and |E|+3: exact agreement 74/24, 28/11, 374/229; parts P=2,5; -u; random samples 400 each",
+    "run_n6.py: K6-PM (|E|=12, |Aut|=48) at 12 and 15: 11,625 and 9,481 lines == Burnside, no duplicates, exact underlying, 1,000 random digraphs' classes present; K6-K3 (|Aut|=36) at 12 and 15: 16,830 and 13,694 lines == Burnside, same checks",
+    "run_n7.py: K_{1,6} (|Aut|=720) and C7 full oracle (729, 2187 digraphs over 5040 perms, chunked) at |E| and |E|+3: exact agreement 28/10 and 171/77; K7 (|Aut|=5040) count-only totals 1327/78/6/1 at 36/38/40/42 == Burnside",
+    "K8 (G~~~~{) refused: rc=3, 'orbitenum: |Aut(G)| > 8192, refusing', empty stdout",
+    "B-ledger equality between -u and normal mode and sum(B counts) == line count on EFz_, E]ow, EoLO, D]{, FXG`?, E~~w at bounds 0,5,9,12 (24 cases)",
+    "argument probes: min_arcs > 2|E| gives total 0; negative min_arcs == 0; bad p/P ('1/0','2/2','-1/2') rejected; option order independence; '@' / header / short / long graph6 behaviour (see notes)",
+    "final: pgrep shows no process started by me; git status in /home/user/CLTN empty (repository untouched)"
+   ]
+  },
+  {
+   "workflow": "wf_fca8b26f-bb6",
+   "agent": "code_vs_nauty",
+   "verdict": "SOUND",
+   "summary": "Line-by-line review plus 2,944 black-box test cases found no input on which orbitenum produces a wrong enumeration, a duplicate, a wrong count, a non-partitioning p/P split, or a -u/@file inconsistency. Code review: (1) Heap's algorithm \u2014 instrumented copy with MAXAUT raised and m=0 (every permutation is an automorphism) visited exactly n! distinct valid permutations for n=1..8; is_aut checks every edge maps to an edge, which for a bijection on a finite edge set is a bijection, so Aut(G) is exact, and perm[0] is the identity (Heap's first output) so skipping g=0 in the canon/stabiliser loops is correct. (2) Per-byte tables: tbl[g][b][v] = OR of 1<<emap[g][8b+k] over set bits k with 8b+k<m; the image of a set under a bijection is the union of the images, so OR-ing per-byte images is exact; index arithmetic in img() and in the table build agree; B never has bits >= m. (3) Orientation action: free edges are re-indexed by posOf over the complement of B; because g in Stab(B) also stabilises E\\B, emap[g][F[t]] is always a free edge so posOf is defined; bit image = bit XOR eflip where eflip=1 iff g(u)>g(v), which is exactly when the arc u->v becomes an arc from the larger to the smaller endpoint of the image edge; cast precedence ((u64)(bit^flip))<<pos is right. (4) Least-in-orbit tests over the full group (B) and over Stab(B) (O) give exactly one representative per orbit, which is the spec's bijection. (5) Widths: (u64)1<<m, (u64)1<<f, popcountll, all 64-bit with m<=45 (MAXE) and the m<=62 guard; outbuf (20 bytes) exactly fits n=10. (6) idx counts canonical B with |B|>=lo in increasing order regardless of part, nsub only after the p/P test, so parts partition the output and in part mode \"subsets <k>\" is the number of representatives B assigned to THIS part (the B lines are likewise only this part's); the sum over parts equals the unsplit count (verified for P=2,3,7,100). (7) -u runs the identical loops with emit suppressed. (8) lo = min_arcs - m clamped at 0; min_arcs > 2m yields total 0, exit 0. (9) Exit codes: usage/bad arg/unreadable @file/bad graph6/too many edges/oom -> 1; |Aut|>8192 -> 3 before any output (verified on K8 and the empty 8-vertex graph; K7+K1 with |Aut|=5040 is accepted). (10) Memory: single calloc of |Aut|*nbytes*2048 bytes, <= 41 MB for any accepted n=8 graph. TESTS (driver /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_orb_referee/driver.sh, helper g6util.py, graph generator mkgraphs.py): 417 distinct graphs \u2014 ALL 11 graphs on 4, ALL 34 on 5, ALL 156 on 6 vertices (geng, disconnected included), all 40 graphs on 7 vertices with <=5 edges, 120 random geng-7 graphs (shuf seed 42), plus explicit special graphs at n=4..7 (K_n, K_n minus 1..3 matchings edges, K_n-K3, K_n-P3, K_n-star, K_n-C_n, K_{a,n-a}, K_{a,n-a}+e, C_n, P_n, stars, empty, matchings, wheels, K3+K_{n-3}, C3+C_{n-3}, 2K3+iso, C4+P, 2K2+K, K_{n-1}+K1, prism, octahedron, K_{1,1,5}, K_{2,2,3}, K_{1,2,4}, K_{3,3}+K1, K4+K3, K7-K_{1,3}, K7-(K2+K_{1,3}), K7-3K2, K7-2K3; |Aut| up to 5040). Bounds per graph: {-1, 0, m-1, m, m+1, m+ceil(m/2), 2m-1, 2m, 2m+1} for n<=5 and the n=7 <=5-edge set, {0, m, m+1, m+ceil(m/2), 2m-1, 2m, 2m+1} for the rest (b=0 still exercises lo<0 whenever m>0). 2,944 (graph,bound) cases ran, 0 failures, 157 skipped only for size (class count > 250k or labelled bound > cap); 13.4M classes compared in total, largest single case 216,771 classes. Per case: labelg canonical multiset of orbitenum output == that of directg -q -e<max(b,0)>:<2m> (directg accepts lower bounds below |E|, verified), no duplicate canonical forms and no duplicate raw lines, every line a digraph6 line with the right n, total == line count, sum of B lines == total, number of B lines == subsets, -u writes nothing to stdout and its stderr is byte-identical to the enumerating run, @file (with CRLF and a junk second line) gives byte-identical stdout and stderr, parts p/P for P=2 and P=3: each part's stats self-consistent, part -u identical, sorted union == sorted unsplit output, parts pairwise disjoint, subsets and totals sum to the unsplit values; for 723 cases with m<=8 a third, independent reference (all 3^m labelled digraphs generated by my own encoder, canonicalised by labelg, deduplicated) also equals orbitenum's class set. Edge-case battery: all bad-argument paths exit 1 with no stdout; refusal exits 3 with no stdout; huge/negative min_arcs behave as the clamp implies. Residual gaps: (a) tables with nbytes=4 (m>=25) are only reachable at n=8, which the test rules excluded; nbytes=1,2,3 with partial last bytes (m=17..21) were exercised and the code is byte-uniform; (b) the MAXAUT boundary |Aut|=8192 exactly is not constructible at n<=10 (logic reads: refuse at the 8193rd automorphism, consistent with the header). Minor defects listed below do not affect any production input.",
+   "flaws": [
+    {
+     "severity": "MINOR",
+     "where": "/home/user/CLTN/n8/orbitenum/orbitenum.c line 100: int lo = min_arcs - m",
+     "description": "Signed overflow when min_arcs is within m of INT_MIN (undefined behaviour; with gcc -O2 the result wraps to a large positive lo and the program silently outputs nothing, total 0, exit 0, instead of enumerating everything). Also atoi() on an out-of-range string is undefined. Harmless for any sensible bound; a clamp before the subtraction (or using long long) removes it.",
+     "reproduction": "nice -n 19 /home/user/CLTN/n8/orbitenum/orbitenum BW -2147483648 -u   -> 'subsets 0 total 0' (expected 3/6). gcc -O1 -fsanitize=undefined copy prints: orbitenum.c:100:9: runtime error: signed integer overflow: -2147483648 - 2"
+    },
+    {
+     "severity": "NOTE",
+     "where": "orbitenum.c lines 83-84: argument parsing",
+     "description": "Lenient parsing: '1/2/3' and '1/2x' are accepted as 1/2 (sscanf ignores trailing text); a non-numeric min_arcs such as 'abc' is silently treated as 0 (atoi); a second p/P argument silently overrides the first. None of these can produce a wrong enumeration for a well-formed command line, but a typo in a job script would run the wrong part/bound without an error.",
+     "reproduction": "orbitenum BW 0 1/2/3 ; orbitenum BW abc -u  (both exit 0)"
+    },
+    {
+     "severity": "NOTE",
+     "where": "orbitenum.c line 86: gstr[0] == '@' file prefix",
+     "description": "The graph6 string of the 1-vertex graph is '@', so n=1 cannot be given on the command line (treated as @file with an empty name: 'cannot read', exit 1); it works via @file. Irrelevant for the n=8 production use.",
+     "reproduction": "orbitenum '@' 0  -> 'cannot read ' rc=1; printf '@\\n' > one.txt; orbitenum @one.txt 0 -> 1 digraph, rc=0"
+    },
+    {
+     "severity": "NOTE",
+     "where": "orbitenum.c lines 15-18 header comment and line 124 stats line",
+     "description": "The header does not say what 'subsets <k>' counts in part mode. Verified behaviour: in part p/P, subsets = the number of representatives B whose index is = p (mod P) (this part's only, idx is still advanced over every representative), and the 'B <mask> <count>' lines are emitted only for this part's B; the sum over all parts of subsets and of total equals the unsplit values. Suggest stating this in the header.",
+     "reproduction": "orbitenum BW 0 0/2 -u -> 'subsets 2 total 4'; orbitenum BW 0 1/2 -u -> 'subsets 1 total 2'; unsplit -> 'subsets 3 total 6'"
+    },
+    {
+     "severity": "NOTE",
+     "where": "orbitenum.c line 42 and 96",
+     "description": "n > MAXN (10) is reported as 'bad graph6' (exit 1) \u2014 misleading message only. calloc(0,...) is called for an edgeless graph (nbytes=0); glibc returns a non-NULL pointer so it works here (verified on A? and F?????), but a libc returning NULL would print 'oom' and exit 1 \u2014 portability only."
+    }
+   ],
+   "tests_run": [
+    "Heap's algorithm: instrumented copy (MAXAUT=50000, HEAPTEST dump) on edgeless graphs n=1..8: visited exactly n! permutations, all distinct, all valid (perms_<n>.txt)",
+    "driver.sh on all 11 graphs n=4 + specials (18 graphs, 9 bounds incl. -1, m-1, 2m+1): 141 cases OK, 141 with brute-force 3^m reference",
+    "driver.sh on all 34 graphs n=5 + specials (43 graphs, 9 bounds): 367 cases OK, 349 brute-force",
+    "driver.sh on all 156 graphs n=6 + specials (170 graphs, 7 bounds): 1,161 cases OK, 753 brute-force, 12 size skips (K6-type graphs at low bounds)",
+    "driver.sh on 35 special n=7 graphs with large groups (K7 |Aut|=5040, K7-kK2, K7-K3, K_{a,7-a}, C7, stars, wheels, disjoint unions, complete multipartite): 199 cases OK (1.66M classes), 41 size skips",
+    "driver.sh on all 40 n=7 graphs with <=5 edges (9 bounds): 341 cases OK, all brute-force checked",
+    "driver.sh on 120 random geng-7 graphs (3 chunks, 7 bounds): 735 cases OK (7.8M classes), 104 size skips",
+    "per case: directg -e<max(b,0)>:<2m> canonical multiset equality (labelg), duplicate check (canonical and raw), digraph6 prefix check, total==lines, sum(B)==total, #B==subsets, -u stdout empty and stderr identical, @file (CRLF + junk line) identical, parts P=2 and P=3 (stats, -u, union, disjointness, subsets/total sums)",
+    "parts with P=7 and P=100 (more parts than representatives) on C~, EEh_, DQw: union equal, subsets sums equal",
+    "edge cases: no/one arg, graph6 header, n=0, n=11, short string, empty string, p/P 2/2, 1/0, -1/2, x, -U, @nonexistent, @empty, @blank line -> exit 1 no stdout; 1/2/3 and 1/2x accepted; -u before/after p/P; two p/P args",
+    "MAXAUT refusal: K8 (G~~~~{) and empty 8-vertex graph (G?????) -> exit 3, empty stdout, also with -u and with min_arcs 1000; K7+K1 (n=8, |Aut|=5040) accepted",
+    "extreme bounds: min_arcs 10^9, -10^9, INT_MAX, INT_MIN (overflow found), non-numeric",
+    "directg behaviour checks: -e0:4, -e2:4, -e4:4, -e5:4 (empty output, exit 0), -e-1:4 on P3; digraph6 row-major convention confirmed against formats.txt and directg -T",
+    "UBSan build of a copy (orb_ubsan) to confirm the INT_MIN overflow",
+    "pgrep after every batch: no process of mine left running"
+   ]
+  },
+  {
+   "workflow": "wf_4e4f1ed9-4c5",
+   "agent": "deploy_code",
+   "verdict": "SOUND",
+   "summary": "The orbit:p/P deployment is sound. Patched driver (diff vs n8/run_n8_jobs.sh is exactly the orbit branch, the comment line, and the MISMATCH condition): the cmd string quotes correctly (the graph never appears on a command line; the @file argument is $J/job$j.g6; the awk program is the same literal as the directg branch), the pgrep guard \"$J/job$j\\.g6\" matches the orbit command line (`orbitenum @n8/jobs/job<j>.g6 29 p/P`) and does not match job<j>0.g6, the MISMATCH check reads filter8's single \"total\" token in job<j>.stats, and orbitenum exit 3 (|Aut|>8192) and exit 1 (bad argument) both propagate through pipefail: FAILED logged, txt.tmp removed, no .done. deploy_orbit.py on a copy of the live tables (N8_JOBS_DIR) produced 3311 -> 3226 rows; my independent verifier (/tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_deploy_fable_01W9KhFw/scripts/verify_deploy.py) confirmed: ids unique, 13000..13013 unused before, the 14 new rows contiguous at line 3174 (first GF~~~{ row, before the 40 K8 decomp rows), no p/P row of the three graphs remains, all 3212 other rows byte-identical and in order, per-part expected recomputed from the dry-run logs (index = i mod P) with sums 1,179,317,832 / 330,741,720 / 84,866,528 = graph_counts, every job record matches a row (exact False for orbit rows, record key set unchanged), superseded ids 11074..11172 (99) removed from records and from the table, all other top-level keys unchanged, one 'orbitenum' record appended, check_accounting-style per-graph sums of exact:false records equal the exact counts. Assertions verified: re-apply refused (ids in use), a done target row refused, a running target row refused (process argv containing the job path), live loop refused on --apply without touching the table, stale job files of superseded unstarted rows removed (none exist in production now). Sandbox driver run (ids 99201-99211, W=12, patched driver, real binaries): orbit parts 0/3,1/3 finished; 2/3 with expected+1 -> MISMATCH logged, job.txt.bad kept, no .done; K8 orbit row -> exit 3 -> FAILED, no .done; orbit:5/3 -> exit 1 -> FAILED, no .done; \"-\" row of the same graph and the orbit parts agree on total/domfree/survivors (15797 and, for a backslash graph6 G?qv\\{, 4993); the ledger failed before the fix (part not done) and passed after redoing only that part; 9 ledger mutations (B count changed, B line deleted, .done removed, genlog missing, stats total changed, jobs.tsv expected changed, wrong part's genlog, split changed, final-line total edited) all exit 1. Restart simulation (deleted .done of two orbit jobs and the \"-\" job; left junk genlog/stats/txt/txt.tmp and a wrong stale job.g6): the driver rewrote job.g6 from jobs.tsv, overwrote genlog/stats/txt, left no txt.tmp, wrote .done, ledger ok, finished jobs untouched. No flaw that produces a wrong or unaccounted result; findings are minor/operational.",
+   "flaws": [
+    {
+     "severity": "MINOR",
+     "where": "n8/run_n8_jobs.sh (both live and patched), the pgrep -f \"$J/job$j\\.g6\" guard",
+     "description": "The guard matches ANY process whose argv contains the text n8/jobs/job<j>.g6, not only a pipeline. I reproduced this: when my test script text was in a shell's argv, the driver logged 'skip job 99202 (already running)' for every id whose .g6 path appeared in that argv and left them undone (DRIVER_EXIT with 5 of 11). Pre-existing, not introduced by the patch, and self-healing (the job is retried at the next relaunch), but an orchestrator shell command that mentions e.g. n8/jobs/job13000.g6 while the loop reaches that row delays that part by one relaunch cycle. Avoid literal job<j>.g6 paths in long-running shell commands after the deployment.",
+     "reproduction": "Run the sandbox driver from a bash -c whose command text contains 'n8/jobs/job99202.g6' (e.g. a heredoc that cats it): progress.log shows 'skip job 99202 (already running)'."
+    },
+    {
+     "severity": "NOTE",
+     "where": "n8/orbitenum/check_orbit.py line 25 (blines on job<j>.genlog) and line 27 (job<j>.stats)",
+     "description": "A part that is .done but whose genlog or stats file is missing makes the ledger crash with a traceback (FileNotFoundError) instead of listing the problem. Exit status is still non-zero, so no false 'ok' is possible; only the report is less readable.",
+     "reproduction": "rm job99208.genlog with job99208.done present; N8_JOBS_DIR=... python3 check_orbit.py -> Traceback, rc=1."
+    },
+    {
+     "severity": "NOTE",
+     "where": "n8/run_n8_jobs.sh run_job MISMATCH branch",
+     "description": "After a MISMATCH the job<j>.txt.bad file persists even when a later run of the same job succeeds (sandbox: job99203.txt and job99203.txt.bad coexist). Downstream globs (job*.txt, git add n8/jobs/*.txt) do not match .txt.bad, so it cannot be double counted; it is only clutter. Pre-existing behaviour.",
+     "reproduction": "Sandbox run 1 (expected+1) then run 2 after fixing expected: ls shows both job99203.txt and job99203.txt.bad."
+    },
+    {
+     "severity": "NOTE",
+     "where": "Sandbox evidence scope",
+     "description": "The S/O-line comparison between orbit parts and the directg '-' row was vacuous for the two graphs used (0 survivors each); agreement was checked on total/domfree/survivors/boundary/overflow counts only. Content equivalence of orbitenum vs directg is the separately refereed orbitenum question (and the orchestrator's prodcheck), not this deployment.",
+     "reproduction": "n/a"
+    },
+    {
+     "severity": "NOTE",
+     "where": "Scratchpad directory naming for referees",
+     "description": "Another referee instance also chose ref_deploy_fable/ and ran its own driver (ids 99100-99109) in the same sb/ tree at 08:40:10, overwriting my first sandbox's job files (my progress.log from 08:39 was intact). I redid everything in ref_deploy_fable_01W9KhFw/ with ids 99201+; nothing in that other referee's tree was touched or killed. Not a defect in the reviewed code, but the orchestrator should expect that referee's evidence in ref_deploy_fable/ to be mixed.",
+     "reproduction": "ls -la --time-style=full-iso /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_deploy_fable/sb/n8/jobs"
+    }
+   ],
+   "tests_run": [
+    "Read and diffed the live driver /home/user/CLTN/n8/run_n8_jobs.sh against the patched /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/orb/run_n8_jobs.sh.orbit (only the orbit branch, header comment, and MISMATCH condition differ); read deploy_orbit.py, check_orbit.py, orbitenum.c (main: @file read, exit codes 1/3, p/P indexing, final stderr line fields), check_accounting.py, relaunch.sh, stop_driver.sh, commit_progress.sh, k8decomp/deploy_jobs.py, check_k8decomp.py, the ANOMALIES K8 entry, and grepped n8/ for other readers of the split column (none parse it).",
+    "Inspected production state read-only: jobs.tsv 3312 lines, max id 12039, the 99 target rows contiguous at lines 3174-3272 with no job files on disk, graph_counts.json keys and job-record shape, running pipelines (ps), dryrun logs' final lines.",
+    "(A) cd /home/user/CLTN; N8_JOBS_DIR=<copy> python3 -I n8/orbitenum/deploy_orbit.py (dry run; copy md5-unchanged) and --apply on a second copy; then python3 -I .../ref_deploy_fable_01W9KhFw/scripts/verify_deploy.py <orig> <applied> /home/user/CLTN: all checks passed (3311 -> 3226 rows, ids unique, 14 new rows at line 3174 with expected [147048626,150155383,146831392,152609050,144440103,145185248,144443440,148604590] / [82658130,82047588,86189635,79846367] / [42123187,42743341] recomputed independently from the dry-run B lines, other rows byte-identical in order, records consistent, 'orbitenum' record consistent).",
+    "(A) assertion probes on copies: second apply -> 'ids 13000+ in use'; touch job11150.done -> 'already done: cannot mix schemes'; driver.pid in MY copy pointing at the live loop pid 25121 (read via /proc, not the live pidfile) with --apply -> 'driver loop is alive', table untouched; stale job11074.g6/.txt.tmp in copy -> removed on apply, job110740.keep kept; deploy run under a bash -c whose argv names <copy>/job11100.g6 -> 'part 11100 is running: cannot mix schemes'. Also checked the driver's pgrep pattern n8/jobs/job13000\\.g6 matches the orbit command line and not job130000.g6.",
+    "(B) Sandbox tree ref_deploy_fable_01W9KhFw/sb (n7/ symlinks to the real binaries, copy of orbitenum, copy of the patched driver), jobs.tsv ids 99201-99211: G?B~~{ orbit 0/3,1/3,2/3(expected+1) and '-'; G~~~~{ orbit:0/1 (exit 3); G?Bvv{ orbit:5/3 (exit 1); G?Bf~{ orbit 0/2,1/2; backslash graph G?qv\\{ orbit 0/2,1/2 and '-'. nice -n 19 bash n8/run_n8_jobs.sh 12 (56 s): 8 finished, 1 MISMATCH (txt.bad kept, no .done), 2 FAILED (no .done); parts' stats sum == '-' row stats for both graphs; canonical S/O lines identical (0 vs 0).",
+    "(B) Ledger against a fabricated graph_counts.json['orbitenum'] record (dryrun paths to my own count-only logs): rc=1 before the fix (part 99203 not done); after correcting expected and rerunning the driver (only 99203/99205/99206 touched; finished jobs' stats mtimes unchanged) rc=0 'orbitenum ledger ok'; 9 mutations each gave rc=1 (B count changed, B line deleted, .done removed, genlog missing [traceback], stats total changed, jobs.tsv expected changed, wrong part's genlog, split changed, final-line total edited).",
+    "(C) Restart simulation: removed .done of 99201, 99202, 99204; appended junk to job99201.genlog/.stats/.txt, created job99201.txt.tmp and job99204.txt.tmp, wrote a wrong graph into job99202.g6; reran the driver: all three redone cleanly (g6 rewritten from jobs.tsv, genlog/stats/txt overwritten, no txt.tmp, .done written), ledger rc=0.",
+    "First sandbox attempt in ref_deploy_fable/ was invalidated by another referee instance writing to the same directory at 08:40:10 and by my own tool-call argv matching the pgrep guard; both diagnosed and the whole run redone in ref_deploy_fable_01W9KhFw/ from a short command line (full outputs in .../ref_deploy_fable_01W9KhFw/sandbox_run2.out)."
+   ]
+  },
+  {
+   "workflow": "wf_4e4f1ed9-4c5",
+   "agent": "integration",
+   "verdict": "FLAWED",
+   "summary": "The four reviewed pieces are correct as code and the orbit rows flow through every downstream consumer unchanged; the flaws are in the deployment procedure and in two side tools, with one-line fixes.\n\nWhat was verified (reading plus sandbox runs on copies only):\n(1) Patched driver /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/orb/run_n8_jobs.sh.orbit: the diff against n8/run_n8_jobs.sh is exactly the orbit:* branch (orbitenum @job<j>.g6 29 p/P, stderr -> job<j>.genlog, stdout -> filter8 -> .stats/.txt.tmp) plus \"|| orbit:*\" in the MISMATCH condition; nothing else changed. In a sandbox (ids 99500-99509, W=12, 16-18-edge graphs) every orbit part finished with filter8 total == expected; a wrong expected gave MISMATCH (.txt.bad, no .done); a bad part string (5/2) gave FAILED (genlog \"bad argument 5/2\", no .done); a duplicate row of a running orbit job was skipped (\"skip job 99507 (already running)\"), so the pgrep guard matches orbitenum's \"@n8/jobs/job<j>.g6\" argument; the regexes job1300\\.g6 / job13000\\.g6 do not cross-match. Union of the p/P parts equals directg -e29:56 after labelg canonicalisation (367 and 128,067 classes, no duplicates). Arc bound: orbitenum enumerates |B| >= 29-|E(G)| with no upper bound and 2|E(G)| <= 56, so \"29..56\" and \"min_arcs 29\" are the same set; the three dry-run totals equal graph_counts.json (1,179,317,832 / 330,741,720 / 84,866,528). In orbitenum.c the part index counts only enumerated canonical B (idx++ after the popcount and canonicity tests), so deploy_orbit.py's \"i % P == p over the dry-run B lines\" is exactly orbitenum's own partition.\n(2) deploy_orbit.py, dry run and --apply with N8_JOBS_DIR on a copy of the live tables: rows 3311 -> 3226, ids 13000-13013, each orbit row's expected independently recomputed from the dry-run logs and equal, per-graph sums equal graph_counts, the 14 rows sit where row 11074 was (between 11073 and 12000), all 3212 other rows byte-identical, jobs.tsv and graph_counts.json['jobs'] agree as sets, 'k8decomp'/'resplit'/'repacked' records preserved, 'orbitenum' record has the fields check_orbit.py reads, the driver's awk extraction yields the single graph line. The live tables were not touched (backup == live file).\n(3) check_orbit.py on the sandbox ledger: \"orbitenum ledger ok\"; it catches a tampered genlog count, a tampered stats total, a missing .done and a missing row (exit 1 each).\n(4) Downstream consumers: check_accounting.py (copied into the sandbox) passes with exact-False orbit parts summed per graphs[0] against graph_counts[g] and flags a job without .done; its kept_lines glob job*.txt is unaffected (orbitenum's stderr never reaches .txt; .txt.bad/.txt.tmp do not match). run_n8_limit.py reads the orbit parts' S/O lines like any other (parse run) and gives the same verdict on a real S line and a random relabelling of it (orbitenum's representatives are labelled differently from directg's). after_prefilter2.sh, commit_progress.sh, relaunch.sh, stop_driver.sh never look at the split field; check_k8decomp.py filters split.startswith('decomp:') so orbit rows are ignored; ALL_JOBS_DONE counts rows of the new table (3226). The paper (notes/paper/paper.tex) quotes neither the job count nor the directg parts; \"3,311\" appears only in ANOMALIES.md (historical, K8 entry) and in the task tracker.\n\nPlaces that need a change (details in flaws): the deployment order lacks the commit step that the K8 swap had (36d33b2) and neither commit script adds job*.genlog, so the ledgers are not re-runnable after a container loss and a loss between deploy and commit can make the limit stage process the three graphs twice; make_jobs.py --repack silently reverts both swaps; resplit_jobs.py crashes on orbit:/decomp: rows; after_prefilter2.sh does not run the two ledger checks. Cosmetic: driver header comment, task-tracker job count 3,311 -> 3,226, ANOMALIES entry to append at deploy time.\n\nNote: another referee had chosen the same scratch directory name (ref_deploy_fable/sb); before I noticed, my first sandbox run overwrote ref_deploy_fable/sb/n8/jobs/jobs.tsv (08:40 UTC) and my driver skipped rows whose .done files came from its 08:39 run. I redid everything in ref_deploy_fable_integ_* and left the shared directory as is; that other referee has since moved to ref_deploy_fable_01W9KhFw.",
+   "flaws": [
+    {
+     "severity": "MAJOR",
+     "where": "Deployment order (task step 4) and /home/user/CLTN/n8/commit_progress.sh line 9, /home/user/CLTN/n8/after_prefilter2.sh line 11 (the git add lines)",
+     "description": "The order stop_driver -> deploy_orbit --apply -> cp driver -> relaunch has no commit step, and neither commit script adds n8/jobs/*.genlog. Consequences: (a) check_orbit.py and check_k8decomp.py read job<j>.genlog, which is never committed, so after a container loss (seven so far in this run) the per-B ledger cannot be re-run: the claim 'every representative B seen exactly once' would rest on files that no longer exist (project rule: no result without a re-runnable certificate). (b) A container loss between the swap and a manual commit restores the pre-swap jobs.tsv/graph_counts.json/driver (99 directg rows) while commit_progress.sh may already have committed job13000-13013.{done,stats,txt}: the driver re-runs the 99 directg parts, check_accounting.py sums only gc['jobs'] (the directg rows) and passes, but run_n8_limit.py globs n8/jobs/job*.txt and would classify the S/O lines of the three graphs twice (orbitenum and directg labellings differ, so the d6 'done' set does not dedupe), inflating the tally and duplicating HITS. The K8 swap avoided this by committing tables + driver + backups + ANOMALIES in the same step (commit 36d33b2); n8/orbitenum/ itself (source, scripts, 2.6 MB dry-run logs) is now committed (d490148), so only the per-part genlogs (about 2 MB for the 14 orbit parts plus about 0.4 MB for the 40 K8 batches: not a size problem) and the swap commit remain. Fix: add step 5 to the order: python3 test_ctln.py && git add n8/run_n8_jobs.sh n8/jobs/jobs.tsv n8/jobs/graph_counts.json n8/jobs/jobs.tsv.bak.<ts> n8/jobs/graph_counts.json.bak.<ts> ANOMALIES.md && git commit && git push (with the ANOMALIES entry: rows 3,311 -> 3,226, ids 13000-13013, expected ranges, backups). And append ' n8/jobs/*.genlog' to the git add line in both n8/commit_progress.sh and n8/after_prefilter2.sh.",
+     "reproduction": "grep -c genlog n8/commit_progress.sh n8/after_prefilter2.sh -> 0 and 0; git ls-files n8/jobs | grep -c genlog -> 0; git show --stat 36d33b2 shows the K8 swap committed tables, driver, backups and ANOMALIES together."
+    },
+    {
+     "severity": "MINOR",
+     "where": "/home/user/CLTN/n8/make_jobs.py, repack() (lines ~56-100), and main() if ever re-run",
+     "description": "repack() keeps only done/running jobs and re-packs every other graph with pack(), which emits directg p/P parts; on a copy of the post-swap table ('--repack 500000000') the 14 orbit rows AND the 40 K8 decomp rows vanished and were replaced by directg parts (GF~~~{ -> 0/3,1/3,2/3; K8 -> 0/2,1/2 = days of directg), while gc['orbitenum'] and gc['k8decomp'] stayed, so check_orbit.py/check_k8decomp.py would later fail with 'row missing' but the run itself would silently proceed on the reverted scheme. main() rewrites both tables from scratch (ids 0.., all records lost). Pre-existing for the K8 swap since 03:08. Fix (refuse rather than guess): at the top of repack(), after computing done, add  assert not any(':' in str(j['split']) and j['job_id'] not in done for j in old), 'repack would re-pack decomp:/orbit: rows into directg parts: finish them or remove their records first'  ; and a comment on main() that it must not be re-run after the K8/orbit swaps.",
+     "reproduction": "cd <copy with n8/jobs/{jobs.tsv,graph_counts.json} from a post-swap table>; python3 /home/user/CLTN/n8/make_jobs.py --repack 500000000; grep -c 'orbit:\\|decomp:' n8/jobs/jobs.tsv -> 0 (observed: 'table now 1808 jobs', 0 orbit rows, 0 decomp rows)."
+    },
+    {
+     "severity": "MINOR",
+     "where": "/home/user/CLTN/n8/resplit_jobs.py line 17-18 ('/' not in sp; p, P = map(int, sp.split('/')))",
+     "description": "An orbit:p/P (or decomp:...) row that is not done and not running is treated as a directg split row and int('orbit:0') raises ValueError; the script aborts before writing (so nothing is corrupted) but the tool is unusable while such rows are unfinished. Fix: replace  '/' not in sp  by  not re.fullmatch(r'\\d+/\\d+', sp)  so orbit:/decomp: rows are copied through unchanged.",
+     "reproduction": "cd <copy of post-swap tables>; python3 n8/resplit_jobs.py 3 -> ValueError: invalid literal for int() with base 10: 'orbit:0' (observed)."
+    },
+    {
+     "severity": "MINOR",
+     "where": "/home/user/CLTN/n8/after_prefilter2.sh (after the check_accounting block, line 7-9)",
+     "description": "The post-run step runs check_accounting.py only; the two ledger checks that the swaps introduced (check_k8decomp.py, check_orbit.py) are never run automatically, so a per-B discrepancy that the driver's total check cannot see (same total, different B multiset) would not gate the limit stage or the commit. Fix: after the check_accounting block add  for c in n8/k8decomp/check_k8decomp.py n8/orbitenum/check_orbit.py; do python3 $c > n8/$(basename $c .py).log 2>&1 || { echo \"$(date -u +%H:%M:%S) LEDGER_MISMATCH ($c)\" >> n8/jobs/progress.log; exit 1; }; done  and add the two .log names to .gitignore (as check_accounting.log is).",
+     "reproduction": "grep -c 'check_orbit\\|check_k8decomp' n8/after_prefilter2.sh -> 0."
+    },
+    {
+     "severity": "NOTE",
+     "where": "/home/user/CLTN/n8/orbitenum/deploy_orbit.py lines 33-38 (per-row .done/running asserts) and the timing of the swap",
+     "description": "The refusal is all-or-nothing: if the live loop has already started the first part of GF~~~{ (id 11074, next after the 42 K8-4K2 parts now running, 11044/11045 started at 08:37-08:38) before stop_driver.sh runs, the assert aborts the whole deploy, including the other two graphs. That is the correct behaviour (a graph cannot mix schemes) but the operator should check 'grep -c \"started job 1107\" n8/jobs/progress.log' first and, if a part has started, either wait for all 72 or drop ('GF~~~{', 'K8-K3', 8) from TARGETS and renumber ids; no code change needed.",
+     "reproduction": "tail n8/jobs/progress.log before the swap."
+    },
+    {
+     "severity": "NOTE",
+     "where": "Container-loss recovery: n8/orbitenum/orbitenum (gitignored binary) and n8/k8decomp/addarcs (untracked binary); n8/relaunch.sh does not build",
+     "description": "After a container restore the 14 orbit jobs and 40 K8 batches fail loudly (FAILED (pipeline exit) in progress.log, no .done, ALL_JOBS_DONE never reached) until bash n8/orbitenum/build.sh and the addarcs build are run; same pattern as n7/filter8 and n7/directg. Add both builds to whatever restart checklist rebuilds filter8 (the ANOMALIES restart entries do not say what is rebuilt).",
+     "reproduction": "git check-ignore n8/orbitenum/orbitenum -> ignored; git ls-files n8/k8decomp/addarcs -> empty."
+    },
+    {
+     "severity": "NOTE",
+     "where": "Patched driver header (lines 3-4) and bookkeeping text",
+     "description": "The header still says 'Each job: job<j>.g6 | directg -q -e29:56 [-s p/P] | filter8'; add '(orbit:p/P rows: n8/orbitenum/orbitenum @job<j>.g6 29 p/P | filter8, stderr -> job<j>.genlog)'. The task tracker entry #32 and future reports quoting '3,311 jobs' must read 3,226 after the swap; the n = 8 report must state that the enumeration used three methods (directg parts; K8 bidirected-subgraph batches, graph_counts.json['k8decomp']; orbitenum parts for the three graphs, graph_counts.json['orbitenum']). No downstream code depends on either.",
+     "reproduction": "sed -n 3,4p of the patched driver."
+    },
+    {
+     "severity": "NOTE",
+     "where": "Referee sandbox hygiene: /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_deploy_fable/",
+     "description": "Two referees chose the same directory name (both are Fable). My first sandbox run (08:40 UTC) overwrote ref_deploy_fable/sb/n8/jobs/jobs.tsv with my rows and my driver skipped rows whose .done files came from the other referee's 08:39 run; I then redid everything in ref_deploy_fable_integ_* and ref_deploy_fable/tbl (the deploy test, verified to be mine by timestamps) and did not touch the shared directory further. The other referee's later runs use ref_deploy_fable_01W9KhFw. If its first-run results look inconsistent, this is why.",
+     "reproduction": "ls -la --time-style=+%T ref_deploy_fable/sb/n8/jobs shows files from 08:39 (theirs) and 08:40 (mine)."
+    }
+   ],
+   "tests_run": [
+    "diff -u n8/run_n8_jobs.sh <patched driver>: only the orbit:* branch and the MISMATCH condition differ",
+    "Read n8/orbitenum/orbitenum.c in full: part index counts only enumerated canonical B; stderr = B lines + final line; @file reads first line; no arc upper bound",
+    "orbitenum -u vs directg -u -e29:56 counts on 5 graphs with 16-18 edges: all equal (367, 4993, 4993, 121443, 128067; plus 5591881)",
+    "Sandbox driver run (unique dir, ids 99500-99509, W=12, nice 19): '-' row, 5 orbit parts (P=2,3), directg 0/2 row, big orbit:0/1 job with duplicate row (skipped by pgrep guard), wrong-expected orbit row (MISMATCH, .txt.bad), bad part 5/2 (FAILED); driver exited in 51 s; all totals == expected; genlog format checked",
+    "Union of orbit parts vs directg -e29:56 (labelg canonical, sorted): equal sets, no duplicates, for G?B~vk (P=2) and GCzbv[ (P=3)",
+    "deploy_orbit.py dry run and --apply with N8_JOBS_DIR on a copy of the live tables: rows 3311->3226, ids 13000-13013, per-part expected recomputed independently from dryrun/*.log and equal, per-graph sums == graph_counts, placement, consistency jobs.tsv == gc['jobs'], other records preserved, live tables untouched (cmp)",
+    "check_accounting.py (sandbox copy, cwd=sandbox): ok on orbit parts with exact False; negative: registered job without .done -> 'job 99508 not done'",
+    "check_orbit.py (N8_JOBS_DIR, sandbox): 'orbitenum ledger ok'; negatives: tampered genlog count, tampered stats total, part without .done, missing row -> exit 1 with the expected messages",
+    "run_n8_limit.py (repo script, --parts/--out in sandbox): parses orbit-part job*.txt; a real S line and a random relabelling of it get the same verdict (never / no legal beta)",
+    "resplit_jobs.py on a copy of the post-swap table: ValueError on 'orbit:0' before any write",
+    "make_jobs.py --repack 500000000 on a copy of the post-swap table: 0 orbit rows and 0 decomp rows remain; stale 'orbitenum'/'k8decomp' records remain",
+    "greps over n8/ and top-level *.py/*.sh/*.md/*.tex for split/decomp/genlog/exact/jobs.tsv/graph_counts/3,311/directg parts; git ls-files / git log for tables, driver, n8/orbitenum, genlogs; .gitignore review",
+    "pgrep regex cross-match check (job1300 vs job13000); awk extraction of job13000.g6 from the post-swap table",
+    "Final: pgrep for my sandbox paths -> none; git status of the repository shows no change from me"
+   ]
+  }
+ ]
 }

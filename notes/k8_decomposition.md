@@ -96,8 +96,10 @@ underlying graph isomorphic to G are in bijection with the pairs
 
     (B in R_G,  orbit of Stab(B) = {g in Aut(G) : g(B) = B} on the orientations of G - B),
 
-by the same surjectivity and injectivity steps as in the lemma (sigma now ranges over Aut(G); B = B'
-because R_G has one representative per Aut(G)-orbit; pi lies in Stab(B)).  Arcs = |E(G)| + |B|, so the
+by the same surjectivity and injectivity steps as in the lemma: a digraph D whose underlying graph is merely
+isomorphic to G is first moved by some vertex permutation tau with tau(U(D)) = G, after which sigma ranges over
+Aut(G) and takes B(tau D) to its representative in R_G; B = B' because R_G has one representative per
+Aut(G)-orbit; pi lies in Stab(B).  Arcs = |E(G)| + |B|, so the
 29..56-arc restriction is |B| >= 29 - |E(G)|.
 
 `n8/orbitenum/orbitenum G min_arcs [p/P]` implements this directly, without directg: Aut(G) by brute force

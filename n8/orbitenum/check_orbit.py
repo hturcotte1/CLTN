@@ -22,6 +22,7 @@ for rec in gc.get('orbitenum', []):
             if j not in rows or rows[j][2] != f'orbit:{p}/{P}' or rows[j][3] != g: problems.append(f'{g}: row {j} missing or not orbit:{p}/{P}'); continue
             if not os.path.exists(f'{J}/job{j}.done'): problems.append(f'{g}: part {j} not done'); continue
             want = [dry[i] for i in range(len(dry)) if i % P == p]
+            if not (os.path.exists(f'{J}/job{j}.genlog') and os.path.exists(f'{J}/job{j}.stats')): problems.append(f'{g}: part {j} genlog or stats file missing'); continue
             got, gfin = blines(f'{J}/job{j}.genlog')
             if got != want: problems.append(f'{g}: part {j} genlog B lines differ from the dry run ({len(got)} vs {len(want)})')
             tot = sum(c for _, c in got)

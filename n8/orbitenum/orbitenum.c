@@ -98,7 +98,7 @@ int main(int argc, char **argv) {
     for (int g = 0; g < naut; g++) for (int b = 0; b < nbytes; b++) for (int v = 0; v < 256; v++) {
         u64 r = 0; for (int k = 0; k < 8; k++) if ((v >> k & 1) && 8 * b + k < m) r |= (u64)1 << emap[g][8 * b + k];
         tbl[((size_t)g * nbytes + b) * 256 + v] = r; }
-    int lo = min_arcs - m; if (lo < 0) lo = 0;
+    long long lo = (long long)min_arcs - m; if (lo < 0) lo = 0;   /* long long: no signed overflow for absurd bounds */
     u64 total = 0; long long nsub = 0, idx = 0;
     static int stab[MAXAUT]; static unsigned char posmap[MAXAUT][MAXE], pflip[MAXAUT][MAXE]; int F[MAXE], posOf[MAXE];
     for (u64 B = 0; B < ((u64)1 << m); B++) {

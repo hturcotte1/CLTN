@@ -44,3 +44,5 @@ n8/jobs/driver.pid
 n8/orbitenum/orbitenum
 n8/orbitenum/dryrun/*.tmp
 n8/k8decomp/addarcs
+n8/check_k8decomp.log
+n8/check_orbit.log

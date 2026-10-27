@@ -13,7 +13,7 @@ running = subprocess.run(['pgrep', '-f', '-a', 'directg'], capture_output=True, 
 new_rows = []; superseded = []; added = []; next_id = 10000
 for l in body:
     j, ex, sp, gs = l.split('\t')
-    if os.path.exists(f'{J}/job{j}.done') or '/' not in sp or re.search(rf'{J}/job{j}\.g6\b', running):
+    if os.path.exists(f'{J}/job{j}.done') or not re.fullmatch(r'\d+/\d+', sp) or re.search(rf'{J}/job{j}\.g6\b', running):   # decomp:/orbit: rows pass through unchanged
         new_rows.append(l); continue
     p, P = map(int, sp.split('/'))
     superseded.append(j)

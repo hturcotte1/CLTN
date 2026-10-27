@@ -1227,3 +1227,38 @@ so a reclaim costs at most ~4 worker-hours. If reclaims continue under (2), the 
 * Expected effect: the K8 block takes about 21 CPU-minutes (full pipeline about 450 K digraphs/s) instead of
   days; it starts once the last 24 unstarted parts of K8 minus an edge are through (about 6 h).  New ETA for
   the whole n = 8 prefilter: about 09:30-10:30 UTC on Oct 27, instead of Oct 29-31.
+
+## 2026-10-27 Three more high-symmetry graphs enumerated by orbits instead of directg (n8/orbitenum)
+
+After the K8 swap (03:08 UTC) the four slowest remaining graphs were directg parts of K8-4K2 (42 parts, in
+progress), K8-K3 (72 parts, |Aut| 720, about 7 h of four-worker time at directg's rate), K8-K_{1,5} (21 parts) and
+K8-(K2+K_{1,5}) (6 parts).  The K8 lemma holds relative to any underlying graph G (bidirected subgraph B up to Aut(G),
+orientation of G-B up to the stabilizer of B; proof in notes/k8_decomposition.md, "Relative form"), so a small C
+enumerator (n8/orbitenum/orbitenum, brute-force Aut(G), least-element representatives) replaces directg for one
+graph at a time with exact per-part counts.  Validation before the swap: canonical-form set equality and
+filter8-output equality against directg on eight graphs at n = 5..7 (up to 10.8M classes) and, by a referee, on
+n = 8 graphs (128,067 classes); class counts equal directg's on 16 (graph, bound) cases; count-only runs reproduce
+the exact Burnside counts of all four n = 8 graphs (K8-K3 1,179,317,832 in 47 s; K8-4K2 695,586,658 in 12 s;
+K8-K_{1,5} 330,741,720 in 13 s; K8-(K2+K_{1,5}) 84,866,528 in 3 s); the p/P parts partition the output; on
+production data, two finished directg-split graphs (GQ~v~w, 316,662,577 digraphs in 9 parts; GEzf~{, 263,443,368 in
+6 parts) give the same filter8 totals and the same (empty) strict-survivor sets, and orbit part 0/64 of K8-e
+(79,218,644 digraphs, 97 s) produced 1,989 strict-survivor lines, all among the 143,266 distinct canonical
+strict-survivor lines of the 321 finished directg parts of K8-e.  Four adversarial referees (lemma prover,
+brute-force-oracle code referee, deploy-script referee, pipeline-integration referee) returned SOUND; a fifth
+(code vs nauty) is recorded in notes/k8_decomposition_referees.json when it returns.  The integration referee's
+findings were fixed before the swap: after_prefilter2.sh now runs the two per-B ledgers (check_k8decomp.py,
+check_orbit.py) before the limit stage and both commit scripts add n8/jobs/*.genlog (the ledgers' evidence);
+make_jobs.py --repack refuses while decomp:/orbit: rows are unfinished; resplit_jobs.py passes them through;
+relaunch.sh rebuilds the three gitignored binaries if a container restore loses them.
+
+Swap (09:27 UTC, driver stopped, tables rewritten with backups, patched driver installed, relaunched; K8-4K2
+left on directg because its parts were already running): 99 directg parts (ids 11074..11172) replaced by 14 orbit
+parts, ids 13000..13013 (K8-K3 8 parts, K8-K_{1,5} 4, K8-(K2+K_{1,5}) 2), expected counts exact per part from the
+dry runs in n8/orbitenum/dryrun, recorded in graph_counts.json['orbitenum']; 3,311 -> 3,226 jobs.  Expected cost
+of the 14 parts: about 20 CPU-minutes instead of about 8 wall-hours.
+
+Observation worth keeping: every one of the 181,483 strict-survivor lines of the job stage so far sits in one of
+15 directg-split (high-symmetry) graphs -- 143,266 in K8-e, 19,701 in K8-2K2 (GV~~~{), 16,123 in G]~~~{ -- and
+none in the 135 unsplit jobs (55,077,003,264 digraphs) or in shards 0..8 of n8/parts (5,129,155,711).  Consistent with the n = 7 picture (counterexamples
+are dense, symmetric graphs), but it means the whole n = 8 candidate list comes from the graphs that needed the
+special enumeration schemes, so the per-B ledgers are not a formality.

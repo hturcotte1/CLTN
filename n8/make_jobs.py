@@ -66,6 +66,9 @@ def repack(target, bands=None):
     gc = json.load(open('n8/jobs/graph_counts.json'))
     old = gc['jobs']; cnt = gc['graph_counts']; order = list(cnt.keys())      # geng order
     done = {j['job_id'] for j in old if os.path.exists(f"n8/jobs/job{j['job_id']}.done")}
+    # decomp:/orbit: rows (K8 batches, orbitenum parts) must never be re-packed into directg parts (that would
+    # silently revert the swaps recorded in graph_counts.json['k8decomp'] / ['orbitenum']): refuse rather than guess.
+    assert not any(':' in str(j['split']) and j['job_id'] not in done for j in old), 'repack would re-pack unfinished decomp:/orbit: rows into directg parts: finish them or remove their records first'
     done |= running_job_ids()            # in-flight jobs keep their rows (the new driver waits for their slots)
     kept = [j for j in old if j['job_id'] in done]
     covered = set()
