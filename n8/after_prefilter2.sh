@@ -2,6 +2,8 @@
 # after_prefilter2.sh -- when every n = 8 job is done: close the accounting chain, run the exact limit stage on
 # the S/O lines of shards 0..8 and of all jobs, and commit.  Replaces after_prefilter.sh (geng-shard scheme).
 cd "$(dirname "$0")/.." || exit 1
+# never run twice: a second pass with every line already in the results file would rewrite the tally as all-skipped
+grep -q AFTER_PREFILTER_DONE n8/jobs/progress.log 2>/dev/null && { echo "after_prefilter2: already done"; exit 0; }
 until grep -q ALL_JOBS_DONE n8/jobs/progress.log 2>/dev/null; do sleep 600; done
 if ! python3 n8/check_accounting.py > n8/check_accounting.log 2>&1; then
   echo "$(date -u +%H:%M:%S) ACCOUNTING_MISMATCH (see n8/check_accounting.log)" >> n8/jobs/progress.log; exit 1

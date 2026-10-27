@@ -1,0 +1,1 @@
+total 801558826511 domfree 113697991934 survivors 417951273 boundary 417603634 overflow 0

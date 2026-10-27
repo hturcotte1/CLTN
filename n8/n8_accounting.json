@@ -1,0 +1,21 @@
+{
+ "ok": true,
+ "problems": [],
+ "n_problems": 0,
+ "aggregate": {
+  "total": 801558826511,
+  "domfree": 113697991934,
+  "survivors": 417951273,
+  "boundary": 417603634,
+  "overflow": 0
+ },
+ "space_total": 801558826511,
+ "kept_lines": {
+  "S": 347639,
+  "O": 0,
+  "other": 0
+ },
+ "shards_checked": 9,
+ "jobs_checked": 3226,
+ "split_graphs_checked": 201
+}
