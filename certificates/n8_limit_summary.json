@@ -1,0 +1,123 @@
+{
+ "n": 8,
+ "date": "2026-10-28",
+ "scope": "eps -> 0 limit classification of the full support of every digraph on 8 vertices whose underlying graph has 15..28 edges (digraphs with sparser underlying graphs are excluded by the e_2 edge bound, Lemma A.2); finite-eps map not done",
+ "enumeration": {
+  "digraphs_read": 801558826511,
+  "exact_count": null,
+  "domination_free": 113697991934,
+  "spectral_survivors": 417951273,
+  "strict": 347639,
+  "boundary_never_limit_stable": 417603634,
+  "overflow_undecided": 0,
+  "accounting": {
+   "ok": true,
+   "kept_lines": {
+    "S": 347639,
+    "O": 0,
+    "other": 0
+   },
+   "shards_checked": 9,
+   "jobs_checked": 3226,
+   "split_graphs_checked": 201
+  },
+  "schemes": "geng shards 0..8 (n8/parts); directg parts (n8/jobs); K8 by bidirected subgraph (n8/k8decomp, 40 batches, ledger check_k8decomp.py); K8-K3, K8-K_{1,5}, K8-(K2+K_{1,5}) by orbitenum (n8/orbitenum, 14 parts, ledger check_orbit.py)"
+ },
+ "limit_stage": {
+  "S": 347639,
+  "O": 0,
+  "never_positivity": 331427,
+  "never_full": 7078,
+  "stable_somewhere": 9134,
+  "escalate": 0,
+  "complete": 1,
+  "stable_noncomplete": 9133,
+  "seconds": 10776.6,
+  "sharded": 4,
+  "interrupted_single_run_records_cross_checked": 64196
+ },
+ "hits": 9133,
+ "hits_file": "n8/n8_limit_HITS.jsonl",
+ "results_file": "n8/n8_limit_results.jsonl",
+ "edge_counts": [
+  [
+   29,
+   2
+  ],
+  [
+   30,
+   27
+  ],
+  [
+   31,
+   120
+  ],
+  [
+   32,
+   269
+  ],
+  [
+   33,
+   562
+  ],
+  [
+   34,
+   1079
+  ],
+  [
+   35,
+   1485
+  ],
+  [
+   36,
+   1406
+  ],
+  [
+   37,
+   1305
+  ],
+  [
+   38,
+   768
+  ],
+  [
+   39,
+   510
+  ],
+  [
+   40,
+   476
+  ],
+  [
+   41,
+   581
+  ],
+  [
+   42,
+   353
+  ],
+  [
+   43,
+   153
+  ],
+  [
+   44,
+   34
+  ],
+  [
+   45,
+   3
+  ]
+ ],
+ "stable_intervals_per_hit": [
+  [
+   1,
+   9133
+  ]
+ ],
+ "hits_with_unbounded_stable_interval": 0,
+ "hits_whose_first_interval_starts_at_beta_2": 8162,
+ "hits_with_all_four_pointwise_witnesses_stable_and_positive": 9051,
+ "hits_with_a_legal_stable_positive_witness_q_gt_1": 9096,
+ "status": "CANDIDATES pending hand-verification by the user and independent machine confirmation (as for n = 7, task 28); a claimed counterexample stops the run and goes to the human before anything is built on it"
+}

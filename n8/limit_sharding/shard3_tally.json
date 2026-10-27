@@ -1,0 +1,12 @@
+{
+ "S": 86909,
+ "O": 0,
+ "never_positivity": 82859,
+ "never_full": 1821,
+ "stable_somewhere": 2229,
+ "escalate": 0,
+ "complete": 0,
+ "stable_noncomplete": 2229,
+ "skipped_done": 0,
+ "seconds": 2669.2
+}
