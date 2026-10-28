@@ -1,0 +1,412 @@
+[
+ {
+  "name": "3cycle",
+  "eps": "1/4",
+  "delta": "1/2",
+  "q": "3/2",
+  "legal": true,
+  "x": [
+   "4/13",
+   "4/13",
+   "4/13"
+  ],
+  "x_pos": true,
+  "eig_re": [
+   -3.249999999999999,
+   0.12500000000000003,
+   0.12500000000000003
+  ],
+  "max_re": 0.12500000000000003,
+  "trajectories": [
+   {
+    "kind": "perturb0.3",
+    "T": 2000.0,
+    "err_start": 0.23832828058174532,
+    "err_end": 0.940543447589895,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.21638557239686296,
+    "min_x_end": 0.030371875503754753
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 20000.0,
+    "err_start": 0.23832828058174552,
+    "err_end": 0.9016582455993858,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.15833761393567103,
+    "min_x_end": 0.030259001354035142
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 2000.0,
+    "err_start": 0.22413206723775705,
+    "err_end": 1.160068297020623,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.16289536122029138,
+    "min_x_end": 0.08731010060600485
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 20000.0,
+    "err_start": 0.22413206723775722,
+    "err_end": 0.9300844758790507,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.2103634542124907,
+    "min_x_end": 0.021512468960292058
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 2000.0,
+    "err_start": 0.29684081726065514,
+    "err_end": 0.946463104793349,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.18073814273523264,
+    "min_x_end": 0.01647289083281567
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 20000.0,
+    "err_start": 0.29684081726065514,
+    "err_end": 1.1117583209722706,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.16206931578793035,
+    "min_x_end": 0.06766132125276646
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 2000.0,
+    "err_start": 0.0013294463273954282,
+    "err_end": 1.0486067345809396,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.16085064391375897,
+    "min_x_end": 0.05408929064062018
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 20000.0,
+    "err_start": 0.0013294463273952478,
+    "err_end": 1.071041518185036,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.22216868324693917,
+    "min_x_end": 0.06447741625386987
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 2000.0,
+    "err_start": 0.0014707824740751163,
+    "err_end": 0.9444085662484584,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.2058514320507338,
+    "min_x_end": 0.017105056538935886
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 20000.0,
+    "err_start": 0.0014707824740752967,
+    "err_end": 0.9177397200616818,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.1590962206416084,
+    "min_x_end": 0.038138518980289866
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 2000.0,
+    "err_start": 0.0029730017006064785,
+    "err_end": 1.0980670534081471,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.1617899333600697,
+    "min_x_end": 0.06407544339315052
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 20000.0,
+    "err_start": 0.0029730017006064785,
+    "err_end": 1.0110886182707806,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.22246150331528125,
+    "min_x_end": 0.045442746268
+   },
+   {
+    "kind": "uniform",
+    "T": 2000.0,
+    "err_start": 5.428240959932251,
+    "err_end": 1.1755991646196136,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.15935766720149835,
+    "min_x_end": 0.13142408348910486
+   },
+   {
+    "kind": "uniform",
+    "T": 20000.0,
+    "err_start": 5.428240959932252,
+    "err_end": 0.9586557668851692,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.1912893605150427,
+    "min_x_end": 0.01272130249687101
+   },
+   {
+    "kind": "uniform",
+    "T": 2000.0,
+    "err_start": 2.9815074277747,
+    "err_end": 1.1791236499392999,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.16201652720350282,
+    "min_x_end": 0.11083460059966022
+   },
+   {
+    "kind": "uniform",
+    "T": 20000.0,
+    "err_start": 2.9815074277747,
+    "err_end": 0.9575694582180477,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.198769612132286,
+    "min_x_end": 0.013055551317523773
+   },
+   {
+    "kind": "uniform",
+    "T": 2000.0,
+    "err_start": 2.3467773317639065,
+    "err_end": 1.1772188846739888,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.15996751158670544,
+    "min_x_end": 0.1277508848854706
+   },
+   {
+    "kind": "uniform",
+    "T": 20000.0,
+    "err_start": 2.346777331763906,
+    "err_end": 0.9596091636992856,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.19239217947120413,
+    "min_x_end": 0.012427949630989046
+   }
+  ],
+  "n_traj": 18,
+  "n_converged": 0,
+  "n_stayed_all_active": 0,
+  "verdict": "does NOT converge to positive full-support fixed point (as expected)"
+ },
+ {
+  "name": "3cycle",
+  "eps": "1/100",
+  "delta": "29/2500",
+  "q": "2871/2500",
+  "legal": true,
+  "x": [
+   "625/1876",
+   "625/1876",
+   "625/1876"
+  ],
+  "x_pos": true,
+  "eig_re": [
+   -3.0015999999999994,
+   0.0008000000000001548,
+   0.0008000000000001548
+  ],
+  "max_re": 0.0008000000000001548,
+  "trajectories": [
+   {
+    "kind": "perturb0.3",
+    "T": 2000.0,
+    "err_start": 0.2383282805817453,
+    "err_end": 0.44711011311792126,
+    "stayed_all_active": true,
+    "end_support": 3,
+    "end_residual": 0.0028137494665892437,
+    "min_x_end": 0.21900247259693711
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 20000.0,
+    "err_start": 0.23832828058174546,
+    "err_end": 0.9995295454428467,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.005441273483201781,
+    "min_x_end": 0.0001567345939343501
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 2000.0,
+    "err_start": 0.22413206723775717,
+    "err_end": 0.9310939718103659,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.006390749384781791,
+    "min_x_end": 0.0539118043589418
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 20000.0,
+    "err_start": 0.22413206723775717,
+    "err_end": 1.0081773462654748,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.006248094239689472,
+    "min_x_end": 0.09796700249381445
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 2000.0,
+    "err_start": 0.2968408172606551,
+    "err_end": 0.987152881669175,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.006679850432186496,
+    "min_x_end": 0.004280090062241771
+   },
+   {
+    "kind": "perturb0.3",
+    "T": 20000.0,
+    "err_start": 0.2968408172606551,
+    "err_end": 0.9999997639286481,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.005379657831181439,
+    "min_x_end": 7.864850478352181e-08
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 2000.0,
+    "err_start": 0.0013294463273952424,
+    "err_end": 0.003485328176152599,
+    "stayed_all_active": true,
+    "end_support": 3,
+    "end_residual": 2.0966952207601697e-05,
+    "min_x_end": 0.33240589695818773
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 20000.0,
+    "err_start": 0.0013294463273954091,
+    "err_end": 0.946771704670801,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.006208036888709245,
+    "min_x_end": 0.017733307345815262
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 2000.0,
+    "err_start": 0.001470782474075208,
+    "err_end": 0.004466030682294612,
+    "stayed_all_active": true,
+    "end_support": 3,
+    "end_residual": 2.5426422331331633e-05,
+    "min_x_end": 0.33166776696352124
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 20000.0,
+    "err_start": 0.001470782474075208,
+    "err_end": 0.9661925319753939,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.006580478695052516,
+    "min_x_end": 0.04336654037477493
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 2000.0,
+    "err_start": 0.0029730017006064976,
+    "err_end": 0.007284735506019381,
+    "stayed_all_active": true,
+    "end_support": 3,
+    "end_residual": 4.547394002102356e-05,
+    "min_x_end": 0.33132768203777935
+   },
+   {
+    "kind": "perturb0.003",
+    "T": 20000.0,
+    "err_start": 0.0029730017006064976,
+    "err_end": 0.9404202072743999,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.006388760614694677,
+    "min_x_end": 0.05771490345954946
+   },
+   {
+    "kind": "uniform",
+    "T": 2000.0,
+    "err_start": 4.936925558563891,
+    "err_end": 0.9999999999304741,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.005412268412845145,
+    "min_x_end": 2.3162967327499737e-11
+   },
+   {
+    "kind": "uniform",
+    "T": 20000.0,
+    "err_start": 4.936925558563892,
+    "err_end": 0.9956052230020557,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.005698660372727482,
+    "min_x_end": 0.0014641447887607725
+   },
+   {
+    "kind": "uniform",
+    "T": 2000.0,
+    "err_start": 2.6771977523718586,
+    "err_end": 0.9999998796386677,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.005382385889806884,
+    "min_x_end": 4.0099057967389806e-08
+   },
+   {
+    "kind": "uniform",
+    "T": 20000.0,
+    "err_start": 2.6771977523718586,
+    "err_end": 0.9999999999978864,
+    "stayed_all_active": false,
+    "end_support": 2,
+    "end_residual": 0.005426504811774202,
+    "min_x_end": 7.041633098939856e-13
+   },
+   {
+    "kind": "uniform",
+    "T": 2000.0,
+    "err_start": 2.0909805658530902,
+    "err_end": 1.027342908127943,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.006214169275720188,
+    "min_x_end": 0.09250751847864516
+   },
+   {
+    "kind": "uniform",
+    "T": 20000.0,
+    "err_start": 2.0909805658530893,
+    "err_end": 0.9649283105044739,
+    "stayed_all_active": false,
+    "end_support": 3,
+    "end_residual": 0.006584066111026854,
+    "min_x_end": 0.042694191391517165
+   }
+  ],
+  "n_traj": 18,
+  "n_converged": 0,
+  "n_stayed_all_active": 4,
+  "verdict": "does NOT converge to positive full-support fixed point (as expected)"
+ }
+]

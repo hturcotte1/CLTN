@@ -1,0 +1,2 @@
+geneson_6node &EZjtwWE legal True q 2871/2500 x_pos True max_re -1.36e-05 T_long 2209357.039337065 horizon_ok True RED [] short_conv 0 / 20 long_conv 0 / 3 long_ends_full_fp 2 long errs ['2.2e-09', '1.5e-09', '0.65'] end supports [6, 6, 5] wall 128.9
+K8_complete &G^z~^z~^z~^w legal True q 3/2 x_pos True max_re -0.25 T_long 2000.0 horizon_ok True RED [] short_conv 18 / 20 long_conv 3 / 3 long_ends_full_fp 3 long errs ['1.7e-15', '1.9e-15', '1.7e-15'] end supports [8, 8, 8] wall 0.3

@@ -75,5 +75,8 @@ if os.path.exists('anchors.json'):
         T_long=a['T_long'], horizon_sufficient=a['horizon_sufficient'], RED=a['red_reasons'], n_long_converged=a['n_long_converged'], n_long=len(a['long']),
         n_short_converged=a['n_short_converged'], long_err_end=[r['err_end'] for r in a['long']], long_end_supports=[r['end']['size'] for r in a['long']],
         short_end_supports=[r['end']['size'] for r in a['short']], expect=a['expect']) for a in A]
+S['anchors_from_log'] = [l.strip() for l in open('anchors.log')] if os.path.exists('anchors.log') else []
+if os.path.exists('anchors_3cycle.json'):
+    S['anchors_3cycle'] = [{k: v for k, v in a.items() if k != 'trajectories'} for a in json.load(open('anchors_3cycle.json'))]
 json.dump(S, open('summary.json', 'w'), indent=1)
 print(json.dumps(S, indent=1))
