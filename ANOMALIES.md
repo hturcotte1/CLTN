@@ -1353,3 +1353,15 @@ the never side (grids of legal points on 600 'never' records) and the filter8 bo
 B-flagged digraphs, a float dynamics sanity check (explicitly non-decision), an adversarial end-to-end referee
 of the enumeration chain (edge/arc bound, Burnside counts, accounting, filter criterion, limit-stage semantics),
 and a hand-check kit with six fully worked candidates for any later human reader.
+
+## 2026-10-28  Corrections from the chain referee of the second verification (wording and evidence)
+
+* The 417,603,634 'B' lines of the n = 8 prefilter do NOT all have alpha = -1/2 exactly: filter8's B flag means
+  the Hurwitz test of g(mu) met a zero minor before any negative one, i.e. alpha >= -1/2 (the referee found a later
+  negative minor, alpha > -1/2 decidedly, in 23 of 122 cross-checked B lines).  The conclusion is unchanged: by
+  Lemma I.3(c2) any alpha >= -1/2 fails condition (3) for all large t on every legal ray, so B is a non-survivor of
+  the LIMIT map, not undecided.  Because B lines were discarded at the shell level, finite-eps-only counterexamples
+  (alpha = -1/2 exactly, like &FNFL~[udo? at n = 7) may live among them: the n = 8 result is the eps -> 0 limit map
+  only, and that caveat travels with every statement of it (certificates/n8_limit_summary.json 'scope').
+* The K8-e orbit-enumerator full-set-equality check left no stored output; the canonical strict-survivor sets of
+  both sides (143,266 lines each, byte-identical), the per-part stats and the log are now in n8/orbitenum/k8e_check/.

@@ -1,0 +1,3 @@
+K8E_FULL parts 16 orbitenum_total=4666650090 filter8_total=4666650090 exact=5339129738 representatives_B=111024 S/O lines 132936 (distinct 132936) vs directg union 143266 (distinct 143266) DIFFER
+parts 0..13: S/O lines 125256 (distinct 125256); strict from stats: 125256; NOT in the directg union: 0 (must be 0); digraphs covered: 4666650090 of 5339129738
+K8E_FULL parts 16 orbitenum_total=5339129738 filter8_total=5339129738 exact=5339129738 representatives_B=125117 strict_from_stats=143266 S/O lines 143266 (distinct 143266) vs directg union 143266 (distinct 143266) EQUAL
