@@ -1,0 +1,67 @@
+{
+ "relabelling_invariance_failures": 0,
+ "bruteforce_sample_k": 500,
+ "bruteforce_sample_size": 19,
+ "bruteforce_sample_distinct": 19,
+ "bruteforce_consistent_with_own": true,
+ "q_bound_2_refined": {
+  "&GUru\\Aw^qz]w": {
+   "stored_beta_interval": [
+    "2",
+    "3"
+   ],
+   "refined_beta_interval_12_bisections": [
+    "8495/4096",
+    "531/256"
+   ],
+   "q_upper_bound_refined": "275/256",
+   "q_upper_bound_refined_float": 1.07421875,
+   "q_lower_bound_refined": "4399/4096",
+   "deg": 12,
+   "minpoly_hi_to_lo": [
+    10609,
+    -192404,
+    1554116,
+    -7402936,
+    23339604,
+    -52184688,
+    86908064,
+    -111012160,
+    109374528,
+    -82497536,
+    46497792,
+    -17825792,
+    4194304
+   ]
+  },
+  "&GZr[^`\\VJ}Iw": {
+   "stored_beta_interval": [
+    "2",
+    "3"
+   ],
+   "refined_beta_interval_12_bisections": [
+    "8495/4096",
+    "531/256"
+   ],
+   "q_upper_bound_refined": "275/256",
+   "q_upper_bound_refined_float": 1.07421875,
+   "q_lower_bound_refined": "4399/4096",
+   "deg": 12,
+   "minpoly_hi_to_lo": [
+    10609,
+    -192404,
+    1554116,
+    -7402936,
+    23339604,
+    -52184688,
+    86908064,
+    -111012160,
+    109374528,
+    -82497536,
+    46497792,
+    -17825792,
+    4194304
+   ]
+  }
+ }
+}

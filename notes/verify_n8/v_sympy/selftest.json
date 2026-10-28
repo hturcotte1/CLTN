@@ -1,0 +1,55 @@
+{
+ "geneson_rows": [
+  "011011",
+  "101011",
+  "110101",
+  "111000",
+  "011000",
+  "000110"
+ ],
+ "geneson_reencode": true,
+ "geneson_control": {
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "routh_agrees": true,
+  "closed_form_ok": true,
+  "charpoly_crosscheck": true
+ },
+ "geneson_complete": false,
+ "K8_control": {
+  "legal": true,
+  "positive": true,
+  "stable": true,
+  "q": "2000/1001"
+ },
+ "K8_minus_arc_q11_control": {
+  "legal": true,
+  "positive": false,
+  "stable": false,
+  "q": "1000/91"
+ },
+ "single_arc_0_to_1_d6": "&GO??????????",
+ "single_arc_roundtrip": true,
+ "first_record_arcs": [
+  29,
+  29
+ ],
+ "sturm_x2_minus_2": [
+  1,
+  0,
+  [
+   "741455/524288",
+   "1482911/1048576"
+  ]
+ ],
+ "hurwitz_lam2_plus_1_minors": [
+  "0",
+  "0"
+ ],
+ "hurwitz_unstable_minors": [
+  "-3",
+  "-6"
+ ],
+ "hurwitz_lam_plus_1_pow8_all_positive": true
+}

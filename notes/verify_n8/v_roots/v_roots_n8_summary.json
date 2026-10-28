@@ -1,0 +1,37 @@
+{
+ "verifier": "v_roots",
+ "K_sympy_every_kth_graph": 6,
+ "T2_interior_point": 10000,
+ "n_graphs": 9133,
+ "n_confirmed": 9133,
+ "n_refuted": 0,
+ "n_undecided": 0,
+ "n_points_checked": 18282,
+ "n_points_counterexample": 18229,
+ "n_points_undecided": 0,
+ "n_points_method_disagreement": 0,
+ "n_points_degenerate": 0,
+ "n_points_sympy_run": 3112,
+ "n_graphs_sympy_sample": 1556,
+ "n_points_repeated_roots": 404,
+ "n_graphs_complete": 0,
+ "n_distinct_d6": 9133,
+ "first_legal_witness_t_histogram": {
+  "10000": 6418,
+  "100": 2698,
+  "1000": 17
+ },
+ "n_stored_witnesses_illegal": 12853,
+ "n_graphs_with_illegal_stored_witness": 6435,
+ "n_graphs_first_stored_witness_illegal": 6435,
+ "n_graphs_without_stored_legal_stable_witness": 37,
+ "n_graphs_first_legal_witness_stored_unstable": 53,
+ "n_points_by_tag": {
+  "witness": 9133,
+  "interior": 9133,
+  "claimed_witness": 16
+ },
+ "n_witness_beta_outside_certified_limit_interval": 47,
+ "wall_seconds": 1229.1,
+ "not_confirmed": []
+}

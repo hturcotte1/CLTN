@@ -1,0 +1,5 @@
+relabelling invariance on all 9133 graphs x 2 random relabellings: failures 0 1.5s
+brute-force 8! sample size 19 distinct 19 3.7s
+brute-force code of own canonical representative equals brute-force code of graph: True
+&GUru\Aw^qz]w beta root in ['8495/4096', '531/256'] q upper end in (1.073975, 1.074219)
+&GZr[^`\VJ}Iw beta root in ['8495/4096', '531/256'] q upper end in (1.073975, 1.074219)

@@ -1,0 +1,230 @@
+{
+ "verifier": "v_structure (n = 8)",
+ "n_graphs": 9133,
+ "n_confirmed": 9133,
+ "pairwise_non_isomorphic": {
+  "own_individualisation_refinement_canonical_forms_distinct": 9133,
+  "duplicates": 0,
+  "labelg": {
+   "ran": true,
+   "n_lines": 9133,
+   "n_distinct": 9133,
+   "classes_agree_with_own": true
+  }
+ },
+ "none_complete_bidirected": true,
+ "missing_arcs_distribution": {
+  "11": 3,
+  "12": 34,
+  "13": 153,
+  "14": 353,
+  "15": 581,
+  "16": 476,
+  "17": 510,
+  "18": 768,
+  "19": 1305,
+  "20": 1406,
+  "21": 1485,
+  "22": 1079,
+  "23": 562,
+  "24": 269,
+  "25": 120,
+  "26": 27,
+  "27": 2
+ },
+ "domination_free_all": true,
+ "edges_field_equals_arcs_all": true,
+ "witness_fields_consistent_all": true,
+ "witness_beta_strictly_inside_interval_graphs": 9096,
+ "witness_beta_outside_interval_graphs": 37,
+ "stored_witness_points_checked": 36532,
+ "stored_witness_points_stable_positive_mine": 36350,
+ "stored_witness_points_legal_and_confirmed": 23588,
+ "stored_witness_points_undecided": 0,
+ "stored_flags_agree_with_mine_all_points": true,
+ "graphs_all_four_stored_witnesses_stable_positive": 9051,
+ "graphs_with_stored_legal_witness": 9096,
+ "graphs_first_witness_illegal_q_le_1": 6435,
+ "recommended_points_checked": 9442,
+ "recommended_points_undecided": 0,
+ "recommended_point_found_for_all": true,
+ "isolating_intervals_certified_all": true,
+ "cells_inconsistent_with_intervals": 0,
+ "lo_kind_root_count": 971,
+ "lo_kind_beta_min_count": 8162,
+ "largest_q_upper_end_refined": {
+  "d6": "&GMx|\\Aw^qz]w",
+  "q_upper_end_refined_rational_bounds": [
+   "21526147/12582912",
+   "5381537/3145728"
+  ],
+  "float": 1.7107445001602173,
+  "deg": 15
+ },
+ "ten_largest_q_upper_ends_refined": [
+  {
+   "d6": "&GMx|\\Aw^qz]w",
+   "q_hi_refined_interval": [
+    "21526147/12582912",
+    "5381537/3145728"
+   ],
+   "q_hi_float": 1.7107445001602173,
+   "deg": 15,
+   "lo_kind": "root"
+  },
+  {
+   "d6": "&GVrm]A{^pZ]w",
+   "q_hi_refined_interval": [
+    "21526147/12582912",
+    "5381537/3145728"
+   ],
+   "q_hi_float": 1.7107445001602173,
+   "deg": 15,
+   "lo_kind": "root"
+  },
+  {
+   "d6": "&GZptUbY\\B}^w",
+   "q_hi_refined_interval": [
+    "15684077/9175040",
+    "125472617/73400320"
+   ],
+   "q_hi_float": 1.7094287395477294,
+   "deg": 15,
+   "lo_kind": "beta_min"
+  },
+  {
+   "d6": "&GMw|]PX^pv]w",
+   "q_hi_refined_interval": [
+    "33419799/19922944",
+    "50129699/29884416"
+   ],
+   "q_hi_float": 1.677452848668684,
+   "deg": 15,
+   "lo_kind": "root"
+  },
+  {
+   "d6": "&GMw|Vr]Rb~Nw",
+   "q_hi_refined_interval": [
+    "5/3",
+    "5/3"
+   ],
+   "q_hi_float": 1.6666666666666667,
+   "deg": 1,
+   "lo_kind": "root"
+  },
+  {
+   "d6": "&GUo~EX~Yxz^w",
+   "q_hi_refined_interval": [
+    "5/3",
+    "5/3"
+   ],
+   "q_hi_float": 1.6666666666666667,
+   "deg": 1,
+   "lo_kind": "root"
+  },
+  {
+   "d6": "&GZptVbI\\B}^w",
+   "q_hi_refined_interval": [
+    "215641/131072",
+    "10350769/6291456"
+   ],
+   "q_hi_float": 1.6452103455861409,
+   "deg": 15,
+   "lo_kind": "beta_min"
+  },
+  {
+   "d6": "&GRRmMiWZW|^w",
+   "q_hi_refined_interval": [
+    "301655249/192937984",
+    "603310499/385875968"
+   ],
+   "q_hi_float": 1.5634829544502755,
+   "deg": 21,
+   "lo_kind": "root"
+  },
+  {
+   "d6": "&GMwtUr}Rb~^o",
+   "q_hi_refined_interval": [
+    "22932153/14680064",
+    "1638011/1048576"
+   ],
+   "q_hi_float": 1.562128986631121,
+   "deg": 5,
+   "lo_kind": "root"
+  },
+  {
+   "d6": "&GNI{NXlMx~^o",
+   "q_hi_refined_interval": [
+    "22932153/14680064",
+    "1638011/1048576"
+   ],
+   "q_hi_float": 1.562128986631121,
+   "deg": 5,
+   "lo_kind": "root"
+  }
+ ],
+ "ten_largest_ordering_certified_up_to_ties": true,
+ "all_refined_q_upper_ends_below_2": true,
+ "total_exact_points_checked": 45974,
+ "canonical_form_checks": {
+  "relabelling_invariance_failures": 0,
+  "bruteforce_sample_k": 500,
+  "bruteforce_sample_size": 19,
+  "bruteforce_sample_distinct": 19,
+  "bruteforce_consistent_with_own": true
+ },
+ "discrepancies": [
+  [
+   "&GNBiRRqLgn[O",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&G\\QwVQyAWzLw",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GXq[Zq[YoT^o",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GN_^^z^?jEY_",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GN_^^z^?jEY_",
+   "witness 1 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GMy[VQmBZi^o",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GMy[VQmBZi^o",
+   "witness 1 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GNbZ^i]PrEMw",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GMx\\VA}VOj^w",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GRruZ`XHj{^w",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GYp|FhJFiv^w",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&GBymTo~Nz^Mw",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ],
+  [
+   "&G^r{NhT^R}Kw",
+   "witness 0 beta not strictly inside stable interval but stored stable=true"
+  ]
+ ]
+}

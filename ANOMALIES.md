@@ -1308,3 +1308,36 @@ B) and filter8 produced 143,266 strict-survivor lines, pairwise non-isomorphic, 
 the 143,266 canonical strict-survivor lines of the 321 directg parts that the production run used.  This is the
 strongest content-level evidence for the enumerator that replaced directg on K8-K3, K8-K_{1,5} and
 K8-(K2+K_{1,5}): same classes, same verdicts, on the richest n = 8 graph.
+
+## 2026-10-28  ALL 9,133 n = 8 CANDIDATES MACHINE-CONFIRMED by four independent exact implementations
+
+Workflow wf_79a996db-7e2 (notes/verify_n8/SYNTHESIS.json; verifiers written from the CLAUDE.md definitions
+without the project's code, each with its own digraph6 decoder): v_fraction (pure Fractions, Faddeev-LeVerrier and
+Berkowitz charpolys that must agree, Hurwitz minors cross-checked by Routh; all four stored witnesses plus one own
+interior point per graph, 45,665 points), v_roots (exact Routh table and Cauchy/Sturm index on 18,282 points,
+sympy complex root isolation on every 6th graph, calibrated on random polynomials), v_structure (own canonical
+form and nauty agree: 9,133 pairwise non-isomorphic; none complete, missing arcs 11..27; all domination-free;
+witness fields consistent; an own legal stable positive point for every graph), v_sympy (sympy exact: first
+legal witness on all, all witnesses on every 10th, endpoint sharpness on every 50th: 183/183 intervals sharp at
+t = 100000, Sturm count 1 on every stored isolating interval).  Result: 9,133/9,133 confirmed by every verifier,
+0 refuted, 0 undecided, 0 vanishing minors, 0 disagreements between verifiers or with the stored flags
+(36,532 stored witnesses re-decided).  Controls: K8 stable at legal points, Geneson's graph confirmed, 20 random
+'never' survivors unstable or non-positive at 280 legal ray points.  The user's hand-verification of a sample is
+still required before anything is built on the list.
+
+Data-hygiene findings (candidates unaffected, certified intervals correct):
+* 6,435 of 9,133 records have an illegal first stored witness (t = 100, q <= 1; 6,418 of them also at t = 1000,
+  where q = 1 exactly), the n = 7 pattern again; certificates/n8_candidates_legal_witnesses.json gives one legal
+  stored witness where one exists and a certified interior point for every graph.
+* 37 graphs have a stable beta-interval narrower than 1/1000 starting at beta_min = 2, and the producer's fallback
+  (n8/run_n8_limit.py: beta = lo + 1/1000 when the unrefined isolating bounds coincide) placed all four stored
+  witnesses OUTSIDE the interval, so those records store stable = false at every witness; the verifiers' own
+  points inside the refined interval are stable and positive (t = 10^4..10^7).  Fix for future runs: refine the
+  isolating interval by exact bisection before choosing the witness beta.  16 further graphs have only the t = 100
+  witness unstable (finite-eps effect).
+* The stored rational upper bounds of the q-intervals are coarse (two are exactly 2 although the algebraic
+  endpoints are about 1.0742); after exact refinement all 9,133 upper ends are below 2: the largest is
+  q in [21526147/12582912, 5381537/3145728] (about 1.7107, degree 15, &GMx|\Aw^qz]w and &GVrm]A{^pZ]w), 16 exceed
+  3/2, the smallest is about 1.000276.  The earlier entry's "largest upper end below 2" used the coarse bound.
+* sympy reports repeated characteristic-polynomial roots (multiplicity 2 or 3, all off the imaginary axis) at
+  404 of 3,112 sampled points (202 graphs), presumably twin structure; harmless for stability, same as at n = 7.

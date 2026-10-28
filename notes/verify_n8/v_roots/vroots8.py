@@ -160,8 +160,25 @@ def var(seq):
     s = [x for x in seq if x != 0]
     return sum(1 for i in range(len(s) - 1) if s[i] != s[i + 1])
 
+def sturm_real_roots(g):
+    """Number of distinct real roots of g (low->high) by Sturm's theorem on (-inf, +inf)."""
+    g = pdeg(g)
+    if len(g) <= 1:
+        return 0
+    dg = pdeg([k * g[k] for k in range(1, len(g))])
+    chain = [g, dg]
+    while chain[-1]:
+        r = prem(chain[-2], chain[-1])
+        chain.append([-x for x in r])
+    chain = [p for p in chain if p]
+    V = lambda plus: var([sign_inf(p, plus) for p in chain])
+    return V(False) - V(True)
+
 def cauchy_index_line(Q, P):
-    """Ind_{-inf}^{+inf} Q/P by the Sturm chain P, Q mod P, ...; returns (index, deg gcd)."""
+    """Ind_{-inf}^{+inf} Q/P by the Sturm chain P, Q mod P, ...; returns (index, number of real roots of gcd(P,Q)).
+    Every chain element is divisible by g = gcd(P, Q); when g has no real root the chain divided by g is a
+    proper Sturm chain for (P/g, Q/g), the sign variations at +-inf are unchanged (common factor of fixed
+    sign) and Ind(Q/P) = Ind((Q/g)/(P/g)); so the index is valid.  When g has a real root y0, P(y0)=Q(y0)=0."""
     Q = prem(Q, P)
     chain = [pdeg(P), Q]
     while chain[-1]:
@@ -170,7 +187,7 @@ def cauchy_index_line(Q, P):
     chain = [p for p in chain if p]
     g = chain[-1]
     V = lambda plus: var([sign_inf(p, plus) for p in chain])
-    return V(False) - V(True), len(g) - 1
+    return V(False) - V(True), (sturm_real_roots(g) if len(g) > 1 else 0)
 
 def cauchy_rhp(c):
     """c high->low.  p(iy) = R(y) + i I(y).  (n_L - n_R) = Delta arg p(iy) / pi over y: -inf -> +inf,
@@ -187,9 +204,9 @@ def cauchy_rhp(c):
     R = pdeg(R); I = pdeg(I)
     if not R or not I:
         return None, 'Re or Im of p(iy) identically zero'
-    ind, gdeg = cauchy_index_line(I, R)
-    if gdeg > 0:
-        return None, 'gcd(Re p(iy), Im p(iy)) nonconstant: root on imaginary axis'
+    ind, g_real_roots = cauchy_index_line(I, R)
+    if g_real_roots > 0:
+        return None, 'gcd(Re p(iy), Im p(iy)) has a real root: root on the imaginary axis'
     dR, dI = len(R) - 1, len(I) - 1
     if dI < dR:
         bnd = F(0)

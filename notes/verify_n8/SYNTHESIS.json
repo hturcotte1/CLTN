@@ -1,0 +1,138 @@
+{
+ "task": "Independent machine verification of the 9,133 non-complete n=8 full-support limit counterexample candidates (n8/n8_limit_HITS.jsonl), four verifiers written from the definitions, synthesised 2026-10-28",
+ "overall_status": "CONFIRMED",
+ "status_line": "CONFIRMED: all 9,133 candidates confirmed by every verifier that decided them (4/4 decided all 9,133), 0 refuted, 0 undecided, 0 vanishing Hurwitz minors, 0 method disagreements, 0 disagreements with any stored witness flag.",
+ "input": {
+  "file": "/home/user/CLTN/n8/n8_limit_HITS.jsonl",
+  "records": 9133,
+  "distinct_d6": 9133,
+  "all_flag_S_verdict_stable_somewhere": true,
+  "all_complete_false": true,
+  "stored_witnesses_per_graph": 4,
+  "stored_witness_points": 36532
+ },
+ "verifiers": {
+  "v_fraction": {
+   "dir": "/home/user/CLTN/notes/verify_n8/v_fraction/",
+   "graphs_checked": 9133,
+   "confirmed": 9133,
+   "refuted": 0,
+   "undecided": 0,
+   "points_checked": 45665,
+   "sampling": "none (all 4 stored witnesses + 1 own interior point per graph at t=10000; 53 graphs got 6 extra points up to t=10^7; never-control 20 graphs x 14 points)",
+   "illegal_first_witness_count": 6435,
+   "method": "pure fractions.Fraction, own decoder, Faddeev-LeVerrier + Berkowitz charpoly (asserted equal), Hurwitz minors three-valued + Routh cross-check",
+   "table": "v_fraction_n8_table.json (9133 d6 keys, all CONFIRMED) and per_graph.jsonl (9133 rows, full point detail)",
+   "log_note": "run8.log ends in a TypeError traceback (json.dump of a dict with tuple keys in the summary object) AFTER all 9,133 graphs were processed and per_graph.jsonl was complete; finalize8.py rebuilt the summary and table from per_graph.jsonl (finalize8.log). No verification work was lost; verified here by recounting per_graph.jsonl (9,133 rows, 0 failures)."
+  },
+  "v_roots": {
+   "dir": "/home/user/CLTN/notes/verify_n8/v_roots/",
+   "graphs_checked": 9133,
+   "confirmed": 9133,
+   "refuted": 0,
+   "undecided": 0,
+   "points_checked": 18282,
+   "counterexample_points": 18229,
+   "sampling": "cheap exact methods (Routh table + Cauchy index/Sturm) on all 18,282 points; sympy exact root isolation on every 6th graph plus all 37 graphs without a stored legal stable witness (1,556 graphs, 3,112 points), 0 disagreements",
+   "illegal_first_witness_count": 6435,
+   "method": "no Hurwitz minors: roots in Re>=0 counted by exact Routh array, Cauchy index via own Sturm chain, and (sampled) sympy isolation; calibrated on 600 random polynomials (0 wrong answers)",
+   "table": "v_roots_n8_table.jsonl (9133 rows, all CONFIRMED, 0 issues) + v_roots_n8_table.tsv",
+   "note": "404 sampled points have repeated charpoly roots off the imaginary axis (202 graphs; twin structure) - harmless, anomaly for the log"
+  },
+  "v_structure": {
+   "dir": "/home/user/CLTN/notes/verify_n8/v_structure/",
+   "graphs_checked": 9133,
+   "confirmed": 9133,
+   "refuted": 0,
+   "undecided": 0,
+   "points_checked": 45974,
+   "sampling": "none for verification (all 36,532 stored witnesses re-decided + 9,442 recommended-point trials); 8!-brute-force canonical form cross-check sampled every 500th graph (19), on top of full own canonical form + nauty labelg",
+   "illegal_first_witness_count": 6435,
+   "method": "own decoder, own canonical form + labelg, Curto Def 1.1 domination, Sturm-certified isolating intervals, exact sign test of beta vs endpoints, Hurwitz minors three-valued",
+   "table": "v_structure_table.json (9133 rows, all 'CONFIRMED counterexample'), verify_out.json (full rows), n8_candidates_legal_witnesses.json, RESULT.json",
+   "structural_results": {
+    "pairwise_non_isomorphic": true,
+    "none_complete_bidirected": true,
+    "missing_arcs_range": "11..27",
+    "domination_free_all": true,
+    "edges_field_equals_arc_count_all": true,
+    "cells_consistent_with_intervals": "56730/56730",
+    "lo_kind_root": 971,
+    "lo_kind_beta_min": 8162,
+    "largest_refined_q_upper_end": "&GMx|\\Aw^qz]w (tie &GVrm]A{^pZ]w) in [21526147/12582912, 5381537/3145728] ~1.710745, deg 15; all refined upper ends < 2; 16 above 3/2; smallest ~1.000276"
+   },
+   "discrepancies_field_explained": "RESULT.json lists 13 'discrepancies' (11 graphs: witness 0, and for 2 of them also witness 1, beta not strictly inside the limit stable interval but stored stable=true). Collator check: all 13 points are ILLEGAL (t=100, q=1001/1010; t=1000, q=1), all 11 graphs are among the 37 whose stored beta=2001/1000 lies above the limit interval; stability at an illegal finite-t point outside the limit interval is a finite-eps effect, not a contradiction. No legal stored witness is stable outside the limit interval (0 of 23,679)."
+  },
+  "v_sympy": {
+   "dir": "/home/user/CLTN/notes/verify_n8/v_sympy/",
+   "graphs_checked": 9133,
+   "confirmed": 9133,
+   "refuted": 0,
+   "undecided": 0,
+   "points_checked": 13388,
+   "sampling": "every graph: first-legal-witness decision + Sturm root count on the stored hi isolating interval (all exactly 1); every 10th graph: all four witnesses (914 graphs, 3,656 points, all agree); every 50th graph: endpoint sharpness at t=100000 (183/183 sharp); all 53 graphs with an unstable first legal witness: all four witnesses; 37 own witnesses at t=100000",
+   "illegal_first_witness_count": 6435,
+   "method": "sympy Rational/Matrix/Poly only, Bareiss determinants, Berkowitz charpoly cross-checked by evaluation, Hurwitz minors three-valued + Routh cross-check",
+   "table": "v_sympy_n8_table.jsonl (9133 rows: 9080 CONFIRMED_AT_STORED_FIRST_LEGAL_WITNESS, 16 CONFIRMED_AT_LATER_STORED_WITNESS, 37 CONFIRMED_AT_OWN_WITNESS)",
+   "selftest": "Geneson n=6 graph stable non-clique at eps=1/100, delta=29/2500; K8 stable-positive; K8 minus one arc not stable-positive; lam^2+1 -> vanishing minors (UNDECIDED); hi minpoly degrees 1..21"
+  }
+ },
+ "collator_cross_checks": {
+  "same_9133_d6_in_all_tables_and_equal_to_HITS": true,
+  "row_order_equals_HITS_order": "v_roots, v_sympy, v_structure table, verify_out, legal-witness file: all in file order",
+  "per_graph_verdict_CONFIRMED_in_all_four": 9133,
+  "edge_count_HITS_vs_all_four_decoders_mismatches": 0,
+  "stored_witness_points_re_decided_by_both_v_fraction_and_v_structure": 36532,
+  "stored_witness_point_mismatches_vf_vs_vs_vs_stored_flags(legal,stable,positive,q)": 0,
+  "v_roots_witness_and_claimed_points_vs_v_fraction(9149_points)_mismatches": 0,
+  "v_sympy_first_legal_points_vs_v_fraction_mismatches": 0,
+  "undecided_points_any_verifier": 0,
+  "first_witness_illegal_per_graph_agree_all_four": true,
+  "first_legal_witness_index_agree_vf_vr_vsy": true,
+  "first_legal_witness_t_histogram": {
+   "100": 2698,
+   "1000": 17,
+   "10000": 6418
+  },
+  "set_53_first_legal_witness_unstable_identical_in_vf_vr_vsy": true,
+  "set_37_no_stored_legal_stable_witness_identical_in_vf_vr_vs_vsy_and_legal_witness_file": true,
+  "set_16_confirmed_at_later_stored_witness_identical_vf_vsy": true,
+  "stored_unstable_witnesses_182_breakdown": {
+   "37 graphs with beta above interval: 26 (t=100, illegal) + 35 (t=1000, illegal) + 37 (t=10000, legal) + 37 (t=100000, legal)": 135,
+   "16 finite-t graphs: 16 (t=100, legal) + 1 (t=1000, legal, &GYo|VoZBzv]w)": 17,
+   "other graphs: 29 (t=100, illegal) + 1 (t=1000, illegal)": 30
+  },
+  "v_roots_47_vs_v_structure_37_beta_outside_interval": "v_roots counts 47 graphs whose stored beta=2001/1000 is not inside its refined certified interval; v_structure/v_fraction count 37. The 10 extra (&GLx\\JI[Iw\\[w, &GMBO]At]Xp]?, &GMygLWPZQ{^w, &GN?jVxRXzd]_, &GN?jVxrXxh\\_, &GN?j\\xrXrh\\_, &GN?j^xrXph\\_, &GNXLYBcV`zNG, &GTrmZBgNgp^O, &GVQ}QQiNwx^W) have 2001/1000 INSIDE the stored hi isolating interval (e.g. [2425/1212, 1617/808]), so v_roots' coarser refined rectangle could not place it; v_structure's exact sign test and v_fraction's 1e-9 bisection put it strictly inside, and the stored t=10000/100000 witnesses are stable there by all verifiers. Conservative artefact, not a disagreement; v_roots did not rely on the stored witness for its verdict.",
+  "own_interior_points": {
+   "v_fraction_point_b_legal_stable_positive_strictly_inside": 9133,
+   "v_roots_P2_legal_stable_positive_methods_agree": 9133,
+   "v_structure_recommended_legal_stable_positive_inside": 9133,
+   "v_sympy_own_witness_37_legal_stable_positive": 37,
+   "three_distinct_own_points_per_graph(vf,vr,vs)": 9133
+  },
+  "legal_witness_file_checks": {
+   "entries": 9133,
+   "witness_stored_legal_null_exactly_for_the_37": true,
+   "witness_stored_legal_is_a_stored_witness_that_v_fraction_decided_legal_stable_positive": "9096/9096",
+   "witness_in_first_stable_cell_q_gt_1_exact_and_fields_consistent": "9133/9133",
+   "witness_in_first_stable_cell_equals_v_structure_recommended": "9133/9133"
+  },
+  "collator_spot_check_with_project_ctln.analyze_support": "78 graphs (all 37 cell-only + every 300th + the 10 above): 78/78 cell points and 41/41 stored-legal points are legal, positive fixed points, stable=True, clique=False, agrees=False"
+ },
+ "problem_graphs": [],
+ "refuted_d6": [],
+ "undecided_d6": [],
+ "illegal_first_witness_count": 6435,
+ "illegal_stored_witness_points": 12853,
+ "recommended_legal_witness_file": "/home/user/CLTN/notes/verify_n8/v_structure/n8_candidates_legal_witnesses.json",
+ "recommended_legal_witness_file_note": "one record per candidate, file order: witness_stored_legal (a stored witness with q>1 that every verifier decided stable+positive; null for 37 graphs) and witness_in_first_stable_cell (rational beta certified strictly inside the limit stable interval, t = smallest power of ten with q>1 at which the point is exactly stable and positive; eps=1/(t+1), delta=(beta-1)*eps). Use witness_in_first_stable_cell for hand checks.",
+ "things_the_human_must_know": [
+  "6,435 of 9,133 graphs have an ILLEGAL first stored witness (t=100, q=1001/1010 <= 1; for 6,418 of them the t=1000 witness has q=1 exactly, so the first legal witness is t=10000; 17 are legal first at t=1000). Same pattern as n=7. If the hand check uses witnesses[0], those graphs are checked at non-CTLN points.",
+  "37 graphs (list: v_fraction_n8_results.json key point_a_unstable_because_stored_beta_outside_interval; also the null witness_stored_legal rows of the legal-witness file) have a stable interval narrower than 1/1000 starting at beta=2, and the producer's fallback beta = lo + 1/1000 (n8/run_n8_limit.py ~line 58) put ALL FOUR stored witnesses outside it; the records honestly store stable=false there (11 of them stable only at the illegal t=100 point). Their stored witnesses are not witnesses. They are confirmed by all four verifiers at their own certified interior points (t=10^4..10^7). ANOMALIES.md entry recommended (not written by the collator).",
+  "16 graphs have a legal t=100 witness that is exactly unstable (finite-eps effect) and stable at t>=1000; one of them (&GYo|VoZBzv]w) is also unstable at the legal t=1000 witness and stable only from t=10000. All confirmed.",
+  "The 'hits_with_a_legal_stable_positive_witness_q_gt_1 = 9096' figure in certificates/n8_limit_summary.json is consistent: 9080 + 16.",
+  "The stored rational q upper bounds are coarse (two graphs with beta interval [2,3] give bound 2 while the algebraic endpoint is ~1.0742); after exact refinement all 9,133 upper ends are < 2, the largest ~1.710745 (degree 15).",
+  "Repeated characteristic-polynomial roots off the imaginary axis at 404 of 3,112 sympy-sampled points (twin structure); harmless for stability, worth an anomaly-log line."
+ ],
+ "not_certified": "Completeness of the 9,133 list (the n=8 search was not re-run), the whole limit stable intervals beyond the certified isolating intervals and sampled endpoint sharpness, the limit/ray lemma on which the limit map itself rests."
+}

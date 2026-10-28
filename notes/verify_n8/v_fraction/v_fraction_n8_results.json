@@ -1,0 +1,2707 @@
+{
+ "summary": {
+  "verifier": "v_fraction",
+  "n_candidates": 9133,
+  "distinct_d6": 9133,
+  "verdicts": {
+   "CONFIRMED": 9133
+  },
+  "points_checked": 45665,
+  "witness_points": 36532,
+  "interior_points": 9133,
+  "first_witness_illegal": 6435,
+  "no_legal_stored_witness": 0,
+  "first_legal_witness_index": {
+   "2": 6418,
+   "0": 2698,
+   "1": 17
+  },
+  "witness_disagreements": 0,
+  "witness_agree_stable_both_decided": 36532,
+  "witness_agree_positive": 36532,
+  "witness_undecided_mine": 0,
+  "stored_unstable_witnesses": 182,
+  "my_unstable_witnesses": 182,
+  "legal_witnesses": 23679,
+  "illegal_witnesses": 12853,
+  "interior_t_used": {
+   "10000": 9133
+  },
+  "interior_strictly_inside": 9133,
+  "interior_stable_positive_legal": 9133,
+  "interior_undecided": 0,
+  "endpoint_notes": {
+   "beta_min|bisected": 8162,
+   "bisected|bisected": 969,
+   "bisected|rational_root": 2
+  },
+  "graphs_with_failures": 0,
+  "graphs_with_notes": {
+   "first legal stored witness is decided unstable, in agreement with its stored flag (finite-t point); confirmed on my interior point": 53
+  },
+  "not_confirmed": [],
+  "point_a_verdicts": {
+   "stable_positive": 9080,
+   "unstable_or_nonpositive": 53
+  },
+  "point_a_unstable_agreeing_with_stored": [
+   "&GN@wG@|Lzj]?",
+   "&GNBIXBs\\im[O",
+   "&GNBiRRqLgn[O",
+   "&GMBQMHtMH~]W",
+   "&GNAi\\oR\\onKw",
+   "&GYqsFwRIYsNw",
+   "&G\\QwVQyAWzLw",
+   "&GMAq]zs]P|MG",
+   "&GRrmFiQVP^LG",
+   "&GXq[Zq[YoT^o",
+   "&GBY]QoVYr{^g",
+   "&GBY]RoVYr{Ng",
+   "&GHx\\Lh\\AJ]Nw",
+   "&GJZK]`tNI{]o",
+   "&GK?r^Yy]q{\\W",
+   "&GN_^^z^?jEY_",
+   "&GRriTaqZPx^o",
+   "&GTOnBXjRb}Ng",
+   "&GTq]JW|AwZ\\w",
+   "&GVRmR@rFgzNW",
+   "&GVb]FI]DYm]o",
+   "&GVbuFGzLYw]o",
+   "&GXp\\Ra}AwZ\\w",
+   "&GZQ[VqeFYm^O",
+   "&GLxpBIYZr{Nw",
+   "&GM@RVBeUzy^w",
+   "&GM@Z^AvVxjMW",
+   "&GMy[VQmBZi^o",
+   "&GNAYHPlKz~\\w",
+   "&GQpzDiiNx\\^O",
+   "&GRbuRaqVq}^O",
+   "&GVA]RP~Fim]W",
+   "&GJyKYrSZ`|^w",
+   "&GM?Z^ZvUzi^?",
+   "&GNBIZjeDj~\\W",
+   "&GNav^wrKW\\]o",
+   "&GNbZ^i]PrEMw",
+   "&GNbf^rY^bSMG",
+   "&GNbrVr]MjS]G",
+   "&GT`^MI[FZn^W",
+   "&GHyoVpzJH^^w",
+   "&GMx\\VA}VOj^w",
+   "&GRruZ`XHj{^w",
+   "&G\\AWNY{^Pn^w",
+   "&GFzYJH\\Vj}Uw",
+   "&GYo|VoZBzv]w",
+   "&GYp|FhJFiv^w",
+   "&G^p|QbuQru^g",
+   "&G^p|FgvIxt]w",
+   "&GBymTo~Nz^Mw",
+   "&G^r{NhT^R}Kw",
+   "&GMw|Sr}Vb~Nw",
+   "&GZrkNg\\Zx~Vw"
+  ],
+  "point_a_unstable_because_stored_beta_outside_interval": [
+   "&GNBIXBs\\im[O",
+   "&GNBiRRqLgn[O",
+   "&GMBQMHtMH~]W",
+   "&GYqsFwRIYsNw",
+   "&G\\QwVQyAWzLw",
+   "&GRrmFiQVP^LG",
+   "&GXq[Zq[YoT^o",
+   "&GBY]QoVYr{^g",
+   "&GBY]RoVYr{Ng",
+   "&GHx\\Lh\\AJ]Nw",
+   "&GJZK]`tNI{]o",
+   "&GK?r^Yy]q{\\W",
+   "&GN_^^z^?jEY_",
+   "&GRriTaqZPx^o",
+   "&GTq]JW|AwZ\\w",
+   "&GVRmR@rFgzNW",
+   "&GVb]FI]DYm]o",
+   "&GVbuFGzLYw]o",
+   "&GXp\\Ra}AwZ\\w",
+   "&GZQ[VqeFYm^O",
+   "&GM@Z^AvVxjMW",
+   "&GMy[VQmBZi^o",
+   "&GQpzDiiNx\\^O",
+   "&GRbuRaqVq}^O",
+   "&GVA]RP~Fim]W",
+   "&GJyKYrSZ`|^w",
+   "&GM?Z^ZvUzi^?",
+   "&GNbZ^i]PrEMw",
+   "&GNbf^rY^bSMG",
+   "&GNbrVr]MjS]G",
+   "&GT`^MI[FZn^W",
+   "&GMx\\VA}VOj^w",
+   "&GRruZ`XHj{^w",
+   "&GFzYJH\\Vj}Uw",
+   "&GYp|FhJFiv^w",
+   "&GBymTo~Nz^Mw",
+   "&G^r{NhT^R}Kw"
+  ],
+  "point_a_unstable_only_t100_finite_t_effect": [
+   "&GN@wG@|Lzj]?",
+   "&GNAi\\oR\\onKw",
+   "&GMAq]zs]P|MG",
+   "&GTOnBXjRb}Ng",
+   "&GLxpBIYZr{Nw",
+   "&GM@RVBeUzy^w",
+   "&GNAYHPlKz~\\w",
+   "&GNBIZjeDj~\\W",
+   "&GNav^wrKW\\]o",
+   "&GHyoVpzJH^^w",
+   "&G\\AWNY{^Pn^w",
+   "&GYo|VoZBzv]w",
+   "&G^p|QbuQru^g",
+   "&G^p|FgvIxt]w",
+   "&GMw|Sr}Vb~Nw",
+   "&GZrkNg\\Zx~Vw"
+  ],
+  "seconds_finalize": 8.2
+ },
+ "controls": {
+  "geneson_decode": {
+   "n": 6,
+   "arcs": 19,
+   "roundtrip": true
+  },
+  "geneson_n6_control": {
+   "legal": true,
+   "positive": true,
+   "stability": "stable"
+  },
+  "K8_d6": "&G^z~^z~^z~^w",
+  "K8_control": [
+   {
+    "label": "eps1/4_delta1/2",
+    "eps": "1/4",
+    "delta": "1/2",
+    "q": "3/2",
+    "legal": true,
+    "positive": true,
+    "stable": "stable",
+    "minor_signs": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "min_x": "4/25"
+   },
+   {
+    "label": "ray_beta5/2_t10000",
+    "eps": "1/10001",
+    "delta": "3/20002",
+    "q": "15000/10001",
+    "legal": true,
+    "positive": true,
+    "stable": "stable",
+    "minor_signs": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "min_x": "10001/80001"
+   },
+   {
+    "label": "ray_beta2001/1000_t100_ILLEGAL",
+    "eps": "1/101",
+    "delta": "1001/101000",
+    "q": "1001/1010",
+    "legal": false,
+    "positive": true,
+    "stable": "stable",
+    "minor_signs": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "min_x": "101/801"
+   },
+   {
+    "label": "eps1/3_delta2",
+    "eps": "1/3",
+    "delta": "2",
+    "q": "4",
+    "legal": true,
+    "positive": true,
+    "stable": "stable",
+    "minor_signs": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "min_x": "3/17"
+   }
+  ],
+  "K8_control_ok": true,
+  "C3_control_expect_unstable": {
+   "positive": true,
+   "stability": "unstable"
+  },
+  "never_sample": {
+   "seed": 20261027,
+   "n_never_total": 338505,
+   "n_sampled": 20,
+   "points_per_graph": 14,
+   "betas": [
+    "2001/1000",
+    "21/10",
+    "5/2",
+    "3",
+    "4",
+    "6",
+    "10"
+   ],
+   "ts": [
+    10000,
+    100000
+   ],
+   "points_total": 280,
+   "points_unstable_or_nonpositive": 280,
+   "points_undecided": 0,
+   "points_stable_positive_legal": 0,
+   "graphs_with_a_stable_positive_legal_point": 0,
+   "rows": [
+    {
+     "d6": "&GNaZRrnX`H\\_",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 34,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GNpeT`jVByBG",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 32,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GN@_Urr\\Zv]?",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 34,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GM?[^ye^xlHW",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 35,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GNW|Jz[^o~Xw",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 41,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GK@{\\Q~NY}IW",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 35,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GNbN^ymFYJXO",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 37,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GYqwFwRQPv^_",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 33,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GNBj\\rq\\Jh\\?",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 35,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GFzEHIcTqyNW",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 32,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GM?X^RS]jk\\_",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 32,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GUb]DJ}Fj}NW",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 38,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GR`VFjeFJ}Nw",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 37,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GQq}\\qwVr}BW",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 37,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GY@|V`zJjt^w",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 39,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GNAa]pbLhp^G",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 32,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GNAiZprHzd[_",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 33,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GVp~FIyVOZFw",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 37,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GN`oZix[y]]O",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 35,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    },
+    {
+     "d6": "&GVBmFHnFhvNw",
+     "reason": "no legal beta with all a_i > 0 and all o_k < 0",
+     "edges": 38,
+     "complete": false,
+     "points": [
+      {
+       "beta": "2001/1000",
+       "t": 10000,
+       "q": "10010/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 10000,
+       "q": "11000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 10000,
+       "q": "15000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 10000,
+       "q": "20000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 10000,
+       "q": "30000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 10000,
+       "q": "50000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 10000,
+       "q": "90000/10001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "2001/1000",
+       "t": 100000,
+       "q": "9100/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "stable"
+      },
+      {
+       "beta": "21/10",
+       "t": 100000,
+       "q": "10000/9091",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "5/2",
+       "t": 100000,
+       "q": "150000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "3",
+       "t": 100000,
+       "q": "200000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "4",
+       "t": 100000,
+       "q": "300000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "6",
+       "t": 100000,
+       "q": "500000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      },
+      {
+       "beta": "10",
+       "t": 100000,
+       "q": "900000/100001",
+       "legal": true,
+       "positive": false,
+       "stable": "unstable"
+      }
+     ],
+     "any_stable_positive_legal": false
+    }
+   ]
+  }
+ }
+}

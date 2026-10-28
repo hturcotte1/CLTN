@@ -119,5 +119,34 @@
  "hits_whose_first_interval_starts_at_beta_2": 8162,
  "hits_with_all_four_pointwise_witnesses_stable_and_positive": 9051,
  "hits_with_a_legal_stable_positive_witness_q_gt_1": 9096,
- "status": "CANDIDATES pending hand-verification by the user and independent machine confirmation (as for n = 7, task 28); a claimed counterexample stops the run and goes to the human before anything is built on it"
+ "status": "CANDIDATES machine-confirmed by four independent exact verifiers (see machine_confirmation); pending hand-verification of a sample by the user before anything is built on them",
+ "machine_confirmation": {
+  "date": "2026-10-28",
+  "workflow": "wf_79a996db-7e2",
+  "synthesis": "notes/verify_n8/SYNTHESIS.json",
+  "status": "CONFIRMED: 9,133/9,133 by each of four independent verifiers written from the definitions (notes/verify_n8/v_fraction, v_roots, v_structure, v_sympy), 0 refuted, 0 undecided, 0 vanishing Hurwitz minors, 0 method disagreements",
+  "per_verifier": {
+   "v_fraction": "all 4 stored witnesses + 1 own interior point per graph, 45,665 points, exact Fractions, two charpoly algorithms, Hurwitz minors + Routh",
+   "v_roots": "first legal stored witness + own interior point, 18,282 points, exact Routh and Cauchy/Sturm index on all, sympy complex root isolation on every 6th graph and the 37 special ones",
+   "v_structure": "pairwise non-isomorphic (own canonical form and labelg), non-complete, domination-free, witness consistency, own legal stable positive point per graph, q upper ends refined",
+   "v_sympy": "first legal stored witness on all, all four witnesses on every 10th, endpoint sharpness on every 50th (183/183 sharp), Sturm root count on every stored isolating interval"
+  },
+  "findings": {
+   "illegal_first_stored_witness_q_le_1": 6435,
+   "graphs_whose_stored_witnesses_all_lie_outside_a_stable_interval_narrower_than_1_over_1000": 37,
+   "graphs_with_only_the_t_100_witness_unstable_finite_eps_effect": 16,
+   "q_upper_end_max_refined_interval": [
+    "21526147/12582912",
+    "5381537/3145728"
+   ],
+   "q_upper_end_max_graphs": [
+    "&GMx|\\Aw^qz]w",
+    "&GVrm]A{^pZ]w"
+   ],
+   "q_upper_ends_above_3_over_2": 16,
+   "q_upper_end_min_approx": "1.000276",
+   "stored_rational_q_upper_bounds_coarse_note": "two stored bounds are exactly 2 (isolating interval [2,3]) although the algebraic endpoints are about 1.0742; after exact refinement all 9,133 upper ends are below 2"
+  },
+  "legal_witness_certificate": "certificates/n8_candidates_legal_witnesses.json (one legal stored witness where one exists, and a certified interior point for every graph; use witness_in_first_stable_cell for hand checks)"
+ }
 }

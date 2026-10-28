@@ -1,0 +1,84 @@
+graphs 9133 K 6 pid 5371
+0 &GM?WUZeEie^O CONFIRMED [] 4s
+200 &GM@[]BS^jtMG CONFIRMED [] 29s
+400 &G\plFIYJWTYo CONFIRMED [] 55s
+600 &GN@bMYr\Zo^? CONFIRMED [] 81s
+800 &GVRiV@RRBu]o CONFIRMED [] 108s
+1000 &GFY]QQeQpz^g CONFIRMED [] 134s
+1200 &GMAQ^Zu]xtKG CONFIRMED [] 154s
+1400 &GNBI\b\Pb~Kg CONFIRMED [] 174s
+1600 &GPqYRq}Cwr^o CONFIRMED [] 196s
+1800 &GXRG\b{BJy^o CONFIRMED [] 219s
+2000 &G\RwZBWEj}[W CONFIRMED [] 241s
+2200 &GLwx\PxEIyNw CONFIRMED [] 270s
+2400 &GMBrNg`]yw\w CONFIRMED [] 295s
+2600 &GNBNJhTLy~WO CONFIRMED [] 317s
+2800 &GNrBLjmRB}T_ CONFIRMED [] 344s
+3000 &GTquBWjRryTw CONFIRMED [] 372s
+3200 &GXRkVbYNGtNw CONFIRMED [] 395s
+3400 &GZq{RqI\qk\o CONFIRMED [] 432s
+3600 &GFy}YQwZqW^o CONFIRMED [] 468s
+3800 &GMAz\or]rl\_ CONFIRMED [] 503s
+4000 &GNBaYbU\ju^W CONFIRMED [] 538s
+4200 &GNyKNYSVPvNW CONFIRMED [] 572s
+4400 &GTruBJYJj{Lw CONFIRMED [] 604s
+4600 &GXp\Jg|AxR^w CONFIRMED [] 643s
+4800 &GZrKFgvRRyXw CONFIRMED [] 675s
+5000 &GFw~BXJNi[^o CONFIRMED [] 711s
+5200 &GMAq]ra^zs^g CONFIRMED [] 747s
+5400 &GN`C\b~^izWo CONFIRMED [] 778s
+5600 &GQb}^awVpZNW CONFIRMED [] 811s
+5800 &GUruR@zJhxNw CONFIRMED [] 834s
+6000 &GXrkVaYVOv^w CONFIRMED [] 854s
+6200 &G\pxFGzFXzLw CONFIRMED [] 878s
+6400 &GMx\VA}VOj^w CONFIRMED [] 916s
+6600 &GQq}VpjFjVNW CONFIRMED [] 937s
+6800 &GXO|ZqgRrn^w CONFIRMED [] 968s
+7000 &G\q{NYwNYm^O CONFIRMED [] 998s
+7200 &GNbr^y{[rW^_ CONFIRMED [] 1024s
+7400 &GY_|UpZFj}^w CONFIRMED [] 1054s
+7600 &GMBB^Jt^zz\W CONFIRMED [] 1080s
+7800 &GNx|NHH^A}^w CONFIRMED [] 1102s
+8000 &G^qcZrsRr}Zw CONFIRMED [] 1125s
+8200 &GNBb^zr\j{[w CONFIRMED [] 1144s
+8400 &GQr}NhXZp~Nw CONFIRMED [] 1159s
+8600 &GFj]NJ[Dz~^w CONFIRMED [] 1184s
+8800 &GNx|VbuVb}Jw CONFIRMED [] 1197s
+9000 &GNbR^z~[zZ]_ CONFIRMED [] 1217s
+{
+ "verifier": "v_roots",
+ "K_sympy_every_kth_graph": 6,
+ "T2_interior_point": 10000,
+ "n_graphs": 9133,
+ "n_confirmed": 9133,
+ "n_refuted": 0,
+ "n_undecided": 0,
+ "n_points_checked": 18282,
+ "n_points_counterexample": 18229,
+ "n_points_undecided": 0,
+ "n_points_method_disagreement": 0,
+ "n_points_degenerate": 0,
+ "n_points_sympy_run": 3112,
+ "n_graphs_sympy_sample": 1556,
+ "n_points_repeated_roots": 404,
+ "n_graphs_complete": 0,
+ "n_distinct_d6": 9133,
+ "first_legal_witness_t_histogram": {
+  "10000": 6418,
+  "100": 2698,
+  "1000": 17
+ },
+ "n_stored_witnesses_illegal": 12853,
+ "n_graphs_with_illegal_stored_witness": 6435,
+ "n_graphs_first_stored_witness_illegal": 6435,
+ "n_graphs_without_stored_legal_stable_witness": 37,
+ "n_graphs_first_legal_witness_stored_unstable": 53,
+ "n_points_by_tag": {
+  "witness": 9133,
+  "interior": 9133,
+  "claimed_witness": 16
+ },
+ "n_witness_beta_outside_certified_limit_interval": 47,
+ "wall_seconds": 1229.1,
+ "not_confirmed": []
+}

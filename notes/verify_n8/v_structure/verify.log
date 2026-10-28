@@ -1,0 +1,14 @@
+records 9133
+1000 54s
+2000 95s
+3000 138s
+4000 181s
+5000 222s
+6000 265s
+7000 305s
+8000 343s
+9000 370s
+workers done 373s
+own canonical forms: distinct 9133 duplicates 0
+labelg {'ran': True, 'n_lines': 9133, 'n_distinct': 9133, 'classes_agree_with_own': True}
+problems 13 elapsed 374s
