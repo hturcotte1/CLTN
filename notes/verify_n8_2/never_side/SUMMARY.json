@@ -1,0 +1,244 @@
+{
+ "agent": "never_side",
+ "date": "2026-10-28",
+ "directory": "/home/user/CLTN/notes/verify_n8_2/never_side",
+ "decision_engine": "engine.py (own: digraph6 parser, W from CLAUDE.md s2, L = bd*(t+1)*(-I+W) integer, Faddeev-LeVerrier charpoly, Bareiss Hurwitz minors three-valued, Fraction Gauss-Jordan positivity); alpha.py (own compression of A to 1^perp in the basis e_k - e_(k+1), sympy charpoly, identity n*chi_perp == chi_A - chi_{A+J} asserted, g Hurwitz / gcd(g(mu),g(-mu)) axis analysis); limit_replay.py (own t=infinity replication: a = adj(C)1, s, omega = det(muI+C+J)-det(muI+C), Orlando minor Delta_6, sympy real-root isolation on the squarefree product, cells decided at rational samples)",
+ "sampling_rules": {
+  "never_positivity": "all 331,427 verdict=never records without 'cert', sorted by Python string order of d6, indices floor(i*N/300), i=0..299",
+  "never_full": "all 7,078 verdict=never records with 'cert', same rule",
+  "B / S": "filter8 regenerated on orbitenum 'G^~~~{' 29 0/300 (K8 minus one edge, 19,814,771 digraphs: 540 S, 16,757 B) and orbitenum 'GN~~~{' 29 0/1000 (17,073,592 digraphs: 50 S, 9,557 B); pools in enumeration order (K8-e part first), indices floor(i*N/300)",
+  "non-printed domination-free": "filter8 --domfree output of the same two parts (1,309,404 + 987,000 D lines) minus the printed S/B lines: pool 2,269,500 in enumeration order, indices floor(i*N/300)",
+  "non-printed non-domination-free": "every 50,000th line of the raw orbitenum streams (739 lines), those not in the --domfree lists (731), first 300",
+  "why not the task's '<20M single-graph jobs.tsv rows'": "no jobs.tsv row with split '-' and a single graph has a count below 20M (minimum 167,269,668); every graph in graph_counts.json below 20M that was tested (GTm||{, GEv]}{, GQ~vvg, GFzvVg) yields 0 survivors and 0 B lines, so B/S samples require dense underlying graphs; orbitenum parts of K8-e and K8-P3 were used instead (each part < 20M digraphs)"
+ },
+ "grid": "beta = 2 + j/40 (j = 1..720 for the never samples, 1..200 for B / non-printed), t in {10000, 100000}, eps = 1/(t+1), delta = (beta-1)*eps; plus for never_full every stored critical interval endpoint and midpoint at both t; points with q <= 1 skipped",
+ "results": {
+  "grid_never_positivity": {
+   "n_points": 432000,
+   "n_illegal_skipped": 0,
+   "n_stable": 2230,
+   "n_positive": 2546,
+   "n_stable_positive": 0,
+   "n_stability_undecided": 0,
+   "n_singular": 0,
+   "graphs": 300
+  },
+  "grid_never_full": {
+   "n_points": 442996,
+   "n_illegal_skipped": 514,
+   "n_stable": 2353,
+   "n_positive": 125044,
+   "n_stable_positive": 0,
+   "n_stability_undecided": 0,
+   "n_singular": 0,
+   "n_extra": 5755,
+   "graphs": 300
+  },
+  "grid_B": {
+   "n_points": 120000,
+   "n_illegal_skipped": 0,
+   "n_stable": 0,
+   "n_positive": 7882,
+   "n_stable_positive": 0,
+   "n_stability_undecided": 0,
+   "n_singular": 0,
+   "graphs": 300
+  },
+  "grid_nonprinted_domfree": {
+   "n_points": 120000,
+   "n_illegal_skipped": 0,
+   "n_stable": 0,
+   "n_positive": 8910,
+   "n_stable_positive": 0,
+   "n_stability_undecided": 0,
+   "n_singular": 0,
+   "graphs": 300
+  },
+  "limit_replay_never_positivity": "300/300 own all-beta>2 replication: no beta > 2 with all a_i > 0 (stage positivity)",
+  "limit_replay_never_full": "300/300 own all-beta>2 replication: positivity cells exist, no open cell with omega Hurwitz and all a_i > 0 (verdict never, 0 escalations after in-cell re-sampling)",
+  "alpha_and_domination": {
+   "sample_S.jsonl": {
+    "('S', True, '<')": 300
+   },
+   "sample_B.jsonl": {
+    "('B', True, '=')": 70,
+    "('B', True, '>')": 230
+   },
+   "sample_NPDF.jsonl": {
+    "('nonprinted_domfree', True, '>')": 300
+   },
+   "sample_NDF.jsonl": {
+    "('nonprinted_nondomfree', False, None)": 300
+   },
+   "sample_stride_domfree.jsonl": {
+    "('stride_domfree', True, '>')": 8
+   }
+  },
+  "controls": {
+   "FNFL_t40_beta53/26": {
+    "legal": true,
+    "stable": true,
+    "positive": true,
+    "alpha_class": "=",
+    "domfree": true
+   },
+   "FNFL_t10000_beta53/26": {
+    "legal": true,
+    "stable": false,
+    "detail": "Hurwitz minor 6 negative",
+    "positive": true
+   },
+   "hits_controls": [
+    [
+     "&GM?WUZeEie^O",
+     true,
+     true,
+     "247/123",
+     "1000"
+    ],
+    [
+     "&GKAq^QzUqzKW",
+     true,
+     true,
+     "51/25",
+     "100"
+    ],
+    [
+     "&GZroJhhLiW\\o",
+     true,
+     true,
+     "35/17",
+     "100"
+    ],
+    [
+     "&GNAMJzvXppX_",
+     true,
+     true,
+     "179/89",
+     "100"
+    ],
+    [
+     "&GXRG\\b{BJy^o",
+     true,
+     true,
+     "43/21",
+     "100"
+    ],
+    [
+     "&GM?ZVruVza\\O",
+     true,
+     true,
+     "355/177",
+     "1000"
+    ],
+    [
+     "&GNa]]q[WxLNg",
+     true,
+     true,
+     "53/26",
+     "100"
+    ],
+    [
+     "&GVquMWXLY{^O",
+     true,
+     true,
+     "51/25",
+     "100"
+    ],
+    [
+     "&GFy}YQwZqW^o",
+     true,
+     true,
+     "37/18",
+     "100"
+    ],
+    [
+     "&GN`c\\zx^qxWO",
+     true,
+     true,
+     "21/10",
+     "100"
+    ],
+    [
+     "&GVR}BGZJx|Ew",
+     true,
+     true,
+     "51/25",
+     "100"
+    ],
+    [
+     "&G@z]Jg|AxzVw",
+     true,
+     true,
+     "17/8",
+     "10"
+    ],
+    [
+     "&GN`C\\b~^izWo",
+     true,
+     true,
+     "17/8",
+     "10"
+    ],
+    [
+     "&GV`^FJUQB}^w",
+     true,
+     true,
+     "123/61",
+     "100"
+    ],
+    [
+     "&GFzU\\AkLyz^W",
+     true,
+     true,
+     "59/29",
+     "100"
+    ],
+    [
+     "&GVa}JWpUp~]w",
+     true,
+     true,
+     "59/29",
+     "100"
+    ],
+    [
+     "&GNbr^y{[rW^_",
+     true,
+     true,
+     "75/37",
+     "100"
+    ],
+    [
+     "&GNAb^rr\\zx\\g",
+     true,
+     true,
+     "27/13",
+     "100"
+    ],
+    [
+     "&GM@R^Jv^zz\\W",
+     true,
+     true,
+     "21/10",
+     "100"
+    ],
+    [
+     "&GZr[^`\\\\b}Nw",
+     true,
+     true,
+     "31/15",
+     "100"
+    ],
+    [
+     "&GNbR^z~[zZ]_",
+     true,
+     true,
+     "131/65",
+     "100"
+    ]
+   ],
+   "hits_all_stable_positive": true
+  },
+  "engine_vs_ctln_crosscheck": "216 random points on 18 graphs: all stable/positive verdicts and x vectors agree (crosscheck_vs_ctln.log)"
+ }
+}

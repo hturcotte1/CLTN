@@ -1,0 +1,165 @@
+{
+ "FNFL_t40_beta53/26": {
+  "legal": true,
+  "stable": true,
+  "positive": true,
+  "alpha_class": "=",
+  "domfree": true
+ },
+ "FNFL_t10000_beta53/26": {
+  "legal": true,
+  "stable": false,
+  "detail": "Hurwitz minor 6 negative",
+  "positive": true
+ },
+ "hits_controls": [
+  [
+   "&GM?WUZeEie^O",
+   true,
+   true,
+   "247/123",
+   "1000"
+  ],
+  [
+   "&GKAq^QzUqzKW",
+   true,
+   true,
+   "51/25",
+   "100"
+  ],
+  [
+   "&GZroJhhLiW\\o",
+   true,
+   true,
+   "35/17",
+   "100"
+  ],
+  [
+   "&GNAMJzvXppX_",
+   true,
+   true,
+   "179/89",
+   "100"
+  ],
+  [
+   "&GXRG\\b{BJy^o",
+   true,
+   true,
+   "43/21",
+   "100"
+  ],
+  [
+   "&GM?ZVruVza\\O",
+   true,
+   true,
+   "355/177",
+   "1000"
+  ],
+  [
+   "&GNa]]q[WxLNg",
+   true,
+   true,
+   "53/26",
+   "100"
+  ],
+  [
+   "&GVquMWXLY{^O",
+   true,
+   true,
+   "51/25",
+   "100"
+  ],
+  [
+   "&GFy}YQwZqW^o",
+   true,
+   true,
+   "37/18",
+   "100"
+  ],
+  [
+   "&GN`c\\zx^qxWO",
+   true,
+   true,
+   "21/10",
+   "100"
+  ],
+  [
+   "&GVR}BGZJx|Ew",
+   true,
+   true,
+   "51/25",
+   "100"
+  ],
+  [
+   "&G@z]Jg|AxzVw",
+   true,
+   true,
+   "17/8",
+   "10"
+  ],
+  [
+   "&GN`C\\b~^izWo",
+   true,
+   true,
+   "17/8",
+   "10"
+  ],
+  [
+   "&GV`^FJUQB}^w",
+   true,
+   true,
+   "123/61",
+   "100"
+  ],
+  [
+   "&GFzU\\AkLyz^W",
+   true,
+   true,
+   "59/29",
+   "100"
+  ],
+  [
+   "&GVa}JWpUp~]w",
+   true,
+   true,
+   "59/29",
+   "100"
+  ],
+  [
+   "&GNbr^y{[rW^_",
+   true,
+   true,
+   "75/37",
+   "100"
+  ],
+  [
+   "&GNAb^rr\\zx\\g",
+   true,
+   true,
+   "27/13",
+   "100"
+  ],
+  [
+   "&GM@R^Jv^zz\\W",
+   true,
+   true,
+   "21/10",
+   "100"
+  ],
+  [
+   "&GZr[^`\\\\b}Nw",
+   true,
+   true,
+   "31/15",
+   "100"
+  ],
+  [
+   "&GNbR^z~[zZ]_",
+   true,
+   true,
+   "131/65",
+   "100"
+  ]
+ ],
+ "hits_all_stable_positive": true
+}

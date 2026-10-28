@@ -50,21 +50,22 @@ def classify_limit(A):
     if all(m > 0 for m in mins): return 'S'
     return 'X'  # alpha > -1/2 (some root with Re > -1/2)
 
-rows = [json.loads(l) for l in open(D + 'part2_blowups.jsonl')]
-G = json.load(open(R + 'certificates/stage0_geneson_2607.21396.json'))['A_ours']
-print('Geneson (alpha=-0.538 < -1/2, should be S):', classify_limit(G), 'domfree', domination_free(G))
-K = [[int(i != j) for j in range(8)] for i in range(8)]; print('K8:', classify_limit(K))
-cnt = Counter(); mism = []
-for r in rows:
-    B = d6_decode(r['blowup_d6']); df = domination_free(B); cl = classify_limit(B)
-    own = 'DROPPED' if (not df or cl == 'X') else cl
-    f8 = r.get('filter8_stdout', '') if not r['in_hits_own'] else 'S'
-    f8flag = f8.split()[-1] if f8 else 'DROPPED'
-    r['own_domination_free'] = df; r['own_limit_class'] = cl; r['own_filter_flag'] = own
-    cnt[(own, f8flag)] += 1
-    if own != f8flag: mism.append(r['blowup_d6'])
-print('own flag vs filter8 flag (own, filter8):', dict(cnt)); print('mismatches', mism)
-print('dropped reasons:', dict(Counter(('not_domfree' if not r['own_domination_free'] else 'alpha>-1/2') for r in rows if r['own_filter_flag'] == 'DROPPED')))
-with open(D + 'part2_blowups_flags.jsonl', 'w') as f:
-    for r in rows: f.write(json.dumps({k: r[k] for k in ('blowup_d6', 'parent_d6', 'v', 'in_hits_own', 'own_domination_free', 'own_limit_class', 'own_filter_flag')}) + '\n')
-json.dump({'own_vs_filter8': {str(k): v for k, v in cnt.items()}, 'mismatches': mism}, open(D + 'part2b_summary.json', 'w'), indent=1)
+if __name__ == '__main__':
+  rows = [json.loads(l) for l in open(D + 'part2_blowups.jsonl')]
+  G = json.load(open(R + 'certificates/stage0_geneson_2607.21396.json'))['A_ours']
+  print('Geneson (alpha=-0.538 < -1/2, should be S):', classify_limit(G), 'domfree', domination_free(G))
+  K = [[int(i != j) for j in range(8)] for i in range(8)]; print('K8:', classify_limit(K))
+  cnt = Counter(); mism = []
+  for r in rows:
+      B = d6_decode(r['blowup_d6']); df = domination_free(B); cl = classify_limit(B)
+      own = 'DROPPED' if (not df or cl == 'X') else cl
+      f8 = r.get('filter8_stdout', '') if not r['in_hits_own'] else 'S'
+      f8flag = f8.split()[-1] if f8 else 'DROPPED'
+      r['own_domination_free'] = df; r['own_limit_class'] = cl; r['own_filter_flag'] = own
+      cnt[(own, f8flag)] += 1
+      if own != f8flag: mism.append(r['blowup_d6'])
+  print('own flag vs filter8 flag (own, filter8):', dict(cnt)); print('mismatches', mism)
+  print('dropped reasons:', dict(Counter(('not_domfree' if not r['own_domination_free'] else 'alpha>-1/2') for r in rows if r['own_filter_flag'] == 'DROPPED')))
+  with open(D + 'part2_blowups_flags.jsonl', 'w') as f:
+      for r in rows: f.write(json.dumps({k: r[k] for k in ('blowup_d6', 'parent_d6', 'v', 'in_hits_own', 'own_domination_free', 'own_limit_class', 'own_filter_flag')}) + '\n')
+  json.dump({'own_vs_filter8': {str(k): v for k, v in cnt.items()}, 'mismatches': mism}, open(D + 'part2b_summary.json', 'w'), indent=1)

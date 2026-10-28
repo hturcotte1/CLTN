@@ -1,0 +1,178 @@
+{
+ "agent": "completeness_twins",
+ "part2": {
+  "blowups_built": 861,
+  "distinct_blowups": 858,
+  "in_hits": 61,
+  "not_in_hits": 797,
+  "not_in_hits_in_results": 60,
+  "not_in_hits_verdicts": {
+   "(None, None)": 737,
+   "('never', 'no legal beta with all a_i > 0 and all o_k < 0')": 43,
+   "('never', 'never_full')": 17
+  },
+  "not_in_hits_outside_class": 0,
+  "not_in_hits_filter8_flags": {
+   "DROPPED": 690,
+   "B": 47,
+   "S": 60
+  },
+  "missed_counterexamples": [],
+  "parent_control_failures": [],
+  "undecided_points": 0,
+  "in_hits_interval_equal_to_parent": 15,
+  "in_hits_interval_differs": 46,
+  "min_arcs_blowup": 30,
+  "min_underlying_edges_blowup": 26,
+  "seconds": 110.7
+ },
+ "part2b_own_vs_filter8_flags": {
+  "own_vs_filter8": {
+   "('DROPPED', 'DROPPED')": 676,
+   "('B', 'B')": 42,
+   "('B', 'DROPPED')": 14,
+   "('S', 'S')": 121,
+   "('DROPPED', 'B')": 5
+  },
+  "mismatches": [
+   "&GK?t^Qy]qpIw",
+   "&GMBE]Zv^bvV?",
+   "&GMBE]Zv^jtV?",
+   "&GMBE]Zv^rrV?",
+   "&GMBE]Zv^zpV?",
+   "&GM@V^Jf^zpTO",
+   "&GMBF^Jf^bvV?",
+   "&GMBF^Jf^jtV?",
+   "&GMBF^Jf^rrV?",
+   "&GMBF^Jf^zpV?",
+   "&GKQa^RzNgpDw",
+   "&GNBf^jf\\zwV_",
+   "&GNBf^zrXzwV_",
+   "&GNBeUbIXbuV_",
+   "&G^ZIWZs\\`hUO",
+   "&G]J][as]RjYw",
+   "&G^zvZr[WaT\\o",
+   "&G^Z~ZpxOabNw",
+   "&G^ZZZr|Sab\\o"
+  ]
+ },
+ "part2_flag_mismatches_resolved_by_root_isolation": "all 19 have alpha(A|perp) > -1/2 exactly (14: own B / filter8 dropped; 5: own dropped / filter8 B via zero coefficient)",
+ "part2_hurwitz_vs_rootcount_points": {
+  "points": 60,
+  "hurwitz_vs_rootcount": {
+   "('stable', 'stable', True)": 43,
+   "('unstable', 'unstable', True)": 17
+  }
+ },
+ "part2_interval_difference_checks": {
+  "('in_parent_out_hit', True)": 20,
+  "('in_hit_out_parent', True)": 25,
+  "('in_parent_out_hit_left', True)": 2,
+  "('no_separating_beta_found', None)": 1
+ },
+ "part2_disjoint_case": [
+  {
+   "point": "parent_mid",
+   "beta": "773/384",
+   "t": 10000,
+   "blowup": [
+    "stable",
+    false
+   ],
+   "parent": [
+    "stable",
+    true
+   ]
+  },
+  {
+   "point": "parent_mid",
+   "beta": "773/384",
+   "t": 100000,
+   "blowup": [
+    "stable",
+    false
+   ],
+   "parent": [
+    "stable",
+    true
+   ]
+  },
+  {
+   "point": "hit_mid",
+   "beta": "24323/11520",
+   "t": 10000,
+   "blowup": [
+    "stable",
+    true
+   ],
+   "parent": [
+    "unstable",
+    true
+   ]
+  },
+  {
+   "point": "hit_mid",
+   "beta": "24323/11520",
+   "t": 100000,
+   "blowup": [
+    "stable",
+    true
+   ],
+   "parent": [
+    "unstable",
+    true
+   ]
+  }
+ ],
+ "part3": {
+  "records": 9133,
+  "records_with_twins": 4271,
+  "twin_pairs": 5202,
+  "switches": 29116,
+  "single_switches": 12470,
+  "switch_results": 29116,
+  "ok": 29116,
+  "exceptions": 0,
+  "distinct_switch_canons": 4190,
+  "switch_in_hits": 29116,
+  "switch_in_results": 29116,
+  "leaves_class": 0,
+  "same_interval": 29116,
+  "switch_equals_source_canon": 5022,
+  "missed_counterexamples": 0,
+  "seconds": 392.7
+ },
+ "part4": {
+  "records": 195,
+  "records_with_twins": 73,
+  "twin_pairs": 86,
+  "switches": 643,
+  "single_switches": 233,
+  "switch_results": 643,
+  "ok": 411,
+  "exceptions": 232,
+  "distinct_switch_canons": 351,
+  "switch_in_hits": 0,
+  "switch_in_results": 411,
+  "leaves_class": 0,
+  "same_verdict": 411,
+  "same_reason": 411,
+  "verdict_pairs": {
+   "('never', 'never', 'no legal beta with all a_i > 0 and all o_k < 0')": 397,
+   "('never', 'never', 'never_full')": 14,
+   "('never', None, None)": 232
+  },
+  "missed_counterexamples": 0,
+  "seconds": 439.7,
+  "sample_rule": "0-based line index i of n8/n8_limit_results.jsonl with i % 1692 == 0 and verdict == 'never'",
+  "sample_size": 195
+ },
+ "part4b_absent_switches": {
+  "(in_results, own_domination_free, own_limit_class, source_reason) -> count": {
+   "(True, True, 'S', 'no legal beta with all a_i > 0 and all o_k < 0')": 397,
+   "(True, True, 'S', 'never_full')": 14,
+   "(False, False, 'S', 'no legal beta with all a_i > 0 and all o_k < 0')": 232
+  }
+ },
+ "verdict": "CLEAN: 0 missed counterexamples; Lemma J closure holds on all 29,116 switches of the 9,133 candidates with identical stored intervals; all 643 switches of the 195 sampled never-records are never (411 in the results file with the same reason, 232 absent because not domination-free, Lemma D)."
+}

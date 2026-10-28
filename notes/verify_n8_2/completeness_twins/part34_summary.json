@@ -1,0 +1,45 @@
+{
+ "part3": {
+  "records": 9133,
+  "records_with_twins": 4271,
+  "twin_pairs": 5202,
+  "switches": 29116,
+  "single_switches": 12470,
+  "switch_results": 29116,
+  "ok": 29116,
+  "exceptions": 0,
+  "distinct_switch_canons": 4190,
+  "switch_in_hits": 29116,
+  "switch_in_results": 29116,
+  "leaves_class": 0,
+  "same_interval": 29116,
+  "switch_equals_source_canon": 5022,
+  "missed_counterexamples": 0,
+  "seconds": 392.7
+ },
+ "part4": {
+  "records": 195,
+  "records_with_twins": 73,
+  "twin_pairs": 86,
+  "switches": 643,
+  "single_switches": 233,
+  "switch_results": 643,
+  "ok": 411,
+  "exceptions": 232,
+  "distinct_switch_canons": 351,
+  "switch_in_hits": 0,
+  "switch_in_results": 411,
+  "leaves_class": 0,
+  "same_verdict": 411,
+  "same_reason": 411,
+  "verdict_pairs": {
+   "('never', 'never', 'no legal beta with all a_i > 0 and all o_k < 0')": 397,
+   "('never', 'never', 'never_full')": 14,
+   "('never', None, None)": 232
+  },
+  "missed_counterexamples": 0,
+  "seconds": 439.7,
+  "sample_rule": "0-based line index i of n8/n8_limit_results.jsonl with i % 1692 == 0 and verdict == 'never'",
+  "sample_size": 195
+ }
+}

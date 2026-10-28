@@ -1,0 +1,3391 @@
+&G@_wOr~QrI]_ 29 S hurwitz
+&G@_wOr~QrI]g 30 N negative minor
+&G@_wOr~QrI]o 30 N dominated
+&G@_wOr~QrI^_ 30 N negative coefficient
+&G@_wOr~QrJ]_ 30 N negative minor
+&G@_wOr~QrM]_ 30 N negative coefficient
+&G@_wOr~QrY]_ 30 N negative minor
+&G@_wOr~Qri]_ 30 N dominated
+&G@_wOr~QzI]_ 30 N dominated
+&G@_wOr~RrI]_ 30 N negative coefficient
+&G@_wOr~UrI]_ 30 N negative coefficient
+&G@_wOr~YrI]_ 30 N dominated
+&G@_wOz~QrI]_ 30 N dominated
+&G@_wPr~QrI]_ 30 N negative minor
+&G@_wQr~QrI]_ 30 N negative coefficient
+&G@_wSr~QrI]_ 30 N negative coefficient
+&G@_wWr~QrI]_ 30 N negative coefficient
+&G@_xOr~QrI]_ 30 N negative coefficient
+&G@_yOr~QrI]_ 30 N dominated
+&G@_{Or~QrI]_ 30 N negative coefficient
+&G@`wOr~QrI]_ 30 N negative minor
+&G@awOr~QrI]_ 30 N negative coefficient
+&G@gwOr~QrI]_ 30 N dominated
+&G@owOr~QrI]_ 30 N negative minor
+&G@qMVq]DYuZo 33 N negative coefficient
+&G@riVayFXr^o 35 N dominated
+&G@w|FxjEI]\o 34 N negative coefficient
+&GAr]V_nFWj^w 36 N dominated
+&GB_wOr~QrI]_ 30 N negative coefficient
+&GBbMMa{^XP^_ 33 N negative minor
+&GBg~^RkMh\^_ 37 N dominated
+&GBw^JWlVzm^w 40 N negative minor
+&GBw^RRUFi}Zo 36 N negative minor
+&GBwnURQRB}Nw 35 N dominated
+&GD_wOr~QrI]_ 30 N negative coefficient
+&GDg~^RkMh\^_ 37 N negative minor
+&GDqqZp|^q}^w 41 N negative coefficient
+&GDryVb]Mz{]W 39 N dominated
+&GDw^JWlVzm^w 40 N dominated
+&GDw^RRUFi}Zo 36 N negative minor
+&GDwnURQRB}Nw 35 N negative minor
+&GDxl]b{V`v]g 38 N dominated
+&GE@ZDJVMImKw 30 N negative minor
+&GE@wJxpZqn\o 34 N negative minor
+&GEAY^xvNIl\O 35 N negative minor
+&GEA[FPfZrr\o 33 N dominated
+&GEA]^xlFJnXW 36 N dominated
+&GEAqZroMi{]O 31 N negative minor
+&GEArUqq]R{^? 32 N negative minor
+&GEg~^RkMh\^_ 37 N negative minor
+&GEw^JWlVzm^w 40 N dominated
+&GEw^RRUFi}Zo 36 N negative minor
+&GEwnURQRB}Nw 35 N negative minor
+&GEyw^QW^P|Nw 37 N dominated
+&GF?~BPn]hzXG 34 N dominated
+&GF@iLzW\bkNW 33 N negative coefficient
+&GFAMUpnDgfZW 32 N negative minor
+&GFAY[zkKj{^W 35 N negative minor
+&GFA]^zkKi}XW 36 N negative minor
+&GFAi^xP\jeLg 34 N negative minor
+&GFBI\`|@XjMg 31 N negative minor
+&GFBI\i{\ri\? 33 N negative minor
+&GFBZVr~[jn\? 39 S hurwitz
+&GFB]NHtIJw^g 34 B zero coefficient
+&GFBb^hRXr}Kg 35 S hurwitz
+&GFBjNjp\R~]G 38 N negative coefficient
+&GFBjVrYDJ}\? 34 N negative coefficient
+&GFG~^RkMh\^_ 37 N negative coefficient
+&GFO~EWzHz{^w 38 N negative minor
+&GFQ}ZOxYwx^o 36 N negative minor
+&GFRMUAuZOxMw 32 N negative minor
+&GFR]MJkT`~^g 37 N negative minor
+&GFR]YBK^b{^_ 35 N negative coefficient
+&GFW^JWlVzm^w 40 S hurwitz
+&GFW^RRUFi}Zo 36 N dominated
+&GFWnURQRB}Nw 35 N dominated
+&GFX|AJYFi}^W 36 N negative coefficient
+&GF_xHPNUjMLG 30 N negative coefficient
+&GF_zBRJYrL\_ 32 N negative coefficient
+&GF_~^RkMh\^_ 37 N negative coefficient
+&GFaA^x\Lj^^O 37 N negative coefficient
+&GFaN^zLFGFHW 33 N negative minor
+&GFaq^yqKzW\O 34 B zero minor
+&GFbI^jmVRM\? 35 N negative minor
+&GFbVNinKZS^_ 36 N negative coefficient
+&GFg^JWlVzm^w 40 N dominated
+&GFg^RRUFi}Zo 36 N negative minor
+&GFg^^RkMh\^_ 37 N negative minor
+&GFgnURQRB}Nw 35 S hurwitz
+&GFgn^RkMh\^_ 37 N negative coefficient
+&GFgv^RkMh\^_ 37 N negative minor
+&GFgz^RkMh\^_ 37 N negative minor
+&GFg|^RkMh\^_ 37 N negative minor
+&GFg}^RkMh\^_ 37 N negative coefficient
+&GFg~NRkMh\^_ 37 N negative coefficient
+&GFg~VRkMh\^_ 37 N negative coefficient
+&GFg~ZRkMh\^_ 37 N negative minor
+&GFg~\RkMh\^_ 37 N negative minor
+&GFg~]RkMh\^_ 37 N negative coefficient
+&GFg~^BkMh\^_ 37 N negative minor
+&GFg~^PkMh\^_ 37 N negative coefficient
+&GFg~^QkMh\^_ 37 B zero minor
+&GFg~^RKMh\^_ 37 S hurwitz
+&GFg~^RcMh\^_ 37 N dominated
+&GFg~^RgMh\^_ 37 N negative minor
+&GFg~^RkEh\^_ 37 N dominated
+&GFg~^RkIh\^_ 37 B zero minor
+&GFg~^RkKh\^_ 37 N negative minor
+&GFg~^RkMH\^_ 37 N dominated
+&GFg~^RkM`\^_ 37 N negative coefficient
+&GFg~^RkMg\^_ 37 N negative coefficient
+&GFg~^RkMhL^_ 37 N negative minor
+&GFg~^RkMhT^_ 37 N dominated
+&GFg~^RkMhX^_ 37 N dominated
+&GFg~^RkMh[^_ 37 N dominated
+&GFg~^RkMh\N_ 37 N dominated
+&GFg~^RkMh\V_ 37 N negative coefficient
+&GFg~^RkMh\Z_ 37 N negative coefficient
+&GFg~^RkMh\\_ 37 N dominated
+&GFg~^RkMh\]_ 37 N dominated
+&GFg~^RkMh\^? 37 B zero minor
+&GFg~^RkMh\^_ 38 S hurwitz
+&GFg~^RkMh\^g 39 S hurwitz
+&GFg~^RkMh\^o 39 N dominated
+&GFg~^RkMh^^_ 39 N dominated
+&GFg~^RkMh|^_ 39 N dominated
+&GFg~^RkMj\^_ 39 B zero minor
+&GFg~^RkMx\^_ 39 N dominated
+&GFg~^RkNh\^_ 39 N dominated
+&GFg~^Rk]h\^_ 39 N dominated
+&GFg~^RlMh\^_ 39 N negative minor
+&GFg~^RmMh\^_ 39 N negative minor
+&GFg~^R{Mh\^_ 39 N negative minor
+&GFg~^ZkMh\^_ 39 S hurwitz
+&GFg~^rkMh\^_ 39 N negative coefficient
+&GFh~^RkMh\^_ 39 N negative coefficient
+&GFi~^RkMh\^_ 39 S hurwitz
+&GFo^JWlVzm^w 40 N negative coefficient
+&GFo^RRUFi}Zo 36 N negative minor
+&GFonURQRB}Nw 35 N negative coefficient
+&GFrA]b}VZ]VW 38 N negative minor
+&GFrE^b]ZJvVw 40 N negative minor
+&GFrbUiiDxRVg 34 N negative coefficient
+&GFwNJWlVzm^w 40 N dominated
+&GFwNRRUFi}Zo 36 N dominated
+&GFwNURQRB}Nw 35 N negative coefficient
+&GFwVJWlVzm^w 40 N negative coefficient
+&GFwVRRUFi}Zo 36 N negative minor
+&GFwZJWlVzm^w 40 B zero minor
+&GFwZRRUFi}Zo 36 N negative minor
+&GFw\JWlVzm^w 40 N negative minor
+&GFw\RRUFi}Zo 36 N negative minor
+&GFw]JWlVzm^w 40 N negative minor
+&GFw]RRUFi}Zo 36 N negative coefficient
+&GFw^BRUFi}Zo 36 N dominated
+&GFw^BWlVzm^w 40 N dominated
+&GFw^HWlVzm^w 40 N negative minor
+&GFw^IWlVzm^w 40 N negative coefficient
+&GFw^JGlVzm^w 40 N dominated
+&GFw^JOlVzm^w 40 N dominated
+&GFw^JWLVzm^w 40 N negative minor
+&GFw^JWdVzm^w 40 N negative minor
+&GFw^JWhVzm^w 40 N dominated
+&GFw^JWkVzm^w 40 N negative minor
+&GFw^JWlFzm^w 40 N dominated
+&GFw^JWlRzm^w 40 N negative coefficient
+&GFw^JWlTzm^w 40 N negative coefficient
+&GFw^JWlUzm^w 40 N negative coefficient
+&GFw^JWlVZm^w 40 N negative minor
+&GFw^JWlVjm^w 40 N negative coefficient
+&GFw^JWlVrm^w 40 N negative minor
+&GFw^JWlVxm^w 40 N negative coefficient
+&GFw^JWlVym^w 40 N negative minor
+&GFw^JWlVzM^w 40 N negative minor
+&GFw^JWlVze^w 40 N dominated
+&GFw^JWlVzi^w 40 N negative minor
+&GFw^JWlVzk^w 40 N negative coefficient
+&GFw^JWlVzmNw 40 N negative coefficient
+&GFw^JWlVzmVw 40 N dominated
+&GFw^JWlVzmZw 40 S hurwitz
+&GFw^JWlVzm\w 40 N negative minor
+&GFw^JWlVzm]w 40 N negative minor
+&GFw^JWlVzm^W 40 N dominated
+&GFw^JWlVzm^g 40 N dominated
+&GFw^JWlVzm^o 40 S hurwitz
+&GFw^JWlVzm^w 41 S hurwitz
+&GFw^JWlVzn^w 42 N negative minor
+&GFw^JWlVz}^w 42 N dominated
+&GFw^JWl^zm^w 42 N dominated
+&GFw^JWnVzm^w 42 N negative minor
+&GFw^JW|Vzm^w 42 N negative minor
+&GFw^JXlVzm^w 42 N negative minor
+&GFw^JYlVzm^w 42 N dominated
+&GFw^JwlVzm^w 42 N dominated
+&GFw^NWlVzm^w 42 B zero minor
+&GFw^PRUFi}Zo 36 N negative minor
+&GFw^QRUFi}Zo 36 N negative minor
+&GFw^RBUFi}Zo 36 B zero minor
+&GFw^RPUFi}Zo 36 N negative minor
+&GFw^RQUFi}Zo 36 N negative minor
+&GFw^RREFi}Zo 36 N negative minor
+&GFw^RRQFi}Zo 36 N negative minor
+&GFw^RRSFi}Zo 36 N dominated
+&GFw^RRUBi}Zo 36 N negative minor
+&GFw^RRUDi}Zo 36 N negative minor
+&GFw^RRUEi}Zo 36 N dominated
+&GFw^RRUFI}Zo 36 N negative minor
+&GFw^RRUFa}Zo 36 N negative minor
+&GFw^RRUFg}Zo 36 N dominated
+&GFw^RRUFi]Zo 36 N negative coefficient
+&GFw^RRUFimZo 36 N negative minor
+&GFw^RRUFiuZo 36 N negative minor
+&GFw^RRUFiyZo 36 N negative minor
+&GFw^RRUFi{Zo 36 N negative coefficient
+&GFw^RRUFi}Jo 36 N negative coefficient
+&GFw^RRUFi}Ro 36 N negative minor
+&GFw^RRUFi}Xo 36 N dominated
+&GFw^RRUFi}Yo 36 N dominated
+&GFw^RRUFi}ZO 36 N negative minor
+&GFw^RRUFi}Z_ 36 N negative minor
+&GFw^RRUFi}Zo 37 S hurwitz
+&GFw^RRUFi}Zw 38 N negative minor
+&GFw^RRUFi}^o 38 N dominated
+&GFw^RRUFi~Zo 38 N negative coefficient
+&GFw^RRUFj}Zo 38 N dominated
+&GFw^RRUFy}Zo 38 N negative minor
+&GFw^RRUNi}Zo 38 N negative minor
+&GFw^RRUVi}Zo 38 N negative minor
+&GFw^RRVFi}Zo 38 N negative minor
+&GFw^RR]Fi}Zo 38 N dominated
+&GFw^RRuFi}Zo 38 B zero minor
+&GFw^RZUFi}Zo 38 N negative minor
+&GFw^RrUFi}Zo 38 N negative minor
+&GFw^VRUFi}Zo 38 N negative minor
+&GFw^ZRUFi}Zo 38 N dominated
+&GFw^ZWlVzm^w 42 N dominated
+&GFwfURQRB}Nw 35 N negative minor
+&GFwjURQRB}Nw 35 S hurwitz
+&GFwlURQRB}Nw 35 N negative coefficient
+&GFwmURQRB}Nw 35 N negative minor
+&GFwnERQRB}Nw 35 N dominated
+&GFwnQRQRB}Nw 35 N negative coefficient
+&GFwnSRQRB}Nw 35 N negative minor
+&GFwnUBQRB}Nw 35 N dominated
+&GFwnUPQRB}Nw 35 N negative minor
+&GFwnUQQRB}Nw 35 S hurwitz
+&GFwnURARB}Nw 35 N dominated
+&GFwnURORB}Nw 35 N dominated
+&GFwnURQBB}Nw 35 N negative coefficient
+&GFwnURQPB}Nw 35 N negative minor
+&GFwnURQQB}Nw 35 N negative coefficient
+&GFwnURQR@}Nw 35 N negative coefficient
+&GFwnURQRA}Nw 35 N dominated
+&GFwnURQRB]Nw 35 N dominated
+&GFwnURQRBmNw 35 N negative minor
+&GFwnURQRBuNw 35 N dominated
+&GFwnURQRByNw 35 N dominated
+&GFwnURQRB{Nw 35 N negative minor
+&GFwnURQRB}Fw 35 N negative minor
+&GFwnURQRB}Jw 35 N negative coefficient
+&GFwnURQRB}Lw 35 N negative coefficient
+&GFwnURQRB}Mw 35 N negative minor
+&GFwnURQRB}NW 35 N negative coefficient
+&GFwnURQRB}Ng 35 S hurwitz
+&GFwnURQRB}No 35 N negative coefficient
+&GFwnURQRB}Nw 36 S hurwitz
+&GFwnURQRB}^w 37 S hurwitz
+&GFwnURQRB~Nw 37 N dominated
+&GFwnURQRJ}Nw 37 N dominated
+&GFwnURQRR}Nw 37 B zero minor
+&GFwnURQRb}Nw 37 N negative minor
+&GFwnURQVB}Nw 37 S hurwitz
+&GFwnURQZB}Nw 37 N negative coefficient
+&GFwnURRRB}Nw 37 N dominated
+&GFwnURURB}Nw 37 N dominated
+&GFwnURYRB}Nw 37 N dominated
+&GFwnURqRB}Nw 37 N dominated
+&GFwnUZQRB}Nw 37 S hurwitz
+&GFwnUrQRB}Nw 37 N dominated
+&GFwnVRQRB}Nw 37 N negative coefficient
+&GFwn]RQRB}Nw 37 N dominated
+&GFw~JWlVzm^w 42 N negative coefficient
+&GFw~RRUFi}Zo 38 N dominated
+&GFw~URQRB}Nw 37 B zero minor
+&GFw~^RkMh\^_ 39 N negative coefficient
+&GFx^JWlVzm^w 42 N dominated
+&GFx^RRUFi}Zo 38 N negative minor
+&GFxlVa}Vw^^w 42 N dominated
+&GFxnURQRB}Nw 37 N negative coefficient
+&GFx|QbUYr]Ng 37 N negative minor
+&GFy^JWlVzm^w 42 N negative coefficient
+&GFy^RRUFi}Zo 38 N negative minor
+&GFynURQRB}Nw 37 N negative coefficient
+&GGw|FxjEI]\o 34 N negative coefficient
+&GHW|FxjEI]\o 34 N negative minor
+&GH_wOr~QrI]_ 30 N negative minor
+&GHbMMa{^XP^_ 33 N dominated
+&GHg|FxjEI]\o 34 N negative minor
+&GHo|FxjEI]\o 34 N negative coefficient
+&GHrkMgxNXX^? 33 N negative coefficient
+&GHw\FxjEI]\o 34 N negative coefficient
+&GHwlFxjEI]\o 34 N negative coefficient
+&GHwtFxjEI]\o 34 N negative minor
+&GHwxFxjEI]\o 34 N negative coefficient
+&GHw{FxjEI]\o 34 N negative minor
+&GHw|BxjEI]\o 34 N negative minor
+&GHw|DxjEI]\o 34 N negative coefficient
+&GHw|ExjEI]\o 34 N negative minor
+&GHw|FXjEI]\o 34 N negative minor
+&GHw|FhjEI]\o 34 N negative coefficient
+&GHw|FpjEI]\o 34 N dominated
+&GHw|FwjEI]\o 34 N negative minor
+&GHw|FxJEI]\o 34 N negative minor
+&GHw|FxbEI]\o 34 N negative minor
+&GHw|FxhEI]\o 34 N negative minor
+&GHw|FxiEI]\o 34 N dominated
+&GHw|FxjAI]\o 34 N negative minor
+&GHw|FxjCI]\o 34 N negative minor
+&GHw|FxjEA]\o 34 N negative minor
+&GHw|FxjEG]\o 34 N negative coefficient
+&GHw|FxjEIM\o 34 N dominated
+&GHw|FxjEIU\o 34 N negative coefficient
+&GHw|FxjEIY\o 34 N dominated
+&GHw|FxjEI[\o 34 N dominated
+&GHw|FxjEI]Lo 34 N negative minor
+&GHw|FxjEI]To 34 N negative minor
+&GHw|FxjEI]Xo 34 N negative minor
+&GHw|FxjEI][o 34 N dominated
+&GHw|FxjEI]\O 34 N negative minor
+&GHw|FxjEI]\_ 34 N dominated
+&GHw|FxjEI]\o 35 S hurwitz
+&GHw|FxjEI]\w 36 N dominated
+&GHw|FxjEI]^o 36 N dominated
+&GHw|FxjEI^\o 36 N dominated
+&GHw|FxjEI}\o 36 N dominated
+&GHw|FxjEJ]\o 36 N negative minor
+&GHw|FxjEY]\o 36 N negative minor
+&GHw|FxjEi]\o 36 N negative coefficient
+&GHw|FxjFI]\o 36 N negative coefficient
+&GHw|FxjMI]\o 36 N negative minor
+&GHw|FxjUI]\o 36 N negative minor
+&GHw|FxnEI]\o 36 N dominated
+&GHw|FxzEI]\o 36 N dominated
+&GHw|FzjEI]\o 36 N negative minor
+&GHw|NxjEI]\o 36 N negative coefficient
+&GHw|VxjEI]\o 36 N negative minor
+&GHw~FxjEI]\o 36 N negative minor
+&GHxl]b{V`v]g 38 N dominated
+&GHx|FxjEI]\o 36 N negative coefficient
+&GHy|FxjEI]\o 36 N negative minor
+&GI@ZDJVMImKw 30 N negative coefficient
+&GI@wJxpZqn\o 34 N negative coefficient
+&GIAY^xvNIl\O 35 N negative minor
+&GIA[FPfZrr\o 33 N dominated
+&GIA]^xlFJnXW 36 N dominated
+&GIAqZroMi{]O 31 N dominated
+&GIArUqq]R{^? 32 N dominated
+&GIbMMa{^XP^_ 33 B zero minor
+&GIyw^QW^P|Nw 37 N negative minor
+&GJ?~BPn]hzXG 34 N dominated
+&GJ@iLzW\bkNW 33 N negative coefficient
+&GJAMUpnDgfZW 32 N dominated
+&GJAY[zkKj{^W 35 N dominated
+&GJA]^zkKi}XW 36 N dominated
+&GJAi^xP\jeLg 34 N negative minor
+&GJBI\`|@XjMg 31 N negative coefficient
+&GJBI\i{\ri\? 33 N negative minor
+&GJBMMa{^XP^_ 33 N negative coefficient
+&GJBZVr~[jn\? 39 N negative coefficient
+&GJBb^hRXr}Kg 35 N negative minor
+&GJBjNjp\R~]G 38 N negative minor
+&GJBjVrYDJ}\? 34 N negative minor
+&GJQsZrgJh|Zw 36 N negative coefficient
+&GJQwJwpQpz\w 34 N negative coefficient
+&GJX|AJYFi}^W 36 N negative coefficient
+&GJ_xHPNUjMLG 30 N negative coefficient
+&GJ_zBRJYrL\_ 32 N negative coefficient
+&GJ`MMa{^XP^_ 33 N dominated
+&GJ`\Nh|DIi^o 35 N negative coefficient
+&GJaA^x\Lj^^O 37 N negative coefficient
+&GJaMMa{^XP^_ 33 N dominated
+&GJaN^zLFGFHW 33 N negative coefficient
+&GJaq^yqKzW\O 34 S hurwitz
+&GJbEMa{^XP^_ 33 N negative coefficient
+&GJbIMa{^XP^_ 33 N negative coefficient
+&GJbI^jmVRM\? 35 N negative minor
+&GJbKMa{^XP^_ 33 N negative coefficient
+&GJbMEa{^XP^_ 33 N negative minor
+&GJbMIa{^XP^_ 33 N negative coefficient
+&GJbMKa{^XP^_ 33 N negative minor
+&GJbMMA{^XP^_ 33 N negative coefficient
+&GJbMM_{^XP^_ 33 N negative minor
+&GJbMMa[^XP^_ 33 N negative minor
+&GJbMMak^XP^_ 33 N negative coefficient
+&GJbMMas^XP^_ 33 N dominated
+&GJbMMaw^XP^_ 33 N negative coefficient
+&GJbMMa{NXP^_ 33 B zero minor
+&GJbMMa{VXP^_ 33 N negative coefficient
+&GJbMMa{ZXP^_ 33 N negative minor
+&GJbMMa{\XP^_ 33 N negative minor
+&GJbMMa{]XP^_ 33 N negative coefficient
+&GJbMMa{^HP^_ 33 N negative coefficient
+&GJbMMa{^PP^_ 33 N negative coefficient
+&GJbMMa{^WP^_ 33 N negative minor
+&GJbMMa{^X@^_ 33 N negative minor
+&GJbMMa{^XO^_ 33 N negative coefficient
+&GJbMMa{^XPN_ 33 N negative coefficient
+&GJbMMa{^XPV_ 33 N negative coefficient
+&GJbMMa{^XPZ_ 33 N dominated
+&GJbMMa{^XP\_ 33 N dominated
+&GJbMMa{^XP]_ 33 N dominated
+&GJbMMa{^XP^? 33 N negative minor
+&GJbMMa{^XP^_ 34 S hurwitz
+&GJbMMa{^XP^g 35 N dominated
+&GJbMMa{^XP^o 35 N negative minor
+&GJbMMa{^XR^_ 35 N negative coefficient
+&GJbMMa{^XT^_ 35 N negative coefficient
+&GJbMMa{^XX^_ 35 B zero minor
+&GJbMMa{^Xp^_ 35 B zero minor
+&GJbMMa{^ZP^_ 35 N negative minor
+&GJbMMa{^xP^_ 35 N negative coefficient
+&GJbMMa|^XP^_ 35 N negative minor
+&GJbMMa}^XP^_ 35 N negative coefficient
+&GJbMMb{^XP^_ 35 N negative minor
+&GJbMMi{^XP^_ 35 N negative minor
+&GJbMMq{^XP^_ 35 N negative coefficient
+&GJbMNa{^XP^_ 35 N negative coefficient
+&GJbM]a{^XP^_ 35 N negative coefficient
+&GJbNMa{^XP^_ 35 N negative coefficient
+&GJbVNinKZS^_ 36 N negative coefficient
+&GJb]Ma{^XP^_ 35 N negative coefficient
+&GJbmMa{^XP^_ 35 N dominated
+&GJjMMa{^XP^_ 35 N dominated
+&GJq{\qgXpn^g 37 N negative coefficient
+&GJrA]b}VZ]VW 38 N negative coefficient
+&GJrE^b]ZJvVw 40 N negative minor
+&GJrMMa{^XP^_ 35 N negative coefficient
+&GJrbUiiDxRVg 34 N negative coefficient
+&GJrsV_~JZ}]w 40 N negative coefficient
+&GJw|FxjEI]\o 36 N negative minor
+&GJxlVa}Vw^^w 42 N negative coefficient
+&GJx|QbUYr]Ng 37 S hurwitz
+&GK@ZDJVMImKw 30 N negative coefficient
+&GK@wJxpZqn\o 34 N negative minor
+&GKAY^xvNIl\O 35 N dominated
+&GKA[FPfZrr\o 33 N dominated
+&GKA]^xlFJnXW 36 N dominated
+&GKAqZroMi{]O 31 N negative coefficient
+&GKArUqq]R{^? 32 N negative minor
+&GKxl]b{V`v]g 38 N negative coefficient
+&GKyw^QW^P|Nw 37 B zero minor
+&GL?~BPn]hzXG 34 N dominated
+&GL@iLzW\bkNW 33 N negative coefficient
+&GLAMUpnDgfZW 32 N negative minor
+&GLAY[zkKj{^W 35 N negative coefficient
+&GLA]^zkKi}XW 36 N negative coefficient
+&GLAi^xP\jeLg 34 B zero coefficient
+&GLBI\`|@XjMg 31 N negative coefficient
+&GLBI\i{\ri\? 33 N dominated
+&GLBZVr~[jn\? 39 N dominated
+&GLBb^hRXr}Kg 35 N negative minor
+&GLBjNjp\R~]G 38 N negative minor
+&GLBjVrYDJ}\? 34 N negative minor
+&GLXl]b{V`v]g 38 N dominated
+&GLX|AJYFi}^W 36 S hurwitz
+&GL_xHPNUjMLG 30 N negative minor
+&GL_zBRJYrL\_ 32 N negative coefficient
+&GLaA^x\Lj^^O 37 N dominated
+&GLaN^zLFGFHW 33 N negative minor
+&GLaq^yqKzW\O 34 N negative coefficient
+&GLbI^jmVRM\? 35 N negative coefficient
+&GLbVNinKZS^_ 36 N negative coefficient
+&GLhl]b{V`v]g 38 N dominated
+&GLplZ@hFgRZO 31 N dominated
+&GLpl]b{V`v]g 38 N negative coefficient
+&GLqwNwLMx|^o 38 N negative coefficient
+&GLrA]b}VZ]VW 38 N negative coefficient
+&GLrE^b]ZJvVw 40 N negative minor
+&GLrbUiiDxRVg 34 N negative minor
+&GLwl]b{V`v]g 38 N dominated
+&GLw|FxjEI]\o 36 N negative coefficient
+&GLxL]b{V`v]g 38 N negative coefficient
+&GLxd]b{V`v]g 38 N negative coefficient
+&GLxh]b{V`v]g 38 N negative coefficient
+&GLxk]b{V`v]g 38 N dominated
+&GLxlMb{V`v]g 38 N dominated
+&GLxlUb{V`v]g 38 N dominated
+&GLxlVa}Vw^^w 42 B zero coefficient
+&GLxlYb{V`v]g 38 N dominated
+&GLxl[b{V`v]g 38 N negative minor
+&GLxl]B{V`v]g 38 N negative minor
+&GLxl]`{V`v]g 38 N negative coefficient
+&GLxl]a{V`v]g 38 B zero minor
+&GLxl]b[V`v]g 38 N negative minor
+&GLxl]bkV`v]g 38 N negative coefficient
+&GLxl]bsV`v]g 38 N negative coefficient
+&GLxl]bwV`v]g 38 N negative coefficient
+&GLxl]b{F`v]g 38 N negative coefficient
+&GLxl]b{R`v]g 38 B zero minor
+&GLxl]b{T`v]g 38 N negative minor
+&GLxl]b{U`v]g 38 N negative coefficient
+&GLxl]b{V@v]g 38 N dominated
+&GLxl]b{V_v]g 38 N negative coefficient
+&GLxl]b{V`V]g 38 N negative coefficient
+&GLxl]b{V`f]g 38 N negative minor
+&GLxl]b{V`r]g 38 N dominated
+&GLxl]b{V`t]g 38 N negative coefficient
+&GLxl]b{V`u]g 38 N negative coefficient
+&GLxl]b{V`vMg 38 N negative minor
+&GLxl]b{V`vUg 38 N dominated
+&GLxl]b{V`vYg 38 N negative coefficient
+&GLxl]b{V`v[g 38 N negative minor
+&GLxl]b{V`v]G 38 N negative minor
+&GLxl]b{V`v]_ 38 N negative coefficient
+&GLxl]b{V`v]g 39 S hurwitz
+&GLxl]b{V`v]w 40 N negative minor
+&GLxl]b{V`v^g 40 N negative minor
+&GLxl]b{V`~]g 40 N negative coefficient
+&GLxl]b{Vbv]g 40 N dominated
+&GLxl]b{Vhv]g 40 N negative minor
+&GLxl]b{Vpv]g 40 N negative coefficient
+&GLxl]b{^`v]g 40 S hurwitz
+&GLxl]b|V`v]g 40 B zero coefficient
+&GLxl]b}V`v]g 40 N negative coefficient
+&GLxl]j{V`v]g 40 N negative minor
+&GLxl]r{V`v]g 40 N negative coefficient
+&GLxl^b{V`v]g 40 N dominated
+&GLxn]b{V`v]g 40 N dominated
+&GLx|QbUYr]Ng 37 N negative coefficient
+&GLx|]b{V`v]g 40 N dominated
+&GLzl]b{V`v]g 40 N negative coefficient
+&GM?Y^xvNIl\O 35 N negative minor
+&GM?ZDJVMImKw 30 N dominated
+&GM?[FPfZrr\o 33 N negative coefficient
+&GM?]^xlFJnXW 36 N negative coefficient
+&GM?qZroMi{]O 31 N negative coefficient
+&GM?rUqq]R{^? 32 N negative minor
+&GM?wJxpZqn\o 34 N negative minor
+&GM?~BPn]hzXG 34 N negative minor
+&GM@JDJVMImKw 30 B zero coefficient
+&GM@RDJVMImKw 30 N negative minor
+&GM@WJxpZqn\o 34 N negative coefficient
+&GM@XDJVMImKw 30 N dominated
+&GM@YDJVMImKw 30 N dominated
+&GM@Z@JVMImKw 30 N negative minor
+&GM@ZCJVMImKw 30 N negative coefficient
+&GM@ZDBVMImKw 30 N negative coefficient
+&GM@ZDHVMImKw 30 N negative minor
+&GM@ZDIVMImKw 30 N negative coefficient
+&GM@ZDJFMImKw 30 N dominated
+&GM@ZDJRMImKw 30 N dominated
+&GM@ZDJTMImKw 30 N negative coefficient
+&GM@ZDJUMImKw 30 N negative coefficient
+&GM@ZDJVEImKw 30 N negative coefficient
+&GM@ZDJVIImKw 30 N dominated
+&GM@ZDJVKImKw 30 N negative coefficient
+&GM@ZDJVMAmKw 30 N negative coefficient
+&GM@ZDJVMGmKw 30 N negative coefficient
+&GM@ZDJVMIMKw 30 N negative coefficient
+&GM@ZDJVMIeKw 30 N negative coefficient
+&GM@ZDJVMIiKw 30 N negative minor
+&GM@ZDJVMIkKw 30 N negative minor
+&GM@ZDJVMImCw 30 N negative coefficient
+&GM@ZDJVMImGw 30 N negative coefficient
+&GM@ZDJVMImKW 30 N negative minor
+&GM@ZDJVMImKg 30 N negative coefficient
+&GM@ZDJVMImKo 30 N negative coefficient
+&GM@ZDJVMImKw 31 S hurwitz
+&GM@ZDJVMImLw 32 N negative coefficient
+&GM@ZDJVMImMw 32 N negative minor
+&GM@ZDJVMIm[w 32 N negative coefficient
+&GM@ZDJVMInKw 32 N negative minor
+&GM@ZDJVMI}Kw 32 N negative coefficient
+&GM@ZDJVMJmKw 32 N negative minor
+&GM@ZDJVMYmKw 32 N negative minor
+&GM@ZDJVMimKw 32 N negative coefficient
+&GM@ZDJVNImKw 32 N negative coefficient
+&GM@ZDJV]ImKw 32 N dominated
+&GM@ZDJ^MImKw 32 N negative coefficient
+&GM@ZDJvMImKw 32 N negative minor
+&GM@ZDZVMImKw 32 N dominated
+&GM@ZDjVMImKw 32 N negative coefficient
+&GM@ZFJVMImKw 32 N dominated
+&GM@ZLJVMImKw 32 N dominated
+&GM@ZTJVMImKw 32 N negative minor
+&GM@^DJVMImKw 32 N negative minor
+&GM@gJxpZqn\o 34 N negative coefficient
+&GM@iLzW\bkNW 33 N negative coefficient
+&GM@oJxpZqn\o 34 N negative coefficient
+&GM@wBxpZqn\o 34 N dominated
+&GM@wHxpZqn\o 34 N negative minor
+&GM@wIxpZqn\o 34 N dominated
+&GM@wJXpZqn\o 34 N dominated
+&GM@wJhpZqn\o 34 N dominated
+&GM@wJppZqn\o 34 B zero minor
+&GM@wJwpZqn\o 34 N dominated
+&GM@wJxPZqn\o 34 N negative minor
+&GM@wJx`Zqn\o 34 N dominated
+&GM@wJxoZqn\o 34 N negative coefficient
+&GM@wJxpJqn\o 34 N negative minor
+&GM@wJxpRqn\o 34 N negative minor
+&GM@wJxpXqn\o 34 N negative coefficient
+&GM@wJxpYqn\o 34 N dominated
+&GM@wJxpZQn\o 34 N negative minor
+&GM@wJxpZan\o 34 N negative minor
+&GM@wJxpZon\o 34 N negative coefficient
+&GM@wJxpZqN\o 34 N negative coefficient
+&GM@wJxpZqf\o 34 N negative minor
+&GM@wJxpZqj\o 34 N negative minor
+&GM@wJxpZql\o 34 N negative coefficient
+&GM@wJxpZqm\o 34 N negative coefficient
+&GM@wJxpZqnLo 34 N negative minor
+&GM@wJxpZqnTo 34 N dominated
+&GM@wJxpZqnXo 34 N dominated
+&GM@wJxpZqn[o 34 N negative coefficient
+&GM@wJxpZqn\O 34 N negative minor
+&GM@wJxpZqn\_ 34 N negative minor
+&GM@wJxpZqn\o 35 S hurwitz
+&GM@wJxpZqn\w 36 N dominated
+&GM@wJxpZqn^o 36 N dominated
+&GM@wJxpZq~\o 36 N negative coefficient
+&GM@wJxpZrn\o 36 N negative coefficient
+&GM@wJxpZyn\o 36 N negative minor
+&GM@wJxp^qn\o 36 N negative minor
+&GM@wJxrZqn\o 36 N negative coefficient
+&GM@wJxtZqn\o 36 N negative minor
+&GM@wJxxZqn\o 36 N negative coefficient
+&GM@wJzpZqn\o 36 N dominated
+&GM@wNxpZqn\o 36 N dominated
+&GM@wZxpZqn\o 36 N dominated
+&GM@xJxpZqn\o 36 N negative minor
+&GM@yJxpZqn\o 36 N dominated
+&GM@zDJVMImKw 32 N negative minor
+&GM@{JxpZqn\o 36 N negative coefficient
+&GMAI^xvNIl\O 35 N dominated
+&GMAKFPfZrr\o 33 N negative coefficient
+&GMAMUpnDgfZW 32 N negative coefficient
+&GMAM^xlFJnXW 36 N dominated
+&GMAQZroMi{]O 31 N negative coefficient
+&GMAQ^xvNIl\O 35 N negative coefficient
+&GMARUqq]R{^? 32 N negative minor
+&GMASFPfZrr\o 33 N negative coefficient
+&GMAU^xlFJnXW 36 N dominated
+&GMAWFPfZrr\o 33 N negative coefficient
+&GMAW^xvNIl\O 35 N negative minor
+&GMAYNxvNIl\O 35 N negative coefficient
+&GMAYVxvNIl\O 35 N negative coefficient
+&GMAYZxvNIl\O 35 N negative coefficient
+&GMAY[zkKj{^W 35 N negative minor
+&GMAY\xvNIl\O 35 N negative minor
+&GMAY]xvNIl\O 35 N negative coefficient
+&GMAY^XvNIl\O 35 N negative minor
+&GMAY^hvNIl\O 35 N negative coefficient
+&GMAY^pvNIl\O 35 N negative coefficient
+&GMAY^wvNIl\O 35 N negative coefficient
+&GMAY^xVNIl\O 35 N negative minor
+&GMAY^xfNIl\O 35 N dominated
+&GMAY^xlFJnXW 36 N dominated
+&GMAY^xrNIl\O 35 N negative minor
+&GMAY^xtNIl\O 35 N negative minor
+&GMAY^xuNIl\O 35 N negative coefficient
+&GMAY^xvFIl\O 35 N negative coefficient
+&GMAY^xvJIl\O 35 N dominated
+&GMAY^xvLIl\O 35 N negative coefficient
+&GMAY^xvMIl\O 35 N negative minor
+&GMAY^xvNAl\O 35 N dominated
+&GMAY^xvNGl\O 35 N negative coefficient
+&GMAY^xvNIL\O 35 N negative coefficient
+&GMAY^xvNId\O 35 N negative coefficient
+&GMAY^xvNIh\O 35 N negative coefficient
+&GMAY^xvNIk\O 35 N negative minor
+&GMAY^xvNIlLO 35 N negative minor
+&GMAY^xvNIlTO 35 N negative minor
+&GMAY^xvNIlXO 35 N dominated
+&GMAY^xvNIl[O 35 N negative minor
+&GMAY^xvNIl\? 35 N negative minor
+&GMAY^xvNIl\O 36 S hurwitz
+&GMAY^xvNIl\W 37 N dominated
+&GMAY^xvNIl\o 37 N negative minor
+&GMAY^xvNIl^O 37 N negative minor
+&GMAY^xvNIn\O 37 N negative coefficient
+&GMAY^xvNI|\O 37 N negative coefficient
+&GMAY^xvNJl\O 37 N negative coefficient
+&GMAY^xvNYl\O 37 N dominated
+&GMAY^xvNil\O 37 N negative minor
+&GMAY^xv^Il\O 37 N dominated
+&GMAY^x~NIl\O 37 N dominated
+&GMAY^zvNIl\O 37 N negative minor
+&GMAZ^xvNIl\O 37 N negative minor
+&GMA[BPfZrr\o 33 N negative coefficient
+&GMA[DPfZrr\o 33 N negative coefficient
+&GMA[EPfZrr\o 33 N negative coefficient
+&GMA[F@fZrr\o 33 N negative minor
+&GMA[FOfZrr\o 33 N negative coefficient
+&GMA[FPFZrr\o 33 N negative coefficient
+&GMA[FPbZrr\o 33 N negative coefficient
+&GMA[FPdZrr\o 33 N negative coefficient
+&GMA[FPeZrr\o 33 N negative coefficient
+&GMA[FPfJrr\o 33 N negative coefficient
+&GMA[FPfRrr\o 33 N negative coefficient
+&GMA[FPfXrr\o 33 N dominated
+&GMA[FPfYrr\o 33 N dominated
+&GMA[FPfZRr\o 33 N negative coefficient
+&GMA[FPfZbr\o 33 N negative coefficient
+&GMA[FPfZpr\o 33 N dominated
+&GMA[FPfZqr\o 33 N dominated
+&GMA[FPfZrR\o 33 N dominated
+&GMA[FPfZrb\o 33 N negative coefficient
+&GMA[FPfZrp\o 33 N dominated
+&GMA[FPfZrq\o 33 N negative minor
+&GMA[FPfZrrLo 33 N negative coefficient
+&GMA[FPfZrrTo 33 N negative coefficient
+&GMA[FPfZrrXo 33 N negative minor
+&GMA[FPfZrr[o 33 N negative minor
+&GMA[FPfZrr\O 33 N negative minor
+&GMA[FPfZrr\_ 33 N negative coefficient
+&GMA[FPfZrr\o 34 S hurwitz
+&GMA[FPfZrr\w 35 N negative coefficient
+&GMA[FPfZrr^o 35 N negative minor
+&GMA[FPfZrv\o 35 N dominated
+&GMA[FPfZrz\o 35 N negative coefficient
+&GMA[FPfZzr\o 35 N dominated
+&GMA[FPf^rr\o 35 N negative coefficient
+&GMA[FPnZrr\o 35 N negative coefficient
+&GMA[FPvZrr\o 35 N negative coefficient
+&GMA[FRfZrr\o 35 N negative coefficient
+&GMA[FXfZrr\o 35 N negative coefficient
+&GMA[FpfZrr\o 35 N negative minor
+&GMA[NPfZrr\o 35 N negative coefficient
+&GMA[VPfZrr\o 35 N negative minor
+&GMA[^xlFJnXW 36 N negative minor
+&GMA\FPfZrr\o 35 N negative minor
+&GMA]FPfZrr\o 35 N negative coefficient
+&GMA]NxlFJnXW 36 N negative coefficient
+&GMA]VxlFJnXW 36 N negative coefficient
+&GMA]ZxlFJnXW 36 N negative coefficient
+&GMA]\xlFJnXW 36 N negative minor
+&GMA]]xlFJnXW 36 N negative minor
+&GMA]^XlFJnXW 36 N negative minor
+&GMA]^hlFJnXW 36 N dominated
+&GMA]^plFJnXW 36 N negative minor
+&GMA]^wlFJnXW 36 N negative coefficient
+&GMA]^xLFJnXW 36 N negative minor
+&GMA]^xdFJnXW 36 S hurwitz
+&GMA]^xhFJnXW 36 N dominated
+&GMA]^xkFJnXW 36 N negative coefficient
+&GMA]^xlBJnXW 36 N negative minor
+&GMA]^xlDJnXW 36 N negative coefficient
+&GMA]^xlEJnXW 36 N negative minor
+&GMA]^xlFBnXW 36 N dominated
+&GMA]^xlFHnXW 36 N dominated
+&GMA]^xlFInXW 36 N negative coefficient
+&GMA]^xlFJNXW 36 N negative coefficient
+&GMA]^xlFJfXW 36 N negative coefficient
+&GMA]^xlFJjXW 36 N negative minor
+&GMA]^xlFJlXW 36 N negative minor
+&GMA]^xlFJmXW 36 N dominated
+&GMA]^xlFJnHW 36 N negative coefficient
+&GMA]^xlFJnPW 36 N negative coefficient
+&GMA]^xlFJnWW 36 N negative minor
+&GMA]^xlFJnXG 36 N negative minor
+&GMA]^xlFJnXO 36 N negative coefficient
+&GMA]^xlFJnXW 37 S hurwitz
+&GMA]^xlFJnXw 38 N negative coefficient
+&GMA]^xlFJnZW 38 N negative minor
+&GMA]^xlFJn\W 38 N negative coefficient
+&GMA]^xlFJ~XW 38 N negative coefficient
+&GMA]^xlFZnXW 38 N dominated
+&GMA]^xlFjnXW 38 N negative minor
+&GMA]^xlNJnXW 38 N dominated
+&GMA]^xlVJnXW 38 N negative minor
+&GMA]^xnFJnXW 38 N negative coefficient
+&GMA]^xvNIl\O 37 N negative coefficient
+&GMA]^x|FJnXW 38 N dominated
+&GMA]^zkKi}XW 36 N dominated
+&GMA]^zlFJnXW 38 N negative minor
+&GMA^^xlFJnXW 38 N negative minor
+&GMAaZroMi{]O 31 N dominated
+&GMAbUqq]R{^? 32 N dominated
+&GMAi^xP\jeLg 34 N dominated
+&GMAoZroMi{]O 31 N negative coefficient
+&GMApUqq]R{^? 32 N negative minor
+&GMAqJroMi{]O 31 N negative coefficient
+&GMAqRroMi{]O 31 N negative coefficient
+&GMAqUqq]R{^? 32 N negative coefficient
+&GMAqXroMi{]O 31 N negative coefficient
+&GMAqYroMi{]O 31 N negative coefficient
+&GMAqZRoMi{]O 31 N negative minor
+&GMAqZboMi{]O 31 N dominated
+&GMAqZpoMi{]O 31 N negative coefficient
+&GMAqZqoMi{]O 31 N dominated
+&GMAqZrOMi{]O 31 N negative coefficient
+&GMAqZr_Mi{]O 31 N negative minor
+&GMAqZroEi{]O 31 N dominated
+&GMAqZroIi{]O 31 N dominated
+&GMAqZroKi{]O 31 N negative coefficient
+&GMAqZroMI{]O 31 N negative coefficient
+&GMAqZroMa{]O 31 N negative minor
+&GMAqZroMg{]O 31 N dominated
+&GMAqZroMi[]O 31 N negative coefficient
+&GMAqZroMik]O 31 N dominated
+&GMAqZroMis]O 31 N negative coefficient
+&GMAqZroMiw]O 31 N dominated
+&GMAqZroMi{MO 31 N negative coefficient
+&GMAqZroMi{UO 31 N negative minor
+&GMAqZroMi{YO 31 N negative minor
+&GMAqZroMi{[O 31 S hurwitz
+&GMAqZroMi{]? 31 N dominated
+&GMAqZroMi{]O 32 S hurwitz
+&GMAqZroMi{]W 33 N negative minor
+&GMAqZroMi{]o 33 N dominated
+&GMAqZroMi{^O 33 S hurwitz
+&GMAqZroMi|]O 33 N dominated
+&GMAqZroMi}]O 33 N dominated
+&GMAqZroMj{]O 33 N dominated
+&GMAqZroMy{]O 33 N negative coefficient
+&GMAqZroNi{]O 33 N negative minor
+&GMAqZro]i{]O 33 N negative coefficient
+&GMAqZrpMi{]O 33 N negative coefficient
+&GMAqZrqMi{]O 33 N negative coefficient
+&GMAqZrsMi{]O 33 N negative coefficient
+&GMAqZrwMi{]O 33 N dominated
+&GMAqZzoMi{]O 33 N dominated
+&GMAq^roMi{]O 33 N negative coefficient
+&GMArEqq]R{^? 32 N negative coefficient
+&GMArQqq]R{^? 32 N negative minor
+&GMArSqq]R{^? 32 N dominated
+&GMArUQq]R{^? 32 N dominated
+&GMArUaq]R{^? 32 N negative minor
+&GMArUoq]R{^? 32 N dominated
+&GMArUqQ]R{^? 32 N negative minor
+&GMArUqa]R{^? 32 N negative minor
+&GMArUqo]R{^? 32 N negative coefficient
+&GMArUqqMR{^? 32 N negative minor
+&GMArUqqUR{^? 32 N dominated
+&GMArUqqYR{^? 32 N dominated
+&GMArUqq[R{^? 32 N negative coefficient
+&GMArUqq]B{^? 32 N negative coefficient
+&GMArUqq]P{^? 32 N negative minor
+&GMArUqq]Q{^? 32 N negative minor
+&GMArUqq]R[^? 32 N negative coefficient
+&GMArUqq]Rk^? 32 N negative coefficient
+&GMArUqq]Rs^? 32 N negative minor
+&GMArUqq]Rw^? 32 N negative coefficient
+&GMArUqq]R{N? 32 N negative coefficient
+&GMArUqq]R{V? 32 N negative coefficient
+&GMArUqq]R{Z? 32 N negative minor
+&GMArUqq]R{\? 32 N negative coefficient
+&GMArUqq]R{]? 32 N negative coefficient
+&GMArUqq]R{^? 33 S hurwitz
+&GMArUqq]R{^G 34 N negative minor
+&GMArUqq]R{^O 34 N negative coefficient
+&GMArUqq]R{^_ 34 B zero minor
+&GMArUqq]R|^? 34 N negative minor
+&GMArUqq]R}^? 34 N negative minor
+&GMArUqq]Z{^? 34 N negative minor
+&GMArUqq]r{^? 34 N negative coefficient
+&GMArUqq^R{^? 34 N negative coefficient
+&GMArUqr]R{^? 34 N negative coefficient
+&GMArUqu]R{^? 34 N negative coefficient
+&GMArUqy]R{^? 34 N dominated
+&GMArUrq]R{^? 34 N negative minor
+&GMArUyq]R{^? 34 N dominated
+&GMArVqq]R{^? 34 N dominated
+&GMArZroMi{]O 33 N negative coefficient
+&GMAr]qq]R{^? 34 N negative minor
+&GMAuZroMi{]O 33 N negative minor
+&GMAvUqq]R{^? 34 N negative minor
+&GMAyZroMi{]O 33 N negative coefficient
+&GMAy^xvNIl\O 37 N negative minor
+&GMAzUqq]R{^? 34 N dominated
+&GMA{FPfZrr\o 35 N negative coefficient
+&GMA}^xlFJnXW 38 N negative coefficient
+&GMBI\`|@XjMg 31 N negative coefficient
+&GMBI\i{\ri\? 33 N dominated
+&GMBY^xvNIl\O 37 N negative minor
+&GMBZDJVMImKw 32 N dominated
+&GMBZVr~[jn\? 39 N negative coefficient
+&GMB[FPfZrr\o 35 N negative coefficient
+&GMB]^xlFJnXW 38 N negative coefficient
+&GMBb^hRXr}Kg 35 N negative coefficient
+&GMBjNjp\R~]G 38 N dominated
+&GMBjVrYDJ}\? 34 N dominated
+&GMBqZroMi{]O 33 N negative coefficient
+&GMBrUqq]R{^? 34 N negative coefficient
+&GMBwJxpZqn\o 36 N negative minor
+&GMHZDJVMImKw 32 N negative minor
+&GMHwJxpZqn\o 36 N dominated
+&GMIY^xvNIl\O 37 N dominated
+&GMI[FPfZrr\o 35 N negative minor
+&GMI]^xlFJnXW 38 N dominated
+&GMIqZroMi{]O 33 N dominated
+&GMIrUqq]R{^? 34 N dominated
+&GMPZDJVMImKw 32 N negative minor
+&GMPwJxpZqn\o 36 N negative minor
+&GMQY^xvNIl\O 37 N negative minor
+&GMQ[FPfZrr\o 35 N negative coefficient
+&GMQ]^xlFJnXW 38 N dominated
+&GMQqZroMi{]O 33 N dominated
+&GMQrUqq]R{^? 34 N negative minor
+&GMX|AJYFi}^W 36 N negative minor
+&GMYw^QW^P|Nw 37 N dominated
+&GM_xHPNUjMLG 30 N negative coefficient
+&GM_zBRJYrL\_ 32 N negative coefficient
+&GM`ZDJVMImKw 32 N negative coefficient
+&GM`wJxpZqn\o 36 N negative coefficient
+&GMaA^x\Lj^^O 37 N negative coefficient
+&GMaN^zLFGFHW 33 N negative coefficient
+&GMaY^xvNIl\O 37 N dominated
+&GMa[FPfZrr\o 35 N dominated
+&GMa]^xlFJnXW 38 N negative minor
+&GMaqZroMi{]O 33 N negative minor
+&GMaq^yqKzW\O 34 N negative coefficient
+&GMarUqq]R{^? 34 B zero minor
+&GMbI^jmVRM\? 35 N dominated
+&GMbVNinKZS^_ 36 N dominated
+&GMiw^QW^P|Nw 37 N negative minor
+&GMqw^QW^P|Nw 37 N negative coefficient
+&GMrA]b}VZ]VW 38 N negative coefficient
+&GMrE^b]ZJvVw 40 N negative coefficient
+&GMrbUiiDxRVg 34 N dominated
+&GMww^QW^P|Nw 37 N dominated
+&GMxlVa}Vw^^w 42 N dominated
+&GMx|QbUYr]Ng 37 N negative minor
+&GMyW^QW^P|Nw 37 N negative coefficient
+&GMyg^QW^P|Nw 37 N negative coefficient
+&GMyo^QW^P|Nw 37 N negative minor
+&GMywNQW^P|Nw 37 B zero coefficient
+&GMywVQW^P|Nw 37 N negative coefficient
+&GMywZQW^P|Nw 37 N dominated
+&GMyw\QW^P|Nw 37 S hurwitz
+&GMyw]QW^P|Nw 37 N negative minor
+&GMyw^AW^P|Nw 37 N dominated
+&GMyw^OW^P|Nw 37 N dominated
+&GMyw^QG^P|Nw 37 N negative minor
+&GMyw^QO^P|Nw 37 N negative minor
+&GMyw^QWNP|Nw 37 N negative minor
+&GMyw^QWVP|Nw 37 N negative coefficient
+&GMyw^QWZP|Nw 37 S hurwitz
+&GMyw^QW\P|Nw 37 N negative coefficient
+&GMyw^QW]P|Nw 37 N negative minor
+&GMyw^QW^@|Nw 37 N negative coefficient
+&GMyw^QW^O|Nw 37 N negative minor
+&GMyw^QW^P\Nw 37 S hurwitz
+&GMyw^QW^PlNw 37 N negative coefficient
+&GMyw^QW^PtNw 37 N dominated
+&GMyw^QW^PxNw 37 N negative minor
+&GMyw^QW^P{Nw 37 N negative coefficient
+&GMyw^QW^P|Fw 37 N negative minor
+&GMyw^QW^P|Jw 37 N negative coefficient
+&GMyw^QW^P|Lw 37 N negative minor
+&GMyw^QW^P|Mw 37 N negative coefficient
+&GMyw^QW^P|NW 37 B zero minor
+&GMyw^QW^P|Ng 37 N negative minor
+&GMyw^QW^P|No 37 N negative coefficient
+&GMyw^QW^P|Nw 38 S hurwitz
+&GMyw^QW^P|^w 39 N negative minor
+&GMyw^QW^P~Nw 39 N dominated
+&GMyw^QW^R|Nw 39 N negative coefficient
+&GMyw^QW^X|Nw 39 N negative minor
+&GMyw^QW^p|Nw 39 N negative coefficient
+&GMyw^QX^P|Nw 39 N negative coefficient
+&GMyw^QY^P|Nw 39 B zero minor
+&GMyw^Q[^P|Nw 39 N negative minor
+&GMyw^Qw^P|Nw 39 N dominated
+&GMyw^RW^P|Nw 39 N negative minor
+&GMyw^YW^P|Nw 39 N negative minor
+&GMyw^qW^P|Nw 39 N dominated
+&GMyx^QW^P|Nw 39 N negative coefficient
+&GMyy^QW^P|Nw 39 N dominated
+&GMy{^QW^P|Nw 39 N negative minor
+&GMzw^QW^P|Nw 39 N dominated
+&GN?MUpnDgfZW 32 N negative minor
+&GN?Y[zkKj{^W 35 N negative coefficient
+&GN?]^zkKi}XW 36 N dominated
+&GN?^BPn]hzXG 34 N dominated
+&GN?iLzW\bkNW 33 N dominated
+&GN?i^xP\jeLg 34 N negative coefficient
+&GN?nBPn]hzXG 34 N negative minor
+&GN?vBPn]hzXG 34 N negative minor
+&GN?xHPNUjMLG 30 N negative coefficient
+&GN?zBPn]hzXG 34 N dominated
+&GN?zBRJYrL\_ 32 N negative coefficient
+&GN?|BPn]hzXG 34 N negative minor
+&GN?}BPn]hzXG 34 N dominated
+&GN?~@Pn]hzXG 34 N negative coefficient
+&GN?~APn]hzXG 34 N negative coefficient
+&GN?~B@n]hzXG 34 N dominated
+&GN?~BOn]hzXG 34 N negative coefficient
+&GN?~BPN]hzXG 34 N negative coefficient
+&GN?~BPf]hzXG 34 N negative minor
+&GN?~BPj]hzXG 34 N negative coefficient
+&GN?~BPl]hzXG 34 N negative coefficient
+&GN?~BPm]hzXG 34 N negative coefficient
+&GN?~BPnMhzXG 34 N negative coefficient
+&GN?~BPnUhzXG 34 N negative coefficient
+&GN?~BPnYhzXG 34 N negative coefficient
+&GN?~BPn[hzXG 34 N negative coefficient
+&GN?~BPn]HzXG 34 N negative coefficient
+&GN?~BPn]`zXG 34 N dominated
+&GN?~BPn]gzXG 34 N negative minor
+&GN?~BPn]hZXG 34 N negative coefficient
+&GN?~BPn]hjXG 34 N dominated
+&GN?~BPn]hrXG 34 N negative minor
+&GN?~BPn]hxXG 34 N negative coefficient
+&GN?~BPn]hyXG 34 N negative coefficient
+&GN?~BPn]hzHG 34 N negative coefficient
+&GN?~BPn]hzPG 34 N negative coefficient
+&GN?~BPn]hzWG 34 N dominated
+&GN?~BPn]hzX? 34 N negative minor
+&GN?~BPn]hzXG 35 S hurwitz
+&GN?~BPn]hzXW 36 N dominated
+&GN?~BPn]hzXg 36 N negative minor
+&GN?~BPn]hzZG 36 N negative coefficient
+&GN?~BPn]hz\G 36 N negative minor
+&GN?~BPn]h~XG 36 N negative minor
+&GN?~BPn]jzXG 36 N negative minor
+&GN?~BPn]xzXG 36 N negative coefficient
+&GN?~BPn^hzXG 36 N negative coefficient
+&GN?~BP~]hzXG 36 N dominated
+&GN?~BRn]hzXG 36 N negative coefficient
+&GN?~BXn]hzXG 36 S hurwitz
+&GN?~Bpn]hzXG 36 N negative minor
+&GN?~FPn]hzXG 36 N dominated
+&GN?~JPn]hzXG 36 N negative minor
+&GN?~RPn]hzXG 36 B zero minor
+&GN@ILzW\bkNW 33 N dominated
+&GN@I\`|@XjMg 31 N dominated
+&GN@I\i{\ri\? 33 N negative coefficient
+&GN@ZDJVMImKw 32 N negative coefficient
+&GN@ZVr~[jn\? 39 N negative minor
+&GN@aLzW\bkNW 33 N negative coefficient
+&GN@b^hRXr}Kg 35 S hurwitz
+&GN@gLzW\bkNW 33 N negative coefficient
+&GN@iDzW\bkNW 33 N negative minor
+&GN@iHzW\bkNW 33 N negative coefficient
+&GN@iKzW\bkNW 33 N negative coefficient
+&GN@iLZW\bkNW 33 N negative coefficient
+&GN@iLjW\bkNW 33 N dominated
+&GN@iLrW\bkNW 33 N negative coefficient
+&GN@iLxW\bkNW 33 N negative coefficient
+&GN@iLyW\bkNW 33 N negative minor
+&GN@iLzG\bkNW 33 N negative minor
+&GN@iLzO\bkNW 33 N negative coefficient
+&GN@iLzWLbkNW 33 N negative minor
+&GN@iLzWTbkNW 33 N negative coefficient
+&GN@iLzWXbkNW 33 N negative coefficient
+&GN@iLzW[bkNW 33 N negative coefficient
+&GN@iLzW\BkNW 33 N negative minor
+&GN@iLzW\`kNW 33 N negative minor
+&GN@iLzW\akNW 33 N dominated
+&GN@iLzW\bKNW 33 N dominated
+&GN@iLzW\bcNW 33 N negative coefficient
+&GN@iLzW\bgNW 33 N negative coefficient
+&GN@iLzW\bkFW 33 N negative coefficient
+&GN@iLzW\bkJW 33 N negative coefficient
+&GN@iLzW\bkLW 33 N negative minor
+&GN@iLzW\bkMW 33 N negative coefficient
+&GN@iLzW\bkNG 33 N negative coefficient
+&GN@iLzW\bkNO 33 N negative minor
+&GN@iLzW\bkNW 34 S hurwitz
+&GN@iLzW\bkNw 35 N negative coefficient
+&GN@iLzW\bk^W 35 N negative coefficient
+&GN@iLzW\blNW 35 N dominated
+&GN@iLzW\bmNW 35 N negative minor
+&GN@iLzW\b{NW 35 N negative coefficient
+&GN@iLzW\jkNW 35 N negative coefficient
+&GN@iLzW\rkNW 35 N negative coefficient
+&GN@iLzW^bkNW 35 N dominated
+&GN@iLzX\bkNW 35 N negative coefficient
+&GN@iLzY\bkNW 35 N negative minor
+&GN@iLz[\bkNW 35 N negative coefficient
+&GN@iLzw\bkNW 35 N dominated
+&GN@iNzW\bkNW 35 N negative coefficient
+&GN@i\zW\bkNW 35 N negative minor
+&GN@jLzW\bkNW 35 N negative coefficient
+&GN@jNjp\R~]G 38 B zero minor
+&GN@jVrYDJ}\? 34 N negative minor
+&GN@mLzW\bkNW 35 N negative coefficient
+&GN@wJxpZqn\o 36 N negative minor
+&GN@yLzW\bkNW 35 N dominated
+&GN@~BPn]hzXG 36 N negative minor
+&GNAA^x\Lj^^O 37 N dominated
+&GNAEUpnDgfZW 32 N dominated
+&GNAIUpnDgfZW 32 N dominated
+&GNAI[zkKj{^W 35 N negative coefficient
+&GNAI\`|@XjMg 31 N negative coefficient
+&GNAI\i{\ri\? 33 N negative coefficient
+&GNAI^xP\jeLg 34 N negative minor
+&GNAKUpnDgfZW 32 N negative coefficient
+&GNAMEpnDgfZW 32 N negative coefficient
+&GNAMQpnDgfZW 32 N negative minor
+&GNAMSpnDgfZW 32 N negative coefficient
+&GNAMUPnDgfZW 32 N dominated
+&GNAMU`nDgfZW 32 N dominated
+&GNAMUonDgfZW 32 N negative coefficient
+&GNAMUpNDgfZW 32 N negative minor
+&GNAMUpfDgfZW 32 N dominated
+&GNAMUpjDgfZW 32 N negative coefficient
+&GNAMUplDgfZW 32 N negative minor
+&GNAMUpmDgfZW 32 N dominated
+&GNAMUpn@gfZW 32 N negative minor
+&GNAMUpnCgfZW 32 B zero minor
+&GNAMUpnDGfZW 32 N negative minor
+&GNAMUpnD_fZW 32 N dominated
+&GNAMUpnDgFZW 32 N negative coefficient
+&GNAMUpnDgbZW 32 N negative minor
+&GNAMUpnDgdZW 32 N dominated
+&GNAMUpnDgeZW 32 N negative minor
+&GNAMUpnDgfJW 32 N dominated
+&GNAMUpnDgfRW 32 N negative coefficient
+&GNAMUpnDgfXW 32 N negative coefficient
+&GNAMUpnDgfYW 32 N negative minor
+&GNAMUpnDgfZG 32 N negative coefficient
+&GNAMUpnDgfZO 32 N negative minor
+&GNAMUpnDgfZW 33 S hurwitz
+&GNAMUpnDgfZw 34 N negative coefficient
+&GNAMUpnDgf^W 34 N negative coefficient
+&GNAMUpnDgnZW 34 N dominated
+&GNAMUpnDgvZW 34 N negative minor
+&GNAMUpnDhfZW 34 N negative coefficient
+&GNAMUpnDifZW 34 N negative minor
+&GNAMUpnDwfZW 34 N dominated
+&GNAMUpnFgfZW 34 N negative minor
+&GNAMUpnLgfZW 34 N negative minor
+&GNAMUpnTgfZW 34 N dominated
+&GNAMUp~DgfZW 34 N negative minor
+&GNAMUrnDgfZW 34 N negative coefficient
+&GNAMUxnDgfZW 34 N dominated
+&GNAMVpnDgfZW 34 N negative coefficient
+&GNAM]pnDgfZW 34 N negative minor
+&GNAM^zkKi}XW 36 N negative minor
+&GNANUpnDgfZW 34 N negative coefficient
+&GNAN^zLFGFHW 33 N negative coefficient
+&GNAQ[zkKj{^W 35 N negative minor
+&GNAU^zkKi}XW 36 N negative minor
+&GNAW[zkKj{^W 35 N negative coefficient
+&GNAYKzkKj{^W 35 N dominated
+&GNAYSzkKj{^W 35 N negative minor
+&GNAYWzkKj{^W 35 N dominated
+&GNAY[ZkKj{^W 35 N negative coefficient
+&GNAY[jkKj{^W 35 N negative minor
+&GNAY[rkKj{^W 35 N negative coefficient
+&GNAY[xkKj{^W 35 N negative minor
+&GNAY[ykKj{^W 35 N negative minor
+&GNAY[zKKj{^W 35 N negative coefficient
+&GNAY[zcKj{^W 35 N negative minor
+&GNAY[zgKj{^W 35 N dominated
+&GNAY[zkCj{^W 35 N dominated
+&GNAY[zkGj{^W 35 N dominated
+&GNAY[zkKJ{^W 35 N negative minor
+&GNAY[zkKb{^W 35 N negative minor
+&GNAY[zkKh{^W 35 N negative coefficient
+&GNAY[zkKi{^W 35 N dominated
+&GNAY[zkKj[^W 35 N negative coefficient
+&GNAY[zkKjk^W 35 N dominated
+&GNAY[zkKjs^W 35 N negative coefficient
+&GNAY[zkKjw^W 35 N dominated
+&GNAY[zkKj{NW 35 N dominated
+&GNAY[zkKj{VW 35 N negative minor
+&GNAY[zkKj{ZW 35 N negative minor
+&GNAY[zkKj{\W 35 N negative minor
+&GNAY[zkKj{]W 35 N negative coefficient
+&GNAY[zkKj{^G 35 N negative minor
+&GNAY[zkKj{^O 35 N negative coefficient
+&GNAY[zkKj{^W 36 S hurwitz
+&GNAY[zkKj{^w 37 N negative minor
+&GNAY[zkKj|^W 37 N dominated
+&GNAY[zkKj}^W 37 S hurwitz
+&GNAY[zkKz{^W 37 N negative minor
+&GNAY[zkLj{^W 37 N dominated
+&GNAY[zkMj{^W 37 N dominated
+&GNAY[zk[j{^W 37 N negative minor
+&GNAY[zlKj{^W 37 N negative minor
+&GNAY[zmKj{^W 37 N dominated
+&GNAY[z{Kj{^W 37 N negative coefficient
+&GNAY\zkKj{^W 37 N negative minor
+&GNAY]zkKj{^W 37 N negative coefficient
+&GNAY^xvNIl\O 37 N negative minor
+&GNAY^zkKi}XW 36 N dominated
+&GNAZVr~[jn\? 39 S hurwitz
+&GNAZ[zkKj{^W 37 N negative coefficient
+&GNA[FPfZrr\o 35 N dominated
+&GNA[^zkKi}XW 36 N negative coefficient
+&GNA]NzkKi}XW 36 N negative minor
+&GNA]UpnDgfZW 34 N dominated
+&GNA]VzkKi}XW 36 N negative coefficient
+&GNA]ZzkKi}XW 36 N negative coefficient
+&GNA][zkKj{^W 37 N negative minor
+&GNA]\zkKi}XW 36 B zero minor
+&GNA]]zkKi}XW 36 N negative coefficient
+&GNA]^ZkKi}XW 36 N negative coefficient
+&GNA]^jkKi}XW 36 N dominated
+&GNA]^rkKi}XW 36 N negative coefficient
+&GNA]^xkKi}XW 36 N negative coefficient
+&GNA]^xlFJnXW 38 N dominated
+&GNA]^ykKi}XW 36 B zero coefficient
+&GNA]^zKKi}XW 36 N negative minor
+&GNA]^zcKi}XW 36 N negative minor
+&GNA]^zgKi}XW 36 N dominated
+&GNA]^zkCi}XW 36 N negative coefficient
+&GNA]^zkGi}XW 36 N negative minor
+&GNA]^zkKI}XW 36 N negative coefficient
+&GNA]^zkKa}XW 36 N negative coefficient
+&GNA]^zkKg}XW 36 N negative coefficient
+&GNA]^zkKi]XW 36 N negative coefficient
+&GNA]^zkKimXW 36 N dominated
+&GNA]^zkKiuXW 36 N negative coefficient
+&GNA]^zkKiyXW 36 N dominated
+&GNA]^zkKi{XW 36 N negative minor
+&GNA]^zkKi}HW 36 N dominated
+&GNA]^zkKi}PW 36 N negative coefficient
+&GNA]^zkKi}WW 36 N dominated
+&GNA]^zkKi}XG 36 N negative minor
+&GNA]^zkKi}XO 36 N negative coefficient
+&GNA]^zkKi}XW 37 S hurwitz
+&GNA]^zkKi}Xw 38 N dominated
+&GNA]^zkKi}ZW 38 N negative coefficient
+&GNA]^zkKi}\W 38 N negative minor
+&GNA]^zkKi~XW 38 N dominated
+&GNA]^zkKj}XW 38 N negative minor
+&GNA]^zkKy}XW 38 N negative minor
+&GNA]^zkLi}XW 38 N negative minor
+&GNA]^zkMi}XW 38 N negative coefficient
+&GNA]^zk[i}XW 38 N negative minor
+&GNA]^zlKi}XW 38 N negative minor
+&GNA]^zmKi}XW 38 N dominated
+&GNA]^z{Ki}XW 38 N dominated
+&GNA^^zkKi}XW 38 N negative coefficient
+&GNAa^xP\jeLg 34 N negative coefficient
+&GNAb^hRXr}Kg 35 N negative coefficient
+&GNAg^xP\jeLg 34 N negative coefficient
+&GNAiNxP\jeLg 34 N negative minor
+&GNAiVxP\jeLg 34 N negative coefficient
+&GNAiZxP\jeLg 34 N negative coefficient
+&GNAi\xP\jeLg 34 N negative coefficient
+&GNAi]xP\jeLg 34 N negative minor
+&GNAi^XP\jeLg 34 N dominated
+&GNAi^hP\jeLg 34 N dominated
+&GNAi^pP\jeLg 34 N dominated
+&GNAi^wP\jeLg 34 N negative minor
+&GNAi^x@\jeLg 34 N dominated
+&GNAi^xO\jeLg 34 N negative coefficient
+&GNAi^xPLjeLg 34 N negative minor
+&GNAi^xPTjeLg 34 N dominated
+&GNAi^xPXjeLg 34 N negative coefficient
+&GNAi^xP[jeLg 34 N negative minor
+&GNAi^xP\JeLg 34 N negative minor
+&GNAi^xP\beLg 34 N negative coefficient
+&GNAi^xP\heLg 34 N negative minor
+&GNAi^xP\ieLg 34 N negative coefficient
+&GNAi^xP\jELg 34 N negative minor
+&GNAi^xP\jaLg 34 N negative coefficient
+&GNAi^xP\jcLg 34 N negative minor
+&GNAi^xP\jeDg 34 N negative coefficient
+&GNAi^xP\jeHg 34 N dominated
+&GNAi^xP\jeKg 34 N negative minor
+&GNAi^xP\jeLG 34 B zero coefficient
+&GNAi^xP\jeL_ 34 N negative coefficient
+&GNAi^xP\jeLg 35 S hurwitz
+&GNAi^xP\jeLw 36 N negative minor
+&GNAi^xP\jeNg 36 N dominated
+&GNAi^xP\je\g 36 N negative minor
+&GNAi^xP\jfLg 36 N negative coefficient
+&GNAi^xP\jmLg 36 N negative minor
+&GNAi^xP\juLg 36 N negative coefficient
+&GNAi^xP\zeLg 36 N negative minor
+&GNAi^xP^jeLg 36 N negative coefficient
+&GNAi^xR\jeLg 36 N negative minor
+&GNAi^xT\jeLg 36 S hurwitz
+&GNAi^xX\jeLg 36 N negative coefficient
+&GNAi^xp\jeLg 36 N dominated
+&GNAi^zP\jeLg 36 N dominated
+&GNAjNjp\R~]G 38 N negative coefficient
+&GNAjVrYDJ}\? 34 N negative coefficient
+&GNAj^xP\jeLg 36 N negative minor
+&GNAmUpnDgfZW 34 N negative minor
+&GNAm^xP\jeLg 36 N negative minor
+&GNAqZroMi{]O 33 N negative coefficient
+&GNAq^yqKzW\O 34 N dominated
+&GNArUqq]R{^? 34 N negative minor
+&GNAy[zkKj{^W 37 N negative coefficient
+&GNAy^xP\jeLg 36 N negative minor
+&GNA}^zkKi}XW 38 N dominated
+&GNA~BPn]hzXG 36 N dominated
+&GNBA\`|@XjMg 31 N dominated
+&GNBA\i{\ri\? 33 N dominated
+&GNBB^hRXr}Kg 35 N negative coefficient
+&GNBG\`|@XjMg 31 N negative coefficient
+&GNBG\i{\ri\? 33 N negative coefficient
+&GNBIL`|@XjMg 31 N negative coefficient
+&GNBILi{\ri\? 33 N negative coefficient
+&GNBIT`|@XjMg 31 N negative coefficient
+&GNBITi{\ri\? 33 N negative coefficient
+&GNBIX`|@XjMg 31 N negative coefficient
+&GNBIXi{\ri\? 33 N negative coefficient
+&GNBI[`|@XjMg 31 N negative coefficient
+&GNBI[i{\ri\? 33 N negative coefficient
+&GNBI\@|@XjMg 31 N negative coefficient
+&GNBI\I{\ri\? 33 N negative minor
+&GNBI\_|@XjMg 31 N dominated
+&GNBI\`\@XjMg 31 N dominated
+&GNBI\`l@XjMg 31 N dominated
+&GNBI\`t@XjMg 31 N negative coefficient
+&GNBI\`x@XjMg 31 N negative coefficient
+&GNBI\`{@XjMg 31 N negative coefficient
+&GNBI\`|?XjMg 31 N negative coefficient
+&GNBI\`|@HjMg 31 N negative minor
+&GNBI\`|@PjMg 31 N negative minor
+&GNBI\`|@WjMg 31 N dominated
+&GNBI\`|@XJMg 31 N negative coefficient
+&GNBI\`|@XbMg 31 N negative coefficient
+&GNBI\`|@XhMg 31 N negative minor
+&GNBI\`|@XiMg 31 N negative coefficient
+&GNBI\`|@XjEg 31 N negative coefficient
+&GNBI\`|@XjIg 31 N dominated
+&GNBI\`|@XjKg 31 N negative minor
+&GNBI\`|@XjMG 31 N negative coefficient
+&GNBI\`|@XjM_ 31 N negative coefficient
+&GNBI\`|@XjMg 32 S hurwitz
+&GNBI\`|@XjMw 33 N negative coefficient
+&GNBI\`|@XjNg 33 N dominated
+&GNBI\`|@Xj]g 33 N negative minor
+&GNBI\`|@XnMg 33 N negative coefficient
+&GNBI\`|@XzMg 33 N negative coefficient
+&GNBI\`|@ZjMg 33 N negative coefficient
+&GNBI\`|@xjMg 33 N negative minor
+&GNBI\`|BXjMg 33 N dominated
+&GNBI\`|DXjMg 33 N negative minor
+&GNBI\`|HXjMg 33 N negative coefficient
+&GNBI\`|PXjMg 33 N negative coefficient
+&GNBI\`~@XjMg 33 N negative coefficient
+&GNBI\a{\ri\? 33 N negative minor
+&GNBI\b|@XjMg 33 N dominated
+&GNBI\g{\ri\? 33 N negative coefficient
+&GNBI\h|@XjMg 33 N dominated
+&GNBI\i[\ri\? 33 N negative coefficient
+&GNBI\ik\ri\? 33 N negative minor
+&GNBI\is\ri\? 33 N negative coefficient
+&GNBI\iw\ri\? 33 N dominated
+&GNBI\i{Lri\? 33 N dominated
+&GNBI\i{Tri\? 33 N dominated
+&GNBI\i{Xri\? 33 N negative minor
+&GNBI\i{[ri\? 33 N negative coefficient
+&GNBI\i{\Ri\? 33 N negative minor
+&GNBI\i{\bi\? 33 N negative minor
+&GNBI\i{\pi\? 33 N negative minor
+&GNBI\i{\qi\? 33 N dominated
+&GNBI\i{\rI\? 33 N negative coefficient
+&GNBI\i{\ra\? 33 N negative coefficient
+&GNBI\i{\rg\? 33 N negative minor
+&GNBI\i{\riL? 33 N negative coefficient
+&GNBI\i{\riT? 33 N negative minor
+&GNBI\i{\riX? 33 N dominated
+&GNBI\i{\ri[? 33 S hurwitz
+&GNBI\i{\ri\? 34 S hurwitz
+&GNBI\i{\ri\G 35 N dominated
+&GNBI\i{\ri\O 35 S hurwitz
+&GNBI\i{\ri\_ 35 B zero minor
+&GNBI\i{\ri^? 35 S hurwitz
+&GNBI\i{\rj\? 35 N negative minor
+&GNBI\i{\rm\? 35 N negative coefficient
+&GNBI\i{\ry\? 35 N negative coefficient
+&GNBI\i{\zi\? 35 N negative minor
+&GNBI\i{^ri\? 35 N dominated
+&GNBI\i|\ri\? 35 N dominated
+&GNBI\i}\ri\? 35 N dominated
+&GNBI\j{\ri\? 35 N negative coefficient
+&GNBI\p|@XjMg 33 N negative coefficient
+&GNBI\y{\ri\? 35 B zero minor
+&GNBI^`|@XjMg 33 N negative coefficient
+&GNBI^i{\ri\? 35 N negative coefficient
+&GNBI^jmVRM\? 35 N negative minor
+&GNBJNjp\R~]G 38 N dominated
+&GNBJVrYDJ}\? 34 N negative coefficient
+&GNBJVr~[jn\? 39 N negative minor
+&GNBJ\`|@XjMg 33 N negative coefficient
+&GNBJ\i{\ri\? 35 N negative coefficient
+&GNBMUpnDgfZW 34 N dominated
+&GNBM\`|@XjMg 33 B zero minor
+&GNBM\i{\ri\? 35 N dominated
+&GNBRVr~[jn\? 39 N dominated
+&GNBVNinKZS^_ 36 N negative coefficient
+&GNBXVr~[jn\? 39 N negative minor
+&GNBYVr~[jn\? 39 N negative coefficient
+&GNBY[zkKj{^W 37 N negative coefficient
+&GNBY\`|@XjMg 33 N negative coefficient
+&GNBY\i{\ri\? 35 N negative minor
+&GNBZFr~[jn\? 39 N negative coefficient
+&GNBZRr~[jn\? 39 N negative coefficient
+&GNBZTr~[jn\? 39 N negative minor
+&GNBZUr~[jn\? 39 N negative coefficient
+&GNBZVR~[jn\? 39 N dominated
+&GNBZVb~[jn\? 39 N dominated
+&GNBZVp~[jn\? 39 N dominated
+&GNBZVq~[jn\? 39 N negative minor
+&GNBZVr^[jn\? 39 N negative coefficient
+&GNBZVrn[jn\? 39 N negative minor
+&GNBZVrv[jn\? 39 N negative coefficient
+&GNBZVrz[jn\? 39 N negative coefficient
+&GNBZVr|[jn\? 39 N negative coefficient
+&GNBZVr}[jn\? 39 N negative minor
+&GNBZVr~Kjn\? 39 N negative coefficient
+&GNBZVr~Sjn\? 39 N negative coefficient
+&GNBZVr~Wjn\? 39 N negative coefficient
+&GNBZVr~[Jn\? 39 N dominated
+&GNBZVr~[bn\? 39 N dominated
+&GNBZVr~[hn\? 39 N dominated
+&GNBZVr~[in\? 39 N dominated
+&GNBZVr~[jN\? 39 N negative coefficient
+&GNBZVr~[jf\? 39 N negative minor
+&GNBZVr~[jj\? 39 N negative minor
+&GNBZVr~[jl\? 39 N negative minor
+&GNBZVr~[jm\? 39 N negative minor
+&GNBZVr~[jnL? 39 N negative minor
+&GNBZVr~[jnT? 39 N dominated
+&GNBZVr~[jnX? 39 N dominated
+&GNBZVr~[jn[? 39 N dominated
+&GNBZVr~[jn\? 40 S hurwitz
+&GNBZVr~[jn\G 41 N dominated
+&GNBZVr~[jn\O 41 N dominated
+&GNBZVr~[jn\_ 41 N negative minor
+&GNBZVr~[jn^? 41 N negative minor
+&GNBZVr~[j~\? 41 N negative coefficient
+&GNBZVr~[zn\? 41 N dominated
+&GNBZVr~\jn\? 41 N negative minor
+&GNBZVr~]jn\? 41 N dominated
+&GNBZVz~[jn\? 41 N dominated
+&GNBZ^r~[jn\? 41 S hurwitz
+&GNB]^zkKi}XW 38 N negative coefficient
+&GNB^Vr~[jn\? 41 N dominated
+&GNB`^hRXr}Kg 35 N negative minor
+&GNBa^hRXr}Kg 35 N negative minor
+&GNBbNhRXr}Kg 35 N dominated
+&GNBbNjp\R~]G 38 N negative coefficient
+&GNBbVhRXr}Kg 35 N negative minor
+&GNBbVrYDJ}\? 34 N dominated
+&GNBbZhRXr}Kg 35 N dominated
+&GNBb\hRXr}Kg 35 N negative minor
+&GNBb]hRXr}Kg 35 N negative minor
+&GNBb^HRXr}Kg 35 N dominated
+&GNBb^`RXr}Kg 35 N dominated
+&GNBb^gRXr}Kg 35 N dominated
+&GNBb^hBXr}Kg 35 N dominated
+&GNBb^hPXr}Kg 35 S hurwitz
+&GNBb^hQXr}Kg 35 N negative minor
+&GNBb^hRHr}Kg 35 N negative minor
+&GNBb^hRPr}Kg 35 N dominated
+&GNBb^hRWr}Kg 35 N dominated
+&GNBb^hRXR}Kg 35 S hurwitz
+&GNBb^hRXb}Kg 35 N negative minor
+&GNBb^hRXp}Kg 35 N negative minor
+&GNBb^hRXq}Kg 35 N dominated
+&GNBb^hRXr]Kg 35 S hurwitz
+&GNBb^hRXrmKg 35 N negative minor
+&GNBb^hRXruKg 35 B zero minor
+&GNBb^hRXryKg 35 N negative minor
+&GNBb^hRXr{Kg 35 S hurwitz
+&GNBb^hRXr}Cg 35 N negative minor
+&GNBb^hRXr}Gg 35 N dominated
+&GNBb^hRXr}KG 35 N dominated
+&GNBb^hRXr}K_ 35 N dominated
+&GNBb^hRXr}Kg 36 S hurwitz
+&GNBb^hRXr}Kw 37 N negative minor
+&GNBb^hRXr}Lg 37 N dominated
+&GNBb^hRXr}Mg 37 B zero minor
+&GNBb^hRXr}[g 37 N negative minor
+&GNBb^hRXr~Kg 37 N negative minor
+&GNBb^hRXz}Kg 37 N dominated
+&GNBb^hRZr}Kg 37 N dominated
+&GNBb^hR\r}Kg 37 N negative minor
+&GNBb^hVXr}Kg 37 N dominated
+&GNBb^hZXr}Kg 37 N negative minor
+&GNBb^hrXr}Kg 37 N dominated
+&GNBb^jRXr}Kg 37 N dominated
+&GNBb^xRXr}Kg 37 N dominated
+&GNBf^hRXr}Kg 37 B zero minor
+&GNBhNjp\R~]G 38 N dominated
+&GNBhVrYDJ}\? 34 N negative coefficient
+&GNBiLzW\bkNW 35 N dominated
+&GNBiNjp\R~]G 38 S hurwitz
+&GNBiVrYDJ}\? 34 N negative minor
+&GNBi\`|@XjMg 33 N dominated
+&GNBi\i{\ri\? 35 N negative coefficient
+&GNBi^xP\jeLg 36 N negative minor
+&GNBjFjp\R~]G 38 N negative minor
+&GNBjFrYDJ}\? 34 N negative coefficient
+&GNBjJjp\R~]G 38 B zero coefficient
+&GNBjLjp\R~]G 38 N negative minor
+&GNBjMjp\R~]G 38 N negative minor
+&GNBjNJp\R~]G 38 N negative minor
+&GNBjNbp\R~]G 38 N negative coefficient
+&GNBjNhp\R~]G 38 N negative minor
+&GNBjNip\R~]G 38 N negative coefficient
+&GNBjNjP\R~]G 38 N negative minor
+&GNBjNj`\R~]G 38 N negative coefficient
+&GNBjNjo\R~]G 38 N negative coefficient
+&GNBjNjpLR~]G 38 N negative minor
+&GNBjNjpTR~]G 38 N negative coefficient
+&GNBjNjpXR~]G 38 N negative minor
+&GNBjNjp[R~]G 38 N negative coefficient
+&GNBjNjp\B~]G 38 N negative minor
+&GNBjNjp\P~]G 38 N negative minor
+&GNBjNjp\Q~]G 38 N negative coefficient
+&GNBjNjp\R^]G 38 N negative coefficient
+&GNBjNjp\Rn]G 38 N dominated
+&GNBjNjp\Rv]G 38 N negative minor
+&GNBjNjp\Rz]G 38 N negative coefficient
+&GNBjNjp\R|]G 38 N negative coefficient
+&GNBjNjp\R}]G 38 N negative minor
+&GNBjNjp\R~MG 38 N dominated
+&GNBjNjp\R~UG 38 N dominated
+&GNBjNjp\R~YG 38 N negative minor
+&GNBjNjp\R~[G 38 N dominated
+&GNBjNjp\R~]? 38 N negative coefficient
+&GNBjNjp\R~]G 39 S hurwitz
+&GNBjNjp\R~]W 40 N dominated
+&GNBjNjp\R~]g 40 N dominated
+&GNBjNjp\R~^G 40 N negative minor
+&GNBjNjp\Z~]G 40 N negative coefficient
+&GNBjNjp\r~]G 40 N negative minor
+&GNBjNjp^R~]G 40 N negative coefficient
+&GNBjNjr\R~]G 40 N negative coefficient
+&GNBjNjt\R~]G 40 N negative coefficient
+&GNBjNjx\R~]G 40 N negative minor
+&GNBjNzp\R~]G 40 N negative minor
+&GNBjRrYDJ}\? 34 N dominated
+&GNBjTrYDJ}\? 34 N dominated
+&GNBjUrYDJ}\? 34 N negative coefficient
+&GNBjVRYDJ}\? 34 N negative coefficient
+&GNBjVbYDJ}\? 34 N negative minor
+&GNBjVpYDJ}\? 34 N negative coefficient
+&GNBjVqYDJ}\? 34 N negative minor
+&GNBjVrIDJ}\? 34 N negative coefficient
+&GNBjVrQDJ}\? 34 N negative coefficient
+&GNBjVrWDJ}\? 34 N dominated
+&GNBjVrY@J}\? 34 N dominated
+&GNBjVrYCJ}\? 34 N negative coefficient
+&GNBjVrYDB}\? 34 N negative minor
+&GNBjVrYDH}\? 34 N dominated
+&GNBjVrYDI}\? 34 N dominated
+&GNBjVrYDJ]\? 34 N negative coefficient
+&GNBjVrYDJm\? 34 N negative minor
+&GNBjVrYDJu\? 34 N negative minor
+&GNBjVrYDJy\? 34 N negative coefficient
+&GNBjVrYDJ{\? 34 N negative coefficient
+&GNBjVrYDJ}L? 34 N negative coefficient
+&GNBjVrYDJ}T? 34 B zero coefficient
+&GNBjVrYDJ}X? 34 N negative coefficient
+&GNBjVrYDJ}[? 34 N negative minor
+&GNBjVrYDJ}\? 35 S hurwitz
+&GNBjVrYDJ}\G 36 N negative coefficient
+&GNBjVrYDJ}\O 36 N negative minor
+&GNBjVrYDJ}\_ 36 N negative coefficient
+&GNBjVrYDJ}^? 36 N negative minor
+&GNBjVrYDJ~\? 36 N negative coefficient
+&GNBjVrYDZ}\? 36 N dominated
+&GNBjVrYDj}\? 36 N negative minor
+&GNBjVrYFJ}\? 36 N dominated
+&GNBjVrYLJ}\? 36 N negative coefficient
+&GNBjVrYTJ}\? 36 N negative minor
+&GNBjVrZDJ}\? 36 N dominated
+&GNBjVr]DJ}\? 36 N dominated
+&GNBjVryDJ}\? 36 N negative minor
+&GNBjVzYDJ}\? 36 N negative coefficient
+&GNBj^hRXr}Kg 37 N negative minor
+&GNBj^jp\R~]G 40 N negative coefficient
+&GNBj^rYDJ}\? 36 N dominated
+&GNBnNjp\R~]G 40 N negative coefficient
+&GNBnVrYDJ}\? 36 N dominated
+&GNBr^hRXr}Kg 37 N negative coefficient
+&GNBzNjp\R~]G 40 N dominated
+&GNBzVrYDJ}\? 36 N negative coefficient
+&GNBzVr~[jn\? 41 S hurwitz
+&GNG~BPn]hzXG 36 N dominated
+&GNHiLzW\bkNW 35 N negative coefficient
+&GNH|AJYFi}^W 36 N negative minor
+&GNIMUpnDgfZW 34 N dominated
+&GNIY[zkKj{^W 37 N dominated
+&GNI]^zkKi}XW 38 N dominated
+&GNIi^xP\jeLg 36 N negative minor
+&GNJI\`|@XjMg 33 N dominated
+&GNJI\i{\ri\? 35 N negative minor
+&GNJZVr~[jn\? 41 N dominated
+&GNJb^hRXr}Kg 37 S hurwitz
+&GNJjNjp\R~]G 40 N negative minor
+&GNJjVrYDJ}\? 36 S hurwitz
+&GNO~BPn]hzXG 36 N dominated
+&GNPiLzW\bkNW 35 N negative coefficient
+&GNP|AJYFi}^W 36 N dominated
+&GNQMUpnDgfZW 34 N negative minor
+&GNQY[zkKj{^W 37 N negative minor
+&GNQ]^zkKi}XW 38 N negative minor
+&GNQi^xP\jeLg 36 N dominated
+&GNRA]b}VZ]VW 38 N negative minor
+&GNRE^b]ZJvVw 40 N negative coefficient
+&GNRI\`|@XjMg 33 N negative coefficient
+&GNRI\i{\ri\? 35 N dominated
+&GNRZVr~[jn\? 41 N dominated
+&GNRbUiiDxRVg 34 N negative coefficient
+&GNRb^hRXr}Kg 37 N negative coefficient
+&GNRjNjp\R~]G 40 N dominated
+&GNRjVrYDJ}\? 36 N dominated
+&GNW|AJYFi}^W 36 N dominated
+&GNX\AJYFi}^W 36 N dominated
+&GNXlAJYFi}^W 36 N dominated
+&GNXlVa}Vw^^w 42 N negative coefficient
+&GNXtAJYFi}^W 36 N dominated
+&GNXxAJYFi}^W 36 N dominated
+&GNX{AJYFi}^W 36 N dominated
+&GNX|?JYFi}^W 36 N dominated
+&GNX|ABYFi}^W 36 N negative minor
+&GNX|AHYFi}^W 36 N negative minor
+&GNX|AIYFi}^W 36 N negative coefficient
+&GNX|AJIFi}^W 36 N negative coefficient
+&GNX|AJQFi}^W 36 N negative minor
+&GNX|AJWFi}^W 36 N negative minor
+&GNX|AJYBi}^W 36 N negative minor
+&GNX|AJYDi}^W 36 N negative minor
+&GNX|AJYEi}^W 36 N negative minor
+&GNX|AJYFI}^W 36 N negative minor
+&GNX|AJYFa}^W 36 N dominated
+&GNX|AJYFg}^W 36 N negative coefficient
+&GNX|AJYFi]^W 36 N negative minor
+&GNX|AJYFim^W 36 N dominated
+&GNX|AJYFiu^W 36 N negative minor
+&GNX|AJYFiy^W 36 N dominated
+&GNX|AJYFi{^W 36 N negative minor
+&GNX|AJYFi}NW 36 S hurwitz
+&GNX|AJYFi}VW 36 N negative minor
+&GNX|AJYFi}ZW 36 N negative coefficient
+&GNX|AJYFi}\W 36 B zero minor
+&GNX|AJYFi}]W 36 N dominated
+&GNX|AJYFi}^G 36 N dominated
+&GNX|AJYFi}^O 36 N negative minor
+&GNX|AJYFi}^W 37 S hurwitz
+&GNX|AJYFi}^w 38 N dominated
+&GNX|AJYFi~^W 38 N dominated
+&GNX|AJYFj}^W 38 N dominated
+&GNX|AJYFy}^W 38 N negative minor
+&GNX|AJYNi}^W 38 N negative minor
+&GNX|AJYVi}^W 38 N negative minor
+&GNX|AJZFi}^W 38 N negative minor
+&GNX|AJ]Fi}^W 38 N negative coefficient
+&GNX|AJyFi}^W 38 N negative coefficient
+&GNX|AZYFi}^W 38 N negative minor
+&GNX|AjYFi}^W 38 N negative minor
+&GNX|BJYFi}^W 38 N negative minor
+&GNX|EJYFi}^W 38 N negative coefficient
+&GNX|IJYFi}^W 38 N negative minor
+&GNX|QJYFi}^W 38 N negative minor
+&GNX|QbUYr]Ng 37 N negative coefficient
+&GNX~AJYFi}^W 38 N dominated
+&GNZ|AJYFi}^W 38 N dominated
+&GN_A^x\Lj^^O 37 N negative coefficient
+&GN_N^zLFGFHW 33 N dominated
+&GN_XHPNUjMLG 30 N negative coefficient
+&GN_ZBRJYrL\_ 32 N negative coefficient
+&GN_hHPNUjMLG 30 N negative coefficient
+&GN_jBRJYrL\_ 32 N negative coefficient
+&GN_pHPNUjMLG 30 N negative minor
+&GN_q^yqKzW\O 34 N negative coefficient
+&GN_rBRJYrL\_ 32 N negative coefficient
+&GN_wHPNUjMLG 30 N negative coefficient
+&GN_x@PNUjMLG 30 N negative coefficient
+&GN_xBRJYrL\_ 32 N dominated
+&GN_xGPNUjMLG 30 N dominated
+&GN_xH@NUjMLG 30 N negative coefficient
+&GN_xHONUjMLG 30 N negative minor
+&GN_xHPFUjMLG 30 N dominated
+&GN_xHPJUjMLG 30 N negative coefficient
+&GN_xHPLUjMLG 30 N dominated
+&GN_xHPMUjMLG 30 N negative coefficient
+&GN_xHPNEjMLG 30 N negative coefficient
+&GN_xHPNQjMLG 30 N negative coefficient
+&GN_xHPNSjMLG 30 N dominated
+&GN_xHPNUJMLG 30 N negative coefficient
+&GN_xHPNUbMLG 30 B zero coefficient
+&GN_xHPNUhMLG 30 N negative minor
+&GN_xHPNUiMLG 30 N dominated
+&GN_xHPNUjELG 30 N negative coefficient
+&GN_xHPNUjILG 30 N negative coefficient
+&GN_xHPNUjKLG 30 N negative coefficient
+&GN_xHPNUjMDG 30 N dominated
+&GN_xHPNUjMHG 30 N negative minor
+&GN_xHPNUjMKG 30 N negative coefficient
+&GN_xHPNUjML? 30 N dominated
+&GN_xHPNUjMLG 31 S hurwitz
+&GN_xHPNUjMLW 32 N negative minor
+&GN_xHPNUjMLg 32 N dominated
+&GN_xHPNUjMNG 32 N dominated
+&GN_xHPNUjM\G 32 N negative coefficient
+&GN_xHPNUjNLG 32 N negative coefficient
+&GN_xHPNUj]LG 32 N negative coefficient
+&GN_xHPNUjmLG 32 N negative minor
+&GN_xHPNUzMLG 32 N dominated
+&GN_xHPNVjMLG 32 N dominated
+&GN_xHPN]jMLG 32 N dominated
+&GN_xHP^UjMLG 32 N negative coefficient
+&GN_xHPnUjMLG 32 N negative coefficient
+&GN_xHRNUjMLG 32 N negative coefficient
+&GN_xHXNUjMLG 32 S hurwitz
+&GN_xHpNUjMLG 32 N negative minor
+&GN_xJPNUjMLG 32 N negative minor
+&GN_xLPNUjMLG 32 N negative minor
+&GN_xXPNUjMLG 32 N negative coefficient
+&GN_yBRJYrL\_ 32 N dominated
+&GN_z@RJYrL\_ 32 N negative coefficient
+&GN_zARJYrL\_ 32 N dominated
+&GN_zBBJYrL\_ 32 N negative coefficient
+&GN_zBPJYrL\_ 32 N negative coefficient
+&GN_zBQJYrL\_ 32 N negative coefficient
+&GN_zBRBYrL\_ 32 N negative coefficient
+&GN_zBRHYrL\_ 32 N negative coefficient
+&GN_zBRIYrL\_ 32 N negative coefficient
+&GN_zBRJIrL\_ 32 N negative coefficient
+&GN_zBRJQrL\_ 32 N negative coefficient
+&GN_zBRJWrL\_ 32 N negative coefficient
+&GN_zBRJYRL\_ 32 N negative coefficient
+&GN_zBRJYbL\_ 32 N negative minor
+&GN_zBRJYpL\_ 32 N negative minor
+&GN_zBRJYqL\_ 32 N negative coefficient
+&GN_zBRJYrD\_ 32 N dominated
+&GN_zBRJYrH\_ 32 N negative coefficient
+&GN_zBRJYrK\_ 32 N negative coefficient
+&GN_zBRJYrLL_ 32 N dominated
+&GN_zBRJYrLT_ 32 N dominated
+&GN_zBRJYrLX_ 32 N negative coefficient
+&GN_zBRJYrL[_ 32 N negative coefficient
+&GN_zBRJYrL\? 32 N dominated
+&GN_zBRJYrL\_ 33 S hurwitz
+&GN_zBRJYrL\g 34 N dominated
+&GN_zBRJYrL\o 34 N dominated
+&GN_zBRJYrL^_ 34 N negative coefficient
+&GN_zBRJYrN\_ 34 N negative coefficient
+&GN_zBRJYr\\_ 34 N negative minor
+&GN_zBRJYrl\_ 34 N dominated
+&GN_zBRJYzL\_ 34 N negative minor
+&GN_zBRJZrL\_ 34 N negative coefficient
+&GN_zBRJ]rL\_ 34 N negative coefficient
+&GN_zBRNYrL\_ 34 N negative coefficient
+&GN_zBRZYrL\_ 34 N negative coefficient
+&GN_zBRjYrL\_ 34 N negative coefficient
+&GN_zBZJYrL\_ 34 N negative minor
+&GN_zBrJYrL\_ 34 N negative minor
+&GN_zFRJYrL\_ 34 N negative coefficient
+&GN_zHPNUjMLG 32 N dominated
+&GN_zJRJYrL\_ 34 N dominated
+&GN_zRRJYrL\_ 34 N dominated
+&GN_|HPNUjMLG 32 N negative coefficient
+&GN_~BPn]hzXG 36 N dominated
+&GN_~BRJYrL\_ 34 N negative coefficient
+&GN`I^jmVRM\? 35 N negative coefficient
+&GN`VNinKZS^_ 36 N negative coefficient
+&GN`iLzW\bkNW 35 N negative minor
+&GN`xHPNUjMLG 32 N negative coefficient
+&GN`zBRJYrL\_ 34 N negative minor
+&GNa?^x\Lj^^O 37 N negative coefficient
+&GNaANx\Lj^^O 37 N negative minor
+&GNaAVx\Lj^^O 37 N negative coefficient
+&GNaAZx\Lj^^O 37 N dominated
+&GNaA\x\Lj^^O 37 N negative minor
+&GNaA]x\Lj^^O 37 N dominated
+&GNaA^X\Lj^^O 37 N dominated
+&GNaA^h\Lj^^O 37 N negative minor
+&GNaA^p\Lj^^O 37 N negative coefficient
+&GNaA^w\Lj^^O 37 N negative coefficient
+&GNaA^xLLj^^O 37 N negative coefficient
+&GNaA^xTLj^^O 37 N dominated
+&GNaA^xXLj^^O 37 N dominated
+&GNaA^x[Lj^^O 37 N dominated
+&GNaA^x\Dj^^O 37 N dominated
+&GNaA^x\Hj^^O 37 N negative coefficient
+&GNaA^x\Kj^^O 37 N negative coefficient
+&GNaA^x\LJ^^O 37 N negative minor
+&GNaA^x\Lb^^O 37 N dominated
+&GNaA^x\Lh^^O 37 N dominated
+&GNaA^x\Li^^O 37 N negative minor
+&GNaA^x\LjN^O 37 N negative minor
+&GNaA^x\LjV^O 37 N negative coefficient
+&GNaA^x\LjZ^O 37 N negative coefficient
+&GNaA^x\Lj\^O 37 N dominated
+&GNaA^x\Lj]^O 37 S hurwitz
+&GNaA^x\Lj^NO 37 N negative coefficient
+&GNaA^x\Lj^VO 37 N negative coefficient
+&GNaA^x\Lj^ZO 37 N negative coefficient
+&GNaA^x\Lj^\O 37 N negative minor
+&GNaA^x\Lj^]O 37 N negative minor
+&GNaA^x\Lj^^? 37 N negative minor
+&GNaA^x\Lj^^O 38 S hurwitz
+&GNaA^x\Lj^^W 39 N negative coefficient
+&GNaA^x\Lj^^o 39 B zero minor
+&GNaA^x\Lj~^O 39 N negative coefficient
+&GNaA^x\Lz^^O 39 N dominated
+&GNaA^x\Nj^^O 39 N negative minor
+&GNaA^x\\j^^O 39 N dominated
+&GNaA^x^Lj^^O 39 N dominated
+&GNaA^x|Lj^^O 39 N negative minor
+&GNaA^z\Lj^^O 39 N negative coefficient
+&GNaB^x\Lj^^O 39 N dominated
+&GNaE^x\Lj^^O 39 N negative minor
+&GNaF^zLFGFHW 33 N dominated
+&GNaI^jmVRM\? 35 N negative coefficient
+&GNaI^x\Lj^^O 39 N negative coefficient
+&GNaJ^zLFGFHW 33 N dominated
+&GNaL^zLFGFHW 33 N negative minor
+&GNaMUpnDgfZW 34 N negative coefficient
+&GNaM^zLFGFHW 33 N negative coefficient
+&GNaNNzLFGFHW 33 N negative coefficient
+&GNaNVzLFGFHW 33 N negative minor
+&GNaNZzLFGFHW 33 N negative coefficient
+&GNaN\zLFGFHW 33 N negative coefficient
+&GNaN]zLFGFHW 33 N negative coefficient
+&GNaN^ZLFGFHW 33 N negative minor
+&GNaN^jLFGFHW 33 N negative coefficient
+&GNaN^rLFGFHW 33 N dominated
+&GNaN^xLFGFHW 33 N negative minor
+&GNaN^yLFGFHW 33 N negative coefficient
+&GNaN^zDFGFHW 33 N negative coefficient
+&GNaN^zHFGFHW 33 N negative coefficient
+&GNaN^zKFGFHW 33 N dominated
+&GNaN^zLBGFHW 33 N dominated
+&GNaN^zLDGFHW 33 N negative coefficient
+&GNaN^zLEGFHW 33 N negative minor
+&GNaN^zLF?FHW 33 N negative coefficient
+&GNaN^zLFGBHW 33 N negative minor
+&GNaN^zLFGDHW 33 N negative coefficient
+&GNaN^zLFGEHW 33 N negative coefficient
+&GNaN^zLFGF@W 33 N negative coefficient
+&GNaN^zLFGFGW 33 N negative minor
+&GNaN^zLFGFHG 33 N dominated
+&GNaN^zLFGFHO 33 N negative minor
+&GNaN^zLFGFHW 34 S hurwitz
+&GNaN^zLFGFHw 35 N dominated
+&GNaN^zLFGFJW 35 N negative minor
+&GNaN^zLFGFLW 35 N negative coefficient
+&GNaN^zLFGFXW 35 N negative minor
+&GNaN^zLFGNHW 35 N negative minor
+&GNaN^zLFGVHW 35 N negative coefficient
+&GNaN^zLFGfHW 35 N negative minor
+&GNaN^zLFHFHW 35 N negative coefficient
+&GNaN^zLFIFHW 35 N negative coefficient
+&GNaN^zLFWFHW 35 N negative coefficient
+&GNaN^zLFgFHW 35 N negative minor
+&GNaN^zLNGFHW 35 N dominated
+&GNaN^zLVGFHW 35 N dominated
+&GNaN^zNFGFHW 35 S hurwitz
+&GNaN^z\FGFHW 35 N negative coefficient
+&GNaN^zlFGFHW 35 N dominated
+&GNaQ^x\Lj^^O 39 N negative coefficient
+&GNaQ^yqKzW\O 34 N dominated
+&GNaVNinKZS^_ 36 N negative minor
+&GNaY[zkKj{^W 37 N negative coefficient
+&GNa]^zkKi}XW 38 N dominated
+&GNa^^zLFGFHW 35 N dominated
+&GNaa^x\Lj^^O 39 N negative minor
+&GNaa^yqKzW\O 34 N dominated
+&GNai^xP\jeLg 36 B zero minor
+&GNan^zLFGFHW 35 N dominated
+&GNao^yqKzW\O 34 N negative minor
+&GNaqNyqKzW\O 34 N negative minor
+&GNaqVyqKzW\O 34 N dominated
+&GNaqZyqKzW\O 34 N negative coefficient
+&GNaq\yqKzW\O 34 N dominated
+&GNaq]yqKzW\O 34 N negative coefficient
+&GNaq^YqKzW\O 34 N dominated
+&GNaq^iqKzW\O 34 N negative coefficient
+&GNaq^qqKzW\O 34 N negative coefficient
+&GNaq^wqKzW\O 34 N negative coefficient
+&GNaq^yQKzW\O 34 N negative coefficient
+&GNaq^yaKzW\O 34 S hurwitz
+&GNaq^yoKzW\O 34 N negative coefficient
+&GNaq^yqCzW\O 34 N negative coefficient
+&GNaq^yqGzW\O 34 N negative coefficient
+&GNaq^yqKZW\O 34 N negative coefficient
+&GNaq^yqKjW\O 34 N negative coefficient
+&GNaq^yqKrW\O 34 N negative minor
+&GNaq^yqKxW\O 34 N negative minor
+&GNaq^yqKyW\O 34 N negative coefficient
+&GNaq^yqKzG\O 34 N negative coefficient
+&GNaq^yqKzO\O 34 N negative minor
+&GNaq^yqKzWLO 34 N negative coefficient
+&GNaq^yqKzWTO 34 N dominated
+&GNaq^yqKzWXO 34 N dominated
+&GNaq^yqKzW[O 34 N dominated
+&GNaq^yqKzW\? 34 N dominated
+&GNaq^yqKzW\O 35 S hurwitz
+&GNaq^yqKzW\W 36 N dominated
+&GNaq^yqKzW\o 36 N dominated
+&GNaq^yqKzW^O 36 N dominated
+&GNaq^yqKzX\O 36 N negative minor
+&GNaq^yqKzY\O 36 N negative minor
+&GNaq^yqKz[\O 36 N negative coefficient
+&GNaq^yqKzw\O 36 N negative coefficient
+&GNaq^yqLzW\O 36 N negative coefficient
+&GNaq^yqMzW\O 36 N negative minor
+&GNaq^yq[zW\O 36 N negative coefficient
+&GNaq^yrKzW\O 36 N negative minor
+&GNaq^yuKzW\O 36 N negative coefficient
+&GNaq^yyKzW\O 36 N negative minor
+&GNaq^zqKzW\O 36 N dominated
+&GNar^yqKzW\O 36 N negative minor
+&GNau^yqKzW\O 36 N negative minor
+&GNaxHPNUjMLG 32 N negative coefficient
+&GNay^yqKzW\O 36 N dominated
+&GNazBRJYrL\_ 34 N negative coefficient
+&GNbA]b}VZ]VW 38 N negative coefficient
+&GNbA^jmVRM\? 35 B zero minor
+&GNbA^x\Lj^^O 39 N negative minor
+&GNbE^b]ZJvVw 40 N negative coefficient
+&GNbFNinKZS^_ 36 N dominated
+&GNbG^jmVRM\? 35 N negative coefficient
+&GNbINjmVRM\? 35 N negative coefficient
+&GNbIVjmVRM\? 35 N dominated
+&GNbIZjmVRM\? 35 N negative minor
+&GNbI\`|@XjMg 33 N negative coefficient
+&GNbI\i{\ri\? 35 N negative minor
+&GNbI\jmVRM\? 35 N negative minor
+&GNbI]jmVRM\? 35 N negative coefficient
+&GNbI^JmVRM\? 35 N negative minor
+&GNbI^bmVRM\? 35 N negative minor
+&GNbI^hmVRM\? 35 N negative coefficient
+&GNbI^imVRM\? 35 N negative minor
+&GNbI^jMVRM\? 35 N dominated
+&GNbI^jeVRM\? 35 N negative minor
+&GNbI^jiVRM\? 35 N dominated
+&GNbI^jkVRM\? 35 S hurwitz
+&GNbI^jmFRM\? 35 N dominated
+&GNbI^jmRRM\? 35 N dominated
+&GNbI^jmTRM\? 35 N negative minor
+&GNbI^jmURM\? 35 N negative coefficient
+&GNbI^jmVBM\? 35 N negative minor
+&GNbI^jmVPM\? 35 N negative coefficient
+&GNbI^jmVQM\? 35 N negative minor
+&GNbI^jmVRE\? 35 N negative minor
+&GNbI^jmVRI\? 35 N negative minor
+&GNbI^jmVRK\? 35 N dominated
+&GNbI^jmVRML? 35 N dominated
+&GNbI^jmVRMT? 35 N negative minor
+&GNbI^jmVRMX? 35 N negative minor
+&GNbI^jmVRM[? 35 N negative minor
+&GNbI^jmVRM\? 36 S hurwitz
+&GNbI^jmVRM\G 37 S hurwitz
+&GNbI^jmVRM\O 37 N negative minor
+&GNbI^jmVRM\_ 37 N negative minor
+&GNbI^jmVRM^? 37 N negative minor
+&GNbI^jmVRN\? 37 N dominated
+&GNbI^jmVR]\? 37 N negative minor
+&GNbI^jmVRm\? 37 N dominated
+&GNbI^jmVZM\? 37 N negative minor
+&GNbI^jmVrM\? 37 N negative coefficient
+&GNbI^jm^RM\? 37 N dominated
+&GNbI^jnVRM\? 37 N dominated
+&GNbI^j}VRM\? 37 N negative minor
+&GNbI^zmVRM\? 37 N negative minor
+&GNbJ^jmVRM\? 37 N negative coefficient
+&GNbMMa{^XP^_ 35 N negative minor
+&GNbM^jmVRM\? 37 N negative minor
+&GNbN^zLFGFHW 35 N dominated
+&GNbRNinKZS^_ 36 N negative coefficient
+&GNbTNinKZS^_ 36 N dominated
+&GNbUNinKZS^_ 36 N dominated
+&GNbVFinKZS^_ 36 N negative minor
+&GNbVJinKZS^_ 36 N dominated
+&GNbVLinKZS^_ 36 N negative minor
+&GNbVMinKZS^_ 36 N dominated
+&GNbVNInKZS^_ 36 N negative minor
+&GNbVNanKZS^_ 36 N negative coefficient
+&GNbVNgnKZS^_ 36 N negative coefficient
+&GNbVNiNKZS^_ 36 N negative coefficient
+&GNbVNifKZS^_ 36 N dominated
+&GNbVNijKZS^_ 36 N negative minor
+&GNbVNilKZS^_ 36 N negative minor
+&GNbVNimKZS^_ 36 N negative coefficient
+&GNbVNinCZS^_ 36 N negative coefficient
+&GNbVNinGZS^_ 36 N negative minor
+&GNbVNinKJS^_ 36 N negative coefficient
+&GNbVNinKRS^_ 36 N negative minor
+&GNbVNinKXS^_ 36 N negative minor
+&GNbVNinKYS^_ 36 N negative minor
+&GNbVNinKZC^_ 36 N negative coefficient
+&GNbVNinKZO^_ 36 N negative minor
+&GNbVNinKZSN_ 36 N negative coefficient
+&GNbVNinKZSV_ 36 N dominated
+&GNbVNinKZSZ_ 36 N dominated
+&GNbVNinKZS\_ 36 N negative minor
+&GNbVNinKZS]_ 36 N negative coefficient
+&GNbVNinKZS^? 36 N dominated
+&GNbVNinKZS^_ 37 S hurwitz
+&GNbVNinKZS^g 38 N dominated
+&GNbVNinKZS^o 38 N negative minor
+&GNbVNinKZT^_ 38 N negative coefficient
+&GNbVNinKZU^_ 38 N negative minor
+&GNbVNinKZ[^_ 38 N negative minor
+&GNbVNinKZs^_ 38 N negative coefficient
+&GNbVNinKzS^_ 38 N negative coefficient
+&GNbVNinLZS^_ 38 N negative coefficient
+&GNbVNinMZS^_ 38 N negative minor
+&GNbVNin[ZS^_ 38 N negative minor
+&GNbVNi~KZS^_ 38 N negative minor
+&GNbVNjnKZS^_ 38 N negative coefficient
+&GNbVNynKZS^_ 38 N negative minor
+&GNbV^inKZS^_ 38 N dominated
+&GNbY^jmVRM\? 37 N negative minor
+&GNbZVr~[jn\? 41 N negative coefficient
+&GNb^NinKZS^_ 38 N dominated
+&GNbbUiiDxRVg 34 N negative coefficient
+&GNbb^hRXr}Kg 37 N negative coefficient
+&GNbi^jmVRM\? 37 N negative coefficient
+&GNbjNjp\R~]G 40 N negative coefficient
+&GNbjVrYDJ}\? 36 N negative coefficient
+&GNbq^yqKzW\O 36 N dominated
+&GNbvNinKZS^_ 38 N dominated
+&GNgxHPNUjMLG 32 N negative minor
+&GNgzBRJYrL\_ 34 N negative coefficient
+&GNg~^RkMh\^_ 39 N negative minor
+&GNhlVa}Vw^^w 42 N negative minor
+&GNh|QbUYr]Ng 37 N dominated
+&GNiA^x\Lj^^O 39 S hurwitz
+&GNiN^zLFGFHW 35 N dominated
+&GNiq^yqKzW\O 36 S hurwitz
+&GNjI^jmVRM\? 37 N dominated
+&GNjVNinKZS^_ 38 N negative coefficient
+&GNoxHPNUjMLG 32 N negative minor
+&GNozBRJYrL\_ 34 N negative coefficient
+&GNpA]b}VZ]VW 38 N negative coefficient
+&GNpE^b]ZJvVw 40 N dominated
+&GNpbUiiDxRVg 34 N negative coefficient
+&GNplVa}Vw^^w 42 N negative coefficient
+&GNp|QbUYr]Ng 37 N negative coefficient
+&GNqA]b}VZ]VW 38 N negative minor
+&GNqA^x\Lj^^O 39 N dominated
+&GNqE^b]ZJvVw 40 N dominated
+&GNqN^zLFGFHW 35 N negative coefficient
+&GNqbUiiDxRVg 34 N negative coefficient
+&GNqq^yqKzW\O 36 N dominated
+&GNr?]b}VZ]VW 38 N dominated
+&GNrAMb}VZ]VW 38 N negative coefficient
+&GNrAUb}VZ]VW 38 N dominated
+&GNrAYb}VZ]VW 38 N negative coefficient
+&GNrA[b}VZ]VW 38 N negative minor
+&GNrA]B}VZ]VW 38 N negative coefficient
+&GNrA]`}VZ]VW 38 N negative coefficient
+&GNrA]a}VZ]VW 38 N negative minor
+&GNrA]b]VZ]VW 38 N dominated
+&GNrA]bmVZ]VW 38 N negative minor
+&GNrA]buVZ]VW 38 N dominated
+&GNrA]byVZ]VW 38 N dominated
+&GNrA]b{VZ]VW 38 N dominated
+&GNrA]b}FZ]VW 38 N dominated
+&GNrA]b}RZ]VW 38 N negative coefficient
+&GNrA]b}TZ]VW 38 N dominated
+&GNrA]b}UZ]VW 38 N dominated
+&GNrA]b}VJ]VW 38 N negative coefficient
+&GNrA]b}VR]VW 38 N negative coefficient
+&GNrA]b}VX]VW 38 N negative coefficient
+&GNrA]b}VY]VW 38 N negative coefficient
+&GNrA]b}VZMVW 38 N negative coefficient
+&GNrA]b}VZUVW 38 N negative coefficient
+&GNrA]b}VZYVW 38 N negative minor
+&GNrA]b}VZ[VW 38 N negative coefficient
+&GNrA]b}VZ]FW 38 B zero minor
+&GNrA]b}VZ]RW 38 N negative minor
+&GNrA]b}VZ]TW 38 N negative coefficient
+&GNrA]b}VZ]UW 38 N negative minor
+&GNrA]b}VZ]VG 38 N negative minor
+&GNrA]b}VZ]VO 38 N dominated
+&GNrA]b}VZ]VW 39 S hurwitz
+&GNrA]b}VZ]Vw 40 N dominated
+&GNrA]b}VZ]^W 40 N negative minor
+&GNrA]b}VZ^VW 40 N negative coefficient
+&GNrA]b}VZ}VW 40 N negative coefficient
+&GNrA]b}Vz]VW 40 N dominated
+&GNrA]b}^Z]VW 40 N dominated
+&GNrA]b~VZ]VW 40 N dominated
+&GNrA]j}VZ]VW 40 N negative minor
+&GNrA]r}VZ]VW 40 N negative coefficient
+&GNrA^b]ZJvVw 40 N dominated
+&GNrA^b}VZ]VW 40 N dominated
+&GNrBUiiDxRVg 34 N negative minor
+&GNrB]b}VZ]VW 40 N negative minor
+&GNrC^b]ZJvVw 40 N negative coefficient
+&GNrENb]ZJvVw 40 N negative coefficient
+&GNrEVb]ZJvVw 40 N negative coefficient
+&GNrEZb]ZJvVw 40 N negative minor
+&GNrE\b]ZJvVw 40 N negative minor
+&GNrE]b]ZJvVw 40 N negative minor
+&GNrE]b}VZ]VW 40 N negative coefficient
+&GNrE^B]ZJvVw 40 N negative coefficient
+&GNrE^`]ZJvVw 40 N negative coefficient
+&GNrE^a]ZJvVw 40 N negative minor
+&GNrE^bMZJvVw 40 N negative minor
+&GNrE^bUZJvVw 40 N dominated
+&GNrE^bYZJvVw 40 B zero minor
+&GNrE^b[ZJvVw 40 N dominated
+&GNrE^b]JJvVw 40 N dominated
+&GNrE^b]RJvVw 40 N dominated
+&GNrE^b]XJvVw 40 N dominated
+&GNrE^b]YJvVw 40 B zero minor
+&GNrE^b]ZBvVw 40 N dominated
+&GNrE^b]ZHvVw 40 N dominated
+&GNrE^b]ZIvVw 40 N negative minor
+&GNrE^b]ZJVVw 40 N negative minor
+&GNrE^b]ZJfVw 40 N negative coefficient
+&GNrE^b]ZJrVw 40 N negative minor
+&GNrE^b]ZJtVw 40 N negative minor
+&GNrE^b]ZJuVw 40 N negative coefficient
+&GNrE^b]ZJvFw 40 N negative coefficient
+&GNrE^b]ZJvRw 40 N negative minor
+&GNrE^b]ZJvTw 40 N negative coefficient
+&GNrE^b]ZJvUw 40 N dominated
+&GNrE^b]ZJvVW 40 N negative coefficient
+&GNrE^b]ZJvVg 40 N negative minor
+&GNrE^b]ZJvVo 40 N negative minor
+&GNrE^b]ZJvVw 41 S hurwitz
+&GNrE^b]ZJv^w 42 N negative minor
+&GNrE^b]ZJ~Vw 42 N negative coefficient
+&GNrE^b]ZZvVw 42 B zero minor
+&GNrE^b]ZjvVw 42 N negative minor
+&GNrE^b]^JvVw 42 N dominated
+&GNrE^b^ZJvVw 42 N dominated
+&GNrE^b}ZJvVw 42 N negative coefficient
+&GNrE^j]ZJvVw 42 N negative minor
+&GNrE^r]ZJvVw 42 N negative coefficient
+&GNrF^b]ZJvVw 42 N negative coefficient
+&GNrI]b}VZ]VW 40 N negative minor
+&GNrI^jmVRM\? 37 N negative minor
+&GNrM^b]ZJvVw 42 N dominated
+&GNrQ]b}VZ]VW 40 N negative coefficient
+&GNrU^b]ZJvVw 42 N dominated
+&GNrVNinKZS^_ 38 N dominated
+&GNr`UiiDxRVg 34 N dominated
+&GNraUiiDxRVg 34 N dominated
+&GNra]b}VZ]VW 40 N negative coefficient
+&GNrbEiiDxRVg 34 N dominated
+&GNrbQiiDxRVg 34 N dominated
+&GNrbSiiDxRVg 34 N dominated
+&GNrbUIiDxRVg 34 N negative coefficient
+&GNrbUaiDxRVg 34 N negative minor
+&GNrbUgiDxRVg 34 N negative coefficient
+&GNrbUiIDxRVg 34 N negative coefficient
+&GNrbUiaDxRVg 34 N dominated
+&GNrbUigDxRVg 34 N negative coefficient
+&GNrbUii@xRVg 34 N dominated
+&GNrbUiiCxRVg 34 N negative minor
+&GNrbUiiDXRVg 34 N negative minor
+&GNrbUiiDhRVg 34 N negative coefficient
+&GNrbUiiDpRVg 34 N negative coefficient
+&GNrbUiiDwRVg 34 N negative coefficient
+&GNrbUiiDxBVg 34 N dominated
+&GNrbUiiDxPVg 34 N dominated
+&GNrbUiiDxQVg 34 N dominated
+&GNrbUiiDxRFg 34 N dominated
+&GNrbUiiDxRRg 34 N negative coefficient
+&GNrbUiiDxRTg 34 N negative coefficient
+&GNrbUiiDxRUg 34 N negative minor
+&GNrbUiiDxRVG 34 N negative minor
+&GNrbUiiDxRV_ 34 N negative coefficient
+&GNrbUiiDxRVg 35 S hurwitz
+&GNrbUiiDxRVw 36 N negative minor
+&GNrbUiiDxR^g 36 N negative coefficient
+&GNrbUiiDxVVg 36 N dominated
+&GNrbUiiDxZVg 36 N dominated
+&GNrbUiiDxrVg 36 N negative coefficient
+&GNrbUiiDzRVg 36 N negative coefficient
+&GNrbUiiFxRVg 36 N negative minor
+&GNrbUiiLxRVg 36 N dominated
+&GNrbUiiTxRVg 36 N negative minor
+&GNrbUijDxRVg 36 N negative coefficient
+&GNrbUimDxRVg 36 N negative minor
+&GNrbUiyDxRVg 36 N negative minor
+&GNrbUjiDxRVg 36 N negative coefficient
+&GNrbUyiDxRVg 36 N negative coefficient
+&GNrbViiDxRVg 36 N dominated
+&GNrb]iiDxRVg 36 N dominated
+&GNre^b]ZJvVw 42 N dominated
+&GNrfUiiDxRVg 36 N negative coefficient
+&GNrjUiiDxRVg 36 N negative coefficient
+&GNrrUiiDxRVg 36 N negative minor
+&GNw^JWlVzm^w 42 B zero minor
+&GNw^RRUFi}Zo 38 N negative minor
+&GNwlVa}Vw^^w 42 N negative coefficient
+&GNwnURQRB}Nw 37 N negative minor
+&GNw|QbUYr]Ng 37 N negative coefficient
+&GNxLVa}Vw^^w 42 N negative coefficient
+&GNx\QbUYr]Ng 37 N negative minor
+&GNxdVa}Vw^^w 42 N negative minor
+&GNxhVa}Vw^^w 42 N negative minor
+&GNxkVa}Vw^^w 42 B zero coefficient
+&GNxlFa}Vw^^w 42 N dominated
+&GNxlQbUYr]Ng 37 N negative coefficient
+&GNxlRa}Vw^^w 42 N dominated
+&GNxlTa}Vw^^w 42 N dominated
+&GNxlUa}Vw^^w 42 B zero coefficient
+&GNxlVA}Vw^^w 42 N negative minor
+&GNxlV_}Vw^^w 42 N negative coefficient
+&GNxlVa]Vw^^w 42 N dominated
+&GNxlVamVw^^w 42 N negative coefficient
+&GNxlVauVw^^w 42 N dominated
+&GNxlVayVw^^w 42 N dominated
+&GNxlVa{Vw^^w 42 N dominated
+&GNxlVa}Fw^^w 42 N dominated
+&GNxlVa}Rw^^w 42 N negative minor
+&GNxlVa}Tw^^w 42 S hurwitz
+&GNxlVa}Uw^^w 42 B zero coefficient
+&GNxlVa}VW^^w 42 N dominated
+&GNxlVa}Vg^^w 42 B zero minor
+&GNxlVa}Vo^^w 42 N negative minor
+&GNxlVa}VwN^w 42 S hurwitz
+&GNxlVa}VwV^w 42 N negative minor
+&GNxlVa}VwZ^w 42 N negative minor
+&GNxlVa}Vw\^w 42 N negative coefficient
+&GNxlVa}Vw]^w 42 N negative coefficient
+&GNxlVa}Vw^Nw 42 S hurwitz
+&GNxlVa}Vw^Vw 42 N negative coefficient
+&GNxlVa}Vw^Zw 42 S hurwitz
+&GNxlVa}Vw^\w 42 N negative minor
+&GNxlVa}Vw^]w 42 S hurwitz
+&GNxlVa}Vw^^W 42 N negative coefficient
+&GNxlVa}Vw^^g 42 N negative coefficient
+&GNxlVa}Vw^^o 42 N dominated
+&GNxlVa}Vw^^w 43 S hurwitz
+&GNxlVa}Vw~^w 44 B zero coefficient
+&GNxlVa}Vx^^w 44 S hurwitz
+&GNxlVa}Vy^^w 44 B zero minor
+&GNxlVa}^w^^w 44 N negative coefficient
+&GNxlVa~Vw^^w 44 N dominated
+&GNxlVb}Vw^^w 44 N negative coefficient
+&GNxlVi}Vw^^w 44 B zero coefficient
+&GNxlVq}Vw^^w 44 B zero minor
+&GNxl]b{V`v]g 40 N dominated
+&GNxl^a}Vw^^w 44 N dominated
+&GNxnVa}Vw^^w 44 B zero coefficient
+&GNxtQbUYr]Ng 37 B zero minor
+&GNxxQbUYr]Ng 37 N negative minor
+&GNx{QbUYr]Ng 37 N negative coefficient
+&GNx|AJYFi}^W 38 N negative minor
+&GNx|AbUYr]Ng 37 N negative minor
+&GNx|ObUYr]Ng 37 N negative coefficient
+&GNx|QBUYr]Ng 37 N dominated
+&GNx|Q`UYr]Ng 37 N negative coefficient
+&GNx|QaUYr]Ng 37 N dominated
+&GNx|QbEYr]Ng 37 N dominated
+&GNx|QbQYr]Ng 37 N dominated
+&GNx|QbSYr]Ng 37 N dominated
+&GNx|QbUIr]Ng 37 N dominated
+&GNx|QbUQr]Ng 37 N dominated
+&GNx|QbUWr]Ng 37 N dominated
+&GNx|QbUYR]Ng 37 N negative coefficient
+&GNx|QbUYb]Ng 37 N negative coefficient
+&GNx|QbUYp]Ng 37 N negative minor
+&GNx|QbUYq]Ng 37 N dominated
+&GNx|QbUYrMNg 37 N dominated
+&GNx|QbUYrUNg 37 N dominated
+&GNx|QbUYrYNg 37 N negative coefficient
+&GNx|QbUYr[Ng 37 B zero minor
+&GNx|QbUYr]Fg 37 N dominated
+&GNx|QbUYr]Jg 37 N negative coefficient
+&GNx|QbUYr]Lg 37 N negative minor
+&GNx|QbUYr]Mg 37 S hurwitz
+&GNx|QbUYr]NG 37 N negative coefficient
+&GNx|QbUYr]N_ 37 N negative coefficient
+&GNx|QbUYr]Ng 38 S hurwitz
+&GNx|QbUYr]Nw 39 N negative coefficient
+&GNx|QbUYr]^g 39 N negative coefficient
+&GNx|QbUYr^Ng 39 N negative minor
+&GNx|QbUYr}Ng 39 B zero coefficient
+&GNx|QbUYz]Ng 39 N dominated
+&GNx|QbUZr]Ng 39 N negative coefficient
+&GNx|QbU]r]Ng 39 N dominated
+&GNx|QbVYr]Ng 39 N dominated
+&GNx|Qb]Yr]Ng 39 S hurwitz
+&GNx|QbuYr]Ng 39 N dominated
+&GNx|QjUYr]Ng 39 N negative coefficient
+&GNx|QrUYr]Ng 39 N negative minor
+&GNx|RbUYr]Ng 39 N negative minor
+&GNx|UbUYr]Ng 39 N negative coefficient
+&GNx|Va}Vw^^w 44 N negative minor
+&GNx|YbUYr]Ng 39 N negative minor
+&GNx~QbUYr]Ng 39 N negative coefficient
+&GNyw^QW^P|Nw 39 N dominated
+&GNzA]b}VZ]VW 40 N negative minor
+&GNzE^b]ZJvVw 42 B zero minor
+&GNzbUiiDxRVg 36 N negative coefficient
+&GNzlVa}Vw^^w 44 N negative coefficient
+&GNz|QbUYr]Ng 39 N negative minor
+&GOqMVq]DYuZo 33 N dominated
+&GOr]V_nFWj^w 36 N dominated
+&GOriVayFXr^o 35 N dominated
+&GPQMVq]DYuZo 33 N negative minor
+&GPRiVayFXr^o 35 N negative coefficient
+&GP_wOr~QrI]_ 30 N negative minor
+&GPaMVq]DYuZo 33 N negative coefficient
+&GPbiVayFXr^o 35 N dominated
+&GPoMVq]DYuZo 33 N dominated
+&GPpiVayFXr^o 35 N dominated
+&GPqEVq]DYuZo 33 N negative minor
+&GPqIVq]DYuZo 33 N negative minor
+&GPqKVq]DYuZo 33 N negative coefficient
+&GPqMFq]DYuZo 33 N dominated
+&GPqMRq]DYuZo 33 N negative minor
+&GPqMTq]DYuZo 33 N negative coefficient
+&GPqMUq]DYuZo 33 N negative minor
+&GPqMVQ]DYuZo 33 N negative coefficient
+&GPqMVa]DYuZo 33 N negative minor
+&GPqMVo]DYuZo 33 N negative coefficient
+&GPqMVqMDYuZo 33 S hurwitz
+&GPqMVqUDYuZo 33 N negative coefficient
+&GPqMVqYDYuZo 33 S hurwitz
+&GPqMVq[DYuZo 33 N negative minor
+&GPqMVq]@YuZo 33 N negative minor
+&GPqMVq]CYuZo 33 N dominated
+&GPqMVq]DIuZo 33 N dominated
+&GPqMVq]DQuZo 33 N dominated
+&GPqMVq]DWuZo 33 N dominated
+&GPqMVq]DYUZo 33 N negative minor
+&GPqMVq]DYeZo 33 N negative coefficient
+&GPqMVq]DYqZo 33 N negative coefficient
+&GPqMVq]DYsZo 33 B zero minor
+&GPqMVq]DYuJo 33 N negative coefficient
+&GPqMVq]DYuRo 33 N dominated
+&GPqMVq]DYuXo 33 N dominated
+&GPqMVq]DYuYo 33 N negative coefficient
+&GPqMVq]DYuZO 33 N dominated
+&GPqMVq]DYuZ_ 33 N dominated
+&GPqMVq]DYuZo 34 S hurwitz
+&GPqMVq]DYuZw 35 N dominated
+&GPqMVq]DYu^o 35 N dominated
+&GPqMVq]DYvZo 35 B zero minor
+&GPqMVq]DY}Zo 35 S hurwitz
+&GPqMVq]DZuZo 35 N dominated
+&GPqMVq]DyuZo 35 N negative coefficient
+&GPqMVq]FYuZo 35 N dominated
+&GPqMVq]LYuZo 35 S hurwitz
+&GPqMVq]TYuZo 35 N negative minor
+&GPqMVq^DYuZo 35 N negative minor
+&GPqMVq}DYuZo 35 N negative minor
+&GPqMVr]DYuZo 35 N negative coefficient
+&GPqMVy]DYuZo 35 N negative coefficient
+&GPqM^q]DYuZo 35 N dominated
+&GPqNVq]DYuZo 35 N negative coefficient
+&GPq]Vq]DYuZo 35 N negative minor
+&GPqiVayFXr^o 35 N dominated
+&GPqmVq]DYuZo 35 N negative minor
+&GPqqZp|^q}^w 41 N dominated
+&GPrIVayFXr^o 35 N dominated
+&GPrMVq]DYuZo 35 N negative minor
+&GPraVayFXr^o 35 N dominated
+&GPrgVayFXr^o 35 N negative minor
+&GPriFayFXr^o 35 N dominated
+&GPriRayFXr^o 35 N dominated
+&GPriTayFXr^o 35 N negative minor
+&GPriUayFXr^o 35 N negative coefficient
+&GPriVAyFXr^o 35 N negative coefficient
+&GPriV_yFXr^o 35 N negative minor
+&GPriVaYFXr^o 35 N negative coefficient
+&GPriVaiFXr^o 35 N negative minor
+&GPriVaqFXr^o 35 N negative minor
+&GPriVawFXr^o 35 N dominated
+&GPriVayBXr^o 35 N negative coefficient
+&GPriVayDXr^o 35 N negative coefficient
+&GPriVayEXr^o 35 N negative minor
+&GPriVayFHr^o 35 S hurwitz
+&GPriVayFPr^o 35 N negative minor
+&GPriVayFWr^o 35 N negative coefficient
+&GPriVayFXR^o 35 N negative minor
+&GPriVayFXb^o 35 N negative minor
+&GPriVayFXp^o 35 N negative coefficient
+&GPriVayFXq^o 35 N negative coefficient
+&GPriVayFXrNo 35 N negative coefficient
+&GPriVayFXrVo 35 N dominated
+&GPriVayFXrZo 35 N negative coefficient
+&GPriVayFXr\o 35 S hurwitz
+&GPriVayFXr]o 35 S hurwitz
+&GPriVayFXr^O 35 N negative minor
+&GPriVayFXr^_ 35 N dominated
+&GPriVayFXr^o 36 S hurwitz
+&GPriVayFXr^w 37 N negative minor
+&GPriVayFXv^o 37 S hurwitz
+&GPriVayFXz^o 37 N negative minor
+&GPriVayFZr^o 37 N negative minor
+&GPriVayFxr^o 37 N negative minor
+&GPriVayNXr^o 37 S hurwitz
+&GPriVayVXr^o 37 S hurwitz
+&GPriVazFXr^o 37 N dominated
+&GPriVa}FXr^o 37 N negative minor
+&GPriVbyFXr^o 37 N negative coefficient
+&GPriViyFXr^o 37 S hurwitz
+&GPriVqyFXr^o 37 N negative minor
+&GPri^ayFXr^o 37 N dominated
+&GPrjVayFXr^o 37 N dominated
+&GPrkMgxNXX^? 33 N negative minor
+&GPrmVayFXr^o 37 N dominated
+&GPryVayFXr^o 37 N negative minor
+&GPryVb]Mz{]W 39 N negative coefficient
+&GPyMVq]DYuZo 35 N dominated
+&GPziVayFXr^o 37 N dominated
+&GQR]V_nFWj^w 36 N negative minor
+&GQb]V_nFWj^w 36 S hurwitz
+&GQp]V_nFWj^w 36 N dominated
+&GQq]V_nFWj^w 36 N dominated
+&GQrMV_nFWj^w 36 N dominated
+&GQrUV_nFWj^w 36 N negative minor
+&GQrYV_nFWj^w 36 S hurwitz
+&GQr[V_nFWj^w 36 N negative coefficient
+&GQr]F_nFWj^w 36 N negative minor
+&GQr]R_nFWj^w 36 N negative coefficient
+&GQr]T_nFWj^w 36 N negative minor
+&GQr]U_nFWj^w 36 S hurwitz
+&GQr]V?nFWj^w 36 N negative minor
+&GQr]V_NFWj^w 36 N negative coefficient
+&GQr]V_fFWj^w 36 S hurwitz
+&GQr]V_jFWj^w 36 N negative coefficient
+&GQr]V_lFWj^w 36 N dominated
+&GQr]V_mFWj^w 36 N negative minor
+&GQr]V_nBWj^w 36 S hurwitz
+&GQr]V_nDWj^w 36 N negative minor
+&GQr]V_nEWj^w 36 N negative minor
+&GQr]V_nFGj^w 36 N negative coefficient
+&GQr]V_nFOj^w 36 N negative coefficient
+&GQr]V_nFWJ^w 36 N negative minor
+&GQr]V_nFWb^w 36 N dominated
+&GQr]V_nFWh^w 36 N dominated
+&GQr]V_nFWi^w 36 N dominated
+&GQr]V_nFWjNw 36 S hurwitz
+&GQr]V_nFWjVw 36 N negative coefficient
+&GQr]V_nFWjZw 36 N negative coefficient
+&GQr]V_nFWj\w 36 N dominated
+&GQr]V_nFWj]w 36 N negative minor
+&GQr]V_nFWj^W 36 N negative minor
+&GQr]V_nFWj^g 36 N negative coefficient
+&GQr]V_nFWj^o 36 N negative minor
+&GQr]V_nFWj^w 37 S hurwitz
+&GQr]V_nFWn^w 38 N dominated
+&GQr]V_nFWz^w 38 N dominated
+&GQr]V_nFXj^w 38 S hurwitz
+&GQr]V_nFYj^w 38 N negative minor
+&GQr]V_nFwj^w 38 N negative minor
+&GQr]V_nNWj^w 38 S hurwitz
+&GQr]V_nVWj^w 38 N dominated
+&GQr]V_~FWj^w 38 S hurwitz
+&GQr]V`nFWj^w 38 N negative coefficient
+&GQr]VanFWj^w 38 N negative minor
+&GQr]VgnFWj^w 38 N negative minor
+&GQr]VonFWj^w 38 N negative coefficient
+&GQr]^_nFWj^w 38 N negative coefficient
+&GQr^V_nFWj^w 38 N negative minor
+&GQr}V_nFWj^w 38 N negative minor
+&GQz]V_nFWj^w 38 N dominated
+&GRB]NHtIJw^g 34 N dominated
+&GRO~EWzHz{^w 38 N dominated
+&GRQsZrgJh|Zw 36 N negative coefficient
+&GRQwJwpQpz\w 34 N negative coefficient
+&GRQ}ZOxYwx^o 36 N negative coefficient
+&GRRMUAuZOxMw 32 N negative coefficient
+&GRR]MJkT`~^g 37 N dominated
+&GRR]YBK^b{^_ 35 B zero minor
+&GR`\Nh|DIi^o 35 N negative coefficient
+&GRqMVq]DYuZo 35 N negative coefficient
+&GRq{\qgXpn^g 37 N negative coefficient
+&GRr]V_nFWj^w 38 N negative minor
+&GRriVayFXr^o 37 N dominated
+&GRrsV_~JZ}]w 40 B zero coefficient
+&GSqqZp|^q}^w 41 B zero minor
+&GSryVb]Mz{]W 39 N negative minor
+&GTB]NHtIJw^g 34 N dominated
+&GTO~EWzHz{^w 38 N dominated
+&GTQqZp|^q}^w 41 N dominated
+&GTQ}ZOxYwx^o 36 N negative minor
+&GTRMUAuZOxMw 32 N dominated
+&GTR]MJkT`~^g 37 N negative coefficient
+&GTR]YBK^b{^_ 35 N negative coefficient
+&GTRyVb]Mz{]W 39 N negative coefficient
+&GTaqZp|^q}^w 41 N dominated
+&GTbyVb]Mz{]W 39 N dominated
+&GToqZp|^q}^w 41 N dominated
+&GTplZ@hFgRZO 31 N negative coefficient
+&GTpyVb]Mz{]W 39 N dominated
+&GTqMVq]DYuZo 35 N dominated
+&GTqQZp|^q}^w 41 N dominated
+&GTqaZp|^q}^w 41 N dominated
+&GTqoZp|^q}^w 41 N dominated
+&GTqqJp|^q}^w 41 N dominated
+&GTqqRp|^q}^w 41 N negative minor
+&GTqqXp|^q}^w 41 N dominated
+&GTqqYp|^q}^w 41 N dominated
+&GTqqZP|^q}^w 41 N dominated
+&GTqqZ`|^q}^w 41 N negative coefficient
+&GTqqZo|^q}^w 41 B zero minor
+&GTqqZp\^q}^w 41 N dominated
+&GTqqZpl^q}^w 41 N dominated
+&GTqqZpt^q}^w 41 N negative coefficient
+&GTqqZpx^q}^w 41 N negative minor
+&GTqqZp{^q}^w 41 N negative coefficient
+&GTqqZp|Nq}^w 41 N negative coefficient
+&GTqqZp|Vq}^w 41 N negative minor
+&GTqqZp|Zq}^w 41 S hurwitz
+&GTqqZp|\q}^w 41 N negative coefficient
+&GTqqZp|]q}^w 41 N negative minor
+&GTqqZp|^Q}^w 41 N dominated
+&GTqqZp|^a}^w 41 N negative coefficient
+&GTqqZp|^o}^w 41 N negative minor
+&GTqqZp|^q]^w 41 N dominated
+&GTqqZp|^qm^w 41 N negative coefficient
+&GTqqZp|^qu^w 41 N negative minor
+&GTqqZp|^qy^w 41 N dominated
+&GTqqZp|^q{^w 41 S hurwitz
+&GTqqZp|^q}Nw 41 N dominated
+&GTqqZp|^q}Vw 41 N negative minor
+&GTqqZp|^q}Zw 41 N negative coefficient
+&GTqqZp|^q}\w 41 N negative minor
+&GTqqZp|^q}]w 41 N negative minor
+&GTqqZp|^q}^W 41 N negative coefficient
+&GTqqZp|^q}^g 41 N negative minor
+&GTqqZp|^q}^o 41 N negative coefficient
+&GTqqZp|^q}^w 42 S hurwitz
+&GTqqZp|^q~^w 43 S hurwitz
+&GTqqZp|^r}^w 43 S hurwitz
+&GTqqZp|^y}^w 43 N dominated
+&GTqqZp~^q}^w 43 N negative minor
+&GTqqZr|^q}^w 43 N negative minor
+&GTqqZx|^q}^w 43 S hurwitz
+&GTqq^p|^q}^w 43 N negative minor
+&GTqrZp|^q}^w 43 N dominated
+&GTquZp|^q}^w 43 S hurwitz
+&GTqwNwLMx|^o 38 N negative coefficient
+&GTqyVb]Mz{]W 39 N dominated
+&GTqyZp|^q}^w 43 N dominated
+&GTrYVb]Mz{]W 39 N dominated
+&GTriVayFXr^o 37 N negative minor
+&GTriVb]Mz{]W 39 N negative coefficient
+&GTrqVb]Mz{]W 39 N negative minor
+&GTrqZp|^q}^w 43 N dominated
+&GTrwVb]Mz{]W 39 N negative minor
+&GTryFb]Mz{]W 39 N negative minor
+&GTryRb]Mz{]W 39 N negative coefficient
+&GTryTb]Mz{]W 39 N negative minor
+&GTryUb]Mz{]W 39 N negative coefficient
+&GTryVB]Mz{]W 39 N negative minor
+&GTryV`]Mz{]W 39 N dominated
+&GTryVa]Mz{]W 39 N dominated
+&GTryVbMMz{]W 39 N negative coefficient
+&GTryVbUMz{]W 39 N negative minor
+&GTryVbYMz{]W 39 N negative minor
+&GTryVb[Mz{]W 39 N negative coefficient
+&GTryVb]Ez{]W 39 N negative minor
+&GTryVb]Iz{]W 39 N negative coefficient
+&GTryVb]Kz{]W 39 N negative coefficient
+&GTryVb]MZ{]W 39 N negative minor
+&GTryVb]Mj{]W 39 N negative coefficient
+&GTryVb]Mr{]W 39 N negative coefficient
+&GTryVb]Mx{]W 39 N negative coefficient
+&GTryVb]My{]W 39 N negative minor
+&GTryVb]Mz[]W 39 N negative minor
+&GTryVb]Mzk]W 39 N dominated
+&GTryVb]Mzs]W 39 N dominated
+&GTryVb]Mzw]W 39 N negative minor
+&GTryVb]Mz{MW 39 N negative coefficient
+&GTryVb]Mz{UW 39 N dominated
+&GTryVb]Mz{YW 39 N negative coefficient
+&GTryVb]Mz{[W 39 N negative minor
+&GTryVb]Mz{]G 39 N negative minor
+&GTryVb]Mz{]O 39 N negative coefficient
+&GTryVb]Mz{]W 40 S hurwitz
+&GTryVb]Mz{]w 41 N negative minor
+&GTryVb]Mz{^W 41 N negative minor
+&GTryVb]Mz|]W 41 N negative minor
+&GTryVb]Mz}]W 41 N negative minor
+&GTryVb]Nz{]W 41 N negative minor
+&GTryVb]]z{]W 41 N negative minor
+&GTryVb^Mz{]W 41 N negative coefficient
+&GTryVb}Mz{]W 41 N dominated
+&GTryVj]Mz{]W 41 N dominated
+&GTryVr]Mz{]W 41 N negative minor
+&GTry^b]Mz{]W 41 N negative coefficient
+&GTrzVb]Mz{]W 41 N negative coefficient
+&GTr}Vb]Mz{]W 41 N dominated
+&GTyqZp|^q}^w 43 N dominated
+&GTzyVb]Mz{]W 41 N dominated
+&GUB]NHtIJw^g 34 N dominated
+&GUO~EWzHz{^w 38 N dominated
+&GUQ}ZOxYwx^o 36 N negative coefficient
+&GURMUAuZOxMw 32 N negative minor
+&GUR]MJkT`~^g 37 N negative minor
+&GUR]YBK^b{^_ 35 N negative minor
+&GUr]V_nFWj^w 38 N dominated
+&GV?~EWzHz{^w 38 S hurwitz
+&GV@]NHtIJw^g 34 N negative minor
+&GVA]NHtIJw^g 34 N negative coefficient
+&GVA}ZOxYwx^o 36 N negative coefficient
+&GVBMNHtIJw^g 34 N negative coefficient
+&GVBMUAuZOxMw 32 N dominated
+&GVBUNHtIJw^g 34 N negative coefficient
+&GVBYNHtIJw^g 34 N negative coefficient
+&GVB[NHtIJw^g 34 N negative coefficient
+&GVB]FHtIJw^g 34 N negative minor
+&GVB]JHtIJw^g 34 N negative coefficient
+&GVB]LHtIJw^g 34 N negative coefficient
+&GVB]MHtIJw^g 34 N negative minor
+&GVB]MJkT`~^g 37 N negative coefficient
+&GVB]N@tIJw^g 34 N negative coefficient
+&GVB]NGtIJw^g 34 N negative minor
+&GVB]NHTIJw^g 34 N negative coefficient
+&GVB]NHdIJw^g 34 N negative coefficient
+&GVB]NHpIJw^g 34 B zero coefficient
+&GVB]NHsIJw^g 34 N negative minor
+&GVB]NHtAJw^g 34 N negative coefficient
+&GVB]NHtGJw^g 34 N negative minor
+&GVB]NHtIBw^g 34 N negative coefficient
+&GVB]NHtIHw^g 34 N negative minor
+&GVB]NHtIIw^g 34 N negative coefficient
+&GVB]NHtIJW^g 34 N dominated
+&GVB]NHtIJg^g 34 N dominated
+&GVB]NHtIJo^g 34 N dominated
+&GVB]NHtIJwNg 34 N dominated
+&GVB]NHtIJwVg 34 N negative coefficient
+&GVB]NHtIJwZg 34 S hurwitz
+&GVB]NHtIJw\g 34 N dominated
+&GVB]NHtIJw]g 34 B zero coefficient
+&GVB]NHtIJw^G 34 N negative minor
+&GVB]NHtIJw^_ 34 N negative coefficient
+&GVB]NHtIJw^g 35 S hurwitz
+&GVB]NHtIJw^w 36 N negative minor
+&GVB]NHtIJx^g 36 S hurwitz
+&GVB]NHtIJy^g 36 N dominated
+&GVB]NHtIJ{^g 36 N dominated
+&GVB]NHtIZw^g 36 B zero coefficient
+&GVB]NHtIjw^g 36 N negative minor
+&GVB]NHtJJw^g 36 S hurwitz
+&GVB]NHtMJw^g 36 N negative coefficient
+&GVB]NHtYJw^g 36 N negative minor
+&GVB]NHvIJw^g 36 N negative coefficient
+&GVB]NH|IJw^g 36 B zero coefficient
+&GVB]NJtIJw^g 36 N negative minor
+&GVB]NXtIJw^g 36 S hurwitz
+&GVB]NhtIJw^g 36 N negative coefficient
+&GVB]YBK^b{^_ 35 N negative coefficient
+&GVB]^HtIJw^g 36 N negative minor
+&GVB^NHtIJw^g 36 N negative coefficient
+&GVB}NHtIJw^g 36 N negative coefficient
+&GVJ]NHtIJw^g 36 N negative minor
+&GVO^EWzHz{^w 38 N dominated
+&GVOnEWzHz{^w 38 N dominated
+&GVOvEWzHz{^w 38 S hurwitz
+&GVOzEWzHz{^w 38 N dominated
+&GVO|EWzHz{^w 38 N dominated
+&GVO}EWzHz{^w 38 N negative coefficient
+&GVO}ZOxYwx^o 36 N dominated
+&GVO~AWzHz{^w 38 N dominated
+&GVO~CWzHz{^w 38 N negative coefficient
+&GVO~EGzHz{^w 38 N negative minor
+&GVO~EOzHz{^w 38 N negative coefficient
+&GVO~EWZHz{^w 38 N negative minor
+&GVO~EWjHz{^w 38 N negative coefficient
+&GVO~EWrHz{^w 38 N dominated
+&GVO~EWxHz{^w 38 N dominated
+&GVO~EWyHz{^w 38 N dominated
+&GVO~EWz@z{^w 38 N negative coefficient
+&GVO~EWzGz{^w 38 N negative coefficient
+&GVO~EWzHZ{^w 38 S hurwitz
+&GVO~EWzHj{^w 38 N negative minor
+&GVO~EWzHr{^w 38 N negative coefficient
+&GVO~EWzHx{^w 38 N negative coefficient
+&GVO~EWzHy{^w 38 N negative minor
+&GVO~EWzHz[^w 38 N negative coefficient
+&GVO~EWzHzk^w 38 N negative coefficient
+&GVO~EWzHzs^w 38 N dominated
+&GVO~EWzHzw^w 38 N negative minor
+&GVO~EWzHz{Nw 38 N negative minor
+&GVO~EWzHz{Vw 38 N negative minor
+&GVO~EWzHz{Zw 38 B zero coefficient
+&GVO~EWzHz{\w 38 N negative coefficient
+&GVO~EWzHz{]w 38 S hurwitz
+&GVO~EWzHz{^W 38 N negative coefficient
+&GVO~EWzHz{^g 38 N negative coefficient
+&GVO~EWzHz{^o 38 S hurwitz
+&GVO~EWzHz{^w 39 S hurwitz
+&GVO~EWzHz|^w 40 N negative coefficient
+&GVO~EWzHz}^w 40 N negative minor
+&GVO~EWzJz{^w 40 B zero minor
+&GVO~EWzLz{^w 40 B zero minor
+&GVO~EWzXz{^w 40 S hurwitz
+&GVO~EW~Hz{^w 40 N dominated
+&GVO~EXzHz{^w 40 N negative minor
+&GVO~EYzHz{^w 40 N negative coefficient
+&GVO~EwzHz{^w 40 N negative coefficient
+&GVO~FWzHz{^w 40 N negative coefficient
+&GVO~MWzHz{^w 40 N dominated
+&GVO~UWzHz{^w 40 N dominated
+&GVPMUAuZOxMw 32 N dominated
+&GVP]MJkT`~^g 37 N negative minor
+&GVP]YBK^b{^_ 35 N dominated
+&GVP~EWzHz{^w 40 N dominated
+&GVQMUAuZOxMw 32 N negative coefficient
+&GVQ]MJkT`~^g 37 N dominated
+&GVQ]YBK^b{^_ 35 N negative coefficient
+&GVQ]ZOxYwx^o 36 N dominated
+&GVQmZOxYwx^o 36 N negative minor
+&GVQuZOxYwx^o 36 N negative minor
+&GVQyZOxYwx^o 36 N negative minor
+&GVQ{ZOxYwx^o 36 N negative coefficient
+&GVQ}JOxYwx^o 36 N negative minor
+&GVQ}ROxYwx^o 36 N negative coefficient
+&GVQ}XOxYwx^o 36 N negative minor
+&GVQ}YOxYwx^o 36 N negative minor
+&GVQ}Z?xYwx^o 36 N dominated
+&GVQ}ZOXYwx^o 36 N negative minor
+&GVQ}ZOhYwx^o 36 N negative minor
+&GVQ}ZOpYwx^o 36 N negative minor
+&GVQ}ZOwYwx^o 36 N negative coefficient
+&GVQ}ZOxIwx^o 36 N negative coefficient
+&GVQ}ZOxQwx^o 36 N dominated
+&GVQ}ZOxWwx^o 36 N negative minor
+&GVQ}ZOxYWx^o 36 N negative coefficient
+&GVQ}ZOxYgx^o 36 N negative coefficient
+&GVQ}ZOxYox^o 36 N negative minor
+&GVQ}ZOxYwX^o 36 N dominated
+&GVQ}ZOxYwh^o 36 N negative minor
+&GVQ}ZOxYwp^o 36 N dominated
+&GVQ}ZOxYww^o 36 N negative minor
+&GVQ}ZOxYwxNo 36 N negative minor
+&GVQ}ZOxYwxVo 36 N negative coefficient
+&GVQ}ZOxYwxZo 36 N dominated
+&GVQ}ZOxYwx\o 36 N negative minor
+&GVQ}ZOxYwx]o 36 N negative minor
+&GVQ}ZOxYwx^O 36 N negative coefficient
+&GVQ}ZOxYwx^_ 36 N negative coefficient
+&GVQ}ZOxYwx^o 37 S hurwitz
+&GVQ}ZOxYwx^w 38 N negative minor
+&GVQ}ZOxYwz^o 38 N dominated
+&GVQ}ZOxYw|^o 38 N dominated
+&GVQ}ZOxYxx^o 38 N negative minor
+&GVQ}ZOxYyx^o 38 N negative coefficient
+&GVQ}ZOxZwx^o 38 N negative coefficient
+&GVQ}ZOx]wx^o 38 N dominated
+&GVQ}ZOzYwx^o 38 N negative minor
+&GVQ}ZO|Ywx^o 38 N negative coefficient
+&GVQ}ZPxYwx^o 38 N dominated
+&GVQ}ZQxYwx^o 38 N negative coefficient
+&GVQ}ZWxYwx^o 38 N negative minor
+&GVQ}ZoxYwx^o 38 S hurwitz
+&GVQ}^OxYwx^o 38 N negative coefficient
+&GVQ~EWzHz{^w 40 S hurwitz
+&GVQ~ZOxYwx^o 38 N negative minor
+&GVREUAuZOxMw 32 N negative minor
+&GVRIUAuZOxMw 32 N dominated
+&GVRKUAuZOxMw 32 N dominated
+&GVRMEAuZOxMw 32 N negative minor
+&GVRMMJkT`~^g 37 N negative minor
+&GVRMQAuZOxMw 32 N dominated
+&GVRMSAuZOxMw 32 N negative minor
+&GVRMU?uZOxMw 32 N dominated
+&GVRMUAUZOxMw 32 N negative coefficient
+&GVRMUAeZOxMw 32 N negative coefficient
+&GVRMUAqZOxMw 32 N negative coefficient
+&GVRMUAsZOxMw 32 N negative minor
+&GVRMUAuJOxMw 32 N negative minor
+&GVRMUAuROxMw 32 N negative coefficient
+&GVRMUAuXOxMw 32 N dominated
+&GVRMUAuYOxMw 32 N negative coefficient
+&GVRMUAuZ?xMw 32 N negative minor
+&GVRMUAuZOXMw 32 N negative coefficient
+&GVRMUAuZOhMw 32 N negative coefficient
+&GVRMUAuZOpMw 32 N dominated
+&GVRMUAuZOwMw 32 N negative coefficient
+&GVRMUAuZOxEw 32 N negative minor
+&GVRMUAuZOxIw 32 N negative minor
+&GVRMUAuZOxKw 32 N negative coefficient
+&GVRMUAuZOxMW 32 N negative coefficient
+&GVRMUAuZOxMg 32 N negative minor
+&GVRMUAuZOxMo 32 N negative minor
+&GVRMUAuZOxMw 33 S hurwitz
+&GVRMUAuZOxNw 34 N negative minor
+&GVRMUAuZOx]w 34 N negative minor
+&GVRMUAuZOzMw 34 N negative coefficient
+&GVRMUAuZO|Mw 34 N negative coefficient
+&GVRMUAuZPxMw 34 S hurwitz
+&GVRMUAuZQxMw 34 N negative minor
+&GVRMUAuZWxMw 34 N negative coefficient
+&GVRMUAuZoxMw 34 N negative coefficient
+&GVRMUAu^OxMw 34 N negative minor
+&GVRMUAvZOxMw 34 N negative minor
+&GVRMUA}ZOxMw 34 N negative minor
+&GVRMUBuZOxMw 34 N dominated
+&GVRMUIuZOxMw 34 N negative coefficient
+&GVRMUQuZOxMw 34 N dominated
+&GVRMUauZOxMw 34 N negative minor
+&GVRMVAuZOxMw 34 N negative minor
+&GVRMYBK^b{^_ 35 B zero coefficient
+&GVRM]AuZOxMw 34 N negative minor
+&GVRNUAuZOxMw 34 N dominated
+&GVRUMJkT`~^g 37 N dominated
+&GVRUYBK^b{^_ 35 N dominated
+&GVRYMJkT`~^g 37 N dominated
+&GVRYYBK^b{^_ 35 N dominated
+&GVR[MJkT`~^g 37 N dominated
+&GVR[YBK^b{^_ 35 N dominated
+&GVR]EJkT`~^g 37 N negative coefficient
+&GVR]IBK^b{^_ 35 N negative minor
+&GVR]IJkT`~^g 37 N negative minor
+&GVR]KJkT`~^g 37 N dominated
+&GVR]MBkT`~^g 37 N negative minor
+&GVR]MHkT`~^g 37 N negative minor
+&GVR]MIkT`~^g 37 N negative coefficient
+&GVR]MJKT`~^g 37 N negative minor
+&GVR]MJcT`~^g 37 N dominated
+&GVR]MJgT`~^g 37 N negative coefficient
+&GVR]MJkD`~^g 37 N negative coefficient
+&GVR]MJkP`~^g 37 N negative minor
+&GVR]MJkS`~^g 37 N negative minor
+&GVR]MJkT@~^g 37 N negative minor
+&GVR]MJkT_~^g 37 N negative coefficient
+&GVR]MJkT`^^g 37 N negative coefficient
+&GVR]MJkT`n^g 37 N negative minor
+&GVR]MJkT`v^g 37 N negative coefficient
+&GVR]MJkT`z^g 37 N negative coefficient
+&GVR]MJkT`|^g 37 B zero minor
+&GVR]MJkT`}^g 37 N negative coefficient
+&GVR]MJkT`~Ng 37 N negative coefficient
+&GVR]MJkT`~Vg 37 N dominated
+&GVR]MJkT`~Zg 37 N dominated
+&GVR]MJkT`~\g 37 N negative minor
+&GVR]MJkT`~]g 37 N dominated
+&GVR]MJkT`~^G 37 N dominated
+&GVR]MJkT`~^_ 37 N dominated
+&GVR]MJkT`~^g 38 S hurwitz
+&GVR]MJkT`~^w 39 N dominated
+&GVR]MJkTb~^g 39 S hurwitz
+&GVR]MJkTh~^g 39 N negative minor
+&GVR]MJkTp~^g 39 N negative coefficient
+&GVR]MJkV`~^g 39 N negative minor
+&GVR]MJk\`~^g 39 S hurwitz
+&GVR]MJlT`~^g 39 N negative minor
+&GVR]MJmT`~^g 39 N negative minor
+&GVR]MJ{T`~^g 39 N negative coefficient
+&GVR]MZkT`~^g 39 N negative minor
+&GVR]MjkT`~^g 39 N negative minor
+&GVR]NHtIJw^g 36 N dominated
+&GVR]NJkT`~^g 39 N negative minor
+&GVR]QBK^b{^_ 35 N negative coefficient
+&GVR]UAuZOxMw 34 N dominated
+&GVR]WBK^b{^_ 35 N dominated
+&GVR]Y@K^b{^_ 35 N negative coefficient
+&GVR]YAK^b{^_ 35 N dominated
+&GVR]YBC^b{^_ 35 N negative coefficient
+&GVR]YBG^b{^_ 35 N negative coefficient
+&GVR]YBKNb{^_ 35 N negative coefficient
+&GVR]YBKVb{^_ 35 N negative coefficient
+&GVR]YBKZb{^_ 35 N negative minor
+&GVR]YBK\b{^_ 35 N negative minor
+&GVR]YBK]b{^_ 35 N negative minor
+&GVR]YBK^B{^_ 35 N dominated
+&GVR]YBK^`{^_ 35 N negative minor
+&GVR]YBK^a{^_ 35 N negative coefficient
+&GVR]YBK^b[^_ 35 N negative coefficient
+&GVR]YBK^bk^_ 35 N negative minor
+&GVR]YBK^bs^_ 35 N negative coefficient
+&GVR]YBK^bw^_ 35 N negative coefficient
+&GVR]YBK^b{N_ 35 N negative coefficient
+&GVR]YBK^b{V_ 35 N negative minor
+&GVR]YBK^b{Z_ 35 N dominated
+&GVR]YBK^b{\_ 35 N negative minor
+&GVR]YBK^b{]_ 35 N negative coefficient
+&GVR]YBK^b{^? 35 N negative minor
+&GVR]YBK^b{^_ 36 S hurwitz
+&GVR]YBK^b{^g 37 N negative minor
+&GVR]YBK^b{^o 37 N negative minor
+&GVR]YBK^b|^_ 37 B zero minor
+&GVR]YBK^b}^_ 37 N negative coefficient
+&GVR]YBK^j{^_ 37 N negative minor
+&GVR]YBK^r{^_ 37 N dominated
+&GVR]YBL^b{^_ 37 N negative minor
+&GVR]YBM^b{^_ 37 N negative coefficient
+&GVR]YB[^b{^_ 37 N dominated
+&GVR]YBk^b{^_ 37 N negative coefficient
+&GVR]YJK^b{^_ 37 N negative minor
+&GVR]YRK^b{^_ 37 N negative coefficient
+&GVR]YbK^b{^_ 37 N negative minor
+&GVR]ZBK^b{^_ 37 N dominated
+&GVR]]BK^b{^_ 37 N negative coefficient
+&GVR]]JkT`~^g 39 N negative coefficient
+&GVR^MJkT`~^g 39 N dominated
+&GVR^YBK^b{^_ 37 N dominated
+&GVRmUAuZOxMw 34 N dominated
+&GVR}MJkT`~^g 39 N dominated
+&GVR}YBK^b{^_ 37 N negative coefficient
+&GVR}ZOxYwx^o 38 N dominated
+&GVW~EWzHz{^w 40 N negative minor
+&GVY}ZOxYwx^o 38 N dominated
+&GVZMUAuZOxMw 34 N negative minor
+&GVZ]MJkT`~^g 39 B zero minor
+&GVZ]YBK^b{^_ 37 N dominated
+&GVb]NHtIJw^g 36 N dominated
+&GVg~^RkMh\^_ 39 N dominated
+&GVo~EWzHz{^w 40 N dominated
+&GVqqZp|^q}^w 43 N negative minor
+&GVq}ZOxYwx^o 38 S hurwitz
+&GVrMUAuZOxMw 34 N dominated
+&GVr]MJkT`~^g 39 N negative minor
+&GVr]YBK^b{^_ 37 N negative coefficient
+&GVryVb]Mz{]W 41 N negative minor
+&GVw^JWlVzm^w 42 N negative minor
+&GVw^RRUFi}Zo 38 N negative minor
+&GVwnURQRB}Nw 37 N dominated
+&GWrkMgxNXX^? 33 N negative minor
+&GXQsZrgJh|Zw 36 N negative minor
+&GXQwJwpQpz\w 34 N negative coefficient
+&GXRkMgxNXX^? 33 N negative coefficient
+&GX`\Nh|DIi^o 35 N negative minor
+&GXbkMgxNXX^? 33 N negative minor
+&GXpkMgxNXX^? 33 N negative minor
+&GXplZ@hFgRZO 31 N negative minor
+&GXqMVq]DYuZo 35 S hurwitz
+&GXqkMgxNXX^? 33 N dominated
+&GXqwNwLMx|^o 38 N dominated
+&GXq{\qgXpn^g 37 N negative coefficient
+&GXrKMgxNXX^? 33 N negative minor
+&GXrcMgxNXX^? 33 N negative minor
+&GXrgMgxNXX^? 33 N negative minor
+&GXriVayFXr^o 37 N negative minor
+&GXrkEgxNXX^? 33 N dominated
+&GXrkIgxNXX^? 33 N dominated
+&GXrkKgxNXX^? 33 N dominated
+&GXrkMGxNXX^? 33 N negative minor
+&GXrkM_xNXX^? 33 N negative minor
+&GXrkMgXNXX^? 33 N negative minor
+&GXrkMghNXX^? 33 S hurwitz
+&GXrkMgpNXX^? 33 N negative minor
+&GXrkMgwNXX^? 33 N negative coefficient
+&GXrkMgxFXX^? 33 N negative minor
+&GXrkMgxJXX^? 33 N negative minor
+&GXrkMgxLXX^? 33 N negative minor
+&GXrkMgxMXX^? 33 N dominated
+&GXrkMgxNHX^? 33 N negative minor
+&GXrkMgxNPX^? 33 N dominated
+&GXrkMgxNWX^? 33 B zero minor
+&GXrkMgxNXH^? 33 N negative minor
+&GXrkMgxNXP^? 33 N negative minor
+&GXrkMgxNXW^? 33 N negative coefficient
+&GXrkMgxNXXN? 33 N negative coefficient
+&GXrkMgxNXXV? 33 N dominated
+&GXrkMgxNXXZ? 33 N dominated
+&GXrkMgxNXX\? 33 N negative minor
+&GXrkMgxNXX]? 33 N dominated
+&GXrkMgxNXX^? 34 S hurwitz
+&GXrkMgxNXX^G 35 N negative minor
+&GXrkMgxNXX^O 35 S hurwitz
+&GXrkMgxNXX^_ 35 S hurwitz
+&GXrkMgxNXZ^? 35 N negative minor
+&GXrkMgxNX\^? 35 N negative minor
+&GXrkMgxNXx^? 35 N negative minor
+&GXrkMgxNZX^? 35 N dominated
+&GXrkMgxNxX^? 35 N dominated
+&GXrkMgx^XX^? 35 N negative minor
+&GXrkMgzNXX^? 35 N negative minor
+&GXrkMg|NXX^? 35 N negative coefficient
+&GXrkMhxNXX^? 35 S hurwitz
+&GXrkMixNXX^? 35 N negative minor
+&GXrkMwxNXX^? 35 S hurwitz
+&GXrkNgxNXX^? 35 N dominated
+&GXrk]gxNXX^? 35 N dominated
+&GXrlMgxNXX^? 35 N dominated
+&GXrmMgxNXX^? 35 N negative minor
+&GXrsV_~JZ}]w 40 N negative coefficient
+&GXr{MgxNXX^? 35 N negative minor
+&GXw|FxjEI]\o 36 N negative coefficient
+&GXzkMgxNXX^? 35 N dominated
+&GYQsZrgJh|Zw 36 N negative minor
+&GYQwJwpQpz\w 34 N negative minor
+&GY`\Nh|DIi^o 35 N negative minor
+&GYq{\qgXpn^g 37 N negative coefficient
+&GYr]V_nFWj^w 38 S hurwitz
+&GYrsV_~JZ}]w 40 N negative minor
+&GZ@\Nh|DIi^o 35 N negative minor
+&GZAsZrgJh|Zw 36 N negative minor
+&GZAwJwpQpz\w 34 N negative minor
+&GZOsZrgJh|Zw 36 N negative minor
+&GZOwJwpQpz\w 34 N dominated
+&GZQSZrgJh|Zw 36 N negative coefficient
+&GZQWJwpQpz\w 34 N negative coefficient
+&GZQcZrgJh|Zw 36 N negative coefficient
+&GZQgJwpQpz\w 34 N negative minor
+&GZQoJwpQpz\w 34 N negative minor
+&GZQoZrgJh|Zw 36 N negative coefficient
+&GZQsJrgJh|Zw 36 N dominated
+&GZQsRrgJh|Zw 36 N negative minor
+&GZQsXrgJh|Zw 36 N dominated
+&GZQsYrgJh|Zw 36 N dominated
+&GZQsZRgJh|Zw 36 N negative coefficient
+&GZQsZbgJh|Zw 36 N dominated
+&GZQsZpgJh|Zw 36 B zero coefficient
+&GZQsZqgJh|Zw 36 N dominated
+&GZQsZrGJh|Zw 36 N negative minor
+&GZQsZr_Jh|Zw 36 N negative minor
+&GZQsZrgBh|Zw 36 N negative coefficient
+&GZQsZrgHh|Zw 36 N negative coefficient
+&GZQsZrgIh|Zw 36 N dominated
+&GZQsZrgJH|Zw 36 N negative minor
+&GZQsZrgJ`|Zw 36 N negative coefficient
+&GZQsZrgJg|Zw 36 N negative coefficient
+&GZQsZrgJh\Zw 36 N negative coefficient
+&GZQsZrgJhlZw 36 N dominated
+&GZQsZrgJhtZw 36 N dominated
+&GZQsZrgJhxZw 36 N dominated
+&GZQsZrgJh{Zw 36 N dominated
+&GZQsZrgJh|Jw 36 N dominated
+&GZQsZrgJh|Rw 36 N negative minor
+&GZQsZrgJh|Xw 36 N dominated
+&GZQsZrgJh|Yw 36 N negative minor
+&GZQsZrgJh|ZW 36 N negative minor
+&GZQsZrgJh|Zg 36 N negative minor
+&GZQsZrgJh|Zo 36 N negative coefficient
+&GZQsZrgJh|Zw 37 S hurwitz
+&GZQsZrgJh|^w 38 S hurwitz
+&GZQsZrgJh~Zw 38 N dominated
+&GZQsZrgJj|Zw 38 N negative coefficient
+&GZQsZrgJx|Zw 38 N negative minor
+&GZQsZrgNh|Zw 38 B zero coefficient
+&GZQsZrgZh|Zw 38 N negative minor
+&GZQsZrhJh|Zw 38 N negative coefficient
+&GZQsZriJh|Zw 38 N negative minor
+&GZQsZrkJh|Zw 38 N negative minor
+&GZQsZrwJh|Zw 38 N dominated
+&GZQsZzgJh|Zw 38 N dominated
+&GZQs^rgJh|Zw 38 N dominated
+&GZQtZrgJh|Zw 38 S hurwitz
+&GZQuZrgJh|Zw 38 N dominated
+&GZQwBwpQpz\w 34 N dominated
+&GZQwHwpQpz\w 34 S hurwitz
+&GZQwIwpQpz\w 34 N negative minor
+&GZQwJWpQpz\w 34 N negative minor
+&GZQwJgpQpz\w 34 N dominated
+&GZQwJopQpz\w 34 N negative minor
+&GZQwJwPQpz\w 34 N dominated
+&GZQwJw`Qpz\w 34 N negative coefficient
+&GZQwJwoQpz\w 34 N dominated
+&GZQwJwpApz\w 34 N negative coefficient
+&GZQwJwpOpz\w 34 N dominated
+&GZQwJwpQPz\w 34 N negative coefficient
+&GZQwJwpQ`z\w 34 N negative coefficient
+&GZQwJwpQoz\w 34 N negative minor
+&GZQwJwpQpZ\w 34 N negative coefficient
+&GZQwJwpQpj\w 34 N negative minor
+&GZQwJwpQpr\w 34 S hurwitz
+&GZQwJwpQpx\w 34 N negative minor
+&GZQwJwpQpy\w 34 N negative coefficient
+&GZQwJwpQpzLw 34 N negative coefficient
+&GZQwJwpQpzTw 34 N dominated
+&GZQwJwpQpzXw 34 N dominated
+&GZQwJwpQpz[w 34 N negative coefficient
+&GZQwJwpQpz\W 34 N negative coefficient
+&GZQwJwpQpz\g 34 N negative minor
+&GZQwJwpQpz\o 34 N negative minor
+&GZQwJwpQpz\w 35 S hurwitz
+&GZQwJwpQpz^w 36 N dominated
+&GZQwJwpQp~\w 36 N negative coefficient
+&GZQwJwpQrz\w 36 N negative coefficient
+&GZQwJwpQxz\w 36 N negative minor
+&GZQwJwpRpz\w 36 N dominated
+&GZQwJwpUpz\w 36 N negative minor
+&GZQwJwpYpz\w 36 N negative minor
+&GZQwJwrQpz\w 36 N negative coefficient
+&GZQwJwtQpz\w 36 N negative minor
+&GZQwJwxQpz\w 36 N dominated
+&GZQwJxpQpz\w 36 N dominated
+&GZQwJypQpz\w 36 N dominated
+&GZQwNwpQpz\w 36 N dominated
+&GZQwZwpQpz\w 36 N negative minor
+&GZQxJwpQpz\w 36 N negative minor
+&GZQyJwpQpz\w 36 N negative minor
+&GZQ{JwpQpz\w 36 N dominated
+&GZQ{ZrgJh|Zw 38 N negative coefficient
+&GZQ{\qgXpn^g 37 N negative minor
+&GZRsV_~JZ}]w 40 N negative coefficient
+&GZRsZrgJh|Zw 38 N negative minor
+&GZRwJwpQpz\w 36 N negative minor
+&GZYsZrgJh|Zw 38 N negative minor
+&GZYwJwpQpz\w 36 N negative minor
+&GZ_\Nh|DIi^o 35 N dominated
+&GZ`LNh|DIi^o 35 N negative minor
+&GZ`TNh|DIi^o 35 N negative minor
+&GZ`XNh|DIi^o 35 N negative coefficient
+&GZ`[Nh|DIi^o 35 S hurwitz
+&GZ`\Fh|DIi^o 35 N negative minor
+&GZ`\Jh|DIi^o 35 N negative coefficient
+&GZ`\Lh|DIi^o 35 S hurwitz
+&GZ`\Mh|DIi^o 35 S hurwitz
+&GZ`\NH|DIi^o 35 N negative coefficient
+&GZ`\N`|DIi^o 35 N dominated
+&GZ`\Ng|DIi^o 35 N negative coefficient
+&GZ`\Nh\DIi^o 35 N negative minor
+&GZ`\NhlDIi^o 35 N negative minor
+&GZ`\NhtDIi^o 35 N dominated
+&GZ`\NhxDIi^o 35 N negative coefficient
+&GZ`\Nh{DIi^o 35 N dominated
+&GZ`\Nh|@Ii^o 35 N negative minor
+&GZ`\Nh|CIi^o 35 N negative minor
+&GZ`\Nh|DAi^o 35 N negative coefficient
+&GZ`\Nh|DGi^o 35 N negative coefficient
+&GZ`\Nh|DII^o 35 N negative minor
+&GZ`\Nh|DIa^o 35 N dominated
+&GZ`\Nh|DIg^o 35 N dominated
+&GZ`\Nh|DIiNo 35 N negative minor
+&GZ`\Nh|DIiVo 35 N negative coefficient
+&GZ`\Nh|DIiZo 35 N negative minor
+&GZ`\Nh|DIi\o 35 N negative minor
+&GZ`\Nh|DIi]o 35 N dominated
+&GZ`\Nh|DIi^O 35 N negative coefficient
+&GZ`\Nh|DIi^_ 35 N dominated
+&GZ`\Nh|DIi^o 36 S hurwitz
+&GZ`\Nh|DIi^w 37 N dominated
+&GZ`\Nh|DIj^o 37 N dominated
+&GZ`\Nh|DIm^o 37 N negative minor
+&GZ`\Nh|DIy^o 37 N dominated
+&GZ`\Nh|DJi^o 37 N negative coefficient
+&GZ`\Nh|DYi^o 37 N negative minor
+&GZ`\Nh|Dii^o 37 N negative coefficient
+&GZ`\Nh|FIi^o 37 N negative minor
+&GZ`\Nh|LIi^o 37 N negative minor
+&GZ`\Nh|TIi^o 37 N dominated
+&GZ`\Nh~DIi^o 37 N dominated
+&GZ`\Nj|DIi^o 37 N dominated
+&GZ`\Nx|DIi^o 37 N negative minor
+&GZ`\^h|DIi^o 37 N negative coefficient
+&GZ`^Nh|DIi^o 37 N negative minor
+&GZ`|Nh|DIi^o 37 N negative minor
+&GZa{\qgXpn^g 37 N negative minor
+&GZbMMa{^XP^_ 35 N negative minor
+&GZb\Nh|DIi^o 37 N negative minor
+&GZbsV_~JZ}]w 40 N negative minor
+&GZh\Nh|DIi^o 37 N dominated
+&GZo{\qgXpn^g 37 N negative minor
+&GZp\Nh|DIi^o 37 N negative minor
+&GZpsV_~JZ}]w 40 B zero coefficient
+&GZq[\qgXpn^g 37 N negative minor
+&GZqk\qgXpn^g 37 N negative minor
+&GZqsV_~JZ}]w 40 S hurwitz
+&GZqsZrgJh|Zw 38 N negative minor
+&GZqs\qgXpn^g 37 N negative coefficient
+&GZqwJwpQpz\w 36 N negative coefficient
+&GZqw\qgXpn^g 37 N negative coefficient
+&GZq{LqgXpn^g 37 B zero coefficient
+&GZq{TqgXpn^g 37 N negative coefficient
+&GZq{XqgXpn^g 37 N negative coefficient
+&GZq{[qgXpn^g 37 N dominated
+&GZq{\QgXpn^g 37 N negative coefficient
+&GZq{\agXpn^g 37 N dominated
+&GZq{\ogXpn^g 37 N negative minor
+&GZq{\qGXpn^g 37 N negative coefficient
+&GZq{\q_Xpn^g 37 N dominated
+&GZq{\qgHpn^g 37 N dominated
+&GZq{\qgPpn^g 37 N dominated
+&GZq{\qgWpn^g 37 N dominated
+&GZq{\qgXPn^g 37 N dominated
+&GZq{\qgX`n^g 37 N dominated
+&GZq{\qgXon^g 37 N dominated
+&GZq{\qgXpN^g 37 N dominated
+&GZq{\qgXpf^g 37 N negative coefficient
+&GZq{\qgXpj^g 37 N negative minor
+&GZq{\qgXpl^g 37 N negative coefficient
+&GZq{\qgXpm^g 37 N negative minor
+&GZq{\qgXpnNg 37 N negative coefficient
+&GZq{\qgXpnVg 37 N negative minor
+&GZq{\qgXpnZg 37 N negative minor
+&GZq{\qgXpn\g 37 N dominated
+&GZq{\qgXpn]g 37 B zero coefficient
+&GZq{\qgXpn^G 37 N negative coefficient
+&GZq{\qgXpn^_ 37 N negative minor
+&GZq{\qgXpn^g 38 S hurwitz
+&GZq{\qgXpn^w 39 B zero minor
+&GZq{\qgXp~^g 39 N negative coefficient
+&GZq{\qgXrn^g 39 N dominated
+&GZq{\qgXxn^g 39 N dominated
+&GZq{\qgZpn^g 39 N negative minor
+&GZq{\qg\pn^g 39 N dominated
+&GZq{\qhXpn^g 39 N negative minor
+&GZq{\qiXpn^g 39 N negative coefficient
+&GZq{\qkXpn^g 39 N negative minor
+&GZq{\qwXpn^g 39 N negative minor
+&GZq{\rgXpn^g 39 N negative coefficient
+&GZq{\ygXpn^g 39 N dominated
+&GZq{^qgXpn^g 39 N negative coefficient
+&GZq|\qgXpn^g 39 B zero minor
+&GZq}\qgXpn^g 39 N negative coefficient
+&GZrSV_~JZ}]w 40 N dominated
+&GZrcV_~JZ}]w 40 N dominated
+&GZrkMgxNXX^? 35 N negative minor
+&GZroV_~JZ}]w 40 N negative minor
+&GZrsF_~JZ}]w 40 B zero minor
+&GZrsR_~JZ}]w 40 N dominated
+&GZrsT_~JZ}]w 40 N negative minor
+&GZrsU_~JZ}]w 40 N negative coefficient
+&GZrsV?~JZ}]w 40 N dominated
+&GZrsV_^JZ}]w 40 N negative coefficient
+&GZrsV_nJZ}]w 40 N negative minor
+&GZrsV_vJZ}]w 40 N negative minor
+&GZrsV_zJZ}]w 40 N dominated
+&GZrsV_|JZ}]w 40 B zero coefficient
+&GZrsV_}JZ}]w 40 N dominated
+&GZrsV_~BZ}]w 40 N negative coefficient
+&GZrsV_~HZ}]w 40 B zero minor
+&GZrsV_~IZ}]w 40 N dominated
+&GZrsV_~JJ}]w 40 N negative minor
+&GZrsV_~JR}]w 40 N dominated
+&GZrsV_~JX}]w 40 N negative coefficient
+&GZrsV_~JY}]w 40 B zero minor
+&GZrsV_~JZ]]w 40 N dominated
+&GZrsV_~JZm]w 40 N negative coefficient
+&GZrsV_~JZu]w 40 N negative minor
+&GZrsV_~JZy]w 40 S hurwitz
+&GZrsV_~JZ{]w 40 N negative minor
+&GZrsV_~JZ}Mw 40 N negative coefficient
+&GZrsV_~JZ}Uw 40 N negative coefficient
+&GZrsV_~JZ}Yw 40 N negative coefficient
+&GZrsV_~JZ}[w 40 N negative minor
+&GZrsV_~JZ}]W 40 N negative minor
+&GZrsV_~JZ}]g 40 N dominated
+&GZrsV_~JZ}]o 40 N negative minor
+&GZrsV_~JZ}]w 41 S hurwitz
+&GZrsV_~JZ}^w 42 S hurwitz
+&GZrsV_~JZ~]w 42 B zero minor
+&GZrsV_~Jz}]w 42 N dominated
+&GZrsV_~NZ}]w 42 N dominated
+&GZrsV_~ZZ}]w 42 N negative coefficient
+&GZrsV`~JZ}]w 42 N negative coefficient
+&GZrsVa~JZ}]w 42 N negative minor
+&GZrsVg~JZ}]w 42 N negative minor
+&GZrsVo~JZ}]w 42 N dominated
+&GZrs^_~JZ}]w 42 N dominated
+&GZrtV_~JZ}]w 42 N negative minor
+&GZruV_~JZ}]w 42 N negative minor
+&GZr{V_~JZ}]w 42 N dominated
+&GZr{\qgXpn^g 39 N negative minor
+&GZy{\qgXpn^g 39 S hurwitz
+&GZzsV_~JZ}]w 42 N negative coefficient
+&G[plZ@hFgRZO 31 N negative minor
+&G[qwNwLMx|^o 38 N negative minor
+&G\PlZ@hFgRZO 31 N negative coefficient
+&G\QwNwLMx|^o 38 N negative minor
+&G\`lZ@hFgRZO 31 N negative coefficient
+&G\awNwLMx|^o 38 N negative coefficient
+&G\olZ@hFgRZO 31 N negative minor
+&G\owNwLMx|^o 38 N negative minor
+&G\pLZ@hFgRZO 31 N negative coefficient
+&G\pdZ@hFgRZO 31 N negative coefficient
+&G\phZ@hFgRZO 31 N negative coefficient
+&G\pkZ@hFgRZO 31 N negative coefficient
+&G\plJ@hFgRZO 31 N negative coefficient
+&G\plR@hFgRZO 31 N negative minor
+&G\plX@hFgRZO 31 N negative minor
+&G\plY@hFgRZO 31 N negative minor
+&G\plZ?hFgRZO 31 N negative coefficient
+&G\plZ@HFgRZO 31 N dominated
+&G\plZ@`FgRZO 31 N dominated
+&G\plZ@gFgRZO 31 N negative coefficient
+&G\plZ@hBgRZO 31 N negative coefficient
+&G\plZ@hDgRZO 31 N dominated
+&G\plZ@hEgRZO 31 N dominated
+&G\plZ@hFGRZO 31 N dominated
+&G\plZ@hF_RZO 31 N dominated
+&G\plZ@hFgBZO 31 S hurwitz
+&G\plZ@hFgPZO 31 N negative minor
+&G\plZ@hFgQZO 31 N negative minor
+&G\plZ@hFgRJO 31 N dominated
+&G\plZ@hFgRRO 31 N negative minor
+&G\plZ@hFgRXO 31 N dominated
+&G\plZ@hFgRYO 31 N negative coefficient
+&G\plZ@hFgRZ? 31 N negative minor
+&G\plZ@hFgRZO 32 S hurwitz
+&G\plZ@hFgRZW 33 N negative coefficient
+&G\plZ@hFgRZo 33 N negative minor
+&G\plZ@hFgR^O 33 N dominated
+&G\plZ@hFgVZO 33 N dominated
+&G\plZ@hFgZZO 33 S hurwitz
+&G\plZ@hFgrZO 33 S hurwitz
+&G\plZ@hFhRZO 33 N dominated
+&G\plZ@hFiRZO 33 N negative minor
+&G\plZ@hFwRZO 33 N dominated
+&G\plZ@hNgRZO 33 N negative coefficient
+&G\plZ@hVgRZO 33 N negative minor
+&G\plZ@jFgRZO 33 N dominated
+&G\plZ@lFgRZO 33 N negative minor
+&G\plZ@xFgRZO 33 N dominated
+&G\plZBhFgRZO 33 N negative minor
+&G\plZHhFgRZO 33 N negative coefficient
+&G\plZPhFgRZO 33 N negative minor
+&G\plZ`hFgRZO 33 N negative minor
+&G\pl^@hFgRZO 33 N negative minor
+&G\pnZ@hFgRZO 33 N negative coefficient
+&G\p|Z@hFgRZO 33 N negative coefficient
+&G\qWNwLMx|^o 38 N negative minor
+&G\qgNwLMx|^o 38 N negative minor
+&G\qoNwLMx|^o 38 N dominated
+&G\qqZp|^q}^w 43 S hurwitz
+&G\qwFwLMx|^o 38 N negative minor
+&G\qwJwLMx|^o 38 N dominated
+&G\qwLwLMx|^o 38 N negative minor
+&G\qwMwLMx|^o 38 N dominated
+&G\qwNWLMx|^o 38 N dominated
+&G\qwNgLMx|^o 38 N negative coefficient
+&G\qwNoLMx|^o 38 N negative coefficient
+&G\qwNwDMx|^o 38 N dominated
+&G\qwNwHMx|^o 38 N dominated
+&G\qwNwKMx|^o 38 N dominated
+&G\qwNwLEx|^o 38 N dominated
+&G\qwNwLIx|^o 38 B zero minor
+&G\qwNwLKx|^o 38 N dominated
+&G\qwNwLMX|^o 38 N negative minor
+&G\qwNwLMh|^o 38 N dominated
+&G\qwNwLMp|^o 38 N negative minor
+&G\qwNwLMw|^o 38 N negative minor
+&G\qwNwLMx\^o 38 N negative coefficient
+&G\qwNwLMxl^o 38 N negative minor
+&G\qwNwLMxt^o 38 N negative minor
+&G\qwNwLMxx^o 38 N negative minor
+&G\qwNwLMx{^o 38 N negative coefficient
+&G\qwNwLMx|No 38 N negative minor
+&G\qwNwLMx|Vo 38 N negative minor
+&G\qwNwLMx|Zo 38 N negative coefficient
+&G\qwNwLMx|\o 38 N negative minor
+&G\qwNwLMx|]o 38 N negative minor
+&G\qwNwLMx|^O 38 N negative minor
+&G\qwNwLMx|^_ 38 B zero minor
+&G\qwNwLMx|^o 39 S hurwitz
+&G\qwNwLMx|^w 40 N negative coefficient
+&G\qwNwLMx~^o 40 N negative coefficient
+&G\qwNwLMz|^o 40 N negative minor
+&G\qwNwLNx|^o 40 N dominated
+&G\qwNwL]x|^o 40 N dominated
+&G\qwNwNMx|^o 40 N dominated
+&G\qwNw\Mx|^o 40 N negative minor
+&G\qwNwlMx|^o 40 N negative minor
+&G\qwNxLMx|^o 40 N negative coefficient
+&G\qwNyLMx|^o 40 N negative minor
+&G\qw^wLMx|^o 40 N dominated
+&G\qxNwLMx|^o 40 N negative minor
+&G\qyNwLMx|^o 40 N negative minor
+&G\q{NwLMx|^o 40 N dominated
+&G\rkMgxNXX^? 35 N negative coefficient
+&G\rlZ@hFgRZO 33 N negative minor
+&G\rwNwLMx|^o 40 N negative minor
+&G\ryVb]Mz{]W 41 N dominated
+&G\xlZ@hFgRZO 33 N negative coefficient
+&G\xl]b{V`v]g 40 N dominated
+&G\ywNwLMx|^o 40 N negative minor
+&G]@ZDJVMImKw 32 N negative coefficient
+&G]@wJxpZqn\o 36 N negative minor
+&G]AY^xvNIl\O 37 N negative minor
+&G]A[FPfZrr\o 35 N dominated
+&G]A]^xlFJnXW 38 N negative coefficient
+&G]AqZroMi{]O 33 N negative coefficient
+&G]ArUqq]R{^? 34 N negative minor
+&G]yw^QW^P|Nw 39 N negative minor
+&G^?~BPn]hzXG 36 N negative minor
+&G^@iLzW\bkNW 35 N negative coefficient
+&G^AMUpnDgfZW 34 N negative minor
+&G^AY[zkKj{^W 37 N negative minor
+&G^A]^zkKi}XW 38 N negative minor
+&G^Ai^xP\jeLg 36 S hurwitz
+&G^BI\`|@XjMg 33 N negative coefficient
+&G^BI\i{\ri\? 35 N negative minor
+&G^BZVr~[jn\? 41 N negative minor
+&G^B]NHtIJw^g 36 N negative minor
+&G^Bb^hRXr}Kg 37 N negative minor
+&G^BjNjp\R~]G 40 N negative minor
+&G^BjVrYDJ}\? 36 N dominated
+&G^O~EWzHz{^w 40 N dominated
+&G^QsZrgJh|Zw 38 N negative coefficient
+&G^QwJwpQpz\w 36 N negative minor
+&G^Q}ZOxYwx^o 38 N negative minor
+&G^RMUAuZOxMw 34 B zero minor
+&G^R]MJkT`~^g 39 N dominated
+&G^R]YBK^b{^_ 37 N negative minor
+&G^X|AJYFi}^W 38 N negative coefficient
+&G^_xHPNUjMLG 32 N negative coefficient
+&G^_zBRJYrL\_ 34 N negative coefficient
+&G^`\Nh|DIi^o 37 N negative minor
+&G^aA^x\Lj^^O 39 N negative coefficient
+&G^aN^zLFGFHW 35 N negative minor
+&G^aq^yqKzW\O 36 S hurwitz
+&G^bI^jmVRM\? 37 N negative minor
+&G^bVNinKZS^_ 38 N negative coefficient
+&G^plZ@hFgRZO 33 N dominated
+&G^qwNwLMx|^o 40 N negative minor
+&G^q{\qgXpn^g 39 N negative coefficient
+&G^rA]b}VZ]VW 40 N negative coefficient
+&G^rE^b]ZJvVw 42 N negative minor
+&G^rbUiiDxRVg 36 N dominated
+&G^rsV_~JZ}]w 42 N negative minor
+&G^xlVa}Vw^^w 44 N dominated
+&G^x|QbUYr]Ng 39 N negative minor

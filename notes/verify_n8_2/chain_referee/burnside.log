@@ -1,0 +1,38 @@
+{'g6': 'GCzffW', 'edges': 16, 'aut': 4, 'mine': 1648, 'graph_counts': 1648, 'agree': True}
+{'g6': 'GCxvBs', 'edges': 15, 'aut': 8, 'mine': 10, 'graph_counts': 10, 'agree': True}
+{'g6': 'GCzvbk', 'edges': 17, 'aut': 4, 'mine': 65782, 'graph_counts': 65782, 'agree': True}
+{'g6': 'GCz^fK', 'edges': 17, 'aut': 1, 'mine': 242115, 'graph_counts': 242115, 'agree': True}
+{'g6': 'GCvfR[', 'edges': 16, 'aut': 1, 'mine': 4993, 'graph_counts': 4993, 'agree': True}
+{'g6': 'GCvfJ{', 'edges': 17, 'aut': 2, 'mine': 125314, 'graph_counts': 125314, 'agree': True}
+{'g6': 'GCvb}w', 'edges': 17, 'aut': 2, 'mine': 121107, 'graph_counts': 121107, 'agree': True}
+{'g6': 'GCvvb[', 'edges': 17, 'aut': 4, 'mine': 67330, 'graph_counts': 67330, 'agree': True}
+{'g6': 'GC~vfo', 'edges': 18, 'aut': 32, 'mine': 193294, 'graph_counts': 193294, 'agree': True}
+{'g6': 'GEr]vo', 'edges': 17, 'aut': 16, 'mine': 17012, 'graph_counts': 17012, 'agree': True}
+{'g6': 'GEhfvk', 'edges': 17, 'aut': 2, 'mine': 121122, 'graph_counts': 121122, 'agree': True}
+{'g6': 'GEjfK{', 'edges': 16, 'aut': 16, 'mine': 412, 'graph_counts': 412, 'agree': True}
+{'g6': 'GEivvw', 'edges': 18, 'aut': 1, 'mine': 5591881, 'graph_counts': 5591881, 'agree': True}
+{'g6': 'GEhvVS', 'edges': 16, 'aut': 4, 'mine': 1437, 'graph_counts': 1437, 'agree': True}
+{'g6': 'GEhrr{', 'edges': 17, 'aut': 1, 'mine': 242115, 'graph_counts': 242115, 'agree': True}
+{'g6': 'GEjutk', 'edges': 17, 'aut': 2, 'mine': 121206, 'graph_counts': 121206, 'agree': True}
+{'g6': 'GEj^vk', 'edges': 19, 'aut': 1, 'mine': 75275227, 'graph_counts': 75275227, 'agree': True}
+{'g6': 'GEh}~s', 'edges': 19, 'aut': 1, 'mine': 75275227, 'graph_counts': 75275227, 'agree': True}
+{'g6': 'GEzvfK', 'edges': 18, 'aut': 4, 'mine': 1431638, 'graph_counts': 1431638, 'agree': True}
+{'g6': 'GEu~nw', 'edges': 20, 'aut': 1, 'mine': 664402833, 'graph_counts': 664402833, 'agree': True}
+{'g6': 'GEnvVw', 'edges': 19, 'aut': 1, 'mine': 75275227, 'graph_counts': 75275227, 'agree': True}
+{'g6': 'GQhTV{', 'edges': 16, 'aut': 144, 'mine': 201, 'graph_counts': 201, 'agree': True}
+{'g6': 'GQjfnw', 'edges': 18, 'aut': 2, 'mine': 2842230, 'graph_counts': 2842230, 'agree': True}
+{'g6': 'GQjVVk', 'edges': 17, 'aut': 2, 'mine': 121443, 'graph_counts': 121443, 'agree': True}
+{'g6': 'GQinvw', 'edges': 18, 'aut': 12, 'mine': 542932, 'graph_counts': 542932, 'agree': True}
+{'g6': 'GQjnfk', 'edges': 18, 'aut': 2, 'mine': 2842230, 'graph_counts': 2842230, 'agree': True}
+{'g6': 'GQyvew', 'edges': 17, 'aut': 2, 'mine': 121758, 'graph_counts': 121758, 'agree': True}
+{'g6': 'GQzn^[', 'edges': 20, 'aut': 48, 'mine': 14137272, 'graph_counts': 14137272, 'agree': True}
+{'g6': 'GQ~vv{', 'edges': 22, 'aut': 16, 'mine': 1265072199, 'graph_counts': 1265072199, 'agree': True}
+{'g6': 'GUzvv[', 'edges': 21, 'aut': 2, 'mine': 2088091979, 'graph_counts': 2088091979, 'agree': True}
+0 {'graphs': 24, 'mine': 31894, 'recorded': 31894, 'agree': True}
+4 {'graphs': 14, 'mine': 106835137, 'recorded': 106835137, 'agree': True}
+{'mine': 9608, 'A000273': 9608, 'agree': True}
+DISAGREEMENTS 0
+
+real	0m1.261s
+user	0m1.231s
+sys	0m0.016s

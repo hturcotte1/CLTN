@@ -1,0 +1,229 @@
+a done 6.2
+b done 69.2
+{
+ "a_mismatch_resolution": [
+  {
+   "blowup_d6": "&GK?t^Qy]qpIw",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBE]Zv^bvV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBE]Zv^jtV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBE]Zv^rrV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBE]Zv^zpV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GM@V^Jf^zpTO",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBF^Jf^bvV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBF^Jf^jtV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBF^Jf^rrV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBF^Jf^zpV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GKQa^RzNgpDw",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GNBf^jf\\zwV_",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 5,
+    "Re=-1/2": 0,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GNBf^zrXzwV_",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 5,
+    "Re=-1/2": 0,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GNBeUbIXbuV_",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 0,
+    "Re>-1/2": 4
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G^ZIWZs\\`hUO",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G]J][as]RjYw",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 0,
+    "Re>-1/2": 4
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G^zvZr[WaT\\o",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 4,
+    "Re=-1/2": 2,
+    "Re>-1/2": 1
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G^Z~ZpxOabNw",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 5,
+    "Re=-1/2": 0,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G^ZZZr|Sab\\o",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 4,
+    "Re=-1/2": 2,
+    "Re>-1/2": 1
+   },
+   "alpha_vs_minus_half": ">"
+  }
+ ],
+ "b_rootcount_crosscheck": {
+  "points": 60,
+  "hurwitz_vs_rootcount": {
+   "('stable', 'stable', True)": 43,
+   "('unstable', 'unstable', True)": 17
+  }
+ },
+ "c_summary": {
+  "('in_parent_out_hit', True)": 20,
+  "('in_hit_out_parent', True)": 25,
+  "('in_parent_out_hit_left', True)": 2,
+  "('no_separating_beta_found', None)": 1
+ }
+}
+{"('in_parent_out_hit', True)": 20, "('in_hit_out_parent', True)": 25, "('in_parent_out_hit_left', True)": 2, "('no_separating_beta_found', None)": 1} 72.6

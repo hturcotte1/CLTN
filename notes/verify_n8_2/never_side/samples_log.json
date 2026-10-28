@@ -1,0 +1,11 @@
+{
+ "never_positivity_pool": 331427,
+ "never_full_pool": 7078,
+ "B_pool": 26314,
+ "S_pool": 590,
+ "O_lines": 0,
+ "nonprinted_domfree_pool": 2269500,
+ "stride_lines": 739,
+ "stride_in_domfree": 8,
+ "stride_nondomfree": 731
+}

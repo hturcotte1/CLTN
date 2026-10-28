@@ -1,0 +1,92 @@
+{
+"C1": {
+"idx": 0,
+"d6": "&GM?WUZeEie^O",
+"arcs": 29,
+"q": "124000/123123",
+"positive": true,
+"stability": "stable",
+"legal": true,
+"beta_inside_stored_interval": false,
+"missing_pair": [
+0,
+1
+],
+"is_lift_of_123": false
+},
+"C2": {
+"idx": 9130,
+"d6": "&GNx|Ub]^j}^w",
+"arcs": 45,
+"q": "4800/4747",
+"positive": true,
+"stability": "stable",
+"legal": true,
+"beta_inside_stored_interval": false,
+"missing_pair": [
+0,
+1
+],
+"is_lift_of_123": false
+},
+"C3": {
+"idx": 7613,
+"d6": "&GMx|\\Aw^qz]w",
+"arcs": 40,
+"q": "15/11",
+"positive": true,
+"stability": "stable",
+"legal": true,
+"beta_inside_stored_interval": true,
+"missing_pair": [
+0,
+1
+],
+"is_lift_of_123": false
+},
+"C4": {
+"idx": 103,
+"d6": "&GNBIXBs\\im[O",
+"arcs": 31,
+"q": "4292000/4290429",
+"positive": true,
+"stability": "stable",
+"legal": true,
+"beta_inside_stored_interval": false,
+"missing_pair": [
+0,
+1
+],
+"is_lift_of_123": false
+},
+"C5": {
+"idx": 980,
+"d6": "&GBw~UqQEX^NG",
+"arcs": 34,
+"q": "320/303",
+"positive": true,
+"stability": "stable",
+"legal": true,
+"beta_inside_stored_interval": false,
+"missing_pair": [
+0,
+1
+],
+"is_lift_of_123": false
+},
+"C6": {
+"idx": 4567,
+"d6": "&GVruV@zLGxLw",
+"arcs": 36,
+"q": "12/11",
+"positive": true,
+"stability": "stable",
+"legal": true,
+"beta_inside_stored_interval": true,
+"missing_pair": [
+0,
+2
+],
+"is_lift_of_123": false
+}
+}

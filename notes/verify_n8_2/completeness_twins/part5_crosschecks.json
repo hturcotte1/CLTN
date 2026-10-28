@@ -1,0 +1,1575 @@
+{
+ "a_mismatch_resolution": [
+  {
+   "blowup_d6": "&GK?t^Qy]qpIw",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBE]Zv^bvV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBE]Zv^jtV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBE]Zv^rrV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBE]Zv^zpV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GM@V^Jf^zpTO",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBF^Jf^bvV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBF^Jf^jtV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBF^Jf^rrV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GMBF^Jf^zpV?",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GKQa^RzNgpDw",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GNBf^jf\\zwV_",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 5,
+    "Re=-1/2": 0,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GNBf^zrXzwV_",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 5,
+    "Re=-1/2": 0,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&GNBeUbIXbuV_",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 0,
+    "Re>-1/2": 4
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G^ZIWZs\\`hUO",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 2,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G]J][as]RjYw",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 3,
+    "Re=-1/2": 0,
+    "Re>-1/2": 4
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G^zvZr[WaT\\o",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 4,
+    "Re=-1/2": 2,
+    "Re>-1/2": 1
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G^Z~ZpxOabNw",
+   "own_flag": "DROPPED",
+   "filter8": "B",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 5,
+    "Re=-1/2": 0,
+    "Re>-1/2": 2
+   },
+   "alpha_vs_minus_half": ">"
+  },
+  {
+   "blowup_d6": "&G^ZZZr|Sab\\o",
+   "own_flag": "B",
+   "filter8": "DROPPED",
+   "roots_of_chi_perp_by_Re_vs_minus_half": {
+    "Re<-1/2": 4,
+    "Re=-1/2": 2,
+    "Re>-1/2": 1
+   },
+   "alpha_vs_minus_half": ">"
+  }
+ ],
+ "b_rootcount_crosscheck": {
+  "points": 60,
+  "hurwitz_vs_rootcount": {
+   "('stable', 'stable', True)": 43,
+   "('unstable', 'unstable', True)": 17
+  }
+ },
+ "c_interval_difference_checks": [
+  {
+   "blowup_d6": "&GMBA^ZvJhp]o",
+   "parent_d6": "&FMEHz\\rsp?",
+   "hit_d6": "&GMBA^ZvFizKW",
+   "parent_interval_bounds": [
+    "2",
+    "12331164141/5905580032"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "24431008929/11811160064"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "24546668605/11811160064",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMBA^ZvJzp^w",
+   "parent_d6": "&FMEHz\\r|p?",
+   "hit_d6": "&GMBA^ZvFz~[W",
+   "parent_interval_bounds": [
+    "2",
+    "6781818547/3221225472"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "26237498945/12884901888"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "160094319395/77309411328",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMBA^Zv^zp^w",
+   "parent_d6": "&FMEHz\\v|p?",
+   "hit_d6": "&GMBA^Zv^z~[W",
+   "parent_interval_bounds": [
+    "2",
+    "209633743551/97710505984"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "27253138607/12884901888"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "713662933691/335007449088",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMPRZJv^zpNg",
+   "parent_d6": "&FMAlh\\v|p?",
+   "hit_d6": "&GN?j\\zR\\z~[G",
+   "parent_interval_bounds": [
+    "2",
+    "6781818547/3221225472"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "35419078659/17179869184"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "644298998171/309237645312",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMPR^JvNzpNw",
+   "parent_d6": "&FMAlx\\r|p?",
+   "hit_d6": "&GN?j^zr\\x~[G",
+   "parent_interval_bounds": [
+    "2",
+    "6781818547/3221225472"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "6153235609/2952790016"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "111329123491/53150220288",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GM@V^Jv^zp^w",
+   "parent_d6": "&FMAlx\\v|p?",
+   "hit_d6": "&GM?z^zr^zn^?",
+   "parent_interval_bounds": [
+    "2",
+    "209633743551/97710505984"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "22397922899/10737418240"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "590649774187/279172874240",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMRF^Jv^bvNw",
+   "parent_d6": "&FMELx\\vpv?",
+   "hit_d6": "&GNBb^zr\\z{[w",
+   "parent_interval_bounds": [
+    "2",
+    "209633743551/97710505984"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "188629365055/82678120448"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "679736132109/307090161664",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMRF^Jv^jtNw",
+   "parent_d6": "&FMELx\\vtt?",
+   "hit_d6": "&GNBb^zr\\z|[g",
+   "parent_interval_bounds": [
+    "2",
+    "209633743551/97710505984"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "188629365055/82678120448"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "679736132109/307090161664",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMRF^Jv^rrNw",
+   "parent_d6": "&FMELx\\vxr?",
+   "hit_d6": "&GNBb^zr\\z}[W",
+   "parent_interval_bounds": [
+    "2",
+    "209633743551/97710505984"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "188629365055/82678120448"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "679736132109/307090161664",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMRF^JvNzpNw",
+   "parent_d6": "&FMELx\\r|p?",
+   "hit_d6": "&GNBb^zr\\x~[G",
+   "parent_interval_bounds": [
+    "2",
+    "6781818547/3221225472"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "163632288381/73014444032"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "3718986431/1711276032",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMBB^JvJzp^w",
+   "parent_d6": "&FMELx\\r|p?",
+   "hit_d6": "&GMBB^JvFz~[W",
+   "parent_interval_bounds": [
+    "2",
+    "6781818547/3221225472"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "26237498945/12884901888"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "160094319395/77309411328",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMRF^Jv^zpNw",
+   "parent_d6": "&FMELx\\v|p?",
+   "hit_d6": "&GNBb^zr\\z~[G",
+   "parent_interval_bounds": [
+    "2",
+    "209633743551/97710505984"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "188629365055/82678120448"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "679736132109/307090161664",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMBB^Jv^zp^w",
+   "parent_d6": "&FMELx\\v|p?",
+   "hit_d6": "&GMBB^Jv^z~[W",
+   "parent_interval_bounds": [
+    "2",
+    "209633743551/97710505984"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "27253138607/12884901888"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "713662933691/335007449088",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMBB^Jv^zx^w",
+   "parent_d6": "&FMELx\\v|x?",
+   "hit_d6": "&GMBB^Jv^z~]W",
+   "parent_interval_bounds": [
+    "2",
+    "25856202359/12884901888"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "28400361563/13958643712"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "676934969417/335007449088",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNQa^zv\\is^w",
+   "parent_d6": "&FNDH~\\uts?",
+   "hit_d6": "&GNaQ^z~\\zX\\_",
+   "parent_interval_bounds": [
+    "2",
+    "308194838777/143881404416"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "202966189021/95563022336"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "11949614683115/5602382184448",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNRf^jv\\zoNw",
+   "parent_d6": "&FNFL|\\u|o?",
+   "hit_d6": "&GNbr^zz\\z^[?",
+   "parent_interval_bounds": [
+    "2",
+    "94035905289/41339060224"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "92357435289/39728447488"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "2638158657865/1147158921216",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNQf^rb\\zoNw",
+   "parent_d6": "&FNDL}[u|o?",
+   "hit_d6": "&GNbR^z{[z^[?",
+   "parent_interval_bounds": [
+    "2",
+    "260606895767/125627793408"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "17665142637/8589934592"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "12455030563987/6030134083584",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNQf^zr\\YoNw",
+   "parent_d6": "&FNDL~[ulo?",
+   "hit_d6": "&GNbR^z~[zR[?",
+   "parent_interval_bounds": [
+    "2",
+    "260606895767/125627793408"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "17665142637/8589934592"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "12455030563987/6030134083584",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNQf^zr\\jsNw",
+   "parent_d6": "&FNDL~[uts?",
+   "hit_d6": "&GNbR^z~[z\\[_",
+   "parent_interval_bounds": [
+    "2",
+    "308194838777/143881404416"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "120270367203/53687091200"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "6305194228797/2877628088320",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNQb^zr\\is^w",
+   "parent_d6": "&FNDL~[uts?",
+   "hit_d6": "&GNaR^z~[zX\\_",
+   "parent_interval_bounds": [
+    "2",
+    "308194838777/143881404416"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "202966189021/95563022336"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "11949614683115/5602382184448",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNRf^zr\\zoNw",
+   "parent_d6": "&FNFL~[u|o?",
+   "hit_d6": "&GNbr^z~[z^[?",
+   "parent_interval_bounds": [
+    "2",
+    "94035905289/41339060224"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "92357435289/39728447488"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "2638158657865/1147158921216",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNRf^zr\\zwNw",
+   "parent_d6": "&FNFL~[u|w?",
+   "hit_d6": "&GNbr^z~[z^]?",
+   "parent_interval_bounds": [
+    "2",
+    "3297315863/1610612736"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "18116710573/8589934592"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "26776796381/12884901888",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GMQv^zr]zsNw",
+   "parent_d6": "&FMDl~[v\\s?",
+   "hit_d6": "&GNBZ^z~[zn[_",
+   "parent_interval_bounds": [
+    "2",
+    "17564688253/8589934592"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "3995832509/1879048192"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "250819458051/120259084288",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNOZ\\z~Kim^w",
+   "parent_d6": "&FN?|v^qTm?",
+   "hit_d6": "&GN_N]z~^xHZo",
+   "parent_interval_bounds": [
+    "2",
+    "18124578903/8589934592"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "1263504557/603979776"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "162424896707/77309411328",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNOZ^z~Cjm^w",
+   "parent_d6": "&FN?|~^oTm?",
+   "hit_d6": "&GN_N^z~^wLZo",
+   "parent_interval_bounds": [
+    "2",
+    "18124578903/8589934592"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "5860000827/2684354560"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "184382907739/85899345920",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNOZ^z~Cim^w",
+   "parent_d6": "&FN?|~^oTm?",
+   "hit_d6": "&GN_N^z~^wHZo",
+   "parent_interval_bounds": [
+    "2",
+    "18124578903/8589934592"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "1263504557/603979776"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "162424896707/77309411328",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&GNqI\\z|^XL^w",
+   "parent_d6": "&FNcXv^VkL?",
+   "hit_d6": "&GNqE]z~^ZvBg",
+   "parent_interval_bounds": [
+    "2",
+    "18124578903/8589934592"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "5860000827/2684354560"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "184382907739/85899345920",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^JMZbs\\gbWw",
+   "parent_d6": "&F^UXk\\Esb?",
+   "hit_d6": "&GBzYVbuEJ][o",
+   "parent_interval_bounds": [
+    "2",
+    "9984587599/4294967296"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "1351881749/671088640"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "69887365471/32212254720",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^ZMYbc\\`p^G",
+   "parent_d6": "&F^UXk\\Eop?",
+   "hit_d6": "&GXrKZbkRbb^o",
+   "parent_interval_bounds": [
+    "2",
+    "5794796707/2684354560"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "9356375393/4294967296"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "11642531327/5368709120",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^ZMZbcX`pJg",
+   "parent_d6": "&F^UXk\\Eop?",
+   "hit_d6": "&GLy[ZQkQrQ^o",
+   "parent_interval_bounds": [
+    "2",
+    "5794796707/2684354560"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "24161568683/11475615744"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "3914745968263/1836098519040",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^ZnRba\\baNG",
+   "parent_d6": "&F^V\\K[epa?",
+   "hit_d6": "&GZpxTbi\\@j^g",
+   "parent_interval_bounds": [
+    "2",
+    "12049156799/5905580032"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "115890930181/54760833024"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "938930334557/451776872448",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^ZnQbrTaaRo",
+   "parent_d6": "&F^V\\K[spa?",
+   "hit_d6": "&GZqsYpHLhv^O",
+   "parent_interval_bounds": [
+    "2",
+    "2333132319/1073741824"
+   ],
+   "hit_interval_bounds": [
+    "1124006303/536870912",
+    "25787429351/11811160064"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "257259424299/118111600640",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    },
+    {
+     "kind": "in_parent_out_hit_left",
+     "beta": "2197748127/1073741824",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      false
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^ZfJhpHgp^o",
+   "parent_d6": "&F^VKlKQsp?",
+   "hit_d6": "&GXp|OayQrz]w",
+   "parent_interval_bounds": [
+    "2",
+    "19999427003/9932111872"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "15846923171/7516192768"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "573160056687/278099132416",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^ZjLi`\\rwFW",
+   "parent_d6": "&F^V[tSUxw?",
+   "hit_d6": "&GJx|Dii\\r[\\o",
+   "parent_interval_bounds": [
+    "2",
+    "1103707133/503316480"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "273928675457/118111600640"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "1998494810003/885837004800",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^zrRay[wRSw",
+   "parent_d6": "&F^vlKUe[R?",
+   "hit_d6": "&GZ`tFgZLX~\\W",
+   "parent_interval_bounds": [
+    "2",
+    "97349729089/41875931136"
+   ],
+   "hit_interval_bounds": [
+    "1124006303/536870912",
+    "63892682859/30064771072"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "1739202348655/781684047872",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    },
+    {
+     "kind": "in_parent_out_hit_left",
+     "beta": "2197748127/1073741824",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      false
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^zvFjZ?zUBw",
+   "parent_d6": "&F^vk\\Yo\\U?",
+   "hit_d6": "&GV_^NXLZJm^w",
+   "parent_interval_bounds": [
+    "2",
+    "2280340753/1073741824"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "131868318243/65498251264"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "1083876416643/523986010112",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^zVFj}CiUNw",
+   "parent_d6": "&F^uk\\^_TU?",
+   "hit_d6": "&GNy[[P|@j~^w",
+   "parent_interval_bounds": [
+    "128382851301/60129542144",
+    "164745695381/70866960384"
+   ],
+   "hit_interval_bounds": [
+    "573137729/268435456",
+    "47392370747/21474836480"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "3211405188451/1417339207680",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^zVPb}Lw\\Nw",
+   "parent_d6": "&F^ulC^a{\\?",
+   "hit_d6": "&GV?~KY{]r~^w",
+   "parent_interval_bounds": [
+    "2",
+    "15616384045/7516192768"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "1478841241/671088640"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "643588118877/300647710720",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^zvXpzCi]Nw",
+   "parent_d6": "&F^vleMoT]?",
+   "hit_d6": "&GVo~KYK]r~^w",
+   "parent_interval_bounds": [
+    "2",
+    "9090090751/4294967296"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "9606324711/4294967296"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "18696415461/8589934592",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^z~Vw~CyBNw",
+   "parent_d6": "&F^v|^Fo\\B?",
+   "hit_d6": "&G[P|NgN^z~\\w",
+   "parent_interval_bounds": [
+    "2",
+    "13053147695/6442450944"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "92357435289/39728447488"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "345703692149/158913789952",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^z~Vwn?zBRw",
+   "parent_d6": "&F^v|^Fo\\B?",
+   "hit_d6": "&G]O|FyZBz~\\w",
+   "parent_interval_bounds": [
+    "2",
+    "13053147695/6442450944"
+   ],
+   "hit_interval_bounds": [
+    "1124006303/536870912",
+    "8558926733/4026531840"
+   ],
+   "tests": []
+  },
+  {
+   "blowup_d6": "&G^znTbY^JMNw",
+   "parent_d6": "&F^v\\SYfdM?",
+   "hit_d6": "&GUq}SPz^b~^w",
+   "parent_interval_bounds": [
+    "2",
+    "1172562463/536870912"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "11849683033/5368709120"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "94301230651/42949672960",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^znFizFXNNw",
+   "parent_d6": "&F^v[\\UpkN?",
+   "hit_d6": "&GV?~NY{]r~^w",
+   "parent_interval_bounds": [
+    "2",
+    "11386193811/5368709120"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "4780177/2097152"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "17717585197/8053063680",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^znXpzFxJNw",
+   "parent_d6": "&F^v\\eMp{J?",
+   "hit_d6": "&GVo~NYK]r~^w",
+   "parent_interval_bounds": [
+    "2",
+    "1467006363/671088640"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "90638908469/37580963840"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "43197816199/18790481920",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^zNXp|^`JNw",
+   "parent_d6": "&F^u\\eNVoJ?",
+   "hit_d6": "&GVp~FHz@j~^w",
+   "parent_interval_bounds": [
+    "2",
+    "97349729089/41875931136"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "68191390147/30064771072"
+   ],
+   "tests": [
+    {
+     "kind": "in_parent_out_hit",
+     "beta": "1795085543399/781684047872",
+     "t": 100000,
+     "blowup": [
+      "unstable",
+      true
+     ],
+     "parent": [
+      "stable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  },
+  {
+   "blowup_d6": "&G^zNZo|VrJNw",
+   "parent_d6": "&F^u\\mFTxJ?",
+   "hit_d6": "&GVo~NY{]o~^w",
+   "parent_interval_bounds": [
+    "2",
+    "15640171111/7516192768"
+   ],
+   "hit_interval_bounds": [
+    "2",
+    "11661316607/5368709120"
+   ],
+   "tests": [
+    {
+     "kind": "in_hit_out_parent",
+     "beta": "159830071797/75161927680",
+     "t": 100000,
+     "blowup": [
+      "stable",
+      true
+     ],
+     "parent": [
+      "unstable",
+      true
+     ],
+     "consistent_with_stored_intervals": true
+    }
+   ]
+  }
+ ],
+ "c_summary": {
+  "('in_parent_out_hit', True)": 20,
+  "('in_hit_out_parent', True)": 25,
+  "('in_parent_out_hit_left', True)": 2,
+  "('no_separating_beta_found', None)": 1
+ }
+}

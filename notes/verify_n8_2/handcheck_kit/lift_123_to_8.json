@@ -1,0 +1,1170 @@
+[
+ {
+  "n7_index": 0,
+  "n7_d6": "&FMC`j\\BTt?",
+  "n7_arcs": 23,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 1,
+  "n7_d6": "&FK@dyUfXp?",
+  "n7_arcs": 23,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 2,
+  "n7_d6": "&FK@drUvHw?",
+  "n7_arcs": 23,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 3,
+  "n7_d6": "&FMEHz\\rsp?",
+  "n7_arcs": 26,
+  "lifts_in_hits": [
+   {
+    "v": 5,
+    "hit_index": 2391,
+    "hit_d6": "&GMBA^ZvFizKW",
+    "hit_arcs": 35
+   }
+  ]
+ },
+ {
+  "n7_index": 4,
+  "n7_d6": "&FMEHz\\vpv?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 5,
+  "n7_d6": "&FMEHz\\vtt?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 6,
+  "n7_d6": "&FMEHz\\vxr?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 7,
+  "n7_d6": "&FMEHz\\r|p?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 5,
+    "hit_index": 7109,
+    "hit_d6": "&GMBA^ZvFz~[W",
+    "hit_arcs": 39
+   }
+  ]
+ },
+ {
+  "n7_index": 8,
+  "n7_d6": "&FMEHz\\v|p?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 5,
+    "hit_index": 8121,
+    "hit_d6": "&GMBA^Zv^z~[W",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 9,
+  "n7_d6": "&FMBlWKt\\y?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 10,
+  "n7_d6": "&FMBlhKRTx?",
+  "n7_arcs": 24,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 11,
+  "n7_d6": "&FMAlW\\d\\y?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 12,
+  "n7_d6": "&FMAkxXbD{?",
+  "n7_arcs": 23,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 13,
+  "n7_d6": "&FMALx\\Tpv?",
+  "n7_arcs": 26,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 14,
+  "n7_d6": "&FMAlh\\r|p?",
+  "n7_arcs": 27,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 15,
+  "n7_d6": "&FMAlh\\v|p?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 7131,
+    "hit_d6": "&GN?j\\zR\\z~[G",
+    "hit_arcs": 39
+   }
+  ]
+ },
+ {
+  "n7_index": 16,
+  "n7_d6": "&FMAlx\\r|p?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 7626,
+    "hit_d6": "&GN?j^zr\\x~[G",
+    "hit_arcs": 40
+   }
+  ]
+ },
+ {
+  "n7_index": 17,
+  "n7_d6": "&FMAlx\\v|p?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 5,
+    "hit_index": 8655,
+    "hit_d6": "&GM?z^zr^zn^?",
+    "hit_arcs": 42
+   }
+  ]
+ },
+ {
+  "n7_index": 18,
+  "n7_d6": "&FMAlx\\v|x?",
+  "n7_arcs": 30,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 19,
+  "n7_d6": "&FMELx\\Vpv?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 7698,
+    "hit_d6": "&GNBb^zr\\J{[w",
+    "hit_arcs": 40
+   }
+  ]
+ },
+ {
+  "n7_index": 20,
+  "n7_d6": "&FMELx\\Vtt?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 7699,
+    "hit_d6": "&GNBb^zr\\J|[g",
+    "hit_arcs": 40
+   }
+  ]
+ },
+ {
+  "n7_index": 21,
+  "n7_d6": "&FMELx\\Vxr?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 7700,
+    "hit_d6": "&GNBb^zr\\J}[W",
+    "hit_arcs": 40
+   }
+  ]
+ },
+ {
+  "n7_index": 22,
+  "n7_d6": "&FMELx\\R|p?",
+  "n7_arcs": 27,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 23,
+  "n7_d6": "&FMELx\\V|p?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 7701,
+    "hit_d6": "&GNBb^zr\\J~[G",
+    "hit_arcs": 40
+   },
+   {
+    "v": 5,
+    "hit_index": 7602,
+    "hit_d6": "&GMBB^Jt^z~[W",
+    "hit_arcs": 40
+   }
+  ]
+ },
+ {
+  "n7_index": 24,
+  "n7_d6": "&FMELx\\vpv?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8720,
+    "hit_d6": "&GNBb^zr\\z{[w",
+    "hit_arcs": 42
+   }
+  ]
+ },
+ {
+  "n7_index": 25,
+  "n7_d6": "&FMELx\\vtt?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8721,
+    "hit_d6": "&GNBb^zr\\z|[g",
+    "hit_arcs": 42
+   }
+  ]
+ },
+ {
+  "n7_index": 26,
+  "n7_d6": "&FMELx\\vxr?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8722,
+    "hit_d6": "&GNBb^zr\\z}[W",
+    "hit_arcs": 42
+   }
+  ]
+ },
+ {
+  "n7_index": 27,
+  "n7_d6": "&FMELx\\r|p?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8205,
+    "hit_d6": "&GNBb^zr\\x~[G",
+    "hit_arcs": 41
+   },
+   {
+    "v": 5,
+    "hit_index": 7115,
+    "hit_d6": "&GMBB^JvFz~[W",
+    "hit_arcs": 39
+   }
+  ]
+ },
+ {
+  "n7_index": 28,
+  "n7_d6": "&FMELx\\v|p?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8723,
+    "hit_d6": "&GNBb^zr\\z~[G",
+    "hit_arcs": 42
+   },
+   {
+    "v": 5,
+    "hit_index": 8126,
+    "hit_d6": "&GMBB^Jv^z~[W",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 29,
+  "n7_d6": "&FMELx\\vxz?",
+  "n7_arcs": 30,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 30,
+  "n7_d6": "&FMELx\\v|x?",
+  "n7_arcs": 30,
+  "lifts_in_hits": [
+   {
+    "v": 5,
+    "hit_index": 8667,
+    "hit_d6": "&GMBB^Jv^z~]W",
+    "hit_arcs": 42
+   }
+  ]
+ },
+ {
+  "n7_index": 31,
+  "n7_d6": "&FKDHy]rsp?",
+  "n7_arcs": 24,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 32,
+  "n7_d6": "&FNDH~\\uts?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 3,
+    "hit_index": 8224,
+    "hit_d6": "&GNaQ^z~\\zX\\_",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 33,
+  "n7_d6": "&FNE[lLQ{`?",
+  "n7_arcs": 24,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 34,
+  "n7_d6": "&FNFL|\\ulo?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 35,
+  "n7_d6": "&FNFL|\\u|o?",
+  "n7_arcs": 30,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 9010,
+    "hit_d6": "&GNbr^zz\\z^[?",
+    "hit_arcs": 43
+   }
+  ]
+ },
+ {
+  "n7_index": 36,
+  "n7_d6": "&FNFL|\\u|w?",
+  "n7_arcs": 31,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 37,
+  "n7_d6": "&FND|mGu\\k?",
+  "n7_arcs": 27,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 38,
+  "n7_d6": "&FNDL}[ulw?",
+  "n7_arcs": 28,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 39,
+  "n7_d6": "&FNDL}[u|o?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 7752,
+    "hit_d6": "&GNbR^z{[z^[?",
+    "hit_arcs": 40
+   }
+  ]
+ },
+ {
+  "n7_index": 40,
+  "n7_d6": "&FNDL}[u|w?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 41,
+  "n7_d6": "&FNDL~[uds?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 3,
+    "hit_index": 7729,
+    "hit_d6": "&GNaR^z~[zP\\_",
+    "hit_arcs": 40
+   }
+  ]
+ },
+ {
+  "n7_index": 42,
+  "n7_d6": "&FNDL~[ulo?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 7760,
+    "hit_d6": "&GNbR^z~[zR[?",
+    "hit_arcs": 40
+   }
+  ]
+ },
+ {
+  "n7_index": 43,
+  "n7_d6": "&FNDL~[uls?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8285,
+    "hit_d6": "&GNbR^z~[zR[_",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 44,
+  "n7_d6": "&FNDL~[ulw?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 45,
+  "n7_d6": "&FNDL~[uts?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8769,
+    "hit_d6": "&GNbR^z~[z\\[_",
+    "hit_arcs": 42
+   },
+   {
+    "v": 3,
+    "hit_index": 8232,
+    "hit_d6": "&GNaR^z~[zX\\_",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 46,
+  "n7_d6": "&FNFL~[uto?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8772,
+    "hit_d6": "&GNbr^z~[z\\[?",
+    "hit_arcs": 42
+   }
+  ]
+ },
+ {
+  "n7_index": 47,
+  "n7_d6": "&FNFL~[u|o?",
+  "n7_arcs": 30,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 9015,
+    "hit_d6": "&GNbr^z~[z^[?",
+    "hit_arcs": 43
+   },
+   {
+    "v": 3,
+    "hit_index": 9015,
+    "hit_d6": "&GNbr^z~[z^[?",
+    "hit_arcs": 43
+   }
+  ]
+ },
+ {
+  "n7_index": 48,
+  "n7_d6": "&FNFL~[u|w?",
+  "n7_arcs": 31,
+  "lifts_in_hits": [
+   {
+    "v": 3,
+    "hit_index": 9109,
+    "hit_d6": "&GNbr^z~[z^]?",
+    "hit_arcs": 44
+   }
+  ]
+ },
+ {
+  "n7_index": 49,
+  "n7_d6": "&FMDh~\\v\\s?",
+  "n7_arcs": 30,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 50,
+  "n7_d6": "&FM@|vCtxi?",
+  "n7_arcs": 26,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 51,
+  "n7_d6": "&FMDl~[v\\s?",
+  "n7_arcs": 30,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8979,
+    "hit_d6": "&GNBZ^z~[zn[_",
+    "hit_arcs": 43
+   }
+  ]
+ },
+ {
+  "n7_index": 52,
+  "n7_d6": "&FNFH[Yepu?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 53,
+  "n7_d6": "&FN?|v^qTm?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 3,
+    "hit_index": 8221,
+    "hit_d6": "&GN_N]z~^xHZo",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 54,
+  "n7_d6": "&FN?|~^oTm?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 8743,
+    "hit_d6": "&GN_N^z~^wLZo",
+    "hit_arcs": 42
+   },
+   {
+    "v": 3,
+    "hit_index": 8222,
+    "hit_d6": "&GN_N^z~^wHZo",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 55,
+  "n7_d6": "&FNcXvZVlM?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 56,
+  "n7_d6": "&FNcXv^VkL?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 3,
+    "hit_index": 8779,
+    "hit_d6": "&GNqE]z~^ZvBg",
+    "hit_arcs": 42
+   }
+  ]
+ },
+ {
+  "n7_index": 57,
+  "n7_d6": "&F]SpqXRDk?",
+  "n7_arcs": 23,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 58,
+  "n7_d6": "&F]S`YTbKx?",
+  "n7_arcs": 23,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 59,
+  "n7_d6": "&F^UX_TE{h?",
+  "n7_arcs": 24,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 60,
+  "n7_d6": "&F^UWxTClb?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 61,
+  "n7_d6": "&F^VGzKUpo?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 62,
+  "n7_d6": "&F^UXb\\Eoh?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 63,
+  "n7_d6": "&F^VLOSekx?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 64,
+  "n7_d6": "&F]VhW[rSp?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 65,
+  "n7_d6": "&F]UhoTFLx?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 66,
+  "n7_d6": "&F]UgxDVWr?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 67,
+  "n7_d6": "&F]UHOTfkx?",
+  "n7_arcs": 24,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 68,
+  "n7_d6": "&F]UGx\\Dhq?",
+  "n7_arcs": 24,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 69,
+  "n7_d6": "&F]ShY\\`Dq?",
+  "n7_arcs": 23,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 70,
+  "n7_d6": "&F]UhqLPT}?",
+  "n7_arcs": 26,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 71,
+  "n7_d6": "&F]UhY\\`Dr?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 72,
+  "n7_d6": "&F]UhA\\bT{?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 73,
+  "n7_d6": "&F^UXk\\Esb?",
+  "n7_arcs": 26,
+  "lifts_in_hits": [
+   {
+    "v": 6,
+    "hit_index": 2070,
+    "hit_d6": "&GBzYVbuEJ][o",
+    "hit_arcs": 35
+   }
+  ]
+ },
+ {
+  "n7_index": 74,
+  "n7_d6": "&F^UXkHQte?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 75,
+  "n7_d6": "&F^UXc\\Cxi?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 76,
+  "n7_d6": "&F^UXk\\Eop?",
+  "n7_arcs": 25,
+  "lifts_in_hits": [
+   {
+    "v": 1,
+    "hit_index": 3260,
+    "hit_d6": "&GXrKZbkRbb^o",
+    "hit_arcs": 35
+   },
+   {
+    "v": 2,
+    "hit_index": 1091,
+    "hit_d6": "&GLy[ZQkQrQ^o",
+    "hit_arcs": 34
+   }
+  ]
+ },
+ {
+  "n7_index": 77,
+  "n7_d6": "&F^VH[Xacv?",
+  "n7_arcs": 26,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 78,
+  "n7_d6": "&F^VH[Tch}?",
+  "n7_arcs": 27,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 79,
+  "n7_d6": "&F^VXkXups?",
+  "n7_arcs": 28,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 80,
+  "n7_d6": "&F^TXmOEwd?",
+  "n7_arcs": 24,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 81,
+  "n7_d6": "&F^TxULoDi?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 82,
+  "n7_d6": "&F^TXeLUoh?",
+  "n7_arcs": 25,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 83,
+  "n7_d6": "&F^V\\K[epa?",
+  "n7_arcs": 26,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 4778,
+    "hit_d6": "&GZpxTbi\\@j^g",
+    "hit_arcs": 36
+   }
+  ]
+ },
+ {
+  "n7_index": 84,
+  "n7_d6": "&F^V\\K[spa?",
+  "n7_arcs": 26,
+  "lifts_in_hits": [
+   {
+    "v": 4,
+    "hit_index": 3396,
+    "hit_d6": "&GZqsYpHLhv^O",
+    "hit_arcs": 35
+   }
+  ]
+ },
+ {
+  "n7_index": 85,
+  "n7_d6": "&F^VKlKQsp?",
+  "n7_arcs": 25,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 4617,
+    "hit_d6": "&GXp|OayQrz]w",
+    "hit_arcs": 36
+   }
+  ]
+ },
+ {
+  "n7_index": 86,
+  "n7_d6": "&F^V[tSUhw?",
+  "n7_arcs": 27,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 87,
+  "n7_d6": "&F^V[tSUxw?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 5,
+    "hit_index": 5102,
+    "hit_d6": "&GJx|Dii\\r[\\o",
+    "hit_arcs": 37
+   }
+  ]
+ },
+ {
+  "n7_index": 88,
+  "n7_d6": "&F^UK|\\Udy?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 89,
+  "n7_d6": "&F^VLM[eov?",
+  "n7_arcs": 28,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 90,
+  "n7_d6": "&F]UxsTFHj?",
+  "n7_arcs": 26,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 91,
+  "n7_d6": "&F]Th]CvWr?",
+  "n7_arcs": 26,
+  "lifts_in_hits": [
+   {
+    "v": 2,
+    "hit_index": 4666,
+    "hit_d6": "&GYp\\Pb}NiiZo",
+    "hit_arcs": 36
+   }
+  ]
+ },
+ {
+  "n7_index": 92,
+  "n7_d6": "&F^vlKUe[R?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 7889,
+    "hit_d6": "&GVprCHzLj~^w",
+    "hit_arcs": 40
+   },
+   {
+    "v": 6,
+    "hit_index": 6095,
+    "hit_d6": "&GZ`tFgZLX~\\W",
+    "hit_arcs": 37
+   }
+  ]
+ },
+ {
+  "n7_index": 93,
+  "n7_d6": "&F^vk\\Yo\\U?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 8441,
+    "hit_d6": "&GV?~NYK]r~^w",
+    "hit_arcs": 41
+   },
+   {
+    "v": 5,
+    "hit_index": 7327,
+    "hit_d6": "&GV_^NXLZJm^w",
+    "hit_arcs": 39
+   }
+  ]
+ },
+ {
+  "n7_index": 94,
+  "n7_d6": "&F^vL[Yqt[?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 8075,
+    "hit_d6": "&GJw|KxHLz~^w",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 95,
+  "n7_d6": "&F^uk\\^_TU?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 7809,
+    "hit_d6": "&GNy[[P|@j~^w",
+    "hit_arcs": 40
+   }
+  ]
+ },
+ {
+  "n7_index": 96,
+  "n7_d6": "&F^uK\\^clR?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 97,
+  "n7_d6": "&F^ulC^a{\\?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 8437,
+    "hit_d6": "&GV?~KY{]r~^w",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 98,
+  "n7_d6": "&F^vleMoT]?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 8467,
+    "hit_d6": "&GVo~KYK]r~^w",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 99,
+  "n7_d6": "&F^vl]UakR?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 8395,
+    "hit_d6": "&GQr}NhHRr~^w",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 100,
+  "n7_d6": "&F^uleNUTW?",
+  "n7_arcs": 28,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 101,
+  "n7_d6": "&F^u|uVEhI?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 102,
+  "n7_d6": "&F^u|uNOlI?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 103,
+  "n7_d6": "&F^v|^Fo\\B?",
+  "n7_arcs": 31,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 9084,
+    "hit_d6": "&G[P|NgN^z~\\w",
+    "hit_arcs": 43
+   },
+   {
+    "v": 1,
+    "hit_index": 9084,
+    "hit_d6": "&G[P|NgN^z~\\w",
+    "hit_arcs": 43
+   },
+   {
+    "v": 5,
+    "hit_index": 8561,
+    "hit_d6": "&G]O|FyZBz~\\w",
+    "hit_arcs": 41
+   }
+  ]
+ },
+ {
+  "n7_index": 104,
+  "n7_d6": "&F^vlmZEPT?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 105,
+  "n7_d6": "&F^UxkNSta?",
+  "n7_arcs": 27,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 106,
+  "n7_d6": "&F^V\\[]e`e?",
+  "n7_arcs": 28,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 107,
+  "n7_d6": "&F^V{\\Uchb?",
+  "n7_arcs": 28,
+  "lifts_in_hits": [
+   {
+    "v": 1,
+    "hit_index": 7074,
+    "hit_d6": "&GJg|XoXFz~^W",
+    "hit_arcs": 39
+   }
+  ]
+ },
+ {
+  "n7_index": 108,
+  "n7_d6": "&F^S{^ReL|?",
+  "n7_arcs": 30,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 109,
+  "n7_d6": "&F^V|mMSPb?",
+  "n7_arcs": 28,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 110,
+  "n7_d6": "&F^U|m^SPb?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 111,
+  "n7_d6": "&F^U|]VeLk?",
+  "n7_arcs": 30,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 112,
+  "n7_d6": "&F^UluNQT|?",
+  "n7_arcs": 30,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 113,
+  "n7_d6": "&F^Ul]NsTu?",
+  "n7_arcs": 30,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 114,
+  "n7_d6": "&F^U|m^QTq?",
+  "n7_arcs": 30,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 115,
+  "n7_d6": "&F^U|eNUTw?",
+  "n7_arcs": 29,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 116,
+  "n7_d6": "&F^U|uJQT|?",
+  "n7_arcs": 30,
+  "lifts_in_hits": []
+ },
+ {
+  "n7_index": 117,
+  "n7_d6": "&F^v\\SYfdM?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 8869,
+    "hit_d6": "&GUq}SPz^b~^w",
+    "hit_arcs": 42
+   }
+  ]
+ },
+ {
+  "n7_index": 118,
+  "n7_d6": "&F^v[\\UpkN?",
+  "n7_arcs": 30,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 9063,
+    "hit_d6": "&GV?~NY{]r~^w",
+    "hit_arcs": 43
+   }
+  ]
+ },
+ {
+  "n7_index": 119,
+  "n7_d6": "&F^v\\eMp{J?",
+  "n7_arcs": 30,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 9073,
+    "hit_d6": "&GVo~NYK]r~^w",
+    "hit_arcs": 43
+   }
+  ]
+ },
+ {
+  "n7_index": 120,
+  "n7_d6": "&F^v\\]YddU?",
+  "n7_arcs": 30,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 9040,
+    "hit_d6": "&GQr}NhH^r~^w",
+    "hit_arcs": 43
+   }
+  ]
+ },
+ {
+  "n7_index": 121,
+  "n7_d6": "&F^u\\eNVoJ?",
+  "n7_arcs": 29,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 8905,
+    "hit_d6": "&GVp~FHz@j~^w",
+    "hit_arcs": 42
+   }
+  ]
+ },
+ {
+  "n7_index": 122,
+  "n7_d6": "&F^u\\mFTxJ?",
+  "n7_arcs": 30,
+  "lifts_in_hits": [
+   {
+    "v": 0,
+    "hit_index": 9076,
+    "hit_d6": "&GVo~NY{]o~^w",
+    "hit_arcs": 43
+   }
+  ]
+ }
+]

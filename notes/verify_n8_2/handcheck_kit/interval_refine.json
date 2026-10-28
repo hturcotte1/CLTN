@@ -1,0 +1,97 @@
+{
+ "C1": {
+  "lo": {
+   "exact": "2",
+   "ok": true
+  },
+  "hi": {
+   "refined": [
+    "245/122",
+    "123/61"
+   ],
+   "steps": 1,
+   "side": "below",
+   "ok": true
+  }
+ },
+ "C2": {
+  "lo": {
+   "exact": "2",
+   "ok": true
+  },
+  "hi": {
+   "refined": [
+    "93/46",
+    "47/23"
+   ],
+   "steps": 1,
+   "side": "below",
+   "ok": true
+  }
+ },
+ "C3": {
+  "lo": {
+   "refined": [
+    "2",
+    "9/4"
+   ],
+   "steps": 0,
+   "side": "above",
+   "ok": true
+  },
+  "hi": {
+   "refined": [
+    "8/3",
+    "11/4"
+   ],
+   "steps": 0,
+   "side": "below",
+   "ok": true
+  }
+ },
+ "C4": {
+  "lo": {
+   "exact": "2",
+   "ok": true
+  },
+  "hi": {
+   "refined": [
+    "4289/2144",
+    "2145/1072"
+   ],
+   "steps": 3,
+   "side": "below",
+   "ok": true
+  }
+ },
+ "C5": {
+  "lo": {
+   "exact": "2",
+   "ok": true
+  },
+  "hi": {
+   "refined": [
+    "29/14",
+    "15/7"
+   ],
+   "steps": 1,
+   "side": "below",
+   "ok": true
+  }
+ },
+ "C6": {
+  "lo": {
+   "exact": "2",
+   "ok": true
+  },
+  "hi": {
+   "refined": [
+    "9/4",
+    "16/7"
+   ],
+   "steps": 0,
+   "side": "below",
+   "ok": true
+  }
+ }
+}

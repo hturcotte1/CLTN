@@ -1,0 +1,54 @@
+[
+ {
+  "point": "parent_mid",
+  "beta": "773/384",
+  "t": 10000,
+  "blowup": [
+   "stable",
+   false
+  ],
+  "parent": [
+   "stable",
+   true
+  ]
+ },
+ {
+  "point": "parent_mid",
+  "beta": "773/384",
+  "t": 100000,
+  "blowup": [
+   "stable",
+   false
+  ],
+  "parent": [
+   "stable",
+   true
+  ]
+ },
+ {
+  "point": "hit_mid",
+  "beta": "24323/11520",
+  "t": 10000,
+  "blowup": [
+   "stable",
+   true
+  ],
+  "parent": [
+   "unstable",
+   true
+  ]
+ },
+ {
+  "point": "hit_mid",
+  "beta": "24323/11520",
+  "t": 100000,
+  "blowup": [
+   "stable",
+   true
+  ],
+  "parent": [
+   "unstable",
+   true
+  ]
+ }
+]

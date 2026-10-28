@@ -1,0 +1,21 @@
+{
+ "tables": {
+  "sample_S.jsonl": {
+   "('S', True, '<')": 300
+  },
+  "sample_B.jsonl": {
+   "('B', True, '=')": 70,
+   "('B', True, '>')": 230
+  },
+  "sample_NPDF.jsonl": {
+   "('nonprinted_domfree', True, '>')": 300
+  },
+  "sample_NDF.jsonl": {
+   "('nonprinted_nondomfree', False, None)": 300
+  },
+  "sample_stride_domfree.jsonl": {
+   "('stride_domfree', True, '>')": 8
+  }
+ },
+ "seconds": 10.0
+}

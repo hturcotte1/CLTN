@@ -1,0 +1,209 @@
+{
+ "K8 beta=2001/1000": {
+  "stabpos_roots": 0,
+  "stabpos_unbounded": true,
+  "full_S": [
+   {
+    "left": {
+     "lo": "1000",
+     "hi": "1000",
+     "factor_index": 9
+    },
+    "right": null
+   }
+  ],
+  "t_legal": "1000"
+ },
+ "K8 beta=5/2": {
+  "stabpos_roots": 0,
+  "stabpos_unbounded": true,
+  "full_S": [
+   {
+    "left": {
+     "lo": "2",
+     "hi": "2",
+     "factor_index": 9
+    },
+    "right": null
+   }
+  ],
+  "t_legal": "2"
+ },
+ "K8 beta=7/2": {
+  "stabpos_roots": 0,
+  "stabpos_unbounded": true,
+  "full_S": [
+   {
+    "left": {
+     "lo": "2/3",
+     "hi": "2/3",
+     "factor_index": 9
+    },
+    "right": null
+   }
+  ],
+  "t_legal": "2/3"
+ },
+ "empty beta=5/2": {
+  "S_sp": [],
+  "unbounded": false
+ },
+ "never_controls": {
+  "never_full": {
+   "n": 40,
+   "any_unbounded": 0,
+   "any_S_nonempty": 1
+  },
+  "never_positivity": {
+   "n": 40,
+   "any_unbounded": 0,
+   "any_S_nonempty": 0
+  }
+ },
+ "n7_sample": [
+  {
+   "d6": "&FNDL~[uds?",
+   "beta_stable_cell": "53/26",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "26",
+    "hi": "26",
+    "factor_index": 8
+   },
+   "beta_unstable_cell": "11",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&F^u\\eNVoJ?",
+   "beta_stable_cell": "28/13",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "13/2",
+    "hi": "13/2",
+    "factor_index": 8
+   },
+   "beta_unstable_cell": "8",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&FMELx\\Vpv?",
+   "beta_stable_cell": "53/26",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "26",
+    "hi": "26",
+    "factor_index": 8
+   },
+   "beta_unstable_cell": "10",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&FM@|vCtxi?",
+   "beta_stable_cell": "65/32",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "32",
+    "hi": "32",
+    "factor_index": 7
+   },
+   "beta_unstable_cell": "7",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&F^V\\K[epa?",
+   "beta_stable_cell": "101/50",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "50",
+    "hi": "50",
+    "factor_index": 7
+   },
+   "beta_unstable_cell": "5",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&FMEHz\\vxr?",
+   "beta_stable_cell": "29/14",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "14",
+    "hi": "14",
+    "factor_index": 8
+   },
+   "beta_unstable_cell": "10/3",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&FMBlWKt\\y?",
+   "beta_stable_cell": "221/110",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "110",
+    "hi": "110",
+    "factor_index": 7
+   },
+   "beta_unstable_cell": "9/2",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&F^UxkNSta?",
+   "beta_stable_cell": "213/106",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "106",
+    "hi": "106",
+    "factor_index": 7
+   },
+   "beta_unstable_cell": "14",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&F]UGx\\Dhq?",
+   "beta_stable_cell": "25/12",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "12",
+    "hi": "12",
+    "factor_index": 7
+   },
+   "beta_unstable_cell": "4",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&FMAkxXbD{?",
+   "beta_stable_cell": "161/80",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "80",
+    "hi": "80",
+    "factor_index": 7
+   },
+   "beta_unstable_cell": "7/2",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&FNFL~[uto?",
+   "beta_stable_cell": "53/26",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "26",
+    "hi": "26",
+    "factor_index": 8
+   },
+   "beta_unstable_cell": "9",
+   "unbounded_at_unstable_cell_beta": false
+  },
+  {
+   "d6": "&F^UXkHQte?",
+   "beta_stable_cell": "137/68",
+   "unbounded_at_stable_cell_beta": true,
+   "t_star": {
+    "lo": "68",
+    "hi": "68",
+    "factor_index": 7
+   },
+   "beta_unstable_cell": "9/2",
+   "unbounded_at_unstable_cell_beta": false
+  }
+ ]
+}

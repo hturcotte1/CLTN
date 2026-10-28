@@ -1,0 +1,1402 @@
+[
+{
+"never_idx": 0,
+"line": 0,
+"d6": "&G@_wOr~QrI]_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 1692,
+"line": 1700,
+"d6": "&GMAOUQu]Pt]W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 3384,
+"line": 3410,
+"d6": "&G[bKWB{V`jMG",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 5076,
+"line": 5120,
+"d6": "&GM?wSpr]Zm]?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 6768,
+"line": 6831,
+"d6": "&GMAoMRXNht]O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 8460,
+"line": 8535,
+"d6": "&GN@GRj]\\ie[O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 10152,
+"line": 10251,
+"d6": "&GNAmEybPPbZo",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 11844,
+"line": 11968,
+"d6": "&GN`vQArWqXYo",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 13536,
+"line": 13693,
+"d6": "&GJBAM`|HJt^o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 15228,
+"line": 15409,
+"d6": "&GM@ORi}UzvKG",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 16920,
+"line": 17129,
+"d6": "&GMAYVZuZ@lKg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 18612,
+"line": 18839,
+"d6": "&GN?hMPZNHtMw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 20304,
+"line": 20551,
+"d6": "&GN@j@B~VriKG",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 21996,
+"line": 22266,
+"d6": "&GNAmTprPB}Gw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 23688,
+"line": 23979,
+"d6": "&GNBiVbqXbc\\_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 25380,
+"line": 25686,
+"d6": "&GNarXr?[j\\LG",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 27072,
+"line": 27403,
+"d6": "&GXPlSbyVAyMW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 28764,
+"line": 29176,
+"d6": "&G]asTQqMWxNW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 30456,
+"line": 30912,
+"d6": "&GLY[MYKYRs^o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 32148,
+"line": 32631,
+"d6": "&GM@R^Hd]hxLg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 33840,
+"line": 34361,
+"d6": "&GMAY[Ys^Pj^_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 35532,
+"line": 36080,
+"d6": "&GMBqRBrIzx[g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 37224,
+"line": 37808,
+"d6": "&GN?z]yC[rs^?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 38916,
+"line": 39521,
+"d6": "&GN@jQBrLgh^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 40608,
+"line": 41234,
+"d6": "&GNAbYx@\\bs^g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 42300,
+"line": 42946,
+"d6": "&GNAz^yqSRa\\?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 43992,
+"line": 44667,
+"d6": "&GNBa]Rp\\I{]O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 45684,
+"line": 46377,
+"d6": "&GN_|LP\\Ijk[g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 47376,
+"line": 48086,
+"d6": "&GNaqZqQ[q\\LW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 49068,
+"line": 49796,
+"d6": "&GNqIZykFwBFW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 50760,
+"line": 51525,
+"d6": "&GTrMNJ[BHVMg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 52452,
+"line": 53297,
+"d6": "&GXplUbINHT^O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 54144,
+"line": 55063,
+"d6": "&G\\OlFWjJXpZo",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 55836,
+"line": 56832,
+"d6": "&GDymMXxFGZJw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 57528,
+"line": 58578,
+"d6": "&GJzKVbuBIqVo",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 59220,
+"line": 60334,
+"d6": "&GM?Z^ZfUZa^?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 60912,
+"line": 62077,
+"d6": "&GM@ZZBt^``^g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 62604,
+"line": 63826,
+"d6": "&GMA]^qVNYlWO",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 64296,
+"line": 65555,
+"d6": "&GMBqZJrYxt[_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 65988,
+"line": 67283,
+"d6": "&GN?n]yRTpfIW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 67680,
+"line": 69004,
+"d6": "&GN@W[wl\\Xj^_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 69372,
+"line": 70711,
+"d6": "&GNAINyt\\R{]?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 71064,
+"line": 72425,
+"d6": "&GNAiFRzVBu[W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 72756,
+"line": 74144,
+"d6": "&GNAqZr@Wj{\\w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 74448,
+"line": 75864,
+"d6": "&GNBMYa}JypYo",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 76140,
+"line": 77576,
+"d6": "&GNBjTau\\rh\\?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 77832,
+"line": 79315,
+"d6": "&GN_~BQjUpVZ_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 79524,
+"line": 81024,
+"d6": "&GNaMYr[NiLZO",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 81216,
+"line": 82745,
+"d6": "&GNauYzP[aS^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 82908,
+"line": 84460,
+"d6": "&GNbaTXrXzXKg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 84600,
+"line": 86181,
+"d6": "&GNrI\\bmFIIVW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 86292,
+"line": 87949,
+"d6": "&GRqmFwrJWpVo",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 87984,
+"line": 89713,
+"d6": "&GUrUNHlR@zFg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 89676,
+"line": 91479,
+"d6": "&GXRKNhlJGx^o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 91368,
+"line": 93255,
+"d6": "&GYq{ZoPEwf^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 93060,
+"line": 95042,
+"d6": "&G\\P|YAW]p|]O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 94752,
+"line": 96810,
+"d6": "&G^qs]PxTB]]?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 96444,
+"line": 98577,
+"d6": "&GHxX\\a[EY}Nw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 98136,
+"line": 100316,
+"d6": "&GK?{^RnVhrZG",
+"reason": null,
+"has_cert": true
+},
+{
+"never_idx": 99828,
+"line": 102093,
+"d6": "&GM?Z^ZU]Xd]g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 101520,
+"line": 103839,
+"d6": "&GM@Z]Bu^bm]O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 103212,
+"line": 105599,
+"d6": "&GMAqYzvMhp^G",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 104904,
+"line": 107304,
+"d6": "&GMBrJh`]zy\\G",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 106596,
+"line": 109037,
+"d6": "&GN?kNyULY|Lw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 108288,
+"line": 110762,
+"d6": "&GN@KXrn\\ryXO",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 109980,
+"line": 112463,
+"d6": "&GN@zHP\\^jk[o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 111672,
+"line": 114187,
+"d6": "&GNAZVz}KJm[?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 113364,
+"line": 115897,
+"d6": "&GNAi^xbTbuLg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 115056,
+"line": 117620,
+"d6": "&GNAzNwBGZl^g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 116748,
+"line": 119354,
+"d6": "&GNBNYb|RqqYo",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 118440,
+"line": 121066,
+"d6": "&GNBiTau\\rn[O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 120132,
+"line": 122789,
+"d6": "&GN_^XzMHzLX_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 121824,
+"line": 124491,
+"d6": "&GN`fDA~Ly^Gw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 123516,
+"line": 126202,
+"d6": "&GNaVTq~Gy[[o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 125208,
+"line": 127925,
+"d6": "&GNayZzU\\oLKW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 126900,
+"line": 129647,
+"d6": "&GNbR^wnKXR\\?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 128592,
+"line": 131374,
+"d6": "&GNbrVii\\XX\\?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 130284,
+"line": 133095,
+"d6": "&GNrYSg~LZIUo",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 131976,
+"line": 134844,
+"d6": "&GQrmY`pR`z^g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 133668,
+"line": 136624,
+"d6": "&GTP~BJyQbyNg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 135360,
+"line": 138390,
+"d6": "&GURQZBkFg~^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 137052,
+"line": 140188,
+"d6": "&GVp^FJUUB}DW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 138744,
+"line": 141954,
+"d6": "&GXbsNgxNYwNW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 140436,
+"line": 143727,
+"d6": "&GYp\\ZbKV`nFg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 142128,
+"line": 145507,
+"d6": "&GZo|RpZP`nMg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 143820,
+"line": 147293,
+"d6": "&G\\akVPZBH~]o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 145512,
+"line": 149053,
+"d6": "&G^p\\YA{Dwj]W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 147204,
+"line": 150782,
+"d6": "&GFxVBIuRpzFw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 148896,
+"line": 152527,
+"d6": "&GJw\\MwtVRmEw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 150588,
+"line": 154312,
+"d6": "&GLyKJY[Rqu^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 152280,
+"line": 156061,
+"d6": "&GMAQVXvNJz\\g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 153972,
+"line": 157781,
+"d6": "&GMBY^juNwd\\O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 155664,
+"line": 159521,
+"d6": "&GN?wTzvKzn\\?",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 157356,
+"line": 161246,
+"d6": "&GNAIZz[XreNw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 159048,
+"line": 162958,
+"d6": "&GNA]]zNCjuZ_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 160740,
+"line": 164686,
+"d6": "&GNAmVxrLI}[W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 162432,
+"line": 166405,
+"d6": "&GNBM^_|PRz\\g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 164124,
+"line": 168130,
+"d6": "&GNBiRbu\\zc\\o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 165816,
+"line": 169855,
+"d6": "&GN_VYr[\\b[^g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 167508,
+"line": 171575,
+"d6": "&GNaR^w|OzY[g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 169200,
+"line": 173306,
+"d6": "&GNbE\\a~TRZHw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 170892,
+"line": 175025,
+"d6": "&GNbVNjmSBU^_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 172584,
+"line": 176742,
+"d6": "&GNbvRryWwP]o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 174276,
+"line": 178464,
+"d6": "&GNw\\YPtFhj^O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 175968,
+"line": 180202,
+"d6": "&GRQ}UobEZ}^g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 177660,
+"line": 181980,
+"d6": "&GRr}EgZNW\\^O",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 179352,
+"line": 183753,
+"d6": "&GTruFHzBJy[w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 181044,
+"line": 185545,
+"d6": "&GVR}BHZNg|MW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 182736,
+"line": 187318,
+"d6": "&GXQkVqiFW~^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 184428,
+"line": 189084,
+"d6": "&GYO|VozZPlNg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 186120,
+"line": 190837,
+"d6": "&GZRKNgdFW~^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 187812,
+"line": 192644,
+"d6": "&GZr{]_xNXX]G",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 189504,
+"line": 194439,
+"d6": "&G]ptBHzJhrMw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 191196,
+"line": 196169,
+"d6": "&GBz}NgxVQYVo",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 192888,
+"line": 197922,
+"d6": "&GFy}JYg^oR^o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 194580,
+"line": 199676,
+"d6": "&GJxtBiY\\q{Nw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 196272,
+"line": 201443,
+"d6": "&GM?ZUru^za^o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 197964,
+"line": 203166,
+"d6": "&GMAr^or]q}\\o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 199656,
+"line": 204905,
+"d6": "&GN?^XzmWr}Z_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 201348,
+"line": 206625,
+"d6": "&GN@z@B^]jmNw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 203040,
+"line": 208335,
+"d6": "&GNA]Vr~?JvZg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 204732,
+"line": 210051,
+"d6": "&GNAmZzvX`tYg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 206424,
+"line": 211767,
+"d6": "&GNBR]bMKZ{^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 208116,
+"line": 213475,
+"d6": "&GNBj^bRLj|MG",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 209808,
+"line": 215205,
+"d6": "&GN`?Xj|VrZ\\w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 211500,
+"line": 216911,
+"d6": "&GNaV\\z\\[R]Ig",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 213192,
+"line": 218636,
+"d6": "&GNbF]r]^JUYO",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 214884,
+"line": 220362,
+"d6": "&GNbV]g~OzQ]o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 216576,
+"line": 222098,
+"d6": "&GNbvR_zTzR]G",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 218268,
+"line": 223803,
+"d6": "&GNrbEjyRRu]g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 219960,
+"line": 225556,
+"d6": "&GPruJhx^a{Mw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 221652,
+"line": 227303,
+"d6": "&GRp~DiiXr[^o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 223344,
+"line": 229070,
+"d6": "&GTb]YB[FjnZw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 225036,
+"line": 230822,
+"d6": "&GUrUFJ}NGzNW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 226728,
+"line": 232597,
+"d6": "&GVo~BYQQr}Nw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 228420,
+"line": 234362,
+"d6": "&GXbsVayFW~Nw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 230112,
+"line": 236145,
+"d6": "&GYp|RbIVa}Nw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 231804,
+"line": 237895,
+"d6": "&GZR[^`|HhtNg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 233496,
+"line": 239648,
+"d6": "&GZrkMgX^W\\Zw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 235188,
+"line": 241428,
+"d6": "&G]r[NIkNXhNw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 236880,
+"line": 243146,
+"d6": "&GEy}FZY^A{^o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 238572,
+"line": 244882,
+"d6": "&GJWtZpx^a{Zw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 240264,
+"line": 246621,
+"d6": "&GLxtIHxJjx^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 241956,
+"line": 248346,
+"d6": "&GMwTVP~JhvLw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 243648,
+"line": 250070,
+"d6": "&GNAMZz[Xr~[g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 245340,
+"line": 251788,
+"d6": "&GNAmVzrLYy\\W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 247032,
+"line": 253506,
+"d6": "&GNBbZjq\\b|\\W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 248724,
+"line": 255224,
+"d6": "&GNaM^z^RPFZg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 250416,
+"line": 256934,
+"d6": "&GNbM^h^^JC]o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 252108,
+"line": 258648,
+"d6": "&GNbn\\zJ^bMHG",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 253800,
+"line": 260356,
+"d6": "&GNw\\TQ}Hz{\\o",
+"reason": null,
+"has_cert": true
+},
+{
+"never_idx": 255492,
+"line": 262106,
+"d6": "&GRRyY_xNx|]w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 257184,
+"line": 263847,
+"d6": "&GSrmFj}VbuEw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 258876,
+"line": 265596,
+"d6": "&GUrUFJmNHz^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 260568,
+"line": 267328,
+"d6": "&GVpzCHzLim^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 262260,
+"line": 269088,
+"d6": "&GXr[Ni[FZnNW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 263952,
+"line": 270857,
+"d6": "&GZP|UayNX|]o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 265644,
+"line": 272613,
+"d6": "&GZr[U`VBJn^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 267336,
+"line": 274356,
+"d6": "&G^q[\\Q{DyzZW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 269028,
+"line": 276076,
+"d6": "&GFy]EX^FJ}Nw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 270720,
+"line": 277802,
+"d6": "&GJy{\\oxLy|Fw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 272412,
+"line": 279530,
+"d6": "&GMw|\\OX^o~]w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 274104,
+"line": 281248,
+"d6": "&GNAZ^ynCxb^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 275796,
+"line": 282963,
+"d6": "&GNBN^i}XZrYg",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 277488,
+"line": 284666,
+"d6": "&GNY[\\Q{Nz}LW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 279180,
+"line": 286367,
+"d6": "&GNbF]bnVbu^_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 280872,
+"line": 288070,
+"d6": "&GNbeVbyJit^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 282564,
+"line": 289778,
+"d6": "&GNrE^b\\^JtEw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 284256,
+"line": 291489,
+"d6": "&GNy[TP~Bj}Lw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 285948,
+"line": 293227,
+"d6": "&GRq}JwpUr}Nw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 287640,
+"line": 294945,
+"d6": "&GUqyNZK]pn^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 289332,
+"line": 296680,
+"d6": "&GVp~FiEMyt^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 291024,
+"line": 298461,
+"d6": "&GYqwVojFzV^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 292716,
+"line": 300193,
+"d6": "&GZqsVpZLJu^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 294408,
+"line": 301920,
+"d6": "&G^a{EWzZXj^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 296100,
+"line": 303649,
+"d6": "&GFyiUP~Pzy^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 297792,
+"line": 305401,
+"d6": "&GMg\\NX\\Fx~\\w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 299484,
+"line": 307173,
+"d6": "&GNBZ^j|[zf[_",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 301176,
+"line": 308937,
+"d6": "&GNbVLjn\\zY\\G",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 302868,
+"line": 310653,
+"d6": "&GNwlFwVZpv^g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 304560,
+"line": 312407,
+"d6": "&GRrm]bkFxz^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 306252,
+"line": 314146,
+"d6": "&GVpvDHjLj~^o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 307944,
+"line": 315889,
+"d6": "&GZolUo~^pZZw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 309636,
+"line": 317625,
+"d6": "&G^p\\EI}^Zi^o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 311328,
+"line": 319384,
+"d6": "&GFz}NjK^b]\\W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 313020,
+"line": 321197,
+"d6": "&GNBJ^j~Xz{[o",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 314712,
+"line": 322948,
+"d6": "&GNbJ^j|VBM^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 316404,
+"line": 324730,
+"d6": "&GNrbVbi^zr\\W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 318096,
+"line": 326515,
+"d6": "&GRr]Nh\\Dj~Nw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 319788,
+"line": 328267,
+"d6": "&GVpvNiu^Z{Iw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 321480,
+"line": 330024,
+"d6": "&GZq{Vr]Ur}Fw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 323172,
+"line": 331767,
+"d6": "&GFg~NY{]w|^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 324864,
+"line": 333589,
+"d6": "&GNG|Rp~Vg~^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 326556,
+"line": 335366,
+"d6": "&GNy{LXlMj~Nw",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 328248,
+"line": 337159,
+"d6": "&GVp~Mh\\^a]^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 329940,
+"line": 338882,
+"d6": "&G^p|JjKNz]^W",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 331632,
+"line": 340608,
+"d6": "&GNAj^xr\\z|^g",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 333324,
+"line": 342378,
+"d6": "&GTq}Yp~Uzy^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 335016,
+"line": 344108,
+"d6": "&G^p|Lhv]Z}NW",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+},
+{
+"never_idx": 336708,
+"line": 345831,
+"d6": "&GVq}Zp|^pZ^w",
+"reason": "no legal beta with all a_i > 0 and all o_k < 0",
+"has_cert": false
+}
+]
