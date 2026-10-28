@@ -1,0 +1,30 @@
+{
+ "own_vs_filter8": {
+  "('DROPPED', 'DROPPED')": 676,
+  "('B', 'B')": 42,
+  "('B', 'DROPPED')": 14,
+  "('S', 'S')": 121,
+  "('DROPPED', 'B')": 5
+ },
+ "mismatches": [
+  "&GK?t^Qy]qpIw",
+  "&GMBE]Zv^bvV?",
+  "&GMBE]Zv^jtV?",
+  "&GMBE]Zv^rrV?",
+  "&GMBE]Zv^zpV?",
+  "&GM@V^Jf^zpTO",
+  "&GMBF^Jf^bvV?",
+  "&GMBF^Jf^jtV?",
+  "&GMBF^Jf^rrV?",
+  "&GMBF^Jf^zpV?",
+  "&GKQa^RzNgpDw",
+  "&GNBf^jf\\zwV_",
+  "&GNBf^zrXzwV_",
+  "&GNBeUbIXbuV_",
+  "&G^ZIWZs\\`hUO",
+  "&G]J][as]RjYw",
+  "&G^zvZr[WaT\\o",
+  "&G^Z~ZpxOabNw",
+  "&G^ZZZr|Sab\\o"
+ ]
+}

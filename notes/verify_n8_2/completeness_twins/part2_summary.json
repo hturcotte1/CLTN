@@ -1,0 +1,26 @@
+{
+ "blowups_built": 861,
+ "distinct_blowups": 858,
+ "in_hits": 61,
+ "not_in_hits": 797,
+ "not_in_hits_in_results": 60,
+ "not_in_hits_verdicts": {
+  "(None, None)": 737,
+  "('never', 'no legal beta with all a_i > 0 and all o_k < 0')": 43,
+  "('never', 'never_full')": 17
+ },
+ "not_in_hits_outside_class": 0,
+ "not_in_hits_filter8_flags": {
+  "DROPPED": 690,
+  "B": 47,
+  "S": 60
+ },
+ "missed_counterexamples": [],
+ "parent_control_failures": [],
+ "undecided_points": 0,
+ "in_hits_interval_equal_to_parent": 15,
+ "in_hits_interval_differs": 46,
+ "min_arcs_blowup": 30,
+ "min_underlying_edges_blowup": 26,
+ "seconds": 110.7
+}

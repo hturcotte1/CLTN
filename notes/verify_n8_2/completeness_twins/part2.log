@@ -1,0 +1,39 @@
+Geneson control eps=1/101 delta=29/2525: stable True
+Geneson control eps=1/10 (paper says unstable, minor 3 negative): unstable True [False, False, True, True, True, True]
+hits: own canon distinct 9133 labelg distinct 9133 2.2 s
+blow-ups built: 861 distinct own 858 distinct labelg 858
+partition agreement own/labelg: True
+100 distinct blow-ups processed 21.6 s
+200 distinct blow-ups processed 32.2 s
+300 distinct blow-ups processed 43.9 s
+400 distinct blow-ups processed 54.8 s
+500 distinct blow-ups processed 67.5 s
+600 distinct blow-ups processed 79.2 s
+700 distinct blow-ups processed 90.8 s
+800 distinct blow-ups processed 103.9 s
+{
+ "blowups_built": 861,
+ "distinct_blowups": 858,
+ "in_hits": 61,
+ "not_in_hits": 797,
+ "not_in_hits_in_results": 60,
+ "not_in_hits_verdicts": {
+  "(None, None)": 737,
+  "('never', 'no legal beta with all a_i > 0 and all o_k < 0')": 43,
+  "('never', 'never_full')": 17
+ },
+ "not_in_hits_outside_class": 0,
+ "not_in_hits_filter8_flags": {
+  "DROPPED": 690,
+  "B": 47,
+  "S": 60
+ },
+ "missed_counterexamples": [],
+ "parent_control_failures": [],
+ "undecided_points": 0,
+ "in_hits_interval_equal_to_parent": 15,
+ "in_hits_interval_differs": 46,
+ "min_arcs_blowup": 30,
+ "min_underlying_edges_blowup": 26,
+ "seconds": 110.7
+}
