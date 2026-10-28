@@ -1,0 +1,41 @@
+{
+ "n6": {
+  "total": 3,
+  "holds": {
+   "every_nonsink_node_on_induced_C3": 3,
+   "oneway_digraph_on_nonsinks_strongly_connected": 3,
+   "every_node_has_oneway_out_or_is_sink_or_bidir_universal": 3,
+   "every_node_has_a_oneway_in_arc_or_is_sink": 3,
+   "max_outdeg>=5": 3,
+   "min_outdeg>=2": 3,
+   "min_indeg>=2": 3,
+   "A_has_hamiltonian_cycle": 3
+  }
+ },
+ "n7": {
+  "total": 124,
+  "holds": {
+   "every_nonsink_node_on_induced_C3": 91,
+   "oneway_digraph_on_nonsinks_strongly_connected": 113,
+   "every_node_has_oneway_out_or_is_sink_or_bidir_universal": 124,
+   "every_node_has_a_oneway_in_arc_or_is_sink": 122,
+   "max_outdeg>=5": 124,
+   "min_outdeg>=2": 123,
+   "min_indeg>=2": 124,
+   "A_has_hamiltonian_cycle": 124
+  }
+ },
+ "n8": {
+  "total": 9133,
+  "holds": {
+   "every_nonsink_node_on_induced_C3": 6822,
+   "oneway_digraph_on_nonsinks_strongly_connected": 8451,
+   "every_node_has_oneway_out_or_is_sink_or_bidir_universal": 9108,
+   "every_node_has_a_oneway_in_arc_or_is_sink": 8992,
+   "max_outdeg>=5": 9128,
+   "min_outdeg>=2": 9074,
+   "min_indeg>=2": 9132,
+   "A_has_hamiltonian_cycle": 9133
+  }
+ }
+}

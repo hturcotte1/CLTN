@@ -1,0 +1,440 @@
+[
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "further from -1/2 than Theorem Q's k -> infinity limit (about -0.3516)",
+  "problem": "[HIGH, mathematically wrong] The comparison with Theorem Q is backwards. Larger q needs the minimum real part of the non-edge spectrum closer to 0 (beta_c = -1/minRe). Exact checks in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block C: the record sextic 8z^6+16z^5+34z^4+33z^3+30z^2+13z+5 has a root with Re < -4/11 (Hurwitz minor 3 negative after the shift), while every root of Theorem Q's limit polynomial z^4+z^3+3z^2+z+1 (notes/research_wf3/theory/notes_theory.md line 357) has Re > -5/14, and -4/11 < -5/14. So the record lies to the LEFT of the Q limit, i.e. CLOSER to -1/2, and its q is smaller: Theorem Q gives q -> 1.84416 (notes_theory.md row 11) and counterexamples with q close to 9/5 for k >= 286, whereas q_8*(limit) < 7/4 (isolating interval upper end 2755346911/1610612736).",
+  "suggested_wording": "their q is limited by the spectrum of their own non-edge digraph (minimum real part about -0.3689, display), which lies to the left of (closer to -1/2 than) the k -> infinity limit of Theorem Q (about -0.3516, display, i.e. q -> 1.844); the sink-class families overtake the n = 8 record only for large k (q close to 9/5 needs k >= 286, n >= 293), and at n = 8 itself the record is attained with no sink class at all."
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "the n = 8 record is set by a better **core**, with no sink class at all.",
+  "problem": "[MEDIUM] \"better core\" is ambiguous and, read against the preceding sentence on Q/Q2 limits, wrong: the record core is worse than the k -> infinity limits of both Q (-0.3516) and Q2 (-1/4); see the previous finding and notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block C.",
+  "suggested_wording": "At n = 8 the record is attained by a graph with no sink class at all; Theorems Q and Q2 exceed it only in the limit of large class size (Q needs k >= 286 to reach q close to 9/5)."
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "whose own non-edge spectrum beats the k -> infinity",
+  "problem": "[HIGH, mathematically wrong] The comparison with Theorem Q is backwards. Larger q needs the minimum real part of the non-edge spectrum closer to 0 (beta_c = -1/minRe). Exact checks in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block C: the record sextic 8z^6+16z^5+34z^4+33z^3+30z^2+13z+5 has a root with Re < -4/11 (Hurwitz minor 3 negative after the shift), while every root of Theorem Q's limit polynomial z^4+z^3+3z^2+z+1 (notes/research_wf3/theory/notes_theory.md line 357) has Re > -5/14, and -4/11 < -5/14. So the record lies to the LEFT of the Q limit, i.e. CLOSER to -1/2, and its q is smaller: Theorem Q gives q -> 1.84416 (notes_theory.md row 11) and counterexamples with q close to 9/5 for k >= 286, whereas q_8*(limit) < 7/4 (isolating interval upper end 2755346911/1610612736).",
+  "suggested_wording": "The q record at n = 8 comes from a sink-free core; its non-edge spectrum (minimum real part about -0.3689) is closer to -1/2 than the k -> infinity limit of Theorem Q (about -0.3516), so the sink-class family overtakes it, but only for very large class size (k >= 286 for q close to 9/5)."
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "by a sink class: its minimum real part $-0.3689$ lies to the right of the $k\\to\\infty$ limit $-0.3516$ of the sink-class",
+  "problem": "[HIGH, mathematically wrong] The comparison with Theorem Q is backwards. Larger q needs the minimum real part of the non-edge spectrum closer to 0 (beta_c = -1/minRe). Exact checks in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block C: the record sextic 8z^6+16z^5+34z^4+33z^3+30z^2+13z+5 has a root with Re < -4/11 (Hurwitz minor 3 negative after the shift), while every root of Theorem Q's limit polynomial z^4+z^3+3z^2+z+1 (notes/research_wf3/theory/notes_theory.md line 357) has Re > -5/14, and -4/11 < -5/14. So the record lies to the LEFT of the Q limit, i.e. CLOSER to -1/2, and its q is smaller: Theorem Q gives q -> 1.84416 (notes_theory.md row 11) and counterexamples with q close to 9/5 for k >= 286, whereas q_8*(limit) < 7/4 (isolating interval upper end 2755346911/1610612736).",
+  "suggested_wording": "by a sink class: its minimum real part $-0.3689$ lies to the \\emph{left} of the $k\\to\\infty$ limit $-0.3516$ of the sink-class family~(Q) of Theorem~\\ref{thm:QQ2Y} (which tends to $q\\approx1.844$); family (Q) overtakes the eight-node record only for very large class size ($q$ close to $9/5$ needs $k\\ge286$)."
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "sink-free core whose own compressed spectrum lies further from $-1/2$ than any sink-class limit of",
+  "problem": "[HIGH, mathematically wrong] The comparison with Theorem Q is backwards. Larger q needs the minimum real part of the non-edge spectrum closer to 0 (beta_c = -1/minRe). Exact checks in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block C: the record sextic 8z^6+16z^5+34z^4+33z^3+30z^2+13z+5 has a root with Re < -4/11 (Hurwitz minor 3 negative after the shift), while every root of Theorem Q's limit polynomial z^4+z^3+3z^2+z+1 (notes/research_wf3/theory/notes_theory.md line 357) has Re > -5/14, and -4/11 < -5/14. So the record lies to the LEFT of the Q limit, i.e. CLOSER to -1/2, and its q is smaller: Theorem Q gives q -> 1.84416 (notes_theory.md row 11) and counterexamples with q close to 9/5 for k >= 286, whereas q_8*(limit) < 7/4 (isolating interval upper end 2755346911/1610612736). Q2 (limit -1/4) is even further right, so \"any sink-class limit\" is wrong for both.",
+  "suggested_wording": "sink-free core, without any sink class; the sink-class families of Theorem~\\ref{thm:QQ2Y} have larger limits ($-0.3516$ for Q, $-1/4$ for Q2) but reach them only for large class sizes"
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "That is further right than the k -> infinity limit of Theorem Q's 7-node core.",
+  "problem": "[HIGH, mathematically wrong] The comparison with Theorem Q is backwards. Larger q needs the minimum real part of the non-edge spectrum closer to 0 (beta_c = -1/minRe). Exact checks in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block C: the record sextic 8z^6+16z^5+34z^4+33z^3+30z^2+13z+5 has a root with Re < -4/11 (Hurwitz minor 3 negative after the shift), while every root of Theorem Q's limit polynomial z^4+z^3+3z^2+z+1 (notes/research_wf3/theory/notes_theory.md line 357) has Re > -5/14, and -4/11 < -5/14. So the record lies to the LEFT of the Q limit, i.e. CLOSER to -1/2, and its q is smaller: Theorem Q gives q -> 1.84416 (notes_theory.md row 11) and counterexamples with q close to 9/5 for k >= 286, whereas q_8*(limit) < 7/4 (isolating interval upper end 2755346911/1610612736).",
+  "suggested_wording": "That is further LEFT (closer to -1/2) than the k -> infinity limit of Theorem Q's 7-node core (-0.3516); Q overtakes the n = 8 record only for large k."
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "whose own moving spectrum is further from -1/2 than Theorem Q's k -> infinity limit",
+  "problem": "[HIGH, mathematically wrong] The comparison with Theorem Q is backwards. Larger q needs the minimum real part of the non-edge spectrum closer to 0 (beta_c = -1/minRe). Exact checks in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block C: the record sextic 8z^6+16z^5+34z^4+33z^3+30z^2+13z+5 has a root with Re < -4/11 (Hurwitz minor 3 negative after the shift), while every root of Theorem Q's limit polynomial z^4+z^3+3z^2+z+1 (notes/research_wf3/theory/notes_theory.md line 357) has Re > -5/14, and -4/11 < -5/14. So the record lies to the LEFT of the Q limit, i.e. CLOSER to -1/2, and its q is smaller: Theorem Q gives q -> 1.84416 (notes_theory.md row 11) and counterexamples with q close to 9/5 for k >= 286, whereas q_8*(limit) < 7/4 (isolating interval upper end 2755346911/1610612736).",
+  "suggested_wording": "whose own moving spectrum (minimum real part -0.3689) is closer to -1/2 than Theorem Q's k -> infinity limit (-0.3516)"
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "already beats Theorem Q's k -> infinity limit of -0.3516 (display).",
+  "problem": "[HIGH, mathematically wrong] The comparison with Theorem Q is backwards. Larger q needs the minimum real part of the non-edge spectrum closer to 0 (beta_c = -1/minRe). Exact checks in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block C: the record sextic 8z^6+16z^5+34z^4+33z^3+30z^2+13z+5 has a root with Re < -4/11 (Hurwitz minor 3 negative after the shift), while every root of Theorem Q's limit polynomial z^4+z^3+3z^2+z+1 (notes/research_wf3/theory/notes_theory.md line 357) has Re > -5/14, and -4/11 < -5/14. So the record lies to the LEFT of the Q limit, i.e. CLOSER to -1/2, and its q is smaller: Theorem Q gives q -> 1.84416 (notes_theory.md row 11) and counterexamples with q close to 9/5 for k >= 286, whereas q_8*(limit) < 7/4 (isolating interval upper end 2755346911/1610612736).",
+  "suggested_wording": "is attained without any sink class, but does NOT beat Theorem Q's k -> infinity limit of -0.3516 (display): -0.3689 lies to its left."
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "the conjecture holds at every legal parameter with q >= 1.3247",
+  "problem": "[HIGH, false as written] 1.3247 is below rho: f(q) = q^3 - q - 1 has f(13247/10000) = -76579777/10^12 < 0 (notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block D), so rho > 1.3247 and the conjecture FAILS for q in [1.3247, rho) (paper Theorem q7). A decimal used as a threshold in a claim must be replaced by the exact number.",
+  "suggested_wording": "So for n <= 7 the conjecture holds at every legal parameter with q >= rho (the plastic number, real root of q^3 - q - 1, about 1.3247) and fails for every q in (1, rho)"
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "at n = 8 it fails on a set of q whose closure contains (1, 1.7107)",
+  "problem": "[MEDIUM] Decimal endpoint in a claim; and the justification is not recorded anywhere. It IS derivable from certified data: (1, rho) from the n <= 7 map plus Corollary monotone, and the champion &GMx|\\Aw^qz]w whose limit interval has lower q end in [1, 5/4] (n8/n8_limit_HITS.jsonl) with 5/4 < 49/37 < rho (notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block D), and upper end q_8*(limit). The paper (Section n8, \"is not recorded in the certificates\") is more cautious than this sentence.",
+  "suggested_wording": "at n = 8 it fails at legal points with q arbitrarily close to every value in (1, q_8*(limit)) (q_8*(limit) about 1.7107): for q < rho by the n <= 7 map, above that by the stable interval of &GMx|\\Aw^qz]w, whose lower q end is below 5/4"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "n = 8 for q in a set whose closure contains (1, q_8*(limit))**",
+  "problem": "[MEDIUM] The stated reason (\"Every one of the 9,133 is stable at legal points with q arbitrarily close to any value in its interval\") only gives the closure of the UNION of the intervals, and no file records that this union covers (1, q_8*(limit)) (the paper says so explicitly). The claim is nevertheless provable from certified data, but via a different argument: n <= 7 map + Corollary monotone for (1, rho), and the champion's interval (lower q end in [1, 5/4], n8/n8_limit_HITS.jsonl; 5/4 < 49/37 < rho, notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py) block D) for [rho, q_8*(limit)).",
+  "suggested_wording": "n = 8 for q in a set whose closure contains (1, q_8*(limit))**: for q in (1, rho) by the n <= 7 map (Corollary monotone), and for q in [rho, q_8*(limit)) by the limit interval of `&GMx|\\Aw^qz]w`, whose lower q end lies in [1, 5/4] and 5/4 < 49/37 < rho"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "| finite-eps-only counterexamples | 0 | 1 (`&FNFL~[udo?`) | not determined (B lines not stored) |",
+  "problem": "[MEDIUM] Understates what is known. Finite-eps-only counterexamples on eight nodes are KNOWN to exist: the 15 Lemma B graphs of notes/research_wf3/theory/cube_n8_witnesses.json (each with an exact legal stable positive witness at q = 421/420 or 981/980, re-decided with ctln.analyze_support in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block B: 15/15 legal, positive, stable, non-clique, none in the limit list). E_1 of Theorem E (&GNbR^z~[zP[_) is isomorphic to one of them (&GNQf^zr\\IsNw), so there are 15 distinct graphs, not 16. They have alpha = -1/2, so they are among the unstored B lines.",
+  "suggested_wording": "| finite-eps-only counterexamples | 0 | 1 (`&FNFL~[udo?`) | at least 15 known (Lemma B graphs, E_1 among them; certified witnesses, not hand-verified); complete list not determined (B lines not stored) |"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "counterexamples of the Theorem E type (alpha = -1/2 exactly) exist at n = 8 and what they are",
+  "problem": "[MEDIUM] Their existence is already settled (15 known). Finite-eps-only counterexamples on eight nodes are KNOWN to exist: the 15 Lemma B graphs of notes/research_wf3/theory/cube_n8_witnesses.json (each with an exact legal stable positive witness at q = 421/420 or 981/980, re-decided with ctln.analyze_support in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block B: 15/15 legal, positive, stable, non-clique, none in the limit list). E_1 of Theorem E (&GNbR^z~[zP[_) is isomorphic to one of them (&GNQf^zr\\IsNw), so there are 15 distinct graphs, not 16. They have alpha = -1/2, so they are among the unstored B lines. Route B would list those among the B and never_full lines; it does not by itself give the complete finite-eps list (the alpha > -1/2 lines need the unproved lemma, as the next sentence of the report says).",
+  "suggested_wording": "counterexamples of the Theorem E type (alpha = -1/2 exactly) are at n = 8 beyond the 15 already known (E_1 among them)"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "E_1 of Theorem E and the 15",
+  "problem": "[LOW] Double counting: E_1 is one of the 15 cube graphs (notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block B, isomorphic_groups).",
+  "suggested_wording": "The 15 \"cube\" finite-eps-only n = 8 graphs of the theory notes (E_1 of Theorem E is one of them; alpha = -1/2 exactly) are **absent**"
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "which settles whether finite-eps-only counterexamples exist at n = 8",
+  "problem": "[HIGH] Existence is already known (15 certified finite-eps-only n = 8 graphs). Finite-eps-only counterexamples on eight nodes are KNOWN to exist: the 15 Lemma B graphs of notes/research_wf3/theory/cube_n8_witnesses.json (each with an exact legal stable positive witness at q = 421/420 or 981/980, re-decided with ctln.analyze_support in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block B: 15/15 legal, positive, stable, non-clique, none in the limit list). E_1 of Theorem E (&GNbR^z~[zP[_) is isomorphic to one of them (&GNQf^zr\\IsNw), so there are 15 distinct graphs, not 16. They have alpha = -1/2, so they are among the unstored B lines. Moreover REPORT_n8 section 8 says Route B gives a complete finite-eps map only together with a proof that alpha > -1/2 excludes stability at every legal point, which does not exist.",
+  "suggested_wording": "which lists the finite-eps-only counterexamples among those lines (15 are already known, E_1 among them); a complete finite-eps map additionally needs a proof that alpha > -1/2 excludes stability at every legal point"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "done, and finite-$\\eps$-only counterexamples (which at $n=7$ were exactly one graph, with $\\alpha=-1/2$) may sit among",
+  "problem": "[MEDIUM] Understates and under-scopes. Finite-eps-only counterexamples on eight nodes are KNOWN to exist: the 15 Lemma B graphs of notes/research_wf3/theory/cube_n8_witnesses.json (each with an exact legal stable positive witness at q = 421/420 or 981/980, re-decided with ctln.analyze_support in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block B: 15/15 legal, positive, stable, non-clique, none in the limit list). E_1 of Theorem E (&GNbR^z~[zP[_) is isomorphic to one of them (&GNQf^zr\\IsNw), so there are 15 distinct graphs, not 16. They have alpha = -1/2, so they are among the unstored B lines. Also, further finite-eps-only graphs could sit not only among the B lines but among the 7,078 never_full lines (bulges, Theorem AS) and, absent an answer to Question char (alpha <= -1/2 for every SFP?), among the 113,280,040,661 lines with alpha > -1/2 (REPORT_n8 section 8, Route B).",
+  "suggested_wording": "done: finite-$\\eps$-only counterexamples on eight nodes exist ($15$ distinct graphs satisfying Lemma~\\ref{lem:Bmech}, $E_1$ among them, all with $\\alpha=-1/2$ and hence among the unstored B lines), and further ones may sit among the B lines, the $7{,}078$ never\\_full lines, or, unless Question~\\ref{q:char} is answered, the lines with $\\alpha>-1/2$"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "number, as proved. $E_1$ of Theorem~\\ref{thm:famE} and the $15$ graphs satisfying Lemma~\\ref{lem:Bmech} have $\\alpha=-1/2$",
+  "problem": "[LOW] E_1 is one of the 15 (notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block B: &GNbR^z~[zP[_ isomorphic to &GNQf^zr\\IsNw). The paper writer left this open (caveat 5).",
+  "suggested_wording": "number, as proved. The $15$ graphs satisfying Lemma~\\ref{lem:Bmech} ($E_1$ of Theorem~\\ref{thm:famE} is one of them) have $\\alpha=-1/2$"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "Theorem~\\ref{thm:famE} and the $15$ graphs satisfying Lemma~\\ref{lem:Bmech}). At $n=7$ the bulge criterion",
+  "problem": "[LOW] Same double count in the open question: 15 distinct graphs, E_1 among them.",
+  "suggested_wording": "Theorem~\\ref{thm:famE} is one of the $15$ graphs satisfying Lemma~\\ref{lem:Bmech}). At $n=7$ the bulge criterion"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "$8$ & $9{,}133$ & $\\ge9{,}133$, not mapped & degree-$15$ root $\\approx1.7107$ & $\\ge q_8^*(\\infty)$ & $6$\\\\",
+  "problem": "[LOW] The \"all c.e.\" lower bound ignores the 15 known finite-eps-only eight-node graphs (distinct from the 9,133; notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block B).",
+  "suggested_wording": "$8$ & $9{,}133$ & $\\ge9{,}148$ ($9{,}133$ + $15$ finite-$\\eps$-only), not mapped & degree-$15$ root $\\approx1.7107$ & $\\ge q_8^*(\\infty)$ & $6$\\\\"
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "E_1 (n = 8) and the 15 'cube' n = 8 candidates of theory",
+  "problem": "[LOW] E_1 is one of the 15; and \"candidates\" undersells them (each has an exact legal SFP witness, re-decided in notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block B). The next sentence (\"The n = 8 analogue ... lives among the unstored B lines\") should say these 15 are such analogues.",
+  "suggested_wording": "The 15 'cube' n = 8 finite-eps-only graphs of theory notes 4.4 (E_1 of Theorem E is one of them; exact legal witnesses)"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "lines, followed by the curve test of Section~\\ref{sec:machinery} on them and the bulge rule on the $9{,}133$, would settle",
+  "problem": "[HIGH] Would not settle q_8* = q_8*(infinity). Storing the B lines and curve-testing them plus the bulge rule on the 9,133 leaves (i) the 7,078 never_full S lines (bulges can create finite-eps stability there; REPORT_n8 Route B includes them) and (ii) the 113,280,040,661 lines with alpha > -1/2, which are excluded at finite eps only by data at n <= 7 (Corollary alpha7), not by a theorem (Question char; REPORT_n8 section 8: \"a complete finite-eps map only together with a proof that alpha > -1/2 strictly excludes stability at every legal point\").",
+  "suggested_wording": "lines, followed by the curve test of Section~\\ref{sec:machinery} on them and on the $7{,}078$ never\\_full lines and the bulge rule on the $9{,}133$, would settle this question for all graphs with $\\alpha\\le-1/2$; the lines with $\\alpha>-1/2$ need either a proof answering Question~\\ref{q:char} or the full finite pipeline, before one can decide"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "(Theorem~\\ref{thm:AS}) decided the finite map from the limit data together with the $\\alpha=-1/2$ lines; a re-run storing those",
+  "problem": "[MEDIUM] Misdescribes n = 7: the n = 7 finite map was decided by the full chain over all digraphs (Table chain: positivity prefilter, edge bound, curve test on 3,773,348 lines, CAD; certificates/n7_finite_summary.json), not from the limit data plus the alpha = -1/2 lines; the bulge rule (Proposition bulge) was computed on the 124 afterwards.",
+  "suggested_wording": "(Theorem~\\ref{thm:AS}) explains the finite map, which was computed by the full chain of Table~\\ref{tab:chain}; a re-run storing those"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "The full finite-$\\eps$ map over all $1.79$ trillion digraphs is out of reach by enumeration alone.",
+  "problem": "[MEDIUM] Inconsistent with the paper's own edge bound and with REPORT_n8 section 8: only the 801,558,826,511 restricted digraphs need enumeration, and Route A is estimated (extrapolation, labelled as such there) at about 37,000 CPU-hours, \"two to three weeks on a 96-vCPU machine\", i.e. expensive but not out of reach.",
+  "suggested_wording": "The full finite-$\\eps$ map needs the $n=7$ pipeline over the $801{,}558{,}826{,}511$ restricted digraphs; extrapolated from measured rates this is of the order of $4\\times10^4$ CPU-hours."
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "are not counterexamples (797 of 858 at n = 8)",
+  "problem": "[MEDIUM] Overclaim: limit-only. The 797 non-listed blow-ups are not LIMIT counterexamples. Their prefilter flags (notes/verify_n8_2/completeness_twins/part2_summary.json): 690 not printed (dominated or alpha > -1/2), 47 B, 60 S (43 never_positivity, 17 never_full). Only dominated and never_positivity graphs are excluded at every legal parameter; the B, never_full and alpha > -1/2 ones are undecided at finite eps (finite map not done). The 4,782-point check is a sample, not an exact decision of the whole interval.",
+  "suggested_wording": "are not limit counterexamples (797 of 858 at n = 8; their finite-eps status is open for those not dominated and not never_positivity)"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "$797$ are exactly not limit-stable at legal points inside their parent's interval.",
+  "problem": "[MEDIUM] Mixes the limit notion with sampled legal points and reads as an exact statement about whole intervals. The 797 non-listed blow-ups are not LIMIT counterexamples. Their prefilter flags (notes/verify_n8_2/completeness_twins/part2_summary.json): 690 not printed (dominated or alpha > -1/2), 47 B, 60 S (43 never_positivity, 17 never_full). Only dominated and never_positivity graphs are excluded at every legal parameter; the B, never_full and alpha > -1/2 ones are undecided at finite eps (finite map not done). The 4,782-point check is a sample, not an exact decision of the whole interval.",
+  "suggested_wording": "$797$ are not limit counterexamples (prefilter: $690$ dropped, $47$ B, $60$ never in the limit stage), and none is stable and positive at $4{,}782$ sampled legal points inside its parent's interval."
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "limit-stable at legal points inside the parent's interval (4,782 points, 0 stable and positive); so",
+  "problem": "[LOW] \"exactly decided not limit-stable at legal points\" conflates the exact limit verdict (from the prefilter/limit stage) with a 4,782-point finite-t sample. The 797 non-listed blow-ups are not LIMIT counterexamples. Their prefilter flags (notes/verify_n8_2/completeness_twins/part2_summary.json): 690 not printed (dominated or alpha > -1/2), 47 B, 60 S (43 never_positivity, 17 never_full). Only dominated and never_positivity graphs are excluded at every legal parameter; the B, never_full and alpha > -1/2 ones are undecided at finite eps (finite map not done). The 4,782-point check is a sample, not an exact decision of the whole interval.",
+  "suggested_wording": "limit counterexamples (prefilter: 690 dropped, 47 B, 60 never), and 0 of 4,782 sampled legal points inside the parents' intervals is stable and positive; so"
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "preserves the fixed-point data of the weighted quotient, not the region, and most blow-ups die. Conversely,",
+  "problem": "[LOW] \"die\" = are not limit counterexamples; finite-eps status of 64 of them (47 B + 17 never_full) and of the alpha > -1/2 ones is open. The 797 non-listed blow-ups are not LIMIT counterexamples. Their prefilter flags (notes/verify_n8_2/completeness_twins/part2_summary.json): 690 not printed (dominated or alpha > -1/2), 47 B, 60 S (43 never_positivity, 17 never_full). Only dominated and never_positivity graphs are excluded at every legal parameter; the B, never_full and alpha > -1/2 ones are undecided at finite eps (finite map not done). The 4,782-point check is a sample, not an exact decision of the whole interval.",
+  "suggested_wording": "preserves the fixed-point data of the weighted quotient, not the region, and most blow-ups are not limit counterexamples. Conversely,"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "sink deletion does (the sinks create the stability).",
+  "problem": "[MEDIUM] The structure tools compare deletions only with the 123 LIMIT n = 7 counterexamples (families.py uses small_lists.n7_list, which excludes &FNFL~[udo?). Exact check (notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block A): in 5 listed graphs a one-vertex deletion is &FNFL~[udo?, always at a sink node; 2 of them (&GNbR^x~[zR[? and &GNbR^z~[rR[_) are among the 1,972, i.e. deleting a sink DOES leave a (finite-eps-only) n = 7 counterexample. Correct counts: 1,972 with no sink deletion in the limit list; 1,970 with no sink deletion that is any n = 7 counterexample. (The 125 closed-twin contractions are unaffected: no FNFL deletion is at a closed-twin vertex.)",
+  "suggested_wording": "sink deletion leaves an n = 7 limit counterexample (in 2 of these a sink deletion leaves the finite-eps-only `&FNFL~[udo?`; 1,970 have no sink deletion that is any n = 7 counterexample)."
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "one such node leaves a graph that is not a counterexample.",
+  "problem": "[MEDIUM] The structure tools compare deletions only with the 123 LIMIT n = 7 counterexamples (families.py uses small_lists.n7_list, which excludes &FNFL~[udo?). Exact check (notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block A): in 5 listed graphs a one-vertex deletion is &FNFL~[udo?, always at a sink node; 2 of them (&GNbR^x~[zR[? and &GNbR^z~[rR[_) are among the 1,972, i.e. deleting a sink DOES leave a (finite-eps-only) n = 7 counterexample. Correct counts: 1,972 with no sink deletion in the limit list; 1,970 with no sink deletion that is any n = 7 counterexample. (The 125 closed-twin contractions are unaffected: no FNFL deletion is at a closed-twin vertex.)",
+  "suggested_wording": "one such node leaves a graph that is not a seven-node limit counterexample ($1{,}970$ leave no seven-node counterexample at all; in two, a sink deletion gives \\dsix+&FNFL~[udo?+)."
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "In 1,972 of them, deleting any single sink node leaves a graph that is not",
+  "problem": "[MEDIUM] The structure tools compare deletions only with the 123 LIMIT n = 7 counterexamples (families.py uses small_lists.n7_list, which excludes &FNFL~[udo?). Exact check (notes/referee_finish_overclaims_checks.json (script notes/referee_finish_overclaims_checks.py), block A): in 5 listed graphs a one-vertex deletion is &FNFL~[udo?, always at a sink node; 2 of them (&GNbR^x~[zR[? and &GNbR^z~[rR[_) are among the 1,972, i.e. deleting a sink DOES leave a (finite-eps-only) n = 7 counterexample. Correct counts: 1,972 with no sink deletion in the limit list; 1,970 with no sink deletion that is any n = 7 counterexample. (The 125 closed-twin contractions are unaffected: no FNFL deletion is at a closed-twin vertex.)",
+  "suggested_wording": "In 1,972 of them, deleting any single sink node leaves a graph that is not an n = 7 LIMIT counterexample (in 2 of these, &GNbR^x~[zR[? and &GNbR^z~[rR[_, a sink deletion is the finite-eps-only &FNFL~[udo?);"
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "so they are consequences of the necessary",
+  "problem": "[MEDIUM] Unproved causal claim. The data show co-occurrence: U1-U7 hold on (almost) all strict spectral survivors at n = 8 (U1 fails for 18; U6 holds by construction and was \"not tested\" there; notes/n8_structure.md table 1.10). Only U4, U5, U6, U7 are proved; that U1 (Hamiltonicity), U2 (induced oriented 3-cycle) or U3 (clique bound) FOLLOW from domination-freeness and alpha < -1/2 is not proved (U3 is Conjecture S1+, verified only by exhaustion for n <= 9).",
+  "suggested_wording": "so they do not distinguish counterexamples (whether they follow from the necessary conditions is open: S1+ is checked for n <= 9 only, and U1/U2 are not proved)"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "say the universal features U1-U7 are consequences of the necessary conditions, not a signature",
+  "problem": "[MEDIUM] Unproved causal claim. The data show co-occurrence: U1-U7 hold on (almost) all strict spectral survivors at n = 8 (U1 fails for 18; U6 holds by construction and was \"not tested\" there; notes/n8_structure.md table 1.10). Only U4, U5, U6, U7 are proved; that U1 (Hamiltonicity), U2 (induced oriented 3-cycle) or U3 (clique bound) FOLLOW from domination-freeness and alpha < -1/2 is not proved (U3 is Conjecture S1+, verified only by exhaustion for n <= 9).",
+  "suggested_wording": "say the universal features U1-U7 are shared by almost all strict survivors and so are not a signature; that U1-U3 follow from the necessary conditions is not proved"
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "the necessary conditions and do not distinguish counterexamples",
+  "problem": "[MEDIUM] Unproved causal claim. The data show co-occurrence: U1-U7 hold on (almost) all strict spectral survivors at n = 8 (U1 fails for 18; U6 holds by construction and was \"not tested\" there; notes/n8_structure.md table 1.10). Only U4, U5, U6, U7 are proved; that U1 (Hamiltonicity), U2 (induced oriented 3-cycle) or U3 (clique bound) FOLLOW from domination-freeness and alpha < -1/2 is not proved (U3 is Conjecture S1+, verified only by exhaustion for n <= 9).",
+  "suggested_wording": "graphs that pass the necessary conditions (whether they are implied by them is not proved for U1-U3) and do not distinguish counterexamples"
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "S1 is verified exhaustively for every n <= 9 on the only class where it can fail.",
+  "problem": "[LOW] Conjecture S is about LIMIT counterexamples, and the n = 9 class test decides limit stability only (strict spectral test; B and alpha > -1/2 lines are excluded only in the limit). Stated without \"(limit sense)\" it reads as covering all counterexamples, which it does not (finite-eps-only counterexamples at n = 9 are not tested; the 15 known n = 8 ones do satisfy S1 by a quick check, bidirected clique number 3 or 4, but that is not recorded in a file).",
+  "suggested_wording": "S1 (for limit counterexamples) is verified exhaustively for every n <= 9 on the only class where it can fail."
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "S1 is already settled there.",
+  "problem": "[LOW] Conjecture S is about LIMIT counterexamples, and the n = 9 class test decides limit stability only (strict spectral test; B and alpha > -1/2 lines are excluded only in the limit). Stated without \"(limit sense)\" it reads as covering all counterexamples, which it does not (finite-eps-only counterexamples at n = 9 are not tested; the 15 known n = 8 ones do satisfy S1 by a quick check, bidirected clique number 3 or 4, but that is not recorded in a file).",
+  "suggested_wording": "S1 (limit sense) is already verified there."
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "bidirected clique on $n-2$ nodes; the last property is verified exhaustively up to $n=9$ and stated as a conjecture",
+  "problem": "[LOW] Conjecture S is about LIMIT counterexamples, and the n = 9 class test decides limit stability only (strict spectral test; B and alpha > -1/2 lines are excluded only in the limit). Stated without \"(limit sense)\" it reads as covering all counterexamples, which it does not (finite-eps-only counterexamples at n = 9 are not tested; the 15 known n = 8 ones do satisfy S1 by a quick check, bidirected clique number 3 or 4, but that is not recorded in a file).",
+  "suggested_wording": "bidirected clique on $n-2$ nodes; for limit counterexamples the last property is verified exhaustively up to $n=9$ and stated as a conjecture"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "So (S1) holds for all $n\\le9$.",
+  "problem": "[LOW] Conjecture S is about LIMIT counterexamples, and the n = 9 class test decides limit stability only (strict spectral test; B and alpha > -1/2 lines are excluded only in the limit). Stated without \"(limit sense)\" it reads as covering all counterexamples, which it does not (finite-eps-only counterexamples at n = 9 are not tested; the 15 known n = 8 ones do satisfy S1 by a quick check, bidirected clique number 3 or 4, but that is not recorded in a file).",
+  "suggested_wording": "So (S1) holds for all $n\\le9$ (for limit counterexamples, as the conjecture is stated)."
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "its part S1 is verified for every n <= 9 by an exhaustive test of the bidirected-K_{n-2} class",
+  "problem": "[LOW] Conjecture S is about LIMIT counterexamples, and the n = 9 class test decides limit stability only (strict spectral test; B and alpha > -1/2 lines are excluded only in the limit). Stated without \"(limit sense)\" it reads as covering all counterexamples, which it does not (finite-eps-only counterexamples at n = 9 are not tested; the 15 known n = 8 ones do satisfy S1 by a quick check, bidirected clique number 3 or 4, but that is not recorded in a file).",
+  "suggested_wording": "its part S1 is verified, in the limit sense, for every n <= 9 by an exhaustive test of the bidirected-K_{n-2} class"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "Most counterexamples at size $n+1$ are not one-node extensions of those at size $n$.",
+  "problem": "[LOW] Extrapolation stated as fact. Primitive shares are measured only at n = 7 (102/123) and n = 8 (6,720/9,133); nothing is known at n = 9 or beyond.",
+  "suggested_wording": "At $n=7$ and $n=8$ most counterexamples are not one-node extensions of smaller ones."
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "most counterexamples at each size are new rather than inherited",
+  "problem": "[LOW] Extrapolation stated as fact. Primitive shares are measured only at n = 7 (102/123) and n = 8 (6,720/9,133); nothing is known at n = 9 or beyond.",
+  "suggested_wording": "most counterexamples at n = 7 and n = 8 are new rather than inherited"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "most n = 9 counterexamples will not be extensions",
+  "problem": "[LOW] Extrapolation stated as fact. Primitive shares are measured only at n = 7 (102/123) and n = 8 (6,720/9,133); nothing is known at n = 9 or beyond.",
+  "suggested_wording": "we expect, but do not know, that most n = 9 counterexamples are not extensions"
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "'spectrally primitive' at n = 8) they will be the majority.",
+  "problem": "[LOW] Extrapolation stated as fact. Primitive shares are measured only at n = 7 (102/123) and n = 8 (6,720/9,133); nothing is known at n = 9 or beyond.",
+  "suggested_wording": "'spectrally primitive' at n = 8) we expect them to be the majority; this is not known."
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "clique-class catalogue of Section~\\ref{sec:families} ($593$ distinct graphs) are in the list, an independent completeness",
+  "problem": "[LOW] Finding all 593 catalogue graphs is a recall (consistency) check on a known subset; it cannot detect a missing graph outside the catalogue, so it does not check completeness of the list.",
+  "suggested_wording": "clique-class catalogue of Section~\\ref{sec:families} ($593$ distinct graphs) are in the list, an independent recall"
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "This is an independent completeness check of the limit map against the proved families.",
+  "problem": "[LOW] Same: a recall check on the catalogue subset, not a completeness check.",
+  "suggested_wording": "This is an independent recall check of the limit map on the proved families (it cannot detect graphs outside them)."
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "Human sign-off: n = 6 (2026-10-14) and all 124 n = 7 graphs (2026-10-15), the latter additionally",
+  "problem": "[MEDIUM] Omits that the user recorded the n = 7 hand check as made \"without full confidence\" and made sign-off conditional on the machine verification (ANOMALIES.md 2026-10-15; the paper states this).",
+  "suggested_wording": "Human sign-off: n = 6 (2026-10-14) and all 124 n = 7 graphs (2026-10-15; the user recorded this hand check as not fully confident and conditioned sign-off on the machine re-verification), the latter additionally"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "| verification | hand (2026-10-14) + audit | hand (2026-10-15) + four independent verifiers | two independent machine campaigns; **no hand check** |",
+  "problem": "[LOW] Same omission for n = 7 (ANOMALIES.md 2026-10-15, \"without full confidence\").",
+  "suggested_wording": "| verification | hand (2026-10-14) + audit | hand (2026-10-15, recorded as not fully confident) + four independent verifiers | two independent machine campaigns; **no hand check** |"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "\\begin{theorem}[Families Q, Q2, Y; proved, refereed]\\label{thm:QQ2Y}",
+  "problem": "[MEDIUM] A journal referee will read \"refereed\" as external peer review. Section \"Independent audits\" says only \"refereed by a separate reviewer\"; the reviews were internal to the project. The same label is on Theorems famF, famE, U, A, and FINAL_SUMMARY uses \"proved and refereed\".",
+  "suggested_wording": "\\begin{theorem}[Families Q, Q2, Y; proved, internally reviewed]\\label{thm:QQ2Y}  (and state once in Section~\\ref{sec:verification} that all reviews were internal to the project, not external peer review)"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "synthesis found $0$ fatal and $0$ major defects, $13$ explained non-issues and one minor documentation defect (the B lines",
+  "problem": "[LOW] The chain referee itself returned PROBLEMS with one MAJOR (its own sympy re-derivation of five never_full certificates never finished); the synthesis reclassified it after covering it twice (notes/verify_n8_2/SYNTHESIS.json, spot_check_never_full). REPORT_n8 mentions this; the paper and FINAL_SUMMARY do not.",
+  "suggested_wording": "synthesis found $0$ fatal and $0$ major defects (one referee's MAJOR, an unfinished re-derivation of five never\\_full certificates, was covered by two other checks and reclassified), $13$ explained non-issues and one minor documentation defect (the B lines"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "| 8 | Not scooped as of 2026-10-28: no posted work treats n = 8, n = 7, finite-eps-only counterexamples or an improvement of Geneson's threshold (section 7). | checked |",
+  "problem": "[LOW] \"Not scooped\" / \"no posted work\" is stronger than the search supports; section 7 itself lists limits (arXiv index to 27 Oct, API errors, no other servers).",
+  "suggested_wording": "| 8 | As of 2026-10-28 a limited search (arXiv, index to 27 Oct 2026; no other preprint servers) found no posted work on n = 8, n = 7, finite-eps-only counterexamples or an improvement of Geneson's threshold (section 7). | searched, limits in section 7 |"
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "not scooped; nothing on n >= 7 or n = 8 has appeared;",
+  "problem": "[LOW] Same: the search had stated limits (notes/literature_position_2026-10-28.md section 5).",
+  "suggested_wording": "no overlapping work found in a limited arXiv search (index to 27 Oct 2026); nothing on n >= 7 or n = 8 was found;"
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "below is backed by a re-runnable exact certificate",
+  "problem": "[LOW] Not every number below is: the Route A/B CPU-hour figures and the n = 9 cost are extrapolations, decimals are display values, and the n = 8 structure counts live in notes/n8_structure_tools/*.json (analysis outputs, not certificates/).",
+  "suggested_wording": "below is either backed by a re-runnable exact file (named in the report that owns the number) or explicitly an estimate or display approximation"
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "the families show the true threshold grows with n without any known bound",
+  "problem": "[MEDIUM] Contradicts Geneson's theorem, which bounds the threshold above by n - 2 (REPORT_n7: \"Geneson's q >= n - 2 remains the only upper bound\"). What is meant is that it is unbounded in n (Theorem U).",
+  "suggested_wording": "the families show the true threshold is unbounded in n (Theorem U), while the only upper bound is Geneson's n - 2; the growth rate is open"
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "about 4 million CPU-hours at the measured rate",
+  "problem": "[LOW] The rate is the n = 8 filter rate (0.4 M digraphs/s per pipeline); n = 9 digraphs cost more per digraph (larger matrices; directg slowdown on high-symmetry graphs, ANOMALIES.md 2026-10-27), so this is a lower bound.",
+  "suggested_wording": "at least about 4 million CPU-hours at the n = 8 per-digraph rate (an optimistic extrapolation)"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "measured 0.4 M digraphs/s per pipeline that is about 4.1 million CPU-hours (about 43,000 days on four",
+  "problem": "[LOW] Same: n = 8 rate applied to n = 9; a lower bound, not a measurement.",
+  "suggested_wording": "measured n = 8 rate of 0.4 M digraphs/s per pipeline (optimistic for n = 9) that is at least about 4.1 million CPU-hours (about 43,000 days on four"
+ },
+ {
+  "file": "notes/FINAL_SUMMARY.md",
+  "quote": "(also reproduced the published n = 5 classification)",
+  "problem": "[LOW] The reproduction is at a single parameter point, eps = 1/4, delta = 1/2 (certificates/stage1_n5_diff.json).",
+  "suggested_wording": "(also reproduced the published n = 5 classification at eps = 1/4, delta = 1/2 with zero mismatches)"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "| 0' | e_2 edge bound: >= 29 arcs, underlying graph with 15..28 edges (Lemma A.2, Lean-checked) |",
+  "problem": "[LOW] Misattribution: Lemma A.2 is \"positivity is t-free\" / det K > 0; the edge bound is edge_bound_ctln in notes/lean/CtlnCert/CtlnCert/EdgeBound.lean (its spectral step sum_minors_two_pos lives in LemmaA2.lean). Hypotheses there: 0 < eps < 1, q > 1, m >= 2, -I + W Hurwitz (no positivity needed).",
+  "suggested_wording": "| 0' | e_2 edge bound: >= 29 arcs, underlying graph with 15..28 edges (edge_bound_ctln, EdgeBound.lean, Lean-checked; hypotheses: legal point, m >= 2, full support Hurwitz stable) |"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "four pointwise witnesses, and a legal interior witness.",
+  "problem": "[LOW] The four stored pointwise points are not all witnesses of stability: 6,435 records have an illegal first point, the 37 narrow-interval records have all four outside the interval and stored unstable; only 9,051 have all four stable and positive (section 3, \"Witness hygiene\").",
+  "suggested_wording": "four stored pointwise checks (all four stable and positive for 9,051 records; see section 3), and a certified legal interior witness."
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "stable (Lemma~\\ref{lem:open} shows no counterexample point lies there). The refinement agrees with the independent",
+  "problem": "[LOW] Lemma open is about legal (eps, delta) points; non-attainment of the LIMIT supremum comes from the strict inequality alpha < -gamma in Lemma limit (at beta_c, alpha = -gamma, so not limit-stable). Whether the finite-eps supremum is attained is a separate question (bulges).",
+  "suggested_wording": "stable; at $\\beta_c$ itself $\\alpha=-\\gamma$, so the graph is not limit-stable there (Lemma~\\ref{lem:limit}). The refinement agrees with the independent"
+ },
+ {
+  "file": "notes/paper/paper.tex",
+  "quote": "the exact limit polynomial at about $1.8$ million digraphs per second. We call a non-complete graph a \\emph{limit",
+  "problem": "[LOW] 1.8 M/s is a single-process measurement on 2.27 M digraphs (ANOMALIES.md 2026-10-27); the production rate was 0.4 M/s per pipeline and 1.5-1.7 M/s aggregate on four pipelines (REPORT_n8 section 2).",
+  "suggested_wording": "the exact limit polynomial at up to $1.8$ million digraphs per second per process ($1.5$--$1.7$ million per second aggregate in production). We call a non-complete graph a \\emph{limit"
+ },
+ {
+  "file": "notes/outreach/DRAFT_geneson.md",
+  "quote": "Subject: Mapping the gap below q = n - 2 (target-free clique conjecture, n <= 8)",
+  "problem": "[MEDIUM] \"n <= 8\" implies the gap is mapped through n = 8; at n = 8 only the eps -> 0 limit map exists (finite-eps map not done).",
+  "suggested_wording": "Subject: Mapping the gap below q = n - 2 (target-free clique conjecture: exact for n <= 7, eps -> 0 limit at n = 8)"
+ },
+ {
+  "file": "notes/outreach/DRAFT_geneson.md",
+  "quote": "q >= n - 2 - (n - 3) eps / 2. We have mapped it exactly (rationals, exact root isolation,",
+  "problem": "[MEDIUM] \"mapped it exactly\" is true only for n <= 7; n = 8 is the limit map only and the gap for general n is not mapped.",
+  "suggested_wording": "q >= n - 2 - (n - 3) eps / 2. We have mapped it exactly for n <= 7 and in the eps -> 0 limit at n = 8 (rationals, exact root isolation,"
+ },
+ {
+  "file": "notes/outreach/DRAFT_geneson.md",
+  "quote": "1.3247), not attained. n = 6 and 7 are hand-checked and independently re-implemented.",
+  "problem": "[LOW] The n = 7 hand check was recorded by the user as not fully confident (ANOMALIES.md 2026-10-15); the reliance is on the four independent exact re-implementations.",
+  "suggested_wording": "1.3247), not attained. n = 6 and 7 were checked by hand (n = 7 not with full confidence) and confirmed by four independent exact re-implementations."
+ },
+ {
+  "file": "notes/outreach/DRAFT_geneson.md",
+  "quote": "- Every n >= 6 has counterexamples, and the critical q is unbounded in n.",
+  "problem": "[LOW] Stated as established fact to an expert; the proofs (Theorems F, U) have only internal review. Say so.",
+  "suggested_wording": "- Every n >= 6 has counterexamples, and the critical q is unbounded in n (our proofs, internally reviewed, not yet peer-reviewed)."
+ },
+ {
+  "file": "notes/outreach/DRAFT_shiu.md",
+  "quote": "Subject: Exact maps of the target-free clique conjecture, n <= 8",
+  "problem": "[MEDIUM] Same scope overclaim: exact maps exist for n <= 7; n = 8 is the limit map only.",
+  "suggested_wording": "Subject: Exact maps of the target-free clique conjecture, n <= 7 (and the eps -> 0 limit at n = 8)"
+ },
+ {
+  "file": "notes/outreach/DRAFT_shiu.md",
+  "quote": "stable; one receiving no edge from it always is.",
+  "problem": "[MEDIUM] \"always is\" (stable) is not certified: certificates/n7_proper_supports_summary.json records node6_no_in_verdicts = {stable_somewhere: 192}, i.e. stable at SOME legal parameter in each of the 192 cases, not at every parameter. The summary also says the 7-node pairs were not individually hand-verified.",
+  "suggested_wording": "stable; one receiving no edge from it gives a support that is stable at some legal parameter in all 192 such cases (certified, not hand-verified)."
+ },
+ {
+  "file": "notes/outreach/DRAFT_shiu.md",
+  "quote": "hand-checked and independently re-implemented.",
+  "problem": "[LOW] Same n = 7 hand-check caveat as in the Geneson draft.",
+  "suggested_wording": "checked by hand (n = 7 not with full confidence) and confirmed by independent exact re-implementations."
+ },
+ {
+  "file": "notes/outreach/DRAFT_shiu.md",
+  "quote": "- Counterexamples exist for every n >= 6; the critical q is unbounded in n.",
+  "problem": "[LOW] Internal review only.",
+  "suggested_wording": "- Counterexamples exist for every n >= 6; the critical q is unbounded in n (our proofs, internally reviewed, not yet peer-reviewed)."
+ },
+ {
+  "file": "notes/outreach/DRAFT_curto.md",
+  "quote": "Subject: Your n = 5 package reproduced; exact maps of Open Question 10, n <= 8",
+  "problem": "[MEDIUM] Same scope overclaim for n = 8.",
+  "suggested_wording": "Subject: Your n = 5 package reproduced; exact maps of Open Question 10 for n <= 7, eps -> 0 limit at n = 8"
+ },
+ {
+  "file": "notes/outreach/DRAFT_curto.md",
+  "quote": "All exact (Hurwitz determinants), hand-checked and independently re-implemented.",
+  "problem": "[LOW] Same n = 7 hand-check caveat.",
+  "suggested_wording": "All exact (Hurwitz determinants), checked by hand (n = 7 not with full confidence) and confirmed by independent exact re-implementations."
+ },
+ {
+  "file": "notes/outreach/DRAFT_curto.md",
+  "quote": "- Counterexamples exist for every n >= 6; the critical q is unbounded in n.",
+  "problem": "[LOW] Internal review only.",
+  "suggested_wording": "- Counterexamples exist for every n >= 6; the critical q is unbounded in n (our proofs, internally reviewed, not yet peer-reviewed)."
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "section 2 throughout; everything below is exact (integers, rationals, exact root isolation,",
+  "problem": "[LOW, rule] The brief forbids model or AI-product names in repository files. The file name of the project instructions file (the upper-case markdown file at the repository root) contains a product name and appears immediately before the quoted text (this referee file avoids repeating it). It is a file reference, as in REPORT_n7, but to comply strictly cite it generically.",
+  "suggested_wording": "the project instructions file, section 2, throughout; (replace the file name preceding this text)"
+ },
+ {
+  "file": "notes/REPORT_n8.md",
+  "quote": "definitions without the project's code, each with its own digraph6 decoder",
+  "problem": "[LOW, rule] The brief forbids model or AI-product names in repository files. The file name of the project instructions file (the upper-case markdown file at the repository root) contains a product name and appears immediately before the quoted text (this referee file avoids repeating it). It is a file reference, as in REPORT_n7, but to comply strictly cite it generically.",
+  "suggested_wording": "(replace the file name preceding this text by \"the project instructions file\")"
+ },
+ {
+  "file": "notes/n8_structure.md",
+  "quote": "section 2: `A[i][j] = 1` iff `i -> j`. The **non-edge",
+  "problem": "[LOW, rule] The brief forbids model or AI-product names in repository files. The file name of the project instructions file (the upper-case markdown file at the repository root) contains a product name and appears immediately before the quoted text (this referee file avoids repeating it). It is a file reference, as in REPORT_n7, but to comply strictly cite it generically.",
+  "suggested_wording": "Conventions are those of the project instructions file, section 2: (replace the file name preceding this text)"
+ }
+]

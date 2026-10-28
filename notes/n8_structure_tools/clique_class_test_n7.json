@@ -1,0 +1,16 @@
+{
+ "n": 7,
+ "configurations": 62016,
+ "stage_counts": {
+  "spectral": 10100,
+  "dominated": 51915,
+  "strict": 1
+ },
+ "strict_survivors_labelled": 1,
+ "strict_survivors_up_to_isomorphism": 1,
+ "limit_verdicts": {
+  "stable_somewhere (complete)": 1
+ },
+ "noncomplete_limit_stable_or_undecided": [],
+ "seconds": 36.2
+}

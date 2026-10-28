@@ -1,0 +1,60 @@
+{
+ "D_classes": {
+  "count": 6260,
+  "size_distribution": {
+   "1": 4939,
+   "2": 824,
+   "3": 2,
+   "4": 374,
+   "5": 16,
+   "6": 3,
+   "7": 1,
+   "8": 84,
+   "10": 2,
+   "12": 1,
+   "14": 4,
+   "16": 8,
+   "19": 1,
+   "32": 1
+  }
+ },
+ "psiD_zero_root_multiplicity_by_sinks": {
+  "sinks=0 mult=0": 1655,
+  "sinks=0 mult=1": 3427,
+  "sinks=0 mult=2": 126,
+  "sinks=0 mult=3": 68,
+  "sinks=1 mult=0": 1296,
+  "sinks=1 mult=1": 1409,
+  "sinks=1 mult=2": 314,
+  "sinks=1 mult=3": 166,
+  "sinks=2 mult=1": 128,
+  "sinks=2 mult=2": 296,
+  "sinks=2 mult=3": 138,
+  "sinks=3 mult=2": 60,
+  "sinks=3 mult=3": 50
+ },
+ "closed_twin_non_lifts": {
+  "count": 125,
+  "base_status": {
+   "not a strict n7 survivor": 114,
+   "never": 3,
+   "never / no legal beta with all a_i > 0 and all o": 8
+  }
+ },
+ "aut": {
+  "1": 8945,
+  "2": 182,
+  "4": 3,
+  "6": 3
+ },
+ "aut_gt1_without_closed_twins": [
+  "&GNi{NXLMhnNw",
+  "&GVQ}Pp~Jy}Nw"
+ ],
+ "X2prime_check_at_interior_beta": {
+  "w_G>0": 9133,
+  "with_sinks": 3857,
+  "w_core>0": 3857,
+  "all sigma_S>1": 3857
+ }
+}

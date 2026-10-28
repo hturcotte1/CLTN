@@ -1,6 +1,6 @@
 # Overlap report: two unrefereed GitHub repositories vs. the CTLN target-free-clique project
 
-Date of retrieval: 2026-10-13. Retriever: `literature` agent (Sonnet 5.5).
+Date of retrieval: 2026-10-13. Retriever: `literature` agent.
 
 ## 0. Handling and trust
 

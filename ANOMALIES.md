@@ -1384,3 +1384,46 @@ n = 8 list is overwhelmingly NEW rather than lifted; (ii) bidirected in-twin swi
 domination-freeness (232 of 643 switches of sampled never-records are rejected by F1), consistent with Lemma D.
 Status of the n = 8 result: VERIFIED by machine (two independent campaigns), limit map only, no human hand check
 (declined by the user); recorded in certificates/n8_limit_summary.json.
+
+## 2026-10-28  PROJECT FINISHED (per the user's instruction): n = 8 aggregation, structure, report, paper; corrections found by the finishing referees
+
+Workflow wf_cd6fed7c-953 (ten agents: aggregator, structure analyst, literature agent, report writer, paper
+writer, outreach drafter, number referee, overclaim referee, build checker, fixer).  Products: n8/aggregate_n8.py
+-> certificates/n8_summary.json (counts recounted from the raw files and asserted against the tally and the
+prefilter totals; 6,260 D-equivalence classes by the Lemma J key of n7/aggregate_n7.py, 4,939 singletons,
+largest 32, interval data identical within every class; 61 of the 9,133 are closed-twin blow-ups of 52 of the
+123 n = 7 counterexamples, 9,072 are new; q_8*(limit) = the largest root of the degree-15 polynomial
+13109 q^15 - 124967 q^14 + ... - 9045013 in [459224485/268435456, 2755346911/1610612736] (about 1.7107),
+attained as a supremum by &GMx|\Aw^qz]w and &GVrm]A{^pZ]w, not attained (a Hurwitz minor vanishes there),
+exactly larger than the plastic number q_7*) and certificates/n8_counterexamples_classes.json; notes/n8_structure.md
+(every statement tested exactly on all 9,133: largest bidirected clique at most 5 = n - 3, at most 3 non-adjacent
+pairs, 11..27 missing arcs, the missing-arc digraph always contains a directed cycle, every graph is Hamiltonian
+and contains an induced oriented 3-cycle; these universals are shared by almost all strict survivors, so they are
+not a signature; conjectures S1-S3 labelled as such); notes/literature_position_2026-10-28.md (scoop check
+negative as of 28 Oct 2026; arXiv index reached 27 Oct); notes/REPORT_n8.md; notes/FINAL_SUMMARY.md (n <= 8);
+notes/paper/paper.tex + paper.pdf (30 pages, new section 6 'The eps -> 0 map at n = 8', abstract/intro/
+verification updated; 0 LaTeX errors); notes/outreach/DRAFT_*.md (NOT SENT, per the user's instruction no
+emails and no submissions); referee files notes/referee_finish_numbers.json (191 claims: 183 ok, 7 wrong,
+1 unsourced, all fixed), notes/referee_finish_overclaims.json (73 findings, all applied),
+notes/referee_finish_applied.md.
+
+Corrections the referees found in earlier entries of this log (append-only, so recorded here):
+(a) the strict-line tallies of 2026-10-27/28 labelled GV~~~{ (19,701 strict lines) as K8 - 2K2; GV~~~{ is
+    K8 - P3 (as the 2026-10-22 entry says) and K8 - 2K2 is G]~~~{ with 16,123 strict lines;
+(b) E_1 of Theorem E (&GNbR^z~[zP[_) is isomorphic to the Lemma B graph &GNQf^zr\IsNw, so 15 distinct
+    finite-eps-only eight-node graphs are known, not 16;
+(c) in five listed n = 8 graphs a one-vertex deletion is &FNFL~[udo?, always at a sink node, two of them among
+    the 1,972 sink-deletion lifts;
+(d) the first drafts of the finishing documents compared the n = 8 record graph with Theorem Q's family the
+    wrong way round: the record's non-edge sextic has a root with real part below -4/11, to the LEFT of family
+    Q's limit (all roots above -5/14), so family Q overtakes the n = 8 record only for large k (q near 9/5 needs
+    k >= 286) while q_8*(limit) < 7/4; corrected everywhere before commit;
+(e) the n = 8 run saw eleven container restarts in all (four on 15-16 October in the shard phase, seven from
+    19 to 27 October in the job phase), not seven;
+(f) the filter8 'byte-identical' validation covered all 1,540,944 n = 6 digraphs and the 638,042 n = 7 spectral
+    survivors, not 'all n = 7 data';
+(g) the 2026-10-28 machine-confirmation entry's 'smallest upper end about 1.000276' is a display slip: the
+    per-graph refinement file and n8/aggregate_n8.py give &GMBQMHtMH~]W in [77079731/77070336,
+    1079116235/1078984704], about 1.000122 (degree 21); certificates/n8_limit_summary.json corrected.
+Also scrubbed: three model-name mentions in older notes (a referee's aside, a retriever label and a verbatim
+acknowledgment quote), per the project rule that no model identifier appears in a pushed file.

@@ -1,0 +1,17 @@
+{
+ "consistent": 9133,
+ "inconsistent": [],
+ "mechanism": {
+  "starts at 2 | ends at a positivity root": 1498,
+  "starts at 2 | spectral end, positivity continues (bounded)": 4690,
+  "starts at 2 | spectral end, positivity continues to oo": 1974,
+  "starts at a positivity root > 2 | ends at a positivity root": 444,
+  "starts at a positivity root > 2 | spectral end, positivity continues (bounded)": 504,
+  "starts at a positivity root > 2 | spectral end, positivity continues to oo": 23
+ },
+ "positivity_components": {
+  "1": 8984,
+  "2": 149
+ },
+ "positivity_unbounded": 2133
+}

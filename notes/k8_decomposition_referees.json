@@ -518,7 +518,7 @@
     {
      "severity": "NOTE",
      "where": "Referee sandbox hygiene: /tmp/claude-0/-home-user-CLTN/083b78b8-b6de-5340-9343-2e5fdd9085d8/scratchpad/ref_deploy_fable/",
-     "description": "Two referees chose the same directory name (both are Fable). My first sandbox run (08:40 UTC) overwrote ref_deploy_fable/sb/n8/jobs/jobs.tsv with my rows and my driver skipped rows whose .done files came from the other referee's 08:39 run; I then redid everything in ref_deploy_fable_integ_* and ref_deploy_fable/tbl (the deploy test, verified to be mine by timestamps) and did not touch the shared directory further. The other referee's later runs use ref_deploy_fable_01W9KhFw. If its first-run results look inconsistent, this is why.",
+     "description": "Two referees chose the same directory name (both referees ran on the same model). My first sandbox run (08:40 UTC) overwrote ref_deploy_fable/sb/n8/jobs/jobs.tsv with my rows and my driver skipped rows whose .done files came from the other referee's 08:39 run; I then redid everything in ref_deploy_fable_integ_* and ref_deploy_fable/tbl (the deploy test, verified to be mine by timestamps) and did not touch the shared directory further. The other referee's later runs use ref_deploy_fable_01W9KhFw. If its first-run results look inconsistent, this is why.",
      "reproduction": "ls -la --time-style=+%T ref_deploy_fable/sb/n8/jobs shows files from 08:39 (theirs) and 08:40 (mine)."
     }
    ],

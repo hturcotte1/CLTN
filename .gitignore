@@ -46,3 +46,9 @@ n8/orbitenum/dryrun/*.tmp
 n8/k8decomp/addarcs
 n8/check_k8decomp.log
 n8/check_orbit.log
+notes/paper/*.aux
+notes/paper/*.bbl
+notes/paper/*.blg
+notes/paper/*.log
+notes/paper/*.out
+notes/paper/*.toc

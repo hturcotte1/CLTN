@@ -1,0 +1,367 @@
+{
+ "A_FNFL_deletions": {
+  "graphs_with_a_one_vertex_deletion_equal_to_FNFL": 5,
+  "records": [
+   {
+    "d6": "&GNbR^x~[zR[?",
+    "FNFL_deletion_vertices": [
+     4
+    ],
+    "sink_nodes": [
+     2,
+     4
+    ],
+    "FNFL_vertex_is_sink": [
+     true
+    ],
+    "FNFL_vertex_in_closed_twin_pair": [
+     false
+    ],
+    "some_sink_deletion_in_123_limit_list": false,
+    "contains_an_n6_counterexample": true
+   },
+   {
+    "d6": "&GNBb^zr\\J~[G",
+    "FNFL_deletion_vertices": [
+     6
+    ],
+    "sink_nodes": [
+     2,
+     3,
+     6
+    ],
+    "FNFL_vertex_is_sink": [
+     true
+    ],
+    "FNFL_vertex_in_closed_twin_pair": [
+     false
+    ],
+    "some_sink_deletion_in_123_limit_list": true,
+    "contains_an_n6_counterexample": true
+   },
+   {
+    "d6": "&GNbR^z~[rR[_",
+    "FNFL_deletion_vertices": [
+     4
+    ],
+    "sink_nodes": [
+     2,
+     3,
+     4
+    ],
+    "FNFL_vertex_is_sink": [
+     true
+    ],
+    "FNFL_vertex_in_closed_twin_pair": [
+     false
+    ],
+    "some_sink_deletion_in_123_limit_list": false,
+    "contains_an_n6_counterexample": true
+   },
+   {
+    "d6": "&GNbR^z~[zR[?",
+    "FNFL_deletion_vertices": [
+     4
+    ],
+    "sink_nodes": [
+     2,
+     3,
+     4
+    ],
+    "FNFL_vertex_is_sink": [
+     true
+    ],
+    "FNFL_vertex_in_closed_twin_pair": [
+     false
+    ],
+    "some_sink_deletion_in_123_limit_list": true,
+    "contains_an_n6_counterexample": true
+   },
+   {
+    "d6": "&GNbR^z~[zR[_",
+    "FNFL_deletion_vertices": [
+     4
+    ],
+    "sink_nodes": [
+     2,
+     3,
+     4
+    ],
+    "FNFL_vertex_is_sink": [
+     true
+    ],
+    "FNFL_vertex_in_closed_twin_pair": [
+     false
+    ],
+    "some_sink_deletion_in_123_limit_list": true,
+    "contains_an_n6_counterexample": true
+   }
+  ],
+  "of_these_counted_in_the_1972_no_sink_deletion_gives_an_n7_cex": 2,
+  "of_these_with_FNFL_at_a_closed_twin_vertex": 0
+ },
+ "B_finite_eps_only_n8": {
+  "count": 16,
+  "pairwise_non_isomorphic": false,
+  "distinct_isomorphism_classes": 15,
+  "isomorphic_groups": [
+   [
+    "&GNbR^z~[zP[_",
+    "&GNQf^zr\\IsNw"
+   ]
+  ],
+  "all_legal_positive_stable_nonclique": true,
+  "none_in_limit_list": true,
+  "records": [
+   {
+    "kind": "E_1",
+    "d6": "&GNbR^z~[zP[_",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GM@RYJvJzp^w",
+    "eps": "1/49",
+    "delta": "327/15680",
+    "q": "981/980",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GMPRYJvJzp^w",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GMPVYJvNzpNw",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GMPVZJvJzpNw",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GMRF^JtJzpNw",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNRf^jv\\YoNw",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNAb^rb\\Yw^w",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNQb^rb\\Yw^w",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNQf^rb\\ZwNw",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNQf^rr\\YwNw",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNQf^rbXyo^w",
+    "eps": "1/49",
+    "delta": "327/15680",
+    "q": "981/980",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNQf^zr\\IsNw",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNQf^zbXYo^w",
+    "eps": "1/49",
+    "delta": "327/15680",
+    "q": "981/980",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNRf^zr\\ioNw",
+    "eps": "1/21",
+    "delta": "421/8400",
+    "q": "421/420",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   },
+   {
+    "kind": "cube",
+    "d6": "&GNRb^zrXIo^w",
+    "eps": "1/49",
+    "delta": "327/15680",
+    "q": "981/980",
+    "legal": true,
+    "positive": true,
+    "stable": true,
+    "detail": "all Hurwitz minors positive",
+    "clique": false,
+    "in_limit_list": false
+   }
+  ]
+ },
+ "C_theorem_Q_vs_record": {
+  "Q_limit_poly_all_roots_Re_gt_minus_5_over_14": [
+   true,
+   "all Hurwitz minors positive"
+  ],
+  "record_sextic_all_roots_Re_gt_minus_4_over_11": [
+   false,
+   "Hurwitz minor 3 negative"
+  ],
+  "record_sextic_all_roots_Re_gt_minus_3_over_8": [
+   true,
+   "all Hurwitz minors positive"
+  ],
+  "reading": "If the first is True and the second False: record min Re < -4/11 < -5/14 < Q-limit min Re, so the record lies to the LEFT of (and closer to -1/2 than) the Theorem Q limit, and its q is smaller.",
+  "q8_limit_upper_isolating_hi": "2755346911/1610612736",
+  "q8_limit_hi_lt_7_4": true,
+  "theorem_Q_limit_stable_q_values_for_large_k": [
+   "3/2 (k>=25)",
+   "17/10 (k>=79)",
+   "9/5 (k>=286)"
+  ],
+  "nine_fifths_gt_7_4": true
+ },
+ "D_plastic_and_champion": {
+  "f(13247/10000)": "-76579777/1000000000000",
+  "rho_gt_1.3247": true,
+  "f(49/37)": "-85/50653",
+  "rho_gt_49/37": true,
+  "champion_lower_end_q_interval": [
+   "1",
+   "5/4"
+  ],
+  "champion_lower_end_q_minpoly": [
+   1,
+   1,
+   0,
+   -2,
+   -1
+  ],
+  "champion_lower_q_hi_lt_49/37": true
+ }
+}

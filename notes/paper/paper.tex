@@ -19,6 +19,7 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{question}[theorem]{Question}
+\newtheorem{conjecture}[theorem]{Conjecture}
 
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Q}{\mathbb{Q}}
@@ -32,7 +33,7 @@
 \newcommand{\st}[1]{\textsc{#1}}
 
 \title{The target-free clique conjecture for threshold-linear networks:\\
-complete exact maps for $n\le 7$, infinite families,\\ and unbounded thresholds}
+complete exact maps for $n\le 7$, the $\eps\to0$ map at $n=8$,\\ infinite families, and unbounded thresholds}
 \author{}
 \date{Draft, October 2026}
 
@@ -54,7 +55,12 @@ supports: there are none for $n\le5$; at $n=6$ exactly three of the $1{,}540{,}9
 $n=7$ exactly $124$ of the $882{,}033{,}440$ digraphs do, one of which is invisible in the $\eps\to0$ limit. The exact
 thresholds are $q_6^*\approx1.1664$, a root of an explicit sextic, and $q_7^*=\rho\approx1.3247$, the
 plastic number: for $n\le7$ the conjecture holds at every legal parameter with $q\ge\rho$ and fails for
-every $q\in(1,\rho)$. Third, closed-twin blow-ups yield infinite families: counterexamples on every
+every $q\in(1,\rho)$. Third, at $n=8$ we certify the complete $\eps\to0$ limit map: of the $801{,}558{,}826{,}511$
+digraphs not excluded by a Lean-checked edge bound, exactly $9{,}133$ non-complete graphs have a positive, limit-stable
+full support, $9{,}072$ of them not closed-twin lifts of seven-node counterexamples, and the limit threshold
+$q_8^*(\infty)\approx1.7107$ is a root of an explicit degree-$15$ polynomial, so $q_8^*>q_7^*$; this list was verified by
+two independent machine campaigns but, unlike the $n\le7$ lists, not by hand, and the finite-$\eps$ map at $n=8$ remains
+open. Fourth, closed-twin blow-ups yield infinite families: counterexamples on every
 $n\ge6$ nodes, finite-$\eps$-only counterexamples on every $n\ge7$ nodes, a proof that the critical
 value $q_n^*$ tends to infinity, and a single legal parameter point at which stable non-clique supports
 of every size $n\ge 6$ exist. Several of the necessary conditions used to prune the search are
@@ -92,7 +98,7 @@ that it does hold whenever
 q\;\ge\; n-2-\tfrac{(n-3)\eps}{2}.
 \end{equation}
 This leaves a gap between $q$ slightly above $1$ and $q$ near $n-2$. The present paper maps that gap
-exactly for $n\le7$ and studies its behaviour for large $n$.
+exactly for $n\le7$, maps its $\eps\to0$ limit at $n=8$, and studies its behaviour for large $n$.
 
 \subsection{Our results}
 Throughout, results are labelled \st{proved} (a proof is given here or in the project notes),
@@ -101,8 +107,10 @@ or \st{Lean} (machine-checked in Lean~4 with Mathlib; marked \lean\ in statement
 number enters any decision; decimals in the text are display approximations of exactly specified
 algebraic numbers. Graphs on $n\le7$ nodes reported as counterexamples have been checked by hand (the two new
 six-node graphs also by independent adversarial verification workflows, the $124$ seven-node graphs also by
-four independently written exact verifiers); family members on $n\ge8$ nodes are certified instances
-of proved theorems but have \emph{not} been hand-verified (Section~\ref{sec:verification}).
+four independently written exact verifiers). The $9{,}133$ eight-node limit counterexamples have been verified by two
+independent machine campaigns and by \emph{no} human hand check, and family members on $n\ge8$ nodes are certified
+instances of proved theorems that have likewise \emph{not} been hand-verified (Section~\ref{sec:verification}); we label
+such results ``machine-verified''.
 
 \paragraph{Reduction and exact machinery.} At every legal parameter, the conjecture on $n$ nodes is
 equivalent to the absence of a non-complete digraph on $k\le n$ nodes whose full support is a positive,
@@ -132,6 +140,19 @@ region bulges past its limit boundary (Theorem~\ref{thm:AS}). The threshold is $
 number (real root of $q^3=q+1$), and for $n\le7$ the conjecture holds at every legal parameter with
 $q\ge\rho$ and fails for every $q\in(1,\rho)$ (Theorem~\ref{thm:q7}).
 
+\paragraph{The $\eps\to0$ map at $n=8$.} The edge bound restricts the search to the $801{,}558{,}826{,}511$ digraphs on
+eight nodes with at least $29$ edges, enumerated once each (the complete graph and three other high-symmetry graphs by a
+decomposition lemma, with exact ledgers). A C prefilter removes dominated graphs and graphs whose compressed adjacency has
+$\alpha\ge-1/2$, and the exact one-parameter engine classifies the $347{,}639$ strict survivors: exactly $9{,}133$
+non-complete graphs are limit-stable with a positive fixed point (Theorem~\ref{thm:n8}). The list has $6{,}260$ classes of
+identical full-support data, $61$ closed-twin lifts of seven-node counterexamples and $9{,}072$ graphs that are not,
+$6{,}720$ graphs containing no smaller counterexample, and the edge bound is attained by two $29$-edge graphs. The limit
+threshold $q_8^*(\infty)\approx1.7107$ is a root of an explicit degree-$15$ polynomial, exceeds the plastic number and is not
+attained (Theorem~\ref{thm:q8}). All $9{,}133$ are strongly connected, contain an induced oriented $3$-cycle and have no
+bidirected clique on $n-2$ nodes; for limit counterexamples the last property is verified exhaustively up to $n=9$ and stated as a conjecture
+(Conjecture~\ref{conj:S}). This is a limit map only: finite-$\eps$-only counterexamples at $n=8$, which exist, are
+outside it.
+
 \paragraph{Infinite families and unbounded thresholds.} Closed-twin blow-ups preserve full-support
 fixed-point data in closed form (Lemmas~\ref{lem:W} and~\ref{lem:X}). This yields: counterexamples on
 every $n\ge6$ (Theorem~\ref{thm:famF}); finite-$\eps$-only counterexamples on every $n\ge7$
@@ -143,14 +164,22 @@ $n\ge6$, and on no $n\le5$ (Theorem~\ref{thm:A}).
 
 \paragraph{Verification.} Every count and critical value is backed by a re-runnable certificate file
 (Appendix~\ref{app:certs}); the pipelines and theorems were independently audited; all $n\le7$ counterexamples were
-hand-verified, and the $124$ seven-node ones were re-decided by four independently written exact verifiers; and $87$ supporting theorems are machine-checked
+hand-verified, and the $124$ seven-node ones were re-decided by four independently written exact verifiers; the $9{,}133$
+eight-node limit counterexamples were re-decided by four further exact verifiers written from the definitions and then by a
+second campaign of six lenses (completeness from the seven-node side, stability for all large $t$, the never side, the
+enumeration chain), with no human hand check; and $87$ supporting theorems are machine-checked
 (Section~\ref{sec:verification}).
 
 \subsection{Related work}
 The conjecture and the surrounding graph rules are from Curto and Morrison \cite{CurtoMorrison2023}.
 Graphical domination, which we use as a prune in its verbatim form, is due to Curto \cite{Curto2025}.
 Geneson \cite{Geneson2026} gave the first counterexample and the bound~\eqref{eq:geneson-bound}; he does
-not pose or treat the gap question.
+not pose or treat the gap question. His preprint has no later version at the time of writing (checked 28 October 2026),
+and we know of no published or posted work that classifies $n=7$ or $n=8$, exhibits finite-$\eps$-only counterexamples or
+improves the bound: a search of arXiv on that date (topic searches for threshold-linear networks, CTLNs and target-free
+cliques, and author searches) found no CTLN item dated after 23 July 2026 apart from a revision of a preprint on fixed-point
+composition under gluings, which does not concern target-free cliques, and the record and repositories of
+\cite{SixIsMinimal2026} were unchanged.\footnote{\cf{notes/literature_position_2026-10-28.md}.}
 An unrefereed preprint, ``Six Is Minimal'' \cite{SixIsMinimal2026}, obtained independently and by
 different exact methods that no digraph on at most five nodes has a stable non-clique support, used
 Geneson's graph as the six-node witness, computed the full-support region of that graph, and gave a
@@ -298,7 +327,7 @@ Combining (b) and (c): if $w(\gamma)>0$ and $\alpha<-\gamma$ at some rational $\
 is an SFP at the legal points $(\eps,\delta)=(1/(1+t),(\beta-1)/(1+t))$ for all $t>T(\beta)$. We call such a
 graph \emph{limit-stable}. Lemma~\ref{lem:limit} is the shared dependency of every ``for all $k$''
 statement in Section~\ref{sec:families}; it is not formalised in Lean. Parts (b) and (c) are Lemmas~I.3 and~I.4 of
-the project notes; they were refereed when the $n=6$ map was audited and were not re-derived by the referees of the
+the project notes; they were reviewed internally when the $n=6$ map was audited and were not re-derived by the internal reviewers of the
 family theorems.
 
 \subsection{Reduction to full supports}
@@ -408,7 +437,7 @@ independent of the isolator. It reproduces the theorem for $k\le4$ on all digrap
 with an earlier implementation on all $706$ five-node survivors of a weaker filter.\footnote{\cf{certificates/region2d_n2to4_all.json}, \cf{certificates/region2d_v2_validation.json}.}
 
 \paragraph{Policy.} A cell whose Hurwitz test is undecided at three samples is \emph{escalated}, not decided; there were $0$
-escalations at $n=5,6,7$. By Lemma~\ref{lem:open} undecided points cannot hide counterexamples.
+escalations at $n=5,6,7,8$. By Lemma~\ref{lem:open} undecided points cannot hide counterexamples.
 
 \subsection{Ray reduction to the legality curve}
 \begin{lemma}[Ray identity; proved, \lean]\label{lem:rayF}
@@ -745,6 +774,337 @@ Geneson's bound gives $q\ge5-2\eps$ at $n=7$; the true threshold is the plastic 
 Theorem~\ref{thm:famF} alone reaches only about $1.2747$ at $n=7$, and other graphs approach the supremum.
 
 %======================================================================
+\section{The \texorpdfstring{$\eps\to0$}{eps -> 0} map at \texorpdfstring{$n=8$}{n = 8}}\label{sec:n8}
+
+The finite-$\eps$ pipeline of Section~\ref{sec:n7} does not scale to the $1{,}793{,}359{,}192{,}848$ digraphs on eight
+nodes, but the $\eps\to0$ limit does. By Lemma~\ref{lem:limit}, the full support is limit-stable at a legal $\beta$ iff
+$w(\gamma)>0$ and $\alpha(\perpc{A})<-\gamma$, and the spectral part can be screened by an integer Hurwitz computation on
+the exact limit polynomial at up to $1.8$ million digraphs per second per process ($1.5$--$1.7$ million per second aggregate in production). We call a non-complete graph a \emph{limit
+counterexample} if its full support is positive and limit-stable at some rational $\beta>2$; by Lemma~\ref{lem:limit}
+its full support is then a stable non-clique fixed point at every legal point $(\eps,\delta)=(1/(1+t),(\beta-1)/(1+t))$
+with $t$ large, so $S_H$ is nonempty. This section reports the complete limit map at $n=8$. Its status differs from
+the $n\le7$ maps in two ways, stated here and repeated where they matter. It is a map of the \emph{limit} only:
+counterexamples visible only at finite $\eps$, of which Theorem~\ref{thm:famE} and Lemma~\ref{lem:Bmech} already
+provide eight-node examples, are outside it. And its $9{,}133$ counterexamples have been verified by two independent
+machine campaigns but by no human hand check (Section~\ref{sec:verification}).
+
+\subsection{The restricted enumeration}
+By Lemma~\ref{lem:e2} a positive stable full support on eight nodes needs at least $29$ edges, hence an underlying
+simple graph with at least $15$ of the $28$ possible undirected edges. There are $5{,}350$ simple graphs on eight nodes
+with $15$ to $28$ edges and, by Burnside's lemma over $\operatorname{Aut}(G)$ for each of them, exactly
+$801{,}558{,}826{,}511$ digraphs up to isomorphism with such an underlying graph and at least $29$ edges. The remaining
+$991{,}800{,}366{,}337$ digraphs on eight nodes (OEIS A000273 gives $1{,}793{,}359{,}192{,}848$ in all) have at most $28$
+edges and are never positive and stable at any legal parameter, by the Lean-checked edge bound; they were not
+enumerated.\footnote{\cf{certificates/n8_limit_summary.json} (\texttt{scope}, \texttt{enumeration});
+\cf{certificates/n8_summary.json} (\texttt{chain.restricted\_space}); \cf{n8/n8_restricted_counts.json};
+\texttt{edge\_bound\_ctln}\lean, \cf{notes/lean/CtlnCert/CtlnCert/EdgeBound.lean}.}
+
+Each underlying graph was enumerated once, its digraphs generated by nauty's \texttt{directg} from \texttt{geng} output,
+in $9$ shards for the sparser graphs and $3{,}226$ jobs for the denser ones; $201$ graphs were split over several jobs,
+and every graph's output count was checked against its exact Burnside count. Two groups of graphs with large
+automorphism groups were enumerated by a different scheme, because the cost of \texttt{directg}'s isomorph rejection grows
+with the automorphism group and would have been days for them. \emph{(i)}~$K_8$ ($575{,}009{,}339$ digraphs,
+$|\operatorname{Aut}|=40{,}320$): the isomorphism classes of digraphs with underlying graph $G$ are in bijection with the
+pairs (a subgraph $B$ of $G$ up to $\operatorname{Aut}(G)$, an orientation of $G-B$ up to the stabiliser of $B$), where
+$B$ is the set of bidirected pairs. For $G=K_8$ this replaces one enumeration with group $S_8$ by $12{,}345$ enumerations
+with small groups, $B$ ranging over the nonempty graphs on eight nodes; they were run as $40$ batches whose per-$B$ ledger
+sums to exactly $575{,}009{,}339$. \emph{(ii)}~$K_8-K_3$, $K_8-K_{1,5}$ and $K_8-(K_2+K_{1,5})$, by the relative form
+of the same bijection implemented directly with least-element orbit representatives, in $14$ parts with exact totals
+$1{,}179{,}317{,}832$, $330{,}741{,}720$ and $84{,}866{,}528$. Both schemes re-enumerate the same isomorphism classes;
+neither is a prune. They were validated before use by canonical-form multiset equality against \texttt{directg} at
+$n=4,5,6,7$ ($38$, $570$, $21{,}424$ and $2{,}141{,}832$ classes for $K_n$) and on further graphs, and after the run by
+re-enumerating $K_8-e$ ($5{,}339{,}129{,}738$ digraphs, the richest graph) with the orbit scheme: its $143{,}266$
+canonical strict-survivor lines are exactly those of the $321$ \texttt{directg} parts used in production. Four
+adversarial referees of the lemma, the code, the counts and the deployment found no defect.\footnote{\cf{notes/k8_decomposition.md}
+(lemma with proof, both forms); \cf{notes/k8_decomposition_referees.json}; ledgers \cf{n8/check_k8decomp.log},
+\cf{n8/check_orbit.log}; \cf{n8/orbitenum/k8e_check/}; \cf{certificates/n8_summary.json} (\texttt{chain.swaps});
+\cf{ANOMALIES.md}, entries of 27 and 28 October 2026.}
+
+\subsection{The accounting chain}
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{@{}cp{0.5\textwidth}rr@{}}
+\toprule
+stage & condition (where proved) & removed & remaining\\
+\midrule
+0 & digraphs on eight nodes (OEIS A000273) & & $1{,}793{,}359{,}192{,}848$\\
+1 & at most $28$ edges (Lemma~\ref{lem:e2}); not enumerated & $991{,}800{,}366{,}337$ & $801{,}558{,}826{,}511$\\
+2 & a dominated node (Lemma~\ref{lem:D}) & $687{,}860{,}834{,}577$ & $113{,}697{,}991{,}934$\\
+3 & a negative coefficient of the exact limit polynomial, or a negative Hurwitz determinant met before any vanishing one: $\alpha\ge-1/2$, never limit-stable (Lemma~\ref{lem:limit}(b)) & $113{,}280{,}040{,}661$ & $417{,}951{,}273$\\
+4 & no negative coefficient, but a vanishing coefficient or a vanishing Hurwitz determinant met before any negative one (the ``B'' lines): $\alpha\ge-1/2$, never limit-stable; not stored & $417{,}603{,}634$ & $347{,}639$\\
+5 & no $\beta>2$ with $w(\gamma)>0$ (Lemma~\ref{lem:limit}(c)) & $331{,}427$ & $16{,}212$\\
+6 & positive and limit-stable at no common $\beta$ (exact limit cells) & $7{,}078$ & $9{,}134$\\
+\bottomrule
+\end{tabular}
+\caption{Accounting chain of the limit map at $n=8$. The $9{,}134$ survivors are $K_8$ and the $9{,}133$ limit
+counterexamples; $0$ escalations and $0$ overflow lines. Stages 2--4 are the C prefilter, stages 5--6 the exact
+one-parameter engine at $t=\infty$. Stage 1 counts are from the Burnside enumeration, stages 2--4 from the prefilter
+totals, stages 5--6 recounted from the per-graph records.}\label{tab:chain8}
+\end{table}
+
+Table~\ref{tab:chain8} gives the chain. Stages 2--4 were run by an overflow-guarded C prefilter that is byte-identical to the
+$n=7$ prefilter on all $1{,}540{,}944$ six-node digraphs and on the $638{,}042$ seven-node spectral survivors; it reads each digraph once, tests domination in the verbatim form of
+Lemma~\ref{lem:D}, and applies the Hurwitz test to the exact integer limit polynomial, returning three values. Only the
+$347{,}639$ strict survivors (all Hurwitz determinants positive, i.e.\ $\alpha<-1/2$) were stored; the $417{,}603{,}634$
+``B'' lines, for which a determinant vanishes before any negative one, have $\alpha\ge-1/2$ and are therefore never
+limit-stable at a legal $\beta$ (at every $\beta>2$, $-\gamma<-1/2\le\alpha$), but they were discarded at the shell
+level and are not available for any finite-$\eps$ question.\footnote{\cf{n8/n8_prefilter_TOTAL.txt};
+\cf{n8/n8_accounting.json} (\texttt{ok = true}: $9$ shards, $3{,}226$ jobs, $201$ split graphs, kept lines
+$S=347{,}639$, $O=0$); prefilter \cf{n7/filter8.c}; runbook \cf{n7/REPRODUCE_n8_limit.md}.} Stages 5--6 are the
+one-parameter engine of Section~\ref{sec:machinery} at $t=\infty$ with replay, run on every stored line: the single run
+was interrupted by a container restart after $59{,}610$ lines and finished as four shards of the unmodified script over
+disjoint subsets of $86{,}910$, $86{,}910$, $86{,}910$ and $86{,}909$ lines ($2{,}312$, $2{,}282$, $2{,}310$ and $2{,}229$
+non-complete stable graphs, $K_8$ in the second shard), merged by a checked script; the shard tallies sum to the merged
+tally and each of the $64{,}196$ complete records of the interrupted run equals the shard record for the same graph.
+The limit stage took $10{,}776.6$ CPU-seconds, about $31$~ms per line.\footnote{\cf{n8/n8_limit_tally.json};
+\cf{n8/limit_sharding/shard\{0,1,2,3\}_tally.json}; \cf{certificates/n8_summary.json} (\texttt{chain.limit\_stage},
+\texttt{counts}); script \cf{n8/run_n8_limit.py}.}
+
+\begin{theorem}[$n=8$, limit map; certified, machine-verified, not hand-verified]\label{thm:n8}
+Exactly $9{,}133$ non-complete digraphs on eight nodes are limit counterexamples. Every other digraph on eight nodes is
+either excluded by a necessary condition valid at every legal parameter (stages 1--2 of Table~\ref{tab:chain8}) or
+certified not limit-stable at any legal $\beta$ (stages 3--6). In particular the target-free clique conjecture fails for
+eight-node CTLNs at all sufficiently small $\eps$ on the ray $\delta=(\beta-1)\eps$ for every $\beta$ in the stable
+interval of one of the $9{,}133$ graphs, and the tail of no legal ray is stable and positive for any other non-complete
+full support on eight nodes.
+\end{theorem}
+The theorem says nothing about stability at finite $\eps$ outside those rays: the finite-$\eps$ map at $n=8$ is not
+done: finite-$\eps$-only counterexamples on eight nodes exist ($15$ distinct graphs satisfying Lemma~\ref{lem:Bmech}, $E_1$ among
+them, all with $\alpha=-1/2$ and hence among the unstored B lines; at $n=7$ there was exactly one such graph), and further ones
+may sit among the B lines, the $7{,}078$ never\_full lines or, unless Question~\ref{q:char} is answered, the lines with
+$\alpha>-1/2$. Every statement about $n=8$ in this paper carries that scope.
+
+\subsection{The 9,133 graphs}
+All counts below are recomputed from the per-graph records and asserted against the limit tally and the prefilter
+totals.\footnote{\cf{n8/n8_limit_HITS.jsonl} (one record per graph: adjacency, exact stable interval with minimal
+polynomials and isolating intervals, four pointwise witnesses); \cf{certificates/n8_summary.json};
+\cf{certificates/n8_counterexamples_classes.json}; \cf{certificates/n8_candidates_legal_witnesses.json}; script
+\cf{n8/aggregate_n8.py}.}
+
+\begin{table}[ht]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{@{}l*{17}{r}@{}}
+\toprule
+edges & 29 & 30 & 31 & 32 & 33 & 34 & 35 & 36 & 37 & 38 & 39 & 40 & 41 & 42 & 43 & 44 & 45\\
+\midrule
+graphs & 2 & 27 & 120 & 269 & 562 & 1{,}079 & 1{,}485 & 1{,}406 & 1{,}305 & 768 & 510 & 476 & 581 & 353 & 153 & 34 & 3\\
+\bottomrule
+\end{tabular}
+\caption{Edge counts of the $9{,}133$ eight-node limit counterexamples ($56$ edges possible; the edge bound is $\ge29$).}\label{tab:n8edges}
+\end{table}
+
+\begin{itemize}
+\item They are pairwise non-isomorphic (nauty canonical labelling), non-complete and domination-free; between $11$ and
+$27$ of the $56$ edges are missing (Table~\ref{tab:n8edges}). The underlying simple graph is complete for $6{,}037$ of them;
+$2{,}895$ have one non-adjacent pair, $198$ two and $3$ three. The number of bidirected pairs ranges from $2$ to $17$ of
+$28$. The edge bound is \emph{attained}: the two $29$-edge graphs of Table~\ref{tab:n8min} have $2$ and $3$ bidirected pairs
+against $1$ and $2$ non-adjacent pairs, the minimum Lemma~\ref{lem:e2} allows (at $n=7$ the bound $22$ was not attained; the
+sparsest counterexample had $23$ edges).
+\item Each has exactly one stable $\beta$-interval, an open cell between consecutive critical roots. Its lower end is $\beta=2$
+(so $q\to1$) for $8{,}162$ graphs and a positivity root for $971$; its upper end is a root of the Hurwitz determinant
+$\Delta$ (the spectral boundary $\beta_c$) for $7{,}191$ graphs and a positivity root for $1{,}942$. The upper ends have
+$4{,}298$ distinct minimal polynomials, all irreducible, of degrees $1$ ($2$ graphs), $3$ ($208$), $4$ ($34$), $5$ ($947$),
+$6$ ($874$), $7$ ($307$), $10$ ($535$), $12$ ($8$), $15$ ($4{,}022$) and $21$ ($2{,}196$); the most frequent is again
+$q^5+2q^4+q^3-2q^2-2q-1$, the quintic of $H_3$ ($408$ graphs; $17$ at $n=7$), and the plastic cubic $q^3-q-1$ ends
+$178$ intervals. The two degree-one ends are the rational value $q=5/3$ ($\beta_c=8/3$), discussed below. Every stored
+isolating interval contains exactly one root (Sturm), and the stored $q$-polynomial is the $\beta$-polynomial at
+$\beta=1+q$, for all $9{,}133$.
+\item They form $6{,}260$ classes of identical full-support data in the sense of Section~\ref{sec:n6} (same characteristic
+polynomial and in-walk counts): $4{,}939$ singletons, $824$ pairs, $2$ triples, $374$ classes of $4$, $16$ of $5$, $3$ of
+$6$, one of $7$, $84$ of $8$, $2$ of $10$, one of $12$, $4$ of $14$, $8$ of $16$, one of $19$ and one of $32$. Within every
+class the stable interval, its minimal polynomials and the edge count are identical. $4{,}271$ graphs carry a bidirected
+in-twin pair ($5{,}202$ pairs in all); all $29{,}116$ in-twin switches (Proposition~\ref{prop:J4}) of these graphs are
+again in the list, with identical intervals.
+\item \emph{Lifts versus new graphs.} The $123$ limit counterexamples on seven nodes have $858$ distinct closed-twin
+blow-ups (one node doubled, Lemma~\ref{lem:W}); exactly $61$ of them, from $52$ parents, are in the list, and the other
+$797$ are not limit counterexamples (prefilter: $690$ dropped, $47$ B, $60$ never in the limit stage), and none is stable and positive at $4{,}782$ sampled legal points inside its parent's interval. So $9{,}072$ of the $9{,}133$ are not
+single closed-twin lifts of a seven-node counterexample. Lemma~\ref{lem:W} transfers the fixed-point data of the weighted
+quotient, not the region: $46$ of the $61$ lifts have an interval different from their parent's, one of them disjoint
+(\dsix+&G^z~Vwn?zBRw+). Conversely, $125$ graphs in the list have a closed-twin pair whose contraction is \emph{not} a
+counterexample ($114$ of these contractions are not even strict seven-node survivors). All $626$ eight-node members of the
+clique-class catalogue of Section~\ref{sec:families} ($593$ distinct graphs) are in the list, an independent recall
+check on the proved families (it cannot detect graphs outside them); $F_2$ of Theorem~\ref{thm:famF} is among them with its interval ending at the plastic
+number, as proved. The $15$ graphs satisfying Lemma~\ref{lem:Bmech} ($E_1$ of Theorem~\ref{thm:famE} is one of them) have $\alpha=-1/2$
+and are absent, as they must be.\footnote{Lifts, switches and catalogue membership: \cf{certificates/n8_summary.json}
+(\texttt{lifts}, \texttt{lemma\_J\_switch\_closure\_second\_campaign}), \cf{notes/verify_n8_2/completeness_twins/},
+\cf{notes/n8_structure_tools/families.json}, \cf{analysis2.json}, \cf{consistency_extra.json}.}
+\item \emph{Witnesses.} Each record stores four pointwise witnesses on the ray through the midpoint of its interval, at
+$t=10^2,\dots,10^5$; for $9{,}051$ graphs all four are exact stable positive fixed points. As at $n=7$, the $t=10^2$
+witness is often illegal ($q\le1$: $6{,}435$ graphs), and for $37$ graphs whose interval is narrower than $1/1000$ in
+$\beta$ the producer's fallback placed all four witnesses outside the interval (the records honestly store them as
+unstable). A separate file gives, for every graph, a rational $\beta$ certified strictly inside its interval and a legal
+$t$ at which the point is exactly stable and positive.\footnote{\cf{certificates/n8_candidates_legal_witnesses.json}
+(field \texttt{witness\_in\_first\_stable\_cell}).}
+\item \emph{All large $t$.} For every graph, at a certified interior $\beta$, the exact set of $t>0$ at which the full
+support is a legal stable positive fixed point is a single interval $(t^*,\infty)$ with $t^*\le10^4$; the largest $t^*$
+is an algebraic number in $(31024237/3622,\,3880171/453)$, about $8565.5$, and the median is $23$. For $8{,}388$ of the
+$9{,}133$ the binding constraint is legality itself: the full support is stable and positive at \emph{every} legal $t$ on that
+ray.\footnote{\cf{notes/verify_n8_2/interval_all_t/tally.json}.}
+\end{itemize}
+
+\begin{table}[ht]
+\centering
+\footnotesize
+\begin{tabular}{@{}llcccl@{}}
+\toprule
+graph & adjacency rows & edges & $(B,O,N_n)$ & stable $q$ & upper end\\
+\midrule
+\dsix+&GM?WUZeEie^O+ & \parbox[t]{4.9cm}{\raggedright\texttt{00111000 00000110 00010110 01101110 01100001 10101010 10011001 11110100}} & 29 & $(3,23,2)$ & $(1,q_c)$ & $\Delta$, $q_c\approx1.0131$\\
+\dsix+&GMBO]At]Xp]?+ & \parbox[t]{4.9cm}{\raggedright\texttt{00111000 00110100 00011110 00001011 01010111 10011001 11000101 11100000}} & 29 & $(2,25,1)$ & $(1,q_c)$ & $\Delta$, $q_c\approx1.0012$\\
+\bottomrule
+\end{tabular}
+\caption{The two eight-node limit counterexamples attaining the edge bound (row $i$ lists the $j$ with $i\to j$; $B,O,N_n$ as in
+Lemma~\ref{lem:e2}). Both are rigid, have no twins of any kind, no node sending to all others, no smaller counterexample
+as an induced subgraph, and bidirected clique number $2$. The upper ends are roots of degree-$21$ polynomials isolated in
+$(64800179/63963136,\,16200045/15990784)$ and $(39760951/39714816,\,106029203/105906176)$ by the first verification
+campaign.}\label{tab:n8min}
+\end{table}
+
+\subsection{The limit threshold at \texorpdfstring{$n=8$}{n = 8}}
+Write $q_n^*(\infty)$ for the supremum of $q=\beta-1$ over the limit-stable intervals of the limit counterexamples on $n$
+nodes. Since $q<\beta-1$ on every ray and $q\to\beta-1$ as $t\to\infty$, $q_n^*\ge q_n^*(\infty)$, with equality at
+$n=6$ and $n=7$ (Theorems~\ref{thm:q6} and~\ref{thm:q7}: the suprema are approached as $t\to\infty$).
+
+\begin{theorem}[Limit threshold at $n=8$; certified, machine-verified]\label{thm:q8}
+$q_8^*(\infty)$ is the unique root of the irreducible polynomial
+\begin{multline*}
+13109q^{15}-124967q^{14}+538385q^{13}-1420107q^{12}+2727809q^{11}-4550635q^{10}+7298813q^{9}-10746735q^{8}\\
++13594735q^{7}-15127269q^{6}+16652387q^{5}-18092785q^{4}+16098203q^{3}-9885513q^{2}+8301263q-9045013
+\end{multline*}
+in the interval
+\[
+[\,459224485/268435456,\;2755346911/1610612736\,],
+\]
+whose width is below $10^{-9}$; $q_8^*(\infty)\approx1.71074$. It is the common upper end of the intervals of the two graphs \dsix+&GMx|\Aw^qz]w+ and
+\dsix+&GVrm]A{^pZ]w+ ($40$ edges, the same class of identical full-support data, one bidirected in-twin switch apart), where the
+Hurwitz determinant $\Delta$ vanishes; every other upper end is certified strictly smaller. The supremum is not attained.
+Consequently $q_8^*\ge q_8^*(\infty)>\rho=q_7^*$.
+\end{theorem}
+\begin{proof}[Sketch]
+The upper end of each of the $9{,}133$ intervals was refined by exact bisection to an isolating interval of width below
+$10^{-9}$ with a Sturm count of one; all but the two named graphs have their interval entirely below that of the two,
+and the two share the same irreducible polynomial with Sturm count one on the hull of their intervals. The records certify
+the open cell only; at the root a Hurwitz determinant vanishes, which is three-valued undecided and never counted as
+stable; at $\beta_c$ itself $\alpha=-\gamma$, so the graph is not limit-stable there (Lemma~\ref{lem:limit}). The refinement agrees with the independent
+refinement of the first verification campaign.\footnote{\cf{certificates/n8_summary.json} (\texttt{q\_star\_limit},
+\texttt{q\_data}); \cf{notes/verify_n8/v_structure/q_upper_ends_refined.json}.}
+\end{proof}
+
+The distribution of the $9{,}133$ upper ends is: $37$ in $(1,1001/1000]$, $541$ in $(1001/1000,101/100]$, $2{,}777$ in
+$(101/100,21/20]$, $2{,}588$ in $(21/20,11/10]$, $2{,}178$ in $(11/10,6/5]$, $630$ in $(6/5,13/10]$, $322$ in $(13/10,7/5]$,
+$44$ in $(7/5,3/2]$, $9$ in $(3/2,8/5]$, $4$ in $(8/5,17/10]$ and $3$ in $(17/10,7/4]$; none equals one of these
+rationals and none exceeds $7/4$. The smallest upper end belongs to \dsix+&GMBQMHtMH~]W+: a root of a degree-$21$ polynomial in
+$(77079731/77070336,\,1079116235/1078984704)$, about $1.000122$; the graph is limit-stable at $\beta=20001/10000$
+($q=10001/10000$) and not at $\beta=10001/5000$ ($q=5001/5000$, Hurwitz determinant~6 negative).\footnote{\cf{notes/n8_structure_tools/check_min_q.json}.
+Two summary files, \cf{certificates/n8_limit_summary.json} (\texttt{q\_upper\_end\_min\_approx}) and
+\cf{notes/verify_n8/SYNTHESIS.json}, print $1.000276$ for this minimum; the per-graph refinement file of the same
+campaign, the aggregation certificate and the exact check above all give the value quoted here. The display value is not
+used by any certificate.} Whether the union of the $9{,}133$ limit intervals covers all of $(1,q_8^*(\infty))$, as the
+union of the seven-node regions covers $(1,\rho)$, is not recorded in the certificates; by Corollary~\ref{cor:monotone}
+and Theorem~\ref{thm:q7} the conjecture fails at eight nodes for every $q\in(1,\rho)$ in any case.
+
+The sixteen graphs with upper end above $3/2$ form ten classes of identical full-support data. They are dense ($37$ to
+$42$ edges, $9$ to $14$ bidirected pairs, $14$ of them with no non-adjacent pair), rigid, without closed twins; ten end at
+the spectral boundary and six at a positivity root; only two contain a seven-node counterexample. The extremal pair has
+$12$ bidirected pairs, no non-adjacent pair, bidirected clique number $4$, trivial automorphism group and \emph{no} node
+sending to all others. In the non-edge picture of Section~\ref{sec:families}, $\psi_D=z\,(8z^6+16z^5+34z^4+33z^3+30z^2+13z+5)$,
+whose roots have minimum real part about $-0.3689$, so $\beta_c\approx2.7107$; the positivity set is the whole half-line
+beyond the root $\approx2.1537$ of $b^4-3b^3+3b^2-3b+1$ in $(2,3)$, so the stable interval is
+$(2.1537\ldots,\,2.7107\ldots)$ in $\beta$. The ceiling is thus set by the spectrum of the eight-node core itself, not
+by a sink class: its minimum real part $-0.3689$ lies to the \emph{left} of the $k\to\infty$ limit $-0.3516$ of the sink-class
+family~(Q) of Theorem~\ref{thm:QQ2Y}, which has a seven-node core and tends to $q\approx1.844$; family~(Q) overtakes the
+eight-node record only for very large class size ($q$ close to $9/5$ needs $k\ge286$). The record value $1709/1001$ of Table~\ref{tab:qlow}
+came from \dsix+&G^ZnRba\ba^w+, which is in the list (as \dsix+&GZptUbY\B}^w+, $39$ edges) with refined upper end in
+$(35849319/20971520,\,401512373/234881024)$, about $1.7094$. Two graphs,
+\dsix+&GMw|Vr]Rb~Nw+ and \dsix+&GUo~EX~Yxz^w+, have a \emph{rational} spectral end: $\psi_D=z\,(4z^2+3z+1)(2z^4+2z^3+4z^2+2z+1)$,
+the quadratic factor has real part exactly $-3/8$, so $\beta_c=8/3$ and $q=5/3$ exactly, not attained; their positivity
+set is the interval between the root $\approx2.2056$ of $b^3-2b^2-1$ and the root $\approx2.7693$ of
+$b^3-3b^2+b-1$.\footnote{\cf{notes/n8_structure.md}, \S1.8; \cf{notes/n8_structure_tools/special_sets.json}.}
+
+\subsection{What the 9,133 share}\label{sec:n8structure}
+The following statements were checked exactly on all $9{,}133$ records; where a statement is proved, the proof is cited.
+The check files are listed in the footnote.\footnote{\cf{notes/n8_structure.md} with the tools and outputs in
+\cf{notes/n8_structure_tools/} (\cf{structure_summary.json}, \cf{motifs.json}, \cf{heredity.json}, \cf{families.json},
+\cf{analysis2.json}, \cf{positivity_check.json}, \cf{discriminate.json}, \cf{ham_never.json}, \cf{special_sets.json}).}
+\begin{itemize}
+\item \emph{Far from cliques.} The missing-edge digraph $D=J-I-A$ is never a matching, a star, a union of stars or a forest,
+and it always contains a directed cycle (proved: a $D$-source with a $D$-out-edge would make $u=(D^T+rI)^{-1}\one$
+negative). The largest bidirected clique has at most $5=n-3$ nodes, attained by $61$ graphs and never exceeded; no graph
+contains an induced $K_6$. The analogous bounds $n-3$ hold and are attained at $n=6$ ($2$ graphs) and $n=7$ ($16$).
+\item \emph{Universal properties.} Every graph is strongly connected, indeed has a Hamiltonian directed cycle; every
+graph contains an induced oriented $3$-cycle, the only induced subgraph on $3$ to $7$ nodes common to all $9{,}133$ (the
+census found $15$, $169$, $3{,}040$, $34{,}521$ and $48{,}108$ distinct induced subgraphs on $3,\dots,7$ nodes); a node that
+receives from all others also sends to all others (proved; $131$ graphs are joins $H\vee K_1$ or $H\vee K_2$); no two
+non-adjacent nodes are in-twins (Lemma~\ref{lem:twin}). None of these singles out counterexamples: the $338{,}505$ strict
+survivors of stages 2--4 that are \emph{not} limit counterexamples satisfy all of them, except that $18$ of them are not
+strongly connected (all $18$ fail positivity). What separates the $9{,}133$ is the joint condition, positivity and
+$\alpha<-\gamma$ at a common $\beta$, and no graph-local feature we tested captures it.
+\item \emph{Properties that fail.} $5{,}276$ graphs have no node sending to all others ($3{,}185$ have one, $562$ two, $110$
+three); $3{,}096$ have a non-adjacent pair; $971$ have an interval not starting at $\beta=2$; $1{,}942$ have an interval ending
+at a positivity root; $188$ have a nontrivial automorphism group ($186$ of them because of closed twins). For the $3{,}857$
+graphs with a node sending to all others, the sink-class criterion of Lemma~\ref{lem:X}(X2) holds at a certified interior
+$\beta$ in every case ($w$ of the core positive and every sink's in-set of weight above $1$); in $1{,}972$ of them, deleting any
+one such node leaves a graph that is not a seven-node limit counterexample ($1{,}970$ leave no seven-node counterexample at all; in two, a sink deletion gives \dsix+&FNFL~[udo?+).
+\item \emph{Heredity fails.} $6{,}720$ graphs contain no six- or seven-node counterexample as an induced subgraph ($2{,}323$
+contain a seven-node one, and all $123$ occur; $308$ contain a six-node one). For $5{,}902$ graphs no single-node deletion
+is even a strict seven-node survivor (domination-free with $\alpha<-1/2$). At $n=7$, $102$ of the $123$ limit counterexamples
+contained no six-node one. At $n=7$ and $n=8$ most counterexamples are not one-node extensions of smaller ones.
+\item \emph{Mechanism of the interval.} The exact positivity set on $(2,\infty)$ is one interval for $8{,}984$ graphs and two
+for $149$, unbounded above for $2{,}133$; the stored stable interval lies in one component of it for all $9{,}133$ ($0$
+inconsistencies). The lower end is never spectral: when positivity holds down to $\beta=2$, so does limit stability, as
+Lemma~\ref{lem:limit}(b) requires. The six combinations (lower end $2$ or positivity root; upper end spectral with bounded
+positivity, spectral with unbounded positivity, or positivity root) occur $4{,}690$, $1{,}974$, $1{,}498$, $504$, $23$ and
+$444$ times.
+\end{itemize}
+
+\begin{conjecture}[Structure of limit counterexamples]\label{conj:S}
+Let $G$ be a non-complete digraph on $n\ge3$ nodes whose full support is limit-stable at some $\beta>2$. Then
+(S1) $G$ has no bidirected clique on $n-2$ nodes, equivalently its missing edges cannot be covered by two nodes;
+(S2) $G$ is strongly connected, indeed Hamiltonian; (S3) $G$ contains an induced oriented $3$-cycle.
+\end{conjecture}
+Evidence: the complete limit maps at $n=6,7,8$, where (S1) is attained at every $n$; every one of the $631$ proved
+infinite families of Section~\ref{sec:families} satisfies (S1) for every class size (with equality for all $k$ in $38$ of
+them, so $n-3$ cannot be lowered); $104$ certified instances from $n=7$ to $n=73$ satisfy (S1)--(S3); and an exhaustive
+test of (S1) at $n=9$: every digraph containing a bidirected $K_7$ is a multiset of $7$ node patterns relative to the two
+outside nodes plus their mutual relation, $682{,}176$ configurations in all, of which $600{,}440$ have a dominated node,
+$81{,}735$ fail the strict spectral test and exactly one survives, $K_9$. So (S1) holds for all $n\le9$ (for limit counterexamples, as the conjecture is stated). The same test at
+$n=3,\dots,8$ leaves only $K_n$. Since a bidirected $K_{n-2}$ forces $D$ to have rank at most $4$, (S1) is a statement about a
+finite-type integer family, of the kind the Hurwitz-in-$k$ arguments of Theorems~\ref{thm:famF} and~\ref{thm:A}
+handle.\footnote{\cf{notes/n8_structure_tools/family_test.json}; \cf{clique_class_test_n\{3,...,9\}.json};
+\cf{clique_class_control.json}.}
+
+\subsection{The threshold picture for \texorpdfstring{$n=6,7,8$}{n = 6, 7, 8}}
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{@{}rrrllr@{}}
+\toprule
+$n$ & limit c.e. & all c.e. & $q_n^*(\infty)$ & $q_n^*$ & Geneson's bound $n-2$\\
+\midrule
+$\le5$ & $0$ & $0$ & -- & -- & \\
+$6$ & $3$ & $3$ & sextic root $\approx1.1664$ & $=q_6^*(\infty)$ & $4$\\
+$7$ & $123$ & $124$ & $\rho\approx1.3247$ & $=\rho$ & $5$\\
+$8$ & $9{,}133$ & $\ge9{,}148$, not mapped & degree-$15$ root $\approx1.7107$ & $\ge q_8^*(\infty)$ & $6$\\
+\bottomrule
+\end{tabular}
+\caption{Counterexamples (c.e.: non-complete graphs with a stable positive full support) and thresholds. The $n=8$ row is
+the limit map only, machine-verified and not hand-verified (its ``all c.e.'' entry counts the $9{,}133$ limit counterexamples plus
+the $15$ known finite-$\eps$-only graphs of Lemma~\ref{lem:Bmech}); the $n\le7$ rows are complete finite-$\eps$ maps, hand-verified.
+Values of $q^*$ are display approximations of the exact algebraic numbers in Theorems~\ref{thm:q6}, \ref{thm:q7}
+and~\ref{thm:q8}.}\label{tab:thresholds}
+\end{table}
+Table~\ref{tab:thresholds} collects the thresholds. The counts grow by factors of about $41$ and $74$, the share of
+primitive counterexamples (containing no smaller one) grows from $3/3$ to $102/123$ to $6{,}720/9{,}133$, and the
+threshold grows from $1.1664$ to $1.3247$ to at least $1.7107$, against Geneson's $n-2$. At $n=8$ the record is set by a
+sink-free core, without any sink class; the sink-class families of Theorem~\ref{thm:QQ2Y} have larger limits ($-0.3516$ for
+Q, $-1/4$ for Q2) but reach them only for large class sizes; the growth of $q_n^*$ at small $n$ comes from new cores, while the
+asymptotic growth of Theorem~\ref{thm:U} comes from sink classes. A hand-check kit with six fully worked eight-node
+cases, in exact fractions, is provided for any reader who wants to verify a sample by hand.\footnote{\cf{notes/verify_n8_2/handcheck_kit/HANDCHECK.md}.}
+
+%======================================================================
 \section{Infinite families}\label{sec:families}
 
 The theorems in this section are proved for every member of a family; tables and individual instances are certified
@@ -790,7 +1150,7 @@ $w_G>0$ and $\sigma_{S_j}>1$ for every $j$.
 Let $G_1$ be Geneson's graph in the paper's labelling (rows \texttt{011011 101011 110101 111000 011000 000110}), $S=(1,1,1,1,1,0)$,
 and $F_k:=G_1[S,\text{all};k]$, $n=6+k$.
 
-\begin{theorem}[Clique-class family; proved, refereed]\label{thm:famF}
+\begin{theorem}[Clique-class family; proved, internally reviewed]\label{thm:famF}
 For every $k\ge0$, $\alpha(\perpc{F_k})<-1/2$, and $F_k$ is positive at every $\beta\in(2,b_p)$, where $b_p-1=\rho$ is the
 plastic number. Hence for each $k$ and each rational $\beta\in(2,\min(b_p,\beta_c(k)))$ the full support of $F_k$ is a stable
 positive non-clique fixed point at $(\eps,\delta)=(1/(1+t),(\beta-1)/(1+t))$ for all large $t$. In particular the target-free
@@ -825,7 +1185,7 @@ $\gamma$ in between. Positivity holds near $\beta=2$ by (iv) and is $t$-free.
 Let $H=$ \dsix+&FNDL~[uds?+ (one of the $123$) and let $E_a$ be its blow-up with class sizes $(1,1,2,a,1,1,1)$, $n=7+a$; $E_0$ is
 \dsix+&FNFL~[udo?+.
 
-\begin{theorem}[Finite-$\eps$-only family; proved, refereed]\label{thm:famE}
+\begin{theorem}[Finite-$\eps$-only family; proved, internally reviewed]\label{thm:famE}
 For every $a\ge0$, $E_a$ is not a clique, $\alpha(\perpc{E_a})=-1/2$ exactly, and the full support of $E_a$ is a stable positive
 fixed point at legal points with $\eps$ arbitrarily small. Thus for every $n\ge7$ there is a counterexample on $n$ nodes that
 is invisible in the $\eps\to0$ limit.
@@ -847,7 +1207,7 @@ primitive cube root of unity), found $15$ eight-node graphs that satisfy every h
 exact legal witness; extensions not flagged by the float prefilter were not examined exactly.\footnote{\cf{notes/research_wf3/theory/cube_n8_witnesses.json}.}
 
 \subsection{Growing thresholds}
-\begin{theorem}[Families Q, Q2, Y; proved, refereed]\label{thm:QQ2Y}
+\begin{theorem}[Families Q, Q2, Y; proved, internally reviewed]\label{thm:QQ2Y}
 (Q) For the core \dsix+&F^S{^ReL|?+ with one sink class of size $k$ ($n=7+k$), every member is positive at every $\beta>2$, and
 is limit-stable at $\beta=5/2$, $27/10$, $14/5$ for all $k\ge25$, $79$, $286$ respectively. So for every $n\ge32$ ($86$,
 $293$) there are counterexamples on $n$ nodes with $q$ arbitrarily close to $3/2$ ($17/10$, $9/5$); along the family the limit
@@ -860,10 +1220,12 @@ at every $\beta>2$, and is limit-stable at $\beta=3$, $7/2$, $4$, $9/2$, $24/5$ 
 family ceiling is $\beta\approx4.9607$.
 \end{theorem}
 Each threshold is proved sharp by exact real-root isolation in $k$ of the Hurwitz determinants of the shifted limit polynomial.
-The eight-node core of (Y) is not among the hand-verified graphs.\footnote{\cf{notes/research_wf3/theory/family_Q_certificate.json}, \cf{family_Q2_certificate.json}, \cf{family_Y_certificate.json}.}
+The eight-node core of (Y) is not among the hand-verified graphs, and it is not itself in the list of
+Theorem~\ref{thm:n8} (it needs its sink classes).\footnote{\cf{notes/research_wf3/theory/family_Q_certificate.json}, \cf{family_Q2_certificate.json}, \cf{family_Y_certificate.json}.}
 Certified instances include $n=32$ at $q=15000/10001$ (Q), $n=19$ at $q=20000/10001$ and $n=47$ at $q=25000/10001$ (Q2), and
 $n=73$ at $q=20000/10001$ (Y). Exact lower bounds at small $n$ found by search and certified pointwise are listed in
-Table~\ref{tab:qlow}.
+Table~\ref{tab:qlow}; the limit map at $n=8$ raises its first row to $q_8^*\ge q_8^*(\infty)\approx1.7107$
+(Theorem~\ref{thm:q8}).
 
 \begin{table}[ht]
 \centering
@@ -886,7 +1248,7 @@ A fixed core with sink classes cannot push the limit threshold past the number o
 $D-\bar b\one^T$ has trace $\le-1$ when no class is a join. The way around this is a family of cores whose limit polynomial can be
 prescribed.
 
-\begin{theorem}[Unbounded thresholds; proved, refereed]\label{thm:U}
+\begin{theorem}[Unbounded thresholds; proved, internally reviewed]\label{thm:U}
 For every integer $N\ge3$ there is $n_0(N)$ such that for every $n\ge n_0(N)$ some non-complete $n$-node digraph has a stable
 positive full-support fixed point at the legal points $(\eps,\delta)=(1/(1+t),(N-1)/(1+t))$ for all large $t$. Hence
 $q_n^*\ge N-1$ for $n\ge n_0(N)$, and $q_n^*\to\infty$.
@@ -923,7 +1285,7 @@ Let $R=$ \dsix+&F^U|m^QTq?+ (one of the $124$; rows \texttt{0111110} \texttt{101
 \texttt{0010101} \texttt{1100100}),
 $S=(1,1,0,1,1,1,1)$ and $R_k:=R[S,\text{all};k]$, $n=7+k$.
 
-\begin{theorem}[One point, every size; proved, refereed]\label{thm:A}
+\begin{theorem}[One point, every size; proved, internally reviewed]\label{thm:A}
 At $(\eps,\delta)=(1/21,11/210)$, i.e.\ $t=20$, $\beta=21/10$, $q=22/21$, the full support of $R_k$ is a stable positive non-clique
 fixed point for every $k\ge0$. Consequently, at this point a non-complete $n$-node digraph with a stable positive full-support fixed
 point exists if and only if $n\ge6$.
@@ -971,10 +1333,39 @@ The engine and the $n=6$ map were audited adversarially, including a from-scratc
 $786{,}596$ undecided lines recomputed independently, byte-identical), and the ray reduction, curve test and edge bound once (an
 independent all-minors computation on $3{,}129$ graphs and $6{,}000$ random exact legal points on never-stable graphs). The family
 theorems (Theorems~\ref{thm:famF}, \ref{thm:famE}, \ref{thm:QQ2Y}, \ref{thm:U}, \ref{thm:A}), the $626$-entry catalogue and the
-threshold tool were each refereed by a separate reviewer who re-derived the steps, taking Lemma~\ref{lem:limit}(b),(c) as given; no blocking
+threshold tool were each reviewed by a separate reviewer internal to the project (not external peer review) who re-derived the steps, taking Lemma~\ref{lem:limit}(b),(c) as given; no blocking
 issue was found. Non-fatal defects found
 by the referees (e.g.\ a misprinted node count, $2p(1)-1$ for $2p(1)-3$, in the notes on Theorem~\ref{thm:U}) are logged and
 corrected here.
+
+\subsection{Two machine campaigns at \texorpdfstring{$n=8$}{n = 8}}
+The $9{,}133$ eight-node limit counterexamples were verified twice by machine, with no human hand check. In the first
+campaign four verifiers were written from the definitions, without the project's code and each with its own digraph6
+decoder: one with exact fractions, two characteristic-polynomial algorithms required to agree, and Hurwitz determinants
+cross-checked by a Routh array ($45{,}665$ points: all four stored witnesses and one own interior point per graph); one by
+exact right-half-plane root counting without Hurwitz determinants (Routh array and Cauchy index on $18{,}282$ points,
+exact complex root isolation on every sixth graph); one checking structure (pairwise non-isomorphism by its own canonical
+form and nauty, non-completeness, domination-freeness, the stored interval data, and its own legal stable positive point for
+every graph, with the upper ends of all $q$-intervals refined); and one in a computer-algebra system (first legal witness on
+every graph, endpoint sharpness on every fiftieth, $183/183$ sharp, and a Sturm count of one on every stored isolating
+interval). Every verifier confirmed all $9{,}133$, with $0$ refuted, $0$ undecided, $0$ vanishing Hurwitz determinants and
+$0$ disagreements among them or with the $36{,}532$ stored witness flags; controls ($K_8$, Geneson's graph, and $20$ ``never''
+graphs at $280$ legal points) behaved as required.\footnote{\cf{notes/verify_n8/SYNTHESIS.json} and the four directories
+under \cf{notes/verify_n8/}.} The second campaign used six lenses the first had not: completeness from the seven-node side
+($858$ closed-twin blow-ups of the $123$ seven-node limit counterexamples, of which the $61$ in the list are confirmed and
+the $797$ others not limit counterexamples and not stable and positive at $4{,}782$ sampled legal points; the $29{,}116$ bidirected in-twin switches of
+listed graphs, all in the list with identical intervals); stability for \emph{all} large $t$ by exact root isolation in $t$
+(every graph: one interval $(t^*,\infty)$); the never side ($600$ ``never'' records at $874{,}996$ legal points on their rays,
+$0$ stable and positive, and an independent all-$\beta$ replay reproducing every verdict; the prefilter's boundary rule
+re-derived on $36.9$ million regenerated digraphs, $0$ disagreements); a floating-point dynamics lens, explicitly
+non-decisional; an adversarial referee of the enumeration chain (edge bound, Burnside counts on $30$ graphs, two shards and
+$20$ dense graphs, coverage, agreement with the prefilter on $3{,}391$ digraphs, accounting); and the hand-check kit. Its
+synthesis found $0$ fatal and $0$ major defects (one referee's MAJOR, an unfinished re-derivation of five never\_full
+certificates, was covered by two other checks and reclassified), $13$ explained non-issues and one minor documentation defect (the B lines
+had been described as ``$\alpha=-1/2$ exactly''; they mean $\alpha\ge-1/2$, which does not affect their exclusion from the
+limit map but is why they cannot be reused for finite-$\eps$ questions).\footnote{\cf{notes/verify_n8_2/SYNTHESIS.json} and
+the six directories under \cf{notes/verify_n8_2/}; \cf{certificates/n8_limit_summary.json} (\texttt{machine\_confirmation},
+\texttt{second\_verification}).}
 
 \subsection{Human verification}
 The two new six-node counterexamples were hand-verified on 14 October 2026, and all $124$ seven-node counterexamples on
@@ -987,12 +1378,20 @@ exact isolation, required to agree); and one checking structural claims (pairwis
 non-completeness, the exact limit test and $\alpha(E_0)=-1/2$). All $124$ were confirmed at $742$ legal points with $0$ undecided
 cases.\footnote{\cf{notes/verify_124_workflow.json}; \cf{certificates/n7_candidates_legal_witnesses.json}.} The verification also
 found that $15$ of the first stored witnesses in the limit file are illegal points ($q\le1$); a separate file lists one legal
-witness per graph. Graphs with $n\ge8$ nodes have not been hand-verified.
+witness per graph.
+
+No graph on eight or more nodes has been hand-verified. The project owner declined a hand check of the $n=8$ list on
+28 October 2026 and ordered the second machine campaign above instead; that decision is recorded in the certificate, and the
+$n=8$ results are labelled ``machine-verified'' throughout to mark the difference in status from the $n\le7$ maps. A
+hand-check kit with six fully worked eight-node cases in exact fractions is provided for any reader who wishes to close this
+gap for a sample.\footnote{\cf{certificates/n8_limit_summary.json} (\texttt{status}, \texttt{second\_verification.human\_decision});
+\cf{notes/verify_n8_2/handcheck_kit/HANDCHECK.md}.}
 
 \subsection{Nondegeneracy}
 The conjecture is usually stated for nondegenerate CTLNs. At a witness point of each of the three six-node and $124$ seven-node
 counterexamples we certified exactly that every one of the $2^n-1$ supports has $\det(I-W_\sigma)\ne0$, a fixed point with no zero
-coordinate and no off-support drive equal to $0$, and that the full support is stable there.\footnote{\cf{certificates/nondegeneracy_witnesses.json}, script \cf{n7/nondegeneracy_check.py}.}
+coordinate and no off-support drive equal to $0$, and that the full support is stable there. This check has not been
+run on the eight-node list.\footnote{\cf{certificates/nondegeneracy_witnesses.json}, script \cf{n7/nondegeneracy_check.py}.}
 
 \subsection{Machine-checked statements}
 Lean~4 (toolchain v4.35.0) with Mathlib (tag v4.35.0) checks $87$ theorems with no \texttt{sorry}; the axiom audit shows only
@@ -1009,23 +1408,42 @@ Lemma~\ref{lem:rankone}(ii)--(v), the off-support condition, and the full certif
 \paragraph{Trust base.} The certificates rely on: exact polynomial arithmetic of a standard computer-algebra system for the projection polynomials of the
 decomposition (determinants, factorisation, gcd, resultants, discriminants; the projection identities were re-verified by
 independent fraction-free determinants on a sample of $321$ records); the Routh--Hurwitz theorem, which is cited; nauty's
-\texttt{geng}/\texttt{directg} for the seven-node enumeration, validated by its count; and the C prefilters, validated by
-reproducing the six-node data exactly.
+\texttt{geng}/\texttt{directg} for the seven-node enumeration, validated by its count, and for the restricted eight-node
+enumeration, validated by the exact Burnside count of every underlying graph, together with the two re-enumeration schemes of
+Section~\ref{sec:n8}, validated by canonical-form multiset equality at $n\le7$ and by the $K_8-e$ content check; and the C
+prefilters, validated by reproducing the six-node data exactly (the eight-node prefilter is byte-identical to the seven-node
+one on all six-node digraphs and on the $638{,}042$ seven-node spectral survivors). The eight-node limit map also rests on the totals the prefilter reports for graphs with no
+survivor, which the accounting checks against the exact counts.
 
 %======================================================================
 \section{Open problems}\label{sec:open}
 
 \begin{question}[Growth rate]\label{q:growth}
-How fast does $q_n^*$ grow? Theorem~\ref{thm:U} gives $q_n^*\to\infty$ with a super-exponential $n_0(N)$; the certified points
+How fast does $q_n^*$ grow? Theorem~\ref{thm:U} gives $q_n^*\to\infty$ with a super-exponential $n_0(N)$; the exact values
+are $1.1664$, $1.3247$ and (in the limit) $1.7107$ at $n=6,7,8$, and the certified points
 are $q$ close to $2$ at $n=19$, $5/2$ at $n=47$ and $23/5$ for $n\ge4{,}909$, while the only upper bound is Geneson's $n-2$. Is
 $q_n^*\ge c\log n$, or $q_n^*\ge n^c$? The bottleneck is integer polynomials with $c_1=1$, nonnegative coefficients, roots in a thin
 strip $\Rea z>-1/N$, and small value at $1$.
 \end{question}
 
-\begin{question}[The $n=8$ map]
-Complete the $\eps\to0$ classification at $n=8$. An overflow-guarded spectral prefilter reproduces all $n\le7$ data exactly; the
-full pass is estimated at $500$--$800$ CPU-hours, and besides the family members of Section~\ref{sec:families} one further eight-node
-limit-stable graph, \dsix+&GLjlNZ}NzH\o+ ($41$ edges; certified, not hand-verified), was found in a random dense sample. The finite-$\eps$ map at $n=8$ ($1.79$ trillion digraphs) is out of reach by enumeration alone.
+\begin{question}[The finite-$\eps$ map at $n=8$]
+The limit map of Section~\ref{sec:n8} is complete, but the finite-$\eps$ map at $n=8$ is not: the $417{,}603{,}634$ prefilter
+lines with $\alpha\ge-1/2$ were not stored, and finite-$\eps$-only counterexamples on eight nodes exist ($E_1$ of
+Theorem~\ref{thm:famE} is one of the $15$ graphs satisfying Lemma~\ref{lem:Bmech}). At $n=7$ the finite map was computed by
+the full chain of Table~\ref{tab:chain}, and the bulge criterion (Theorem~\ref{thm:AS}) accounts for its difference from the
+limit map; a re-run storing those lines, followed by the curve test of Section~\ref{sec:machinery} on them and on the $7{,}078$
+never\_full lines and the bulge rule on the $9{,}133$, would settle whether $q_8^*=q_8^*(\infty)$ for all graphs with
+$\alpha\le-1/2$; the lines with $\alpha>-1/2$ need either a proof answering Question~\ref{q:char} or the full finite pipeline.
+The full finite-$\eps$ map needs the $n=7$ pipeline over the $801{,}558{,}826{,}511$ restricted digraphs; extrapolated from
+measured rates this is of the order of $4\times10^4$ CPU-hours.
+Is the union of the $9{,}133$ limit intervals all of $(1,q_8^*(\infty))$?
+\end{question}
+
+\begin{question}[Structure]
+Prove or refute Conjecture~\ref{conj:S}. (S1) reduces, via the rank-$4$ structure of $D$ in the presence of a bidirected
+$K_{n-2}$, to a finite-type family of integer matrices and holds exhaustively for $n\le9$; (S2) is related to, but not
+implied by, Curto and Morrison's question whether proper sources die. Test (S2) and (S3) at $n=9$ on the one-node extensions
+of the $9{,}133$ and on the digraphs without an induced oriented $3$-cycle.
 \end{question}
 
 \begin{question}[Formalisation]
@@ -1079,6 +1497,12 @@ eight-node instances & \cf{certificates/n8_instances_region2d.json}, \cf{notes/r
 Theorem~\ref{thm:U} & \cf{certificates/theorem_U_explicit_instances.json}, \cf{notes/theorem_U/} & \cf{theorem_U.py}, \cf{certify_forest.py}, \cf{certify_explicit.py}\\
 Theorem~\ref{thm:A} & \cf{certificates/theorem_A_fixed_parameter_instances.json}, \cf{notes/theorem_A_fixed/} & \cf{theorem_A.py}, \cf{independent_A.py}\\
 nondegeneracy & \cf{certificates/nondegeneracy_witnesses.json} & \cf{n7/nondegeneracy_check.py}\\
+Table~\ref{tab:chain8}, Theorem~\ref{thm:n8} & \cf{certificates/n8_limit_summary.json}, \cf{n8_summary.json}, \cf{n8/n8_prefilter_TOTAL.txt}, \cf{n8_accounting.json}, \cf{n8_restricted_counts.json}, \cf{n8_limit_tally.json}, \cf{n8/limit_sharding/shard*_tally.json} & \cf{n7/filter8.c}, \cf{n8/check_accounting.py}, \cf{n8/run_n8_limit.py}, \cf{n8/aggregate_n8.py}; runbook \cf{n7/REPRODUCE_n8_limit.md}\\
+enumeration schemes at $n=8$ & \cf{notes/k8_decomposition.md}, \cf{k8_decomposition_referees.json}, \cf{n8/check_k8decomp.log}, \cf{n8/check_orbit.log}, \cf{n8/orbitenum/k8e_check/} & \cf{n8/k8decomp/}, \cf{n8/orbitenum/}\\
+the $9{,}133$ graphs & \cf{n8/n8_limit_HITS.jsonl}, \cf{certificates/n8_candidates_legal_witnesses.json}, \cf{n8_counterexamples_classes.json} & \cf{n8/aggregate_n8.py}\\
+Theorem~\ref{thm:q8} & \cf{certificates/n8_summary.json} (\texttt{q\_star\_limit}, \texttt{q\_data}), \cf{notes/verify_n8/v_structure/q_upper_ends_refined.json} & \cf{n8/aggregate_n8.py}\\
+Section~\ref{sec:n8structure}, Conjecture~\ref{conj:S} & \cf{notes/n8_structure.md}, \cf{notes/n8_structure_tools/*.json} & \cf{notes/n8_structure_tools/*.py}\\
+$n=8$ machine verification & \cf{notes/verify_n8/SYNTHESIS.json}, \cf{notes/verify_n8_2/SYNTHESIS.json}, \cf{notes/verify_n8_2/handcheck_kit/HANDCHECK.md} & \cf{notes/verify_n8/}, \cf{notes/verify_n8_2/}\\
 Lean & \cf{notes/lean/CtlnCert/} & \texttt{lake build}, \texttt{Audit.lean}\\
 \bottomrule
 \end{longtable}

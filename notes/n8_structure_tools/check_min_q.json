@@ -1,0 +1,21 @@
+{
+ "d6": "&GMBQMHtMH~]W",
+ "psi_D": [
+  8,
+  23,
+  58,
+  77,
+  81,
+  49,
+  18,
+  2
+ ],
+ "beta=20001/10000, q=10001/10000": [
+  true,
+  "all Hurwitz minors positive"
+ ],
+ "beta=10001/5000, q=5001/5000": [
+  false,
+  "Hurwitz minor 6 negative"
+ ]
+}

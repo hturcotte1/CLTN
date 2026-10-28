@@ -1,0 +1,30 @@
+{
+ "E_n8": 1,
+ "E_n8_in_limit_list": 0,
+ "cube_n8": 15,
+ "cube_in_limit_list": 0,
+ "extremal_same_D_class": true,
+ "extremal_isomorphic": false,
+ "extremal_in_twin_switches_A_to_B": [
+  {
+   "twins": [
+    4,
+    7
+   ],
+   "w": 1
+  },
+  {
+   "twins": [
+    4,
+    7
+   ],
+   "w": 2
+  }
+ ],
+ "extremal_A_bidirected_in_twins": [
+  [
+   4,
+   7
+  ]
+ ]
+}

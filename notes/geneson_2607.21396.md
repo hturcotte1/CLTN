@@ -164,7 +164,7 @@ Structural remarks that matter for the project (my reading of the proof, not sta
   The paper says NOTHING about n = 5, nor does it claim six is minimal. "Six-neuron" is in the title only. A 5-neuron full-support counterexample is NOT excluded by this paper. (It excludes only: support sizes <= 4 by citation, m=3 by Thm 4.1, and the high-q range.)
 - Future work / open range: NO conclusion or future-work section. No statement of which q-range remains open and no mapping of the counterexample region. The only parameter statements are: counterexample at delta = 29 eps/25 for eps < eps0 (q just below 29/25), and the safe range (25). The gap between them is implicit.
 - Related earlier work the paper mentions: "The analogous minimal-support conjecture for general competitive threshold-linear networks has recently been disproved [7], but that construction is not combinatorial."
-- Acknowledgments, verbatim: "Codex with GPT-5.6 and Claude Code with Opus 4.8 and Fable 5 were used for proof exploration, proof criticism, exposition, and revision." The paper is a single-author arXiv v1 preprint; it has not been peer reviewed as far as I can tell. That is a reason the independent exact reproduction above matters.
+- Acknowledgments, verbatim: "[AI tool names omitted here per project rule; see the paper] were used for proof exploration, proof criticism, exposition, and revision." The paper is a single-author arXiv v1 preprint; it has not been peer reviewed as far as I can tell. That is a reason the independent exact reproduction above matters.
 
 ## 7. Bibliography (verbatim reference list, relevant ones flagged)
 

@@ -1,0 +1,18 @@
+{
+ "number_of_deletions_that_are_strict_n7_survivors": {
+  "0": 5902,
+  "1": 2699,
+  "2": 493,
+  "3": 39
+ },
+ "best_deletion_class": {
+  "not_strict": 5902,
+  "never_positivity": 797,
+  "cex": 2323,
+  "never_full": 111
+ },
+ "n7_cex_embeddings_extra_node": {
+  "extra node misses an out-arc": 567,
+  "extra node sends to all 7": 2076
+ }
+}

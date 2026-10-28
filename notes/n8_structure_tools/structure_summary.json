@@ -1,0 +1,729 @@
+{
+ "n6": {
+  "arcs": {
+   "18": 1,
+   "19": 2
+  },
+  "missing_arcs": {
+   "11": 2,
+   "12": 1
+  },
+  "bidirected_pairs": {
+   "4": 1,
+   "5": 2
+  },
+  "single_arc_pairs": {
+   "10": 1,
+   "9": 2
+  },
+  "nonadjacent_pairs": {
+   "1": 3
+  },
+  "bi_minus_nonadj": {
+   "3": 1,
+   "4": 2
+  },
+  "omega_bi": {
+   "2": 1,
+   "3": 2
+  },
+  "nodes_sending_to_all": {
+   "0": 1,
+   "1": 2
+  },
+  "nodes_receiving_from_all": {
+   "0": 3
+  },
+  "bidirected_universal_nodes": {
+   "0": 3
+  },
+  "A_sources_or_sinks": {
+   "0": 3
+  },
+  "D_matching": {
+   "False": 3
+  },
+  "D_star": {
+   "False": 3
+  },
+  "D_star_forest": {
+   "False": 3
+  },
+  "D_forest": {
+   "False": 3
+  },
+  "D_max_degree_underlying": {
+   "5": 3
+  },
+  "D_vertices_covered": {
+   "6": 3
+  },
+  "D_has_directed_cycle": {
+   "True": 3
+  },
+  "oneway_part_has_directed_cycle": {
+   "True": 3
+  },
+  "induced_oriented_3cycle": {
+   "True": 3
+  },
+  "D_strongly_connected": {
+   "False": 2,
+   "True": 1
+  },
+  "D_on_core_strongly_connected": {
+   "True": 3
+  },
+  "A_strongly_connected": {
+   "True": 3
+  },
+  "bidirected_in_twin_pairs": {
+   "0": 1,
+   "1": 2
+  },
+  "closed_twin_pairs": {
+   "0": 3
+  },
+  "nonadjacent_in_twin_pairs": {
+   "0": 3
+  },
+  "dominated_nodes": {
+   "0": 3
+  },
+  "closed_twin_classes_nontrivial": {
+   "[]": 3
+  },
+  "sink_class_sizes": {
+   "[1]": 2,
+   "[]": 1
+  },
+  "core_size": {
+   "5": 2,
+   "6": 1
+  },
+  "peeling": {
+   "([1], 5)": 2,
+   "([], 6)": 1
+  },
+  "aut": {
+   "1": 3
+  },
+  "min_outdeg": {
+   "2": 3
+  },
+  "min_indeg": {
+   "2": 3
+  },
+  "max_outdeg": {
+   "4": 1,
+   "5": 2
+  },
+  "max_indeg": {
+   "4": 3
+  }
+ },
+ "n7_limit": {
+  "arcs": {
+   "23": 7,
+   "24": 7,
+   "25": 18,
+   "26": 10,
+   "27": 6,
+   "28": 21,
+   "29": 34,
+   "30": 17,
+   "31": 3
+  },
+  "missing_arcs": {
+   "11": 3,
+   "12": 17,
+   "13": 34,
+   "14": 21,
+   "15": 6,
+   "16": 10,
+   "17": 18,
+   "18": 7,
+   "19": 7
+  },
+  "bidirected_pairs": {
+   "10": 8,
+   "11": 2,
+   "2": 3,
+   "3": 8,
+   "4": 18,
+   "5": 10,
+   "6": 6,
+   "7": 12,
+   "8": 26,
+   "9": 30
+  },
+  "single_arc_pairs": {
+   "10": 7,
+   "11": 21,
+   "12": 22,
+   "13": 17,
+   "14": 12,
+   "15": 6,
+   "16": 10,
+   "17": 19,
+   "18": 4,
+   "19": 3,
+   "9": 2
+  },
+  "nonadjacent_pairs": {
+   "0": 66,
+   "1": 57
+  },
+  "bi_minus_nonadj": {
+   "10": 3,
+   "2": 7,
+   "3": 7,
+   "4": 18,
+   "5": 10,
+   "6": 6,
+   "7": 21,
+   "8": 34,
+   "9": 17
+  },
+  "omega_bi": {
+   "2": 40,
+   "3": 67,
+   "4": 16
+  },
+  "nodes_sending_to_all": {
+   "0": 62,
+   "1": 42,
+   "2": 19
+  },
+  "nodes_receiving_from_all": {
+   "0": 119,
+   "1": 4
+  },
+  "bidirected_universal_nodes": {
+   "0": 119,
+   "1": 4
+  },
+  "A_sources_or_sinks": {
+   "0": 123
+  },
+  "D_matching": {
+   "False": 123
+  },
+  "D_star": {
+   "False": 123
+  },
+  "D_star_forest": {
+   "False": 123
+  },
+  "D_forest": {
+   "False": 123
+  },
+  "D_max_degree_underlying": {
+   "5": 62,
+   "6": 61
+  },
+  "D_vertices_covered": {
+   "6": 4,
+   "7": 119
+  },
+  "D_has_directed_cycle": {
+   "True": 123
+  },
+  "oneway_part_has_directed_cycle": {
+   "True": 123
+  },
+  "induced_oriented_3cycle": {
+   "True": 123
+  },
+  "D_strongly_connected": {
+   "False": 61,
+   "True": 62
+  },
+  "D_on_core_strongly_connected": {
+   "False": 9,
+   "True": 114
+  },
+  "A_strongly_connected": {
+   "True": 123
+  },
+  "bidirected_in_twin_pairs": {
+   "0": 60,
+   "1": 46,
+   "2": 10,
+   "3": 7
+  },
+  "closed_twin_pairs": {
+   "0": 120,
+   "1": 3
+  },
+  "nonadjacent_in_twin_pairs": {
+   "0": 123
+  },
+  "dominated_nodes": {
+   "0": 123
+  },
+  "closed_twin_classes_nontrivial": {
+   "[2]": 3,
+   "[]": 120
+  },
+  "sink_class_sizes": {
+   "[1, 1]": 17,
+   "[1]": 42,
+   "[2]": 2,
+   "[]": 62
+  },
+  "core_size": {
+   "5": 19,
+   "6": 42,
+   "7": 62
+  },
+  "peeling": {
+   "([1, 1], 5)": 8,
+   "([1], 6)": 34,
+   "([2, 1], 4)": 1,
+   "([2], 5)": 18,
+   "([], 7)": 62
+  },
+  "aut": {
+   "1": 120,
+   "2": 3
+  },
+  "min_outdeg": {
+   "1": 1,
+   "2": 82,
+   "3": 40
+  },
+  "min_indeg": {
+   "2": 14,
+   "3": 108,
+   "4": 1
+  },
+  "max_outdeg": {
+   "4": 12,
+   "5": 50,
+   "6": 61
+  },
+  "max_indeg": {
+   "4": 29,
+   "5": 90,
+   "6": 4
+  }
+ },
+ "n7_FNFL": {
+  "arcs": {
+   "28": 1
+  },
+  "missing_arcs": {
+   "14": 1
+  },
+  "bidirected_pairs": {
+   "8": 1
+  },
+  "single_arc_pairs": {
+   "12": 1
+  },
+  "nonadjacent_pairs": {
+   "1": 1
+  },
+  "bi_minus_nonadj": {
+   "7": 1
+  },
+  "omega_bi": {
+   "3": 1
+  },
+  "nodes_sending_to_all": {
+   "2": 1
+  },
+  "nodes_receiving_from_all": {
+   "0": 1
+  },
+  "bidirected_universal_nodes": {
+   "0": 1
+  },
+  "A_sources_or_sinks": {
+   "0": 1
+  },
+  "D_matching": {
+   "False": 1
+  },
+  "D_star": {
+   "False": 1
+  },
+  "D_star_forest": {
+   "False": 1
+  },
+  "D_forest": {
+   "False": 1
+  },
+  "D_max_degree_underlying": {
+   "6": 1
+  },
+  "D_vertices_covered": {
+   "7": 1
+  },
+  "D_has_directed_cycle": {
+   "True": 1
+  },
+  "oneway_part_has_directed_cycle": {
+   "True": 1
+  },
+  "induced_oriented_3cycle": {
+   "True": 1
+  },
+  "D_strongly_connected": {
+   "False": 1
+  },
+  "D_on_core_strongly_connected": {
+   "True": 1
+  },
+  "A_strongly_connected": {
+   "True": 1
+  },
+  "bidirected_in_twin_pairs": {
+   "1": 1
+  },
+  "closed_twin_pairs": {
+   "1": 1
+  },
+  "nonadjacent_in_twin_pairs": {
+   "0": 1
+  },
+  "dominated_nodes": {
+   "0": 1
+  },
+  "closed_twin_classes_nontrivial": {
+   "[2]": 1
+  },
+  "sink_class_sizes": {
+   "[2]": 1
+  },
+  "core_size": {
+   "5": 1
+  },
+  "peeling": {
+   "([2], 5)": 1
+  },
+  "aut": {
+   "2": 1
+  },
+  "min_outdeg": {
+   "2": 1
+  },
+  "min_indeg": {
+   "3": 1
+  },
+  "max_outdeg": {
+   "6": 1
+  },
+  "max_indeg": {
+   "5": 1
+  }
+ },
+ "n8": {
+  "arcs": {
+   "29": 2,
+   "30": 27,
+   "31": 120,
+   "32": 269,
+   "33": 562,
+   "34": 1079,
+   "35": 1485,
+   "36": 1406,
+   "37": 1305,
+   "38": 768,
+   "39": 510,
+   "40": 476,
+   "41": 581,
+   "42": 353,
+   "43": 153,
+   "44": 34,
+   "45": 3
+  },
+  "missing_arcs": {
+   "11": 3,
+   "12": 34,
+   "13": 153,
+   "14": 353,
+   "15": 581,
+   "16": 476,
+   "17": 510,
+   "18": 768,
+   "19": 1305,
+   "20": 1406,
+   "21": 1485,
+   "22": 1079,
+   "23": 562,
+   "24": 269,
+   "25": 120,
+   "26": 27,
+   "27": 2
+  },
+  "bidirected_pairs": {
+   "10": 934,
+   "11": 575,
+   "12": 388,
+   "13": 553,
+   "14": 463,
+   "15": 214,
+   "16": 73,
+   "17": 8,
+   "2": 8,
+   "3": 36,
+   "4": 202,
+   "5": 433,
+   "6": 856,
+   "7": 1396,
+   "8": 1606,
+   "9": 1388
+  },
+  "single_arc_pairs": {
+   "10": 7,
+   "11": 53,
+   "12": 124,
+   "13": 319,
+   "14": 443,
+   "15": 485,
+   "16": 444,
+   "17": 731,
+   "18": 1048,
+   "19": 1565,
+   "20": 1488,
+   "21": 1177,
+   "22": 724,
+   "23": 366,
+   "24": 127,
+   "25": 25,
+   "26": 7
+  },
+  "nonadjacent_pairs": {
+   "0": 6037,
+   "1": 2895,
+   "2": 198,
+   "3": 3
+  },
+  "bi_minus_nonadj": {
+   "1": 2,
+   "10": 768,
+   "11": 510,
+   "12": 476,
+   "13": 581,
+   "14": 353,
+   "15": 153,
+   "16": 34,
+   "17": 3,
+   "2": 27,
+   "3": 120,
+   "4": 269,
+   "5": 562,
+   "6": 1079,
+   "7": 1485,
+   "8": 1406,
+   "9": 1305
+  },
+  "omega_bi": {
+   "2": 2202,
+   "3": 5847,
+   "4": 1023,
+   "5": 61
+  },
+  "nodes_sending_to_all": {
+   "0": 5276,
+   "1": 3185,
+   "2": 562,
+   "3": 110
+  },
+  "nodes_receiving_from_all": {
+   "0": 9002,
+   "1": 129,
+   "2": 2
+  },
+  "bidirected_universal_nodes": {
+   "0": 9002,
+   "1": 129,
+   "2": 2
+  },
+  "A_sources_or_sinks": {
+   "0": 9133
+  },
+  "D_matching": {
+   "False": 9133
+  },
+  "D_star": {
+   "False": 9133
+  },
+  "D_star_forest": {
+   "False": 9133
+  },
+  "D_forest": {
+   "False": 9133
+  },
+  "D_max_degree_underlying": {
+   "4": 2,
+   "5": 652,
+   "6": 3689,
+   "7": 4790
+  },
+  "D_vertices_covered": {
+   "6": 2,
+   "7": 129,
+   "8": 9002
+  },
+  "D_has_directed_cycle": {
+   "True": 9133
+  },
+  "oneway_part_has_directed_cycle": {
+   "True": 9133
+  },
+  "induced_oriented_3cycle": {
+   "True": 9133
+  },
+  "D_strongly_connected": {
+   "False": 3857,
+   "True": 5276
+  },
+  "D_on_core_strongly_connected": {
+   "False": 517,
+   "True": 8616
+  },
+  "A_strongly_connected": {
+   "True": 9133
+  },
+  "bidirected_in_twin_pairs": {
+   "0": 4862,
+   "1": 3676,
+   "2": 354,
+   "3": 182,
+   "4": 41,
+   "6": 18
+  },
+  "closed_twin_pairs": {
+   "0": 8947,
+   "1": 181,
+   "2": 2,
+   "3": 3
+  },
+  "nonadjacent_in_twin_pairs": {
+   "0": 9133
+  },
+  "dominated_nodes": {
+   "0": 9133
+  },
+  "closed_twin_classes_nontrivial": {
+   "[2, 2]": 2,
+   "[2]": 181,
+   "[3]": 3,
+   "[]": 8947
+  },
+  "sink_class_sizes": {
+   "[1, 1, 1]": 71,
+   "[1, 1]": 513,
+   "[1]": 3185,
+   "[2, 1]": 36,
+   "[2]": 49,
+   "[3]": 3,
+   "[]": 5276
+  },
+  "core_size": {
+   "5": 110,
+   "6": 562,
+   "7": 3185,
+   "8": 5276
+  },
+  "peeling": {
+   "([1, 1, 1], 5)": 33,
+   "([1, 1, 2], 4)": 2,
+   "([1, 1], 6)": 315,
+   "([1, 2], 5)": 11,
+   "([1], 7)": 2824,
+   "([2, 1, 1], 4)": 5,
+   "([2, 1], 5)": 141,
+   "([2, 2], 4)": 2,
+   "([2], 6)": 414,
+   "([3, 1], 4)": 8,
+   "([3], 5)": 102,
+   "([], 8)": 5276
+  },
+  "aut": {
+   "1": 8945,
+   "2": 182,
+   "4": 3,
+   "6": 3
+  },
+  "min_outdeg": {
+   "1": 59,
+   "2": 2119,
+   "3": 5746,
+   "4": 1208,
+   "5": 1
+  },
+  "min_indeg": {
+   "1": 1,
+   "2": 114,
+   "3": 3788,
+   "4": 5182,
+   "5": 48
+  },
+  "max_outdeg": {
+   "4": 5,
+   "5": 1025,
+   "6": 4246,
+   "7": 3857
+  },
+  "max_indeg": {
+   "4": 16,
+   "5": 4963,
+   "6": 4023,
+   "7": 131
+  }
+ },
+ "n8_extra": {
+  "lo_kind": {
+   "beta_min": 8162,
+   "root": 971
+  },
+  "hi_spectral": 7191,
+  "D_strong_iff_no_sink": true,
+  "uncovered_vertices_are_exactly_bidirected_universal": true
+ },
+ "more_universals": {
+  "n6": {
+   "total": 3,
+   "holds": {
+    "every_nonsink_node_on_induced_C3": 3,
+    "oneway_digraph_on_nonsinks_strongly_connected": 3,
+    "every_node_has_oneway_out_or_is_sink_or_bidir_universal": 3,
+    "every_node_has_a_oneway_in_arc_or_is_sink": 3,
+    "max_outdeg>=5": 3,
+    "min_outdeg>=2": 3,
+    "min_indeg>=2": 3,
+    "A_has_hamiltonian_cycle": 3
+   }
+  },
+  "n7": {
+   "total": 124,
+   "holds": {
+    "every_nonsink_node_on_induced_C3": 91,
+    "oneway_digraph_on_nonsinks_strongly_connected": 113,
+    "every_node_has_oneway_out_or_is_sink_or_bidir_universal": 124,
+    "every_node_has_a_oneway_in_arc_or_is_sink": 122,
+    "max_outdeg>=5": 124,
+    "min_outdeg>=2": 123,
+    "min_indeg>=2": 124,
+    "A_has_hamiltonian_cycle": 124
+   }
+  },
+  "n8": {
+   "total": 9133,
+   "holds": {
+    "every_nonsink_node_on_induced_C3": 6822,
+    "oneway_digraph_on_nonsinks_strongly_connected": 8451,
+    "every_node_has_oneway_out_or_is_sink_or_bidir_universal": 9108,
+    "every_node_has_a_oneway_in_arc_or_is_sink": 8992,
+    "max_outdeg>=5": 9128,
+    "min_outdeg>=2": 9074,
+    "min_indeg>=2": 9132,
+    "A_has_hamiltonian_cycle": 9133
+   }
+  }
+ }
+}

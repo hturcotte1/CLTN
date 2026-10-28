@@ -144,7 +144,7 @@
     "&GVrm]A{^pZ]w"
    ],
    "q_upper_ends_above_3_over_2": 16,
-   "q_upper_end_min_approx": "1.000276",
+   "q_upper_end_min_approx": "1.000122 (corrected 2026-10-28: the first-pass synthesis text said 1.000276; the per-graph file notes/verify_n8/v_structure/q_upper_ends_refined.json and n8/aggregate_n8.py give &GMBQMHtMH~]W in [77079731/77070336, 1079116235/1078984704])",
    "stored_rational_q_upper_bounds_coarse_note": "two stored bounds are exactly 2 (isolating interval [2,3]) although the algebraic endpoints are about 1.0742; after exact refinement all 9,133 upper ends are below 2"
   },
   "legal_witness_certificate": "certificates/n8_candidates_legal_witnesses.json (one legal stored witness where one exists, and a certified interior point for every graph; use witness_in_first_stable_cell for hand checks)"

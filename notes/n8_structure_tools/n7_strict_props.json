@@ -1,0 +1,26 @@
+{
+ "never_positivity": {
+  "total": 1726,
+  "omega_le_n_minus_3": 1726,
+  "strongly_connected": 1726,
+  "induced_C3": 1726,
+  "recv_all_implies_send_all": 1726,
+  "hamiltonian": 1726
+ },
+ "never_full": {
+  "total": 39,
+  "omega_le_n_minus_3": 39,
+  "strongly_connected": 39,
+  "induced_C3": 39,
+  "recv_all_implies_send_all": 39,
+  "hamiltonian": 39
+ },
+ "hit": {
+  "total": 123,
+  "omega_le_n_minus_3": 123,
+  "strongly_connected": 123,
+  "induced_C3": 123,
+  "recv_all_implies_send_all": 123,
+  "hamiltonian": 123
+ }
+}

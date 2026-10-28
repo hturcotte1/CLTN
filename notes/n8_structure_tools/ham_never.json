@@ -1,0 +1,6 @@
+{
+ "hit ham=True": 9133,
+ "never_full ham=True": 7078,
+ "never_positivity ham=False": 18,
+ "never_positivity ham=True": 331409
+}

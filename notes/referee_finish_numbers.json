@@ -1,0 +1,1541 @@
+{
+ "referee": "number referee, n = 8 finish (REPORT_n8.md, FINAL_SUMMARY.md, paper.tex n = 8 parts, outreach drafts)",
+ "date": "2026-10-28",
+ "method": "every number traced to the named certificate/data file; sums, differences, ratios and decimal displays recomputed with exact integer/Fraction arithmetic; polynomial facts (q_8* interval, smallest upper end, psi_D factorisations, positivity roots) re-derived with sympy exact arithmetic (decimals shown are display only); underlying-graph counts of all 347,639 strict survivors recounted with nauty labelg (n7/labelg); nothing in any document was edited",
+ "summary": {
+  "entries": 191,
+  "OK": 183,
+  "WRONG": 7,
+  "UNSOURCED": 1
+ },
+ "entries": [
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "8-11 (status box) and 32",
+   "claim": "801,558,826,511 digraphs with >= 29 arcs read once; 347,639 strict survivors; K8 + 9,133 limit-stable",
+   "source": "n8/n8_prefilter_TOTAL.txt (total 801558826511, survivors 417951273, boundary 417603634); n8/n8_limit_tally.json (stable_somewhere 9134, complete 1, stable_noncomplete 9133); recount of n8/n8_limit_results.jsonl: 347,639 records = 338,505 never + 9,133 stable non-complete + 1 complete",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "12-15",
+   "claim": "two campaigns: four verifiers 9,133/9,133; second campaign six lenses, 0 fatal or major",
+   "source": "notes/verify_n8/SYNTHESIS.json (overall_status CONFIRMED, each verifier confirmed 9133); notes/verify_n8_2/SYNTHESIS.json (counts fatal 0, major 0, minor 1, notes 13); certificates/n8_limit_summary.json status",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "15-17",
+   "claim": "user declined hand-verification 2026-10-28",
+   "source": "certificates/n8_limit_summary.json second_verification.human_decision; ANOMALIES.md 2026-10-28 'Hand-verification declined'",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "18",
+   "claim": "417,603,634 boundary (B) lines, alpha(A|perp) >= -1/2, not stored",
+   "source": "n8/n8_prefilter_TOTAL.txt boundary 417603634; certificates/n8_summary.json chain.prefilter.B_lines_stored false",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "32",
+   "claim": "e_2 bound excludes 991,800,366,337 of 1,793,359,192,848",
+   "source": "certificates/n8_summary.json chain.restricted_space.A000273_8_for_reference 1793359192848; 1,793,359,192,848 - 801,558,826,511 = 991,800,366,337 (recomputed)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "32",
+   "claim": "0 escalations, 0 overflows",
+   "source": "n8/n8_limit_tally.json escalate 0, O 0; n8/n8_prefilter_TOTAL.txt overflow 0",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "33",
+   "claim": "3 (n = 6), 123 (n = 7), 9,133 (n = 8) limit counterexamples",
+   "source": "certificates/n6_summary.json limit.limit_stable_noncomplete 3; certificates/n7_finite_summary.json limit_candidates 123; certificates/n8_summary.json hits 9133",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "33",
+   "claim": "9,072 not closed-twin lifts (61 are); 6,720 contain no n = 6/7 counterexample; 5,902 no vertex deletion passes the n = 7 prefilter",
+   "source": "certificates/n8_summary.json lifts.hits_not_a_single_closed_twin_lift 9072, distinct_blowups_in_hits 61; notes/n8_structure_tools/motifs.json contains_n6_or_n7 2413 (9133-2413 = 6720); notes/n8_structure_tools/heredity.json number_of_deletions... '0': 5902",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "34, 257-258",
+   "claim": "q_8*(limit) = root of 13109 q^15 - 124967 q^14 + ... - 9045013 in [459224485/268435456, 2755346911/1610612736], about 1.71074",
+   "source": "certificates/n8_summary.json q_star_limit.minpoly_hi_to_lo, isolating_interval, approx 1.7107445190971096; my sympy check: sign change on the interval, width 6.2e-10, polynomial irreducible, equals the stored beta polynomial at beta = 1 + q",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "34, 260",
+   "claim": "attained by &GMx|\\Aw^qz]w and &GVrm]A{^pZ]w, one bidirected in-twin switch apart, not attained (Delta vanishes)",
+   "source": "certificates/n8_summary.json q_star_limit.attained_by, attained false, vanishing_at_q_star ['Delta']; notes/n8_structure_tools/consistency_extra.json extremal_in_twin_switches_A_to_B (twins [4,7]); own recomputation: psi_D identical for both, min Re of nonzero roots -0.368902, beta_c = 2.710745, q = 1.710745",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "34, 268-269",
+   "claim": "exceeds q_7* = plastic number (about 1.3247) and 1709/1001 (about 1.7073)",
+   "source": "certificates/n8_summary.json q_star_limit.compare_with_n7 (interval [49/37, 53/40], q_8_star_gt_q_7_star true); 1709/1001 = 1.70729 < 459224485/268435456 = 1.71074 (recomputed); 1709/1001 from ANOMALIES.md 2026-10-15 and REPORT_n7 \u00a70 item 7",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "34, 271-273",
+   "claim": "all 9,133 upper ends below 2; 16 exceed 3/2; smallest about 1.000122",
+   "source": "certificates/n8_summary.json q_data.all_upper_ends_below_2 true, upper_ends_above '3/2': 16, smallest_upper_end approx 1.0001219; own sympy check of the stored degree-21 polynomial on [77079731/77070336, 1079116235/1078984704]: sign change, 1.0001219",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "35, 346-349",
+   "claim": "extremal graphs have no node sending to all others; minimum real part about -0.3689; Theorem Q limit about -0.3516; two graphs with beta_c = 8/3, q = 5/3 from the factor 4z^2 + 3z + 1",
+   "source": "own recomputation from the digraph6 strings: no sink node, psi_D = z(8z^6+16z^5+34z^4+33z^3+30z^2+13z+5), min Re -0.368902; &GMw|Vr]Rb~Nw and &GUo~EX~Yxz^w: psi_D = z(4z^2+3z+1)(2z^4+2z^3+4z^2+2z+1), min Re exactly -3/8; n8/n8_limit_HITS.jsonl stores hi beta_interval [8/3, 8/3], q_interval [5/3, 5/3]; -0.3516 = -1/(1 + 1.84416) from the Theorem Q limit in notes/research_wf3/theory/notes_theory.md lines 37, 415",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "36, 166-167, 174-175",
+   "claim": "11 to 27 missing arcs; largest bidirected clique at most 5 (61 attain); strongly connected, Hamiltonian, induced oriented 3-cycle on all 9,133",
+   "source": "certificates/n8_summary.json missing_arc_counts (11..27); notes/n8_structure_tools/structure_summary.json n8.omega_bi {2:2202,3:5847,4:1023,5:61}, A_strongly_connected True 9133, induced_oriented_3cycle True 9133; notes/n8_structure_tools/ham_never.json hit ham=True 9133",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "36, 314-316",
+   "claim": "338,505 strict survivors that are not counterexamples share the universals; strong connectivity fails for 18",
+   "source": "notes/n8_structure_tools/discriminate.json (331,427 + 7,078 = 338,505; Astrong False 18 among never_positivity); notes/n8_structure_tools/ham_never.json never_positivity ham=False 18",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "36, 357-359",
+   "claim": "S1 exhaustive at n = 9: 682,176 configurations, 600,440 dominated, 81,735 fail strict spectral, only K9 survives; 631 families",
+   "source": "notes/n8_structure_tools/clique_class_test_n9.json (configurations 682176, dominated 600440, spectral 81735, strict 1, K9); notes/n8_structure_tools/family_test.json symbolic_families total 631 holds 631; 600,440 + 81,735 + 1 = 682,176 (recomputed)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "37, 335-336",
+   "claim": "626 catalogue members (593 distinct) all in the list",
+   "source": "notes/n8_structure_tools/families.json catalogue instances 626, distinct_graphs 593, not_in_list []",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "37, 190-192",
+   "claim": "858 distinct blow-ups of the 123: 61 in list, 797 exactly not limit-stable",
+   "source": "certificates/n8_summary.json lifts (blowups_built 861, distinct 858, in_hits 61, not_in_hits 797); notes/verify_n8_2/completeness_twins/part2_summary.json (same numbers, missed_counterexamples [])",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "37, 185-186",
+   "claim": "Lemma J in-twin-switch closure: 29,116 switches of 4,271 records, all in list, identical intervals",
+   "source": "certificates/n8_summary.json lemma_J_switch_closure_second_campaign (switches 29116, records_with_twins 4271, same_interval 29116, exceptions 0); notes/verify_n8_2/completeness_twins/part34_summary.json part3",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "38, 109",
+   "claim": "accounting ok, 9 shards, 3,226 jobs, 201 split graphs",
+   "source": "n8/n8_accounting.json (ok true, shards_checked 9, jobs_checked 3226, split_graphs_checked 201); n8/check_accounting.log",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "38, 116",
+   "claim": "K8 - e: 143,266 canonical strict lines identical under both schemes",
+   "source": "ANOMALIES.md 2026-10-28 'Orbit enumerator post-hoc check'; notes/verify_n8_2/SYNTHESIS.json own_rederivations_summary; n8/orbitenum/k8e_check/ (two gzipped canonical S-line files)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "39, 435-449",
+   "claim": "literature: not scooped as of 2026-10-28; arXiv items, Zenodo v1.1.0-candidate 2026-10-01, HEAD e28a309, HEAD 52ad000, index to 27 Oct 2026, Londono Alvarez 2606.07336 v2 28 Sep 2026",
+   "source": "notes/literature_position_2026-10-28.md sections 1-3, 5, 6",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "43-52",
+   "claim": "q = (beta - 1) t/(t + 1); legal iff t(beta - 2) > 1; limit-stable set (2, beta_c), beta_c = 1/(1 + alpha)",
+   "source": "REPORT_n7 \u00a71; {V2} theory_relied_on_and_rechecked; notes/lemma_I_spectral.md (Lemma I.3); consistent with the recomputed beta_c = -1/minRe(D|perp) = 1/(1+alpha) for the extremal and rational graphs",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "56-58",
+   "claim": "m(m-1)/2 + 1 = 29 arcs at m = 8; 15..28 underlying edges; 5,350 underlying graphs; 44.7% of A000273(8)",
+   "source": "n8/n8_restricted_counts.json (underlying_graphs 5350, digraphs_total 801558826511, geng_edges 15:28, min_arcs 29); 801558826511/1793359192848 = 0.4470 (recomputed); ANOMALIES.md 2026-10-16",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "62-63",
+   "claim": "filter8 byte-identical on all n <= 7 data",
+   "source": "ANOMALIES.md 2026-10-15 (research workflow): 'byte-identical to filter7 on all 1,540,944 n = 6 digraphs and on the 638,042 n = 7 survivors'",
+   "verdict": "WRONG",
+   "fix": "Overstated: the validation covered all n = 6 digraphs and the 638,042 n = 7 spectral survivors, not all 882,033,440 n = 7 digraphs. Write 'byte-identical to the n = 7 filter on all 1,540,944 n = 6 digraphs and on the 638,042 n = 7 spectral survivors'. (The same phrase is inherited from REPORT_n7 \u00a710 and appears in paper.tex lines 847 and 1409-1410.)"
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "65-67",
+   "claim": "S = every minor positive (alpha < -1/2); B = zero coefficient or minor met before any negative one (alpha >= -1/2); nothing = a negative one met first: alpha > -1/2",
+   "source": "notes/verify_n8_2/SYNTHESIS.json per_agent.never_side.own_rederivation (filter8 hurwitz() rule); notes/verify_n8_2/never_side/check_ab_summary.json: 300/300 non-printed domination-free samples have alpha '>' -1/2",
+   "verdict": "UNSOURCED",
+   "fix": "The strict inequality alpha > -1/2 for non-printed lines is a sampled observation (300 of 300), not a proved property of the rule; the proved statement is alpha >= -1/2 (any non-positive Hurwitz minor gives a root with Re >= 0), which is all the exclusion needs. Write 'alpha >= -1/2 (in the 300 sampled lines strictly > -1/2)'."
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "73-74",
+   "claim": "230 of 300 sampled B lines have alpha > -1/2 strictly (ANOMALIES.md 2026-10-28, 'Corrections from the chain referee')",
+   "source": "notes/verify_n8_2/never_side/check_ab_summary.json: sample_B ('B', True, '>'): 230, ('B', True, '='): 70; notes/verify_n8_2/SYNTHESIS.json non_issues (never_side). ANOMALIES.md 2026-10-28 'Corrections from the chain referee' says '23 of 122 cross-checked B lines'",
+   "verdict": "WRONG",
+   "fix": "The number 230/300 is right but comes from notes/verify_n8_2/SYNTHESIS.json and notes/verify_n8_2/never_side/check_ab_summary.json; the ANOMALIES entry cited reports a different sample (23 of 122). Cite the never_side files, or quote both figures with their sources."
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "77-83",
+   "claim": "limit stage: fastregion.region(A, range(8), INF, replay=True); never_positivity / never_full / stable_somewhere definitions",
+   "source": "certificates/n8_summary.json chain.limit_stage.engine; n8/run_n8_limit.py",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "94-98 (table)",
+   "claim": "0': 991,800,366,337 dropped; 1: 687,860,834,577 dropped, 113,697,991,934 remain; 2: 113,280,040,661 printed nothing, 417,951,273 survivors = 417,603,634 B + 347,639 S; 3: 331,427 + 7,078 never, 9,134 stable",
+   "source": "n8/n8_prefilter_TOTAL.txt, n8/n8_accounting.json aggregate, n8/n8_limit_tally.json; differences recomputed: 801,558,826,511 - 113,697,991,934 = 687,860,834,577; 113,697,991,934 - 417,951,273 = 113,280,040,661; 417,951,273 - 417,603,634 = 347,639; 331,427 + 7,078 + 9,134 = 347,639",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "100-103",
+   "claim": "accounting identity holds; second campaign recounted 338,505 never = 331,427 + 7,078; 9,134 stable; HITS = non-complete stable 9,133/9,133",
+   "source": "certificates/n8_summary.json counts.accounting_identity_holds true; notes/verify_n8_2/SYNTHESIS.json result_under_test.verdicts_recounted; own recount of n8/n8_limit_results.jsonl (same numbers)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "105-107",
+   "claim": "geng 8 15:28 | directg -e29:56, nine shards (5,129,155,711 digraphs), jobs per graph / directg -s p/P",
+   "source": "ANOMALIES.md 2026-10-15 (prefilter started), 2026-10-16 (re-sharded by underlying graph), 2026-10-27 (shards 0..8: 5,129,155,711)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "110-111",
+   "claim": "directg slows with |Aut|: 0.051 M/s at |Aut| = 192, 0.006 M/s at 1,440",
+   "source": "ANOMALIES.md 2026-10-27 'K8 enumerated by its bidirected subgraph' (0.051 at 192, 0.023 at 240, 0.006 at 1,440)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "115 (swap 1)",
+   "claim": "K8: 575,009,339 digraphs, |Aut| = 40,320, 348 directg parts (3-8 days) replaced by 40 batches over 12,345 graphs B with 1..28 edges; ledger grand sum 575,009,339; A001174(8) - A000568(8) = 575,016,219 - 6,880",
+   "source": "certificates/n8_summary.json chain.swaps[0]; n8/check_k8decomp.log; ANOMALIES.md 2026-10-27 (same numbers, incl. the OEIS difference)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "115 (swap 1 content check)",
+   "claim": "validated at n = 4..7 by multiset equality (38 / 570 / 21,424 / 2,141,832 classes); addarcs unit-tested on 3,245 cases; relabelling invariance on 4,907,680 n = 8 digraphs",
+   "source": "ANOMALIES.md 2026-10-27; notes/k8_decomposition.md lines 69, 77; notes/k8_decomposition_referees.json (relabel_test 4,907,680)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "116 (swap 2)",
+   "claim": "99 directg parts replaced by 14 orbitenum parts; K8-K3 8 parts 63,271 reps 1,179,317,832; K8-K_{1,5} 4 parts 50,139 reps 330,741,720; K8-(K2+K_{1,5}) 2 parts 24,369 reps 84,866,528",
+   "source": "n8/check_orbit.log; certificates/n8_summary.json chain.swaps[1].ledger; ANOMALIES.md 2026-10-27 'Three more high-symmetry graphs' (99 parts -> 14)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "116 (swap 2 validation)",
+   "claim": "eight graphs at n = 5..7 (up to 10,840,382 classes) and n = 8 graphs (128,067 classes) set-equal to directg; K8 - e 5,339,129,738 digraphs, 16 orbit parts, 143,266 lines, 321 directg parts",
+   "source": "notes/k8_decomposition.md line 114 (10,840,382); notes/k8_decomposition_referees.json (128,067); ANOMALIES.md 2026-10-28 'Orbit enumerator post-hoc check' (5,339,129,738; 16 parts; 143,266; 321); notes/verify_n8_2/chain_referee/accounting2_result.json dense G^~~~{ 5339129738",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "120-123",
+   "claim": "chain referee: Burnside on 30 graphs, two shards, 20 dense graphs; filter agreement on 3,391 digraphs; 38,215 misattribution artefact resolved to 0",
+   "source": "notes/verify_n8_2/chain_referee/burnside_result.json (sample rule: 30 graphs + shards 0 and 4; 'dense' has 20 entries); variants_mine.txt has 3,391 lines; notes/verify_n8_2/SYNTHESIS.json per_agent.chain_referee (38,215 -> 0 after canonicalisation)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "123-124",
+   "claim": "all 347,639 strict lines come from 17 high-symmetry underlying graphs (K8: 166,042; K8 - e: 143,266; K8 - 2K2: 19,701; ...)",
+   "source": "own recount: underlying graphs of all 347,639 records canonicalised with n7/labelg: 17 distinct; K8 (G~~~~{) 166,042; K8 - e (G^~~~{) 143,266; GV~~~{ = K8 minus a path P3 19,701; G]~~~{ = K8 minus 2K2 16,123; then 969, 716, 533, 118, 114, 17, 13, 8, 7, 6, 3, 2, 1. Cross-check: ANOMALIES.md 2026-10-22 identifies GV~~~{ as 'K8 minus P3' and G]~~~{ as 'K8 minus 2K2'",
+   "verdict": "WRONG",
+   "fix": "19,701 is the count for K8 - P3 (graph6 GV~~~{); K8 - 2K2 (G]~~~{) has 16,123. Write 'K8 - P3: 19,701; K8 - 2K2: 16,123'. The mislabel originates in ANOMALIES.md 2026-10-27 ('19,701 in K8-2K2 (GV~~~{)') and is repeated in the 2026-10-28 entry; log the correction there."
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "125",
+   "claim": "none from the 135 packed jobs (55,077,003,264 digraphs) or the nine geng shards",
+   "source": "ANOMALIES.md 2026-10-27 (observation paragraph: 135 unsplit jobs, 55,077,003,264; shards 0..8, 5,129,155,711)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "128-134, 136-142 (shard table)",
+   "claim": "killed at 59,610 of 347,639; four shards 86,910/86,910/86,910/86,909; never_positivity 82,828/82,867/82,873/82,859; never_full 1,770/1,760/1,727/1,821; stable 2,312/2,283/2,310/2,229; complete 0/1/0/0; seconds 2,733.6/2,675.9/2,697.9/2,669.2; sums 347,639 / 331,427 / 7,078 / 9,134 / 10,776.6; 64,196 records cross-checked",
+   "source": "n8/limit_sharding/shard{0..3}_tally.json; certificates/n8_summary.json chain.limit_stage.shard_tallies; n8/n8_limit_tally.json seconds 10776.6, interrupted_single_run_records_cross_checked 64196; all column sums recomputed and equal",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "144-145",
+   "claim": "prefilter ran 2026-10-15 to 2026-10-27 through seven container restarts",
+   "source": "ANOMALIES.md: restarts recorded at 19:55 and 21:58 on 2026-10-15, 00:1x and 01:42 on 2026-10-16, 01:45 Oct 19, 03:38 Oct 20, 04:39 and 05:24 Oct 22, 03:43 and 04:57 Oct 23, 01:38 Oct 27 (the 2026-10-27 entry lists 'all seven restarts' from Oct 19 on; the Oct 15/16 entries record four more)",
+   "verdict": "WRONG",
+   "fix": "The log records eleven host restarts during the run: four on 2026-10-15/16 (geng-shard phase) and the seven numbered ones from 2026-10-19 to 2026-10-27 (job phase). Write 'eleven container restarts (four on 15-16 October before the per-job driver, seven from 19 to 27 October)' or 'seven restarts during the per-job phase and four earlier'. Same fix for FINAL_SUMMARY.md line 94."
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "146-149",
+   "claim": "aggregate rate 1.5-1.7 M digraphs/s, 0.4 M/s per pipeline, about 5.5-6 days; limit stage 10,776.6 CPU-s; aggregation 117 s",
+   "source": "ANOMALIES.md 2026-10-16 (0.4 M/s per pipeline, 1.5-1.7 M/s aggregate, 5.5-6 days for the remaining 7.96e11); n8/n8_limit_tally.json seconds 10776.6; certificates/n8_summary.json seconds 116.7",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "152-160",
+   "claim": "file list; certificates/n8_counterexamples_classes.json (6,260 D-classes); n7/REPRODUCE_n8_limit.md",
+   "source": "files exist (ls); certificates/n8_counterexamples_classes.json classes 6260; n7/REPRODUCE_n8_limit.md exists",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "166-167",
+   "claim": "arc counts 29: 2 ... 45: 3",
+   "source": "certificates/n8_limit_summary.json edge_counts; certificates/n8_summary.json edge_counts; own recount of n8/n8_limit_HITS.jsonl 'edges' field identical; sum 9,133",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "168-171",
+   "claim": "two 29-arc graphs &GM?WUZeEie^O (3 bidirected, 2 non-adjacent) and &GMBO]At]Xp]? (2, 1), no twins, trivial Aut, no sink, upper ends about 1.01309 and 1.00116; n = 7 minimum 22 allowed, 23 attained",
+   "source": "notes/n8_structure_tools/special_sets.json arcs29 (bi 3/2, nonadj 2/1, aut 1, sinks [], twins 0, q_hi [64800179/63963136, ...] = 1.01309, [39760951/39714816, ...] = 1.00116); certificates/n7_finite_summary.json edge_counts start at 23; REPORT_n7 \u00a72 stage 4 (e_2 bound 22)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "172-173",
+   "claim": "all domination-free, non-complete, non-clique, pairwise non-isomorphic; edges field = arc count",
+   "source": "certificates/n8_summary.json hits_domination_free 9133, hits_all_noncomplete_nonclique true, hits_pairwise_nonisomorphic_labelg true; notes/verify_n8/SYNTHESIS.json v_structure structural_results",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "174-175",
+   "claim": "non-adjacent pairs 0: 6,037, 1: 2,895, 2: 198, 3: 3; bidirected pairs 2..17; omega_bi 2: 2,202, 3: 5,847, 4: 1,023, 5: 61",
+   "source": "notes/n8_structure_tools/structure_summary.json n8 (nonadjacent_pairs, bidirected_pairs 2..17, omega_bi); sums 9,133",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "176-183",
+   "claim": "6,260 D-classes with sizes 1: 4,939, 2: 824, 3: 2, 4: 374, 5: 16, 6: 3, 7: 1, 8: 84, 10: 2, 12: 1, 14: 4, 16: 8, 19: 1, 32: 1; 0 exceptions; 262 members with vertex-relabelled vanishing labels; key k = 1..8",
+   "source": "certificates/n8_summary.json D_equivalence_classes 6260, class_sizes, class_exceptions [], class_members_whose_vanishing_labels_differ_only_by_vertex_index 262, D_equivalence_definition (k = 1..8); certificates/n8_counterexamples_classes.json; sizes sum to 9,133 and class count to 6,260 (recomputed)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "184-189",
+   "claim": "4,271 graphs with in-twin pairs (5,202 pairs); 186 with closed twins; 188 non-trivial Aut (186 + 2); no non-adjacent in-twins",
+   "source": "certificates/n8_summary.json with_bidirected_in_twins 4271, bidirected_in_twin_pairs_total 5202; notes/n8_structure_tools/structure_summary.json n8 closed_twin_pairs (181+2+3 = 186), aut (182+3+3 = 188), nonadjacent_in_twin_pairs 0: 9133; notes/n8_structure_tools/analysis2.json aut_gt1_without_closed_twins (2 graphs)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "190-195",
+   "claim": "861 blow-ups built, 858 distinct, 61 in list from 52 parents, 797 not, 4,782 points; 46 of 61 intervals differ, one disjoint (&G^z~Vwn?zBRw)",
+   "source": "certificates/n8_summary.json lifts (parents_with_a_lift_in_hits 52); notes/verify_n8_2/SYNTHESIS.json lenses.completeness_twins (4,782 points); notes/verify_n8_2/completeness_twins/part2_summary.json (in_hits_interval_differs 46); notes/verify_n8_2/SYNTHESIS.json own_rederivation (disjoint case &G^z~Vwn?zBRw)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "195-197",
+   "claim": "125 of the 186 closed-twin graphs are blow-ups of non-counterexamples (114 not even strict n = 7 survivors)",
+   "source": "notes/n8_structure_tools/analysis2.json closed_twin_non_lifts count 125, base_status 'not a strict n7 survivor' 114 (+ 3 + 8 never)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "197-200",
+   "claim": "2,323 contain an n = 7 counterexample (all 123 occur; 5 contain FNFL); 308 contain an n = 6 one (all three); 6,720 neither; 5,902 no deletion is a strict n = 7 survivor",
+   "source": "notes/n8_structure_tools/motifs.json (2323, 123 used, contains_FNFL 5, 308, n6 used 3, contains_n6_or_n7 2413); notes/n8_structure_tools/heredity.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "201-207",
+   "claim": "one stable interval each, bounded; lower end beta = 2 for 8,162, root for 971; upper end Delta for 7,191, positivity root 1,942; mechanism 4,690 + 1,974 + 1,498 / 504 + 444 + 23; 9,133/9,133 consistent",
+   "source": "certificates/n8_limit_summary.json stable_intervals_per_hit [[1, 9133]], hits_with_unbounded_stable_interval 0, hits_whose_first_interval_starts_at_beta_2 8162; certificates/n8_summary.json q_data.lower_end_kinds, hi_vanishing_histogram Delta 7191 (9133 - 7191 = 1942); notes/n8_structure_tools/positivity_check.json mechanism, consistent 9133; own recount of HITS: 1 interval each",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "207-213",
+   "claim": "4,298 distinct upper-end and 147 lower-end minimal polynomials, all irreducible; degrees 1: 2, 3: 208, 4: 34, 5: 947, 6: 874, 7: 307, 10: 535, 12: 8, 15: 4,022, 21: 2,196; quintic q^5+2q^4+q^3-2q^2-2q-1 408 graphs (17 at n = 7, same as idx 1387528); plastic cubic 178 (6 at n = 7); q polynomial = beta polynomial at 1 + q; Sturm count 1",
+   "source": "certificates/n8_summary.json q_data.stored_minpolys_checked (4298, 147, irreducible, sturm 1, q = beta at 1+q), hi_degree_histogram (sum 9,133 recomputed), most_common_hi_minpolys (408, 178); certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit_summary.json q_c_minpoly_counts (quintic 17, plastic 6); certificates/n6_summary.json hit idx 1387528 limit q minpoly [797,...] -- note: the quintic identification with idx 1387528 is REPORT_n7 \u00a73's statement, not re-derived here",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "214-217",
+   "claim": "37 intervals narrower than 1/1000 starting at beta = 2, plus 7 above 2, 0 undecided; largest q end among the 37 about 1.00098; none lift/catalogue/twins",
+   "source": "certificates/n8_summary.json q_data.intervals_narrower_than_1_over_1000_in_beta (37, 7, 0); notes/n8_structure_tools/special_sets.json narrow37 (q_hi_max 8790397/8781824 = 1.000976; catalogue 0; closed_twin 0; aut 1)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "218-226",
+   "claim": "6,435 illegal first witnesses; 37 records with all four witnesses outside; 16 with only t = 100 unstable; 9,051 all four stable positive; 9,096 with a legal stable positive witness; witness_in_first_stable_cell for all 9,133; six hand-checked candidates",
+   "source": "certificates/n8_limit_summary.json machine_confirmation.findings and top-level fields (6435, 37, 16, 9051, 9096); notes/verify_n8/SYNTHESIS.json legal_witness_file_checks (9133/9133); notes/verify_n8_2/handcheck_kit/HANDCHECK.md (six candidates)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "235-236 (table)",
+   "claim": "n = 6: 1,540,944 digraphs, 28,350 strict (replay); n = 7: 882,033,440, 638,042 / 1,889; n = 8: 417,951,273 / 347,639",
+   "source": "certificates/n6_summary.json limit.graphs 1540944, positivity_possible 28350 (ANOMALIES.md 2026-10-13 replay: 28,350 strict); certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit_summary.json enumeration (spectral_survivors 638042, strict 1889); n8/n8_prefilter_TOTAL.txt",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "238-240 (table)",
+   "claim": "finite-eps-only: 0 / 1 (&FNFL~[udo?) / not determined; D-classes 2 / 91 (124 graphs) / 6,260",
+   "source": "certificates/n7_finite_summary.json new_finite_eps_only 1, D_equivalence_classes 91 (124 graphs incl. FNFL; the limit-only file certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit_summary.json has 90 classes for 123 graphs); certificates/n6_summary.json (two twin classes, ANOMALIES 2026-10-13); certificates/n8_summary.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "241-243 (table)",
+   "claim": "primitive 3 / 102 / 6,720; closed-twin lifts 61 of 858; omega_bi n - 3 attained by 2 / 16 / 61",
+   "source": "ANOMALIES.md 2026-10-15 referee entry (claim 16: 21 of 123 contain an n = 6 hit, so 102 do not); notes/n8_structure_tools/structure_summary.json n6.omega_bi {2:1,3:2}, n7_limit.omega_bi {...,4:16}, n8.omega_bi 5: 61",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "244 (table)",
+   "claim": "arcs allowed minimum / attained: 16 / - ; 22 / 23..31 ; 29 / 29..45",
+   "source": "m(m-1)/2+1 = 16, 22, 29 (recomputed); notes/n8_structure_tools/structure_summary.json n6.arcs {18:1,19:2} (16 not attained); certificates/n7_finite_summary.json edge_counts 23..31; certificates/n8_limit_summary.json edge_counts 29..45",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "245 (table)",
+   "claim": "q_6* sextic 797q^6 - ... + 1521 in (561/481, 7/6) about 1.1664; q_7* plastic about 1.3247 not attained",
+   "source": "ANOMALIES.md 2026-10-15 (q* tool: sextic in (561/481, 7/6); plastic number not attained); REPORT_n7 \u00a70 item 8",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "246 (table)",
+   "claim": "verification: hand 2026-10-14 + audit; hand 2026-10-15 + four verifiers; two machine campaigns, no hand check",
+   "source": "ANOMALIES.md 2026-10-14 'Human sign-off'; certificates/n7_finite_summary.json verification_2026_10_15; certificates/n8_limit_summary.json status",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "250-252",
+   "claim": "for n <= 7 the conjecture holds for q >= rho and fails for q in (1, rho); q_6* about 1.1664",
+   "source": "REPORT_n7 \u00a74; {AN} 2026-10-15 'q_7* is the plastic number'; certificates/qstar/qstar_n7_finite.json (listed in certificates/INDEX.md)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "259",
+   "claim": "isolating interval width below 1e-9; about 1.71074452",
+   "source": "width = 1/1610612736 = 6.2e-10 (recomputed); 1.7107445190971096 rounds to 1.71074452",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "260-261",
+   "claim": "same D-class, 40 arcs, stored beta interval [8/3, 11/4]",
+   "source": "certificates/n8_summary.json q_star_limit.attained_by_same_D_class true, arcs_of_attaining_graphs [40], beta_interval_stored [8/3, 11/4]; n8/n8_limit_HITS.jsonl records",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "261-264",
+   "claim": "ordering certified; agrees with first campaign's [21526147/12582912, 5381537/3145728]",
+   "source": "certificates/n8_summary.json q_star_limit.ordering_certified true, agrees_with_first_campaign_refinement true; notes/verify_n8/v_structure/q_upper_ends_refined.json largest; certificates/n8_limit_summary.json machine_confirmation.findings.q_upper_end_max_refined_interval",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "268-270",
+   "claim": "plastic isolating interval [49/37, 53/40] lies below; q_8*(limit) > 1709/1001; 17/10 < q_8*(limit) < 7/4",
+   "source": "certificates/n8_summary.json compare_with_n7; 53/40 = 1.325 < 1.7107; 1709/1001 = 1.70729 < 459224485/268435456 = 1.710744; 2755346911/1610612736 = 1.710745 < 1.75 (recomputed)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "272-276",
+   "claim": "upper-end distribution: above 1001/1000: 9,096; 101/100: 8,555; 21/20: 5,778; 11/10: 3,190; 6/5: 1,012; 13/10: 382; 7/5: 60; 3/2: 16; 8/5: 7; 17/10: 3; 7/4: 0; bins 37, 541, 2,777, 2,588, 2,178, 630, 322, 44, 9, 4, 3; none equal to a threshold",
+   "source": "certificates/n8_summary.json q_data.upper_ends_above, upper_end_histogram, upper_ends_equal_to (all 0); bins sum to 9,133 and successive differences reproduce the 'above' counts (recomputed)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "277-284",
+   "claim": "smallest upper end &GMBQMHtMH~]W, degree 21, [77079731/77070336, 1079116235/1078984704], about 1.000122, Delta; check: stable at beta = 20001/10000, not at 10001/5000; 1.000276 in two files is a display error",
+   "source": "certificates/n8_summary.json q_data.smallest_upper_end and smallest_upper_end_discrepancy_note; notes/n8_structure_tools/check_min_q.json; certificates/n8_limit_summary.json q_upper_end_min_approx '1.000276'; notes/verify_n8/SYNTHESIS.json v_structure largest_refined_q_upper_end '... smallest ~1.000276'; own psi_D for &GMBQMHtMH~]W gives beta_c = 2.0001219 (q = 1.0001219), confirming 1.000122",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "285-287",
+   "claim": "rational critical value beta_c = 8/3, q = 5/3 for &GMw|Vr]Rb~Nw and &GUo~EX~Yxz^w; stored [5/3, 5/3], degree 1; factor 4z^2 + 3z + 1 real part -3/8",
+   "source": "n8/n8_limit_HITS.jsonl (beta_interval [8/3, 8/3], beta_minpoly [3, -8], q_interval [5/3, 5/3]); {S8} hi_degree_histogram [1, 2]; own sympy factorisation of psi_D (same factors)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "288-289",
+   "claim": "8,162 intervals start at q = 1 and 971 at an algebraic q > 1",
+   "source": "certificates/n8_summary.json q_data.intervals_starting_at_beta_2 8162, intervals_starting_above_beta_2 971",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "296-298",
+   "claim": "at n = 7 bounded cells gave q < 9/7 < rho; 40 of 124 regions bulge (Lemma AS)",
+   "source": "ANOMALIES.md 2026-10-15 'q_7* is the plastic number' (beta_hi <= 16/7, q < 9/7); certificates/n7_finite_summary.json bounded_in_t_count 40",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "305-309",
+   "claim": "D never a matching/star/star forest/forest; D has a directed cycle; omega_bi <= 5 (61 attain); no induced K6 or K7",
+   "source": "notes/n8_structure_tools/structure_summary.json n8 (D_matching/D_star/D_star_forest/D_forest all False 9133; D_has_directed_cycle True 9133); notes/n8_structure_tools/motifs.json contains_K6 0, contains_K7 0",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "310-318",
+   "claim": "U1-U7; 338,505 non-counterexample strict survivors satisfy all except U1 (18 fail, all never_positivity)",
+   "source": "notes/n8_structure_tools/discriminate.json; notes/n8_structure_tools/ham_never.json; notes/n8_structure.md \u00a71.10",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "319-324",
+   "claim": "exception counts: 5,276; 3,096; 6,720; 971; 1,942; 188; 2,311; 682; 59 / 1; 5,902; 2,951; 9,133 each",
+   "source": "notes/n8_structure_tools/structure_summary.json n8 (nodes_sending_to_all 0: 5276; nonadjacent_pairs 0: 6037 -> 3,096; min_outdeg 1: 59; min_indeg 1: 1); more_universals n8 (every_nonsink_node_on_induced_C3 6822 -> 2,311; oneway strongly connected 8451 -> 682); notes/n8_structure_tools/analysis2.json psiD zero-root multiplicity (1655 + 1296 = 2,951 with psi_D(0) != 0); notes/n8_structure_tools/heredity.json 5902; all recomputed",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "325-331",
+   "claim": "sink nodes none 5,276 / 1: 3,185 / 2: 562 / 3: 110; class patterns [] 5,276, [1] 3,185, [1,1] 513, [1,1,1] 71, [2] 49, [2,1] 36, [3] 3; X2' holds 3,857/3,857; 1,885 vs 1,972; 596 / 40 / 5 cores; 1,356 vs 1,829",
+   "source": "notes/n8_structure_tools/structure_summary.json n8 (nodes_sending_to_all, sink_class_sizes); notes/n8_structure_tools/analysis2.json X2prime_check (3857); notes/n8_structure_tools/families.json (delete_some_sink_gives_n7_cex 1885; 1829+130+13 = 1972; distinct_cores_by_size; core_membership 7: 1356/1829); sums recomputed",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "332-340",
+   "claim": "F_2 = &GZy~VwuKW~^w in list as &GNbr^zz\\z^[?, interval [86/37, 7/3], minpoly x^3 - 3x^2 + 2x - 1 (plastic); E_1 and the 15 cube candidates absent; Theorem Y core &G^ZZZr|KjqTo absent; Geneson double blow-ups absent; &GLjlNZ}NzH\\o present",
+   "source": "n8/n8_limit_HITS.jsonl record &GNbr^zz\\z^[? (beta_interval [86/37, 7/3], minpoly [1,-3,2,-1], q minpoly [1,0,-1,-1]); notes/n8_structure_tools/families.json F2_in_list true; notes/n8_structure_tools/consistency_extra.json (E_n8_in_limit_list 0, cube_n8 15, cube_in_limit_list 0); notes/verify_n8_2/SYNTHESIS.json per_agent.handcheck_kit.own_rederivation; notes/n8_structure.md \u00a72 (Theorem Y core)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "341-345",
+   "claim": "16 graphs with q > 3/2 in 10 D-classes; 37..42 arcs; rigid, no closed twins; 14 with no non-adjacent pair; 10 spectral / 6 positivity; 2 contain an n = 7 counterexample; extremal pair 40 arcs, 12 bidirected pairs, no non-adjacent pair, no sink",
+   "source": "notes/n8_structure_tools/special_sets.json q_gt_3_2 (count 16, arcs 37..42, aut all 1, closed_twin_pairs 0: 16, nonadjacent 0: 14, upper_end_spectral_Delta 10, contains_n7_cex 2), q_gt_3_2_D_classes (10 classes); own recomputation of the pair: 40 arcs, 12 bidirected, 0 non-adjacent, no sink",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "345-347",
+   "claim": "positivity root of b^4 - 3b^3 + 3b^2 - 3b + 1 in (2, 3) about 2.15372; psi_D = z(8z^6 + ...); min Re about -0.36890; beta_c about 2.71074",
+   "source": "own sympy: real roots of the quartic 0.4643 and 2.153721; psi_D recomputed identical; min Re -0.368902, beta_c 2.710745; notes/n8_structure.md \u00a71.8",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "347-351",
+   "claim": "Theorem Q reaches -0.3516 and Q2 -1/4 as k -> infinity; six plastic-number graphs at n = 7 positivity-limited; top 8 of the 16 spectrally limited",
+   "source": "notes/research_wf3/theory/notes_theory.md lines 37, 415 (Q limit q 1.84416 -> -1/(2.84416) = -0.3516; Q2 q -> 3 -> -1/4); certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit_summary.json q_c_minpoly_counts plastic 6; notes/n8_structure_tools/special_sets.json q_gt_3_2_list sorted by q_hi: the eight largest ends (1.7107 x2, 1.7094, 1.6775, 5/3 x2, 1.6452, 1.5635) all have hi = Delta (recomputed)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "352-364",
+   "claim": "Conjecture S evidence: 2, 16, 61 attain n - 3; 631 families, equality in 38; 104 instances n = 7..73; n = 9 test numbers; clique_class_test_n{3..9}.json",
+   "source": "notes/n8_structure_tools/family_test.json (symbolic_families total 631, n_tight 38; instances 104, n_range [7, 73]); notes/n8_structure_tools/clique_class_test_n9.json; files clique_class_test_n3..n9.json exist",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "368-369",
+   "claim": "124 n = 7 graphs hand-verified 2026-10-15 and confirmed by four implementations",
+   "source": "certificates/n7_finite_summary.json verification_2026_10_15",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "370-385",
+   "claim": "first campaign wf_79a996db-7e2: v_fraction 45,665 points; v_roots 18,282, every 6th graph + 37, 600 random polynomials; v_structure; v_sympy every 10th / 50th, 183/183; 36,532 stored flags; controls K8, Geneson, 20 never-survivors at 280 points",
+   "source": "notes/verify_n8/SYNTHESIS.json verifiers.* (points_checked 45665 / 18282 / 45974 / 13388; sampling strings; calibrated on 600; 183/183); input.stored_witness_points 36532; v_fraction sampling 'never-control 20 graphs x 14 points' = 280; certificates/n8_limit_summary.json machine_confirmation.workflow",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "386-388",
+   "claim": "human decision quote and date",
+   "source": "ANOMALIES.md 2026-10-28 'Hand-verification declined by the user'",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "389-408",
+   "claim": "second campaign wf_6abae796-7df; 858 / 61 / 797 / 4,782; 29,116 of 4,271; t-set (t*, inf), max t* about 8,565.5; 36,532 points agree; 300 + 300 records at 874,996 points; 36.9 M regenerated; 300 each; 62/62; 434 candidates (302/303); 200 never graphs; 14 basins; six candidates",
+   "source": "notes/verify_n8_2/SYNTHESIS.json lenses and per_agent; notes/verify_n8_2/interval_all_t/tally.json (t_star_max 8565.4989; stored_witness_points_agree 36532); notes/verify_n8_2/never_side/SUMMARY.json (432,000 + 442,996 = 874,996 points; regenerated 19,814,771 + 17,073,592 = 36,888,363 digraphs); notes/verify_n8_2/dynamics_float/summary.json (candidates n 434; horizon_sufficient 303); notes/verify_n8_2/SYNTHESIS.json per_agent.dynamics_float.counts_confirmed followup_graphs 14; spot_check_never_full 62",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "409-411",
+   "claim": "0 fatal, 0 major, 1 minor, 13 non-issues; chain referee MAJOR was an incomplete verifier run",
+   "source": "notes/verify_n8_2/SYNTHESIS.json counts, status_line, spot_check_never_full",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "412-419",
+   "claim": "aggregation recounts, irreducibility of 4,298 + 147 polynomials, refinement to width < 1e-9, lifts and twins recomputed, ordering certified",
+   "source": "certificates/n8_summary.json q_data.stored_minpolys_checked, q_star_limit.isolating_interval_width_lt, lifts.agrees_with_second_campaign true, provenance",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "420-429",
+   "claim": "display issues: 1.000276 vs 1.000122; a_k gloss; two stored bounds exactly 2 with endpoints about 1.0742; repeated roots at 404 of 3,112 points (202 graphs)",
+   "source": "certificates/n8_summary.json smallest_upper_end_discrepancy_note and what_an_endpoint_of_kind_root_certifies ('a_k = coefficient k of that characteristic polynomial'); certificates/n8_limit_summary.json stored_rational_q_upper_bounds_coarse_note; notes/verify_n8/SYNTHESIS.json verifiers.v_roots.note (404 of 3,112; 202 graphs)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "430-431",
+   "claim": "nondegeneracy not run on the n = 8 list",
+   "source": "certificates/nondegeneracy_witnesses.json covers n <= 7 only (ANOMALIES.md 2026-10-15 'Nondegeneracy certified'); no n = 8 nondegeneracy file exists",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "459-463 (Route A (a))",
+   "claim": "801,558,826,511 digraphs at 1.5-1.7 M/s: about 5.5-6 days on four cores, roughly 530-580 CPU-hours",
+   "source": "recomputed: 801,558,826,511 / (1.5..1.7e6 /s) = 131..148 h wall x 4 cores = 524..594 CPU-h; rate from ANOMALIES.md 2026-10-16",
+   "verdict": "OK",
+   "fix": "Extrapolation; the arithmetic gives 524-594 CPU-h, so '530-580' is a mild rounding."
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "463-470 (Route A (b),(c))",
+   "claim": "n = 7: 8,909,123 of 117,232,922 survived positivity (7.6%); 8.6e9 at n = 8; curve stage 16.4 CPU-h for 3,773,348 lines = 15.6 ms/line; 37,000 CPU-h; a year on four cores / two to three weeks on 96 vCPU; CAD about 40 s each; 165 of 3,773,348",
+   "source": "certificates/n7_finite_summary.json chain (positivity_survivors 8909123, domination_free 117232922; ratio 0.0760); 0.076 x 113,697,991,934 = 8.64e9; REPORT_n7 \u00a72 (16.4 CPU-h; stage-4 remaining 3,773,348; stage 5: 165); 16.4 x 3600 / 3,773,348 = 15.65 ms; 8.6e9 x 15.65 ms = 37,400 CPU-h; /4 = 9,350 h = 390 days; /96 = 390 h = 16 days; ANOMALIES.md 2026-10-15 'm = 8 CAD ~40 s each'",
+   "verdict": "OK",
+   "fix": "Note: REPORT_n7 \u00a72 and ANOMALIES quote the same stage as 6.6 ms/line (16.4 CPU-h over all 8,909,123 positivity survivors, 5,135,775 of which were dropped by the edge bound at no cost); the 15.6 ms figure divides by the 3,773,348 lines the curve test actually evaluated, which is the right denominator for the n = 8 extrapolation. State the two denominators to avoid an apparent conflict."
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "471-479 (Route B)",
+   "claim": "417,603,634 B lines + 7,078 never_full lines at 15.6 ms/line: about 1,800 CPU-hours (19 days on four cores, a day on 96 vCPUs); about 2 GB",
+   "source": "(417,603,634 + 7,078) x 15.65 ms = 1,814 CPU-h (recomputed); /4 = 453 h = 18.9 days; /96 = 18.9 h; n7/REPRODUCE_n8_limit.md line 14 ('~1e8 (~2 GB)' for the B lines); {N7} 'none of the 124 has alpha > -1/2' from the n = 7 verifier (alpha = -1/2 for FNFL, < -1/2 for the 123)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "482-490 (n = 9)",
+   "claim": "e_2 bound at n = 9: >= 37 arcs; 5,903,691,602,470,371 restricted digraphs of 13,027,956,824,399,552; 7,365 times the n = 8 space; 4.1 million CPU-hours at 0.4 M/s; about 43,000 days on four cores at 1.6 M/s; validation 9,608; 1,540,944; 882,033,440; 1,793,359,192,848; 801,558,826,511",
+   "source": "notes/n9_feasibility_count.json (min_arcs_e2 37; classes_with_at_least_min_arcs 5903691602470371; all_classes 13027956824399552; ratio 7365.26; validation block); 9*8/2+1 = 37; 5.9037e15 / 0.4e6 / 3600 = 4.10e6 CPU-h; 5.9037e15 / 1.6e6 / 86400 = 42,710 days (recomputed)",
+   "verdict": "OK",
+   "fix": "A000273(9) = 13,027,956,824,399,552 is produced by the new script and is not quoted from any pre-existing project file (the script's own validation reproduces A000273(5..8) exactly)."
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "491-498",
+   "claim": "one-node extensions 9,133 x 2^16 = 598,540,288; 5,902 spectrally primitive; no strict survivor lacks an induced oriented 3-cycle; S1 at n = 9 done (682,176)",
+   "source": "9133 x 65536 = 598,540,288 (recomputed); {ST}heredity.json; {ST}discriminate.json (ow3 True for all 331,427 + 7,078 + 9,133); {ST}clique_class_test_n9.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "499-500",
+   "claim": "primitive share 3/3, 102/123, 6,720/9,133",
+   "source": "see rows for line 241",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/REPORT_n8.md",
+   "line/quote": "514-525",
+   "claim": "Lean: 87 theorems, no sorry, axiom audit clean; e_2 bound and Lemma D Lean-checked; Lemma I, the decomposition lemma, Lemma J equivalence and the converse of Lemma R not formalised",
+   "source": "notes/lean/README.md line 32 ('all 87 theorems'), lines 165-166; ANOMALIES.md 2026-10-15 'Lean batch 3' (87 theorems); ANOMALIES.md 2026-10-15 batch 1 (converse of Lemma R not formalised)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "10-11",
+   "claim": "Geneson arXiv:2607.21396, July 2026; bound q >= n - 2 - (n - 3) eps/2",
+   "source": "certificates/stage0_geneson_2607.21396.json; the project instructions file, section 1",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "15",
+   "claim": "n <= 5: no counterexample; n = 5 classification reproduced",
+   "source": "certificates/n5_summary.json (limit_stable_noncomplete 0, two_d stable_noncomplete 0); certificates/stage1_n5_diff.json (fp_support_mismatches 0)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "16",
+   "claim": "n = 6: exactly 3 among 1,540,944; q_6* = root of 797q^6 - 1686q^5 + 2159q^4 - 3004q^3 + 2499q^2 - 2158q + 1521, about 1.1664",
+   "source": "certificates/n6_summary.json (limit_stable_noncomplete 3, graphs 1540944, hit limit_stable_q polynomial [797,-1686,2159,-3004,2499,-2158,1521]); ANOMALIES.md 2026-10-15 (q* tool)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "17",
+   "claim": "n = 7: exactly 124 among 882,033,440; 123 limit + FNFL; q_7* plastic, not attained, two independent exact derivations",
+   "source": "certificates/n7_finite_summary.json (stable_noncomplete 124, digraphs 882033440, limit_candidates 123, new_finite_eps_only_d6 &FNFL~[udo?); ANOMALIES.md 2026-10-15 'q_7* is the plastic number' and 'q_7* confirmed by the independent exact tool'",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "18",
+   "claim": "proper supports: 7,744 of 12,288 stable somewhere, 4,544 never",
+   "source": "certificates/n7_proper_supports_summary.json (pairs_enumerated 12288, verdicts 7744 / 4544)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "19",
+   "claim": "n = 8 row: 9,133; 801,558,826,511; K8; 0 escalations; 61 lifts, 9,072 not; 6,720; 417,603,634 B lines; q_8*(limit) degree 15, 13109q^15 - 124967q^14 + ... - 9045013, [459224485/268435456, 2755346911/1610612736], about 1.7107, not attained; all below 2; 16 above 3/2; two campaigns 9,133/9,133; declined 2026-10-28",
+   "source": "certificates/n8_summary.json (hits, lifts, q_star_limit, q_data.upper_ends_above '3/2' 16); n8/n8_limit_tally.json; n8/n8_prefilter_TOTAL.txt; notes/n8_structure_tools/motifs.json; certificates/n8_limit_summary.json status",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "20",
+   "claim": "q_n* >= q_8*(limit) about 1.7107 (above 1709/1001), 17691/10010 (n = 9), 18418/10001 (n = 10), 25000/10001 (n = 47); Theorems F, E, U, A",
+   "source": "ANOMALIES.md 2026-10-15 research workflow (lower bounds n = 8: 1709/1001, 9: 17691/10010, 10: 18418/10001, 47: 25000/10001); ANOMALIES.md 2026-10-15 Theorems U and A entries; certificates/n8_summary.json q_star_limit",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "22-24",
+   "claim": "for n <= 7 holds for q >= 1.3247, fails on (1, 1.3247); at n = 8 fails on a set whose closure contains (1, 1.7107)",
+   "source": "REPORT_n7 \u00a74; certificates/n8_summary.json q_star_limit (8,162 intervals start at q = 1 and the supremum is 1.7107; the closure claim follows from Lemma I.3/I.4 as stated in REPORT_n8 \u00a74)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "29-34",
+   "claim": "40 of 124 regions bulge; R* for all 124; FNFL alpha = -1/2",
+   "source": "certificates/n7_finite_summary.json bounded_in_t_count 40; certificates/n7_bulge_Rstar_exact.json (listed in INDEX.md); ANOMALIES.md 2026-10-15 bulge entry",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "35-37",
+   "claim": "Lemma R made the n = 7 finite map a 16-CPU-hour computation",
+   "source": "REPORT_n7 \u00a72 (16.4 CPU-h); {AN} 2026-10-15 curve stage",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "38-43",
+   "claim": "Lean prunes; e_2 bound cuts n = 8 to 44.7%; attained by two 29-arc counterexamples; Stodola; non-adjacent in-twins",
+   "source": "ANOMALIES.md 2026-10-15 Lean batches 2 and 3; n8/n8_restricted_counts.json (44.7% recomputed); certificates/n8_limit_summary.json edge_counts [29, 2]",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "44-47",
+   "claim": "46 of 61 lifts differ, one disjoint; 797 of 858 not counterexamples; 125 blow-ups of non-counterexamples",
+   "source": "notes/verify_n8_2/completeness_twins/part2_summary.json; certificates/n8_summary.json lifts; notes/n8_structure_tools/analysis2.json closed_twin_non_lifts 125",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "48-56",
+   "claim": "11 to 27 arcs missing; n - 3 = 5 attained by 61, by 2 and 16 at n = 6, 7, 38 families; 338,505; S1 verified for n <= 9; sink-free record; q = 5/3",
+   "source": "certificates/n8_summary.json missing_arc_counts; notes/n8_structure_tools/structure_summary.json; notes/n8_structure_tools/family_test.json n_tight 38; notes/n8_structure_tools/discriminate.json; notes/n8_structure_tools/clique_class_test_n9.json; own psi_D recomputation (no sink node; 5/3 exact)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "57-59",
+   "claim": "Conjecture P refuted; 'every limit polynomial has a root on Re = -1/2' refuted; heredity 5,902 of 9,133",
+   "source": "ANOMALIES.md 2026-10-15 referee entry (Conjecture P refuted; Conjecture SL refuted 55 of 135); notes/n8_structure_tools/heredity.json 5902",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "63-66",
+   "claim": "Geneson reproduced; n = 5 diff zero; A000273 through n = 7; n = 8 Burnside 801,558,826,511 reproduced by the prefilter totals",
+   "source": "certificates/stage0_geneson_2607.21396.json; certificates/stage1_n5_diff.json; certificates/INDEX.md; n8/n8_accounting.json ok true",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "67-69",
+   "claim": "0 escalations at n = 5, 6, 7, 8",
+   "source": "certificates/n5_summary.json, certificates/n6_summary.json, certificates/n7_finite_summary.json escalations 0, n8/n8_limit_tally.json escalate 0",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "70-74",
+   "claim": "audits; two swaps each refereed by four agents; K8 - e 143,266",
+   "source": "notes/k8_decomposition_referees.json; {AN} 2026-10-27 (four adversarial referees for each swap); {AN} 2026-10-28 K8-e check",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "75-83",
+   "claim": "hand sign-off n = 6 (2026-10-14), 124 n = 7 (2026-10-15), 742 points, 0 undecided; n = 8: 45,665 + 18,282 + 45,974 + 13,388 points; 858 blow-ups; 29,116 switches; 874,996 points; 36.9 M; 0 fatal, 0 major, 1 minor",
+   "source": "ANOMALIES.md 2026-10-14, 2026-10-15; certificates/n7_finite_summary.json verification_2026_10_15 (742 points); notes/verify_n8/SYNTHESIS.json verifiers points_checked; notes/verify_n8_2/SYNTHESIS.json; notes/verify_n8_2/never_side/SUMMARY.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "84-86",
+   "claim": "87 Lean theorems; e_2 bound and Lemma D among them; Lemma I and the decomposition lemma not formalised",
+   "source": "notes/lean/README.md line 32; {AN} 2026-10-15 Lean batches",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "87-89",
+   "claim": "nondegeneracy n <= 7 only; literature checked 2026-10-28",
+   "source": "certificates/nondegeneracy_witnesses.json ({AN} 2026-10-15); notes/literature_position_2026-10-28.md",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "93-95",
+   "claim": "run 2026-10-15 to 2026-10-27, seven container restarts",
+   "source": "ANOMALIES.md (eleven restarts recorded: four on 2026-10-15/16, seven numbered from 2026-10-19 to 2026-10-27)",
+   "verdict": "WRONG",
+   "fix": "Same correction as REPORT_n8.md line 145: write 'eleven container restarts (four before the per-job driver, seven during it)' or qualify 'seven restarts during the per-job phase'."
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "96-100",
+   "claim": "Route B about 2,400 CPU-hours; Route A on the order of 40,000 CPU-hours",
+   "source": "REPORT_n8 \u00a78: Route B = regeneration (a) 524-594 CPU-h (recomputed from 801,558,826,511 at 1.5-1.7 M/s) + curve test 1,814 CPU-h = 2,338-2,408 CPU-h; Route A = 524-594 + 37,400 = about 38,000 CPU-h",
+   "verdict": "OK",
+   "fix": "Derived figure; REPORT_n8 \u00a78 gives the two addends (530-580 and about 1,800) rather than the sum, so a reader cannot find '2,400' in the report. State '(a) + curve test, about 2,300-2,400'."
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "101-104",
+   "claim": "n = 9: 5,903,691,602,470,371; 7,365 times; about 4 million CPU-hours; 598,540,288 extensions",
+   "source": "notes/n9_feasibility_count.json; recomputations as for REPORT_n8 lines 482-498",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "105-109",
+   "claim": "Theorem A: eps = 1/21, delta = 11/210; Geneson's family stable only up to 46 nodes; core &F^U|m^QTq?; every legal point with beta < 4.9607 carries a family",
+   "source": "certificates/theorem_A_fixed_parameter_instances.json ('F_k is stable at this point only for k <= 40', n = 6 + 40 = 46; core_d6 &F^U|m^QTq?); ANOMALIES.md 2026-10-15 Theorem A entry (beta < 4.9607)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "110-113",
+   "claim": "Theorem U: q_n* >= 2, 3, 4, 9/2, 23/5 for n >= 1812, 219, 657, 2475, 4909; q_6* 1.1664, q_7* 1.3247, q_8*(limit) 1.7107",
+   "source": "ANOMALIES.md 2026-10-15 Theorem U entry (N = 3 n0 = 1812; 65-node core gives 3, 4, 9/2, 23/5 for n >= 219, 657, 2475, 4909); certificates/n8_summary.json q_star_limit",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "114-120",
+   "claim": "Conjecture S pointers; formalisation gaps; primitive share 3/3, 102/123, 6,720/9,133",
+   "source": "see REPORT_n8 rows (lines 241, 352-364, 514-525)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/FINAL_SUMMARY.md",
+   "line/quote": "124-137",
+   "claim": "file list; six fully worked candidates; witness_in_first_stable_cell",
+   "source": "files exist (ls); notes/verify_n8_2/handcheck_kit/HANDCHECK.md (six candidates); certificates/n8_candidates_legal_witnesses.json (field present)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "35-36 (title)",
+   "claim": "title adds 'the eps -> 0 map at n = 8'",
+   "source": "editorial; consistent with the scope of {L8}",
+   "verdict": "OK",
+   "fix": "Not a number; the paper writer flagged the title change as unrequested."
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "58-62 (abstract)",
+   "claim": "801,558,826,511 digraphs not excluded by the edge bound; exactly 9,133; 9,072 not lifts; q_8*(inf) about 1.7107, degree 15; q_8* > q_7*; two campaigns, not by hand; finite-eps map open",
+   "source": "certificates/n8_summary.json; certificates/n8_limit_summary.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "108-113",
+   "claim": "9,133 verified by two campaigns and no hand check; n >= 8 family members not hand-verified",
+   "source": "certificates/n8_limit_summary.json status; certificates/n8_instances_region2d.json status 'CANDIDATES (n = 8; not hand-verified)'",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "143-154",
+   "claim": "restricted to 801,558,826,511 digraphs with >= 29 edges; 347,639 strict survivors; 9,133; 6,260 classes; 61 lifts / 9,072; 6,720; two 29-edge graphs; degree 15, exceeds plastic, not attained; universals; S1 exhaustive up to n = 9",
+   "source": "certificates/n8_summary.json (counts.strict 347639, D_equivalence_classes 6260, lifts, q_star_limit); notes/n8_structure_tools/motifs.json; notes/n8_structure_tools/clique_class_test_n9.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "165-171",
+   "claim": "124 re-decided by four verifiers; 9,133 by four verifiers then six lenses; 87 theorems",
+   "source": "certificates/n7_finite_summary.json verification; notes/verify_n8/SYNTHESIS.json; notes/verify_n8_2/SYNTHESIS.json; notes/lean/README.md",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "176-182",
+   "claim": "Geneson preprint v1 only (checked 28 October 2026); no CTLN item after 23 July 2026 except a revision on fixed-point composition under gluings; repositories unchanged",
+   "source": "notes/literature_position_2026-10-28.md \u00a72",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "779-782",
+   "claim": "1,793,359,192,848 digraphs; spectral screen at about 1.8 million digraphs per second",
+   "source": "certificates/n8_summary.json chain.restricted_space.A000273_8_for_reference; ANOMALIES.md 2026-10-27 (filter8 1.8 M digraphs/s measured on 2.27 M digraphs)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "792-800",
+   "claim": "at least 29 edges, at least 15 of 28 undirected edges; 5,350 simple graphs; 801,558,826,511; 991,800,366,337 not enumerated",
+   "source": "n8/n8_restricted_counts.json; recomputed difference",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "802-803",
+   "claim": "9 shards, 3,226 jobs, 201 split graphs, every count checked against Burnside",
+   "source": "n8/n8_accounting.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "806-813",
+   "claim": "K8: 575,009,339 digraphs, |Aut| = 40,320, 12,345 graphs B, 40 batches; K8-K3, K8-K_{1,5}, K8-(K2+K_{1,5}) in 14 parts with totals 1,179,317,832, 330,741,720, 84,866,528",
+   "source": "n8/check_k8decomp.log; n8/check_orbit.log; certificates/n8_summary.json chain.swaps",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "814-818",
+   "claim": "validated at n = 4,5,6,7 (38, 570, 21,424, 2,141,832 classes for K_n); K8 - e 5,339,129,738 digraphs, 143,266 lines, 321 directg parts; four adversarial referees",
+   "source": "ANOMALIES.md 2026-10-27 and 2026-10-28; notes/k8_decomposition.md; notes/k8_decomposition_referees.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "831-837 (Table tab:chain8)",
+   "claim": "stages 0-6: 1,793,359,192,848; 991,800,366,337 / 801,558,826,511; 687,860,834,577 / 113,697,991,934; 113,280,040,661 / 417,951,273; 417,603,634 / 347,639; 331,427 / 16,212; 7,078 / 9,134",
+   "source": "n8/n8_prefilter_TOTAL.txt; n8/n8_limit_tally.json; 347,639 - 331,427 = 16,212; 16,212 - 7,078 = 9,134 (recomputed)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "834-835, 849-851 (stage 3/4 wording)",
+   "claim": "stage 3 = negative coefficient or negative Hurwitz determinant met before any vanishing one; stage 4 (B) = vanishing coefficient or determinant met before any negative one; alpha >= -1/2 for both",
+   "source": "notes/verify_n8_2/SYNTHESIS.json per_agent.never_side.own_rederivation (filter8 hurwitz() rule)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "846-847",
+   "claim": "prefilter byte-identical to the n = 7 prefilter on all n <= 7 data",
+   "source": "ANOMALIES.md 2026-10-15 (all 1,540,944 n = 6 digraphs and the 638,042 n = 7 survivors)",
+   "verdict": "WRONG",
+   "fix": "Same overstatement as REPORT_n8.md line 62; write 'on all n = 6 digraphs and on the 638,042 n = 7 spectral survivors'. Also at lines 1409-1410."
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "852-854 (footnote)",
+   "claim": "n8_accounting.json ok: 9 shards, 3,226 jobs, 201 split graphs, S = 347,639, O = 0",
+   "source": "n8/n8_accounting.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "855-860",
+   "claim": "interrupted after 59,610 lines; four shards 86,910 x3 and 86,909; 2,312, 2,282, 2,310, 2,229 non-complete stable; K8 in the second shard; 64,196 records; 10,776.6 CPU-seconds, about 31 ms per line",
+   "source": "certificates/n8_summary.json chain.limit_stage (shard_tallies stable_noncomplete 2312 / 2282 / 2310 / 2229, complete 1 in shard 1); n8/limit_sharding/shard*_tally.json; 10776.6 / 347639 = 31.0 ms (recomputed)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "864-871 (Theorem thm:n8)",
+   "claim": "exactly 9,133 limit counterexamples; stages 1-2 necessary conditions, 3-6 certified not limit-stable",
+   "source": "certificates/n8_limit_summary.json; certificates/n8_summary.json; Lemma I.3(c2) as stated in notes/verify_n8_2/SYNTHESIS.json theory_relied_on_and_rechecked",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "889-891 (Table tab:n8edges)",
+   "claim": "29: 2 ... 45: 3",
+   "source": "certificates/n8_limit_summary.json edge_counts; own recount",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "898-903",
+   "claim": "11..27 missing; complete underlying graph for 6,037; 2,895 / 198 / 3; bidirected pairs 2..17; two 29-edge graphs with 2 and 3 bidirected against 1 and 2 non-adjacent; n = 7 bound 22 not attained, sparsest 23",
+   "source": "certificates/n8_summary.json missing_arc_counts; notes/n8_structure_tools/structure_summary.json n8; notes/n8_structure_tools/special_sets.json arcs29; certificates/n7_finite_summary.json edge_counts",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "904-912",
+   "claim": "lower end 2 for 8,162, root for 971; upper Delta 7,191, root 1,942; 4,298 polynomials, degrees 1 (2), 3 (208), 4 (34), 5 (947), 6 (874), 7 (307), 10 (535), 12 (8), 15 (4,022), 21 (2,196); quintic 408 (17 at n = 7); plastic 178; degree-one ends q = 5/3; Sturm 1; q = beta at 1 + q",
+   "source": "certificates/n8_summary.json q_data; certificates/COUNTEREXAMPLE_CANDIDATES_n7_limit_summary.json q_c_minpoly_counts; n8/n8_limit_HITS.jsonl (the two degree-1 records)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "913-918",
+   "claim": "6,260 classes with the size list; 4,271 graphs, 5,202 pairs, 29,116 switches all in the list",
+   "source": "certificates/n8_summary.json class_sizes, with_bidirected_in_twins, lemma_J_switch_closure_second_campaign",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "919-929",
+   "claim": "858 blow-ups, 61 from 52 parents, 797 not; 9,072; 46 of 61 differ, one disjoint &G^z~Vwn?zBRw; 125 contractions not counterexamples (114 not strict); 626 catalogue members (593 distinct); F_2 ends at the plastic number; E_1 and the 15 Lemma Bmech graphs absent",
+   "source": "certificates/n8_summary.json lifts; notes/verify_n8_2/completeness_twins/part2_summary.json; notes/n8_structure_tools/analysis2.json; notes/n8_structure_tools/families.json; notes/n8_structure_tools/consistency_extra.json (E_n8_in_limit_list 0, cube_n8 15, cube_in_limit_list 0); notes/research_wf3/theory/cube_n8_witnesses.json (15 entries)",
+   "verdict": "OK",
+   "fix": "Whether E_1 is one of the 15 is not determined by any file; the sentence does not sum them, so no number is at stake."
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "932-938",
+   "claim": "four witnesses at t = 10^2..10^5; 9,051 all stable positive; 6,435 illegal t = 100 witnesses; 37 graphs narrower than 1/1000 with all witnesses outside",
+   "source": "certificates/n8_limit_summary.json findings; notes/verify_n8/SYNTHESIS.json things_the_human_must_know",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "939-943",
+   "claim": "t-set (t*, inf) with t* <= 10^4; largest t* in (31024237/3622, 3880171/453), about 8565.5; median 23; 8,388 bound only by legality",
+   "source": "notes/verify_n8_2/interval_all_t/tally.json (t_star_le_10000 9133; t_star_max lo/hi/float 8565.4989; t_star_median_float 23.0; binding_is_legality_only 8388)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "953-954 (Table tab:n8min)",
+   "claim": "adjacency rows of &GM?WUZeEie^O and &GMBO]At]Xp]?; 29 edges; (3,23,2) and (2,25,1); q_c about 1.0131 and 1.0012",
+   "source": "notes/n8_structure_tools/special_sets.json arcs29 A_rows (identical strings), bi/single/nonadj; q_hi intervals",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "957-961 (caption)",
+   "claim": "rigid, no twins, no node sending to all, no smaller counterexample, bidirected clique number 2; degree-21 upper ends in (64800179/63963136, 16200045/15990784) and (39760951/39714816, 106029203/105906176) by the first campaign",
+   "source": "notes/n8_structure_tools/special_sets.json arcs29 (aut 1, twins 0, sinks [], n7_sub [], n6_sub [], omega_bi 2); certificates/n8_summary.json rows hi_q_interval_v_structure for both graphs (identical intervals), hi_degree 21",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "969-983 (Theorem thm:q8)",
+   "claim": "the degree-15 polynomial, interval [459224485/268435456, 2755346911/1610612736], width below 1e-9, about 1.71074; two graphs with 40 edges, same class, one switch apart; Delta vanishes; not attained; q_8* >= q_8*(inf) > rho",
+   "source": "certificates/n8_summary.json q_star_limit; own sympy check (irreducible, sign change, width 6.2e-10)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "984-992 (proof sketch)",
+   "claim": "refined to width below 1e-9 with Sturm count one; agrees with the first campaign",
+   "source": "certificates/n8_summary.json q_star_limit.ordering_certificate, agrees_with_first_campaign_refinement true; notes/verify_n8/v_structure/q_upper_ends_refined.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "994-997",
+   "claim": "distribution 37, 541, 2,777, 2,588, 2,178, 630, 322, 44, 9, 4, 3; none equals a threshold; none exceeds 7/4",
+   "source": "certificates/n8_summary.json q_data.upper_end_histogram ((1, 10001/10000]: 0 and (10001/10000, 1001/1000]: 37, so 37 in (1, 1001/1000]); upper_ends_equal_to all 0; upper_ends_above '7/4': 0",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "997-1003",
+   "claim": "smallest upper end &GMBQMHtMH~]W, degree 21, (77079731/77070336, 1079116235/1078984704), about 1.000122; limit-stable at beta = 20001/10000 (q = 10001/10000), not at 10001/5000 (q = 5001/5000, Hurwitz determinant 6 negative); 1.000276 in two files",
+   "source": "certificates/n8_summary.json smallest_upper_end; notes/n8_structure_tools/check_min_q.json ('all Hurwitz minors positive' / 'Hurwitz minor 6 negative'); certificates/n8_limit_summary.json; notes/verify_n8/SYNTHESIS.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1007-1010",
+   "claim": "sixteen graphs above 3/2 in ten classes; 37 to 42 edges, 9 to 14 bidirected pairs, 14 with no non-adjacent pair; rigid, no closed twins; ten spectral, six positivity; two contain a seven-node counterexample; extremal pair 12 bidirected pairs, no non-adjacent pair, clique number 4, trivial Aut, no sink",
+   "source": "notes/n8_structure_tools/special_sets.json q_gt_3_2 (bidirected_pairs keys 9..14; omega_bi for the pair: the pair's records have omega_bi 4 per n8_structure \u00a71.8 and special_sets omega_bi {3: 11, 4: 5}); own recomputation of the pair",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1011-1016",
+   "claim": "psi_D = z(8z^6 + 16z^5 + 34z^4 + 33z^3 + 30z^2 + 13z + 5), min Re about -0.3689, beta_c about 2.7107; positivity beyond the root about 2.1537 of b^4 - 3b^3 + 3b^2 - 3b + 1; stable interval (2.1537, 2.7107); -0.3516 limit of family Q",
+   "source": "own sympy recomputation (identical polynomial; -0.368902; 2.710745; quartic root 2.153721); notes/research_wf3/theory/notes_theory.md (Q limit 1.84416)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1016-1018",
+   "claim": "1709/1001 came from &G^ZnRba\\ba^w, in the list as &GZptUbY\\B}^w (39 edges), refined end in (35849319/20971520, 401512373/234881024), about 1.7094",
+   "source": "n7/labelg: both digraph6 strings canonicalise to &GPXfSay\\zz^w (own check); certificates/n8_summary.json rows &GZptUbY\\B}^w (arcs 39, hi_q_interval_refined [35849319/20971520, 401512373/234881024]); 35849319/20971520 = 1.70943 (recomputed); ANOMALIES.md 2026-10-15 (1709/1001 at n = 8)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1018-1022",
+   "claim": "&GMw|Vr]Rb~Nw and &GUo~EX~Yxz^w: psi_D = z(4z^2+3z+1)(2z^4+2z^3+4z^2+2z+1), real part -3/8, beta_c = 8/3, q = 5/3 not attained; positivity between the root about 2.2056 of b^3 - 2b^2 - 1 and about 2.7693 of b^3 - 3b^2 + b - 1",
+   "source": "own sympy recomputation (identical factorisation; real roots 2.205569 and 2.769292); n8/n8_limit_HITS.jsonl (lo minpoly [1,-2,0,-1] in beta, hi [3,-8])",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1030-1033",
+   "claim": "D never matching/star/union of stars/forest; directed cycle; omega_bi <= 5 attained by 61; no induced K6; n - 3 attained at n = 6 (2) and n = 7 (16)",
+   "source": "notes/n8_structure_tools/structure_summary.json; notes/n8_structure_tools/motifs.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1034-1041",
+   "claim": "Hamiltonian; induced oriented 3-cycle; census 15, 169, 3,040, 34,521, 48,108 distinct induced subgraphs; 131 joins; 338,505 non-counterexample survivors, 18 not strongly connected (all fail positivity)",
+   "source": "notes/n8_structure_tools/ham_never.json; notes/n8_structure_tools/motifs.json n_distinct and universal; notes/n8_structure_tools/structure_summary.json nodes_receiving_from_all (129 + 2 = 131); notes/n8_structure_tools/discriminate.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1042-1047",
+   "claim": "5,276 / 3,185 / 562 / 110 sink nodes; 3,096 non-adjacent pair; 971; 1,942; 188 (186 closed twins); X2 holds for 3,857; 1,972",
+   "source": "notes/n8_structure_tools/structure_summary.json; notes/n8_structure_tools/analysis2.json; notes/n8_structure_tools/families.json (1829 + 130 + 13 = 1972)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1048-1051",
+   "claim": "6,720; 2,323 (all 123 occur); 308; 5,902; at n = 7, 102 of 123 contained no six-node one",
+   "source": "notes/n8_structure_tools/motifs.json; notes/n8_structure_tools/heredity.json; ANOMALIES.md 2026-10-15 referee entry (21 of 123 contain an n = 6 hit)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1052-1057",
+   "claim": "positivity set one interval for 8,984, two for 149, unbounded for 2,133; 0 inconsistencies; six combinations 4,690, 1,974, 1,498, 504, 23, 444",
+   "source": "notes/n8_structure_tools/positivity_check.json (positivity_components, positivity_unbounded, mechanism; order matches the stated enumeration)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1065-1074 (Conjecture S evidence)",
+   "claim": "631 families, equality for 38; 104 instances n = 7..73; 682,176 configurations, 600,440 dominated, 81,735 fail, K9 survives; n = 3..8 leave K_n; rank at most 4",
+   "source": "notes/n8_structure_tools/family_test.json; notes/n8_structure_tools/clique_class_test_n{3..9}.json; notes/n8_structure.md \u00a73",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1082-1087 (Table tab:thresholds)",
+   "claim": "limit c.e. 0/3/123/9,133; all c.e. 0/3/124/>= 9,133; thresholds; Geneson bounds 4, 5, 6",
+   "source": "certificates/n6_summary.json; certificates/n7_finite_summary.json; certificates/n8_summary.json; n - 2 for n = 6, 7, 8",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1095-1097",
+   "claim": "counts grow by factors of about 41 and 74; primitive share 3/3, 102/123, 6,720/9,133; 1.1664, 1.3247, at least 1.7107",
+   "source": "123/3 = 41.0; 9133/123 = 74.3 (recomputed); other rows above",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1100-1101",
+   "claim": "hand-check kit with six fully worked cases",
+   "source": "notes/verify_n8_2/handcheck_kit/HANDCHECK.md",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1219-1224",
+   "claim": "Theorem Y's eight-node core is not in the list of Theorem n8; Table tab:qlow first row raised to q_8* >= q_8*(inf) about 1.7107",
+   "source": "notes/n8_structure.md \u00a72 (Theorem Y core absent); certificates/n8_summary.json q_star_limit",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1338-1349",
+   "claim": "first campaign: 45,665 points; 18,282 points, every sixth graph; 183/183; 36,532 stored flags; 20 never graphs at 280 points",
+   "source": "notes/verify_n8/SYNTHESIS.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1350-1363",
+   "claim": "second campaign: 858 / 61 / 797 / 4,782; 29,116; (t*, inf); 600 records at 874,996 points; 36.9 million; 30 graphs, two shards, 20 dense graphs; 3,391 digraphs; 0 fatal, 0 major, 13 non-issues, one minor",
+   "source": "notes/verify_n8_2/SYNTHESIS.json; notes/verify_n8_2/never_side/SUMMARY.json; notes/verify_n8_2/chain_referee/burnside_result.json, variants_mine.txt (3,391 lines)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1378-1383",
+   "claim": "no graph on eight or more nodes hand-verified; declined 28 October 2026; six worked cases",
+   "source": "certificates/n8_limit_summary.json second_verification.human_decision; HANDCHECK.md",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1388-1389",
+   "claim": "nondegeneracy not run on the eight-node list",
+   "source": "no n = 8 nondegeneracy certificate exists; {AN} 2026-10-15 covers n <= 7",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1392",
+   "claim": "Lean 4 toolchain v4.35.0, Mathlib tag v4.35.0, 87 theorems",
+   "source": "ANOMALIES.md 2026-10-15 Lean batch 1 (toolchain and Mathlib tag) and batch 3 (87); notes/lean/README.md",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1406-1411 (trust base)",
+   "claim": "eight-node enumeration validated by Burnside counts, the two re-enumeration schemes validated at n <= 7 and by the K8 - e check; eight-node prefilter byte-identical on all n <= 7 data",
+   "source": "n8/n8_accounting.json; ANOMALIES.md 2026-10-27/28; ANOMALIES.md 2026-10-15 (n = 6 all digraphs + 638,042 n = 7 survivors)",
+   "verdict": "WRONG",
+   "fix": "Same overstatement as line 847 (see that row)."
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1417-1419",
+   "claim": "1.1664, 1.3247 and (in the limit) 1.7107 at n = 6, 7, 8",
+   "source": "as above",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1424-1431 (open question)",
+   "claim": "417,603,634 unstored lines; E_1 and the 15 Lemma Bmech graphs; 1.79 trillion digraphs",
+   "source": "n8/n8_prefilter_TOTAL.txt; notes/n8_structure_tools/consistency_extra.json; A000273(8) = 1.79e12",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "line/quote": "1492-1497 (appendix)",
+   "claim": "certificate paths for the n = 8 rows",
+   "source": "all listed paths exist (ls): certificates/n8_limit_summary.json, n8_summary.json, n8/n8_prefilter_TOTAL.txt, n8_accounting.json, n8_restricted_counts.json, n8_limit_tally.json, n8/limit_sharding/shard*_tally.json, notes/k8_decomposition.md, k8_decomposition_referees.json, n8/check_k8decomp.log, n8/check_orbit.log, n8/orbitenum/k8e_check/, n8/n8_limit_HITS.jsonl, certificates/n8_candidates_legal_witnesses.json, n8_counterexamples_classes.json, notes/verify_n8/v_structure/q_upper_ends_refined.json, notes/n8_structure.md, notes/n8_structure_tools/, notes/verify_n8/SYNTHESIS.json, notes/verify_n8_2/SYNTHESIS.json, HANDCHECK.md",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_geneson.md",
+   "line/quote": "8-9",
+   "claim": "arXiv:2607.21396; bound q >= n - 2 - (n - 3) eps / 2",
+   "source": "certificates/stage0_geneson_2607.21396.json; the project instructions file, section 1",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_geneson.md",
+   "line/quote": "12-14",
+   "claim": "n <= 5: none; n = 6: exactly 3 among 1,540,944 (Geneson's, in-twin partner, one more); sextic in (561/481, 7/6), about 1.1664",
+   "source": "certificates/n5_summary.json; certificates/n6_summary.json; ANOMALIES.md 2026-10-13 (Lemma J: hit 3 = Geneson modulo a twin move); ANOMALIES.md 2026-10-15 q* tool",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_geneson.md",
+   "line/quote": "15-17",
+   "claim": "n = 7: exactly 124 among 882,033,440; 123 limit, one finite-eps only; plastic number about 1.3247 not attained; hand-checked and re-implemented",
+   "source": "certificates/n7_finite_summary.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_geneson.md",
+   "line/quote": "18-20",
+   "claim": "n = 8 limit only: exactly 9,133 among 801,558,826,511 digraphs with at least 29 arcs; largest limit critical value about 1.7107; two machine campaigns, no hand check; finite-eps map not done",
+   "source": "certificates/n8_limit_summary.json; certificates/n8_summary.json q_star_limit",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_geneson.md",
+   "line/quote": "21",
+   "claim": "every n >= 6 has counterexamples; critical q unbounded in n",
+   "source": "ANOMALIES.md 2026-10-15 Theorem F and Theorem U entries",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_shiu.md",
+   "line/quote": "44-46",
+   "claim": "n = 5 package reproduced with zero mismatches on 9,608 digraphs (24,442 fixed-point supports, 14,488 stable) at eps = 1/4, delta = 1/2",
+   "source": "certificates/stage1_n5_diff.json (graphs 9608, fp_support_mismatches 0, total_fp_supports 24442, total_stable_fp_supports 14488, eps 1/4, delta 1/2)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_shiu.md",
+   "line/quote": "47-49",
+   "claim": "n <= 5 none; n = 6 exactly 3, about 1.1664; n = 7 exactly 124, about 1.3247",
+   "source": "certificates/n6_summary.json; certificates/n7_finite_summary.json; ANOMALIES.md 2026-10-15",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_shiu.md",
+   "line/quote": "50-53",
+   "claim": "proper supports at n = 7: size-6 support on one of the three n = 6 counterexamples plus a seventh node; 7,744 of 12,288 stable somewhere, 4,544 never; target node never stable; node receiving no edge always stable",
+   "source": "certificates/n7_proper_supports_summary.json (scope; verdicts; node6_target_verdicts never 192; node6_no_in_verdicts stable_somewhere 192)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_shiu.md",
+   "line/quote": "54-57",
+   "claim": "n = 8 limit only: 9,133 among 801,558,826,511 with at least 29 arcs; two campaigns, no hand check; every n >= 6; unbounded q",
+   "source": "certificates/n8_limit_summary.json; ANOMALIES.md 2026-10-15",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_curto.md",
+   "line/quote": "78-80",
+   "claim": "all 9,608 digraphs from n5_digraphs.mat read as the transpose of the package's sA; zero mismatches at eps = 1/4, delta = 1/2 (24,442 supports, 14,488 stable)",
+   "source": "certificates/stage1_n5_diff.json (csv_header: A_rowmajor = transpose of the package's sA)",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_curto.md",
+   "line/quote": "81-83",
+   "claim": "n = 6: 3 among 1,540,944, about 1.1664; n = 7: 124 among 882,033,440, about 1.3247",
+   "source": "certificates/n6_summary.json; certificates/n7_finite_summary.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_curto.md",
+   "line/quote": "84-86",
+   "claim": "proper supports: 7,744 of 12,288 stable somewhere, 4,544 never; target node never stable",
+   "source": "certificates/n7_proper_supports_summary.json",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/DRAFT_curto.md",
+   "line/quote": "87-90",
+   "claim": "n = 8 limit only: 9,133 among 801,558,826,511; two campaigns; no hand check; every n >= 6; unbounded",
+   "source": "certificates/n8_limit_summary.json; ANOMALIES.md 2026-10-15",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/README.md",
+   "line/quote": "103, 118-120",
+   "claim": "written 2026-10-28; n = 8 verified by machine only (two campaigns, 9,133/9,133); declined 2026-10-28",
+   "source": "certificates/n8_limit_summary.json status and second_verification",
+   "verdict": "OK",
+   "fix": ""
+  },
+  {
+   "file": "notes/outreach/README.md",
+   "line/quote": "127-130",
+   "claim": "fact sources list",
+   "source": "all seven files exist (ls)",
+   "verdict": "OK",
+   "fix": ""
+  }
+ ]
+}

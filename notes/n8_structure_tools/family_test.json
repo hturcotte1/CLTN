@@ -1,0 +1,1225 @@
+{
+ "instances": [
+  {
+   "n": 7,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "F witness",
+   "d6": "&FZt|^DaK~?"
+  },
+  {
+   "n": 8,
+   "omega": 5,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "F witness",
+   "d6": "&GZy~VwuKW~^w"
+  },
+  {
+   "n": 9,
+   "omega": 6,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "F witness",
+   "d6": "&HZ|^t~FWwo~^|~o"
+  },
+  {
+   "n": 10,
+   "omega": 7,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "F witness",
+   "d6": "&IZ}n|^w|bp_~^}~|~w"
+  },
+  {
+   "n": 11,
+   "omega": 8,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "F witness",
+   "d6": "&JZ~V~V~FuNb?~^~^~^~^~?"
+  },
+  {
+   "n": 12,
+   "omega": 9,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "F witness",
+   "d6": "&KZ~j~t~w~W~E?~^~n~v~z~|~}"
+  },
+  {
+   "n": 14,
+   "omega": 11,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "F witness",
+   "d6": "&MZ~y~~V~w~uN{W?~^~z~~^~z~~^~z~~^~w"
+  },
+  {
+   "n": 16,
+   "omega": 13,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "F witness",
+   "d6": "&OZ~}n~|^~w~|b~p_?~^~}~~|~~z~~v~~n~~^~}~~|~~w"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZnRba\\ba^w"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZnRbq\\aa^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZjRba\\ba^w"
+  },
+  {
+   "n": 8,
+   "omega": 2,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&GNRaVbYXauVo"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZMZbc\\_p^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZnQbq\\aa^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^zVPb}Hx\\Fw"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^jrXpzCj]^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^jvXpjCj]^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^jvXpzCi]^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^jvXpzCj]^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZMZbs\\_p^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&GMPRUBuUzy^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^JMZbs\\_p^w"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^zVFjmCjU^O"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^Z^Zr|Kiq^w"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^znXpzFxJNw"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZMZbsX`p^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^jvXpzCj]Nw"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&GMPVVBuUzyNw"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^jrWpzCj]^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^jrXpz?j]^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^YmWpd\\`hNg"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZnRbrTaaNw"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZnQbrTbaNw"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^JMZbc\\`p^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZMZbcX`p^w"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZnRba\\baNw"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZjRbrTaa^w"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^ZnRbrPaaNw"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^jvWpzCi]^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^jvXpz?i]^w"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^JnRbq\\ba\\W"
+  },
+  {
+   "n": 8,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&GM@RVBuUzy^w"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^Z^ZrlKjq^w"
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q top_n8.json",
+   "d6": "&G^znFizFWN^w"
+  },
+  {
+   "n": 9,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q cert_q_910.json",
+   "d6": "&H^\\us{\\HrEa^|~_"
+  },
+  {
+   "n": 9,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q cert_q_910.json",
+   "d6": "&H^Tvs{^HzDa^|~o"
+  },
+  {
+   "n": 9,
+   "omega": 5,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q cert_q_910.json",
+   "d6": "&H^\\vs{[HzFa^|~o"
+  },
+  {
+   "n": 10,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q cert_q_910.json",
+   "d6": "&I^Qz|NbkfuNa^}~|tw"
+  },
+  {
+   "n": 10,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q cert_q_910.json",
+   "d6": "&I^Yz\\NbkfULa^}~x~w"
+  },
+  {
+   "n": 10,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q cert_q_910.json",
+   "d6": "&I^]zLNbkfEKa^}~x~w"
+  },
+  {
+   "n": 11,
+   "omega": 5,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q cert_q_11.json",
+   "d6": "&J^R\\~R{\\a^k^a^~^~]n^~?"
+  },
+  {
+   "n": 11,
+   "omega": 5,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q cert_q_11.json",
+   "d6": "&J^R\\~R{\\q^k]a^~^~]n^~?"
+  },
+  {
+   "n": 11,
+   "omega": 5,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "high-q cert_q_11.json",
+   "d6": "&J^P\\~R{\\q^k^a^~^~]n^~?"
+  },
+  {
+   "n": 32,
+   "omega": 28,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "family_Q_certificate.json",
+   "d6": "&_^^~~~y^~~~~F~~~~y^~~~}W????Z~~~~|^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~z~~~~~^~~~~w"
+  },
+  {
+   "n": 19,
+   "omega": 14,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "family_Q2_certificate.json",
+   "d6": "&R^^~u~~|g~}^_BR~}T~~q^~~v~~|~~~^~~v~~|~~~^~~v~~|~~~^~~v~~|~~~?"
+  },
+  {
+   "n": 47,
+   "omega": 42,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "family_Q2_certificate.json",
+   "d6": "&n^^~~~~~~Z~~~~~~~Y?F~~~~}^~o????LN~~~~~~d^~~~~~~q^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~^~~~~~~~?"
+  },
+  {
+   "n": 73,
+   "omega": 68,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "family_Y_certificate.json",
+   "d6": "&\u0088^O????????~~uv~~~~~~~~~~|n~~~~~~~~o?E^~~~~~~~~~~~R~~~~~~~~~~}T~~~~~~~~~~~q^~~~~~~~~~~jf~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~^~~~~~~~~~~~v~~~~~~~~~~~|~~~~~~~~~~~~?"
+  },
+  {
+   "n": 28,
+   "omega": 18,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem U explicit",
+   "certified": true
+  },
+  {
+   "n": 41,
+   "omega": 33,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem U explicit",
+   "certified": true
+  },
+  {
+   "n": 7,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 0
+  },
+  {
+   "n": 8,
+   "omega": 4,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 1
+  },
+  {
+   "n": 9,
+   "omega": 5,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 2
+  },
+  {
+   "n": 10,
+   "omega": 6,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 3
+  },
+  {
+   "n": 11,
+   "omega": 7,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 4
+  },
+  {
+   "n": 12,
+   "omega": 8,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 5
+  },
+  {
+   "n": 13,
+   "omega": 9,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 6
+  },
+  {
+   "n": 14,
+   "omega": 10,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 7
+  },
+  {
+   "n": 15,
+   "omega": 11,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 8
+  },
+  {
+   "n": 16,
+   "omega": 12,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 9
+  },
+  {
+   "n": 17,
+   "omega": 13,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 10
+  },
+  {
+   "n": 18,
+   "omega": 14,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 11
+  },
+  {
+   "n": 19,
+   "omega": 15,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 12
+  },
+  {
+   "n": 20,
+   "omega": 16,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 13
+  },
+  {
+   "n": 21,
+   "omega": 17,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 14
+  },
+  {
+   "n": 22,
+   "omega": 18,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 15
+  },
+  {
+   "n": 23,
+   "omega": 19,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 16
+  },
+  {
+   "n": 24,
+   "omega": 20,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 17
+  },
+  {
+   "n": 25,
+   "omega": 21,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 18
+  },
+  {
+   "n": 26,
+   "omega": 22,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 19
+  },
+  {
+   "n": 27,
+   "omega": 23,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 20
+  },
+  {
+   "n": 28,
+   "omega": 24,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 21
+  },
+  {
+   "n": 29,
+   "omega": 25,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 22
+  },
+  {
+   "n": 30,
+   "omega": 26,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 23
+  },
+  {
+   "n": 31,
+   "omega": 27,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 24
+  },
+  {
+   "n": 32,
+   "omega": 28,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 25
+  },
+  {
+   "n": 33,
+   "omega": 29,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 26
+  },
+  {
+   "n": 34,
+   "omega": 30,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 27
+  },
+  {
+   "n": 35,
+   "omega": 31,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 28
+  },
+  {
+   "n": 36,
+   "omega": 32,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 29
+  },
+  {
+   "n": 37,
+   "omega": 33,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 30
+  },
+  {
+   "n": 38,
+   "omega": 34,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 31
+  },
+  {
+   "n": 39,
+   "omega": 35,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 32
+  },
+  {
+   "n": 40,
+   "omega": 36,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 33
+  },
+  {
+   "n": 41,
+   "omega": 37,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 34
+  },
+  {
+   "n": 42,
+   "omega": 38,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 35
+  },
+  {
+   "n": 43,
+   "omega": 39,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 36
+  },
+  {
+   "n": 44,
+   "omega": 40,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 37
+  },
+  {
+   "n": 45,
+   "omega": 41,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 38
+  },
+  {
+   "n": 46,
+   "omega": 42,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 39
+  },
+  {
+   "n": 47,
+   "omega": 43,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A R_k",
+   "k": 40
+  },
+  {
+   "n": 7,
+   "omega": 3,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A self-join",
+   "k": 1
+  },
+  {
+   "n": 14,
+   "omega": 6,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A self-join",
+   "k": 2
+  },
+  {
+   "n": 21,
+   "omega": 9,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A self-join",
+   "k": 3
+  },
+  {
+   "n": 28,
+   "omega": 12,
+   "omega_le_n_minus_3": true,
+   "strongly_connected": true,
+   "induced_C3": true,
+   "recv_all_implies_send_all": true,
+   "source": "Theorem A self-join",
+   "k": 4
+  }
+ ],
+ "symbolic_families": {
+  "total": 631,
+  "holds": 631,
+  "min_slack": 0,
+  "tight": [
+   {
+    "family": "catalogue families_catalogue_n6.json",
+    "base": "&EWBFrtm",
+    "m": 6,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n6.json",
+    "base": "&EWBFrtm",
+    "m": 6,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n6.json",
+    "base": "&EWDFbt}",
+    "m": 6,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n6.json",
+    "base": "&EWDFbt}",
+    "m": 6,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMEHz\\v|p?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMEHz\\v|p?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMAlx\\v|p?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMAlx\\v|p?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMAlx\\v|x?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMAlx\\v|x?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMELx\\v|p?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMELx\\v|p?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMELx\\v|x?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FMELx\\v|x?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FNFL|\\u|o?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FNFL|\\u|o?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FNFL|\\u|w?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FNFL|\\u|w?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FNFL~[u|o?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   },
+   {
+    "family": "catalogue families_catalogue_n7.json",
+    "base": "&FNFL~[u|o?",
+    "m": 7,
+    "k_from": 1,
+    "bound_holds_for_all_k": true,
+    "min_slack": 0
+   }
+  ],
+  "n_tight": 38,
+  "failures": []
+ },
+ "instances_summary": {
+  "omega_le_n_minus_3": 104,
+  "strongly_connected": 104,
+  "induced_C3": 104,
+  "recv_all_implies_send_all": 104,
+  "total": 104,
+  "n_range": [
+   7,
+   73
+  ]
+ },
+ "instances_tight_omega": 8
+}

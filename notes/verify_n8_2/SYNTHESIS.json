@@ -1,7 +1,7 @@
 {
  "workflow": "second independent verification of the n = 8 limit result (notes/verify_n8_2)",
  "date": "2026-10-28",
- "synthesizer": "Fable 5.1 (orchestrator subagent); own re-derivations with the repository's exact ctln.py (fractions only), own digraph6 decoder validated against Geneson's stored matrix, nauty labelg for canonical forms",
+ "synthesizer": "synthesis agent of the workflow (model identifier removed per project rule)",
  "result_under_test": {
   "hits_file": "n8/n8_limit_HITS.jsonl",
   "hits": 9133,
