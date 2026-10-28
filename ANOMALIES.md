@@ -1341,3 +1341,15 @@ Data-hygiene findings (candidates unaffected, certified intervals correct):
   3/2, the smallest is about 1.000276.  The earlier entry's "largest upper end below 2" used the coarse bound.
 * sympy reports repeated characteristic-polynomial roots (multiplicity 2 or 3, all off the imaginary axis) at
   404 of 3,112 sampled points (202 graphs), presumably twin structure; harmless for stability, same as at n = 7.
+
+## 2026-10-28  Hand-verification declined by the user; second independent machine verification ordered instead
+
+The user's instruction (2026-10-28): "I don't want to hand verify it, just run another verification yourself".
+Recorded as the human decision on the n = 8 candidate list.  In place of the hand check a second verification
+campaign with lenses the first pass did not use is running (workflow wf_6abae796-7df, notes/verify_n8_2/):
+completeness (closed-twin blow-ups of the 123 n = 7 counterexamples must appear in the n = 8 list; Lemma J
+in-twin-switch closure of the list), stability for ALL large t along the limit ray (exact root isolation in t),
+the never side (grids of legal points on 600 'never' records) and the filter8 boundary rule on regenerated
+B-flagged digraphs, a float dynamics sanity check (explicitly non-decision), an adversarial end-to-end referee
+of the enumeration chain (edge/arc bound, Burnside counts, accounting, filter criterion, limit-stage semantics),
+and a hand-check kit with six fully worked candidates for any later human reader.
