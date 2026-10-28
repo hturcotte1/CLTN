@@ -119,7 +119,7 @@
  "hits_whose_first_interval_starts_at_beta_2": 8162,
  "hits_with_all_four_pointwise_witnesses_stable_and_positive": 9051,
  "hits_with_a_legal_stable_positive_witness_q_gt_1": 9096,
- "status": "CANDIDATES machine-confirmed by four independent exact verifiers (see machine_confirmation); pending hand-verification of a sample by the user before anything is built on them",
+ "status": "VERIFIED by machine: 9,133/9,133 confirmed by two independent campaigns (first pass: four verifiers; second pass: six lenses incl. completeness, all-large-t, never side, chain referee), 0 defects; NO human hand-verification (declined by the user on 2026-10-28). Scope: eps -> 0 limit map of the full support only; the finite-eps map at n = 8 is not done (417,603,634 boundary lines not stored).",
  "machine_confirmation": {
   "date": "2026-10-28",
   "workflow": "wf_79a996db-7e2",
@@ -148,5 +148,21 @@
    "stored_rational_q_upper_bounds_coarse_note": "two stored bounds are exactly 2 (isolating interval [2,3]) although the algebraic endpoints are about 1.0742; after exact refinement all 9,133 upper ends are below 2"
   },
   "legal_witness_certificate": "certificates/n8_candidates_legal_witnesses.json (one legal stored witness where one exists, and a certified interior point for every graph; use witness_in_first_stable_cell for hand checks)"
+ },
+ "second_verification": {
+  "date": "2026-10-28",
+  "workflow": "wf_6abae796-7df",
+  "synthesis": "notes/verify_n8_2/SYNTHESIS.json",
+  "status": "CLEAN: no FATAL or MAJOR defect of the n = 8 result (candidate list of 9,133 and the limit-map completeness claim both stand); 1 MINOR documentation defect (B-flag described as 'alpha = -1/2 exactly' in ANOMALIES.md 2026-10-28 and the run scripts' comments; it means alpha >= -1/2), 13 explained non-issues; the chain_referee's MAJOR was an incomplete verifier run, now covered.",
+  "lenses": {
+   "completeness_twins": "closed-twin blow-ups of the 123 n=7 limit counterexamples (858 distinct): 61 in the list, 797 not, all 797 exactly decided not limit-stable at legal points inside the parent interval (4,782 points, 0 stable+positive); Lemma J in-twin-switch closure of the list: 29,116 switches of 4,271 candidates all in the list with identical intervals, 0 exceptions",
+   "interval_all_t": "all 9,133: exact set of t where all Hurwitz minors, positivity and legality hold is a single interval (t*, infinity) with finite t* (max about 8565.5); 36,532 stored witness points agree",
+   "never_side": "300 never_positivity + 300 never_full records at 874,996 legal ray points: 0 stable+positive; own all-beta replay reproduces never for all 600; filter8 boundary rule re-derived on 36.9M regenerated digraphs (S/B/non-printed samples of 300 each, 0 disagreements on S vs non-S)",
+   "dynamics_float": "non-decision float lens: 434 candidates converge to their exact positive fixed point where the decay is measurable (302/303), anchors (Geneson, K8, 3-cycle) behave, 200 never graphs never settle at a positive full-support point",
+   "chain_referee": "e_2 edge bound re-derived (arcs >= 29 implies 15..28 underlying edges, lossless), 5,350 underlying graphs, Burnside counts re-derived on 30 graphs + two shards + 20 dense graphs, coverage exactly once, filter8 agreement on 3,391 digraphs, accounting re-aggregated, kept lines traceable",
+   "handcheck_kit": "notes/verify_n8_2/handcheck_kit/HANDCHECK.md: six fully worked candidates with exact fractions"
+  },
+  "defects": "none fatal or major; one minor documentation defect (B lines described as alpha = -1/2 exactly; they mean alpha >= -1/2) corrected in ANOMALIES.md 2026-10-28",
+  "human_decision": "the user declined hand-verification on 2026-10-28 and ordered this second machine verification instead"
  }
 }

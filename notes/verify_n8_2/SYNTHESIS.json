@@ -1,0 +1,221 @@
+{
+ "workflow": "second independent verification of the n = 8 limit result (notes/verify_n8_2)",
+ "date": "2026-10-28",
+ "synthesizer": "Fable 5.1 (orchestrator subagent); own re-derivations with the repository's exact ctln.py (fractions only), own digraph6 decoder validated against Geneson's stored matrix, nauty labelg for canonical forms",
+ "result_under_test": {
+  "hits_file": "n8/n8_limit_HITS.jsonl",
+  "hits": 9133,
+  "results_file": "n8/n8_limit_results.jsonl",
+  "results_records": 347639,
+  "verdicts_recounted": {
+   "never": 338505,
+   "never_positivity_no_cert": 331427,
+   "never_full_with_cert": 7078,
+   "stable_somewhere": 9134,
+   "complete_K8": 1
+  },
+  "hits_equal_noncomplete_stable_somewhere": true,
+  "arc_distribution_recounted_matches_summary": true,
+  "claimed_scope": "eps -> 0 limit classification of the full support of every 8-vertex digraph whose underlying graph has 15..28 edges (edge bound, Lean-checked); finite-eps map not claimed (certificates/n8_limit_summary.json)"
+ },
+ "per_agent": {
+  "completeness_twins": {
+   "verdict_claimed": "CLEAN",
+   "verdict_accepted": "CLEAN",
+   "counts_confirmed": {
+    "part2_blowups_jsonl_lines": 858,
+    "part3_rows": 29116,
+    "part3_exceptions": 0,
+    "part4_rows": 643,
+    "part4_exceptions": 232,
+    "lifts_in_hits": 61,
+    "agrees_with_handcheck_kit_lifts": true
+   },
+   "own_rederivation": "Disjoint-interval case re-derived exactly with ctln.analyze_support: parent &F^v|^Fo\\B? stable+positive at beta=773/384 (t=10^4,10^5) while blow-up &G^z~Vwn?zBRw is stable but not positive there; at beta=24323/11520 the blow-up is stable+positive and the parent positive but unstable. Part-4 exception re-derived: source &GNAM]yf\\X`Jw and its switch &GNAM]Yn\\X`Jw have identical charpoly and identical (non-positive) x at beta=21/10, t=10^4; the switch has the domination pair (5 dominates 0) under filter8's F1 definition, the source has none.",
+   "problems_raised": 4,
+   "real_defects": 0,
+   "notes": "all four problems are wording/scope notes, see non_issues"
+  },
+  "interval_all_t": {
+   "verdict_claimed": "CLEAN",
+   "verdict_accepted": "CLEAN",
+   "counts_confirmed": {
+    "results_jsonl_lines": 9133,
+    "records_with_problems": 0,
+    "tally_t_star_le_10000": 9133,
+    "stored_witness_points_agree": 36532,
+    "nulls": 37
+   },
+   "own_rederivation": "Control &GMA[KPT^B|Ig at beta=21/10: stable+positive at t=2/5 where q=0.314 (illegal), positive but unstable at t=10^4 (legal); the legality threshold on that ray is t=10 since q=(beta-1)t/(t+1). Confirms the note is a non-issue.",
+   "problems_raised": 2,
+   "real_defects": 0
+  },
+  "never_side": {
+   "verdict_claimed": "CLEAN",
+   "verdict_accepted": "CLEAN",
+   "counts_confirmed": {
+    "grid_never_positivity_lines": 300,
+    "grid_never_full_lines": 300,
+    "grid_B_lines": 300,
+    "grid_NPDF_lines": 300,
+    "replay_never_full_lines": 300,
+    "replay_never_full_all_never": true,
+    "replay_never_positivity_lines": 300
+   },
+   "own_rederivation": "filter8.c hurwitz(): returns 0 (dropped) on any negative coefficient, else 2 (B) on a zero coefficient, else iterates minors returning 0 on the first negative and 2 on the first zero minor. So B means 'a zero met before any negative' (alpha >= -1/2), exactly as the agent and the chain_referee state. Both B and dropped are excluded from the limit map; by the Hurwitz theorem any non-positive minor already implies a root with Re >= 0, i.e. alpha(A|perp) >= -1/2, and for beta > 2 the compression eigenvalue 1 - beta(1+alpha) <= 1 - beta/2 < 0 forces instability for all large t, so the exclusion is sound regardless of the B/dropped split.",
+   "problems_raised": 4,
+   "real_defects": 0
+  },
+  "dynamics_float": {
+   "verdict_claimed": "CLEAN",
+   "verdict_accepted": "CLEAN (non-decisional lens)",
+   "counts_confirmed": {
+    "candidates_out_A": 52,
+    "candidates_out_B": 382,
+    "never_out_lines": 200,
+    "never_RED": 0,
+    "followup_graphs": 14
+   },
+   "own_rederivation": "The one positive never case &GNw\\TQ}Hz{\\o at beta=5/2 is exactly positive and exactly unstable (not undecided) at t=10^4 and 10^5 with ctln.py, matching never_full. The float convergence failures are a consequence of slow oscillatory modes near the stability boundary; stability itself is decided exactly elsewhere, so none of the six notes touches the result.",
+   "problems_raised": 6,
+   "real_defects": 0
+  },
+  "handcheck_kit": {
+   "verdict_claimed": "CLEAN",
+   "verdict_accepted": "CLEAN",
+   "counts_confirmed": {
+    "candidates": 6,
+    "interval_refine_all_ok": true,
+    "lift_hit_indices": 61
+   },
+   "own_rederivation": "The six Geneson single closed-twin blow-ups (n=7) are not among the 123 n=7 limit candidates nor FNFL (own canonical forms); fastregion.region at t=INF gives never for all six and ctln.py finds none stable+positive at (1/21,11/210), (1/100,29/2500), (1/1000,29/25000); consistent with the n=7 map. The absence of Geneson double blow-ups from the n=8 list is therefore expected, and the Theorem-F instance F_2 (which is NOT a closed-twin blow-up) IS in the list: its labelg canonical form is hit &GNbr^zz\\z^[? whose stored critical interval [86/37,7/3] with minimal polynomial x^3-3x^2+2x-1 matches certificates/n8_instances_region2d.json; E_1 (limit never, finite-eps-only) is correctly absent; the incidental candidate &GLjlNZ}NzH\\o is present.",
+   "problems_raised": 2,
+   "real_defects": 0
+  },
+  "chain_referee": {
+   "verdict_claimed": "PROBLEMS",
+   "verdict_accepted": "CLEAN after re-examination (its one MAJOR is an incomplete verifier run, not a defect of the result)",
+   "counts_confirmed": {
+    "accounting2_aggregate": [
+     801558826511,
+     113697991934,
+     417951273,
+     417603634,
+     0
+    ],
+    "stage_overflow": [
+     0,
+     0,
+     0
+    ],
+    "kept_S": 347639,
+    "witness_check": 11,
+    "witness_check_failed": 0,
+    "variants_filter8_lines": 308,
+    "variants_mine_lines": 3391,
+    "nesting": "OK"
+   },
+   "own_rederivation": "(a) accounting2_result.json lists '38215 kept lines whose underlying graph is not in the producing job/shard list'; re-ran owner_check.py from the scratchpad: 5,324 of 5,350 geng labelings are not labelg-canonical, and after canonicalising both sides 0 kept lines are misattributed (17 underlying graphs host all 347,639 S lines, K8 166,042, K8-e 143,266, ...). The 38,215 is a pre-canonicalisation artefact. (b) The K8-e orbit vs directg full-set-equality evidence DOES exist: n8/orbitenum/k8e_check/ (written 02:39, after the referee looked): both gzipped canonical S-line files have 143,266 lines and are set-equal (own comparison), k8e_full.log records orbitenum_total = filter8_total = exact 5,339,129,738. (c) never_full spot-check: see spot_check_never_full below."
+  }
+ },
+ "spot_check_never_full": {
+  "chain_referee_claim": "MAJOR: its own sympy re-derivation (limitcheck.py) of 5 never_full certificates never finished",
+  "resolution": "Covered twice. (i) never_side's own all-beta>2 replication (limit_replay.py, own a=adj(C)1, s, omega, Orlando minor, sympy root isolation) reproduces 'never' for 300/300 never_full records (replay_never_full.jsonl, 0 escalations) and 'stable_somewhere' with matching cells for 11 known stable cases. (ii) Synthesizer's own exact check of the first 5 never_full records in file order (&GM@OEHvURqMw, &GK?oRRzUry[G, &GK?oYRxMyy]O, &GK?pJQnUryLG, &GK@bFJzRAq[w): at every one of the 62 stored cell sample betas the limit positivity sign of a = adj(I + beta N) 1 (exact Fractions, own derivation) equals the stored 'positive' flag, and ctln.analyze_support at t = 10^5 and 10^6 on the ray gives exactly the stored 'stable' and 'positive' flags with 0 boundary cases; no cell is stable and positive. The referee's limitcheck.py was also re-run from the scratchpad (never_full 3) but its sympy symbolic 8x8 adjugate did not finish the first record within the time allowed and was stopped; the gap it leaves is covered by (i) and (ii).",
+  "verdict": "non-issue for the result; a verifier-runtime limitation"
+ },
+ "real_defects": [],
+ "non_issues": [
+  {
+   "raised_by": "completeness_twins",
+   "severity_assigned": "NOTE (wording in ANOMALIES.md, not the result)",
+   "item": "ANOMALIES 2026-10-15 ('Three 8-node instances') and its 2026-10-15 correction say Lemma W preserves the limit data / region; in fact the blow-up's limit data come from the weighted quotient (A+I)M-I and 46 of 61 listed blow-ups have a different limit interval, one disjoint (re-derived exactly here). Stored n=8 intervals are correct; nothing in the list or completeness claim depends on region equality."
+  },
+  {
+   "raised_by": "completeness_twins",
+   "severity_assigned": "NOTE",
+   "item": "19 of 858 blow-ups get B vs dropped differently from an order-independent test; all 19 have alpha > -1/2 exactly, and both flags are excluded from the limit map, so the list is unaffected (soundness of exclusion does not depend on the B/dropped order, see never_side own_rederivation)."
+  },
+  {
+   "raised_by": "completeness_twins",
+   "severity_assigned": "NOTE",
+   "item": "Bidirected in-twin switching does not preserve domination-freeness (232 switches of never records are dominated); re-derived on the first exception. Lemma J makes the switch's fixed-point data identical to the source's, so a dominated switch of a never record is never, consistent; all 29,116 switches of hits are domination-free and in the list."
+  },
+  {
+   "raised_by": "completeness_twins, never_side, chain_referee",
+   "severity_assigned": "MINOR (documentation)",
+   "item": "ANOMALIES 2026-10-28 and shell scripts describe the 417,603,634 B lines as 'alpha = -1/2 exactly'; filter8's B means a vanishing coefficient/minor met before any negative one, i.e. alpha >= -1/2 (never_side: 230 of 300 sampled B lines have alpha > -1/2 strictly). Exclusion from the LIMIT map is sound either way. B lines are not stored, so finite-eps-only counterexamples among them (like FNFL at n=7) are outside this result; the summary's 'finite-eps map not done' caveat already states this scope and must accompany every statement of the result."
+  },
+  {
+   "raised_by": "interval_all_t",
+   "severity_assigned": "NOTE",
+   "item": "A never graph stable+positive only at illegal t (q < 1); re-derived exactly. Not a counterexample."
+  },
+  {
+   "raised_by": "interval_all_t, handcheck_kit",
+   "severity_assigned": "NOTE (known data-hygiene item)",
+   "item": "Stored t=100 witnesses are often illegal (q <= 1) and stored coarse isolating intervals need 0-3 exact bisection steps before the midpoint witness is provably inside; already recorded in certificates/n8_candidates_legal_witnesses.json and the first-pass synthesis; all stored flags are exactly correct."
+  },
+  {
+   "raised_by": "never_side",
+   "severity_assigned": "NOTE",
+   "item": "Task sampling rule for part (2) had no instance (no single-graph job below 20M); the agent substituted orbitenum parts of two dense graphs with stated deterministic rules. Acceptable; the B/S/non-printed samples are what the rule intended."
+  },
+  {
+   "raised_by": "never_side",
+   "severity_assigned": "NOTE",
+   "item": "Legal grid points that are stable but not positive exist for never graphs (4,583 of 874,996); none positive, consistent with Lemma A.2."
+  },
+  {
+   "raised_by": "dynamics_float",
+   "severity_assigned": "NOTE",
+   "item": "Literal T=2000 / 1e-7 criterion unattainable because the slowest Jacobian mode is 4.5e-10..1.9e-2 and oscillatory; 72 candidates have rate*T<1 at the certified point; 14 candidates have attracting basins smaller than a 0.3% perturbation (transient amplification 4-14x) but return from 3e-6..3e-4 perturbations. Local asymptotic stability is what is claimed and is decided exactly; a basin-size remark for the report only."
+  },
+  {
+   "raised_by": "dynamics_float",
+   "severity_assigned": "NOTE",
+   "item": "Run-management details (two configurations, anchors.json not written, 3-cycle anchor rerun standalone). Lens is non-decisional."
+  },
+  {
+   "raised_by": "handcheck_kit",
+   "severity_assigned": "NOTE",
+   "item": "Geneson's double closed-twin blow-ups are not in the list; re-derived: the single blow-ups are limit-never at n=7, so this is expected. Theorem F's F_2 (a different construction) is in the list (hit &GNbr^zz\\z^[?)."
+  },
+  {
+   "raised_by": "chain_referee",
+   "severity_assigned": "RESOLVED (verifier artefact)",
+   "item": "'38215 kept lines whose underlying graph is not in the producing job list' in accounting2_result.json is pre-canonicalisation; owner_check re-run here gives 0 misattributed after labelg canonicalisation of both sides."
+  },
+  {
+   "raised_by": "chain_referee",
+   "severity_assigned": "RESOLVED (evidence exists)",
+   "item": "The K8-e orbitenum full-set-equality claim has stored evidence in n8/orbitenum/k8e_check (143,266 = 143,266 canonical S lines, set-equal; own check), created after the referee's search."
+  },
+  {
+   "raised_by": "chain_referee",
+   "severity_assigned": "NOTE",
+   "item": "'read exactly once' is provable from files only modulo the totals for zero-survivor graphs; coverage, job inputs, per-part sums, two per-B ledgers and the K8-e content check all hold; residual trust is in filter8's own totals, the same as in the first-pass synthesis."
+  }
+ ],
+ "theory_relied_on_and_rechecked": "Along the ray eps=1/(t+1), delta=(beta-1)eps one has (t+1)(I-W) = I + tJ + beta N (own derivation, N = J - I - A^T), so x is proportional to adj(I+beta N)1 (t-free) and legality q>1 is beta > 2 + 1/t; the n-1 eigenvalues of I + tJ + beta N not escaping to infinity tend to those of the compression of I + beta N to 1^perp, namely 1 - beta(1+lambda) for lambda in spec(A|perp); hence limit stability on some legal ray iff alpha(A|perp) < -1/2 (Lemma I.3(d)), and alpha >= -1/2 gives instability for all large t at every beta > 2 (I.3(c2)). This is the step that makes the spectral prefilter (filter8 S) lossless for the limit map, and it is consistent with every datum seen (all 9,133 candidates have stable t-sets (t*, inf); 300 S lines all alpha < -1/2; 300 B and 300 non-printed domination-free lines never stable on 240,000 legal points). The e_2 edge bound (arcs >= 29, hence underlying edges >= 15) and Lemma D (domination prune) are Lean-checked.",
+ "counts": {
+  "fatal": 0,
+  "major": 0,
+  "minor": 1,
+  "notes": 13
+ },
+ "status": "CLEAN",
+ "own_rederivations_summary": [
+  "decoder validated: &EZjtwWE == Geneson adjacency in notes/geneson_2607.21396.md",
+  "disjoint-interval blow-up case: 8 exact points, agrees with completeness_twins",
+  "illegal-t never control: agrees with interval_all_t",
+  "never_full positive-unstable &GNw\\TQ}Hz{\\o: exactly unstable at t=1e4,1e5",
+  "part-4 domination exception: identical charpoly/x, domination pair (5,0) under filter8 F1",
+  "Geneson single blow-ups at n=7: all limit-never, none stable at three legal points, none in the 123 or FNFL",
+  "F_2 in hits (&GNbr^zz\\z^[?, matching critical interval and minpoly), E_1 correctly absent, incidental candidate present",
+  "HITS == non-complete stable_somewhere (9133/9133), verdict tallies recounted, arc distribution matches summary",
+  "owner_check re-run: 0 misattributed kept lines after canonicalisation (resolves the 38,215 artefact)",
+  "K8-e orbit vs directg canonical S-line sets: 143,266 each, set-equal (n8/orbitenum/k8e_check)",
+  "first 5 never_full certificates: 62/62 cells agree with own exact evaluation"
+ ],
+ "status_line": "CLEAN: no FATAL or MAJOR defect of the n = 8 result (candidate list of 9,133 and the limit-map completeness claim both stand); 1 MINOR documentation defect (B-flag described as 'alpha = -1/2 exactly' in ANOMALIES.md 2026-10-28 and the run scripts' comments; it means alpha >= -1/2), 13 explained non-issues; the chain_referee's MAJOR was an incomplete verifier run, now covered."
+}

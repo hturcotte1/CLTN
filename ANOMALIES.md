@@ -1365,3 +1365,22 @@ and a hand-check kit with six fully worked candidates for any later human reader
   only, and that caveat travels with every statement of it (certificates/n8_limit_summary.json 'scope').
 * The K8-e orbit-enumerator full-set-equality check left no stored output; the canonical strict-survivor sets of
   both sides (143,266 lines each, byte-identical), the per-part stats and the log are now in n8/orbitenum/k8e_check/.
+
+## 2026-10-28  SECOND VERIFICATION CLEAN: the n = 8 limit map and its 9,133 counterexamples stand (machine-verified, no human hand check)
+
+Workflow wf_6abae796-7df (notes/verify_n8_2/SYNTHESIS.json; interrupted once by a container restart and resumed
+from cache): completeness from the other direction (858 distinct closed-twin blow-ups of the 123 n = 7
+counterexamples: 61 are in the n = 8 list, the other 797 are exactly NOT limit-stable at 4,782 legal points inside
+their parents' intervals; Lemma J in-twin-switch closure of the list: 29,116 switches, all in the list with
+identical intervals), stability for ALL large t (every one of the 9,133: the exact t-set is (t*, infinity) with
+finite t*, max t* about 8,565), the never side (600 never records at 874,996 legal points, 0 stable+positive; an
+own all-beta replay reproduces every verdict), the filter8 boundary rule re-derived on 36.9M regenerated digraphs,
+a float dynamics lens (non-decision, consistent), an end-to-end referee of the enumeration chain (edge bound,
+Burnside counts, coverage, filter agreement, accounting: no gap), and a six-candidate hand-check kit
+(notes/verify_n8_2/handcheck_kit/HANDCHECK.md).  Synthesis: 0 fatal, 0 major, 1 minor (documentation, fixed
+above).  Two findings for the write-up: (i) Lemma W does not predict that blow-ups keep the parent's region, and
+the data confirm it (46 of the 61 listed blow-ups have a different interval, one disjoint: &G^z~Vwn?zBRw), so the
+n = 8 list is overwhelmingly NEW rather than lifted; (ii) bidirected in-twin switching does not preserve
+domination-freeness (232 of 643 switches of sampled never-records are rejected by F1), consistent with Lemma D.
+Status of the n = 8 result: VERIFIED by machine (two independent campaigns), limit map only, no human hand check
+(declined by the user); recorded in certificates/n8_limit_summary.json.
