@@ -5,6 +5,10 @@
 \usepackage[hmargin=0.9in,vmargin=0.85in]{geometry}
 \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\textfraction}{0.07}
 \usepackage{url}
 \usepackage[hidelinks]{hyperref}
 
@@ -569,6 +573,21 @@ bidirected in-twin switch of $G_1$. $q_c'\approx1.0830$ is the root in $(1,13/12
 $q^5+2q^4+q^3-2q^2-2q-1$.}\label{tab:n6}
 \end{table}
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig1_counterexamples}
+\caption{Two of the six-node counterexamples. Left: Geneson's graph in the labelling of the stage-0 certificate
+(\texttt{certificates/stage0\_geneson\_2607.21396.json}; $19$ arcs; it is isomorphic to $G_1$ of Table~\ref{tab:n6}). Right:
+$H_3$ (index $1{,}387{,}528$, $18$ arcs, adjacency from \texttt{certificates/n6\_summary.json}), the counterexample outside
+Geneson's twin class. Vertices are placed on a circle in digraph6 order, clockwise from the top; thick segments are
+bidirected pairs, thin arrows are single arcs with the head at the receiver, light dashed segments are non-adjacent
+pairs. The digraph6 string above each panel encodes the adjacency matrix row by row (row $i$ lists the $j$ with
+$i\to j$). Drawn by \texttt{notes/paper/figures/make\_figures.py}, which records every drawn arc in
+\texttt{notes/paper/figures/figures\_data.json}.}\label{fig:n6}
+\end{figure}
+Figure~\ref{fig:n6} shows Geneson's graph and $H_3$; $G_1$ and $G_2$ differ from Geneson's graph only by relabelling
+and by a twin switch (below).
+
 \paragraph{The chain.} In the limit sweep over all $1{,}540{,}944$ graphs, $1{,}512{,}594$ have no legal $\beta$ with all
 $a_i>0$ and therefore (Lemma~\ref{lem:A2}) no stable positive full support at any parameter; $28{,}350$ strict survivors
 remain, all among the $204{,}378$ domination-free graphs; exactly four are limit-stable ($K_6$, $G_1$, $G_2$, $H_3$);
@@ -843,7 +862,16 @@ one-parameter engine at $t=\infty$. Stage 1 counts are from the Burnside enumera
 totals, stages 5--6 recounted from the per-graph records.}\label{tab:chain8}
 \end{table}
 
-Table~\ref{tab:chain8} gives the chain. Stages 2--4 were run by an overflow-guarded C prefilter that is byte-identical to the
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig3_funnel}
+\caption{The accounting chain of the $n=8$ limit map (Table~\ref{tab:chain8}) on a logarithmic scale: digraphs read
+($801{,}558{,}826{,}511$), domination-free ($113{,}697{,}991{,}934$), spectral survivors ($417{,}951{,}273$, of which
+$417{,}603{,}634$ boundary lines were dropped), strict survivors ($347{,}639$) and limit counterexamples ($9{,}133$, plus
+$K_8$). Bar length is $\log_{10}$ of the count. Counts from \texttt{n8/n8\_prefilter\_TOTAL.txt} and
+\texttt{n8/n8\_limit\_tally.json}.}\label{fig:funnel}
+\end{figure}
+Table~\ref{tab:chain8} gives the chain, and Figure~\ref{fig:funnel} shows it on a logarithmic scale. Stages 2--4 were run by an overflow-guarded C prefilter that is byte-identical to the
 $n=7$ prefilter on all $1{,}540{,}944$ six-node digraphs and on the $638{,}042$ seven-node spectral survivors; it reads each digraph once, tests domination in the verbatim form of
 Lemma~\ref{lem:D}, and applies the Hurwitz test to the exact integer limit polynomial, returning three values. Only the
 $347{,}639$ strict survivors (all Hurwitz determinants positive, i.e.\ $\alpha<-1/2$) were stored; the $417{,}603{,}634$
@@ -895,6 +923,18 @@ graphs & 2 & 27 & 120 & 269 & 562 & 1{,}079 & 1{,}485 & 1{,}406 & 1{,}305 & 768 
 \end{tabular}
 \caption{Edge counts of the $9{,}133$ eight-node limit counterexamples ($56$ edges possible; the edge bound is $\ge29$).}\label{tab:n8edges}
 \end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig5_histograms}
+\caption{The $9{,}133$ eight-node limit counterexamples by number of arcs (left; the counts of Table~\ref{tab:n8edges},
+recounted from the adjacency matrices in \texttt{n8/n8\_limit\_HITS.jsonl}) and by the upper end of their stable
+$q$-interval (right; bins of width $0.05$ on $(1,7/4]$, half-open on the left). A graph is placed in a bin by the
+certified upper bound of the refined isolating interval of its upper end (\texttt{certificates/n8\_summary.json},
+\texttt{rows}); no isolating interval straddles a bin boundary, and the counts are consistent with the histogram of
+Section~\ref{sec:q8} (coarser below $21/20$, finer above). Counts are printed above the bars.}\label{fig:hist8}
+\end{figure}
+Figure~\ref{fig:hist8} shows the distribution of the edge counts and of the upper ends of the stable $q$-intervals.
 
 \begin{itemize}
 \item They are pairwise non-isomorphic (nauty canonical labelling), non-complete and domination-free; between $11$ and
@@ -963,7 +1003,7 @@ $(64800179/63963136,\,16200045/15990784)$ and $(39760951/39714816,\,106029203/10
 campaign.}\label{tab:n8min}
 \end{table}
 
-\subsection{The limit threshold at \texorpdfstring{$n=8$}{n = 8}}
+\subsection{The limit threshold at \texorpdfstring{$n=8$}{n = 8}}\label{sec:q8}
 Write $q_n^*(\infty)$ for the supremum of $q=\beta-1$ over the limit-stable intervals of the limit counterexamples on $n$
 nodes. Since $q<\beta-1$ on every ray and $q\to\beta-1$ as $t\to\infty$, $q_n^*\ge q_n^*(\infty)$, with equality at
 $n=6$ and $n=7$ (Theorems~\ref{thm:q6} and~\ref{thm:q7}: the suprema are approached as $t\to\infty$).
@@ -1029,6 +1069,21 @@ The following statements were checked exactly on all $9{,}133$ records; where a 
 The check files are listed in the footnote.\footnote{\cf{notes/n8_structure.md} with the tools and outputs in
 \cf{notes/n8_structure_tools/} (\cf{structure_summary.json}, \cf{motifs.json}, \cf{heredity.json}, \cf{families.json},
 \cf{analysis2.json}, \cf{positivity_check.json}, \cf{discriminate.json}, \cf{ham_never.json}, \cf{special_sets.json}).}
+\urldef{\dsixRecEight}\dsix+&GMx|\Aw^qz]w+
+\urldef{\dsixRecEightTwin}\dsix+&GVrm]A{^pZ]w+
+\urldef{\dsixSparseEight}\dsix+&GM?WUZeEie^O+
+Figure~\ref{fig:n8graphs} shows two of the graphs: the record graph of Theorem~\ref{thm:q8} and one of the two
+$29$-arc graphs of Table~\ref{tab:n8min}.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig4_n8_graphs}
+\caption{Two eight-node limit counterexamples, drawn as in Figure~\ref{fig:n6} (vertices in digraph6 order, clockwise
+from the top). Left: \dsixRecEight, $40$ arcs, $12$ bidirected pairs and no non-adjacent pair, whose stable
+interval has the largest upper end, $q_8^*(\infty)$ (Theorem~\ref{thm:q8}; its twin switch \dsixRecEightTwin\ has
+the same interval). Right: \dsixSparseEight, one of the two graphs attaining the edge bound, $29$ arcs, $3$
+bidirected pairs and $2$ non-adjacent pairs (Table~\ref{tab:n8min}). Adjacency from \texttt{n8/n8\_limit\_HITS.jsonl};
+decimals in the panel titles are display values of the certified upper ends.}\label{fig:n8graphs}
+\end{figure}
 \begin{itemize}
 \item \emph{Far from cliques.} The missing-edge digraph $D=J-I-A$ is never a matching, a star, a union of stars or a forest,
 and it always contains a directed cycle (proved: a $D$-source with a $D$-out-edge would make $u=(D^T+rI)^{-1}\one$
@@ -1096,7 +1151,29 @@ the $15$ known finite-$\eps$-only graphs of Lemma~\ref{lem:Bmech}); the $n\le7$ 
 Values of $q^*$ are display approximations of the exact algebraic numbers in Theorems~\ref{thm:q6}, \ref{thm:q7}
 and~\ref{thm:q8}.}\label{tab:thresholds}
 \end{table}
-Table~\ref{tab:thresholds} collects the thresholds. The counts grow by factors of about $41$ and $74$, the share of
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig2_thresholds}
+\caption{The threshold picture in the limit $\eps\to0$ ($q=\beta-1$). For $n=6$, $7$ and $8$ the stable $q$-intervals of
+the limit counterexamples ($3$, $123$ and $9{,}133$ intervals, from \texttt{certificates/n6\_summary.json},
+\texttt{certificates/COUNTEREXAMPLE\_CANDIDATES\_n7\_limit.jsonl} and \texttt{certificates/n8\_summary.json} with
+\texttt{n8/n8\_limit\_HITS.jsonl}) are drawn as horizontal segments, one row per graph, sorted by upper end (ties by
+lower end) from the bottom up, on a common $q$ axis. For $n=8$ the $9{,}133$ rows are drawn as their envelope, one
+horizontal band per row between its lower and upper end, which is what the dense stack of rows of sub-point thickness
+would show; the sixteen rows ending above $3/2$ are too thin to see. White gaps inside a stack are rows whose interval
+starts above $q=1$ (lower end a root rather than $\beta=2$): $6$ of the $123$ rows at $n=7$ and $971$ of the $9{,}133$
+at $n=8$, grouped because rows with equal upper ends are sub-sorted by lower end. Each segment runs from the upper bound
+of the isolating interval of its lower end
+(from $q=1$ when the interval starts at $\beta=2$) to the lower bound of the isolating interval of its upper end, so
+nothing is drawn longer than certified; the coarse stored isolating intervals at $n=6,7$ were first narrowed to width
+below $10^{-9}$ by exact bisection of the stored minimal polynomial, and every endpoint used is recorded in
+\texttt{notes/paper/figures/figures\_data.json}. Vertical lines mark $q_6^*$, $q_7^*=\rho$ and $q_8^*(\infty)$
+(Theorems~\ref{thm:q6}, \ref{thm:q7} and~\ref{thm:q8}) at the midpoints of their isolating intervals, narrowed by the
+same exact bisection to width below $10^{-9}$ so that each line coincides with the drawn end of the record rows; the
+decimals are display values.}\label{fig:thresholds}
+\end{figure}
+Table~\ref{tab:thresholds} collects the thresholds and Figure~\ref{fig:thresholds} shows the stable $q$-intervals of
+the limit counterexamples for $n=6,7,8$ on one axis. The counts grow by factors of about $41$ and $74$, the share of
 primitive counterexamples (containing no smaller one) grows from $3/3$ to $102/123$ to $6{,}720/9{,}133$, and the
 threshold grows from $1.1664$ to $1.3247$ to at least $1.7107$, against Geneson's $n-2$. At $n=8$ the record is set by a
 sink-free core, without any sink class; the sink-class families of Theorem~\ref{thm:QQ2Y} have larger limits ($-0.3516$ for
