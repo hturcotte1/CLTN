@@ -1427,3 +1427,31 @@ Corrections the referees found in earlier entries of this log (append-only, so r
     1079116235/1078984704], about 1.000122 (degree 21); certificates/n8_limit_summary.json corrected.
 Also scrubbed: three model-name mentions in older notes (a referee's aside, a retriever label and a verbatim
 acknowledgment quote), per the project rule that no model identifier appears in a pushed file.
+
+## 2026-11-01  External correctness report by Jesse Geneson on the October draft: three defects, all fixed, no count or threshold affected
+
+Geneson replied to the author's note with a one-page report (notes/referee_external/geneson_report_2026-11-01.pdf).
+(1) IMPORTANT: Section 3.1 said lower-dimensional cells of the two-parameter decomposition are boundary points and
+never SFP.  False: a vertical section above a root of a projection polynomial (a resultant with the legality
+boundary) need not lie on any boundary curve and can cross the open SFP region.  His example reproduced exactly
+(notes/referee_external/fixes_2026-11-01/prover_cells/geneson_section_check.py, independently by the referee's
+referee_check.py, 38/38 checks): for G_1, Res_t(Delta_5, L) = -(beta-2)^5 Delta_5(beta, 1/(beta-2)) has exactly
+one root beta_0 in (17/8, 15/7), on the degree-14 factor that is the certificate's own beta_critical; at
+(beta_0, 100), and in fact on the whole legal line beta = beta_0 and on [17/8, 15/7] x [100, inf), all a_i and all
+six Hurwitz determinants are positive, so the full support is an SFP there.  The implementation never relied on
+the false sentence: region2d samples only full-dimensional cells and records neither sections nor curves; every
+'never' verdict, count and supremum rests on full-dimensional cells and is sound by openness (lemma_Bprime_2d.md
+B''(4)-(5) already stated the correct description S = (cl(S_c) cap {L > 0}) \ Z).  Paper corrected (Section 3.1,
+'walls contain', the G_1 region paragraph).  (2) MINOR: Theorem 5.4 (first-order asymptotics) was stated for
+nu_inf in (1/2, 1) but invoked at nu_inf = 1/2 in Lemma 7.4.  The implicit-function expansion needs only a simple
+root with chi_1(z_0) != 0 and no other root on the line, so the theorem is now stated for [1/2, 1) for the
+expansion and the boundary curve; parts (a), (b) keep nu_inf > 1/2 (at the endpoint (a) is false for 0 < R* < 1/8,
+since the legality boundary c - sqrt(c^2 - c) = 1/2 + 1/(8c) + ... is of the same order); new part (c) at the
+endpoint with threshold R* > 1/8, which is Lemma 7.4's hypothesis (iii); E_0 rechecked exactly: R = 1/4.  The
+source notes had no gap (the paper had merged a lemma and a theorem).  (3) MINOR: Section 6.6 said the share of
+primitive counterexamples grows 3/3 -> 102/123 -> 6,720/9,133; the counts grow, the share falls (1, 34/41,
+6720/9133); recounted independently (doc_search/primitive_recount.py: 102 and 6,720 reproduced; with or without
+the finite-eps-only graph as a 'smaller counterexample' the n = 8 count is 6,720 either way); corrected in the
+paper, n8_structure.md, REPORT_n8.md, FINAL_SUMMARY.md.  Acknowledgment of the report added to the paper
+(Acknowledgments and Section 8.2); 34 pages, builds clean.  Open author action: confirm with Geneson that he
+agrees to being named in the paper.

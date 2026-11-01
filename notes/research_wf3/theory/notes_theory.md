@@ -246,7 +246,7 @@ Then the full support is a stable positive fixed point at legal `(eps, delta)` w
 `c = 1 + t/beta`, so K is positive stable iff `nu_A(c) > gamma`; by its eq. (2), for c > 1 the point is legal iff
 `gamma > nu_P2(c) := c - sqrt(c^2 - c) = 1/2 + 1/(8c) + O(c^-2)`. As c -> inf, one eigenvalue of `cJ - A` tends to +inf and
 the others to the roots of psi (Lemma I.2 with C = -A). By (ii) all but the two branches at `z0, z0bar` stay in
-`Re > 1/2 + delta0`; by Lemma AS and (i) those branches are `z0 + 1/(c s'(z0)) + O(c^-2)` with `1/s'(z0) = chi(z0)/psi'(z0)`.
+`Re > 1/2 + delta0`; by Lemma AS (the local lemma of lemma_M_refuted.md §4, which has no hypothesis on Re z0; the range nu_inf in (1/2, 1) of Theorem AS is not needed) and (i) those branches are `z0 + 1/(c s'(z0)) + O(c^-2)` with `1/s'(z0) = chi(z0)/psi'(z0)`.
 Hence `nu_A(c) = 1/2 + R/c + O(c^-2)` and, by (iii), `nu_A(c) - nu_P2(c) >= (R - 1/8)/(2c) > 0` for c >= c1. Take
 `gamma(c) := (nu_A(c) + nu_P2(c))/2`: legal and stable, and `gamma(c) -> 1/2`, i.e. `beta(c) -> 2+`. By (iv) and
 continuity (`A^T + gamma I` is nonsingular at the rational point beta = 2, Lemma I.4(g)), `w > 0` on `[2, 2 + eta)`;

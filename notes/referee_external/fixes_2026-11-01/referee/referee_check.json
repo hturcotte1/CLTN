@@ -1,0 +1,393 @@
+{
+ "checks": [
+  {
+   "name": "P1 convention: I - W = eps*K with eps=1/(1+t), delta=(beta-1)/(1+t)",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P1 Table-1 G_1 is isomorphic to the stage-0 Geneson graph (labelg)",
+   "pass": true,
+   "info": [
+    "&EEgFZtu",
+    "&EEgFZtu"
+   ]
+  },
+  {
+   "name": "P1 p monic of degree 6",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P1 a = adj(C)1 does not depend on t",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P1 Res_t(Delta5, L) = constant * (beta-2)^deg_t * Delta5(beta, 1/(beta-2))",
+   "pass": true,
+   "info": "deg_t Delta5 = 5, ratio = -1"
+  },
+  {
+   "name": "P1 P squarefree",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P1 exactly one root of P (hence of Res_t(Delta5,L)) in (17/8, 15/7]",
+   "pass": true,
+   "info": "Sturm count 1"
+  },
+  {
+   "name": "P1 cross-check: sympy count_roots on [17/8,15/7] = 1",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P1 root lies on an irreducible factor equal to the certificate beta_critical minpoly on [17/8,15/7]",
+   "pass": true,
+   "info": "degree 14; factor degrees [6, 14]"
+  },
+  {
+   "name": "P1 certificate: no recorded beta-cell meets [17/8,15/7]",
+   "pass": true,
+   "info": [
+    [
+     "2",
+     "17/8"
+    ],
+    [
+     "15/7",
+     "1029/475"
+    ],
+    [
+     "13/6",
+     "46/21"
+    ],
+    [
+     "57/26",
+     "167/76"
+    ],
+    [
+     "178/81",
+     "42/19"
+    ],
+    [
+     "31/14",
+     "79/34"
+    ]
+   ]
+  },
+  {
+   "name": "P1 certificate: res_Delta5_f1_L is a projection polynomial name",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P1 at t=100 all six a_i > 0 on [17/8,15/7] (Mobius coefficient test)",
+   "pass": true,
+   "info": [
+    4,
+    3,
+    4,
+    4,
+    2,
+    2
+   ]
+  },
+  {
+   "name": "P1 at t=100 all six Hurwitz determinants > 0 on [17/8,15/7]",
+   "pass": true,
+   "info": [
+    0,
+    3,
+    6,
+    10,
+    15,
+    20
+   ]
+  },
+  {
+   "name": "P1 legality 100(beta0-2) > 1",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P1 on beta=beta0, every Hurwitz det is a polynomial in s=t-1/(beta0-2) with nonnegative coefficients, not all 0 (=> >0 for s>0)",
+   "pass": true,
+   "info": {
+    "Delta1": [
+     1,
+     1
+    ],
+    "Delta2": [
+     1,
+     1,
+     1
+    ],
+    "Delta3": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "Delta4": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "Delta5": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "Delta6": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ]
+   }
+  },
+  {
+   "name": "P1 Delta5 vanishes exactly at the corner (beta0, 1/(beta0-2)) and nowhere else on the closed section",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P1 a_i(beta0) > 0",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P1 D = det K > 0 on the section",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P2 rows decode to digraph6 &FNFL~[udo?",
+   "pass": true,
+   "info": "&FNFL~[udo?"
+  },
+  {
+   "name": "P2 det(zI-(cJ-A)) = chi - c psi (matrix determinant lemma, exact)",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P2 z^2-z+1 divides psi",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P2 z^2-z+1 divides psi exactly once (z0 simple)",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P2 gcd(chi, z^2-z+1) = 1 (chi(z0) != 0)",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P2 every other root of psi has Re z > 1/2 (Hurwitz dets of psi2(1/2-x) all > 0, leading coeff > 0)",
+   "pass": true,
+   "info": [
+    "7",
+    "105/4",
+    "70",
+    "175/8"
+   ]
+  },
+  {
+   "name": "P2 chi(z0)/psi'(z0) = 1/4 - (sqrt3/12) i at z0 = 1/2 - (sqrt3/2) i",
+   "pass": true,
+   "info": "1/4 - sqrt(3)*I/12"
+  },
+  {
+   "name": "P2 conjugate root gives the same real part",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P2 1/s^'(z0) equals chi(z0)/psi'(z0)",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P2 R = 1/4 > 1/8 (Fraction)",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P2 (iv) w(2) = (A^T + I/2)^{-1} 1 > 0",
+   "pass": true,
+   "info": [
+    "6/17",
+    "2/17",
+    "2/17",
+    "2/17",
+    "6/17",
+    "2/17",
+    "10/17"
+   ]
+  },
+  {
+   "name": "P2 c - sqrt(c^2-c) = 1/2 + 1/(8c) + 1/(16c^2) + ... (all coefficients > 0)",
+   "pass": true,
+   "info": [
+    "1/2",
+    "1/8",
+    "1/16",
+    "5/128",
+    "7/256",
+    "21/1024",
+    "33/2048",
+    "429/32768"
+   ]
+  },
+  {
+   "name": "P2 c=1000, gamma=1/2+3/(16c): legal=True, K stable=True, W-path stable=True, x>0=True (expected stable=True)",
+   "pass": true,
+   "info": "eps=7997/15991997, delta=8003/15991997, q=127919952000/127888000009"
+  },
+  {
+   "name": "P2 c=1000, gamma=1/2+5/(16c): legal=True, K stable=False, W-path stable=False, x>0=True (expected stable=False)",
+   "pass": true,
+   "info": "eps=533/1066133, delta=1601/3198399, q=568675200/568248889"
+  },
+  {
+   "name": "P3 input sizes 3 / 123 / 9133",
+   "pass": true,
+   "info": [
+    3,
+    123,
+    9133
+   ]
+  },
+  {
+   "name": "P3 canonical classes distinct",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P3 primitive counts 3, 102, 6720 (independent labelg recount)",
+   "pass": true,
+   "info": [
+    102,
+    6720
+   ]
+  },
+  {
+   "name": "P3 102/123 = 34/41 and 6720/9133 irreducible",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P3 shares strictly decrease 1 > 34/41 > 6720/9133",
+   "pass": true,
+   "info": null
+  },
+  {
+   "name": "P3 display roundings 0.83 and 0.74 correct to 2 d.p.",
+   "pass": true,
+   "info": null
+  }
+ ],
+ "beta0_isolating_interval": [
+  "65487482425383/30786325577728",
+  "130974964850767/61572651155456"
+ ],
+ "beta0_display": 2.1271613677976284,
+ "section_signs": {
+  "Delta1": {
+   "deg_t": 1,
+   "coeff_signs_high_to_low_in_s": [
+    1,
+    1
+   ],
+   "constant_term_sign": 1
+  },
+  "Delta2": {
+   "deg_t": 2,
+   "coeff_signs_high_to_low_in_s": [
+    1,
+    1,
+    1
+   ],
+   "constant_term_sign": 1
+  },
+  "Delta3": {
+   "deg_t": 3,
+   "coeff_signs_high_to_low_in_s": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "constant_term_sign": 1
+  },
+  "Delta4": {
+   "deg_t": 4,
+   "coeff_signs_high_to_low_in_s": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "constant_term_sign": 1
+  },
+  "Delta5": {
+   "deg_t": 5,
+   "coeff_signs_high_to_low_in_s": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "constant_term_sign": 0
+  },
+  "Delta6": {
+   "deg_t": 6,
+   "coeff_signs_high_to_low_in_s": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "constant_term_sign": 0
+  }
+ },
+ "primitive": {
+  "n6": 3,
+  "n7": 102,
+  "n8": 6720,
+  "n7_containing_n6": 21,
+  "n8_containing_n6_or_n7(incl FNFL)": 2413
+ },
+ "shares_exact": [
+  "1",
+  "34/41",
+  "6720/9133"
+ ],
+ "shares_display": [
+  1.0,
+  0.8293,
+  0.7358
+ ],
+ "all_pass": true
+}

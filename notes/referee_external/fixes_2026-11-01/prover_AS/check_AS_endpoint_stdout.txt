@@ -1,0 +1,30 @@
+PASS digraph6 decodes to the paper's adjacency rows
+PASS E_0 is not a clique (complete bidirected)
+PASS chi, psi invariant under A -> A^T
+PASS psi(z) == 7 chi_perp(-z) with the paper's 7 chi_perp factorisation
+PASS z^2 - z + 1 divides psi
+PASS z^2 - z + 1 divides psi exactly once (z0 simple)
+PASS z^2 - z + 1 is irreducible over QQ
+PASS chi(z0) != 0 (gcd(chi, z^2-z+1) = 1)
+PASS all coefficients of +-C(1/2 - x) positive: ['7', '7', '7', '13/4', '5/16']
+PASS all Hurwitz minors of +-C(1/2 - x) strictly positive (other roots Re z > 1/2): ['7', '105/4', '70', '175/8']
+PASS roots of z^2-z+1 have real part exactly 1/2
+PASS psi'(z0) != 0 in K
+PASS chi(z0)/psi'(z0) = 1/4 - (sqrt(3)/12) i: Re=1/4, Im=-1/12*sqrt(3)
+PASS radical cross-check of chi(z0)/psi'(z0): 1/4 - sqrt(3)*I/12
+PASS 1/s^'(z0) equals chi(z0)/psi'(z0): 1/4 - sqrt(3)*I/12
+PASS R = 1/4 > 1/8 (exact Fraction comparison): 1/4
+PASS nu_P2 = 1/2 + x/8 + x^2/16 + 5x^3/128 + 7x^4/256 + O(x^5)
+PASS identity c - sqrt(c^2-c) == 1/(1+sqrt(1-1/c)) (c>1)
+PASS 1/2 + 1/(8c) < c - sqrt(c^2-c) for all c > 1 (exact root count on (0,1)): x**3 + 16*x**2 + 80*x + 128
+PASS c - sqrt(c^2-c) < 1/2 + 1/(8c) + 1/(8c^2) for all c >= 2 (exact root count on (0,1/2]): -x**7 - 4*x**6 - 22*x**5 - 36*x**4 - 97*x**3 - 32*x**2 - 80*x + 128
+PASS c=10: legal, positive, Hurwitz-stable full support (SFP) at gamma=1/2+3/(16c): eps=77/1517, delta=83/1517, all Hurwitz minors positive
+PASS c=100: legal, positive, Hurwitz-stable full support (SFP) at gamma=1/2+3/(16c): eps=797/159197, delta=803/159197, all Hurwitz minors positive
+PASS c=1000: legal, positive, Hurwitz-stable full support (SFP) at gamma=1/2+3/(16c): eps=7997/15991997, delta=8003/15991997, all Hurwitz minors positive
+PASS c=10000: legal, positive, Hurwitz-stable full support (SFP) at gamma=1/2+3/(16c): eps=79997/1599919997, delta=80003/1599919997, all Hurwitz minors positive
+PASS c=10: legal, Hurwitz-UNSTABLE (decided, not undecided) at gamma=1/2+5/(16c): positive=False, Hurwitz minor 6 negative
+PASS c=100: legal, Hurwitz-UNSTABLE (decided, not undecided) at gamma=1/2+5/(16c): positive=True, Hurwitz minor 6 negative
+PASS c=1000: legal, Hurwitz-UNSTABLE (decided, not undecided) at gamma=1/2+5/(16c): positive=True, Hurwitz minor 6 negative
+PASS c=10000: legal, Hurwitz-UNSTABLE (decided, not undecided) at gamma=1/2+5/(16c): positive=True, Hurwitz minor 6 negative
+PASS first-order prediction 8R/(beta-2) at beta=53/26 equals 52 (paper: t_1 in (53,54); legality t > 26)
+ALL PASS

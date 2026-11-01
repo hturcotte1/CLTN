@@ -390,11 +390,11 @@ digraphs with at most four nodes; our claims for $k\le4$ rest on that certificat
 %======================================================================
 \section{The exact machinery}\label{sec:machinery}
 
-\subsection{Boundary sets and three-valued decisions}
+\subsection{Boundary sets and three-valued decisions}\label{sec:boundary}
 At a single sampled parameter a vanishing Hurwitz determinant says nothing about the neighbourhood, so
 every pointwise procedure in this work returns one of three values: \emph{stable}, \emph{not stable}, or
 \emph{undecided}. An undecided sample is never counted as unstable and never as a counterexample. Regions
-are decided instead on open cells of a decomposition whose walls are the zero sets of a proved boundary set.
+are decided instead on open cells of a decomposition whose walls contain the zero sets of a proved boundary set.
 
 \begin{lemma}[Imaginary-axis roots; proved]\label{lem:b3}
 If $f$ is real of degree $m\ge2$ and $f(iw)=0$ for some real $w\neq0$, then $\Delta_{m-1}(f)=0$.
@@ -425,7 +425,18 @@ the complement of the curves $\{a_i=0\}$, $\{D=0\}$, $\{\Delta_{m-1}=0\}$ and th
 $L(\beta,t)=t(\beta-2)-1=0$ in the open legal region, and that over each open $\beta$-interval free of the roots of a
 projection set (leading coefficients, discriminants and pairwise resultants of these polynomials in $t$) the sectors
 of a cylindrical algebraic decomposition are sign-invariant cells. Each full-dimensional cell is decided at one exact
-rational sample; lower-dimensional cells are boundary points and are never SFP.
+rational sample; lower-dimensional cells (the pieces of the curves over each open $\beta$-cell, the vertical lines above roots
+of the projection polynomials, and the points where these meet) are not sampled. Points on a boundary curve or on the vertical
+line above a positivity root are never SFP, but a vertical line above a root of a
+leading coefficient, discriminant or resultant need not lie on any boundary curve and can pass through the open SFP
+region: for $G_1$ of Table~\ref{tab:n6} the projection polynomial $\operatorname{Res}_t(\Delta_5,L)$ has a unique root
+$\beta_0\in(17/8,15/7)$, the root there of $\Delta_5(\beta,1/(\beta-2))$, and the full support is an SFP at
+$(\beta_0,100)$; we thank J.~Geneson for this example.\footnote{\cf{notes/referee_external/fixes_2026-11-01/prover_cells/geneson_section_check.py}.}
+Since the SFP set $S$ is open (Lemma~\ref{lem:open}) and the full-dimensional cells are dense, they determine it exactly:
+$S=\bigl(\overline{S_c}\cap\{L>0\}\bigr)\setminus Z$, where $S_c$ is the union of the SFP full-dimensional cells and $Z$ the
+union of the zero sets of the $a_i$, $o_k$, $D$ and $\Delta_{m-1}$; in particular $S\neq\emptyset$ iff some full-dimensional
+cell is SFP, and every ``never'' verdict, count and supremum of $q$ below is a statement about full-dimensional
+cells.\footnote{\cf{notes/lemma_Bprime_2d.md}, Corollary~B$''$(4)--(5).}
 
 \subsection{The engines}
 \paragraph{One-parameter engine.} At fixed $t$ (or $t=\infty$), the polynomials of Lemma~\ref{lem:B} are obtained by
@@ -549,7 +560,7 @@ weaker common-sign filter left a superset of $706$, which was also certified in 
 stable.)\footnote{\cf{certificates/region2d_n5_shard0of1_tally.json}, \cf{certificates/n5_summary.json}.}
 This agrees with the independent result of \cite{SixIsMinimal2026}.
 
-\subsection{\texorpdfstring{$n=6$}{n = 6}}
+\subsection{\texorpdfstring{$n=6$}{n = 6}}\label{sec:n6map}
 \begin{theorem}[$n=6$; certified, hand-verified]\label{thm:n6}
 Among the $1{,}540{,}944$ digraphs on six nodes, exactly three non-complete graphs have a stable positive full-support
 fixed point at some legal parameter (Table~\ref{tab:n6}). Every other six-node graph is certified never stable and
@@ -598,7 +609,8 @@ graphs; at $\eps=1/10$ only $K_6$ and Geneson's class; at $\eps=1/4$ and $1/2$ o
 
 \paragraph{The regions.} For $G_1$ and $G_2$ the stable positive region is
 $\{2<\beta<\beta_c,\ t>\max(1/(\beta-2),T(\beta))\}$ with $T(\beta)<1/(\beta-2)$ on an initial interval $(2,\beta_1)$,
-$\beta_1$ a degree-$14$ algebraic number in $(17/8,15/7)$: these graphs are stable at \emph{every} legal $t$ when $\delta/\eps$
+$\beta_1$ a degree-$14$ algebraic number in $(17/8,15/7)$, the root there of $\operatorname{Res}_t(\Delta_5,L)$ (the
+region also contains the whole legal vertical section $\beta=\beta_1$; Section~\ref{sec:boundary}): these graphs are stable at \emph{every} legal $t$ when $\delta/\eps$
 is close enough to $1$, so counterexamples exist with $q$ arbitrarily close to $1$. For $H_3$ the two thresholds
 coincide: the full support is an SFP iff $2<\beta<\beta_1'$, at every legal $t$, where $\beta_1'\approx2.08302$ is the root
 in $(152/73,25/12)$ of $\beta^5-3\beta^4+3\beta^3-3\beta^2+2\beta-1$, a positivity boundary ($a_5=0$). A witness is
@@ -746,19 +758,27 @@ $\det(zI-(cJ-A))=\chi(z)-c\psi(z)$; roots of $\gcd(\chi,\psi)$ are eigenvalues f
 \emph{moving}.
 
 \begin{theorem}[First-order asymptotics; proved]\label{thm:AS}
-Assume $\nu_\infty:=-\alpha\in(1/2,1)$ and that every root $z_0$ of $\psi$ with $\Rea z_0=\nu_\infty$ is simple and not a root of
-$\chi$. Let $R^*=\min\Rea\bigl(1/\hat s\,'(z_0)\bigr)$ over these roots. Then $\nu_A(c)=\nu_\infty+R^*/c+O(c^{-2})$, and the
-boundary of the stable region near $(\beta_c,\infty)$ is $\beta=\beta_c+\beta_c^3R^*/t+O(t^{-2})$.
+Assume $\nu_\infty:=-\alpha\in[1/2,1)$, so $\beta_c=1/(1-\nu_\infty)\in[2,\infty)$, and that every root $z_0$ of $\psi$ with
+$\Rea z_0=\nu_\infty$ is simple and not a root of $\chi$. Let $R^*=\min\Rea\bigl(1/\hat s\,'(z_0)\bigr)$ over these roots. Then
+$\nu_A(c)=\nu_\infty+R^*/c+O(c^{-2})$, and near $(\beta_c,\infty)$ the curve $\nu_A(c)=\gamma$, on which $K$ loses positive
+stability, is $\beta=\beta_c+\beta_c^3R^*/t+O(t^{-2})$; for $\nu_\infty>1/2$ it is the boundary of the stable region there.
 \begin{enumerate}
-\item[(a)] If $R^*>0$, then for every $\beta$ slightly above $\beta_c$ the stable $t$-set is nonempty and bounded above; if
-moreover $a(\beta_c)>0$, these points are SFPs.
-\item[(b)] If $R^*<0$, the stable $t$-set is upward closed for large $t$ near $\beta_c$.
+\item[(a)] If $\nu_\infty>1/2$ and $R^*>0$, then for every $\beta$ slightly above $\beta_c$ the stable $t$-set is nonempty and
+bounded above; if moreover $a(\beta_c)>0$, these points are SFPs.
+\item[(b)] If $\nu_\infty>1/2$ and $R^*<0$, the stable $t$-set is upward closed for large $t$ near $\beta_c$.
+\item[(c)] If $\nu_\infty=1/2$, then $\beta_c=2$ and the legality boundary $\beta=2+1/t$ is of the same order as the curve
+above. If $R^*>1/8$, there are legal stable points with $t\to\infty$ and $\beta\to2^+$, and they are SFPs if $a(2)>0$
+(Lemma~\ref{lem:A2}; cf.\ Lemma~\ref{lem:Bmech}); if $R^*<1/8$, no legal point with $\beta$ bounded and $t$ large is stable.
 \end{enumerate}
 \end{theorem}
 \begin{proof}[Sketch]
 With $e=1/c$ the moving eigenvalues solve $\psi_1(z)-e\chi_1(z)=0$ ($\chi=h\chi_1$, $\psi=h\psi_1$, $h=\gcd$); the implicit function
 theorem gives an analytic branch $z(e)=z_0+e\,\chi_1(z_0)/\psi_1'(z_0)+O(e^2)$, and $\chi_1(z_0)/\psi_1'(z_0)=1/\hat s\,'(z_0)$.
-\cf{notes/lemma_M_refuted.md}, \S4.
+The other bounded eigenvalues stay near roots of $\psi$ with real part $>\nu_\infty$ and one eigenvalue tends to $+\infty$, so
+$\nu_A(c)$ is the minimum of $\Rea z(1/c)$ over the critical branches. None of this uses $\nu_\infty>1/2$; that bound enters
+only (a) and (b), where it makes every large $c$ legal for all $\gamma$ near $\nu_\infty$. For (c), legal stability means
+$c-\sqrt{c^2-c}<\gamma<\nu_A(c)$, and $c-\sqrt{c^2-c}=1/(1+\sqrt{1-1/c})=\tfrac12+\tfrac1{8c}+O(c^{-2})$ exceeds
+$\tfrac12+\tfrac1{8c}$ for every $c>1$. \cf{notes/lemma_M_refuted.md}, \S4.
 \end{proof}
 
 \begin{proposition}[Bulge rule at $n=7$; certified]\label{prop:bulge}
@@ -1131,7 +1151,7 @@ finite-type integer family, of the kind the Hurwitz-in-$k$ arguments of Theorems
 handle.\footnote{\cf{notes/n8_structure_tools/family_test.json}; \cf{clique_class_test_n\{3,...,9\}.json};
 \cf{clique_class_control.json}.}
 
-\subsection{The threshold picture for \texorpdfstring{$n=6,7,8$}{n = 6, 7, 8}}
+\subsection{The threshold picture for \texorpdfstring{$n=6,7,8$}{n = 6, 7, 8}}\label{sec:thrpicture}
 \begin{table}[ht]
 \centering
 \small
@@ -1173,8 +1193,9 @@ same exact bisection to width below $10^{-9}$ so that each line coincides with t
 decimals are display values.}\label{fig:thresholds}
 \end{figure}
 Table~\ref{tab:thresholds} collects the thresholds and Figure~\ref{fig:thresholds} shows the stable $q$-intervals of
-the limit counterexamples for $n=6,7,8$ on one axis. The counts grow by factors of about $41$ and $74$, the share of
-primitive counterexamples (containing no smaller one) grows from $3/3$ to $102/123$ to $6{,}720/9{,}133$, and the
+the limit counterexamples for $n=6,7,8$ on one axis. The counts grow by factors of about $41$ and $74$; the number of
+primitive counterexamples (containing no counterexample on fewer nodes as an induced subgraph) grows from $3$ to $102$ to
+$6{,}720$, while their share falls from $3/3=1$ to $102/123=34/41\approx0.83$ to $6{,}720/9{,}133\approx0.74$; and the
 threshold grows from $1.1664$ to $1.3247$ to at least $1.7107$, against Geneson's $n-2$. At $n=8$ the record is set by a
 sink-free core, without any sink class; the sink-class families of Theorem~\ref{thm:QQ2Y} have larger limits ($-0.3516$ for
 Q, $-1/4$ for Q2) but reach them only for large class sizes; the growth of $q_n^*$ at small $n$ comes from new cores, while the
@@ -1246,7 +1267,7 @@ $\Rea z=-1/2$). The same construction proves $9$ families on the three six-node 
 $124$ seven-node graphs, each for every $k\ge1$, by exact real-root isolation in $k$; an independent referee re-proved all $626$
 for every real $k\ge1$.\footnote{\cf{notes/research_wf3/theory/families_catalogue_n6.json}, \cf{families_catalogue_n7.json}.}
 
-\subsection{Finite-\texorpdfstring{$\eps$}{eps}-only counterexamples on every \texorpdfstring{$n\ge7$}{n >= 7}}
+\subsection{Finite-\texorpdfstring{$\eps$}{eps}-only counterexamples on every \texorpdfstring{$n\ge7$}{n >= 7}}\label{sec:finiteeps}
 \begin{lemma}[Boundary mechanism; proved]\label{lem:Bmech}
 Suppose (i) $\psi$ has a conjugate pair of simple roots $z_0,\bar z_0$ with $\Rea z_0=1/2$ and $\chi(z_0)\ne0$; (ii) every other
 root of $\psi$ has real part $>1/2$; (iii) $R:=\Rea\bigl(\chi(z_0)/\psi'(z_0)\bigr)>1/8$; (iv) $w(2)=(A^T+\tfrac12I)^{-1}\one>0$.
@@ -1254,7 +1275,10 @@ Then $\alpha=-1/2$, so the graph is never limit-stable at a legal $\beta$, yet i
 legal points with $\eps$ arbitrarily small (and $\beta\to2^+$).
 \end{lemma}
 \begin{proof}[Sketch]
-By Theorem~\ref{thm:AS}, $\nu_A(c)=\tfrac12+R/c+O(c^{-2})$, while the legality boundary is
+By (i) and (ii), $\nu_\infty=1/2$ and the roots of $\psi$ on $\Rea z=1/2$ are exactly $z_0,\bar z_0$, simple and not roots
+of $\chi$; at a root of $\psi$, $1/\hat s\,'(z_0)=\chi(z_0)/\psi'(z_0)$, and conjugate roots give the same real part, so
+$R^*=R$. The expansion of Theorem~\ref{thm:AS}, which holds at $\nu_\infty=1/2$ (parts (a) and (b) are not used), gives
+$\nu_A(c)=\tfrac12+R/c+O(c^{-2})$, while the legality boundary is
 $c-\sqrt{c^2-c}=\tfrac12+\tfrac1{8c}+O(c^{-2})$. If $R>1/8$ there is room between them for all large $c$; choose a rational
 $\gamma$ in between. Positivity holds near $\beta=2$ by (iv) and is $t$-free.
 \end{proof}
@@ -1413,7 +1437,10 @@ theorems (Theorems~\ref{thm:famF}, \ref{thm:famE}, \ref{thm:QQ2Y}, \ref{thm:U}, 
 threshold tool were each reviewed by a separate reviewer internal to the project (not external peer review) who re-derived the steps, taking Lemma~\ref{lem:limit}(b),(c) as given; no blocking
 issue was found. Non-fatal defects found
 by the referees (e.g.\ a misprinted node count, $2p(1)-1$ for $2p(1)-3$, in the notes on Theorem~\ref{thm:U}) are logged and
-corrected here.
+corrected here. An external correctness report on the October 2026 draft (J.~Geneson) found that Section~\ref{sec:boundary} misdescribed the
+lower-dimensional cells of the decomposition, that Lemma~\ref{lem:Bmech} invoked Theorem~\ref{thm:AS} at the endpoint
+$\nu_\infty=1/2$ outside its stated range, and that the primitive proportions of Section~\ref{sec:thrpicture} decrease rather than grow; all
+three are corrected in this version and none affects a count or a threshold.
 
 \subsection{Two machine campaigns at \texorpdfstring{$n=8$}{n = 8}}
 The $9{,}133$ eight-node limit counterexamples were verified twice by machine, with no human hand check. In the first
@@ -1589,7 +1616,7 @@ Lean & \cf{notes/lean/CtlnCert/} & \texttt{lake build}, \texttt{Audit.lean}\\
 \bibliographystyle{plain}
 
 \section*{Acknowledgments}
-The enumeration, certification and verification pipelines described in Section~\ref{sec:verification} were built and run by automated software agents under the author's direction; every statement in this paper rests on the exact, re-runnable certificates in the accompanying repository, and the author is responsible for the content. The $n=5$ reproduction uses the published package of Curto and collaborators; nauty (geng, directg, labelg) was used for graph enumeration and canonical labelling.
+The enumeration, certification and verification pipelines described in Section~\ref{sec:verification} were built and run by automated software agents under the author's direction; every statement in this paper rests on the exact, re-runnable certificates in the accompanying repository, and the author is responsible for the content. The $n=5$ reproduction uses the published package of Curto and collaborators; nauty (geng, directg, labelg) was used for graph enumeration and canonical labelling. A correctness report by J.~Geneson on the October 2026 draft led to the corrections in Section~\ref{sec:boundary} and the description of the region of $G_1$ (Section~\ref{sec:n6map}), in Theorem~\ref{thm:AS} and Lemma~\ref{lem:Bmech}, and in Section~\ref{sec:thrpicture}.
 
 \bibliography{refs}
 }

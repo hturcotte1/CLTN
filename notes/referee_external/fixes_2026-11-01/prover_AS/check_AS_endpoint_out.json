@@ -1,0 +1,273 @@
+{
+ "graph": "&FNFL~[udo?",
+ "checks": {
+  "digraph6 decodes to the paper's adjacency rows": {
+   "ok": true,
+   "detail": null
+  },
+  "E_0 is not a clique (complete bidirected)": {
+   "ok": true,
+   "detail": null
+  },
+  "chi, psi invariant under A -> A^T": {
+   "ok": true,
+   "detail": null
+  },
+  "psi(z) == 7 chi_perp(-z) with the paper's 7 chi_perp factorisation": {
+   "ok": true,
+   "detail": null
+  },
+  "z^2 - z + 1 divides psi": {
+   "ok": true,
+   "detail": null
+  },
+  "z^2 - z + 1 divides psi exactly once (z0 simple)": {
+   "ok": true,
+   "detail": null
+  },
+  "z^2 - z + 1 is irreducible over QQ": {
+   "ok": true,
+   "detail": null
+  },
+  "chi(z0) != 0 (gcd(chi, z^2-z+1) = 1)": {
+   "ok": true,
+   "detail": null
+  },
+  "all coefficients of +-C(1/2 - x) positive": {
+   "ok": true,
+   "detail": [
+    "7",
+    "7",
+    "7",
+    "13/4",
+    "5/16"
+   ]
+  },
+  "all Hurwitz minors of +-C(1/2 - x) strictly positive (other roots Re z > 1/2)": {
+   "ok": true,
+   "detail": [
+    "7",
+    "105/4",
+    "70",
+    "175/8"
+   ]
+  },
+  "roots of z^2-z+1 have real part exactly 1/2": {
+   "ok": true,
+   "detail": null
+  },
+  "psi'(z0) != 0 in K": {
+   "ok": true,
+   "detail": null
+  },
+  "chi(z0)/psi'(z0) = 1/4 - (sqrt(3)/12) i": {
+   "ok": true,
+   "detail": "Re=1/4, Im=-1/12*sqrt(3)"
+  },
+  "radical cross-check of chi(z0)/psi'(z0)": {
+   "ok": true,
+   "detail": "1/4 - sqrt(3)*I/12"
+  },
+  "1/s^'(z0) equals chi(z0)/psi'(z0)": {
+   "ok": true,
+   "detail": "1/4 - sqrt(3)*I/12"
+  },
+  "R = 1/4 > 1/8 (exact Fraction comparison)": {
+   "ok": true,
+   "detail": "1/4"
+  },
+  "nu_P2 = 1/2 + x/8 + x^2/16 + 5x^3/128 + 7x^4/256 + O(x^5)": {
+   "ok": true,
+   "detail": null
+  },
+  "identity c - sqrt(c^2-c) == 1/(1+sqrt(1-1/c)) (c>1)": {
+   "ok": true,
+   "detail": null
+  },
+  "1/2 + 1/(8c) < c - sqrt(c^2-c) for all c > 1 (exact root count on (0,1))": {
+   "ok": true,
+   "detail": "x**3 + 16*x**2 + 80*x + 128"
+  },
+  "c - sqrt(c^2-c) < 1/2 + 1/(8c) + 1/(8c^2) for all c >= 2 (exact root count on (0,1/2])": {
+   "ok": true,
+   "detail": "-x**7 - 4*x**6 - 22*x**5 - 36*x**4 - 97*x**3 - 32*x**2 - 80*x + 128"
+  },
+  "c=10: legal, positive, Hurwitz-stable full support (SFP) at gamma=1/2+3/(16c)": {
+   "ok": true,
+   "detail": "eps=77/1517, delta=83/1517, all Hurwitz minors positive"
+  },
+  "c=100: legal, positive, Hurwitz-stable full support (SFP) at gamma=1/2+3/(16c)": {
+   "ok": true,
+   "detail": "eps=797/159197, delta=803/159197, all Hurwitz minors positive"
+  },
+  "c=1000: legal, positive, Hurwitz-stable full support (SFP) at gamma=1/2+3/(16c)": {
+   "ok": true,
+   "detail": "eps=7997/15991997, delta=8003/15991997, all Hurwitz minors positive"
+  },
+  "c=10000: legal, positive, Hurwitz-stable full support (SFP) at gamma=1/2+3/(16c)": {
+   "ok": true,
+   "detail": "eps=79997/1599919997, delta=80003/1599919997, all Hurwitz minors positive"
+  },
+  "c=10: legal, Hurwitz-UNSTABLE (decided, not undecided) at gamma=1/2+5/(16c)": {
+   "ok": true,
+   "detail": "positive=False, Hurwitz minor 6 negative"
+  },
+  "c=100: legal, Hurwitz-UNSTABLE (decided, not undecided) at gamma=1/2+5/(16c)": {
+   "ok": true,
+   "detail": "positive=True, Hurwitz minor 6 negative"
+  },
+  "c=1000: legal, Hurwitz-UNSTABLE (decided, not undecided) at gamma=1/2+5/(16c)": {
+   "ok": true,
+   "detail": "positive=True, Hurwitz minor 6 negative"
+  },
+  "c=10000: legal, Hurwitz-UNSTABLE (decided, not undecided) at gamma=1/2+5/(16c)": {
+   "ok": true,
+   "detail": "positive=True, Hurwitz minor 6 negative"
+  },
+  "first-order prediction 8R/(beta-2) at beta=53/26 equals 52 (paper: t_1 in (53,54); legality t > 26)": {
+   "ok": true,
+   "detail": null
+  }
+ },
+ "chi": "z**7 - 8*z**5 + 22*z**4 - 30*z**3 + 25*z**2 - 13*z + 3",
+ "psi": "7*z**6 - 28*z**5 + 56*z**4 - 68*z**3 + 52*z**2 - 24*z + 5",
+ "psi_factored": "(z - 1)*(z**2 - z + 1)*(7*z**3 - 14*z**2 + 14*z - 5)",
+ "psi_cofactor": "7*z**4 - 21*z**3 + 28*z**2 - 19*z + 5",
+ "cofactor_shift_coeffs": [
+  "7",
+  "7",
+  "7",
+  "13/4",
+  "5/16"
+ ],
+ "cofactor_shift_hurwitz_minors": [
+  "7",
+  "105/4",
+  "70",
+  "175/8"
+ ],
+ "chi_mod_m": "-z",
+ "dpsi_mod_m": "-2*z - 2",
+ "chi_over_dpsi_at_z0": {
+  "as_u_plus_v_z0": [
+   "1/6",
+   "1/6"
+  ],
+  "Re": "1/4",
+  "Im/sqrt(3)": "-1/12"
+ },
+ "R": "1/4",
+ "nu_P2_series_in_x=1/c": "7*x**4/256 + 5*x**3/128 + x**2/16 + x/8 + 1/2",
+ "lower_bound_poly": "x**3 + 8*x**2",
+ "upper_bound_poly": "-x**5 - 2*x**4 - 9*x**3 + 8*x**2",
+ "finite_c_witnesses": [
+  {
+   "c": "10",
+   "gamma": "83/160",
+   "beta": "160/77",
+   "t": "1440/77",
+   "eps": "77/1517",
+   "delta": "83/1517",
+   "q": "119520/116809",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "q_display_only": 1.023208828086877
+  },
+  {
+   "c": "100",
+   "gamma": "803/1600",
+   "beta": "1600/797",
+   "t": "158400/797",
+   "eps": "797/159197",
+   "delta": "803/159197",
+   "q": "127195200/126880009",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "q_display_only": 1.002484165965026
+  },
+  {
+   "c": "1000",
+   "gamma": "8003/16000",
+   "beta": "16000/7997",
+   "t": "15984000/7997",
+   "eps": "7997/15991997",
+   "delta": "8003/15991997",
+   "q": "127919952000/127888000009",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "q_display_only": 1.0002498435427698
+  },
+  {
+   "c": "10000",
+   "gamma": "80003/160000",
+   "beta": "160000/79997",
+   "t": "1599840000/79997",
+   "eps": "79997/1599919997",
+   "delta": "80003/1599919997",
+   "q": "127991999520000/127988800000009",
+   "legal": true,
+   "positive": true,
+   "stable": true,
+   "stability_detail": "all Hurwitz minors positive",
+   "stable_fixed_point": true,
+   "q_display_only": 1.0000249984372929
+  }
+ ],
+ "finite_c_upper_side": [
+  {
+   "c": "10",
+   "gamma": "17/32",
+   "eps": "5/101",
+   "delta": "17/303",
+   "legal": true,
+   "positive": false,
+   "stable": false,
+   "stability_detail": "Hurwitz minor 6 negative"
+  },
+  {
+   "c": "100",
+   "gamma": "161/320",
+   "eps": "53/10613",
+   "delta": "161/31839",
+   "legal": true,
+   "positive": true,
+   "stable": false,
+   "stability_detail": "Hurwitz minor 6 negative"
+  },
+  {
+   "c": "1000",
+   "gamma": "1601/3200",
+   "eps": "533/1066133",
+   "delta": "1601/3198399",
+   "legal": true,
+   "positive": true,
+   "stable": false,
+   "stability_detail": "Hurwitz minor 6 negative"
+  },
+  {
+   "c": "10000",
+   "gamma": "16001/32000",
+   "eps": "5333/106661333",
+   "delta": "16001/319983999",
+   "legal": true,
+   "positive": true,
+   "stable": false,
+   "stability_detail": "Hurwitz minor 6 negative"
+  }
+ ],
+ "first_order_prediction_at_beta_53_26": {
+  "8R/(beta-2)": "52",
+  "1/(beta-2)": "26"
+ },
+ "all_pass": true,
+ "failed": []
+}

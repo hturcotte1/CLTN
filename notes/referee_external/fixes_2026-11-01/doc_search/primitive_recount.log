@@ -1,0 +1,44 @@
+0 0.0009737014770507812
+1000 0.4674863815307617
+2000 0.8907814025878906
+3000 1.4234204292297363
+4000 1.8801720142364502
+5000 2.3720901012420654
+6000 2.8150782585144043
+7000 3.333596706390381
+8000 3.768425703048706
+9000 4.202822685241699
+{
+ "counts": {
+  "n6_counterexamples": 3,
+  "n7_limit_counterexamples": 123,
+  "n7_all_finite_eps": 124,
+  "n8_limit_counterexamples": 9133
+ },
+ "n7": {
+  "contain_an_n6_counterexample": 21,
+  "primitive_no_n6_induced": 102
+ },
+ "n8": {
+  "contain_an_n6_counterexample": 308,
+  "contain_an_n7_limit_counterexample": 2323,
+  "contain_an_n7_limit_or_FNFL": 2324,
+  "primitive_no_n6_or_n7_limit_induced": 6720,
+  "primitive_no_n6_or_n7_limit_or_FNFL_induced": 6720
+ },
+ "shares_exact": {
+  "n6": "1",
+  "n7": "34/41",
+  "n8": "6720/9133",
+  "n8_excluding_FNFL_containers": "6720/9133"
+ },
+ "shares_decimal_display_only": {
+  "n6": 1.0,
+  "n7": 0.8292682926829268,
+  "n8": 0.7357932771269025
+ },
+ "monotone": {
+  "absolute_counts_increase": true,
+  "shares_decrease": true
+ }
+}

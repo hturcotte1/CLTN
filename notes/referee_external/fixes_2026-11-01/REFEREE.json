@@ -1,0 +1,135 @@
+{
+ "role": "independent referee of the applied fixes (2026-11-01)",
+ "inputs_read": [
+  "notes/referee_external/geneson_report_2026-11-01.txt",
+  "fixes_2026-11-01/APPLIED.md",
+  "notes/paper/paper.tex (l. 393-439, 520-615, 755-790, 1150-1200, 1240-1310, 1425-1445, 1618)",
+  "region2d.py",
+  "certificates/region2d_n6_shard2of3_HITS.jsonl (G_1, idx 1000255)",
+  "prover_cells/NOTE.md",
+  "prover_AS/check_AS_endpoint_stdout.txt",
+  "doc_search/primitive_recount.py/.json",
+  "notes/lemma_M_refuted.md Remark (endpoint)",
+  "notes/research_wf3/theory/notes_theory.md 4.2"
+ ],
+ "script": "notes/referee_external/fixes_2026-11-01/referee/referee_check.py (exact sympy/Fraction; own Sturm and Hurwitz code; nauty labelg for isomorphism; about 80 s)",
+ "script_output": "notes/referee_external/fixes_2026-11-01/referee/referee_check.json",
+ "script_all_pass": true,
+ "n_checks": 38,
+ "verdict": "The three corrections are mathematically correct and fix the three reported defects. Four MINOR wording points remain (none affects a result); see findings.",
+ "findings": [
+  {
+   "severity": "NOTE",
+   "where": "paper.tex Section 3.1 (l. 427-439)",
+   "description": "Verified independently and exactly. Table-1 G_1 is isomorphic to the stage-0 graph (labelg); I - W = eps*K under the CLAUDE.md convention; Res_t(Delta5, L) = -(beta-2)^5 Delta5(beta, 1/(beta-2)) (deg_t Delta5 = 5); P squarefree, factor degrees 6 and 14; own Sturm count gives exactly one root in (17/8, 15/7], on the degree-14 factor, which equals the certificate beta_critical minpoly; at t = 100 all six a_i and all six Hurwitz determinants pass the Mobius coefficient test on [17/8, 15/7]; 100(beta0 - 2) > 1. Stronger: on the line beta = beta0, with t = 1/(beta0-2) + s, every Delta_k and D is a polynomial in s whose coefficients have exact sign +1 at beta0 except the constant terms of Delta5 and Delta6, which vanish; so the whole legal section is SFP, confirming edit 3. The formula S = (cl(S_c) ∩ {L>0}) \\ Z is correct: S open and the cells dense give S ⊂ cl(S_c); points of Z are never SFP (a_i = 0 gives x_i = 0, D = 0 or Delta_{m-1} = 0 rule out Hurwitz stability, o_k = 0 violates the strict condition 2); a point of cl(S_c) ∩ {L>0} off Z lies in a component of the complement of the curves that meets an SFP cell, so it is SFP by Lemma B'. Consistent with lem:open. The text does not claim sections are decided (it says they are not sampled), and the 'never'/count/supremum statements are correctly reduced to full-dimensional cells. Consistent with region2d.py (beta-cells and t-cells are open gaps between isolating intervals, sampled at rational interior points; t-cells start above t_min = 1/(b0-2)) and with the G_1 certificate (recorded beta-cells (2,17/8), (15/7,1029/475), ...; none meets [17/8,15/7]; res_Delta5_f1_L is a listed projection polynomial). The false sentence is gone from paper.tex.",
+   "fix": "None."
+  },
+  {
+   "severity": "MINOR",
+   "where": "paper.tex Section 3.1, l. 428-429",
+   "description": "The parenthetical definition of the lower-dimensional cells is incomplete. It lists only the vertical lines above projection roots and points on them. It leaves out the 1-cells that are pieces of the curves D, Delta_{m-1}, L over each open beta-cell, which are also not sampled. The next sentence covers them in substance (they lie on boundary curves), so nothing false is claimed, but the definition is wrong as stated. 'Points on ... a positivity root' also reads oddly: a_i depends only on beta, so what is meant is the vertical line above a positivity root.",
+   "fix": "See proposed_edits[0]."
+  },
+  {
+   "severity": "NOTE",
+   "where": "paper.tex Section 3.1 example",
+   "description": "The paper calls Res_t(Delta5, L) 'the projection polynomial'. The engine actually projects with the factors of Delta5 and uses res_Delta5_f1_L. Res_t(Delta5, L) is the product of res_Delta5_f0_L and res_Delta5_f1_L, and it belongs to the projection set as Section 3.1 describes it ('pairwise resultants of these polynomials'). Its unique root in the interval is the root of res_Delta5_f1_L, so the statement is accurate.",
+   "fix": "None needed."
+  },
+  {
+   "severity": "NOTE",
+   "where": "paper.tex thm:AS (Section 5.5, l. 759-787) and lem:Bmech (Section 7.3, l. 1270-1285)",
+   "description": "Re-derived. Moving eigenvalues of cJ - A solve psi_1(z) - e chi_1(z) = 0 with e = 1/c, since det(zI - (cJ - A)) = chi - c psi (checked exactly for E_0). F_z(z0, 0) = psi_1'(z0) is nonzero because z0 is a simple root of psi and h(z0) != 0. The implicit function theorem then gives z'(0) = chi_1(z0)/psi_1'(z0), which equals 1/s^'(z0) = chi(z0)/psi'(z0) at a root of psi. Fixed eigenvalues and the other bounded branches have Re > nu_inf, so nu_A(c) = nu_inf + R*/c + O(c^-2). Nothing here uses nu_inf > 1/2, so the extended range [1/2,1) of the expansion is right. The boundary formula holds with beta_c^3 = 8 at the endpoint. Legality: gamma > c - sqrt(c^2 - c) = (1 - sqrt(1-e))/e = 1/2 + e/8 + e^2/16 + ..., and every series coefficient is positive (checked to order 7), so it exceeds 1/2 + 1/(8c) for all c > 1. This gives part (c) with threshold 1/8, in both directions. Parts (a) and (b) are correctly restricted to nu_inf > 1/2. lem:Bmech now derives nu_inf = 1/2 and R* = R from (i) and (ii) (conjugate roots give conjugate values), and it cites only the expansion. There is no circularity: (c) only points forward to lem:Bmech, and lem:Bmech uses only the expansion. E_0, checked exactly: z^2 - z + 1 divides psi exactly once; gcd(chi, z^2 - z + 1) = 1; the other roots of psi have Re > 1/2 (Hurwitz determinants of psi_2(1/2 - x) are 7, 105/4, 70, 175/8); chi(z0)/psi'(z0) = 1/4 - (sqrt3/12)i, so R = 1/4 > 1/8; w(2) = (6,2,2,2,6,2,10)/17 > 0. At c = 1000, gamma = 1/2 + 3/(16c) is legal, positive and Hurwitz-stable (also through W built from the CLAUDE.md convention), and gamma = 1/2 + 5/(16c) is legal and unstable. Both agree with nu_A = 1/2 + 1/(4c) + O(c^-2).",
+   "fix": "None."
+  },
+  {
+   "severity": "NOTE",
+   "where": "paper.tex thm:AS(c) vs lem:Bmech(iv)",
+   "description": "Part (c) states the SFP condition as a(2) > 0 and cites lem:Bmech, but lem:Bmech assumes w(2) = (A^T + I/2)^{-1} 1 > 0 instead. Both are sufficient: a is t-free and Lemma A.2 applies at stable points. For E_0, a(2) = (3,1,1,1,3,1,5) and det C(2) = 13, so a(2) is proportional to w(2). This is a notational seam, not an error.",
+   "fix": "Optional: say 'if a(2)>0 (Lemma A.2)' in (c), or note the equivalence."
+  },
+  {
+   "severity": "MINOR",
+   "where": "paper.tex Section 6.6, l. 1196",
+   "description": "Numbers verified by an independent recount with nauty labelg (not graphs.canonical_form): 21 of the 123 contain a six-node counterexample, so 102 are primitive; 9,133 - 6,720 = 2,413 eight-node graphs contain a six-node or seven-node counterexample (FNFL included). 102/123 = 34/41 ≈ 0.83 and 6720/9133 (irreducible) ≈ 0.74. Both roundings are correct, and 1 > 34/41 > 6720/9133. However, the new definition 'containing no six- or seven-node counterexample as an induced subgraph' is literally false at n = 7, because a seven-node counterexample is an induced subgraph of itself. Read literally it makes all 123 non-primitive. The old wording 'no smaller one' was right.",
+   "fix": "See proposed_edits[1]."
+  },
+  {
+   "severity": "MINOR",
+   "where": "paper.tex Acknowledgments (l. 1618)",
+   "description": "The acknowledgment says the report 'led to the corrections in Sections 3.1, 6.6 and 7.3'. The point-2 correction is mainly in Theorem 5.4, Section 5.5, which was restated with a new part (c). The G_1 region paragraph in Section 4.3 was also changed. The list is therefore incomplete. The Section 8.2 sentence is accurate: it names Section 3.1, Lemma 7.4/Theorem 5.4 and Section 6.6, and 'none affects a count or a threshold' is correct. The tone is appropriate: a correctness report on the October draft, not on the repository. Geneson is now named three times (Section 3.1, 8.2, Acknowledgments). His permission to be named is worth confirming before the paper is circulated.",
+   "fix": "See proposed_edits[2]."
+  },
+  {
+   "severity": "NOTE",
+   "where": "build",
+   "description": "Rebuilt in a scratch copy, notes/referee_external/fixes_2026-11-01/referee_build/ (pdflatex, bibtex, pdflatex x2, nice -n 10): all four steps exit 0, 0 LaTeX errors, 0 undefined references or citations, 0 overfull boxes, 34 pages. pdftotext of the scratch PDF is identical to that of the committed notes/paper/paper.pdf. The only warning is a hyperref 'Token not allowed in a PDF string' at l. 1346, a pre-existing section title not touched by the fixes. No auxiliary files are left in notes/paper. Labels resolve to sec:boundary = 3.1, thm:AS = 5.4, sec:thrpicture = 6.6, sec:finiteeps = 7.3, lem:Bmech = 7.4, thm:famE = 7.5. The footnote target prover_cells/geneson_section_check.py exists. No model or product names appear in paper.tex.",
+   "fix": "None."
+  },
+  {
+   "severity": "NOTE",
+   "where": "notes/lemma_M_refuted.md Remark; notes_theory.md 4.2; n8_structure.md l. 473; FINAL_SUMMARY.md l. 134; REPORT_n8.md l. 530",
+   "description": "The source-note edits agree with the paper and are correct. One point: lemma_M_refuted's remark says '(a) holds with R* > 1/8'. This is right to leading order, since the legal stable t-set near beta = 2 is about (1/(beta-2), 8R*/(beta-2)), consistent with E_0's window (26, ~53) at beta = 53/26 against the prediction 8R/(beta-2) = 52. n8_structure.md l. 473 relies on the primitive definition at l. 410 ('no smaller'), which is correct.",
+   "fix": "None."
+  },
+  {
+   "severity": "NOTE",
+   "where": "process",
+   "description": "The fixer reports one read-only 'git status' against the brief. Nothing was modified. I ran no git. I did not edit any document, and I wrote only under fixes_2026-11-01/referee/, referee_build/ and this file.",
+   "fix": "None."
+  }
+ ],
+ "proposed_edits": [
+  {
+   "file": "notes/paper/paper.tex",
+   "old": "rational sample; lower-dimensional cells (vertical sections above roots of the projection polynomials, and points on\nthem) are not sampled. Points on a boundary curve or a positivity root are never SFP, but a section above a root of a",
+   "new": "rational sample; lower-dimensional cells (the pieces of the curves over each open $\\beta$-cell, the vertical lines above roots\nof the projection polynomials, and the points where these meet) are not sampled. Points on a boundary curve or on the vertical\nline above a positivity root are never SFP, but a vertical line above a root of a",
+   "reason": "The definition of the lower-dimensional cells was incomplete, and 'on a positivity root' was imprecise."
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "old": "(containing no six- or seven-node counterexample as an induced subgraph)",
+   "new": "(containing no counterexample on fewer nodes as an induced subgraph)",
+   "reason": "Read literally, the current definition makes every seven-node counterexample non-primitive, since each is its own induced subgraph."
+  },
+  {
+   "file": "notes/paper/paper.tex",
+   "old": "led to the corrections in Sections~\\ref{sec:boundary}, \\ref{sec:thrpicture} and~\\ref{sec:finiteeps}.",
+   "new": "led to the corrections in Section~\\ref{sec:boundary} and the description of the region of $G_1$ (Section~\\ref{sec:n6}), in Theorem~\\ref{thm:AS} and Lemma~\\ref{lem:Bmech}, and in Section~\\ref{sec:thrpicture}.",
+   "reason": "The current list omits Theorem 5.4 (Section 5.5) and the G_1 region paragraph (Section 4.3), which were also corrected."
+  }
+ ],
+ "exact_values": {
+  "beta0_isolating_interval": [
+   "65487482425383/30786325577728",
+   "130974964850767/61572651155456"
+  ],
+  "beta0_display": 2.1271613677976284,
+  "primitive": {
+   "n6": 3,
+   "n7": 102,
+   "n8": 6720,
+   "n7_containing_n6": 21,
+   "n8_containing_n6_or_n7(incl FNFL)": 2413
+  },
+  "shares_exact": [
+   "1",
+   "34/41",
+   "6720/9133"
+  ],
+  "shares_display": [
+   1.0,
+   0.8293,
+   0.7358
+  ],
+  "E0_R": "1/4",
+  "E0_chi_over_psiprime_at_z0": "1/4 - sqrt(3)/12 i",
+  "legality_series_in_1_over_c": [
+   "1/2",
+   "1/8",
+   "1/16",
+   "5/128",
+   "7/256"
+  ]
+ }
+}

@@ -470,7 +470,7 @@ upstream set is not dynamically decoupled.
 
 **Weaker observations that the data suggest but I do not elevate to conjecture.**
 
-* The share of primitive counterexamples grows: 3/3, 102/123, 6,720/9,133. Most counterexamples at size n+1
+* The number of primitive counterexamples grows (3, 102, 6,720) while their share falls: 3/3 = 1, 102/123 = 34/41 (about 0.83), 6,720/9,133 (about 0.74). Most counterexamples at size n+1
   will not be one-node extensions of those at size n.
 * The q record at fixed n is set by sink-free or one-sink cores whose own `D|perp` spectrum is far from -1/2.
   Sink classes are not needed at fixed small n; they matter asymptotically (Theorems Q, Q2, Y, U).

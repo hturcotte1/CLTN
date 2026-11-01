@@ -1,0 +1,631 @@
+{
+ "script": "notes/referee_external/fixes_2026-11-01/prover_cells/geneson_section_check.py",
+ "graph_G1_rows": [
+  "011000",
+  "000011",
+  "000111",
+  "110011",
+  "110101",
+  "101110"
+ ],
+ "same_charpoly_G1_vs_stage0": true,
+ "Delta5_degrees": {
+  "beta": 15,
+  "t": 5
+ },
+ "P_degree": 20,
+ "Res_t(Delta5,L) / P": "-1",
+ "roots_of_P_in_(17/8,15/7)": {
+  "sympy_count_roots": 1,
+  "own_sturm": 1,
+  "P(17/8)": "916360960913154275035/1152921504606846976",
+  "P(15/7)": "-413475573150340062592/79792266297612001"
+ },
+ "factors_of_P": [
+  {
+   "degree": 6,
+   "mult": 1,
+   "roots_in_interval": 0
+  },
+  {
+   "degree": 14,
+   "mult": 1,
+   "roots_in_interval": 1
+  }
+ ],
+ "minpoly_beta0_hi_to_lo": [
+  43,
+  -498,
+  2780,
+  -9966,
+  25641,
+  -50226,
+  77654,
+  -96910,
+  98882,
+  -82792,
+  56784,
+  -31408,
+  13760,
+  -4352,
+  1024
+ ],
+ "beta0_isolating_interval": [
+  "68668602371678778193/32281802128991715328",
+  "137337204743357556387/64563604257983430656"
+ ],
+ "beta0_approx_display_only": 2.12716136779764,
+ "minpoly_equals_certificate_beta_critical_[17/8,15/7]": true,
+ "positivity_on_[17/8,15/7]": {
+  "100": {
+   "a_1": {
+    "degree_beta": 4,
+    "n_coeffs": 5,
+    "all_positive": true,
+    "min_coeff": 63100681,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_2": {
+    "degree_beta": 3,
+    "n_coeffs": 4,
+    "all_positive": true,
+    "min_coeff": 114176,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_3": {
+    "degree_beta": 4,
+    "n_coeffs": 5,
+    "all_positive": true,
+    "min_coeff": 42202377,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_4": {
+    "degree_beta": 4,
+    "n_coeffs": 5,
+    "all_positive": true,
+    "min_coeff": 18691785,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_5": {
+    "degree_beta": 2,
+    "n_coeffs": 3,
+    "all_positive": true,
+    "min_coeff": 10633,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_6": {
+    "degree_beta": 2,
+    "n_coeffs": 3,
+    "all_positive": true,
+    "min_coeff": 10633,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_1": {
+    "degree_beta": 0,
+    "n_coeffs": 1,
+    "all_positive": true,
+    "min_coeff": 606,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_2": {
+    "degree_beta": 3,
+    "n_coeffs": 4,
+    "all_positive": true,
+    "min_coeff": 17206830080,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_3": {
+    "degree_beta": 6,
+    "n_coeffs": 7,
+    "all_positive": true,
+    "min_coeff": 91082467112615936,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_4": {
+    "degree_beta": 10,
+    "n_coeffs": 11,
+    "all_positive": true,
+    "min_coeff": 34012723946055868784641572864,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_5": {
+    "degree_beta": 15,
+    "n_coeffs": 16,
+    "all_positive": true,
+    "min_coeff": 4026914209114467920339499750931371655168,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_6": {
+    "degree_beta": 20,
+    "n_coeffs": 21,
+    "all_positive": true,
+    "min_coeff": 4642479779647812894514017659326384033969729823571968,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "ALL_POSITIVE": true,
+   "legal_on_strip": "True"
+  },
+  "1000": {
+   "a_1": {
+    "degree_beta": 4,
+    "n_coeffs": 5,
+    "all_positive": true,
+    "min_coeff": 63100681,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_2": {
+    "degree_beta": 3,
+    "n_coeffs": 4,
+    "all_positive": true,
+    "min_coeff": 114176,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_3": {
+    "degree_beta": 4,
+    "n_coeffs": 5,
+    "all_positive": true,
+    "min_coeff": 42202377,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_4": {
+    "degree_beta": 4,
+    "n_coeffs": 5,
+    "all_positive": true,
+    "min_coeff": 18691785,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_5": {
+    "degree_beta": 2,
+    "n_coeffs": 3,
+    "all_positive": true,
+    "min_coeff": 10633,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "a_6": {
+    "degree_beta": 2,
+    "n_coeffs": 3,
+    "all_positive": true,
+    "min_coeff": 10633,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_1": {
+    "degree_beta": 0,
+    "n_coeffs": 1,
+    "all_positive": true,
+    "min_coeff": 6006,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_2": {
+    "degree_beta": 3,
+    "n_coeffs": 4,
+    "all_positive": true,
+    "min_coeff": 1696155822080,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_3": {
+    "degree_beta": 6,
+    "n_coeffs": 7,
+    "all_positive": true,
+    "min_coeff": 96520797456751886336,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_4": {
+    "degree_beta": 10,
+    "n_coeffs": 11,
+    "all_positive": true,
+    "min_coeff": 374856506124437763703200351780864,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_5": {
+    "degree_beta": 15,
+    "n_coeffs": 16,
+    "all_positive": true,
+    "min_coeff": 437867183997312734768863690653878298678919168,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "Delta_6": {
+    "degree_beta": 20,
+    "n_coeffs": 21,
+    "all_positive": true,
+    "min_coeff": 5009606465642234871980971472782648406407775647667132039168,
+    "n_zero": 0,
+    "n_negative": 0
+   },
+   "ALL_POSITIVE": true,
+   "legal_on_strip": "True"
+  }
+ },
+ "positivity_on_box_[17/8,15/7]x[100,inf)": {
+  "Delta_1": {
+   "degree_beta": 0,
+   "n_terms": 2,
+   "all_positive": true,
+   "n_negative": 0
+  },
+  "Delta_2": {
+   "degree_beta": 3,
+   "n_terms": 12,
+   "all_positive": true,
+   "n_negative": 0
+  },
+  "Delta_3": {
+   "degree_beta": 6,
+   "n_terms": 28,
+   "all_positive": true,
+   "n_negative": 0
+  },
+  "Delta_4": {
+   "degree_beta": 10,
+   "n_terms": 55,
+   "all_positive": true,
+   "n_negative": 0
+  },
+  "Delta_5": {
+   "degree_beta": 15,
+   "n_terms": 96,
+   "all_positive": true,
+   "n_negative": 0
+  },
+  "Delta_6": {
+   "degree_beta": 20,
+   "n_terms": 147,
+   "all_positive": true,
+   "n_negative": 0
+  },
+  "ALL_POSITIVE": true
+ },
+ "note_coefficient_test": "the coefficient-sign test is a sufficient condition only; a failure would mean inconclusive",
+ "legal_at_beta0_t100": {
+  "claim": "100(beta_0 - 2) > 100(17/8 - 2) = 25/2 > 1",
+  "holds": true
+ },
+ "conclusion": "(beta_0, 100) is a legal point at which all a_i > 0 and Delta_1..Delta_6 > 0, hence the full support of G_1 is an SFP there (Lemma A.2); beta_0 is a root of Res_t(Delta_5, L).",
+ "crosscheck_ctln_analyze_support_t100": [
+  {
+   "beta": "17/8",
+   "positive": true,
+   "stable": true,
+   "q": "225/202"
+  },
+  {
+   "beta": "68668602371678778193/32281802128991715328",
+   "positive": true,
+   "stable": true,
+   "q": "909670006067176571625/815115503757040812032"
+  },
+  {
+   "beta": "137337204743357556387/64563604257983430656",
+   "positive": true,
+   "stable": true,
+   "q": "1819340012134353143275/1630231007514081624064"
+  },
+  {
+   "beta": "15/7",
+   "positive": true,
+   "stable": true,
+   "q": "800/707"
+  }
+ ],
+ "region2d_projection_names": [
+  "lc_D",
+  "lc_Delta5_f0",
+  "lc_Delta5_f1",
+  "disc_Delta5_f1",
+  "lc_L",
+  "res_D_Delta5_f0",
+  "res_D_Delta5_f1",
+  "res_D_L",
+  "res_Delta5_f0_Delta5_f1",
+  "res_Delta5_f0_L",
+  "res_Delta5_f1_L"
+ ],
+ "region2d_curves_F": [
+  [
+   "D",
+   1
+  ],
+  [
+   "Delta5_f0",
+   1
+  ],
+  [
+   "Delta5_f1",
+   4
+  ],
+  [
+   "L",
+   1
+  ]
+ ],
+ "n_projection_polys": 11,
+ "pointwise_near_section_t_in_[8,50]": [
+  {
+   "beta": "lo",
+   "t": 8,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  },
+  {
+   "beta": "lo",
+   "t": 9,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  },
+  {
+   "beta": "lo",
+   "t": 10,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  },
+  {
+   "beta": "lo",
+   "t": 20,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  },
+  {
+   "beta": "lo",
+   "t": 50,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  },
+  {
+   "beta": "hi",
+   "t": 8,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  },
+  {
+   "beta": "hi",
+   "t": 9,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  },
+  {
+   "beta": "hi",
+   "t": 10,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  },
+  {
+   "beta": "hi",
+   "t": 20,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  },
+  {
+   "beta": "hi",
+   "t": 50,
+   "legal": true,
+   "positive": true,
+   "stable": true
+  }
+ ],
+ "region2d_projection_polys_vanishing_at_beta0": [
+  "res_Delta5_f1_L"
+ ],
+ "repo_Delta5_over_ours": "1",
+ "recorded_cert_idx1000255": {
+  "verdict": "stable_somewhere",
+  "positivity_cells": [
+   [
+    "2",
+    "9/4"
+   ]
+  ],
+  "beta_critical": [
+   [
+    [
+     "17/8",
+     "15/7"
+    ],
+    14,
+    false
+   ],
+   [
+    [
+     "1029/475",
+     "13/6"
+    ],
+    6,
+    false
+   ],
+   [
+    [
+     "46/21",
+     "57/26"
+    ],
+    11,
+    false
+   ],
+   [
+    [
+     "167/76",
+     "178/81"
+    ],
+    6,
+    false
+   ],
+   [
+    [
+     "42/19",
+     "31/14"
+    ],
+    14,
+    false
+   ],
+   [
+    [
+     "79/34",
+     "7/3"
+    ],
+    3,
+    true
+   ],
+   [
+    [
+     "12/5",
+     "5/2"
+    ],
+    12,
+    false
+   ]
+  ],
+  "beta_cells": [
+   [
+    [
+     "2",
+     "17/8"
+    ],
+    "33/16",
+    [
+     [
+      "16",
+      null,
+      true
+     ]
+    ]
+   ],
+   [
+    [
+     "15/7",
+     "1029/475"
+    ],
+    "7164/3325",
+    [
+     [
+      "3325/514",
+      "28",
+      false
+     ],
+     [
+      "29",
+      null,
+      true
+     ]
+    ]
+   ],
+   [
+    [
+     "13/6",
+     "46/21"
+    ],
+    "61/28",
+    [
+     [
+      "28/5",
+      null,
+      false
+     ]
+    ]
+   ],
+   [
+    [
+     "57/26",
+     "167/76"
+    ],
+    "4337/1976",
+    [
+     [
+      "1976/385",
+      null,
+      false
+     ]
+    ]
+   ],
+   [
+    [
+     "178/81",
+     "42/19"
+    ],
+    "3392/1539",
+    [
+     [
+      "1539/314",
+      "12",
+      false
+     ],
+     [
+      "13",
+      null,
+      false
+     ]
+    ]
+   ],
+   [
+    [
+     "31/14",
+     "79/34"
+    ],
+    "270/119",
+    [
+     [
+      "119/32",
+      null,
+      false
+     ]
+    ]
+   ]
+  ],
+  "stable_cells": [
+   [
+    "2",
+    "17/8",
+    "33/16",
+    "16",
+    null
+   ],
+   [
+    "15/7",
+    "1029/475",
+    "7164/3325",
+    "29",
+    null
+   ]
+  ],
+  "any_recorded_cell_contains_beta0": false,
+  "keys_in_cert": [
+   "beta_critical",
+   "cells",
+   "method",
+   "positivity_cells",
+   "positivity_critical",
+   "projection_names",
+   "sigma",
+   "stable_cells",
+   "verdict"
+  ]
+ }
+}

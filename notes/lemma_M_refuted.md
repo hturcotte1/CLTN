@@ -329,6 +329,14 @@ The boundary of the stable region near `(beta_c, inf)` is `beta = beta_c + beta_
 5. The boundary formula follows from `nu_A(c) = gamma`, using `gamma_c - gamma ≈ (beta - beta_c)/beta_c^2` and
    `c ≈ t/beta_c`. ∎
 
+**Remark (endpoint nu_inf = 1/2; added 2026-11-01).** Step 1 and the boundary formula use only Lemma AS and the
+root hypothesis, not nu_inf > 1/2, so `nu_A(c) = 1/2 + R*/c + O(c^-2)` and `beta = 2 + 8 R*/t + O(t^-2)` also hold at
+nu_inf = 1/2 (beta_c = 2). The bound nu_inf > 1/2 is used only in step 2. At nu_inf = 1/2, legality
+`gamma > nu_P2(c) = 1/(1 + sqrt(1 - 1/c)) = 1/2 + 1/(8c) + O(c^-2)`, with `nu_P2(c) > 1/2 + 1/(8c)` for every c > 1, is of
+the same order, so (a) holds with `R* > 1/8` in place of `R* > 0` (this is Lemma B of
+notes/research_wf3/theory/notes_theory.md §4.2). If `R* < 1/8`, no legal point with c large is stable; (b) is vacuous.
+Exact check on `&FNFL~[udo?` (R* = 1/4): notes/referee_external/fixes_2026-11-01/prover_AS/check_AS_endpoint.py.
+
 CERTIFIED check against the repo engine for `&FK@dyUfXp?`:
 - `R* = 8.1996e-4`, so the prediction is `beta_c^3 R* = 0.0077260`;
 - the exact endpoints give `t (beta_right(t) - beta_c) = 0.0077476` at t = 10^3 and `0.0077281` at t = 10^4.

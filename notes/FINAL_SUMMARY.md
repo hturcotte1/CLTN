@@ -131,7 +131,7 @@ upper bound is Geneson's n - 2, and the growth rate is open.
   (Lemma I) and the decomposition lemma of `notes/k8_decomposition.md` are not in Lean.
 * Beyond n = 8, the structural route (families, Lemma R, the blow-up calculus, Conjecture S) is the way
   forward; the n = 7 and n = 8 data say most counterexamples at those sizes are new rather than inherited
-  (primitive share 3/3, 102/123, 6,720/9,133).
+  (primitive counts 3, 102, 6,720; share 3/3, 102/123, 6,720/9,133, decreasing).
 
 ## 5. Where everything is
 

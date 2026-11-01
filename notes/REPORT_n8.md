@@ -527,7 +527,7 @@ submitted or posted.
    triangle and prefilter them (at n = 8 no strict survivor at all lacks an induced oriented 3-cycle);
    (c) S1 at n = 9 is already done (the bidirected-K7 class, 682,176 configurations).
 3. **Theory.** Prove S1 via the finite reduction (rank <= 4 non-edge digraph, 16 pattern counts); decide
-   whether the growth 3, 123, 9,133 and the primitive share 3/3, 102/123, 6,720/9,133 have a structural
+   whether the growth 3, 123, 9,133 and the decreasing primitive share 3/3, 102/123, 6,720/9,133 have a structural
    explanation; characterise the limit-stable graphs (Conjecture P was refuted at n = 7, and the n = 8 data
    say the universal features U1-U7 are shared by almost all strict survivors and so are not a signature;
    that U1-U3 follow from the necessary conditions is not proved); the
