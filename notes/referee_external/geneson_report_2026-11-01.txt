@@ -1,0 +1,50 @@
+                                               Report on
+The target-free clique conjecture for threshold-linear networks: complete exact maps
+   for n ≤ 7, the ε → 0 map at n = 8, inﬁnite families, and unbounded thresholds
+
+This report is based on the supplied 33-page draft dated October 2026. The repository materials,
+including code, certiﬁcates and deferred proof notes, were not reviewed.
+
+
+Potentially important issues
+
+1. Lower-dimensional cells can contain stable ﬁxed points (Section 3.1, page 8). The
+ﬁnal sentence before Section 3.2 says that lower-dimensional cells are boundary points and are
+never SFP. In the cylindrical algebraic decomposition described there, vertical sections above roots
+of projection polynomials need not lie on any of the original boundary curves. They can pass
+through the open SFP region.
+For a concrete example, take G1 from Table 1 and write ∆5 (β, t) for the ﬁfth Hurwitz determinant
+of det(µI + K(β, t)). There is exactly one root β0 ∈ (17/8, 15/7) of
+                                           (           )
+                                                  1
+                                        ∆5 β,              = 0.
+                                                 β−2
+
+This is a projection value arising from the resultant with the legality boundary t(β − 2) − 1 = 0.
+Nevertheless, at (β0 , 100) all coordinates of adj(I + β0 N )1 and all six Hurwitz determinants are
+strictly positive, and 100(β0 − 2) > 1. Thus the full support is an SFP on a lower-dimensional
+vertical section.
+These positivity inequalities hold throughout β ∈ [17/8, 15/7] at t = 100. An exact check is to
+substitute β = (17/8 + (15/7)u)/(1 + u) into each of the six adjugate coordinates and six Hurwitz
+determinants and multiply by (1 + u) to the degree of that polynomial: every coeﬃcient is positive.
+The unique root above is obtained by exact root counting in the stated interval.
+The issue concerns the claimed pointwise description of the regions. Openness still makes full-
+dimensional cells suﬃcient for detecting the existence of an SFP, so this example does not disprove
+the census counts or threshold values. The treatment of these sections in the implementation and
+recorded regions was not reviewed.
+
+
+Very minor points
+
+2. Theorem 5.4 does not cover the endpoint used in Lemma 7.4 (page 26). The
+proof begins by invoking Theorem 5.4 with ν∞ = 1/2, whereas that theorem explicitly assumes
+ν∞ ∈ (1/2, 1). The theorem as stated therefore does not supply the expansion used here. This is a
+local justiﬁcation gap; it does not refute Lemma 7.4 or Theorem 7.5.
+3. The primitive proportions decrease (Section 6.6, page 23). The paragraph after Table
+6 says that the share of primitive counterexamples grows from 3/3 to 102/123 to 6720/9133. These
+proportions satisfy 1 > 102/123 = 34/41 > 6720/9133 and hence decrease; the absolute counts
+grow.
+
+
+                                                  1
+
