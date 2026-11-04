@@ -1455,3 +1455,20 @@ the finite-eps-only graph as a 'smaller counterexample' the n = 8 count is 6,720
 paper, n8_structure.md, REPORT_n8.md, FINAL_SUMMARY.md.  Acknowledgment of the report added to the paper
 (Acknowledgments and Section 8.2); 34 pages, builds clean.  Open author action: confirm with Geneson that he
 agrees to being named in the paper.
+
+## 2026-11-04  Second external report by Jesse Geneson: one very minor omission in Section 3.1, fixed; no result affected
+
+Geneson re-read the revised draft, confirmed the three earlier corrections, accepted the credit, and reported one
+further point (notes/referee_external/geneson_report_2026-11-04.pdf): the paragraph 'The two-parameter version'
+listed the boundary curves a_i = 0, D = 0, Delta_{m-1} = 0, L = 0 and omitted the off-support curves o_k = 0
+(k not in sigma) that matter for proper supports; his example (G_1 in the Table 1 labelling plus a vertex 7
+receiving from 2, 3, 5, 6 and sending nothing; t = 100, beta in [52/25, 209/100]) was reproduced exactly by the
+prover and independently by the referee: o_7 = -beta^5 + 3beta^4 - 3beta^3 + 3beta^2 - 2beta + 1 changes sign on
+the segment while every listed polynomial is positive with no root there; not an SFP at 52/25, an SFP at 209/100
+(ctln.analyze_support agrees at both points).  Both engines already include the o_k in their boundary sets
+(fastregion.beta_data/region stage 1-2; region2d.positivity_intervals/region2d), the n = 7 proper-support run
+used region2d, and across all 7,744 stable records every real o_k root above 2 (2,496) appears in
+positivity_critical; the example itself is certified record pattern 30 of that list.  So the proper-support
+results (7,744 / 4,544 / 0 escalations) and all full-support counts and thresholds stand.  Paper: the list now
+includes {o_k = 0} (k not in sigma) with the full-support reduction noted, 'positivity root' replaced by 'a root
+of some a_i or o_k', second report credited in Section 8.2 and the Acknowledgments; 34 pages, builds clean.

@@ -1,0 +1,47 @@
+{
+ "o7_matches_report": true,
+ "o7(52/25)": "417793/9765625",
+ "o7(209/100)": "-1006161749/10000000000",
+ "listed_family_root_free_and_positive_on_segment": true,
+ "o7_roots_in_segment": 1,
+ "SFP_at_52/25": false,
+ "SFP_at_209/100": true,
+ "ctln_SFP_at_52/25": false,
+ "ctln_SFP_at_209/100": true
+}
+G1_table1 o_7 = -beta**5 + 3*beta**4 - 3*beta**3 + 3*beta**2 - 2*beta + 1 | matches report: True | ratio: 1
+  a_1              deg  4 roots[seg] 0 own 0  signs +1,+1
+  a_2              deg  3 roots[seg] 0 own 0  signs +1,+1
+  a_3              deg  4 roots[seg] 0 own 0  signs +1,+1
+  a_4              deg  4 roots[seg] 0 own 0  signs +1,+1
+  a_5              deg  2 roots[seg] 0 own 0  signs +1,+1
+  a_6              deg  2 roots[seg] 0 own 0  signs +1,+1
+  D(t=100)         deg  5 roots[seg] 0 own 0  signs +1,+1
+  Delta_1(t=100)   deg  0 roots[seg] 0 own 0  signs +1,+1
+  Delta_2(t=100)   deg  3 roots[seg] 0 own 0  signs +1,+1
+  Delta_3(t=100)   deg  6 roots[seg] 0 own 0  signs +1,+1
+  Delta_4(t=100)   deg 10 roots[seg] 0 own 0  signs +1,+1
+  Delta_5(t=100)   deg 15 roots[seg] 0 own 0  signs +1,+1
+  Delta_6(t=100)   deg 20 roots[seg] 0 own 0  signs +1,+1
+  L(t=100)         deg  1 roots[seg] 0 own 0  signs +1,+1
+  o_7              deg  5 roots[seg] 1 own 1  signs +1,-1
+  verdicts: {'positivity': True, 'off_support_o7<0': False, 'hurwitz_all_positive': True, 'legal': True, 'SFP': False} {'positivity': True, 'off_support_o7<0': True, 'hurwitz_all_positive': True, 'legal': True, 'SFP': True}
+  ctln: {'52/25': {'eps': '1/101', 'delta': '27/2525', 'q': '108/101', 'positive': True, 'off_support_ok': False, 'stable': True, 'BOUNDARY': False, 'stable_fixed_point': False, 'outside_drive': '417793/18223613457', 'drive_equals_o7_over_D': True}, '209/100': {'eps': '1/101', 'delta': '109/10100', 'q': '109/101', 'positive': True, 'off_support_ok': True, 'stable': True, 'BOUNDARY': False, 'stable_fixed_point': True, 'outside_drive': '-1006161749/19005064281749', 'drive_equals_o7_over_D': True}}
+stage0_labelling o_7 = -beta**5 + 3*beta**4 - 3*beta**3 + 4*beta**2 - 2*beta + 1 | matches report: False | ratio: (beta**5 - 3*beta**4 + 3*beta**3 - 4*beta**2 + 2*beta - 1)/(beta**5 - 3*beta**4 + 3*beta**3 - 3*beta**2 + 2*beta - 1)
+  a_1              deg  4 roots[seg] 0 own 0  signs +1,+1
+  a_2              deg  2 roots[seg] 0 own 0  signs +1,+1
+  a_3              deg  2 roots[seg] 0 own 0  signs +1,+1
+  a_4              deg  4 roots[seg] 0 own 0  signs +1,+1
+  a_5              deg  3 roots[seg] 0 own 0  signs +1,+1
+  a_6              deg  4 roots[seg] 0 own 0  signs +1,+1
+  D(t=100)         deg  5 roots[seg] 0 own 0  signs +1,+1
+  Delta_1(t=100)   deg  0 roots[seg] 0 own 0  signs +1,+1
+  Delta_2(t=100)   deg  3 roots[seg] 0 own 0  signs +1,+1
+  Delta_3(t=100)   deg  6 roots[seg] 0 own 0  signs +1,+1
+  Delta_4(t=100)   deg 10 roots[seg] 0 own 0  signs +1,+1
+  Delta_5(t=100)   deg 15 roots[seg] 0 own 0  signs +1,+1
+  Delta_6(t=100)   deg 20 roots[seg] 0 own 0  signs +1,+1
+  L(t=100)         deg  1 roots[seg] 0 own 0  signs +1,+1
+  o_7              deg  5 roots[seg] 0 own 0  signs +1,+1
+  verdicts: {'positivity': True, 'off_support_o7<0': False, 'hurwitz_all_positive': True, 'legal': True, 'SFP': False} {'positivity': True, 'off_support_o7<0': False, 'hurwitz_all_positive': True, 'legal': True, 'SFP': False}
+  ctln: {'52/25': {'eps': '1/101', 'delta': '27/2525', 'q': '108/101', 'positive': True, 'off_support_ok': False, 'stable': True, 'BOUNDARY': False, 'stable_fixed_point': False, 'outside_drive': '6095399/2603373351', 'drive_equals_o7_over_D': True}, '209/100': {'eps': '1/101', 'delta': '109/10100', 'q': '109/101', 'positive': True, 'off_support_ok': False, 'stable': True, 'BOUNDARY': False, 'stable_fixed_point': False, 'outside_drive': '42674838251/19005064281749', 'drive_equals_o7_over_D': True}}

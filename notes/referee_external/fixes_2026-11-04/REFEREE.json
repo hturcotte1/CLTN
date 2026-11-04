@@ -1,0 +1,38 @@
+{
+  "role": "independent referee",
+  "date": "2026-11-04",
+  "report": "notes/referee_external/geneson_report_2026-11-04.txt (identical bytes to the uploaded PDF and to geneson_report_2026-11-04.pdf)",
+  "verdict": "HOLD - the prover's confirmation and the fixer's edits are correct; no further edit to paper.tex was made",
+  "example_check": {
+    "script": "notes/referee_external/fixes_2026-11-04/referee/check_example.py",
+    "stdout": "notes/referee_external/fixes_2026-11-04/referee/check_example_stdout.txt",
+    "method": "built from CLAUDE.md section 2 and Table 1 rows only (no project module); sympy exact over QQ and an independent Fraction Sturm count",
+    "o7": "-beta^5+3beta^4-3beta^3+3beta^2-2beta+1, equal to d - beta(a_1+a_4) (vertices 1 and 4 are the members of sigma that do not send to 7)",
+    "o7_endpoints": {"52/25": "417793/9765625 (>0)", "209/100": "-1006161749/10000000000 (<0)"},
+    "o7_roots_in_segment": 1,
+    "listed_family_t100": "a_1..a_6, D, Delta_1..Delta_6, L: each positive at both endpoints, 0 roots in the closed segment [52/25,209/100] by sympy count_roots and by Sturm",
+    "direct_pointwise": {
+      "beta=52/25 (eps=1/101, delta=27/2525)": "x>0, Hurwitz stable, drive at 7 = 417793/18223613457 > 0 -> not SFP",
+      "beta=209/100 (eps=1/101, delta=109/10100)": "x>0, Hurwitz stable, drive at 7 = -1006161749/19005064281749 < 0 -> SFP"
+    },
+    "certificate_link": "the example is isomorphic (unique isomorphism fixing 7: (0..5)->(5,4,3,0,1,2)) to record base=geneson_idx1000255, pattern=30 of certificates/n7_proper_supports_all.jsonl, verdict stable_somewhere; its positivity_critical contains [1,-3,3,-3,2,-1] on [2,19/9], positivity cell (25/12,9/4)"
+  },
+  "engine_check": {
+    "fastregion.py": "beta_data builds o[k] = d - beta*sum_{j: sigma_j -/-> k} a_j (lines 254-262); region() puts every o_k into the stage-1 isolation list (lines 354-356, 361-369, 'never' if no cell has a_i>0 and o_k<0) and into the stage-2 boundary set names2 = names + [D, Delta] (lines 386-391); decide_point tests o_k/D < 0 (line 321)",
+    "region2d.py": "positivity_intervals isolates a_i and o_k (lines 256-267); region2d() puts them into the beta-isolation list intp = pos_polys + projection polys (lines 288-291), so each o_k root is a wall; 'positivity_root' there covers o_k roots too",
+    "n7 proper-support run": "n7/run_n7_proper_supports.py imports and calls region2d (lines 17, 73)"
+  },
+  "text_check": {
+    "location": "notes/paper/paper.tex lines 422-436 (Section 3.1)",
+    "findings": [
+      "The list now names {o_k=0} (k not in sigma), matching Lemma 3.2 (P_t, line 410-411), the definition of Z (line 437) and Z_0 of notes/lemma_Bprime_2d.md.",
+      "The parenthetical for sigma=[n] is correct: no outside vertices, so no o_k; the full-support list is unchanged ([n] is the paper's notation, line 232).",
+      "'a root of some a_i or o_k' (line 431) is correct: a_i and o_k are t-free (Lemma 2.1(ii),(v)), at a root x_i=0 or the drive is 0, so the line is never SFP; this matches the code's use of 'positivity root'.",
+      "The projection-set phrase 'these polynomials' now includes the t-free o_k (their leading coefficient in t is themselves), consistent with region2d's intp.",
+      "The defect-log sentence (line 1444-1445) and the Acknowledgments clause (line 1621) are accurate and claim no change to any count or threshold, which is correct."
+    ],
+    "archived_draft": "paper_draft_before_check.tex has the same omission; correctly left alone"
+  },
+  "build": "scratch copy under fixes_2026-11-04/referee_build (pdflatex, bibtex, pdflatex x2, nice -n 10): 0 errors, 0 undefined references, 0 bibtex warnings, 0 overfull boxes, 34 pages; source identical to notes/paper/paper.tex; scratch directory deleted. notes/paper/paper.pdf is 34 pages and contains the new text.",
+  "edits_made_by_referee": "none to paper.tex"
+}

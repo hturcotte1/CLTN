@@ -1,0 +1,128 @@
+{
+ "nonsenders_to_7_1based": [
+  1,
+  4
+ ],
+ "o7": "-beta**5 + 3*beta**4 - 3*beta**3 + 3*beta**2 - 2*beta + 1",
+ "o7_equals_claimed": true,
+ "o7_equals_d_minus_beta_a1_plus_a4": true,
+ "o7_at_lo": "417793/9765625",
+ "o7_at_hi": "-1006161749/10000000000",
+ "o7_roots_in_closed_segment": "1",
+ "listed_family_t100": {
+  "a1": {
+   "degree": 4,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "a2": {
+   "degree": 3,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "a3": {
+   "degree": 4,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "a4": {
+   "degree": 4,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "a5": {
+   "degree": 2,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "a6": {
+   "degree": 2,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "D": {
+   "degree": 5,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "Delta1": {
+   "degree": 0,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "Delta2": {
+   "degree": 3,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "Delta3": {
+   "degree": 6,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "Delta4": {
+   "degree": 10,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "Delta5": {
+   "degree": 15,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "Delta6": {
+   "degree": 20,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  },
+  "L": {
+   "degree": 1,
+   "sign_lo": 1,
+   "sign_hi": 1,
+   "roots_closed_sympy": 0,
+   "roots_closed_sturm": 0
+  }
+ },
+ "listed_family_all_positive_no_roots": true,
+ "o7_roots_sturm": 1,
+ "direct_lo": {
+  "x_positive": true,
+  "drive": "417793/18223613457",
+  "drive_negative": "False",
+  "stability": "stable",
+  "SFP": false
+ },
+ "direct_hi": {
+  "x_positive": true,
+  "drive": "-1006161749/19005064281749",
+  "drive_negative": "True",
+  "stability": "stable",
+  "SFP": true
+ }
+}

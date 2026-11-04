@@ -1,0 +1,121 @@
+{
+ "isomorphisms_G1_to_stage0": [
+  [
+   5,
+   4,
+   3,
+   0,
+   1,
+   2
+  ]
+ ],
+ "report_in_mapped_0based_stage0": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "n_records": 12288,
+ "record": {
+  "pattern": 30,
+  "adjacency_rows": [
+   "0110110",
+   "1010111",
+   "1101011",
+   "1110001",
+   "0110001",
+   "0001100",
+   "0000000"
+  ],
+  "verdict": "stable_somewhere",
+  "positivity_cells": [
+   [
+    "25/12",
+    "9/4"
+   ]
+  ],
+  "positivity_critical": [
+   {
+    "interval": [
+     "2",
+     "19/9"
+    ],
+    "minpoly_hi_to_lo": [
+     1,
+     -3,
+     3,
+     -3,
+     2,
+     -1
+    ]
+   },
+   {
+    "interval": [
+     "9/4",
+     "7/3"
+    ],
+    "minpoly_hi_to_lo": [
+     1,
+     -3,
+     2,
+     -1
+    ]
+   }
+  ],
+  "stable_cells": [
+   [
+    "25/12",
+    "17/8",
+    "101/48",
+    "48/5",
+    null
+   ],
+   [
+    "15/7",
+    "665/307",
+    "4630/2149",
+    "28",
+    null
+   ]
+  ],
+  "projection_names": [
+   "lc_D",
+   "lc_Delta5_f0",
+   "lc_Delta5_f1",
+   "disc_Delta5_f1",
+   "lc_L",
+   "res_D_Delta5_f0",
+   "res_D_Delta5_f1",
+   "res_D_L",
+   "res_Delta5_f0_Delta5_f1",
+   "res_Delta5_f0_L",
+   "res_Delta5_f1_L"
+  ]
+ },
+ "o6_in_positivity_critical": [
+  {
+   "interval": [
+    "2",
+    "19/9"
+   ],
+   "minpoly_hi_to_lo": [
+    1,
+    -3,
+    3,
+    -3,
+    2,
+    -1
+   ]
+  }
+ ],
+ "o6_roots_in_segment": 1,
+ "o6_isolating_interval_contains_segment_root": true,
+ "209/100_in_positivity_cell": true,
+ "52/25_in_positivity_cell": false,
+ "stable_cell_contains_(209/100,100)": true,
+ "some_stable_beta_cell_contains_52/25": false,
+ "stable_records_checked": 7744,
+ "o6_real_roots_above_2_total": 2496,
+ "o6_roots_missing_from_critical": [],
+ "n_missing": 0
+}

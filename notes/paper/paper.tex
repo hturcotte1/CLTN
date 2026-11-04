@@ -421,13 +421,14 @@ axis; by continuity of roots the number of roots in the right half-plane is loca
 
 The two-parameter version (Lemma~B$'$ and Corollaries~B$''$, B$'''$ of the project
 notes\footnote{\cf{notes/lemma_Bprime_2d.md}.}) shows that the verdict is invariant on connected components of
-the complement of the curves $\{a_i=0\}$, $\{D=0\}$, $\{\Delta_{m-1}=0\}$ and the legality boundary
-$L(\beta,t)=t(\beta-2)-1=0$ in the open legal region, and that over each open $\beta$-interval free of the roots of a
+the complement of the curves $\{a_i=0\}$, $\{o_k=0\}$ ($k\notin\sigma$), $\{D=0\}$, $\{\Delta_{m-1}=0\}$ and the
+legality boundary $L(\beta,t)=t(\beta-2)-1=0$ in the open legal region (for $\sigma=[n]$ there are no $o_k$ and the
+list reduces to the $a_i$, $D$, $\Delta_{m-1}$ and $L$), and that over each open $\beta$-interval free of the roots of a
 projection set (leading coefficients, discriminants and pairwise resultants of these polynomials in $t$) the sectors
 of a cylindrical algebraic decomposition are sign-invariant cells. Each full-dimensional cell is decided at one exact
 rational sample; lower-dimensional cells (the pieces of the curves over each open $\beta$-cell, the vertical lines above roots
 of the projection polynomials, and the points where these meet) are not sampled. Points on a boundary curve or on the vertical
-line above a positivity root are never SFP, but a vertical line above a root of a
+line above a root of some $a_i$ or $o_k$ are never SFP, but a vertical line above a root of a
 leading coefficient, discriminant or resultant need not lie on any boundary curve and can pass through the open SFP
 region: for $G_1$ of Table~\ref{tab:n6} the projection polynomial $\operatorname{Res}_t(\Delta_5,L)$ has a unique root
 $\beta_0\in(17/8,15/7)$, the root there of $\Delta_5(\beta,1/(\beta-2))$, and the full support is an SFP at
@@ -1440,7 +1441,8 @@ by the referees (e.g.\ a misprinted node count, $2p(1)-1$ for $2p(1)-3$, in the 
 corrected here. An external correctness report on the October 2026 draft (J.~Geneson) found that Section~\ref{sec:boundary} misdescribed the
 lower-dimensional cells of the decomposition, that Lemma~\ref{lem:Bmech} invoked Theorem~\ref{thm:AS} at the endpoint
 $\nu_\infty=1/2$ outside its stated range, and that the primitive proportions of Section~\ref{sec:thrpicture} decrease rather than grow; all
-three are corrected in this version and none affects a count or a threshold.
+three are corrected in this version and none affects a count or a threshold. A second report (4 November) found that the boundary list
+for proper supports in Section~\ref{sec:boundary} omitted the off-support curves $o_k=0$; this is corrected here and affects no count or threshold.
 
 \subsection{Two machine campaigns at \texorpdfstring{$n=8$}{n = 8}}
 The $9{,}133$ eight-node limit counterexamples were verified twice by machine, with no human hand check. In the first
@@ -1616,7 +1618,7 @@ Lean & \cf{notes/lean/CtlnCert/} & \texttt{lake build}, \texttt{Audit.lean}\\
 \bibliographystyle{plain}
 
 \section*{Acknowledgments}
-The enumeration, certification and verification pipelines described in Section~\ref{sec:verification} were built and run by automated software agents under the author's direction; every statement in this paper rests on the exact, re-runnable certificates in the accompanying repository, and the author is responsible for the content. The $n=5$ reproduction uses the published package of Curto and collaborators; nauty (geng, directg, labelg) was used for graph enumeration and canonical labelling. A correctness report by J.~Geneson on the October 2026 draft led to the corrections in Section~\ref{sec:boundary} and the description of the region of $G_1$ (Section~\ref{sec:n6map}), in Theorem~\ref{thm:AS} and Lemma~\ref{lem:Bmech}, and in Section~\ref{sec:thrpicture}.
+The enumeration, certification and verification pipelines described in Section~\ref{sec:verification} were built and run by automated software agents under the author's direction; every statement in this paper rests on the exact, re-runnable certificates in the accompanying repository, and the author is responsible for the content. The $n=5$ reproduction uses the published package of Curto and collaborators; nauty (geng, directg, labelg) was used for graph enumeration and canonical labelling. A correctness report by J.~Geneson on the October 2026 draft led to the corrections in Section~\ref{sec:boundary} and the description of the region of $G_1$ (Section~\ref{sec:n6map}), in Theorem~\ref{thm:AS} and Lemma~\ref{lem:Bmech}, and in Section~\ref{sec:thrpicture}; a second report (4 November) led to the correction of the boundary list for proper supports in Section~\ref{sec:boundary}.
 
 \bibliography{refs}
 }
