@@ -1,0 +1,47 @@
+                                               Report on
+The target-free clique conjecture for threshold-linear networks: complete exact maps
+   for n ≤ 7, the ε → 0 map at n = 8, inﬁnite families, and unbounded thresholds
+
+This report is based on the supplied 34-page revised draft dated October 2026. The repository
+materials, including code, certiﬁcates and deferred proof notes, were not reviewed.
+
+
+Potentially important issues
+
+None identiﬁed in this paper-based review.
+
+
+Very minor points
+
+1. The two-parameter boundary list omits oﬀ-support curves (Section 3.1, page 8).
+The paragraph beginning “The two-parameter version” says that the SFP verdict is invariant on
+connected components of the complement of ai = 0, D = 0, ∆m−1 = 0 and L = 0. For a proper
+support σ, this assertion fails: the outside-neuron condition can change sign without crossing any
+of the listed curves. Lemma 3.2 and the later deﬁnition of Z include the polynomials ok for k ∈/ σ,
+but this opening list does not.
+For a concrete example, let σ = {1, . . . , 6} induce G1 from Table 1, and add vertex 7 receiving edges
+from exactly 2, 3, 5, 6, with no outgoing edges. Set t = 100 and let β range over [52/25, 209/100].
+Throughout this segment, all six ai , D, all six Hurwitz determinants and L are strictly positive.
+Exact root counts give no zero of any of these polynomials in the segment, and their endpoint signs
+are positive. The segment therefore lies in one connected component of the complement of the
+listed curves.
+However, the outside-neuron numerator is
+
+                    o7 (β) = d − β(a1 + a4 ) = −β 5 + 3β 4 − 3β 3 + 3β 2 − 2β + 1,
+
+and its endpoint values are
+                                417793                               1006161749
+                 o7 (52/25) =           > 0,      o7 (209/100) = −              < 0.
+                                9765625                                 1010
+Since D > 0, these are also the signs of the outside drive. Thus σ is not an SFP at the ﬁrst endpoint
+and is an SFP at the second, contradicting the stated invariance.
+This is a local omission in the written statement for proper supports. The reconstructed set
+later in the paragraph uses the complete Z. Full supports have no outside-neuron conditions, so
+this example does not establish an error in the full-support counts or threshold values, or in the
+implementation.
+
+
+
+
+                                                  1
+
